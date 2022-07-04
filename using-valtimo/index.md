@@ -1,5 +1,6 @@
 # Using Valtimo
 
-- [Backend](using-valtimo/backend/index.md)
-- [Frontend](using-valtimo/frontend/index.md)
-- [System-wide](using-valtimo/system-wide/index.md)
+- [Backend](backend/index.md)
+- [Configure](configure/index.md)
+- [Frontend](frontend/index.md)
+- [System-wide](system-wide/index.md)
