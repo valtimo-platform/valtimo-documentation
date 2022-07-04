@@ -1,3 +1,3 @@
 # Frontend
 
-- [Configure Plugin](configure_plugin.md)
+* [Configure Plugin](configure_plugin.md)
