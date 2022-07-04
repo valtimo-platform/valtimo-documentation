@@ -1,4 +1,4 @@
-# x.x.x
+# 9.16.0
 
 * [Valtimo backend libraries](valtimo-backend-libraries.md)
 * [Valtimo backend plus libraries](valtimo-backend-plus-libraries.md)

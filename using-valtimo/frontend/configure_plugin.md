@@ -1,4 +1,4 @@
-# Configure Plugin
+# Configuring Plugins
 
 Configuring a plugin can be done in the plugin menu. The plugin menu is found under the admin menu. Admin privileges are
 required to configure plugins.
