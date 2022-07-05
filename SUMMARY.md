@@ -1,6 +1,6 @@
 # Table of contents
 
-* [Introduction](introduction/index.md)
+* [Introduction](README.md)
   * [Overview](introduction/overview.md)
   * [Architectural overview](introduction/architectural\_overview.md)
   * [Available modules](introduction/modules.md)
@@ -11,7 +11,7 @@
 * [Using Valtimo](using-valtimo/index.md)
   * [Backend](using-valtimo/backend/index.md)
   * [Frontend](using-valtimo/frontend/index.md)
-    * [Configuring plugins](using-valtimo/frontend/configure_plugin.md)
+    * [Configuring plugins](using-valtimo/frontend/configure\_plugin.md)
   * [System-wide](using-valtimo/system-wide/index.md)
 * [Extending Valtimo](extending-valtimo/index.md)
 * [References](reference/index.md)
