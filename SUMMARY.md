@@ -1,6 +1,5 @@
 # Table of contents
 
-* [README](README.md)
 * [Introduction](introduction/index.md)
   * [Overview](introduction/overview.md)
   * [Architectural overview](introduction/architectural\_overview.md)
@@ -20,6 +19,5 @@
   * [9.x.x](release-notes/major9/index.md)
     * [9.16.0](release-notes/major9/09.16.0/index.md)
       * [Valtimo backend libraries](release-notes/major9/09.16.0/valtimo-backend-libraries.md)
-      * [Valtimo backend plus libraries](release-notes/major9/09.16.0/valtimo-backend-plus-libraries.md)
       * [Valtimo frontend libraries](release-notes/major9/09.16.0/valtimo-frontend-libraries.md)
       * [Migration](release-notes/major9/09.16.0/migration.md)
