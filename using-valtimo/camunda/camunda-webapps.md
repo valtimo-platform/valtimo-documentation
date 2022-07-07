@@ -22,7 +22,7 @@ for more configuration properties.
 
 ## Additional security
 
-The camunda webapps are available in a separate path (`/camunda/*`) from the other valitmo apis (`/api/*`). Since the 
+The camunda webapps are available in a separate path (`/camunda/*`) from the other valtimo apis (`/api/*`). Since the 
 camunda webapps are a tool used to manage the internal it may be advisable to control access to this path on an 
 infrastructure level.
 

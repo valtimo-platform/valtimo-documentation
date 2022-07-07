@@ -12,6 +12,8 @@
   * [Backend](using-valtimo/backend/index.md)
   * [Frontend](using-valtimo/frontend/index.md)
     * [Configuring plugins](using-valtimo/frontend/configure-plugin.md)
+  * [Camunda](using-valtimo/camunda/index.md)
+    * [Camunda webapps](using-valtimo/camunda/camunda-webapps.md)
   * [System-wide](using-valtimo/system-wide/index.md)
 * [Extending Valtimo](extending-valtimo/index.md)
 * [References](reference/index.md)
