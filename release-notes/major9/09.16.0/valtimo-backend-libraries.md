@@ -4,10 +4,11 @@
 
 The following features were added:
 
-* **New feature1**
+* **Camunda webapps**
 
-  Description of the new feature goes here. 
-  Also link to the page that expains the feature in greater detail.
+  The camunda webapps, including the cockpit, were made available. For existing valtimo projects additional 
+  infrastructure configuration might be required to grant access to the `/camunda/app` path. See 
+  [this page](/using-valtimo/system-wide/camunda-cockpit.md) for more information.
 
 * **New feature2**
 
