@@ -4,7 +4,7 @@
 
 ### Creating a plugin class
 
-A plugin can be created with the `@Plugin` annotation above the class. All classes with the plugin annotation are
+A plugin can be created with the `@Plugin` annotation on the class. All classes with the plugin annotation are
 detected when the application is started. The plugin class shouldn't be a Spring bean.
 
 For example:
@@ -33,8 +33,9 @@ private lateinit var username: String
 
 ### Plugin action
 
-A plugin can have multiple actions that can be executed. A plugin action can be added to the plugin class with
-the `@PluginAction` annotation.
+A plugin class can have methods that are marked as actions through the `@PluginAction` annotation. These methods can
+then be used in a process definition through the use of [process links](../../using-valtimo/plugin/create-process-link.md). 
+A single action can be linked to a task, and will run when that task is reached.
 
 For example:
 
@@ -51,8 +52,10 @@ fun postTweet(execution: DelegateExecution, postTweetProperties: PostTweetProper
 
 ## Creating a plugin factory
 
-The newly created plugin class can't be used yet because Valtimo doesn't know how to create the new plugin. This problem
-is solved by creating a factory that extends the `PluginFactory`.
+The newly created plugin class can not be used yet because Valtimo does not know how to create the new plugin. This
+problem is solved by creating a factory that extends the `PluginFactory` and registering it as a bean. 
+The `create()` method has to be implemented to inject Spring beans or other objects that are necessary. This does not
+include plugin properties, those are set automatically.
 
 For example:
 
