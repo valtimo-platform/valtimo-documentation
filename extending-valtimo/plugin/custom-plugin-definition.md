@@ -1,26 +1,4 @@
-# How to create a plugin
-
-## Setup
-
-Before a plugin can be created, the plugin dependency is required.
-
-Maven dependency:
-```xml
-<dependencies>
-    <dependency>
-        <groupId>com.ritense.valtimo</groupId>
-        <artifactId>plugin</artifactId>
-        <version>9.14.0.RELEASE</version>
-    </dependency>
-</dependencies>
-```
-
-Gradle dependency:
-```json
-dependencies {
-    implementation "com.ritense.valtimo:plugin:9.14.0.RELEASE"
-}
-```
+# Creating custom plugin definitions
 
 ## Creating a plugin definition
 

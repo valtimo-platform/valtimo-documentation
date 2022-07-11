@@ -4,15 +4,8 @@ Configuring a plugin can be done from the plugin menu. The plugin menu is found 
 are required to configure plugins.
 
 ## Setup
-Before plugins can be configured, the frontend dependency below is needed:
-
-```json
-{
-  "dependencies": {
-    "@valtimo/plugin-management": "5.2.0"
-  }
-}
-```
+Before plugins can be configured, both the backend and frontend dependencies are needed. 
+See [here](../../valtimo-implementation/plugin/create-plugin.md) for instructions on how to do this.
 
 ## Adding plugin configuration
 
