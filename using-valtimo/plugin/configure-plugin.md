@@ -15,6 +15,7 @@ See [here](../../valtimo-implementation/plugin/dependencies.md) for instructions
 1. Go to the Admin menu
 2. Go to the Plugin menu
 3. Click the button 'Configure plugin +'
-4. Follow the steps
+4. Select the plugin definition
+5. Configure the plugin
 
 ![Configuring a plugin](img/configure-plugin.png)
