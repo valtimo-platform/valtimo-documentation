@@ -8,7 +8,7 @@ Instructions for using the configuration to link an action to a process task can
 
 ## Setup
 Before plugins can be configured, both the backend and frontend dependencies are needed. 
-See [here](../../valtimo-implementation/plugin/dependencies.md) for instructions on how to do this.
+See [here](../../valtimo-implementation/modules/plugin.md) for instructions on how to do this.
 
 ## Adding plugin configuration
 

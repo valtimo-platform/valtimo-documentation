@@ -1,11 +1,13 @@
-# Dependencies
+# Plugins
 
-In order to use plugins or create custom plugin definitions, the plugin module needs to be added as a dependency. The 
+## Dependencies
+
+In order to use plugins or create custom plugin definitions, the plugin module needs to be added as a dependency. The
 following can be added to your project, depending on whether Maven or Gradle is used:
 
-## Backend
+### Backend
 
-### Maven dependency:
+#### Maven dependency:
 ```xml
 <dependencies>
     <dependency>
@@ -16,7 +18,7 @@ following can be added to your project, depending on whether Maven or Gradle is 
 </dependencies>
 ```
 
-### Gradle dependency:
+#### Gradle dependency:
 ```json
 dependencies {
     implementation "com.ritense.valtimo:plugin:9.14.0.RELEASE"
@@ -24,7 +26,7 @@ dependencies {
 ```
 
 
-## Frontend
+### Frontend
 
 ```json
 {
@@ -33,4 +35,5 @@ dependencies {
   }
 }
 ```
+
 
