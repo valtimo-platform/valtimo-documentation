@@ -9,8 +9,8 @@ and the actions the plugin can run. The concepts are all explained below.
 ## Concepts
 
 * **Plugin definition.** A regular plugin is often referred to as a plugin definition to emphasise the difference 
-between the definition of the plugin and the configuration of a plugin. For example, a Twitter plugin is sometimes
-called a Twitter plugin definition.
+between the definition of the plugin and the configuration of a plugin. For example, a Twitter plugin can also be
+referred to as a Twitter plugin definition.
 
 * **Plugin configuration.** A single plugin can be configured multiple times. For example, a Twitter plugin might have 
 one configuration to post tweets for one user and another configuration to post tweets for another user.
