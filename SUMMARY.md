@@ -11,6 +11,7 @@
     * [Creating your own Valtimo implementation](valtimo-implementation/first-dive/create-your-own/index.md)
   * [Modules](valtimo-implementation/modules/index.md)
     * [Plugins](valtimo-implementation/modules/plugin.md)
+    * [SmartDocuments](valtimo-implementation/modules/smartdocuments.md)
     * [Camunda](valtimo-implementation/modules/camunda-webapps.md)
 * [Using Valtimo](using-valtimo/index.md)
   * [Plugins](using-valtimo/plugin/index.md)
