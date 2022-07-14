@@ -5,7 +5,7 @@
 ### Creating a plugin class
 
 A plugin can be created with the `@Plugin` annotation on the class. All classes with the plugin annotation are
-detected when the application is started. The plugin class shouldn't be a Spring bean.
+detected when the application is started. The plugin class should not be a Spring bean.
 
 For example:
 
