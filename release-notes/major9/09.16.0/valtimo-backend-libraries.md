@@ -19,16 +19,15 @@ The following features were added:
   [this page](/introduction/modules/plugin-introduction.md) for more information.
 
 * **Smart documents plugin**
-  
-
 
 ## Bugfixes
 
 The following bugs were fixed:
 
-* **Bug1**
+* **Input sanitization for pre-filled fields inside of forms**
 
-  Description of what the issue was.
+  When a form definition is pre-filled, the pre-filled fields were prone to HTML injection. These fields are now
+  sanitized when the fields are pre-filled.
 
 * **Bug2**
 
