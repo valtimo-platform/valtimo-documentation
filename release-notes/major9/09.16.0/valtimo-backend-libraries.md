@@ -6,14 +6,20 @@ The following features were added:
 
 * **Camunda webapps**
 
-  The camunda webapps, including the cockpit, were made available. For existing valtimo projects additional 
+  The Camunda webapps, including the cockpit, were made available. For existing Valtimo projects additional 
   infrastructure configuration might be required to grant access to the `/camunda/app` path. See 
   [this page](/valtimo-implementation/modules/camunda-webapps.md) for more information.
 
-* **New feature2**
+* **Plugins**
 
-  Description of the new feature goes here.
-  Also link to the page that expains the feature in greater detail.
+  Plugins are extensions on the Valtimo platform. These are often connections to external
+  services, such as transactional email and  generating documents. Some plugins are provided
+  by the platform, but developers can create their own plugins as well. Plugins can be
+  configured without writing code, and can be used during BPMN processes. See 
+  [this page](/introduction/modules/plugin-introduction.md) for more information.
+
+* **Smart documents plugin**
+  
 
 
 ## Bugfixes
