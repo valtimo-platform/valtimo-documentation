@@ -4,15 +4,18 @@
 
 The following features were added:
 
-* **No new features**
+* **Updated <form.io> dependency**
+
+  The dependency angular-formio version 4.11.5 has been updated to @formio/angular version 5.2.2
 
 ## Bugfixes
 
 The following bugs were fixed:
 
-* **Updated <form.io> dependency**
+* **Streamlined dependencies**
 
-  The dependency angular-formio version 4.11.5 has been updated to @formio/angular version 5.2.2
+  A number of errors and warnings would occur when installing package dependencies. These have been
+  resolved.
 
 ## Breaking changes
 
