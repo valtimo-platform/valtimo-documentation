@@ -1,5 +1,12 @@
 # Available modules
 
+## Document generation
+
+### SmartDocuments
+
+SmartDocuments itself is an external service that deals with generating documents based on templates and placeholders.
+This module offers a plugin which can connect to this service to generate documents.
+
 ## Plugins
 
 Plugins are extensions on the Valtimo platform. These are often connections to external

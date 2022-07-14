@@ -19,8 +19,12 @@ The following bugs were fixed:
 
 ## Breaking changes
 
-No known breaking changes
+No known breaking changes.
+
+## Deprecations
+
+No deprecations.
 
 ## Known issues
 
-No known issues
+No known issues.
