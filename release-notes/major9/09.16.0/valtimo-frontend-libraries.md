@@ -1,63 +1,30 @@
-# Frontend libraries
+# Frontend libraries 5.4.0
 
 ## New Features
 
 The following features were added:
 
-* **New feature1**
+* **Updated <form.io> dependency**
 
-  Description of the new feature goes here.
-  Also link to the page that expains the feature in greater detail.
-
-* **New feature2**
-
-  Description of the new feature goes here.
-  Also link to the page that expains the feature in greater detail.
-
+  The dependency angular-formio version 4.11.5 has been updated to @formio/angular version 5.2.2
 
 ## Bugfixes
 
 The following bugs were fixed:
 
-* **Bug1**
+* **Streamlined dependencies**
 
-  Description of what the issue was.
-
-* **Bug2**
-
-  Description of what the issue was.
+  A number of errors and warnings would occur when installing package dependencies. These have been
+  resolved.
 
 ## Breaking changes
 
-The following breaking changes were introduced:
-
-* **Breaking change1**
-
-* **Breaking change2**
-
-Instructions on how to migrate to this version of Valtimo can be found [here](migration.md).
+No known breaking changes.
 
 ## Deprecations
 
-The following was deprecated:
-
-* **Deprecation1**
-
-  X was deprecated and is replaced with Y.
-* **Deprecation2**
-
-  X was deprecated and is replaced with Y.
-
-Instructions on how to migrate to this version of Valtimo can be found [here](migration.md).
+No deprecations.
 
 ## Known issues
 
-This version has the following known issues:
-
-* **Issue1**
-    * Discovered in version x.x.x
-    * Describe what can be done to work around the issue
-
-* **Issue2**
-    * Discovered in version x.x.x
-    * Describe what can be done to work around the issue
+No known issues.
