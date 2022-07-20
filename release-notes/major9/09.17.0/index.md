@@ -2,3 +2,4 @@
 
 * [Valtimo backend libraries 9.17.0](valtimo-backend-libraries.md)
 * [Valtimo frontend libraries 5.4.0](valtimo-frontend-libraries.md)
+* [Migration](migration.md)
