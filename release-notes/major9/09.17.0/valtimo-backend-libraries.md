@@ -4,15 +4,17 @@
 
 The following features were added:
 
-* **New feature1**
+* **Improved DocumentVariableDelegateImpl**
 
-  Description of the new feature goes here.
-  Also link to the page that expains the feature in greater detail.
+  The `findValueByJsonPointer` method of the `DocumentVariableDelegateImpl` class
+  now returns a collection of elements instead of throwing an exception
+  when the node is an ArrayNode.
+
 
 * **New feature2**
 
   Description of the new feature goes here.
-  Also link to the page that expains the feature in greater detail.
+  Also link to the page that explains the feature in greater detail.
 
 
 ## Bugfixes
