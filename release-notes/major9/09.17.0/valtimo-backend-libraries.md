@@ -11,7 +11,14 @@ The following features were added:
   when the node is an ArrayNode.
 
 
-* **New feature2**
+* **Postgres support**
+
+  Almost all modules within valtimo now have support for Postgres databases. The exceptions are:
+  - `form-flow-valtimo` doesn't support Postgres yet.
+  - `valtimo-backend-plus-libraries` doesn't support Postgres yet.
+
+
+* **New feature3**
 
   Description of the new feature goes here.
   Also link to the page that explains the feature in greater detail.
