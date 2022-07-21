@@ -9,6 +9,7 @@
   * [First dive into Valtimo](valtimo-implementation/first-dive/first-dive.md)
     * [Docker container](valtimo-implementation/first-dive/docker-container/docker-container.md)
     * [Creating your own Valtimo implementation](valtimo-implementation/first-dive/create-your-own/create-your-own.md)
+  * [Compatibility matrix](valtimo-implementation/compatibility-matrix.md)
   * [Database support](valtimo-implementation/database-support.md)
   * [Modules](valtimo-implementation/modules/modules.md)
     * [Plugins](valtimo-implementation/modules/plugin.md)
