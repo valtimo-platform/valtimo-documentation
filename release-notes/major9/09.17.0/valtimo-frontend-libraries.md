@@ -4,60 +4,35 @@
 
 The following features were added:
 
-* **New feature1**
+* **Saving plugin actions**
 
-  Description of the new feature goes here.
-  Also link to the page that expains the feature in greater detail.
+  When the form of a new plugin action is filled in on the new process links screen, it can now be saved through the API. When an activity is already linked to a plugin action, clicking on it displays this current configuration, which can then be altered.
 
-* **New feature2**
+* **New field SmartDocuments plugin action 'generate document'**
 
-  Description of the new feature goes here.
-  Also link to the page that expains the feature in greater detail.
+  The SmartDocuments plugin now takes an extra parameter for the 'generate document' action: 'resultingDocumentProcessVariableName'. The input field for which includes a tooltip.
+
+* **Tooltips in @valtimo/user-interface**
+
+  Tooltip functionality has been added to the input components of the @valtimo/user-interface library.
 
 
 ## Bugfixes
 
 The following bugs were fixed:
 
-* **Bug1**
+* **Sanitization of HTML in timeline component**
 
-  Description of what the issue was.
-
-* **Bug2**
-
-  Description of what the issue was.
+  Some HTML icons from the translation assets were not displayed properly, since text on the timeline component is now sanitized before being displayed. These icons have been replaced by text symbols.
 
 ## Breaking changes
 
-The following breaking changes were introduced:
-
-* **Breaking change1**
-
-* **Breaking change2**
-
-Instructions on how to migrate to this version of Valtimo can be found [here](migration.md).
+No known breaking changes.
 
 ## Deprecations
 
-The following was deprecated:
-
-* **Deprecation1**
-
-  X was deprecated and is replaced with Y.
-* **Deprecation2**
-
-  X was deprecated and is replaced with Y.
-
-Instructions on how to migrate to this version of Valtimo can be found [here](migration.md).
+No deprecations.
 
 ## Known issues
 
-This version has the following known issues:
-
-* **Issue1**
-  * Discovered in version x.x.x
-  * Describe what can be done to work around the issue
-
-* **Issue2**
-  * Discovered in version x.x.x
-  * Describe what can be done to work around the issue
+No known issues.
