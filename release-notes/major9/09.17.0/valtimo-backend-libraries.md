@@ -13,9 +13,10 @@ The following features were added:
 
 * **Postgres support**
 
-  Almost all modules within valtimo now have support for Postgres databases. The exceptions are:
-  - `form-flow-valtimo` doesn't support Postgres yet.
-  - `valtimo-backend-plus-libraries` doesn't support Postgres yet.
+  Almost all modules within Valtimo now have support for Postgres databases. The exceptions are:
+  - `form-flow-valtimo`
+  
+  Information on how to use Postgres can be found [here](/valtimo-implementation/database-support.md).
 
 
 * **New feature3**
