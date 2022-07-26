@@ -170,7 +170,7 @@ export {SAMPLE_PLUGIN_LOGO_BASE64};
 
 ### Plugin configuration component
 
-As shown in the [plugin specification section](#your-plugin-specification), plugin configuration components need to
+As shown in the [plugin specification section](#plugin-specification), plugin configuration components need to
 conform to the interface `PluginConfigurationComponent`. Below the interface is shown, with a comment for each required
 property.
 
@@ -490,7 +490,7 @@ translation.
 ### Plugin module
 
 Finally, after implementing the components and specification, a module has to be defined for the plugin.
-This module, together with the specification, is then imported in the app module as shown in [this section](#adding-a-plugin-to-your-implementation).
+This module, together with the specification, is then imported in the app module as shown in [on this page](../../valtimo-implementation/modules/plugin.md).
 
 The sample plugin module would look like this:
 #### **`sample-plugin.module.ts`**
