@@ -29,9 +29,9 @@ The following features were added:
 
 The following bugs were fixed:
 
-* **Changeset errors on Liquibase 3.8.x and higher**
+* **Changeset errors on Liquibase 3.8.0 and higher**
 
-  `foreignKeyTableName` is now required for `foreignKeyConstraintExists`. Existing changesets did not implement this property.
+  `foreignKeyTableName` is required for `foreignKeyConstraintExists` on Liquibase 3.8.0 and higher. Existing changesets did not implement this property.
 
 * **Bug2**
 
