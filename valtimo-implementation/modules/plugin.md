@@ -37,14 +37,14 @@ dependencies {
 }
 ```
 
-####  Adding a front-end plugin to your implementation
+####  Adding a front-end plugin to the implementation
 
-For each plugin you configure in the back-end, your front-end implementation needs to know what components to use in
-order to configure your plugin, and to configure your plugin's actions.
+For each plugin configured in the back-end, the front-end implementation needs to know what components to use in
+order to configure the plugin, and to configure the plugin's actions.
 
-The library `@valtimo/plugin` exports several pre-made plugins. In order to use these in your implementation, you need
-to import the plugin's module and the plugin's specification into your app module like so. Also, you need to import
-`PLUGINS_TOKEN` to inject the specification.
+The library `@valtimo/plugin` exports several pre-made plugins. In order to use these in the implementation, the 
+plugin's module and the plugin's specification need to be imported into the app module. Also, `PLUGINS_TOKEN` needs to
+be imported to inject the specification.
 
 For example:
 
@@ -61,8 +61,8 @@ import {
 ...
 ```
 
-Next, add the plugin module to the `imports` array of your app module, and add the specification to the array provided
-by `PLUGINS_TOKEN` under the `providers` array in your app module.
+Next, add the plugin module to the `imports` array of the app module, and add the specification to the array provided
+by `PLUGINS_TOKEN` under the `providers` array in the app module.
 
 For example:
 
@@ -91,7 +91,7 @@ For example:
 export class AppModule {
 }
 ```
-Your implementation should now be able to display the plugin, configure it, configure its actions, and be able to link
+The implementation should now be able to display the plugin, configure it, configure its actions, and be able to link
 its actions to process activities.
 
 
