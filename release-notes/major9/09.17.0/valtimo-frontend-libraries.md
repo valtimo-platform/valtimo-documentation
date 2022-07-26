@@ -16,10 +16,23 @@ The following features were added:
   'resultingDocumentProcessVariableName'. This plugin stores the generated document locally, and other plugins can be
   used to send it to another service.
 
+* **Warning added to SmartDocuments plugin action 'generate document'**
+
+  The warning is related to the field `resultingDocumentProcessVariableName`, and states 'This action generates a 
+  temporary file. It needs to be stored in a following task.'
+
 * **Tooltips in @valtimo/user-interface**
 
   Tooltip functionality has been added to the input components of the `@valtimo/user-interface` library.
 
+* **Required fields in @valtimo/user-interface**
+
+  All input components now display a required asterisk when the required input is `true`.
+
+* **Documenten API plugin added to @valtimo/plugin**
+
+  The Documenten API plugin has been added and supports plugin configuration and configuration for the action 
+  `store-temp-document`.
 
 ## Bugfixes
 
