@@ -75,12 +75,12 @@ class TwitterPluginFactory(
 
 ## Front-end
 
-To develop your own front-end plugin, the library `@valtimo/plugin` provides several interfaces which your own front-end
-plugin must conform to, in order to be used in your implementation.
+To develop a front-end plugin, the library `@valtimo/plugin` provides several interfaces which a front-end
+plugin must conform to, in order to be used in an implementation.
 
-### Your plugin specification
+### Plugin specification
 
-First you need to make a plugin specification, conforming to the interface `PluginSpecification`. Below is an example
+First, a plugin specification conforming to the PluginSpecification interface needs to be created. Below is an example
 specification with explanations for each property:
 
 #### **`sample.plugin.specification.ts`**
@@ -92,7 +92,7 @@ import {SampleActionConfigurationComponent} from './components/sample-action-con
 
 const samplePluginSpecification: PluginSpecification = {
     /* 
-    The plugin definition key of your plugin. 
+    The plugin definition key of the plugin. 
     This needs to be the same as the id received from the back-end
      */
     pluginId: 'sampleplugin',
@@ -100,7 +100,7 @@ const samplePluginSpecification: PluginSpecification = {
     A component of the interface PluginConfigurationComponent, used to configure the plugin itself.
      */
     pluginConfigurationComponent: SamplePluginConfigurationComponent,
-    // Points to a Base64 encoded string, which contains the logo of your plugin. 
+    // Points to a Base64 encoded string, which contains the logo of the plugin. 
     pluginLogoBase64: SAMPLE_PLUGIN_LOGO_BASE64,
     functionConfigurationComponents: {
         /*
@@ -110,10 +110,10 @@ const samplePluginSpecification: PluginSpecification = {
         'sample-action': SampleActionConfigurationComponent,
     },
     /* 
-    For each language key your implementation supports, translation keys with a translation can be provided below. 
-    These can then be used in your configuration component using the pluginTranslate pipe or the PluginTranslationService.
+    For each language key an implementation supports, translation keys with a translation are provided below. 
+    These can then be used in configuration components using the pluginTranslate pipe or the PluginTranslationService.
     At a minumum, the keys 'title' and 'description' need to be defined.
-    Also, don't forget to add a translation key for each function key. In this case, we add a key 'sample-action'.
+    Each function key also requires a translation key. In this case, the key 'sample-action' is added.
      */
     pluginTranslations: {
         nl: {
@@ -149,10 +149,10 @@ const samplePluginSpecification: PluginSpecification = {
 export {samplePluginSpecification};
 ```
 
-### Your plugin logo
+### Plugin logo
 
-Plugin logos are provided as a Base64 encoded string. This string is then imported in your plugin specification as shown
-above. Please be advised to keep the size down to a minimum, so resize your logo image before encoding it to Base64.
+Plugin logos are provided as a Base64 encoded string. This string is then imported in the plugin specification as shown
+above. The size has to be kept down to a minimum, so logo images must be resized before encoding them to Base64.
 A maximum height of 60 pixels is advised.
 
 [This website](https://www.base64-image.de/) is good for encoding images to Base64. After uploading, click `show code`,
@@ -168,9 +168,9 @@ const SAMPLE_PLUGIN_LOGO_BASE64 =
 export {SAMPLE_PLUGIN_LOGO_BASE64};
 ```
 
-### Your plugin configuration component
+### Plugin configuration component
 
-As shown in the [plugin specification section](#your-plugin-specification), your plugin configuration component needs to
+As shown in the [plugin specification section](#your-plugin-specification), plugin configuration components need to
 conform to the interface `PluginConfigurationComponent`. Below the interface is shown, with a comment for each required
 property.
 
@@ -180,7 +180,7 @@ property.
 
 /* 
 The required data outputted from the component.
-In each case, a configuration title must be provided by your configuration component.
+In each case, a configuration title must be provided by the configuration component.
 The rest of the properties must conform to the properties expected by the back-end.
 */
 interface PluginConfigurationData {
@@ -192,26 +192,26 @@ interface PluginConfigurationData {
 
 /*
 The generic interface for a configuration component.
-All of these properties must be implemented by your plugin configuration component,
+All of these properties must be implemented by the plugin configuration component,
 since this interface is extended below.
 */
 interface ConfigurationComponent {
     /*
-    An observable your component must subscribe to.
-    If this observable is triggered, your component must check if its configuration data is valid,
+    An observable the component must subscribe to.
+    If this observable is triggered, the component must check if its configuration data is valid,
     and if so, emit this data on the configuration EventEmitter from the interface below.
      */
     save$: Observable<void>;
     /* 
-    A boolean observable which your component must subscribe to. 
-    If true, all input in your component must be disabled.
+    A boolean observable which the component must subscribe to. 
+    If true, all input in the component must be disabled.
      */
     disabled$: Observable<boolean>;
-    // The plugin definition key provided to your component. For our sample plugin, this would be 'sampleplugin'
+    // The plugin definition key provided to the component. For the sample plugin, this would be 'sampleplugin'
     pluginId: string;
     /*
-    When the values of the inputs in your configuration component change,
-    your configuration component must continuously check whether the configuration data (all inputs combined) is valid.
+    When the values of the inputs in the configuration component change,
+    the configuration component must continuously check whether the configuration data (all inputs combined) is valid.
     This EventEmitter outputs a boolean. So if the data is valid, output 'true', if invalid, output 'false'.
      */
     valid: EventEmitter<boolean>;
@@ -220,12 +220,12 @@ interface ConfigurationComponent {
 interface PluginConfigurationComponent extends ConfigurationComponent {
     /* 
     An observable input which includes configuration data if the plugin had already been saved previously,
-    and is now being modified. Subscribe to this observable to prefill the input fields in your component.
+    and is now being modified. Subscribe to this observable to prefill the input fields in the component.
      */
     prefillConfiguration$?: Observable<PluginConfigurationData>;
     /*
     As mentioned before, if the observable of the 'save$' input property is triggered, 
-    check if your configuration data is valid. If so, output this data through this EventEmitter. 
+    check if the configuration data is valid. If so, output this data through this EventEmitter. 
      */
     configuration: EventEmitter<PluginConfigurationData>;
 }
@@ -233,11 +233,11 @@ interface PluginConfigurationComponent extends ConfigurationComponent {
 ...
 ```
 
-### Typing your plugin configuration data
+### Typing the plugin configuration data
 
-As mentioned, your plugin configuration component listens to prefill data of the interface `PluginConfigurationData`,
+As mentioned, the plugin configuration component listens to prefill data of the interface `PluginConfigurationData`,
 and outputs configuration data of this same interface. It is advised to extend this interface and further specify what
-data your plugin requires. For our sample plugin, this would be:
+data the plugin requires. For the sample plugin, this would be:
 
 #### **`sample-plugin-config.ts`**
 ```typescript
@@ -250,11 +250,11 @@ interface SamplePluginConfig extends PluginConfigurationData {
 export {SamplePluginConfig};
 ```
 
-### Implementing your plugin configuration component
+### Implementing the plugin configuration component
 
-Taking all the information above into account, we can now start implementing our plugin configuraiton component for our
-sample plugin. You are free to implement this in any way you want, as long as you conform to the interfaces. Below is
-sample code on implementing the component using components from the library `@valtimo/user-interface`.
+How a configuration component for the sample plugin can be implemented is shown below.
+The way this is implemented can differ, as long as the interfaces are conformed to. 
+Below is sample code on implementing the component using components from the library `@valtimo/user-interface`.
 
 #### **`sample-plugin-configuration.component.ts`**
 ```typescript
@@ -269,18 +269,18 @@ import {SamplePluginConfig} from '../models';
     styleUrls: ['./sample-plugin-configuration.component.scss'],
 })
 export class SamplePluginConfigurationComponent
-    // Our components explicitly implements the PluginConfigurationComponent interface
+    // The component explicitly implements the PluginConfigurationComponent interface
     implements PluginConfigurationComponent, OnInit, OnDestroy
 {
     @Input() save$: Observable<void>;
     @Input() disabled$: Observable<boolean>;
     @Input() pluginId: string;
-    // If our plugin had already been saved, we expect a prefill configuration of the type SamplePluginConfig
+    // If the plugin had already been saved, a prefill configuration of the type SamplePluginConfig is expected
     @Input() prefillConfiguration$: Observable<SamplePluginConfig>;
 
-    // If our configuration data changes, we must output whether it is valid or not
+    // If the configuration data changes, output whether the data is valid or not
     @Output() valid: EventEmitter<boolean> = new EventEmitter<boolean>();
-    // If our configuration is valid, we output a configuration of the type SamplePluginConfig
+    // If the configuration is valid, output a configuration of the type SamplePluginConfig
     @Output() configuration: EventEmitter<SamplePluginConfig> =
         new EventEmitter<SamplePluginConfig>();
 
@@ -303,7 +303,7 @@ export class SamplePluginConfigurationComponent
     }
 
     private handleValid(formValue: SamplePluginConfig): void {
-        // Our configuration is valid when a configuration title and url are defined
+        // The configuration is valid when a configuration title and url are defined
         const valid = !!(formValue.configurationTitle && formValue.url);
 
         this.valid$.next(valid);
@@ -312,8 +312,8 @@ export class SamplePluginConfigurationComponent
 
     private openSaveSubscription(): void {
         /* 
-        If the save observable is triggered, we check if our configuration is valid, and if so,
-        we output the configuration using the configuration EventEmitter.
+        If the save observable is triggered, check if the configuration is valid, and if so,
+        output the configuration using the configuration EventEmitter.
          */
         this.saveSubscription = this.save$?.subscribe(save => {
             combineLatest([this.formValue$, this.valid$])
@@ -328,7 +328,7 @@ export class SamplePluginConfigurationComponent
 }
 ```
 
-The corresponding template file would look like this:
+The corresponding template file looks like this:
 
 #### **`sample-plugin-configuration.component.html`**
 ```angular2html
@@ -361,11 +361,10 @@ The corresponding template file would look like this:
 
 ### Function configuration components
 
-Each plugin action received from the back-end must have a corresponding function configuration component in your
+Each plugin action received from the back-end must have a corresponding function configuration component in the
 front-end. Implementing these components works in much the same way as implementing the plugin configuration component,
-so I will not go into as much detail as before. The only difference is that function configuration component
-does not have to provide a configuration title. Below is sample code for our sample plugin action with the id
-`'sample-action'`:
+The only difference is that function configuration components do not have to provide a configuration title. 
+Below is sample code for the sample plugin action with the id `sample-action`:
 
 #### **`sample-action-config.ts`**
 ```typescript
@@ -389,7 +388,7 @@ import {SampleActionConfig} from '../models';
     styleUrls: ['./sample-action-configuration.component.scss'],
 })
 export class SamplePluginConfigurationComponent
-    // Our components explicitly implements the FunctionConfigurationComponent interface
+    // The component explicitly implements the FunctionConfigurationComponent interface
     implements FunctionConfigurationComponent, OnInit, OnDestroy
 {
     @Input() save$: Observable<void>;
@@ -463,10 +462,9 @@ export class SamplePluginConfigurationComponent
 
 #### Plugin translate pipe
 
-As you might have noticed, the template code show above uses the `pluginTranslate` pipe to show translations from the
-plugin specification. To use this, first import import `PluginTranslatePipeModule` from `@valtimo/plugin` and add it
-to the `imports` array of your plugin module. Now you can use the `pluginTranslate` pipe in your templates. It uses the
-following syntax:
+The template code shown above uses the `pluginTranslate` pipe to show translations from the plugin specification.
+To use this, first import `PluginTranslatePipeModule` from `@valtimo/plugin` and add it to the `imports` array of the 
+plugin module. Now the `pluginTranslate` pipe can be used in templates. It uses the following syntax:
 
 #### **`sample-translation-pipe.component.html`**
 ```angular2html
@@ -475,26 +473,26 @@ following syntax:
 </span>
 ```
 
-The pipe returns an observable, so do not forget to add an `| async` at the end.
+The pipe returns an observable, so do not forget to add `| async` at the end.
 
-`translationKey` refers to one of the translation keys specified in your plugin specification.
+`translationKey` refers to one of the translation keys specified in the plugin specification.
 
-`pluginId` refers to your plugin's definition key. For our sample plugin, this would be `sampleplugin`.
-It is provided by the `pluginId` input on your configuration component.
-
+`pluginId` refers to the plugin's definition key. For the sample plugin, this would be `sampleplugin`.
+It is provided by the `pluginId` input on the configuration component by default.
+ 
 #### Plugin translation service
 
-If you wish to translate inside your component code (as opposed to inside the template using the pipe),
-you may use the `PluginTranslationService` exported by `@valtimo/plugin`. It supports a `translate` method, which
-returns an observable containing your translation, and an `instant` method, which returns a string containing your
+If translation is to take place inside the component (as opposed to inside the template using the pipe),
+the `PluginTranslationService` may be used, which is exported by `@valtimo/plugin`. It supports a `translate` method, 
+which  returns an observable containing the translation, and an `instant` method, which returns a string containing the
 translation.
 
 ### Plugin module
 
-Finally, after implementing our components and specification, we should not forget to define a module for our plugin.
-This module, together with the specification, is then imported in our app module as shown in [this section](#adding-a-plugin-to-your-implementation).
+Finally, after implementing the components and specification, a module has to be defined for the plugin.
+This module, together with the specification, is then imported in the app module as shown in [this section](#adding-a-plugin-to-your-implementation).
 
-Our sample plugin module would look like this:
+The sample plugin module would look like this:
 #### **`sample-plugin.module.ts`**
 ```typescript
 import {NgModule} from '@angular/core';
