@@ -24,6 +24,8 @@
     * [Custom plugin definitions](extending-valtimo/plugin/custom-plugin-definition.md)
 * [References](reference/reference.md)
   * [Troubleshoot](reference/troubleshoot.md)
+  * [User interface](reference/user-interface/user-interface.md)
+    * [Design philosophy](reference/user-interface/design-philosophy.md)
 * [Release notes](release-notes/release-notes.md)
   * [9.x.x](release-notes/major9/major-9.md)
     * [9.16.0/5.3.0](release-notes/major9/09.16.0/index.md)
