@@ -29,6 +29,11 @@ The following features were added:
 
   All input components now display a required asterisk when the required input is `true`.
 
+* **Password input field for @valtimo/user-interface**
+
+  The `v-input` component now supports the input type `password`, which hides input by default. A button is shown to
+  toggle visbility.
+
 * **Documenten API plugin added to @valtimo/plugin**
 
   The Documenten API plugin has been added and supports plugin configuration and configuration for the action 
