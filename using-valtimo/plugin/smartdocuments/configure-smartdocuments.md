@@ -38,7 +38,7 @@ placeholder in the SmartDocuments template. The value on the right-hand side can
 3. A value retrieved from a process variable. This value should start with `pv:` and should end with the name of the
    process variable. For example `pv:firstname`.
 
-After filling in all fields, the process-link can be saved. Now everytime the service-task is executed, a document is
+After filling in all fields, the process-link can be saved. Now every time the service-task is executed, a document is
 generated. Remember that the generated document is not visible anywhere yet. A logical next step is to handle the
 generated document. For example, the next service-task can add the generated document to the case.
 

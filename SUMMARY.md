@@ -19,6 +19,7 @@
   * [Plugins](using-valtimo/plugin/plugins.md)
     * [Configuring plugins](using-valtimo/plugin/configure-plugin.md)
     * [Creating process links](using-valtimo/plugin/create-process-link.md)
+    * [SmartDocuments plugin](using-valtimo/plugin/smartdocuments/configure-smartdocuments.md)
 * [Extending Valtimo](extending-valtimo/extending-valtimo.md)
   * [Plugins](extending-valtimo/plugin/plugins.md)
     * [Custom plugin definitions](extending-valtimo/plugin/custom-plugin-definition.md)
