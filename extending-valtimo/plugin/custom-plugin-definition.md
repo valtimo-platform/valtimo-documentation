@@ -27,9 +27,18 @@ annotation.
 For example:
 
 ```kotlin
-@PluginProperty(key = "username")
+@PluginProperty(key = "username", secret = false)
 private lateinit var username: String
 ```
+
+By setting the `secret` attribute in this annotation to `true` the plugin property will be marked as a secret. This is
+meant to be used for sensitive information (e.g. passwords or API keys). Secrets are encrypted before being stored in
+the database and will be automatically decrypted before use in the plugin.
+
+These things should be kept in mind when creating the frontend components for secrets:
+- When editing an existing plugin configuration the value will not be sent back to the frontend to avoid exposing
+  sensitive data
+- Only when submitting a value that is not null or empty string will the property be updated.
 
 ### Plugin action
 

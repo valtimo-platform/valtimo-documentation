@@ -19,10 +19,12 @@ The following features were added:
   Information on how to use Postgres can be found [here](/valtimo-implementation/database-support.md).
 
 
-* **New feature3**
+* **Secret keys in plugins are encypted before storing**
 
-  Description of the new feature goes here.
-  Also link to the page that explains the feature in greater detail.
+  Properties in plugins can now be marked as secret. When configuring the plugin the secrets will be encrypted before 
+  being stored.
+  
+  More information on plugin secrets can be found [here](/extending-valtimo/plugin/custom-plugin-definition.md#plugin-properties).
 
 
 ## Bugfixes
