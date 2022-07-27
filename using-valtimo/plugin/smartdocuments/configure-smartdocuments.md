@@ -1,18 +1,33 @@
 # Using the SmartDocuments Plugin
 
-## Setup
+## Configure the plugin
 
-Before using the SmartDocuments Plugin, the plugin has to be configured. This is
-explained [here](../configure-plugin.md). A general description on how to create process links, can be found [here](../create-process-link.md).
+Before using the SmartDocuments Plugin, the plugin has to be configured. A general description on how to configure
+plugins, can be found [here](../configure-plugin.md).
+
+If the SmartDocuments plugin is not visible in the plugin menu, its possible the application is missing a dependency.
+Instructions on how to add the SmartDocuments dependency can be
+found [here](../../../valtimo-implementation/modules/smartdocuments.md)
+
+The 'SmartDocuments URL', 'Username' and 'Password' should all be retrieved from the SmartDocuments application.
+
+An example plugin configuration:
+![example plugin configuration](img/configure-plugin.png)
 
 ## Generate documents
+
+SmartDocuments main function is to generate documents based on a template.
+
+### Configuring the process link
+
+A general description on how to create process links, can be found [here](../create-process-link.md).
 
 Both the 'Template group' and 'Template name' can be retrieved from the SmartDocuments application.
 
 The 'Process variable name for storing document' is the name of the process variable where the generated document is
 stored. This process variable can be used to access the document in another BPMN task.
 
-The 'Document format' contain all supported formats for the generated document.
+The 'Document format' contains all supported formats for the generated document.
 
 A document is generated with data taken from the 'Template data'. The value on the left-hand side must match the
 placeholder in the SmartDocuments template. The value on the right-hand side can contain any of the following values:
@@ -27,4 +42,5 @@ After filling in all fields, the process-link can be saved. Now everytime the se
 generated. Remember that the generated document is not visible anywhere yet. A logical next step is to handle the
 generated document. For example, the next service-task can add the generated document to the case.
 
+An example process link configuration:
 ![Generate document process link](img/generate-document-process-link.png)
