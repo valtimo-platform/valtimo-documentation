@@ -27,6 +27,8 @@
   * [Troubleshoot](reference/troubleshoot.md)
   * [User interface](reference/user-interface/user-interface.md)
     * [Design philosophy](reference/user-interface/design-philosophy.md)
+  * [Feature toggles](reference/feature-toggles/feature-toggles.md)
+    * [Available feature toggles](reference/feature-toggles/available-feature-toggles.md)
 * [Release notes](release-notes/release-notes.md)
   * [9.x.x](release-notes/major9/major-9.md)
     * [9.18.0/5.6.0 (RC)](release-notes/major9/09.18.0/index.md)
