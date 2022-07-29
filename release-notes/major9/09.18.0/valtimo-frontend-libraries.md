@@ -14,13 +14,11 @@ The following features were added:
 
 The following bugs were fixed:
 
-* **Bug1**
+* **Downgraded `@ng-bootstrap/ng-bootstrap` dependency**
 
-  Description of what the issue was.
-
-* **Bug2**
-
-  Description of what the issue was.
+  Recently the dependency `@ng-bootstrap/ng-bootstrap` was upgraded to major version 12 throughout the libraries. This
+  caused problems in implementations, as it requires version 5 of Bootstrap, and the libraries use version 4.
+  [`@ng-bootstrap/ng-bootstrap` version 11 is compatible with Bootstrap version 4 and Angular 13.](https://www.npmjs.com/package/@ng-bootstrap/ng-bootstrap)
 
 ## Breaking changes
 
