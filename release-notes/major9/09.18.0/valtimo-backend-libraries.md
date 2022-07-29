@@ -1,4 +1,4 @@
-# Backend libraries 9.18.0
+# Backend libraries 9.18.0 RC
 
 ## New Features
 
