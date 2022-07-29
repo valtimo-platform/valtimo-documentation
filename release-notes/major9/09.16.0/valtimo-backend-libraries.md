@@ -1,4 +1,4 @@
-# Backend libraries
+# Backend libraries 9.16.0
 
 ## New Features
 
@@ -45,8 +45,8 @@ No breaking changes.
 
 ## Deprecations
 
-No deprecations.
+No new deprecations.
 
 ## Known issues
 
-No known issues.
+No new known issues.
