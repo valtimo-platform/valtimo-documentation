@@ -1,4 +1,4 @@
-# Backend libraries 9.17.0
+# Backend libraries 9.17.0 RC
 
 ## New Features
 
