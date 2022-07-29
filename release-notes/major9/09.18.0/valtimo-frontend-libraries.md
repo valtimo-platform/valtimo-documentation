@@ -4,15 +4,10 @@
 
 The following features were added:
 
-* **New feature1**
+* **Show full name of user in the top bar**
 
-  Description of the new feature goes here.
-  Also link to the page that expains the feature in greater detail.
-
-* **New feature2**
-
-  Description of the new feature goes here.
-  Also link to the page that expains the feature in greater detail.
+  The full name of the logged-in user can now be shown in the top bar. To enables this features, set
+  `showUserNameInTopBar` to true under `featureToggles` in your environment file.
 
 
 ## Bugfixes
