@@ -6,7 +6,7 @@ The following features were added:
 
 * **New feature1**
 
-  Description of the new feature goes here. 
+  Description of the new feature goes here.
   Also link to the page that explains the feature in greater detail.
 
 * **New feature2**
@@ -14,14 +14,14 @@ The following features were added:
   Description of the new feature goes here.
   Also link to the page that explains the feature in greater detail.
 
-
 ## Bugfixes
 
 The following bugs were fixed:
 
-* **Bug1**
+* **'No form linked' when a start form has been linked**
 
-  Description of what the issue was.
+  For some cases, it was no longer possible to manually create a new case because of a popup saying that there was no
+  start form configured even though it had been configured. The logs would show an 500 Internal Server Error.
 
 * **Bug2**
 
