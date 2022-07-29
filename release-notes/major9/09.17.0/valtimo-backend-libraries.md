@@ -45,8 +45,4 @@ No new deprecations.
 
 ## Known issues
 
-* **Multiple form associations on process definition (36319)**
-
-  When multiple start forms are associated with a single process definition the user is unable to start a new case of
-  that specific type.
-
+No new known issues.
