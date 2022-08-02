@@ -9,6 +9,10 @@ The following features were added:
   The full name of the logged-in user can now be shown in the top bar. To enables this features, set
   `showUserNameInTopBar` to true under `featureToggles` in your environment file.
 
+* **Modify and delete plugin configurations**
+
+  On the plugin management page plugin configurations can now be modified and/or deleted from a modal window, 
+  after clicking on edit next to an existing plugin configuration.
 
 ## Bugfixes
 
