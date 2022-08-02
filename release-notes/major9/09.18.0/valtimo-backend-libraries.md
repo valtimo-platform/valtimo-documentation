@@ -4,10 +4,9 @@
 
 The following features were added:
 
-* **New feature1**
+* **Added support for a new custom ExternalFormFieldType.**
 
-  Description of the new feature goes here.
-  Also link to the page that explains the feature in greater detail.
+  This allows Valtimo implementations to load data from any domain. For example a form field could have a key like "custom:domainName:propertyName".
 
 * **New feature2**
 
