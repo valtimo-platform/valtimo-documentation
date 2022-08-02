@@ -9,6 +9,10 @@ The following features were added:
   The full name of the logged-in user can now be shown in the top bar. To enables this features, set
   `showUserNameInTopBar` to true under `featureToggles` in your environment file.
 
+* **Modify and delete plugin configurations**
+
+  On the plugin management page plugin configurations can now be modified and/or deleted from a modal window, 
+  after clicking on edit next to an existing plugin configuration.
 
 ## Bugfixes
 
@@ -19,6 +23,11 @@ The following bugs were fixed:
   Recently the dependency `@ng-bootstrap/ng-bootstrap` was upgraded to major version 12 throughout the libraries. This
   caused problems in implementations, as it requires version 5 of Bootstrap, and the libraries use version 4.
   [`@ng-bootstrap/ng-bootstrap` version 11 is compatible with Bootstrap version 4 and Angular 13.](https://www.npmjs.com/package/@ng-bootstrap/ng-bootstrap)
+
+* **Locked `swagger-ui` dependency version**
+
+  The dependency `swagger-ui` was upgrading to `4.13.0`, which was causing issues in implementations. The version has
+  now been locked to version `4.12.0`.
 
 ## Breaking changes
 
