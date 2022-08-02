@@ -24,6 +24,11 @@ The following bugs were fixed:
   caused problems in implementations, as it requires version 5 of Bootstrap, and the libraries use version 4.
   [`@ng-bootstrap/ng-bootstrap` version 11 is compatible with Bootstrap version 4 and Angular 13.](https://www.npmjs.com/package/@ng-bootstrap/ng-bootstrap)
 
+* **Locked `swagger-ui` dependency version**
+
+  The dependency `swagger-ui` was upgrading to `4.13.0`, which was causing issues in implementations. The version has
+  now been locked to version `4.12.0`.
+
 ## Breaking changes
 
 The following breaking changes were introduced:
