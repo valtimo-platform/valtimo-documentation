@@ -21,7 +21,7 @@ The following features were added:
   under the Documenten API plugin. The existing OpenZaak plugin code has been refactored to serve as an authentication
   plugin. Associated changes:
   * Process link screen now shows the plugin names with configuration titles for clarity.
-  * The `PluginManagementService` and associated models have been moved the `@valtimo/plugin` from
+  * The `PluginManagementService` and associated models have been moved to `@valtimo/plugin` from
     `@valtimo/plugin-management`, to support using its methods inside plugins.
   * Added a `digitOnly` input directive to `@valtimo/user-interface`, now used for a RSIN input field.
 
