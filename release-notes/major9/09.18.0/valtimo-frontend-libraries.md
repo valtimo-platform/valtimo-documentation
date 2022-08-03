@@ -14,6 +14,17 @@ The following features were added:
   On the plugin management page plugin configurations can now be modified and/or deleted from a modal window, 
   after clicking on edit next to an existing plugin configuration.
 
+* **Support multiple ZGW API implementations**
+
+  The libraries `@valtimo/plugin`, '@valtimo/plugin-management' and `@valtimo/user-interface` have been modified to
+  support multiple implementations for each ZGW API. For now, an authentication plugin configuration can be selected
+  under the Documenten API plugin. The existing OpenZaak plugin code has been refactored to serve as an authentication
+  plugin. Associated changes:
+  * Process link screen now shows the plugin names with configuration titles for clarity.
+  * The `PluginManagementService` and associated models have been moved to `@valtimo/plugin` from
+    `@valtimo/plugin-management`, to support using its methods inside plugins.
+  * Added a `digitOnly` input directive to `@valtimo/user-interface`, now used for a RSIN input field.
+
 ## Bugfixes
 
 The following bugs were fixed:
