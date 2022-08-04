@@ -9,12 +9,26 @@ The following features were added:
   Introducing support for creating ExternalFormFieldResolvers that implement a new support(String name) method.
   The goal is to let implementation teams define their own FormFieldDataresolvers outside the ExternalFormFieldType enum definition.
   Form keys should be able to define a key like so "anyDataSource.propertyName".
-  Note: the old support(ExternalFormFieldType) method is being deprecated.
+  _Note: the old support(ExternalFormFieldType) method is being deprecated._
 
-* **New feature2**
+```
 
-  Description of the new feature goes here.
-  Also link to the page that explains the feature in greater detail.
+class ExampleFormFieldDataResolver() : FormFieldDataResolver {
+  
+    // OLD
+    override fun supports(externalFormFieldType: ExternalFormFieldType): Boolean {
+        return false <- can be set to false therefore skipped
+    }
+  
+    // NEW
+    override fun supports(externalFormFieldType: String): Boolean {
+        return externalFormFieldType == "example"
+    }
+
+...
+
+```
+
 
 ## Bugfixes
 
