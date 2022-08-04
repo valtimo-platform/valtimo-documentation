@@ -13,7 +13,7 @@ The following features were added:
 
 ```
 
-class ExampleFormFieldDataResolver() : FormFieldDataResolver {
+class AnyDataSourceExampleFormFieldDataResolver() : FormFieldDataResolver {
   
     // OLD
     override fun supports(externalFormFieldType: ExternalFormFieldType): Boolean {
@@ -22,7 +22,7 @@ class ExampleFormFieldDataResolver() : FormFieldDataResolver {
   
     // NEW
     override fun supports(externalFormFieldType: String): Boolean {
-        return externalFormFieldType == "example"
+        return externalFormFieldType == "anyDataSource"
     }
 
 ...
