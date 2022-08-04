@@ -15,7 +15,7 @@ The following features were added:
 
 class AnyDataSourceExampleFormFieldDataResolver() : FormFieldDataResolver {
   
-    // OLD
+    // DEPRECATED
     override fun supports(externalFormFieldType: ExternalFormFieldType): Boolean {
         return false <- can be set to false therefore skipped
     }
