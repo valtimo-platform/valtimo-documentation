@@ -4,9 +4,12 @@
 
 The following features were added:
 
-* **Added support for a new custom ExternalFormFieldType.**
+* **Added support for custom FormFieldDataresolvers.**
 
-  This allows Valtimo implementations to load data from any domain. For example a form field could have a key like "custom:domainName:propertyName".
+  Introducing support for creating ExternalFormFieldResolvers that implement a new support(String name) method.
+  The goal is to let implementation teams define their own FormFieldDataresolvers outside the ExternalFormFieldType enum definition.
+  Form keys should be able to define a key like so "anyDataSource.propertyName".
+  Note: the old support(ExternalFormFieldType) method is being deprecated.
 
 * **New feature2**
 
