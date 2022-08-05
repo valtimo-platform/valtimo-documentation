@@ -76,6 +76,19 @@ The following features were added:
   ```
 
 
+* **New option to override default column sort direction from environment file for custom case definition columns**
+
+  The `DefinitionColumn` interface (exported from `@valtimo/config`), now supports the type `Direction` on its key `default`.
+  
+  This can be either '`ASC`' or '`DESC`', in addition to the currently supported `boolean` value. 
+
+  ##### For example:  
+  
+  If set to '`ASC`', the case list will be explicitly sorted ascendingly on the column with this value on the 
+  property `default` (in the environment file). If `default` is set to **true**, the column is sorted descendingly on this property, but this will not be visible to the user, which was the default behaviour before this change was made.
+
+  ###### Please be mindful that list sorting states stored in the local storage will override this setting.
+
 ## Bugfixes
 
 The following bugs were fixed:
