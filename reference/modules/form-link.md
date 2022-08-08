@@ -13,9 +13,9 @@
 
 | Property              | Description                                                   | Example                         | 
 |:----------------------|:--------------------------------------------------------------|:--------------------------------|
-| `formName`            | The filename of the form.                                     | `start-form-personal-loan`      |
-| `formFlowName`        | The filename of the form flow.                                | `start-form-flow-personal-loan` |
-| `formLinkElementId`   | The activity ID for the activity the form links to.           | `start-personal-loan-event`     |
+| `formName`            | The identifier of the form.                                   | `start-form-personal-loan`      |
+| `formFlowName`        | The identifier of the form flow.                              | `start-form-flow-personal-loan` |
+| `formLinkElementId`   | The activity identifier for the activity the form links to.   | `start-personal-loan-event`     |
 | `formAssociationType` | The camunda activity type for the activity the form links to. | `start-event`                   |
 
 ## Supported form association types
