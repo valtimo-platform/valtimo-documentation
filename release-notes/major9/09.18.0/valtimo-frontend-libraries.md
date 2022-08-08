@@ -40,6 +40,12 @@ The following bugs were fixed:
   The dependency `swagger-ui` was upgrading to `4.13.0`, which was causing issues in implementations. The version has
   now been locked to version `4.12.0`.
 
+* **Fix no form definition found warning message**
+
+  On opening a task, when a form definition could not be found, a message was shown 
+  `formManagement.noFormDefinitionFound`. This has now been changed in the support process start modal and the task
+  detail modal to show a translated warning message.
+
 ## Breaking changes
 
 The following breaking changes were introduced:
