@@ -24,7 +24,7 @@ The name of the file needs to correspond to the process definition key.
 
    ![Configuring a form link](img/configure-form-link-code.png)
 
-3. Create the form links. An example of what this looks like can be found below:
+2. Create the form links. An example of what this looks like can be found below:
 
     ```json
     [
@@ -45,3 +45,6 @@ The name of the file needs to correspond to the process definition key.
         }
     ]
     ```
+
+   More information on which properties need to be set can be found 
+   [here](/reference/modules/form-link.md#supported-form-association-types).

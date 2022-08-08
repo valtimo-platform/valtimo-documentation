@@ -9,3 +9,18 @@
 | **Internal route**       | Connects the user task or start event to a custom Angular form in the application.           | -                   |
 | **External URL**         | Connects the user task or start event to an external web form.                               | -                   |
 
+## Supported properties for configuring form links
+
+| Property              | Description                                                   | Example                         | 
+|:----------------------|:--------------------------------------------------------------|:--------------------------------|
+| `formName`            | The filename of the form.                                     | `start-form-personal-loan`      |
+| `formFlowName`        | The filename of the form flow.                                | `start-form-flow-personal-loan` |
+| `formLinkElementId`   | The activity ID for the activity the form links to.           | `start-personal-loan-event`     |
+| `formAssociationType` | The camunda activity type for the activity the form links to. | `start-event`                   |
+
+## Supported form association types
+
+| Property      | Description           |
+|:--------------|:----------------------|
+| `start-event` | Start event activity. |
+| `user-task`   | User task activity.   |
