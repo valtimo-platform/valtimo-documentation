@@ -15,7 +15,7 @@ To create a form link for a start event or user task, the following steps are ne
 
 ![Configuring a form link](img/configure-form-link-ui.png)
 
-## Configuring a form link through the application project
+## Configuring a form link through application project files
 
 In order to connect a form or form flow to a task, the following steps are necessary:
 
