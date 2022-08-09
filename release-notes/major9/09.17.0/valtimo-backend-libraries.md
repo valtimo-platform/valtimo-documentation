@@ -28,8 +28,8 @@ The following features were added:
 
 * **Support for Keycloak resource roles**
 
-  In addition to the realm roles Valtimo can now also include resource roles for a specified client. Add the client 
-  name to the configuration under the key valtimo.keycloak.client and its roles will be included.
+  In addition to the realm roles, Valtimo can now also include resource roles for a specified client. Add the client 
+  name to the configuration under the key `valtimo.keycloak.client` and its roles will be included.
 
 ## Bugfixes
 
