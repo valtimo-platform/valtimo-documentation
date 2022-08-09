@@ -83,14 +83,14 @@ class TwitterPluginFactory(
 ```
 
 ### Plugin categories
-There are several use cases in which a plugin might rely on another.
-For example, you might want to use a supplier for your tweets, or add some authentication headers to the http request.
+Plugin categories allow a plugin developer to delegate specific functionality to another plugin using an interface.
+A plugin implementing an interface annotated with `@PluginCategory` can can be autowired into a `@PluginProperty` of the same type on a different plugin.
 
-Plugin categories enable you to define an interface for your plugin which can be autowired into a `@PluginProperty` of another plugin. This makes it easier to 
+For example, you might want to use a supplier for your tweets, or add some authentication headers to the http request.
 
 The example below explains the implementation of a tweet supplier for the Twitter plugin.
 
-First, the interface is defined that includes the required functionality. `@PluginCategory()` with a key is added so that can be used to find configurations of that type in the front-end:
+First, the interface is defined that includes the required functionality. `@PluginCategory` with a key is added so that can be used to find configurations of that type in the front-end:
 ```kotlin
 @PluginCategory(key = "tweet-supplier")
 interface TweetSupplier {
