@@ -41,7 +41,7 @@ The following was deprecated:
 
 * **FormFieldDataResolver supports method**
 
-  FormFieldDataResolver` supports(externalFormFieldType: ExternalFormFieldType)` was deprecated and is replaced with 
+  FormFieldDataResolver `supports(externalFormFieldType: ExternalFormFieldType)` was deprecated and is replaced with 
   `supports(externalFormFieldType: String)`.
 
 * **Deprecation2**

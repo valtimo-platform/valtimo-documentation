@@ -2,14 +2,21 @@
 
 This page describes how to update Valtimo from the previous version to the current.
 
-* **Breaking change 1/Deprecation 1**
+* **FormFieldDataResolver supports method**
+    
+    A new supports method `supports(externalFormFieldType: String)` replaces the
+    already existing `supports(externalFormFieldType: ExternalFormFieldType)` method
+    for the `FormFieldDataResolver` interface.
 
-  1. **Step1**
+  1. **Replace uses of old method with new method**
 
-     Description
-  2. **Step2**
+     If the old method was used, the new method can be used by converting the
+     existing argument to a string.
 
-     Description
+  2. **Implement new supports method**
+
+     For classes implementing the `FormFieldDataResolver` interface, the new method
+     should be implemented.
 
 * **Breaking change 2/Deprecation 2**
 
