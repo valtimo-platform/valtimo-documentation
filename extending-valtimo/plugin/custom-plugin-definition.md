@@ -83,17 +83,20 @@ class TwitterPluginFactory(
 ```
 
 ### Plugin categories
-There are use-cases where you would like to use another plugin in order to share functionality and/or configuration.
-Plugin Categories to the rescue: this functionality lets you choose a plugin implementing a specific interface into your plugin as a `@PluginProperty` in the configuration screen.
+There are several use cases in which a plugin might rely on another.
+Plugin Categories enable you to define an interface for your plugin which can be autowired into a `@PluginProperty` of another plugin.
 
-For example, you might want to use a supplier for your tweets:
+For example, you might want to use a supplier for your tweets.
+
+First, the interface is defined that includes the required functionality. `@PluginCategory()` with key is added so that can be used to find configurations of that type in the front-end:
 ```kotlin
-@PluginCategory()
+@PluginCategory(key = "tweet-supplier")
 interface TweetSupplier {
     fun supplyMessage() : String
 }
 ```
 
+At least one implementation of the plugin is required. In this case the `PropertyTweetSupplier` implements the interface TweetSupplier and supports all required functionality. When searching for configurations for category `tweet-supplier` all stored `PropertyTweetSupplier` configurations are found.
 ```kotlin
 @Plugin(
   key = "property-tweet-supplier",
@@ -110,6 +113,7 @@ class PropertyTweetSupplier: TweetSupplier {
 }
 ```
 
+When creating a configuration of the `TwitterPlugin` the front-end should get and show a list of all available configuration of type `tweet-supplier`. The id of the chosen configuration will be part of the properties submitted for the creation of the `TwitterPlugin` configuration. The `@PluginProperty` can reference the interface type corresponding to the category. The plugin will then be automatically injected with the corresponding configuration when using the `TwitterPlugin`. 
 ```kotlin
 @Plugin(
     key = "twitter",
