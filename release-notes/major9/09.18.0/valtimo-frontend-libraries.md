@@ -14,6 +14,30 @@ The following features were added:
   On the plugin management page plugin configurations can now be modified and/or deleted from a modal window, 
   after clicking on edit next to an existing plugin configuration.
 
+* **Support multiple ZGW API implementations**
+
+  The libraries `@valtimo/plugin`, '@valtimo/plugin-management' and `@valtimo/user-interface` have been modified to
+  support multiple implementations for each ZGW API. For now, an authentication plugin configuration can be selected
+  under the Documenten API plugin. The existing OpenZaak plugin code has been refactored to serve as an authentication
+  plugin. Associated changes:
+  * Process link screen now shows the plugin names with configuration titles for clarity.
+  * The `PluginManagementService` and associated models have been moved to `@valtimo/plugin` from
+    `@valtimo/plugin-management`, to support using its methods inside plugins.
+  * Added a `digitOnly` input directive to `@valtimo/user-interface`, now used for a RSIN input field.
+
+* **New option to override default column sort direction from environment file for custom case definition columns**
+
+  The `DefinitionColumn` interface (exported from `@valtimo/config`), now supports the type `Direction` on its key `default`.
+  
+  This can be either '`ASC`' or '`DESC`', in addition to the currently supported `boolean` value. 
+
+  ##### For example:  
+  
+  If set to '`ASC`', the case list will be explicitly sorted ascendingly on the column with this value on the 
+  property `default` (in the environment file). If `default` is set to **true**, the column is sorted descendingly on this property, but this will not be visible to the user, which was the default behaviour before this change was made.
+
+  ###### Please be mindful that list sorting states stored in the local storage will override this setting.
+
 ## Bugfixes
 
 The following bugs were fixed:
@@ -28,6 +52,12 @@ The following bugs were fixed:
 
   The dependency `swagger-ui` was upgrading to `4.13.0`, which was causing issues in implementations. The version has
   now been locked to version `4.12.0`.
+
+* **Fix no form definition found warning message**
+
+  On opening a task, when a form definition could not be found, a message was shown 
+  `formManagement.noFormDefinitionFound`. This has now been changed in the support process start modal and the task
+  detail modal to show a translated warning message.
 
 ## Breaking changes
 
