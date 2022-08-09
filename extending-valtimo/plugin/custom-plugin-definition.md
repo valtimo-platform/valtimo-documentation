@@ -96,7 +96,7 @@ interface TweetSupplier {
 }
 ```
 
-At least one implementation of the plugin is required. In this case the `PropertyTweetSupplier` implements the interface TweetSupplier and supports all required functionality. When searching for configurations for category `tweet-supplier` all stored `PropertyTweetSupplier` configurations are found.
+At least one implementation of the plugin is required. In this case the `PropertyTweetSupplier` implements the interface `TweetSupplier` and supports all required functionality. When searching for configurations for category `tweet-supplier` all stored `PropertyTweetSupplier` configurations are found.
 ```kotlin
 @Plugin(
   key = "property-tweet-supplier",
