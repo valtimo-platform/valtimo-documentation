@@ -82,6 +82,57 @@ class TwitterPluginFactory(
 }
 ```
 
+### Plugin categories
+There are use-cases where you would like to use another plugin in order to share functionality and/or configuration.
+Plugin Categories to the rescue: this functionality lets you choose a plugin implementing a specific interface into your plugin as a `@PluginProperty` in the configuration screen.
+
+For example, you might want to use a supplier for your tweets:
+```kotlin
+@PluginCategory()
+interface TweetSupplier {
+    fun supplyMessage() : String
+}
+```
+
+```kotlin
+@Plugin(
+  key = "property-tweet-supplier",
+  title = "Property tweet supplier",
+  description = "Get a message from a property"
+)
+class PropertyTweetSupplier: TweetSupplier {
+    @PluginProperty(key = "message", secret = false)
+    private lateinit var message: String
+    
+    fun supplyMessage(): String {
+       return message
+    }
+}
+```
+
+```kotlin
+@Plugin(
+    key = "twitter",
+    title = "Twitter Plugin",
+    description = "Tweet and retweet with this new Twitter plugin"
+)
+class TwitterPlugin {
+  @PluginProperty(key = "tweetSupplierConfigurationId", secret = false)
+  private lateinit var tweetSupplier: TweetSupplier
+
+  @PluginAction(
+    key = "post-tweet",
+    title = "Post tweet",
+    description = "Post a tweet on twitter.",
+    activityTypes = [ActivityType.SERVICE_TASK]
+  )
+  fun postTweet(execution: DelegateExecution, postTweetProperties: PostTweetProperties) {
+      val message = tweetSupplier.supplyTweet()
+        ...
+  }
+}
+```
+
 ## Front-end
 
 To develop a front-end plugin, the library `@valtimo/plugin` provides several interfaces which a front-end
