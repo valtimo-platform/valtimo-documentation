@@ -86,10 +86,6 @@ Instructions on how to migrate to this version of Valtimo can be found [here](mi
 
 This version has the following known issues:
 
-* **Issue1**
-    * Discovered in version x.x.x
-    * Describe what can be done to work around the issue
-
-* **Issue2**
-    * Discovered in version x.x.x
-    * Describe what can be done to work around the issue
+* **Cases sort by default on the same property key**
+    * Discovered in version 9.18.0
+    * When two cases are sorted by default on the same property key and switched between them, one follows the sorting direction of the other.
