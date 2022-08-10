@@ -4,13 +4,13 @@
 
 The following features were added:
 
-* **Added support for custom FormFieldDataresolvers.**
+* **Added support for custom FormFieldDataResolvers**
 
-  Introducing support for creating ExternalFormFieldResolvers that implement a new support(String name) method.
-  The goal is to let implementation teams define their own FormFieldDataResolvers outside the `ExternalFormFieldType`
-  enum definition.
-
-  Form keys should be able to define a key like so `anyDataSource.propertyName`.
+  Support was added for creating ExternalFormFieldResolvers that implement a new support(String name) method.
+  Previously, an enum `ExternalFormFieldType` denoted the prefixes that were supported, which prevented
+  implementations from making custom prefixes. Information on how to use form field data resolvers
+  can be found [here](/using-valtimo/form-link/using-form-field-data-resolvers.md), and information on
+  how to create custom form field data resolvers can be found [here](/extending-valtimo/form-link/custom-form-field-data-resolver.md).
 
 ## Bugfixes
 
@@ -41,8 +41,8 @@ The following was deprecated:
 
 * **FormFieldDataResolver supports method**
 
-  FormFieldDataResolver `supports(externalFormFieldType: ExternalFormFieldType)` was deprecated and is replaced with 
-  `supports(externalFormFieldType: String)`.
+  FormFieldDataResolver `supports(ExternalFormFieldType externalFormFieldType)` was deprecated and is replaced with 
+  `supports(String externalFormFieldType)`.
 
 * **Deprecation2**
 
