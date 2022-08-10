@@ -19,7 +19,7 @@
     * [Camunda](valtimo-implementation/modules/camunda-webapps.md)
 * [Using Valtimo](using-valtimo/using-valtimo.md)
   * [Form links](using-valtimo/form-link/form-link.md)
-    * [How to refer to data outside a form](using-valtimo/form-link/using-form-field-data-resolvers.md)
+    * [How to refer to external data from a form](using-valtimo/form-link/using-form-field-data-resolvers.md)
     * [How to link a form to a task](using-valtimo/form-link/configure-task.md)
   * [Plugins](using-valtimo/plugin/plugins.md)
     * [Configuring plugins](using-valtimo/plugin/configure-plugin.md)

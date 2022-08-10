@@ -25,7 +25,9 @@ public class CustomFormFieldDataResolver implements FormFieldDataResolver {
     }
 
     public Map<String, Object> get(String documentDefinitionName, UUID documentId, String... varNames) {
-        // Implementation of what this FormFieldDataResolver should do goes here
+        // Implementation of what this FormFieldDataResolver should do goes here.
+        // The documentDefinitionName, documentId and varNames can be used to determine which data is
+        // to be retrieved.
     }
 
 }
