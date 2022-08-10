@@ -4,15 +4,13 @@
 
 The following features were added:
 
-* **New feature1**
+* **Added support for custom FormFieldDataResolvers**
 
-  Description of the new feature goes here.
-  Also link to the page that explains the feature in greater detail.
-
-* **New feature2**
-
-  Description of the new feature goes here.
-  Also link to the page that explains the feature in greater detail.
+  Support was added for creating ExternalFormFieldResolvers that implement a new support(String name) method.
+  Previously, an enum `ExternalFormFieldType` denoted the prefixes that were supported, which prevented
+  implementations from making custom prefixes. Information on how to use form field data resolvers
+  can be found [here](/using-valtimo/form-link/using-form-field-data-resolvers.md), and information on
+  how to create custom form field data resolvers can be found [here](/extending-valtimo/form-link/custom-form-field-data-resolver.md).
 
 ## Bugfixes
 
@@ -41,9 +39,10 @@ Instructions on how to migrate to this version of Valtimo can be found [here](mi
 
 The following was deprecated:
 
-* **Deprecation1**
+* **FormFieldDataResolver supports method**
 
-  X was deprecated and is replaced with Y.
+  FormFieldDataResolver `supports(ExternalFormFieldType externalFormFieldType)` was deprecated and is replaced with 
+  `supports(String externalFormFieldType)`.
 
 * **Deprecation2**
 
