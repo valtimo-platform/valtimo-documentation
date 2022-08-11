@@ -82,6 +82,74 @@ class TwitterPluginFactory(
 }
 ```
 
+### Plugin categories
+Plugin categories denote a commonality between plugins. They can be applied to interfaces, so any plugin
+implementing this will belong to that category. When a plugin implements more than one interface with a category, it
+belongs to multiple categories. This can be used by backend to create plugins that rely on other plugins to be
+configured, and can be used by frontend to search for plugins in a specific category.
+
+A plugin implementing an interface annotated with `@PluginCategory` can can be autowired into a `@PluginProperty` of
+the same type on a different plugin.
+
+The example below explains the implementation of a tweet supplier for a Twitter plugin, which can then be used to send
+out actual tweets.
+
+First, the interface is defined that includes the required functionality. `@PluginCategory` with a key is added so that
+can be used to find configurations of that type in the front-end:
+```kotlin
+@PluginCategory(key = "tweet-supplier")
+interface TweetSupplier {
+    fun supplyMessage() : String
+}
+```
+
+At least one implementation of the plugin is required. In this case the `PropertyTweetSupplier` implements the
+interface `TweetSupplier` and supports all required functionality. When searching for configurations for category
+`tweet-supplier` all stored `PropertyTweetSupplier` configurations are found.
+```kotlin
+@Plugin(
+  key = "property-tweet-supplier",
+  title = "Property tweet supplier",
+  description = "Get a message from a property"
+)
+class PropertyTweetSupplier: TweetSupplier {
+    @PluginProperty(key = "message", secret = false)
+    private lateinit var message: String
+    
+    fun supplyMessage(): String {
+       return message
+    }
+}
+```
+
+When creating a configuration of the `TwitterPlugin` the front-end should get and show a list of all available
+configuration of type `tweet-supplier`. The id of the chosen configuration will be part of the properties submitted for
+the creation of the `TwitterPlugin` configuration. The `@PluginProperty` can reference the interface type corresponding
+to the category. The plugin will then be automatically injected with the corresponding configuration when using the
+`TwitterPlugin`. 
+```kotlin
+@Plugin(
+    key = "twitter",
+    title = "Twitter Plugin",
+    description = "Tweet and retweet with this new Twitter plugin"
+)
+class TwitterPlugin {
+  @PluginProperty(key = "tweetSupplierConfigurationId", secret = false)
+  private lateinit var tweetSupplier: TweetSupplier
+
+  @PluginAction(
+    key = "post-tweet",
+    title = "Post tweet",
+    description = "Post a tweet on twitter.",
+    activityTypes = [ActivityType.SERVICE_TASK]
+  )
+  fun postTweet(execution: DelegateExecution, postTweetProperties: PostTweetProperties) {
+      val message = tweetSupplier.supplyTweet()
+        ...
+  }
+}
+```
+
 ## Front-end
 
 To develop a front-end plugin, the library `@valtimo/plugin` provides several interfaces which a front-end

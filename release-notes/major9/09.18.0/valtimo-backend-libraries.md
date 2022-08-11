@@ -4,13 +4,22 @@
 
 The following features were added:
 
-* **Added support for custom FormFieldDataResolvers**
+* **Custom FormFieldDataResolvers**
 
   Support was added for creating ExternalFormFieldResolvers that implement a new support(String name) method.
   Previously, an enum `ExternalFormFieldType` denoted the prefixes that were supported, which prevented
   implementations from making custom prefixes. Information on how to use form field data resolvers
   can be found [here](/using-valtimo/form-link/using-form-field-data-resolvers.md), and information on
   how to create custom form field data resolvers can be found [here](/extending-valtimo/form-link/custom-form-field-data-resolver.md).
+
+* **Plugin categories**
+
+  Plugins can now be categorized. This is done by annotating an interface, which plugins can then implement, e.g.
+  `@PluginCategory(key = "category-key-here")`. A plugin that implements more than one interface with a category will
+  belong to both categories.
+
+  This allows for plugins to rely on other plugins. More information on this feature can be found
+  [here](/extending-valtimo/plugin/custom-plugin-definition.md#plugin-categories).
 
 ## Bugfixes
 
