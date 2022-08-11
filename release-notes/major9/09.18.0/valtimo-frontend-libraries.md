@@ -24,6 +24,10 @@ The following features were added:
   * The `PluginManagementService` and associated models have been moved to `@valtimo/plugin` from
     `@valtimo/plugin-management`, to support using its methods inside plugins.
   * Added a `digitOnly` input directive to `@valtimo/user-interface`, now used for a RSIN input field.
+* **Added the following ZGW plugins**
+  * Documenten API
+  * Zaken API
+  * Open Zaak API
 
 * **New option to override default column sort direction from environment file for custom case definition columns**
 

@@ -12,6 +12,13 @@ The following features were added:
   can be found [here](/using-valtimo/form-link/using-form-field-data-resolvers.md), and information on
   how to create custom form field data resolvers can be found [here](/extending-valtimo/form-link/custom-form-field-data-resolver.md).
 
+* **Added new ZGW plugins** 
+  * documenten-api
+    * This plugin has a connection to the Documenten API. When a document was generated this plugin is used to 
+    upload the document to the Documenten API
+  * zaken-api
+    * This plugin has a connection to the Zaken API. This plugin supports the action to link documents that have been uploaded 
+    to the Documenten API to the Zaak of the current case 
 ## Bugfixes
 
 The following bugs were fixed:
