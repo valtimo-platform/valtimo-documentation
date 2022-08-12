@@ -62,7 +62,7 @@ The following features were added:
   Previously, `@valtimo/user-interface` supported tooltips through the `NgbTooltipModule`. However, this led to
   positioning issues. A custom directive has been added based on [this guide](https://indepth.dev/posts/1146/tooltip-with-angular-cdk).
   It is based on `@angular/cdk`. To use this tooltip, import the `TooltipModule` from `@valtimo/user-interface` and
-  add the tooltip directive to your element like so:
+  add the tooltip directive to an element like so:
 
   #### **`sample.component.html`**
   ```angular2html
