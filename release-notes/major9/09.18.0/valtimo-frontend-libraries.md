@@ -28,6 +28,9 @@ The following features were added:
   * Open Zaak API
     * This plugin has no actions but contains the ability to make a connection to Open Zaak. Other plugins can use
       this plugin as an authentication configuration
+    * The plugin is found in the module `@valtimo/plugin` under /plugins/open-zaak
+      * In order to use this plugin add the `OpenZaakPluginModule` and `openZaakPluginSpecification`
+        to your app.module.ts
   * Documenten API
     * This plugin creates a connection to the Documenten API.
     * It currently has a single action available, it enables to read a proces varable containing
@@ -36,7 +39,7 @@ The following features were added:
     * Added tooltips to multiple fields of the configuration of the plugin and its action for information
       about the purpose of a field
     * The authentication for this plugin is controlled by a separate plugin like the Open Zaak API Plugin
-    * The plugin is found in the module plugin under /plugins/documenten-api
+    * The plugin is found in the module `@valtimo/plugin` under /plugins/documenten-api
       * In order to use this plugin add the `DocumentenApiPluginModule` and `documentenApiPluginSpecification` 
         to your app.module.ts
   * Zaken API
@@ -46,7 +49,7 @@ The following features were added:
     * Added tooltips to multiple fields of the configuration of the plugin and its action for information
       about the purpose of a field
     * The authentication for this plugin is controlled by a separate plugin like the Open Zaak API Plugin
-    * The plugin is found in the module plugin under /plugins/zaken-api
+    * The plugin is found in the module `@valtimo/plugin` under /plugins/zaken-api
       * In order to use this plugin add the `ZakenApiPluginModule` and `zakenApiPluginSpecification`
         to your app.module.ts
 
