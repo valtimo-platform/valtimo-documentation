@@ -26,24 +26,8 @@ The following features were added:
   * Added a `digitOnly` input directive to `@valtimo/user-interface`, now used for a RSIN input field.
 * **Added the following ZGW plugins**
   * Open Zaak API
-    * This plugin has no actions but contains the ability to make a connection to Open Zaak. Other plugins can use
-      this plugin as an authentication configuration
   * Documenten API
-    * This plugin creates a connection to the Documenten API.
-    * It currently has a single action available, it enables to read a proces varable containing 
-      a location to a temporary file stored locally and upload that document to the
-      Documenten API. The URL to new location will be stored in a new process variable
-    * Added tooltips to multiple fields of the configuration of the plugin and its action for information
-      about the purpose of a field
-    * The authentication for this plugin is controlled by a separate plugin like the Open Zaak API Plugin
   * Zaken API
-    * This plugin creates a connection to the Zaken API.
-    * It currently has a single action available, it will use a URL to a document (this could be 
-      an actual API or a process variable containing the API) and link it to the Zaak and the case
-    * Added tooltips to multiple fields of the configuration of the plugin and its action for information
-      about the purpose of a field
-    * The authentication for this plugin is controlled by a separate plugin like the Open Zaak API Plugin
-
 * **New option to override default column sort direction from environment file for custom case definition columns**
 
   The `DefinitionColumn` interface (exported from `@valtimo/config`), now supports the type `Direction` on its key `default`.
