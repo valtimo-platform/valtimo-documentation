@@ -5,6 +5,11 @@ before contributing documentation.
 
 # Language
 
+## Spelling
+
+All documentation is written in English, using American spelling. Refer to [this page](https://www.oxfordinternationalenglish.com/differences-in-british-and-american-spelling/)
+for an overview of differences between American and British spelling.
+
 ## Formal writing voice
 
 All documentation is written in a formal writing voice. For example, avoid the use of contractions or colloquial
@@ -40,6 +45,9 @@ give an example of its use case, and only go into technical detail when necessar
 
 Release notes for new features should convey clearly what functionality has been introduced, and how this functionality 
 can be used.
+
+Any required steps to use new functionality either go in the migration section if it is a one time action, or should
+be listed on a separate page describing the feature so that people can find the usage in later versions.
 
 ## Introductions
 
