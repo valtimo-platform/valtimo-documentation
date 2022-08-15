@@ -5,7 +5,7 @@
 Before using the SmartDocuments Plugin, the plugin has to be configured. A general description on how to configure
 plugins, can be found [here](../configure-plugin.md).
 
-If the SmartDocuments plugin is not visible in the plugin menu, its possible the application is missing a dependency.
+If the SmartDocuments plugin is not visible in the plugin menu, it is possible the application is missing a dependency.
 Instructions on how to add the SmartDocuments dependency can be
 found [here](../../../valtimo-implementation/modules/smartdocuments.md)
 
