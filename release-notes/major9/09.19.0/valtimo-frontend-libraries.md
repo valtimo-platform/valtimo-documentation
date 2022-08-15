@@ -4,28 +4,31 @@
 
 The following features were added:
 
-* **New feature1**
+* **Digit only input**
 
-  Description of the new feature goes here.
-  Also link to the page that expains the feature in greater detail.
+  The `v-input` component exported from `@valtimo/user-interface` now supports a new type input: `'digitOnly'`. This
+  option displays a text input field which only accepts numbers as input.
 
-* **New feature2**
+* **Improved tooltips**
 
-  Description of the new feature goes here.
-  Also link to the page that expains the feature in greater detail.
+  Various tooltips for plugin configuration components have been added or improved.
 
 
 ## Bugfixes
 
 The following bugs were fixed:
 
-* **Bug1**
+* **Refactor of case list component**
 
-  Description of what the issue was.
-
-* **Bug2**
-
-  Description of what the issue was.
+  In developing new features for the case list component, it was discovered that the component contained quite a few bugs
+  which were hard to fix. It was decided to refactor the component using observables. The following should now work
+  without bugs:
+  * On case definition load: get pagination (including sorting) from local storage. If this does not exist, get default
+    pagination and sorting from the environment file.
+  * Go to the first page when typing in a search term or sequence number.
+  * Switch to last available page on choosing a larger page size.
+  * On switching case definitions, the page indicator shows the correct page number.
+  * When switching case definitions, the correct cached sort state or default sort state is retrieved.
 
 ## Breaking changes
 
