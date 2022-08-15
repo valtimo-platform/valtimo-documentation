@@ -6,7 +6,7 @@ Documenten API standard created and used by the Dutch government.
 ## Configure the plugin
 
 In order to use this plugin a configuration has to be created. A general description on how to configure
-plugins, can be found [here](../configure-plugin.md).
+plugins can be found [here](../configure-plugin.md).
 
 If the Documenten API plugin is not visible in the plugin menu, it is possible the application is missing a dependency.
 Instructions on how to add the OpenZaak dependency can be found
