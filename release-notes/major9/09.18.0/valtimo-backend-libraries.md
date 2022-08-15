@@ -53,6 +53,8 @@ The following was deprecated:
   FormFieldDataResolver `supports(ExternalFormFieldType externalFormFieldType)` was deprecated and is replaced with 
   `supports(String externalFormFieldType)`.
 
+Instructions on how to migrate to this version of Valtimo can be found [here](migration.md).
+
 ## Known issues
 
 No new known issues.
