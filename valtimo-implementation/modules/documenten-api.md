@@ -1,4 +1,4 @@
-# SmartDocuments
+# Documenten API
 
 ## Dependencies
 
