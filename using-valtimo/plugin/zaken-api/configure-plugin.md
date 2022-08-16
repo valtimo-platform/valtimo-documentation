@@ -5,17 +5,17 @@ Zaken API standard created and used by the Dutch government.
 
 ## Configure the plugin
 
-In order to use this plugin a configuration has to be created. A general description on how to configure
+A plugin configuration is required before the plugin can be used. A general description on how to configure
 plugins can be found [here](../configure-plugin.md).
 
 If the Zaken API plugin is not visible in the plugin menu, it is possible the application is missing a dependency.
 Instructions on how to add the Zaken API dependency can be found
-[here](../../../valtimo-implementation/modules/documenten-api.md)
+[here](../../../valtimo-implementation/modules/documenten-api.md).
 
 To configure this plugin the following properties have to be entered:
-- The `URL` property should contain the complete base URL of the Zaken API to connect to. This generally includes 
+- **URL** Contains the complete base URL of the Zaken API to connect to. This generally includes 
 the path `/api/v1/`.
-- The `Authentication plugin configuration` is a reference to another plugin configuration that will be used to add 
+- **Authentication plugin configuration** Reference to another plugin configuration that will be used to add 
 authentication to any request performed on the Zaken API. If no option is available in this field a plugin has to 
 be configured that is able to authenticate for the specific application that hosts the Zaken API. (e.g. OpenZaak)
 
@@ -31,17 +31,17 @@ A general description on how to create process links, can be found [here](../cre
 
 ### Link document to zaak
 
-The `Link document to zaak` action takes a Document stored in a Documenten API and link it to a zaak. The zaak to which 
+The **Link document to zaak** action takes a Document stored in a Documenten API and link it to a zaak. The zaak to which 
 the Document is linked is based on the process for which the action is performed. The process belongs to a dossier that
 should already have a zaak instance link before this action is performed. The link between a zaak and a document is 
-stored as a `zaakinformatieobject` in the Zaken API.  
+stored as a 'zaakinformatieobject' in the Zaken API.  
 
 When creating a process link the following properties have to be entered:
-- `URL to the document` The complete URL of the document in a Documenten API.
-- `Document title ` The title of the document within the context of the zaak that is stored in the
-`zaakinformatieobject` record in the Zaken API.
-- `Document description` The description of the document within the context of the zaak that is stored in the
-`zaakinformatieobject` record in the Zaken API.
+- **URL to the document** The complete URL of the document in a Documenten API.
+- **Document title** The title of the document within the context of the zaak that is stored in the
+'zaakinformatieobject' record in the Zaken API.
+- **Document description** The description of the document within the context of the zaak that is stored in the
+'zaakinformatieobject' record in the Zaken API.
 
 An example process link configuration:
 ![Generate document process link](img/link-document-to-zaak.png)

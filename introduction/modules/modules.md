@@ -25,10 +25,10 @@ description can be found [here](plugin-introduction.md).
 
 ### Documenten API
 
-The Documenten (Documents) API is a Dutch government API standard meant to standardize the storage of and access to 
-documents. A plugin is provided that allows for connecting to applications that provide a Documenten API.
+The Documenten (Documents) API is a Dutch government API standard for storage of and access to documents and their 
+metadata. A plugin is provided that allows for connecting to applications that provide a Documenten API.
 
 ### Zaken API
 
-The Zaken (Cases) API is a Dutch government API standard meant to standardize the information exchange around cases.
+The Zaken (Cases) API is a Dutch government API standard for exchanging information around cases and their related data.
 A plugin is provided that allows for connecting to applications that provide a Zaken API.
