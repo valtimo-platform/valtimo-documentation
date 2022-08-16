@@ -16,30 +16,9 @@ The following features were added:
 * **Improved the select component of the @valtimo/user-interface library**
   * **Background color change**
 
-    The select component has been improved to follow the default input style and make it visibly indicated when a 
-  dropdown menu is enabled/disabled.
-    
-    The look of the default component's background style color has been changed to white (`--v-color-white`) to 
-    distinguish it from the disabled state.
-  
-  * **Contrast and color updates**
+    The select component has been improved to follow the default input style and to visually indicate when a dropdown menu is enabled or disabled.
 
-    * Add shadow to the `v-select` element to add contrast.
-
-    * Changed text color to `--v-color-grey-0` when option selected in dropdown.
-
-  * **Changed and created new color variables for the `v-select` element**
-    
-    * Changed:
-    
-    `--v-select-background-color: var(--v-color-white);`
-
-    * New:
-    
-    `--v-select-darker-font-color: var(--v-color-grey-0);`
-    
-    `--v-select-disabled-bg-color: var(--v-color-grey-4);`
-
+    The default `v-select` component's background style color appearance has been changed to white to add contrast and distinguish it from the disabled state.
 
 ## Bugfixes
 
