@@ -16,13 +16,15 @@ The following features were added:
 * **Improved the select component of the @valtimo/user-interface library**
   * **Background color change**
 
-    To follow the default input style on the form and make it visibly indicated when a dropdown menu is activated,
-    the component's background style color has been changed to `--v-color-white`.
-    In this way, reaching the objective of clarity and bringing a more pleasant and standardized layout.
-
+    The select component has been improved to follow the default input style and make it visibly indicated when a 
+  dropdown menu is enabled/disabled.
+    
+    The look of the default component's background style color has been changed to white (`--v-color-white`) to 
+    distinguish it from the disabled state.
+  
   * **Contrast and color updates**
 
-    * Add shadow to the `v-select` element in order to add contrast.
+    * Add shadow to the `v-select` element to add contrast.
 
     * Changed text color to `--v-color-grey-0` when option selected in dropdown.
 
