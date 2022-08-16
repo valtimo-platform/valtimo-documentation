@@ -4,17 +4,26 @@
 
 The following features were added:
 
+* **Digit only input**
+
+  The `v-input` component exported from `@valtimo/user-interface` now supports a new type input: `'digitOnly'`. This
+  option displays a text input field which only accepts numbers as input.
+
+* **Improved tooltips**
+
+  Various tooltips for plugin configuration components have been added or improved.
+
 * **Improved the select component of the @valtimo/user-interface library**
   * **Background color change**
 
-    To follow the default input style on the form and make it visibly indicated when a dropdown menu is activated, 
-  the component's background style color has been changed to `--v-color-white`.
+    To follow the default input style on the form and make it visibly indicated when a dropdown menu is activated,
+    the component's background style color has been changed to `--v-color-white`.
     In this way, reaching the objective of clarity and bringing a more pleasant and standardized layout.
 
   * **Contrast and color updates**
-    
-    * Add shadow to the `v-select` element in order to add contrast. 
-    
+
+    * Add shadow to the `v-select` element in order to add contrast.
+
     * Changed text color to `--v-color-grey-0` when option selected in dropdown.
 
   * **Changed and created new color variables for the `v-select` element**
@@ -34,13 +43,17 @@ The following features were added:
 
 The following bugs were fixed:
 
-* **Bug1**
+* **Refactor of case list component**
 
-  Description of what the issue was.
-
-* **Bug2**
-
-  Description of what the issue was.
+  In developing new features for the case list component, it was discovered that the component contained quite a few bugs
+  which were hard to fix. It was decided to refactor the component using observables. The following should now work
+  without bugs:
+  * On case definition load: get pagination (including sorting) from local storage. If this does not exist, get default
+    pagination and sorting from the environment file.
+  * Go to the first page when typing in a search term or sequence number.
+  * Switch to last available page on choosing a larger page size.
+  * On switching case definitions, the page indicator shows the correct page number.
+  * When switching case definitions, the correct cached sort state or default sort state is retrieved.
 
 ## Breaking changes
 
