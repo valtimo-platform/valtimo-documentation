@@ -13,6 +13,12 @@ The following features were added:
 
   Various tooltips for plugin configuration components have been added or improved.
 
+* **Improved the select component of the @valtimo/user-interface library**
+  * **Background color change**
+
+    The select component has been improved to follow the default input style and to visually indicate when a dropdown menu is enabled or disabled.
+
+    The default `v-select` component's background style color appearance has been changed to white to add contrast and distinguish it from the disabled state.
 
 ## Bugfixes
 
