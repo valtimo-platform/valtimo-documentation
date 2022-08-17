@@ -73,7 +73,7 @@ will always be selected. So in this example, step 2 will always be followed by s
     ```
 
 * Configure the step type. Currently, the only step type supported is `form`, which requires a `definition` property to
-be set. This refers to the key of the form.
+be set. This refers to the key of the form. For more information on step types, see [here](/reference/modules/form-flow.md#step-types)
 
   Which properties are required to be set depends on the step type.
 
@@ -148,6 +148,9 @@ document.
 
 Each of these properties supports more than one expression, e.g. when a step is opened, external data
 from more than one source is retrieved. These expressions are evaluated in order.
+
+Valtimo provides access to certain variables in the SpEL context, e.g. what the current step is. Which properties are
+available can be found [here](/reference/modules/form-flow.md#available-properties-in-spel-context)
 
 ```json
 {
