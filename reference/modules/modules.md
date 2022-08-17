@@ -1,4 +1,4 @@
 # Modules
 
-* [Form flows](form-flow.md)
+* [Form flow](form-flow.md)
 * [Form links](form-link.md)

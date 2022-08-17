@@ -75,6 +75,8 @@ will always be selected. So in this example, step 2 will always be followed by s
 * Configure the step type. Currently, the only step type supported is `form`, which requires a `definition` property to
 be set. This refers to the key of the form.
 
+  Which properties are required to be set depends on the step type.
+
     ```json
     {
         "startStep": "start",
@@ -145,7 +147,7 @@ complex actions when a step is opened or completed. Expressions can be recognize
 document.
 
 Each of these properties supports more than one expression, e.g. when a step is opened, external data
-from more than one source is retrieved.
+from more than one source is retrieved. These expressions are evaluated in order.
 
 ```json
 {

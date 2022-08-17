@@ -1,3 +1,3 @@
-# Form flows
+# Form flow
 
 * [Whitelisting Spring beans](whitelist-spring-bean.md)

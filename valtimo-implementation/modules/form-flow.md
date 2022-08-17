@@ -1,8 +1,8 @@
-# Form flows
+# Form flow
 
 ## Dependencies
 
-In order to use form flows, the form flow module needs to be added as a dependency. The
+In order to use form flow, the form flow module needs to be added as a dependency. The
 following can be added to your project, depending on whether Maven or Gradle is used:
 
 ### Backend
