@@ -30,6 +30,8 @@
     * [Creating process links](using-valtimo/plugin/create-process-link.md)
     * [SmartDocuments plugin](using-valtimo/plugin/smartdocuments/configure-smartdocuments.md)
 * [Extending Valtimo](extending-valtimo/extending-valtimo.md)
+  * [Form flows](extending-valtimo/form-flow/form-flow.md)
+    * [Whitelisting Spring beans](extending-valtimo/form-flow/whitelist-spring-bean.md)
   * [Form links](extending-valtimo/form-link/form-link.md)
     * [Custom form field data resolvers](extending-valtimo/form-link/custom-form-field-data-resolver.md)
   * [Plugins](extending-valtimo/plugin/plugins.md)
