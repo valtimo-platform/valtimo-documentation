@@ -40,6 +40,7 @@
   * [Feature toggles](reference/feature-toggles/feature-toggles.md)
     * [Available feature toggles](reference/feature-toggles/available-feature-toggles.md)
   * [Modules](reference/modules/modules.md)
+    * [Form flows](reference/modules/form-flow.md)
     * [Form links](reference/modules/form-link.md)
   * [User interface](reference/user-interface/user-interface.md)
     * [Design philosophy](reference/user-interface/design-philosophy.md)
