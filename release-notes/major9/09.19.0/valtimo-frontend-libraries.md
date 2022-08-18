@@ -20,9 +20,9 @@ The following features were added:
 
     The default `v-select` component's background style color appearance has been changed to white to add contrast and distinguish it from the disabled state.
 
-* **Added auto scrolls modal to the top**
+* **Added auto scrolling to modal**
 
-  The `valtimo-modal` component now has automatic scrolling to the top of the modal when transitioning between pages.
+  The `valtimo-modal` component now scrolls to the top when transitioning between form flow steps, and when switching pages in a Form.IO wizard.
 
 ## Bugfixes
 
