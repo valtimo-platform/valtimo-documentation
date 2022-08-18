@@ -42,6 +42,14 @@ The following bugs were fixed:
   was conflicting with styling imported by [ng-multiselect-dropdown](https://www.npmjs.com/package/ng-multiselect-dropdown).
   Its class names have been made more specific in order to avoid these styling conflicts.
 
+* **Creating a process link with plugins will now only show plugin configurations with actions**
+  
+  The Form links Plugin page used to show all plugin configurations but some of those configurations 
+  turned out to be unusable because the Plugin doesn't support any actions. The action needs to be
+  selected on the second step of the modal.
+
+  To prevent this the modal will now only show plugin configurations that support actions 
+
 ## Breaking changes
 
 The following breaking changes were introduced:

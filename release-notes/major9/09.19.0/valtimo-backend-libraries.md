@@ -4,10 +4,15 @@
 
 The following features were added:
 
-* **New feature1**
+* **Filter out plugin configurations without actions**
 
-  Description of the new feature goes here. 
-  Also link to the page that explains the feature in greater detail.
+  The REST endpoint `GET /api/plugin/configuration` now supports a new request parameter
+  called `includeActionless` which expects a boolean value.
+  When the parameter is `false` the endpoint will only return plugin configurations that 
+  have 1 or more actions.
+  Example: `GET /api/plugin/configuration?includeActionless=false`
+
+  The default value of this new request parameter is `true`.
 
 * **New feature2**
 
