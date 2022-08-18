@@ -36,6 +36,14 @@ The following bugs were fixed:
   * On switching case definitions, the page indicator shows the correct page number.
   * When switching case definitions, the correct cached sort state or default sort state is retrieved.
 
+* **Fix the searchable dropdown component**
+  
+  The component `valtimo-searchable-dropdown`, exported by `@valtimo/components`, had styling issues locally. Its styling
+  was conflicting with styling imported by [ng-multiselect-dropdown](https://www.npmjs.com/package/ng-multiselect-dropdown).
+  Its class names have been made more specific in order to avoid these styling conflicts.
+  
+
+
 ## Breaking changes
 
 The following breaking changes were introduced:
