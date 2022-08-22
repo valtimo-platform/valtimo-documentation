@@ -1,6 +1,6 @@
 # Migration
 
-This page describes how to update Valtimo from the previous version to the current.
+This page describes how to update Valtimo from the previous to this version.
 
 * **FormFieldDataResolver supports method**
     

@@ -4,28 +4,47 @@
 
 The following features were added:
 
-* **New feature1**
+* **Digit only input**
 
-  Description of the new feature goes here.
-  Also link to the page that expains the feature in greater detail.
+  The `v-input` component exported from `@valtimo/user-interface` now supports a new type input: `'digitOnly'`. This
+  option displays a text input field which only accepts numbers as input.
 
-* **New feature2**
+* **Improved tooltips**
 
-  Description of the new feature goes here.
-  Also link to the page that expains the feature in greater detail.
+  Various tooltips for plugin configuration components have been added or improved.
 
+* **Improved the select component of the @valtimo/user-interface library**
+  * **Background color change**
+
+    The select component has been improved to follow the default input style and to visually indicate when a dropdown menu is enabled or disabled.
+
+    The default `v-select` component's background style color appearance has been changed to white to add contrast and distinguish it from the disabled state.
+
+* **Added auto scrolling to modal**
+
+  The `valtimo-modal` component now scrolls to the top when transitioning between form flow steps, and when switching pages in a Form.IO wizard.
 
 ## Bugfixes
 
 The following bugs were fixed:
 
-* **Bug1**
+* **Refactor of case list component**
 
-  Description of what the issue was.
+  In developing new features for the case list component, it was discovered that the component contained quite a few bugs
+  which were hard to fix. It was decided to refactor the component using observables. The following should now work
+  without bugs:
+  * On case definition load: get pagination (including sorting) from local storage. If this does not exist, get default
+    pagination and sorting from the environment file.
+  * Go to the first page when typing in a search term or sequence number.
+  * Switch to last available page on choosing a larger page size.
+  * On switching case definitions, the page indicator shows the correct page number.
+  * When switching case definitions, the correct cached sort state or default sort state is retrieved.
 
-* **Bug2**
-
-  Description of what the issue was.
+* **Styling fix for the searchable dropdown component**
+  
+  The component `valtimo-searchable-dropdown`, exported by `@valtimo/components`, had styling issues locally. Its styling
+  was conflicting with styling imported by [ng-multiselect-dropdown](https://www.npmjs.com/package/ng-multiselect-dropdown).
+  Its class names have been made more specific in order to avoid these styling conflicts.
 
 ## Breaking changes
 
