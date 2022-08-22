@@ -8,7 +8,8 @@ use a token as authentication. Currently the plugins that this plugin can provid
 
 ### Prerequisites
 
-This page requires knowledge on how to configure Objecten API.
+This page requires you to have knowledge on how to configure Objecten API. For more information
+see [here](/using-valtimo/plugin/objecten-api/configure-plugin.md)
 
 ## Configuring the plugin
 
