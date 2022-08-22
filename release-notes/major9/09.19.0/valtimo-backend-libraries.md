@@ -21,7 +21,7 @@ The following bugs were fixed:
 
 * **JdbcProcessFormAssociationRepository insert statement runtime exception**
 
-  Running on an externally hosted Mysql 8.0.15 instance caused unknown column type exceptions with useServerPrepStmts [see](https://github.com/brettwooldridge/HikariCP/wiki/MySQL-Configuration).
+  Running on an externally hosted Mysql 8.0.15 instance caused unknown column type exceptions with `useServerPrepStmts`. For more information [see](https://github.com/brettwooldridge/HikariCP/wiki/MySQL-Configuration).
   To prevent determining the sql column type now the type is specified.
 
 * **Bug2**
