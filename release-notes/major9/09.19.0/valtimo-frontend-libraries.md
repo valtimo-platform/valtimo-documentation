@@ -24,6 +24,11 @@ The following features were added:
 
   The `valtimo-modal` component now scrolls to the top when transitioning between form flow steps, and when switching pages in a Form.IO wizard.
 
+* **Added option to customize Left Sidebar width adjustment**
+
+  Added to the `valtimo-left-sidebar` component the options to customize the **default**, **maximum** and 
+  **minimum** width values of the menu, and the option to keep the resized value when refreshing the page.
+
 ## Bugfixes
 
 The following bugs were fixed:
