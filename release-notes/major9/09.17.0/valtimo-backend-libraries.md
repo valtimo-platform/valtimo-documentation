@@ -23,6 +23,9 @@ The following features were added:
 
   Properties in plugins can now be marked as secret. When configuring the plugin the secrets will be encrypted before 
   being stored.
+
+  This functionality requires an application property `valtimo.plugin.encryption-secret` the value of this property will
+  determine the encryption key
   
   More information on plugin secrets can be found [here](/extending-valtimo/plugin/custom-plugin-definition.md#plugin-properties).
 
