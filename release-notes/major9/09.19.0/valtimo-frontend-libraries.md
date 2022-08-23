@@ -26,7 +26,7 @@ The following features were added:
 
 * **Dossier detail tab with zaakobjecten**
 
-  Added a tab page with a dropdown to select an object type which is linked to the current case. After selecting this
+  Added a tab page with a dropdown to select an object type that is linked to the current case. After selecting this
   type, a list of objects is shown of this type. To include this tab, add it to the `tabsFactory` in your implementation:
 
   #### **`app.module.ts`**
