@@ -24,6 +24,25 @@ The following features were added:
 
   The `valtimo-modal` component now scrolls to the top when transitioning between form flow steps, and when switching pages in a Form.IO wizard.
 
+* **Added option to customize Left Sidebar width adjustment**
+  
+  The `valtimo-left-sidebar` component now supports the option to customize the **default**, **maximum** and **minimum**
+width values from the left side menu. Also added the default behavior of keeping the resized value manually when refreshing the page.
+
+  The change is optional and made in the `environment.ts` file (see example below). If there is no change, the component will receive predefined values by default.
+
+  #### **`environment.ts`**
+  
+  ```typescript
+  export const environment: ValtimoConfig = { ...
+  customLeftSidebar: {
+      defaultMenuWidth: 200, //default value: 230
+      maxMenuWidth: 300,     //default value: 330
+      minMenuWidth: 100,     //default value: 120
+    }
+   }
+  ```
+
 ## Bugfixes
 
 The following bugs were fixed:
