@@ -31,17 +31,17 @@ width values from the left side menu. Also added the default behavior of keeping
 
   The change is optional and made in the `environment.ts` file (see example below). If there is no change, the component will receive predefined values by default.
 
-#### **`environment.ts`**
-
-For example:
-
-```typescript
-customLeftSidebar: {
-    defaultMenuWidth: 200, //default value: 230
-    maxMenuWidth: 300,     //default value: 330
-    minMenuWidth: 100,     //default value: 120
-}
-```
+  #### **`environment.ts`**
+  
+  ```typescript
+  export const environment: ValtimoConfig = { ...
+  customLeftSidebar: {
+      defaultMenuWidth: 200, //default value: 230
+      maxMenuWidth: 300,     //default value: 330
+      minMenuWidth: 100,     //default value: 120
+    }
+   }
+  ```
 
 ## Bugfixes
 
