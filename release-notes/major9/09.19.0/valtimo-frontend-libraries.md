@@ -24,6 +24,31 @@ The following features were added:
 
   The `valtimo-modal` component now scrolls to the top when transitioning between form flow steps, and when switching pages in a Form.IO wizard.
 
+* **Dossier detail tab with zaakobjecten**
+
+  Added a tab page with a dropdown to select an object type which is linked to the current case. After selecting this
+  type, a list of objects is shown of this type. To include this tab, add it to the `tabsFactory` in your implementation:
+
+  #### **`app.module.ts`**
+  ```typescript
+  import {
+  DefaultTabs,
+  ...
+  DossierDetailTabZaakobjectenComponent,
+  ...
+  } from '@valtimo/dossier';
+  
+  ...
+  
+  export function tabsFactory() {
+    return new Map<string, object>([
+      ...
+      [DefaultTabs.zaakobjecten, DossierDetailTabZaakobjectenComponent],
+      ...
+    ]);
+  }
+  ```
+
 ## Bugfixes
 
 The following bugs were fixed:
