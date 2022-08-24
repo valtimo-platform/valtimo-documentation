@@ -42,7 +42,7 @@ width values from the left side menu. Also added the default behavior of keeping
     }
    }
   ```
-
+  
 * **Dossier detail tab with zaakobjecten**
 
   Added a tab page with a dropdown to select an object type that is linked to the current case. After selecting this
@@ -77,6 +77,11 @@ width values from the left side menu. Also added the default behavior of keeping
   `@valtimo/user-interface` library. It shows a timer for when the session is to expire, and offers a logout action, and
   an action to continue the session, which automatically refreshes the access token. If no action is taken, the user
   is logged out when the timer runs out.
+
+* **Changed input border**
+
+  The shadows on the borders of `v-table`, `v-input` and `v-select` components have been replaced by a gray border 
+  to improve the contrast with the background.
 
 ## Bugfixes
 
