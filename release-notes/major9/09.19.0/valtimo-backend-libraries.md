@@ -4,10 +4,11 @@
 
 The following features were added:
 
-* **New feature1**
+* **New form flow `onBack` property**
 
-  Description of the new feature goes here. 
-  Also link to the page that explains the feature in greater detail.
+  Form flows already supported the `onOpen` and `onComplete` properties. The `onBack` property has been added that is
+  triggered when navigating to a previous step. Information on how to use these properties in a form flow can be found
+  [here](/using-valtimo/form-flow/create-form-flow-definition.md#expressions).
 
 * **New feature2**
 
