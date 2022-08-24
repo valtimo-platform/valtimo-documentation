@@ -48,6 +48,8 @@ The following features were added:
     ]);
   }
   ```
+  
+  For more information on how to customize case tabs, see [this page](../../../extending-valtimo/tabs/customizing-case-tabs.md).
 
 ## Bugfixes
 
