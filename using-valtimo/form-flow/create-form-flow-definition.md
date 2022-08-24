@@ -131,15 +131,15 @@ be set. This refers to the key of the form. For more information on step types, 
     }
     ```
 
-* Add triggers to steps where necessary (e.g. to store data externally)
-
-
+* Add triggers to steps where necessary (e.g. to store data externally). See below for more information.
 
 ## Expressions
 
 Form flow supports Spring Expression Language (SpEL) expressions in order to allow for more
 complex actions when a step is opened or completed. Expressions can be recognized by the surrounding
 `${ }` characters. The following additional properties are supported for steps:
+
+* `onBack`. Triggers the expressions when navigating to the previous step, e.g. to remove data from a document.
 
 * `onOpen`. Triggers the expressions when the step is opened, e.g. to retrieve external data.
 
@@ -175,6 +175,7 @@ available can be found [here](/reference/modules/form-flow.md#available-properti
                     "definition": "step2-form"
                 }
             },
+            "onBack": ["${someService.removeData(additionalProperties)}"],
             "nextSteps": [
                 {
                     "step": "step3"

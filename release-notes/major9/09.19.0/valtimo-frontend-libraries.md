@@ -20,6 +20,64 @@ The following features were added:
 
     The default `v-select` component's background style color appearance has been changed to white to add contrast and distinguish it from the disabled state.
 
+* **Added auto scrolling to modal**
+
+  The `valtimo-modal` component now scrolls to the top when transitioning between form flow steps, and when switching pages in a Form.IO wizard.
+
+* **Added option to customize Left Sidebar width adjustment**
+  
+  The `valtimo-left-sidebar` component now supports the option to customize the **default**, **maximum** and **minimum**
+width values from the left side menu. Also added the default behavior of keeping the resized value manually when refreshing the page.
+
+  The change is optional and made in the `environment.ts` file (see example below). If there is no change, the component will receive predefined values by default.
+
+  #### **`environment.ts`**
+  
+  ```typescript
+  export const environment: ValtimoConfig = { ...
+  customLeftSidebar: {
+      defaultMenuWidth: 200, //default value: 230
+      maxMenuWidth: 300,     //default value: 330
+      minMenuWidth: 100,     //default value: 120
+    }
+   }
+  ```
+
+* **Dossier detail tab with zaakobjecten**
+
+  Added a tab page with a dropdown to select an object type that is linked to the current case. After selecting this
+  type, a list of objects is shown of this type. To include this tab, add it to the `tabsFactory` in your implementation:
+
+  #### **`app.module.ts`**
+  ```typescript
+  import {
+  DefaultTabs,
+  ...
+  DossierDetailTabZaakobjectenComponent,
+  ...
+  } from '@valtimo/dossier';
+  
+  ...
+  
+  export function tabsFactory() {
+    return new Map<string, object>([
+      ...
+      [DefaultTabs.zaakobjecten, DossierDetailTabZaakobjectenComponent],
+      ...
+    ]);
+  }
+  ```
+  
+  For more information on how to customize case tabs, see [this page](../../../extending-valtimo/tabs/customizing-case-tabs.md).
+
+* **Added session timeout prompt for Keycloak**
+  
+  When an implementation uses Keycloak as its authentication provider, a session timeout prompt is now shown if the
+  refresh token expires in five minutes or less. This uses a new component - `v-prompt` - which has been added to the
+  `@valtimo/user-interface` library. It shows a timer for when the session is to expire, and offers a logout action, and
+  an action to continue the session, which automatically refreshes the access token. If no action is taken, the user
+  is logged out when the timer runs out.
+
 ## Bugfixes
 
 The following bugs were fixed:

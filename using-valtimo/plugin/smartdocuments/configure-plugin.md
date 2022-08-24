@@ -2,25 +2,25 @@
 
 ## Configure the plugin
 
-Before using the SmartDocuments Plugin, the plugin has to be configured. A general description on how to configure
-plugins, can be found [here](../configure-plugin.md).
+A plugin configuration is required before the plugin can be used. A general description on how to configure
+plugins can be found [here](../configure-plugin.md).
 
-If the SmartDocuments plugin is not visible in the plugin menu, its possible the application is missing a dependency.
+If the SmartDocuments plugin is not visible in the plugin menu, it is possible the application is missing a dependency.
 Instructions on how to add the SmartDocuments dependency can be
-found [here](../../../valtimo-implementation/modules/smartdocuments.md)
+found [here](../../../valtimo-implementation/modules/smartdocuments.md).
 
 The 'SmartDocuments URL', 'Username' and 'Password' should all be retrieved from the SmartDocuments application.
 
 An example plugin configuration:
 ![example plugin configuration](img/configure-plugin.png)
 
-## Generate documents
+## Available actions
 
 SmartDocuments main function is to generate documents based on a template.
 
-### Configuring the process link
-
 A general description on how to create process links, can be found [here](../create-process-link.md).
+
+### Generate document
 
 Both the 'Template group' and 'Template name' can be retrieved from the SmartDocuments application.
 
