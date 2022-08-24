@@ -4,15 +4,14 @@
 
 The following features were added:
 
-* **Filter out plugin configurations without actions**
+* **Filter out plugin configurations without actions of a service type**
+
+  The plugin configuration can now be filtered based on an activityType (i.e. Service Task), that will 
+  ensure that any plugin configuration that is returned has an action for that activityType. 
 
   The REST endpoint `GET /api/plugin/configuration` now supports a new request parameter
-  called `includeActionless` which expects a boolean value.
-  When the parameter is `false` the endpoint will only return plugin configurations that 
-  have 1 or more actions.
-  Example: `GET /api/plugin/configuration?includeActionless=false`
-
-  The default value of this new request parameter is `true`.
+  called `activityType` which expects the type of task that was clicked in the process. 
+  Example: `GET /api/plugin/configuration?activityType=bpmn:ServiceTask`.
 
 * **New feature2**
 
