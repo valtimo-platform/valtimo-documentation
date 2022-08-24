@@ -19,10 +19,6 @@ The `form` step type is used to associate a step with a specific form. The follo
     ...
 ```
 
-| Step type name | Description                  | Properties          | Example     |
-|----------------|:-----------------------------|:--------------------|:------------|
-| `form`         | Used to link steps to forms. | ```json aap noot``` | ```JSON ``` | 
-
 ## Available properties in SpEL context
 
 The following properties are available in a SpEL context:
