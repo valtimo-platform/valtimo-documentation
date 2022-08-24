@@ -43,6 +43,33 @@ width values from the left side menu. Also added the default behavior of keeping
    }
   ```
 
+* **Dossier detail tab with zaakobjecten**
+
+  Added a tab page with a dropdown to select an object type that is linked to the current case. After selecting this
+  type, a list of objects is shown of this type. To include this tab, add it to the `tabsFactory` in your implementation:
+
+  #### **`app.module.ts`**
+  ```typescript
+  import {
+  DefaultTabs,
+  ...
+  DossierDetailTabZaakobjectenComponent,
+  ...
+  } from '@valtimo/dossier';
+  
+  ...
+  
+  export function tabsFactory() {
+    return new Map<string, object>([
+      ...
+      [DefaultTabs.zaakobjecten, DossierDetailTabZaakobjectenComponent],
+      ...
+    ]);
+  }
+  ```
+  
+  For more information on how to customize case tabs, see [this page](../../../extending-valtimo/tabs/customizing-case-tabs.md).
+
 ## Bugfixes
 
 The following bugs were fixed:
