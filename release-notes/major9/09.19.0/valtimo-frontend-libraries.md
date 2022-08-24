@@ -45,7 +45,7 @@ The following bugs were fixed:
 * **Creating a process link with plugins will now only show plugin configurations with actions**
   
   The Form links Plugin page used to show all plugin configurations but some of those configurations 
-  turned out to be unusable because the Plugin doesn't support any actions. The action needs to be
+  turned out to be unusable because the Plugin does not support any actions. The action needs to be
   selected on the second step of the modal.
 
   To prevent this the modal will now only show plugin configurations that support actions 
