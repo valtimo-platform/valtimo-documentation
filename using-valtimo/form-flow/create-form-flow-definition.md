@@ -175,7 +175,7 @@ available can be found [here](/reference/modules/form-flow.md#available-properti
                     "definition": "step2-form"
                 }
             },
-            "onOpen": ["${someService.removeData(additionalProperties)}"],
+            "onBack": ["${someService.removeData(additionalProperties)}"],
             "nextSteps": [
                 {
                     "step": "step3"
