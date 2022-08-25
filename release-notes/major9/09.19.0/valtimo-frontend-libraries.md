@@ -78,6 +78,11 @@ width values from the left side menu. Also added the default behavior of keeping
   an action to continue the session, which automatically refreshes the access token. If no action is taken, the user
   is logged out when the timer runs out.
 
+* **Changed input border**
+
+  The shadows on the borders of `v-table`, `v-input` and `v-select` components have been replaced by a gray border
+  to improve the contrast with the background.
+
 ## Bugfixes
 
 The following bugs were fixed:
