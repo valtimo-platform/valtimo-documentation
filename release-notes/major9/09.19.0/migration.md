@@ -2,14 +2,11 @@
 
 This page describes how to update Valtimo from the previous to this version.
 
-* **Breaking change 1/Deprecation 1**
+* **Form flow `onBack` property is null for existing records**
 
-  1. **Step1**
-
-     Description
-  2. **Step2**
-
-     Description
+  If you were using form flow before, any existing form definitions will no longer work. A Liquibase 
+  changeset should be added that updates all existing records in the `form_flow_step` table. Specifically, the newly
+  added `onBack` property (of type JSON) needs to be set to an empty array.
 
 * **Breaking change 2/Deprecation 2**
 

@@ -33,7 +33,7 @@ The following bugs were fixed:
 
 The following breaking changes were introduced:
 
-* **Breaking change1**
+* **Form flow `onBack` property is null for existing records**
 
 * **Breaking change2**
 
