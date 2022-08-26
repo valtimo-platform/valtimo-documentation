@@ -23,6 +23,9 @@ The following features were added:
 
   Properties in plugins can now be marked as secret. When configuring the plugin the secrets will be encrypted before 
   being stored.
+
+  This functionality requires an application property `valtimo.plugin.encryption-secret` the value of this property will
+  determine the encryption key. The encryption-secret has to be at least 16 characters long
   
   More information on plugin secrets can be found [here](/extending-valtimo/plugin/custom-plugin-definition.md#plugin-properties).
 
@@ -49,4 +52,9 @@ No new deprecations.
 
   When multiple start forms are associated with a single process definition the user is unable to start a new case of
   that specific type.
+
+* **New required application property**
+
+  There is a new mandatory applicaion property `valtimo.plugin.encryption-secret`. The encryption-secret has to be at least
+  16 characters long
 
