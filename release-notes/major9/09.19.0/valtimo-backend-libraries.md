@@ -4,11 +4,21 @@
 
 The following features were added:
 
+* **Filter out plugin configurations without actions of a service type**
+
+  The plugin configuration can now be filtered based on an activityType (i.e. Service Task), that will 
+  ensure that any plugin configuration that is returned has an action for that activityType. 
+
+  The REST endpoint `GET /api/plugin/configuration` now supports a new request parameter
+  called `activityType` which expects the type of task that was clicked in the process. 
+  Example: `GET /api/plugin/configuration?activityType=bpmn:ServiceTask`.
+
 * **New form flow `onBack` property**
 
   Form flows already supported the `onOpen` and `onComplete` properties. The `onBack` property has been added that is
   triggered when navigating to a previous step. Information on how to use these properties in a form flow can be found
   [here](/using-valtimo/form-flow/create-form-flow-definition.md#expressions).
+
 
 * **New feature2**
 
