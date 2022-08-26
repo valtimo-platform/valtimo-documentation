@@ -29,3 +29,7 @@ An example plugin configuration:
 ## Using the plugin
 
 The Objecttypen API plugin is used with REST endpoints. The following endpoints are currently provided:
+- **Get object types linked to a document** 
+
+  `/document/{documentId}/zaak/objecttype`
+  - Response type: `Array<{name: string; url: string}>`

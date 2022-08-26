@@ -27,3 +27,7 @@ An example plugin configuration:
 ## Using the plugin
 
 The Objecten API plugin is used with REST endpoints. The following endpoints are currently provided:
+- **Get objects of certain type linked to document**
+
+  `/document/{documentId}/zaak/object?typeUrl={typeUrl}`
+    - Response type: `Array<{index: number; registrationAt: string; title: string; url: string}>`
