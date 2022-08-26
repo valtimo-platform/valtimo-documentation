@@ -10,7 +10,7 @@ plugins can be found [here](../configure-plugin.md).
 
 If the Documenten API plugin is not visible in the plugin menu, it is possible the application is missing a dependency.
 Instructions on how to add the Documenten API dependency can be found
-[here](../../../valtimo-implementation/modules/documenten-api.md).
+[here](/valtimo-implementation/modules/documenten-api.md).
 
 To configure this plugin the following properties have to be entered:
 - **Documenten API URL** Contains the complete base URL of the Documenten API to connect to. This 

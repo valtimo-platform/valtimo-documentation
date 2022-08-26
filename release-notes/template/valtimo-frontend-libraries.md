@@ -1,4 +1,4 @@
-# Frontend libraries
+# Frontend libraries x.x.x
 
 ## New Features
 

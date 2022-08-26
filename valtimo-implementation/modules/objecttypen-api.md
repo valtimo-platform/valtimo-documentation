@@ -1,8 +1,8 @@
-# Form links
+# Objecttypen API
 
 ## Dependencies
 
-In order to use form links, the form link module needs to be added as a dependency. The
+In order to use the Objecttypen API, the Objecttypen API module needs to be added as a dependency. The
 following can be added to your project, depending on whether Maven or Gradle is used:
 
 ### Backend
@@ -12,7 +12,7 @@ following can be added to your project, depending on whether Maven or Gradle is 
 <dependencies>
     <dependency>
         <groupId>com.ritense.valtimo</groupId>
-        <artifactId>form-link</artifactId>
+        <artifactId>objecttypen-api</artifactId>
         <version>${valtimo_version}</version>
     </dependency>
 </dependencies>
@@ -21,6 +21,8 @@ following can be added to your project, depending on whether Maven or Gradle is 
 #### Gradle dependency:
 ```json
 dependencies {
-    implementation "com.ritense.valtimo:form-link:${valtimo_version}"
+  implementation "com.ritense.valtimo:objecttypen-api:${valtimo_version}"
 }
 ```
+
+
