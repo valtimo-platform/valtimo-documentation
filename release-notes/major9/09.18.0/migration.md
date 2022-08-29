@@ -4,8 +4,8 @@ This page describes how to update Valtimo from the previous to this version.
 
 * **FormFieldDataResolver supports method**
     
-    A new supports method `supports(externalFormFieldType: String)` replaces the
-    already existing `supports(externalFormFieldType: ExternalFormFieldType)` method
+    A new supports method `supports(String externalFormFieldType)` replaces the
+    already existing `supports(ExternalFormFieldType externalFormFieldType)` method
     for the `FormFieldDataResolver` interface.
 
   1. **Replace uses of old method with new method**
@@ -17,3 +17,13 @@ This page describes how to update Valtimo from the previous to this version.
 
      For classes implementing the `FormFieldDataResolver` interface, the new method
      should be implemented.
+
+* **Changed ExternalDataSubmittedEvent data field type**
+
+     The `data` field for the `ExternalDataSubmittedEvent` has changed from `Map<ExternalFormFieldType, Map<String, Object>>` to
+     `Map<String, Map<String, Object>>`.
+
+  1. **Replace use of the old Map to the new type**
+
+     if an `ExternalDataSubmittedEvent` is created, the Map should now be created with the `.toString()` method on the
+     `ExternalFormFieldType`.
