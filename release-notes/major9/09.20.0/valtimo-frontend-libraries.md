@@ -1,4 +1,4 @@
-# Frontend libraries 5.8.0 (RC)
+# Frontend libraries 5.9.0 (RC)
 
 ## New Features
 
