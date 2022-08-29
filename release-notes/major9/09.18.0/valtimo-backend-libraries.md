@@ -22,12 +22,12 @@ The following features were added:
   [here](/extending-valtimo/plugin/custom-plugin-definition.md#plugin-categories).
 
 * **Added new ZGW plugins**
-  * openzaak
+  * `openzaak`
     * This plugin allows other plugins to authenticate with openzaak
-  * documenten-api
+  * `documenten-api`
     * This plugin can make a connection to the Documenten API. When a document was generated this plugin is used to 
     upload the document to the Documenten API
-  * zaken-api
+  * `zaken-api`
     * This plugin can make a connection to the Zaken API. This plugin supports the action to link documents that have been uploaded 
     to the Documenten API to the Zaak of the current case
 
@@ -42,7 +42,11 @@ The following bugs were fixed:
 
 ## Breaking changes
 
-No known breaking changes.
+* **Changed ExterenalDataSubmittedEvent data field type**
+  The `data` field for the `ExternalDataSubmittedEvent` has changed from `Map<ExternalFormFieldType, Map<String, Object>>` to
+  `Map<String, Map<String, Object>>`.
+
+Instructions on how to migrate to this version of Valtimo can be found [here](migration.md).
 
 ## Deprecations
 
