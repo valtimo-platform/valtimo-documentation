@@ -11,7 +11,7 @@ e.g. `http://example.valtimo.com/camunda/app`
 The Camunda webapps use the default Camunda authentication mechanism. This means they cannot be accessed by keycloak
 users. Credentials can be configured in the default way Camunda provides when using Spring. 
 
-In order to create an admin user the follow application configuration should be set:
+In order to create an admin user the following application configuration should be set:
 ```yaml
 camunda.bpm.admin-user:
     id: admin # or another username of choice 
