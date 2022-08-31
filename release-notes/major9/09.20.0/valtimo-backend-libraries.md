@@ -4,10 +4,11 @@
 
 The following features were added:
 
-* **New feature1**
+* **Additional method for finding documents from within a process**
 
-  Description of the new feature goes here. 
-  Also link to the page that explains the feature in greater detail.
+  The `search` method in the `JsonSchemaDocumentSearchService` does not work when retrieving a document if no
+  authorization is found. A new method, `searchWithoutAuthorization` is now available. For classes that implement the 
+  `DocumentSearchService`, this method has a default and only needs to be implemented if this use case is necessary.
 
 * **New feature2**
 
