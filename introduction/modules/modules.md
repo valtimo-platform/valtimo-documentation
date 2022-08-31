@@ -1,5 +1,14 @@
 # Available modules
 
+## Documents
+
+Every process in Valtimo requires a document in order to run, which stores related data to a case. The contents for this
+document are predefined in a document definition, and each property defined in there definition contain validation
+rules. Documents can be used in processes in order to make service calls, to prefill forms, store form results, etc.
+
+For document definitions, JSON schema is used. The complete documentation for JSON schema can be found
+[here](https://json-schema.org/understanding-json-schema/index.html).
+
 ## Document generation
 
 ### SmartDocuments
