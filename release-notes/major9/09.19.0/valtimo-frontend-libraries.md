@@ -87,6 +87,12 @@ width values from the left side menu. Also added the default behavior of keeping
 
 The following bugs were fixed:
 
+* **Progress tab selectedProcessInstanceId not set if processDocumentInstances is empty**
+
+  The progress tab was assuming that there was at least one process started and tried to set the following property `selectedProcessInstanceId`.
+  In cases that there was no process started it would throw an error in the console. This has been fixed and an empty 
+  state has been added to show the user no process has been started yet.
+
 * **Refactor of case list component**
 
   In developing new features for the case list component, it was discovered that the component contained quite a few bugs
