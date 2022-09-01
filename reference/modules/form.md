@@ -6,16 +6,16 @@ This table lists which types of data can be referred to from a form field, and w
 
 | Prefix                        | Type of data                                                                                                    |
 |-------------------------------|:----------------------------------------------------------------------------------------------------------------|
-| [No prefix](#dossier-data)    | The data in the document of a dossier.                                                                          |
+| [No prefix](#case-data)       | The data in the document of a case.                                                                             |
 | [`oz`](#zaakeigenschappen)    | The 'zaakeigenschappen' stored for the zaak in the Zaken API. Not to be confused with the properties of a zaak. |
-| [`pv`](#process-variables)    | Process variables stored for any process instance that is linked to the dossier                                 |
+| [`pv`](#process-variables)    | Process variables stored for any process instance that is linked to the case                                    |
 | [`zaakobject`](#zaakobjecten) | The properties of 'zaakobjecten'. Objects linked to a zaak in the Zaken API                                     |
 
 
-### Dossier data
+### Case data
 Prefix: No prefix
 
-Uses a reference to data from the json document that stores dossier data in Valtimo. The dot (`.`) can be used to access
+Uses a reference to data from the json document that stores case data in Valtimo. The dot (`.`) can be used to access
 data in nested objects.
 
 Example: `person.firstName`
@@ -31,8 +31,8 @@ Example: `oz:firstName`
 ### Process variables
 Prefix: `pv`
 
-Accesses process variables for the dossier for which the form is loaded. It can access all variables of all process 
-instances for the dossier. 
+Accesses process variables for the case for which the form is loaded. It can access all variables of all process 
+instances for the case. 
 
 Example: `pv:firstName`
 
@@ -51,7 +51,7 @@ an exception will be thrown when loading the form. When the object is found, the
 property in the JSON stored in the `data` field of the object.
 
 In order for Valtimo to find the correct object, the following needs to be configured correctly:
-- A zaak is linked to the current dossier by using a zaak instance link
+- A zaak is linked to the current case by using a zaak instance link
 - A Zaken API configuration exists that has a base URL matching the zaak instance link URL
 - A zaakobject exists in the Zaken API that links the zaak to an object in the Objects API
 - An Objecten API configuration exists that has a base URL matching the object URL in the zaakobject
