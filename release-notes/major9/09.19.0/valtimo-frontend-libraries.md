@@ -113,6 +113,13 @@ The following bugs were fixed:
 
   To prevent this the modal will now only show plugin configurations that support actions 
 
+* **Fix rotating blue stripe bug for loading animation**
+
+  In the new design - `@valtimo/user-interface` - [ngx-skeleton-loader](https://www.npmjs.com/package/ngx-skeleton-loader) is used
+  to display loading animations. The styling of this package conflicted with the styling imported by [@formio/angular](https://www.npmjs.com/package/@formio/angular).
+  A change has been merged to `ngx-skeleton-loader` to resolve this styling conflict. This updated package is now included
+  in the libraries.
+
 ## Breaking changes
 
 No known breaking changes.
