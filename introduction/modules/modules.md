@@ -2,12 +2,7 @@
 
 ## Documents
 
-Every process in Valtimo requires a document in order to run, which stores related data to a case. The contents for this
-document are predefined in a document definition, and each property defined in there definition contain validation
-rules. Documents can be used in processes in order to make service calls, to prefill forms, store form results, etc.
-
-For document definitions, JSON schema is used. The complete documentation for JSON schema can be found
-[here](https://json-schema.org/understanding-json-schema/index.html).
+A document is the starting point of the case and the main data storage for that case. One or multiple processes can be associated with a document. The document content is predefined in a document definition, in JSON schema. Users interact with the document via user tasks: document data can be loaded into task forms, and user input can be stored in the document after completing a task.
 
 ## Document generation
 
