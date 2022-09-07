@@ -25,3 +25,8 @@ with a `boolean` value.
 * **`showUserNameInTopBar`**
 
   If enabled, the full name of the user currently logged in is shown in the top bar next to the user menu button.
+
+* **`experimentalDmnEditing`**
+
+  If enabled, it is possible to edit DMN tables from the ui from the admin page. This feature is experimental, please
+  refer to [the release notes](../../release-notes/major9/09.20.0/valtimo-frontend-libraries.md) for known issues.

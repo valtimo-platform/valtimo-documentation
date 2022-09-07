@@ -4,16 +4,17 @@
 
 The following features were added:
 
-* **New feature1**
+* **Experimental editing of DMN tables in ui**
 
-  Description of the new feature goes here.
-  Also link to the page that expains the feature in greater detail.
+  The list of decision tables on the admin page `Decision tables` now only shows the latest versions of each DMN table.
+  If the user attempts to open an incompatible DMN table of version 1.1, it is automatically migrated to 1.3 and opened.
+  If the user uploads a DMN table, the overview list of decision tables is now refreshed after uploading.
+  If the feature toggle `experimentalDmnEditing` is enabled in the environment, the user is now redirected to a DMN
+  editor, where it is possible to switch between versions, edit a version, and deploy a new version. Please refer to
+  [this page](../../../reference/feature-toggles/available-feature-toggles.md) for more information on how to enable feature toggles.
 
-* **New feature2**
-
-  Description of the new feature goes here.
-  Also link to the page that expains the feature in greater detail.
-
+  This feature is experimental, please refer to the known issues before considering to enable it. To make this work, add 
+  the following to the `scripts` array in your `angular.json` file: `"node_modules/dmn-js/dist/dmn-modeler.development.js"`.
 
 ## Bugfixes
 
@@ -54,10 +55,8 @@ Instructions on how to migrate to this version of Valtimo can be found [here](mi
 
 This version has the following known issues:
 
-* **Issue1**
-    * Discovered in version x.x.x
-    * Describe what can be done to work around the issue
-
-* **Issue2**
-    * Discovered in version x.x.x
-    * Describe what can be done to work around the issue
+* **Experimental DMN editing**
+    * Editing only works for DRM file with a single DRM table. If multiple tables exist, the overview list of decision
+      tables shows multiple entries.
+    * It is not possible to create a new DMN table from scratch from the ui.
+    * It is not possible to edit the key of a DMN table.
