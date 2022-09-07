@@ -41,3 +41,14 @@ After choosing one of the processes from the list, the corresponding start form 
 ![New process popup](img/new-process-popup.png)
 
 After submitting the form, the process is started.
+
+## Starting a process with a new case via code
+
+To start a new process with a new case via code, the `ProcessDocumentService` exposes the `newDocumentAndStartProcess`, 
+which accepts a process definition key, the to be created document, the process instance ID 
+(which should always be empty as no process instance exists yet) and any variables the process should start with.
+
+## Starting a process for an existing case via code
+
+To start a new process with an existing case via code, the `ProcessDocumentService` exposes the `startProcessForDocument`,
+which accepts the document ID, the process definition key and any variables the process should start with.
