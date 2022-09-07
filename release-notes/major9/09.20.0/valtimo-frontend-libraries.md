@@ -4,15 +4,24 @@
 
 The following features were added:
 
-* **New feature1**
+* **Option to configure extra tabs for object type**
 
-  Description of the new feature goes here.
-  Also link to the page that expains the feature in greater detail.
+  Added option to configure and display tabs by zaak object type, so user can see all relevant data in to separate tab.
+  
+  This configuration is done in `environmente.ts` by adding one or more **definition name** that contains a list of 
+  the name of object types, as shown in the following example.
 
-* **New feature2**
+#### **`environment.ts`**
 
-  Description of the new feature goes here.
-  Also link to the page that expains the feature in greater detail.
+  ```typescript
+  export const environment: ValtimoConfig = { ...
+    caseObjectTypes: {
+      leningen: ['Boom', 'Straatverlichting']
+    },
+   }
+  ```
+
+  For more information on how to configure extra tabs for object type, see [this page](../../../extending-valtimo/tabs/configure-tab-object-type.md).
 
 
 ## Bugfixes
