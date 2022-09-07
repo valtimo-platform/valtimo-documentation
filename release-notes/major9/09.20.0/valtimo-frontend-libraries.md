@@ -20,13 +20,17 @@ The following features were added:
 
 The following bugs were fixed:
 
-* **Bug1**
+* **Progress tab selectedProcessInstanceId not set if processDocumentInstances is empty**
 
-  Description of what the issue was.
+  The progress tab was assuming that there was at least one process started and tried to set the following property 
+  `selectedProcessInstanceId`. In cases that there was no process started it would throw an error in the console. 
+  This has been fixed and an empty state has been added to show the user no process has been started yet.
 
-* **Bug2**
+* **Start button in case detail overview hardcoded instead of a translation property**
 
-  Description of what the issue was.
+  The button to start a (sub)process on the case detail overview was always hardcoded with the label `Start`. 
+  This has been replaced by a translation property `dossier.startSubProcess` which can now be overridden in any implementation. 
+  The default value in Valtimo is still `Start`.
 
 ## Breaking changes
 
