@@ -4,37 +4,8 @@ There are two ways to start a process for a case by using the user interface:
 - Starting a process with a new case
 - Starting a process for an existing case
 
-## Setting up Valtimo to start a process
-
-To start a new case through the user interface a process has to be connected to it. On the case definition detail page 
-process definitions can be linked to the case definition. This will tell Valtimo what processes, and by extension what 
-forms, are available to be started for a case.
-
-Processes are linked by going to the case detail page by choosing `Admin` &rarr; `Cases` in the menu, and then clicking 
-in the list on the case to link the process to. On this page the list of connected process definitions is displayed.
-
-![The empty list of process definitions](img/empty-process-list.png)
-
-To add another process for the case the `Connect process` button can be used to bring up the popup.
-
-![Connect process definition poopup](img/popup-connect-process.png)
-
-In the dropdown box, the process definition can be chosen that will be available for this case definition.
-There are 2 checkboxes available to chose how the user can use the process for this case definition.
-
-The first checkbox marks it as a process that can be used to start a new case for the current case definition.
-This will use the form linked to the start event of the BPMN model as the form that is used when creating a new case.
-
-![Process creates new case checkbox](img/process-starts-new-case.png)
-
-The second checkbox marks it as a process that can be used for existing cases. It will add the process to the list of
-available processes in the dropdown on the case detail page.
-
-![Can be started within existing case](img/process-startable-existing-case.png)
-
-After saving the process is available to be used. 
-
-![The filled list of process definitions](img/filled-process-list.png)
+To be able to start a new case through the user interface a process has to be connected to it. 
+[How to link a process to a case](link-process-and-case.md).
 
 ## Starting a process with a new case
 
