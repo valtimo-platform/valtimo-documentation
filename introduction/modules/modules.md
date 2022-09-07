@@ -2,7 +2,11 @@
 
 ## Documents
 
-A document is the starting point of the case and the main data storage for that case. One or multiple processes can be associated with a document. The document content is predefined in a document definition, in JSON schema. Users interact with the document via user tasks: document data can be loaded into task forms, and user input can be stored in the document after completing a task.
+A document is the starting point of the case and the main data storage for that case. One or more processes can be
+linked to a case, which allows for the document to be created when the case is started.
+The content of the document is defined in a document definition, in JSON schema.
+Users interact with the document via user tasks; document data can be loaded into task forms, and user input can be
+stored in the document after completing a task.
 
 ## Document generation
 
