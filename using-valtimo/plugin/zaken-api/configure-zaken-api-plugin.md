@@ -32,7 +32,7 @@ A general description on how to create process links, can be found [here](../cre
 ### Link document to zaak
 
 The **Link document to zaak** action takes a Document stored in a Documenten API and link it to a zaak. The zaak to which 
-the Document is linked is based on the process for which the action is performed. The process belongs to a dossier that
+the Document is linked is based on the process for which the action is performed. The process belongs to a case that
 should already have a zaak instance link before this action is performed. The link between a zaak and a document is 
 stored as a 'zaakinformatieobject' in the Zaken API.  
 
