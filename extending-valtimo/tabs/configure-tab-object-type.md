@@ -19,7 +19,8 @@ Configuration is optional (see example below).
   ```typescript
   export const environment: ValtimoConfig = { ...
     caseObjectTypes: {
-      leningen: ['Boom', 'Straatverlichting']
+      'leningen': ['Boom', 'Straatverlichting'],
+      'generieke-zaak': ['Boom', 'Monumento'], 
     },
    }
   ```
