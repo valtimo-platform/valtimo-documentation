@@ -1,4 +1,4 @@
-# Frontend libraries 5.8.0 (RC)
+# Frontend libraries 5.8.0
 
 ## New Features
 
@@ -43,7 +43,7 @@ width values from the left side menu. Also added the default behavior of keeping
    }
   ```
 
-* **Dossier detail tab with zaakobjecten**
+* **Case detail tab with zaakobjecten**
 
   Added a tab page with a dropdown to select an object type that is linked to the current case. After selecting this
   type, a list of objects is shown of this type. To include this tab, add it to the `tabsFactory` in your implementation:
@@ -131,3 +131,4 @@ No new deprecations.
 ## Known issues
 
 No new known issues.
+
