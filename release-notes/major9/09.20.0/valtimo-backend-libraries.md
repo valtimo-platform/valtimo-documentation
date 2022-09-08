@@ -10,7 +10,7 @@ The following features were added:
   authorization is found. A new method, `searchWithoutAuthorization` is now available. For classes that implement the 
   `DocumentSearchService`, this method has a default and only needs to be implemented if this use case is necessary.
 
-* **Zaakobjecten can now be editted**
+* **Zaakobjecten can now be edited**
   When creating a form that includes a propertyName with "zaakobject:objecttype:path/to/variable" it will now be
   prefilled when loading the form. When submitting the form the corresponding zaakobject is updated with the new values
   
