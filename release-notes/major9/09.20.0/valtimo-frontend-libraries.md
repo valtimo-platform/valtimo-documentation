@@ -19,7 +19,7 @@ The following features were added:
 * **Deleting process links**
 
   Process links that were saved, can now also be deleted. More information on deleting process links can be
-  found [here](/using-valtimo/plugin/create-process-link.md).
+  found [here](../../../using-valtimo/plugin/delete-process-link.md).
 
 ## Bugfixes
 
