@@ -22,8 +22,8 @@ The following bugs were fixed:
 
 * **Progress tab selectedProcessInstanceId not set if processDocumentInstances is empty**
 
-  The progress tab was assuming that there was at least one process started and tried to set the following property 
-  `selectedProcessInstanceId`. In cases that there was no process started it would throw an error in the console. 
+  The progress tab expected at least one process was started and tried to set the following property 
+  `selectedProcessInstanceId`. If no process was started, this results in an error in the console. 
   This has been fixed and an empty state has been added to show the user no process has been started yet.
 
 * **Start button in case detail overview hardcoded instead of a translation property**
