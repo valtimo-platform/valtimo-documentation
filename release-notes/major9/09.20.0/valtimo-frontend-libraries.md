@@ -34,26 +34,11 @@ The following bugs were fixed:
 
 ## Breaking changes
 
-The following breaking changes were introduced:
-
-* **Breaking change1**
-
-* **Breaking change2**
-
-Instructions on how to migrate to this version of Valtimo can be found [here](migration.md).
+No breaking changes.
 
 ## Deprecations
 
-The following was deprecated:
-
-* **Deprecation1**
-
-  X was deprecated and is replaced with Y.
-* **Deprecation2**
-
-  X was deprecated and is replaced with Y.
-
-Instructions on how to migrate to this version of Valtimo can be found [here](migration.md).
+No new deprecations.
 
 ## Known issues
 
