@@ -54,6 +54,7 @@
     * [Custom plugin definitions](extending-valtimo/plugin/custom-plugin-definition.md)
   * [Tabs](extending-valtimo/tabs/tabs.md)
     * [Customizing case tabs](extending-valtimo/tabs/customizing-case-tabs.md)
+    * [Setting extra tabs for Zaak object type](extending-valtimo/tabs/configure-tab-object-type.md)
 * [References](reference/reference.md)
   * [Feature toggles](reference/feature-toggles/feature-toggles.md)
     * [Available feature toggles](reference/feature-toggles/available-feature-toggles.md)
