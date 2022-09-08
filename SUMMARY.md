@@ -36,6 +36,7 @@
   * [Plugins](using-valtimo/plugin/plugins.md)
     * [Configuring plugins](using-valtimo/plugin/configure-plugin.md)
     * [Creating process links](using-valtimo/plugin/create-process-link.md)
+    * [Deleting process links](using-valtimo/plugin/delete-process-link.md)
     * [SmartDocuments plugin](using-valtimo/plugin/smartdocuments/configure-smartdocuments-plugin.md)
     * [OpenZaak plugin](using-valtimo/plugin/openzaak/configure-openzaak-plugin.md)
     * [Documenten API plugin](using-valtimo/plugin/documenten-api/configure-documenten-api-plugin.md)

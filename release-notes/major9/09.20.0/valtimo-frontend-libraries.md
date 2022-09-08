@@ -16,6 +16,11 @@ The following features were added:
   This feature is experimental, please refer to the known issues before considering to enable it. To make this work, add 
   the following to the `scripts` array in your `angular.json` file: `"node_modules/dmn-js/dist/dmn-modeler.development.js"`.
 
+* **Deleting process links**
+
+  Process links that were saved, can now also be deleted. More information on deleting process links can be
+  found [here](/using-valtimo/plugin/create-process-link.md).
+
 ## Bugfixes
 
 The following bugs were fixed:
