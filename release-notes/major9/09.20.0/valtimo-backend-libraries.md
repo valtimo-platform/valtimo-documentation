@@ -10,56 +10,8 @@ The following features were added:
   authorization is found. A new method, `searchWithoutAuthorization` is now available. For classes that implement the 
   `DocumentSearchService`, this method has a default and only needs to be implemented if this use case is necessary.
 
-* **New feature2**
-
-  Description of the new feature goes here.
-  Also link to the page that explains the feature in greater detail.
-
-
-## Bugfixes
-
-The following bugs were fixed:
-
-* **Bug1**
-
-  Description of what the issue was.
-
-* **Bug2**
-
-  Description of what the issue was.
-
-## Breaking changes
-
-The following breaking changes were introduced:
-
-* **Breaking change1**
-
-* **Breaking change2**
-
-Instructions on how to migrate to this version of Valtimo can be found [here](migration.md).
-
-## Deprecations
-
-The following was deprecated:
-
-* **Deprecation1**
-
-  X was deprecated and is replaced with Y.
-
-* **Deprecation2**
-
-  X was deprecated and is replaced with Y.
-
-Instructions on how to migrate to this version of Valtimo can be found [here](migration.md).
-
-## Known issues
-
-This version has the following known issues:
-
-* **Issue1**
-  * Discovered in version x.x.x
-  * Describe what can be done to work around the issue
-
-* **Issue2**
-  * Discovered in version x.x.x
-  * Describe what can be done to work around the issue
+* **Zaakobjecten can now be editted**
+  When creating a form that includes a propertyName with "zaakobject:objecttype:path/to/variable" it will now be
+  prefilled when loading the form. When submitting the form the corresponding zaakobject is updated with the new values
+  
+  The uploading is handled by a new `ExternalDataSubmittedEvent` handler called `ZaakObjectListener`
