@@ -31,6 +31,10 @@ The following features were added:
     * This plugin can make a connection to the Zaken API. This plugin supports the action to link documents that have been uploaded 
     to the Documenten API to the Zaak of the current case
 
+* **Improved CamundaProcessJsonSchemaDocumentInstance**
+
+  The `isActive` property of the `CamundaProcessJsonSchemaDocumentInstance` indicates whether the process is still running 
+
 ## Bugfixes
 
 The following bugs were fixed:
