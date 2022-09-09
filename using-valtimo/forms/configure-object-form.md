@@ -5,13 +5,13 @@ will be used when opening the details of an object from the
 [case detail tabs for an object type](/extending-valtimo/tabs/configure-tab-object-type.md).
 
 Which form is used to display an object is determined based on the name of the form. The name of the form needs to be
-the name of the objecttype follow by the `.editform` suffix. For example, to create a form to display objects of type
+the name of the objecttype followed by the `.editform` suffix. For example, to create a form to display objects of type
 'Monument' the form name would need to be `Monument.editform`. The form name is case insensitive.
 
 When adding fields to the form the field do **not** need to use the `zaakobject` prefix, as opposed to 
 [editing zaak objects in a task form](/reference/modules/form.md#zaakobjecten). The object data is the root used to
 prefill the form. This means that when an object contains the data shown below, the 'title' property can be used in the 
-form by just using `title` as the 'Property Name' of field.
+form by just using `title` as the 'Property Name' of the field.
 
 ``` json
 {
