@@ -34,6 +34,7 @@
     * [How to link a process to a case](using-valtimo/document/link-process-and-case.md)
     * [How to start a process for a case](using-valtimo/document/start-case.md)
     * [Custom case columns](using-valtimo/document/custom-case-columns.md)
+    * [Custom case headers](using-valtimo/document/custom-case-headers.md)
   * [Forms](using-valtimo/forms/forms.md)
   * [Form flow](using-valtimo/form-flow/form-flow.md)
     * [Creating a form flow definition](using-valtimo/form-flow/create-form-flow-definition.md)

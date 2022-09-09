@@ -67,8 +67,6 @@ export const environment: ValtimoConfig = {
     customDefinitionTables: {}
     ...
 };
-
-...
   ```
 
 Inside the brackets custom columns can then be defined:
@@ -99,8 +97,6 @@ export const environment: ValtimoConfig = {
     }
     ...
 };
-
-...
   ```
 
 For each case for which custom columns are to be defined, an array is added with the desired columns. The document
@@ -144,8 +140,6 @@ export const environment: ValtimoConfig = {
     }
     ...
 };
-
-...
   ```
 
 ## Translations
