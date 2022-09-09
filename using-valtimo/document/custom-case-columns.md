@@ -106,8 +106,8 @@ definition id is used as a key to point to this array, i.e.:  `'document-definit
 In this array, for each column an object is added with the following properties:
 
 - `propertyName`: The key from the document definition that is to be used to display column data. Default properties
-like `sequence` can be written plainly. Properties nested inside like `firstName` use a JSON path expression, i.e.: 
-`$.firstName`.
+like `sequence` can be written plainly. Document content can be accessed by referring to properties by their JSON path.
+For example a `firstName` field in the root of the document can be displayed by using the expression `$.firstName`.
 - `translationKey`: The path to a translation in the translation files. In the above example, a combination of the
 document definition name and the key from the document definition is used.
 - `sortable`: A `boolean` value, which states whether the column should be sortable. Only enable this if the back-end

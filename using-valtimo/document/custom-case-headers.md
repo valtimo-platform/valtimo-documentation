@@ -81,8 +81,8 @@ in 12 columns. If blocks are added after the first 12 columns, the blocks will b
 md.
 - `noValueText`: the text that will be shown if the data is not yet available in the document. If no `noValueText` is
 specified, the default value is '-'.
-- `customClass`: a string of classes to be applied to this item. This offers a lot of freedom is provided in formatting
-the custom header items. All Bootstrap classes are available by default. For further customisation classes need to be
-added in your implementation's style sheets.
+- `customClass`: a string of classes to be applied to this item. This offers a lot of freedom in formatting the custom
+header items. All Bootstrap classes are available by default. Further customisation can be achieved by adding classes 
+with corresponding styling in the implementation's style sheets.
 
 (* = this property can be added as the only property of a customDossierHeaderItem)
