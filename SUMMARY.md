@@ -34,6 +34,7 @@
     * [How to link a process to a case](using-valtimo/document/link-process-and-case.md)
     * [How to start a process for a case](using-valtimo/document/start-case.md)
   * [Forms](using-valtimo/forms/forms.md)
+    * [Configuring an Objecten API object form](using-valtimo/forms/configure-object-form.md)
   * [Form flow](using-valtimo/form-flow/form-flow.md)
     * [Creating a form flow definition](using-valtimo/form-flow/create-form-flow-definition.md)
   * [Form links](using-valtimo/form-link/form-link.md)

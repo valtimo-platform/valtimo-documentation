@@ -29,8 +29,6 @@ configured object type.
 This list will be populated with the following data: `index`, `registration at`, `title` and a 
 **'view object'** `button` to display the task details.
 
-By clicking on the button, a modal will be opened on the right side of the page showing a Form.IO form pre-filled with the information and details
-of this object. The data is readonly
-If there is no return from the list of data or information in the modal, a helpful message will be displayed 
-stating that the data was not found.
-
+By clicking on the button, a modal will be opened on the right side of the page showing a read only form containing the
+object data. [The form that is used needs to be configured](/using-valtimo/forms/configure-object-form.md). If the form 
+is not configured, a message will be displayed stating that the data was not found.
