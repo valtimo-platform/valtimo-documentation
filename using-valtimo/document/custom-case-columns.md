@@ -1,17 +1,18 @@
 # Custom case columns
 
-Each case comes with a default case overview with four standard columns. 'Reference number', 'Created by', 'Created on',
-and 'Last modified'. These columns can be adjusted. Any key defined in a document can be used as a column in a case
-overview.
+Each case comes with a default case list with four standard columns. 'Reference number', 'Created by', 'Created on',
+and 'Last modified'. The columns in the list can be changed, added and removed. Any key defined in a document can be
+used as a column in a case list.
 
 | <!-- -->                                                      |
 |---------------------------------------------------------------|
 | ![Default case detail list](img/default-case-detail-list.png) |
-| <center>Default case overview</center>                        |
+| <center>Default case list</center>                            |
 
 ## Default columns
 
-In the environment file, the following default inline code is found for the case overview columns:
+In the environment file, the following default inline code is found for the case list columns. This defines the columns
+that will be used in the case list, unless a custom column set has been configured for that case type.
 
 #### **`environment.ts`**
   ```typescript
@@ -105,12 +106,13 @@ definition id is used as a key to point to this array, i.e.:  `'document-definit
 In this array, for each column an object is added with the following properties:
 
 - `propertyName`: The key from the document definition that is to be used to display column data. Default properties
-like `sequence` can be written plainly. Properties nested inside like `firstName` use a `$.` notation, i.e.: 
+like `sequence` can be written plainly. Properties nested inside like `firstName` use a JSON path expression, i.e.: 
 `$.firstName`.
 - `translationKey`: The path to a translation in the translation files. In the above example, a combination of the
 document definition name and the key from the document definition is used.
 - `sortable`: A `boolean` value, which states whether the column should be sortable. Only enable this if the back-end
-supports sorting on this property.
+supports sorting on this property. Currently, the back-end supports sorting on `createdOn`, `modifiedOn`, `sequence` and
+all JSON path expressions on the content.
 - `viewType`: This value is optional, and refers to the type converter to be used for the property value, otherwise the
 value will be displayed as a string. Examples of available type converters are `'date'`, `'boolean'`, `'relatedFiles `
 - and `'string'`.
@@ -145,7 +147,7 @@ export const environment: ValtimoConfig = {
 ## Translations
 
 In order to add translations for the column headers, navigate to the translation resource files in your implementation
-(like `en.json` and `en.json`) and add all your column translation keys under the `fieldLabels` key:
+(like `en.json` and `nl.json`) and add all your column translation keys under the `fieldLabels` key:
 
 #### **`en.json`**
   ```json

@@ -62,25 +62,27 @@ export const environment: ValtimoConfig = {
 };
   ```
 
-`customDossierHeader` is the main object that holds all custom case header configurations. Inside of this object, for
-each case for which a custom case header is to be defined, an array can be added under a key with the case id. In the
-example above, a custom case header configuration for a case with the id `aansprakelijkstelling` is added.
+`customDossierHeader` is the main object that holds all custom case header configurations. The `customDossierHeader` 
+contains a property for each case type that requires a custom header. The key is the name of case definition and the
+value an array of `customDossierHeaderItem` elements. In the example above, a custom case header configuration for a 
+case with the id `aansprakelijkstelling` is added.
 
 Each `customDossierHeaderItem` in `customDossierHeader` can have the following properties:
 
-- `labelTranslationKey`*: a key for the label translation, this refers to a translation key in the translation files. 
-This can also be used if you just want to show a text in the header without data from the document.
+- `labelTranslationKey`*: a key for the label translation, this refers to a translation key in the translation files.
+This can also be used to just show a text in the header without data from the document by leaving the `propertyPaths`
+property empty.
 - `propertyPaths`*: an array of paths to the data from the document that you want to display, so this can also be 
 multiple items that are placed one after the other.
 - `columnSize`*: the column size based on Bootstrap columns (col-1, col-2, col-3, ..., col-12). Bootstrap divides a row
-in 12 columns, if you keep adding blocks after you have filled the first 12 columns, the blocks will be pushed to the
-next row. In this way you can keep adding blocks on multiple rows. If no `columnSize` is specified, the default size is 3.
+in 12 columns. If blocks are added after the first 12 columns, the blocks will be pushed to the next row. If no
+`columnSize` is specified, the default size is 3.
 - `textSize`: the size of the text for this item (xs, sm, md, lg, xl). If no textSize is specified, the default size is
 md.
 - `noValueText`: the text that will be shown if the data is not yet available in the document. If no `noValueText` is
 specified, the default value is '-'.
-- `customClass`: a string of classes to be applied to this item, with this a lot of freedom is provided in formatting
-the custom header items. All Bootstrap classes are available by default, for further customisation classes need to be
+- `customClass`: a string of classes to be applied to this item. This offers a lot of freedom is provided in formatting
+the custom header items. All Bootstrap classes are available by default. For further customisation classes need to be
 added in your implementation's style sheets.
 
 (* = this property can be added as the only property of a customDossierHeaderItem)
