@@ -1,10 +1,10 @@
 # Custom case headers
 
-Instead of the default case header which only shows a case name, each case header can be customized, using configuration
+Instead of the default case header which only shows a case name, each case header can be customized using configuration
 in the environment file of a front-end implementation.
 
-The custom header consists of blocks that use the Bootstrap column classes to define the block sizes. In this way, any
-layout can be created.
+The custom header uses the Bootstrap grid system which is based on blocks of varying sizes that can be created by using 
+CSS classes. This way any layout can be created. 
 
 | <!-- -->                                          |
 |---------------------------------------------------|
@@ -13,7 +13,7 @@ layout can be created.
 
 ## Defining a custom case header
 
-For the above screenshot, the configuration in the environment looks like this:
+To create a case header as shown in the screenshot above, the configuration in the environment looks like this:
 
 #### **`environment.ts`**
   ```typescript
@@ -62,27 +62,25 @@ export const environment: ValtimoConfig = {
 };
   ```
 
-`customDossierHeader` is the main object that holds all custom case header configurations. The `customDossierHeader` 
-contains a property for each case type that requires a custom header. The key is the name of case definition and the
+`customDossierHeader` is the main object that contains all custom case header configurations. The `customDossierHeader` 
+has a property for each case type that requires a custom header. The key is the name of case definition and the
 value an array of `customDossierHeaderItem` elements. In the example above, a custom case header configuration for a 
 case with the id `aansprakelijkstelling` is added.
 
 Each `customDossierHeaderItem` in `customDossierHeader` can have the following properties:
 
-- `labelTranslationKey`*: a key for the label translation, this refers to a translation key in the translation files.
-This can also be used to just show a text in the header without data from the document by leaving the `propertyPaths`
-property empty.
-- `propertyPaths`*: an array of paths to the data from the document that you want to display, so this can also be 
-multiple items that are placed one after the other.
-- `columnSize`*: the column size based on Bootstrap columns (col-1, col-2, col-3, ..., col-12). Bootstrap divides a row
-in 12 columns. If blocks are added after the first 12 columns, the blocks will be pushed to the next row. If no
-`columnSize` is specified, the default size is 3.
-- `textSize`: the size of the text for this item (xs, sm, md, lg, xl). If no textSize is specified, the default size is
+- **labelTranslationKey** (Optional) A key for the label translation. This refers to a translation key in the translation files.
+This can also be used to show a static text in the header without data from the document by leaving the `propertyPaths`
+property empty. If left blank, no label will be shown.
+- **propertyPaths** (Optional) An array of paths to the data from the document that is displayed. When this contains multiple items
+they are placed one after the other.
+- **columnSize** (Optional) The column size based on Bootstrap columns (1-12). Bootstrap divides a row in 12 columns. If blocks are 
+added after the first 12 columns, the blocks will be pushed to the next row. If no `columnSize` is specified, the 
+default size is 3.
+- **textSize** (Optional) The size of the text for this item (xs, sm, md, lg, xl). If no textSize is specified, the default size is
 md.
-- `noValueText`: the text that will be shown if the data is not yet available in the document. If no `noValueText` is
+- **noValueText** (Optional) The text that will be shown if the data is not available in the document. If no `noValueText` is
 specified, the default value is '-'.
-- `customClass`: a string of classes to be applied to this item. This offers a lot of freedom in formatting the custom
+- **customClass** (Optional) A string of classes to be applied to this item. This offers a lot of freedom in formatting the custom
 header items. All Bootstrap classes are available by default. Further customisation can be achieved by adding classes 
 with corresponding styling in the implementation's style sheets.
-
-(* = this property can be added as the only property of a customDossierHeaderItem)
