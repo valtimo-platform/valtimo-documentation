@@ -19,7 +19,7 @@ Configuration is optional (see example below).
   export const environment: ValtimoConfig = { ...
     caseObjectTypes: {
       'leningen': ['Boom', 'Straatverlichting'],
-      'generieke-zaak': ['Boom', 'Monumento'], 
+      'generieke-zaak': ['Boom', 'Monument'], 
     },
    }
   ```
