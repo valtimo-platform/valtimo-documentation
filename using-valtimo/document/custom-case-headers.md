@@ -1,7 +1,7 @@
 # Custom case headers
 
-Instead of the default case header which only shows a case name, each case header can be customized, using a
-configuration in the environment file of a front-end implementation.
+Instead of the default case header which only shows a case name, each case header can be customized, using configuration
+in the environment file of a front-end implementation.
 
 The custom header consists of blocks that use the Bootstrap column classes to define the block sizes. In this way, any
 layout can be created.
