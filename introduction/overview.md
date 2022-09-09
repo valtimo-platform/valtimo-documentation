@@ -14,10 +14,11 @@ Principles we follow:
 
 # When to use Valtimo? 
 
-There is no universal, broadly excepted definition of BPA-categeries. We distinguish three types of business process automation (BPA). 
+There is no universal, broadly excepted definition of Business Process Automation categories. A possible categorization in types is: 
 
-First **Workflow**. This is the most simple form of BPA, often largely sequential steps in a predefined process. Think of an approval flow for holidays or onboarding new employees. Using Valtimo for these types of processes is overkill. Look for a point solution. 
+1.	**Workflow**. Being the simplest form of BPA, often largely consisting sequential steps in a predefined process. Examples are the approval flow for holidays-requests or onboarding new employees. Using Valtimo for these types of processes is not recommended. Using a point solution is often the better option. 
+2.	On the other side of the spectrum there is **Service Orchestration**. In large scale micro service landscapes, communication between services can be a challenge. To step away from point to point connections, communication can be handled with a choreography-pattern with a message bus solution like Kafka, AWS SQS or RabbitMQ. The alternative option is to use an Orchestration pattern using a BPMN-engine.
 
-On the other side of the spectrum there is **Service Orchestration**. This is basically connecting (micro) services by means of BPMN models. You would see these types of processes in enterprise environments, focussing on eliminating manual work. Typically very high volume. Think of Amazon (the webshop): processing your order is fully automated, unless something goes wrong. We'd advice to use bare BPMN-engine for these projects, combined with an experienced Java development team. 
+These types of processes typically are seen enterprise environments, focussing on eliminating manual work. Typically high volume processes with no or minimal manual work. Using Valtimo for service Orchestration is not recommended. Using a scalable BPMN-engine is advised. 
+3.	**Case Management**. This is a more complex form of business process automation. Typically, the course of a Case is not predictable. Based on Events that take place the handling of the case differs. Typically there will be a mix of automated and user tasks and often complex and event based processes. Multiple processes can work with one case. Valtimo has been designed for this scenario. 
 
-And last we have **Case Management**. This is a more complex form of business process automation. Typically, the course of a Case is not predictable. Based on Events that take place the handling of the case differs. Typically there will be a mix of automated and user tasks and often complex and event based processes. Take a spin with Valtimo.  
