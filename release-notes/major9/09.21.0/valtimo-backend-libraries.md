@@ -4,10 +4,9 @@
 
 The following features were added:
 
-* **New feature1**
+* **Improved CamundaProcessJsonSchemaDocumentInstance**
 
-  Description of the new feature goes here. 
-  Also link to the page that explains the feature in greater detail.
+  The `isActive` property of the `CamundaProcessJsonSchemaDocumentInstance` indicates whether the process is still running
 
 * **New feature2**
 

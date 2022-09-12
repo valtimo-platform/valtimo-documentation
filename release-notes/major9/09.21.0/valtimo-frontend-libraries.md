@@ -4,10 +4,9 @@
 
 The following features were added:
 
-* **New feature1**
+* **Sorted processes in progress tab**
 
-  Description of the new feature goes here.
-  Also link to the page that expains the feature in greater detail.
+  The processes that are displayed in the progress tab are now sorted with active processes first.
 
 * **New feature2**
 
