@@ -8,10 +8,13 @@ The following features were added:
 
   The processes that are displayed in the progress tab are now sorted with active processes first.
 
-* **New feature2**
+* **System processes**
+  Processes can now be marked as a system process. System processes are processes that are critical
+  to the functioning of Valtimo itself. When a process is marked as a system process it will be shown 
+  in the list of processes and when viewing a process. If the process is also marked as read-only it
+  will not be editable fron the frontend.
 
-  Description of the new feature goes here.
-  Also link to the page that expains the feature in greater detail.
+  More information about this feature can be found [here](/using-valtimo/process/systemprocesses.md)
 
 
 ## Bugfixes
