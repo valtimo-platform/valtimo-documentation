@@ -1,4 +1,4 @@
-* Overview
+# Overview
 
 For years, Ritense has worked on building custom process management solutions, solving the same problems with every project. Every project needed a task list, a solution for storing data, an answer to access and entitlement. Valtimo is the result of bundling this knowledge and code into one platform. It is an opinionated Business Process Implementation, based on the accumulated experience from working on BPMN projects for the past years.
 
