@@ -50,6 +50,8 @@
     * [Object Token Auhentication Plugin](using-valtimo/plugin/object-token-authentication/configure-object-token-authentication-plugin.md)
     * [Objecten API Plugin](using-valtimo/plugin/objecten-api/configure-objecten-api-plugin.md)
     * [Objecttypen API Plugin](using-valtimo/plugin/objecttypen-api/configure-objecttypen-api-plugin.md)
+  * [Process](using-valtimo/process/process.md)
+    * [System processes](using-valtimo/process/systemprocesses.md)
 * [Extending Valtimo](extending-valtimo/extending-valtimo.md)
   * [Forms](extending-valtimo/forms/forms.md)
     * [Creating a form field data resolver](extending-valtimo/forms/creating-form-data-resolver.md)
