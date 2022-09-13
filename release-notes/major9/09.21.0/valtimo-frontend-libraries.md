@@ -12,7 +12,7 @@ The following features were added:
   Processes can now be marked as a system process. System processes are processes that are critical
   to the functioning of Valtimo itself. When a process is marked as a system process it will be shown 
   in the list of processes and when viewing a process. If the process is also marked as read-only it
-  will not be editable fron the frontend.
+  will not be editable from the frontend.
 
   More information about this feature can be found [here](/using-valtimo/process/systemprocesses.md)
 
