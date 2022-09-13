@@ -1,6 +1,6 @@
 # Background
 
-For years we have been building custom process management solutions. Over and over again, we were solving the same problems. Projects needed a proper task list. A solution for storing data. An answer to access & entitlement. The solution was bundeling our knowledge and code into a platform: Valtimo. An opinionated Business Process Implementation, based on all the BPMN projects we did the past years. We made a lot of design mistakes - the knowledge is in the platform. And actually we still have new and better insights with every new project we are doing - and the knowledge flows into Valtimo. 
+For years, Ritense has worked on building custom process management solutions, solving the same problems with every project. Every project needed a task list, a solution for storing data, an answer to access and entitlement. Valtimo is the result of bundling this knowledge and code into one platform. It is an opinionated Business Process Implementation, based on the accumulated experience from working on BPMN projects for the past years.
 
 # Philosophy
 Valtimo does not strive to support a broad techstack: it is an opinionated BPA-implementation - often following trends in the market.  
