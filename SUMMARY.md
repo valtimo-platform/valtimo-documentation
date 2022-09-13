@@ -33,6 +33,8 @@
     * [Creating a document definition](using-valtimo/document/create-document-definition.md)
     * [How to link a process to a case](using-valtimo/document/link-process-and-case.md)
     * [How to start a process for a case](using-valtimo/document/start-case.md)
+    * [Custom case columns](using-valtimo/document/custom-case-columns.md)
+    * [Custom case headers](using-valtimo/document/custom-case-headers.md)
   * [Forms](using-valtimo/forms/forms.md)
     * [Configuring an Objecten API object form](using-valtimo/forms/configure-object-form.md)
   * [Form flow](using-valtimo/form-flow/form-flow.md)
