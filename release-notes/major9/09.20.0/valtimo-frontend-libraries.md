@@ -21,6 +21,25 @@ The following features were added:
   Process links that were saved, can now also be deleted. More information on deleting process links can be
   found [here](../../../using-valtimo/plugin/delete-process-link.md).
 
+* **Option to configure extra tabs for object type**
+
+  Added option to configure and display tabs by zaak object type, so user can see all relevant data in a separate tab.
+
+  This configuration is done in `environment.ts` by adding one or more **definition name** that contains a list of
+  the name of object types, as shown in the following example.
+
+#### **`environment.ts`**
+
+  ```typescript
+  export const environment: ValtimoConfig = { ...
+    caseObjectTypes: {
+      leningen: ['Boom', 'Straatverlichting']
+    },
+   }
+  ```
+
+For more information on how to configure extra tabs for object types, see [this page](../../../extending-valtimo/tabs/configure-tab-object-type.md).
+
 ## Bugfixes
 
 The following bugs were fixed:
