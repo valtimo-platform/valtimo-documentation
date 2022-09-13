@@ -1,8 +1,8 @@
-# Background
+* Overview
 
 For years, Ritense has worked on building custom process management solutions, solving the same problems with every project. Every project needed a task list, a solution for storing data, an answer to access and entitlement. Valtimo is the result of bundling this knowledge and code into one platform. It is an opinionated Business Process Implementation, based on the accumulated experience from working on BPMN projects for the past years.
 
-# Philosophy
+## Philosophy
 Valtimo does not strive to support a broad techstack: it is an opinionated BPA-implementation - often following trends in the market.  
 
 The core team uses the following guide lines: 
@@ -12,7 +12,7 @@ The core team uses the following guide lines:
 3. Keep things simple. 
 4. Use upcoming but proven technology. 
 
-# When to use Valtimo? 
+## When to use Valtimo? 
 
 There is no universal, broadly excepted definition of Business Process Automation categories. A possible categorization in types is: 
 
