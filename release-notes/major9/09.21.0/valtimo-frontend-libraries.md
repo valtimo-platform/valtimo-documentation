@@ -8,10 +8,14 @@ The following features were added:
 
   The processes that are displayed in the progress tab are now sorted with active processes first.
 
-* **New feature2**
+* **Added environment property to set the supported filetypes for uploading a file**
+  
+  A new property `caseFileUploadAcceptedFiles` can be used in the environment file to whitelist the supported filetypes 
+  when trying to upload a file in the documents tab.
 
-  Description of the new feature goes here.
-  Also link to the page that expains the feature in greater detail.
+  The way to use this is to create a comma separated list of mime types or file extensions.
+  
+  Eg.: `image/*,application/pdf,.psd`
 
 
 ## Bugfixes
