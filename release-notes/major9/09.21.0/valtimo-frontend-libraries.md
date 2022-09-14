@@ -14,7 +14,16 @@ The following features were added:
   in the list of processes and when viewing a process. If the process is also marked as read-only it
   will not be editable from the frontend.
 
-  More information about this feature can be found [here](/using-valtimo/process/systemprocesses.md)
+  More information about this feature can be found [here](/using-valtimo/process/systemprocesses.md).
+
+* **Added environment property to set the supported filetypes for uploading a file**
+  
+  A new property `caseFileUploadAcceptedFiles` can be used in the environment file to whitelist the supported filetypes 
+  when trying to upload a file in the documents tab.
+
+  The way to use this is to create a comma separated list of mime types or file extensions.
+  
+  Eg.: `image/*,application/pdf,.psd`
 
 
 ## Bugfixes
