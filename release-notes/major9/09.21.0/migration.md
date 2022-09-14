@@ -2,20 +2,21 @@
 
 This page describes how to update Valtimo from the previous version to the current.
 
-* **Breaking change 1/Deprecation 1**
+* **FormFieldDataResolver `get` method is deprecated**
 
-  1. **Step1**
+  1. **Implement the new `get` method**
 
-     Description
-  2. **Step2**
+      Add method `get(String documentDefinitionName, UUID documentId, JsonNode formDefinition, String... varNames)` to your class and move the logic from the deprecated `get` to this new method
 
-     Description
+  2. **Invoke new `get` from deprecated `get`**  
 
-* **Breaking change 2/Deprecation 2**
-
-  1. **Step1**
-
-      Description
-  2. **Step2**
-
-      Description
+      ```
+      override fun get(documentDefinitionName: String, documentId: UUID, vararg varNames: String): Map<String, Any> {
+          return get(
+              documentDefinitionName = documentDefinitionName,
+              documentId = documentId,
+              formDefinition = Mapper.INSTANCE.get().createObjectNode(),
+              varNames = varNames
+          )
+      }
+      ```
