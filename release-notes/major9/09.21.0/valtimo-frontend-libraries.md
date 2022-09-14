@@ -8,6 +8,14 @@ The following features were added:
 
   The processes that are displayed in the progress tab are now sorted with active processes first.
 
+* **System processes**
+  Processes can now be marked as a system process. System processes are processes that are critical
+  to the functioning of Valtimo itself. When a process is marked as a system process it will be shown 
+  in the list of processes and when viewing a process. If the process is also marked as read-only it
+  will not be editable from the frontend.
+
+  More information about this feature can be found [here](/using-valtimo/process/systemprocesses.md).
+
 * **Added environment property to set the supported filetypes for uploading a file**
   
   A new property `caseFileUploadAcceptedFiles` can be used in the environment file to whitelist the supported filetypes 
