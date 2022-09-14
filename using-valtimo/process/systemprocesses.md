@@ -7,7 +7,7 @@ process is read-only, it is not possible to update the process or deploy it.
 ![Read only system process](img/read-only-system-process.png)
 
 A process can be marked as a system process by setting a property called `systemProcess`
-to `true` on the model itself under the `Extensions` tab
+to `true` on the model itself under the `Extensions` tab.
 
 ![Setting system process property](img/setting-system-process-property.png)
 

@@ -23,17 +23,17 @@ The following features were added:
 
 * **Added new ZGW plugins**
   * `openzaak`
-    * This plugin allows other plugins to authenticate with openzaak
+    * This plugin allows other plugins to authenticate with openzaak.
   * `documenten-api`
     * This plugin can make a connection to the Documenten API. When a document was generated this plugin is used to 
-    upload the document to the Documenten API
+    upload the document to the Documenten API.
   * `zaken-api`
     * This plugin can make a connection to the Zaken API. This plugin supports the action to link documents that have been uploaded 
-    to the Documenten API to the Zaak of the current case
+    to the Documenten API to the Zaak of the current case.
 
 * **Improved CamundaProcessJsonSchemaDocumentInstance**
 
-  The `isActive` property of the `CamundaProcessJsonSchemaDocumentInstance` indicates whether the process is still running 
+  The `isActive` property of the `CamundaProcessJsonSchemaDocumentInstance` indicates whether the process is still running .
 
 ## Bugfixes
 

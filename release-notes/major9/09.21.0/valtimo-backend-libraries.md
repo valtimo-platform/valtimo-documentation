@@ -6,13 +6,13 @@ The following features were added:
 
 * **Improved CamundaProcessJsonSchemaDocumentInstance**
 
-  The `isActive` property of the `CamundaProcessJsonSchemaDocumentInstance` indicates whether the process is still running
+  The `isActive` property of the `CamundaProcessJsonSchemaDocumentInstance` indicates whether the process is still running.
 
 * **System processes**
 
   Processes can now be marked as a system process. System processes are processes that are critical 
   to the functioning of Valtimo itself. More information about this feature can be found 
-  [here](/using-valtimo/process/systemprocesses.md)
+  [here](/using-valtimo/process/systemprocesses.md).
 
 * **New feature2**
 
