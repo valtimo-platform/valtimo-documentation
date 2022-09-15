@@ -43,7 +43,7 @@ The following was deprecated:
 * **FormFieldDataResolver `get` method**
 
   The method `get(String documentDefinitionName, UUID documentId, String... varNames)` was deprecated and \
-  is replaced with `get(String documentDefinitionName, UUID documentId, JsonNode formDefinition, String... varNames)`.
+  is replaced with `get(DataResolvingContext dataResolvingContext, String... varNames)`.
 
 * **Deprecation2**
 
