@@ -17,7 +17,6 @@ The following features were added:
   
   The uploading is handled by a new `ExternalDataSubmittedEvent` handler called `ZaakObjectListener`
 
-Changes:
 * **KeyCloak**
 
   KeyCloak libraries have been updated to 19.0.1. Older KeyCloak server versions are still supported.
