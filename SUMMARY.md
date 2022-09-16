@@ -52,6 +52,8 @@
     * [Objecttypen API Plugin](using-valtimo/plugin/objecttypen-api/configure-objecttypen-api-plugin.md)
   * [Process](using-valtimo/process/process.md)
     * [System processes](using-valtimo/process/systemprocesses.md)
+  * [Upload](using-valtimo/upload/upload.md)
+    * [Uploading to Documenten API with metadata](using-valtimo/upload/upload-to-documenten-api-with-metadata.md)
 * [Extending Valtimo](extending-valtimo/extending-valtimo.md)
   * [Forms](extending-valtimo/forms/forms.md)
     * [Creating a form field data resolver](extending-valtimo/forms/creating-form-data-resolver.md)
