@@ -49,7 +49,13 @@ No new deprecations.
 
 ## Known issues
 
-* **Multiple form associations on process definition (36319)**
+* **Multiple existing form associations on process definition (36319)**
 
   When multiple start forms are associated with a single process definition the user is unable to start a new case of
   that specific type.
+  
+* **Using formAssociationService.createFormAssociation() on application startup causing the application to crash**
+
+  When form associations are created on application startup using the formAssociationService.createFormAssociation() method, these associations are duplicated. Before   the bugfix in this release these duplicated associations were added without errors. After the bugfix in this release the application will throw an exception when       creating an already existing association, causing the application to crash on startup.
+  
+  Solution: the correct way to add form associations is by adding [form link files](/using-valtimo/form-link/configure-task.md). Using of          formAssociationService.createFormAssociation() should be replaced with form link files.
