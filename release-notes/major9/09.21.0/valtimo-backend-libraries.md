@@ -46,9 +46,10 @@ Instructions on how to migrate to this version of Valtimo can be found [here](mi
 
 The following was deprecated:
 
-* **Deprecation1**
+* **FormFieldDataResolver `get` method**
 
-  X was deprecated and is replaced with Y.
+  The method `get(String documentDefinitionName, UUID documentId, String... varNames)` was deprecated and \
+  is replaced with `get(DataResolvingContext dataResolvingContext, String... varNames)`.
 
 * **Deprecation2**
 

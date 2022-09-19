@@ -2,20 +2,9 @@
 
 This page describes how to update Valtimo from the previous version to the current.
 
-* **Breaking change 1/Deprecation 1**
+* **FormFieldDataResolver `get` method is deprecated**
 
-  1. **Step1**
-
-     Description
-  2. **Step2**
-
-     Description
-
-* **Breaking change 2/Deprecation 2**
-
-  1. **Step1**
-
-      Description
-  2. **Step2**
-
-      Description
+  1. **Implement the new `get` method**
+     
+      Add method `get(DataResolvingContext dataResolvingContext, String... varNames)` to your class and move the logic from the deprecated `get` to this new method. 
+      The parameters `String documentDefinitionName` and `UUID documentId` are moved to the `DataResolvingContext` object. 
