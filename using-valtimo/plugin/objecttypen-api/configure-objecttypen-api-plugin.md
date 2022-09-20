@@ -13,9 +13,9 @@ Instructions on how to add the Objecttypen API dependency can be found
 [here](/valtimo-implementation/modules/objecttypen-api.md).
 
 To configure this plugin the following properties have to be entered:
-- **URL** Contains the complete base URL of the Objecttypen API to connect to. This generally includes
+- **URL.** Contains the complete base URL of the Objecttypen API to connect to. This generally includes
   the path `/api/v1/`.
-- **Authentication plugin configuration** Reference to another plugin configuration that will be used to add
+- **Authentication plugin configuration.** Reference to another plugin configuration that will be used to add
   authentication to any request performed on the Objecttypen API. If no option is available in this field a plugin has to
   be configured that is able to authenticate for the specific application that hosts the Objecttypen API.
   (e.g. Object Token Authentication)
