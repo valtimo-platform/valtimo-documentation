@@ -55,3 +55,9 @@ type (or informatieobjecttype) in the Catalogi API. (e.g. https://catalogi-api.e
 
 An example process link configuration:
 ![Generate document process link](img/save-document-configuration.png)
+
+### Save uploaded document
+
+The **Save uploaded document** saves a document to the Documenten API. Metadata provided by the user
+through a form after uploading a file, is transferred together with the file to the Documenten API. After this plugin
+action has been selected, the user does not have to input any configuration data.
