@@ -39,6 +39,10 @@ Document. A reference to the document has to be available as a process variable.
 document, the resulting document URL will be saved in a process variable.
 
 When creating a process link the following properties have to be entered:
+- **File name** The name of the physical file in which the content of the document is captured, including extension.
+- **Confidentiality level** Indication of the extent to which the document is intended for public access.
+- **Title** The name by which the document is formally known.
+- **Description** A generic description of the content of the document.
 - **Name of process variable with document** The name of the process variable in which the ID of a local file in the 
 temporary file storage has been stored.  
 - **Process variable name for storing document URL** The name of the process variable in which the resulting document URL 
