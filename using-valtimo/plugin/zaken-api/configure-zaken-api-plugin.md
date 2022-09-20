@@ -31,7 +31,7 @@ A general description on how to create process links, can be found [here](../cre
 
 ### Link document to zaak
 
-The **Link document to zaak** action takes a Document stored in a Documenten API and link it to a zaak. The zaak to which 
+The **Link document to zaak** action takes a Document stored in a Documenten API and links it to a zaak. The zaak to which 
 the Document is linked is based on the process for which the action is performed. The process belongs to a case that
 should already have a zaak instance link before this action is performed. The link between a zaak and a document is 
 stored as a 'zaakinformatieobject' in the Zaken API.  
@@ -45,3 +45,11 @@ When creating a process link the following properties have to be entered:
 
 An example process link configuration:
 ![Generate document process link](img/link-document-to-zaak.png)
+
+### Link uploaded document to zaak
+
+The **Link uploaded document to zaak** action takes a user uploaded Document stored in a Documenten API and links it to
+a zaak. The zaak to which the Document is linked is based on the process for which the action is performed. The process
+belongs to a case that should already have a zaak instance link before this action is performed. The link between a zaak
+and a document is stored as a 'zaakinformatieobject' in the Zaken API. This plugin action does not require any end user
+configuration.

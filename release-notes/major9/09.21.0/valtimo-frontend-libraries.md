@@ -26,14 +26,24 @@ The following features were added:
   Eg.: `image/*,application/pdf,.psd`
 
 * **New documents tab for Documenten API uploads**
+
   If `uploadProvider` is set to `UploadProvider.DOCUMENTEN_API` in the environment, a new documents tab is shown. This
   tab only allows one file upload at a time. On selecting a file, a modal opens with a form to input metadata for the
   Documenten API. For more information on how to configure Documenten API uploads, refer to [this page](/using-valtimo/upload/upload-to-documenten-api-with-metadata.md).
 
 * **New datepicker component**
+
   Added a new date picker component to `@valtimo/user-interface`: `v-date-picker`. It is based on [flatpickr](https://flatpickr.js.org/).
   If this component is included anywhere in an implementation, add `"node_modules/flatpickr/dist/flatpickr.css"` to the
   `styles` array in `angular.json` to avoid issues.
+
+* **Added new plugin actions to Documenten API and Zaken API plugin**
+
+  New actions have been added to the Documenten API and Zaken API plugins: **Link uploaded document to zaak** and
+  **Save uploaded document** respectively. Both plugin actions do not require any end user configuration.
+
+  For more information on these new plugin actions refer to [this page](/using-valtimo/plugin/documenten-api/configure-documenten-api-plugin.md)
+  for the Documenten API and [this page](/using-valtimo/plugin/zaken-api/configure-zaken-api-plugin.md) for the Zaken API.
 
 ## Bugfixes
 
