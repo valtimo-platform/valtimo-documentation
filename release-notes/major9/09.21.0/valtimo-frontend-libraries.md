@@ -40,7 +40,8 @@ The following features were added:
 * **Added new plugin actions to Documenten API and Zaken API plugin**
 
   New actions have been added to the Documenten API and Zaken API plugins: **Link uploaded document to zaak** and
-  **Save uploaded document** respectively. Both plugin actions do not require any end user configuration.
+  **Save uploaded document** respectively. After these plugin actions have been selected, the user does not have to
+  input any configuration data.
 
   For more information on these new plugin actions refer to [this page](/using-valtimo/plugin/documenten-api/configure-documenten-api-plugin.md)
   for the Documenten API and [this page](/using-valtimo/plugin/zaken-api/configure-zaken-api-plugin.md) for the Zaken API.

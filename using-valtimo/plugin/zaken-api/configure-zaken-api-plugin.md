@@ -48,8 +48,8 @@ An example process link configuration:
 
 ### Link uploaded document to zaak
 
-The **Link uploaded document to zaak** action takes a user uploaded Document stored in a Documenten API and links it to
-a zaak. The zaak to which the Document is linked is based on the process for which the action is performed. The process
+The **Link uploaded document to zaak** action takes a document stored in a Documenten API and links it to a zaak. The
+zaak to which the document is linked is based on the process for which the action is performed. The process
 belongs to a case that should already have a zaak instance link before this action is performed. The link between a zaak
-and a document is stored as a 'zaakinformatieobject' in the Zaken API. This plugin action does not require any end user
-configuration.
+and a document is stored as a 'zaakinformatieobject' in the Zaken API. After this plugin action has been selected,
+the user does not have to input any configuration data.
