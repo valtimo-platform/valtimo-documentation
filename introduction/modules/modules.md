@@ -36,6 +36,17 @@ description can be found [here](plugin-introduction.md).
 The Documenten (Documents) API is a Dutch government API standard for storage of and access to documents and their 
 metadata. A plugin is provided that allows for connecting to applications that provide a Documenten API.
 
+### Objecten API
+
+The Objecten (Objects) API is a Dutch government API standard for storage of and access to objects and their
+metadata. A plugin is provided that allows for connecting to applications that provide an Objecten API.
+
+### Objecttypes API
+
+The Objecttypes API is a Dutch government API standard for storage of and access to object types, without having to
+create a new API for each object. A plugin is provided that allows for connecting to applications that provide an 
+Objecttypes API.
+
 ### Zaken API
 
 The Zaken (Cases) API is a Dutch government API standard for exchanging information around cases and their related data.
