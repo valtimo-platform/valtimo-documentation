@@ -48,11 +48,11 @@ The following features were added:
 
 * **Set file extensions that open directly in the browser**
 
-  You can now add the property `supportedDocumentFileTypesToViewInBrowser` to declare which files are opened in the browser. All the files that are not included will not open in the browser but instead downloaded.
+  You can now add a new environment property `supportedDocumentFileTypesToViewInBrowser` to declare which files are opened in the browser. All the files that are not included will not open in the browser but instead will be directly downloaded.
 
-* **The style of the button in the prompt component can now be set**
+* **The style of the button in the v-prompt in @valtimo/user-interface can now be set**
 
-  The prompt can now include a `ButtonType` value for both the cancel and confirm button.
+  The `v-prompt in @valtimo/user-interface` can now include a `ButtonType` value for both the cancel and confirm button.
 
 ## Bugfixes
 
@@ -63,13 +63,13 @@ The following bugs were fixed:
   Everytime you would open a file on Firefox you would be redirected to the `Dashboard page` and you would not be able to see or download the file.
   A global fix is applied to open a file correctly and if it fails for some reason it will be downloaded automatically.
 
-* **BodyText of the prompt can now be set properly**
+* **BodyText of the v-prompt in @valtimo/user-interface can now be set properly**
 
-  The prompt was always showing the bodyText of the keycloak refresh token prompt.
+  The `v-prompt in @valtimo/user-interface` was always showing the bodyText of the keycloak refresh token prompt.
 
-* **Button styling is not set in the prompt component**
+* **Button styling is not set in the v-button in @valtimo/user-interface**
 
-  The button component was not able to handle async values since it was not listening to any changes.
+  The `v-button in @valtimo/user-interface` was not able to handle async values since it was not listening to any changes.
 
 ## Breaking changes
 
