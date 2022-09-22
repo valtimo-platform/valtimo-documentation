@@ -31,6 +31,11 @@ The following features were added:
   tab only allows one file upload at a time. On selecting a file, a modal opens with a form to input metadata for the
   Documenten API. For more information on how to configure Documenten API uploads, refer to [this page](/using-valtimo/upload/upload-to-documenten-api-with-metadata.md).
 
+* **Link upload process to a case on case management page**
+
+  If `uploadProvider` is set to `UploadProvider.DOCUMENTEN_API` in the environment, the upload process that is used
+  for uploading files can be set on the admin page of a case definition.
+
 * **New datepicker component**
 
   Added a new date picker component to `@valtimo/user-interface`: `v-date-picker`. It is based on [flatpickr](https://flatpickr.js.org/).
