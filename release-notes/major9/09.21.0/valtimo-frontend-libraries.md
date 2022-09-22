@@ -46,17 +46,30 @@ The following features were added:
   For more information on these new plugin actions refer to [this page](/using-valtimo/plugin/documenten-api/configure-documenten-api-plugin.md)
   for the Documenten API and [this page](/using-valtimo/plugin/zaken-api/configure-zaken-api-plugin.md) for the Zaken API.
 
+* **Set file extensions that open directly in the browser**
+
+  You can now add the property `supportedDocumentFileTypesToViewInBrowser` to declare which files are opened in the browser. All the files that are not included will not open in the browser but instead downloaded.
+
+* **The style of the button in the prompt component can now be set**
+
+  The prompt can now include a `ButtonType` value for both the cancel and confirm button.
+
 ## Bugfixes
 
 The following bugs were fixed:
 
-* **Bug1**
+* **Documents from the document can not be viewed in a new tab in Firefox**
 
-  Description of what the issue was.
+  Everytime you would open a file on Firefox you would be redirected to the `Dashboard page` and you would not be able to see or download the file.
+  A global fix is applied to open a file correctly and if it fails for some reason it will be downloaded automatically.
 
-* **Bug2**
+* **BodyText of the prompt can now be set properly**
 
-  Description of what the issue was.
+  The prompt was always showing the bodyText of the keycloak refresh token prompt.
+
+* **Button styling is not set in the prompt component**
+
+  The button component was not able to handle async values since it was not listening to any changes.
 
 ## Breaking changes
 
