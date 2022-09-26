@@ -11,4 +11,5 @@
 * [OpenZaak](openzaak.md)
 * [Plugins](plugin.md)
 * [Smart documents](smartdocuments.md)
+* [Web](web.md)
 * [Zaken API](zaken-api.md)

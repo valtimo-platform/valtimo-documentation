@@ -29,6 +29,11 @@ by the platform, but developers can create their own plugins as well. Plugins ca
 configured without writing code, and can be used during BPMN processes. A more in-depth
 description can be found [here](plugin-introduction.md).
 
+## Web
+
+Web offers web related configuration, such as integration with [Swagger](https://swagger.io/) (to provide 
+REST API documentation) and hardening (for strengthening endpoints against outside attacks).
+
 ## ZGW (Zaakgericht Werken)
 
 ### Documenten API
