@@ -9,6 +9,7 @@
 * [Object Token AUthentication](objecten-api.md)
 * [Objecttypen API](objecttypen-api.md)
 * [OpenZaak](openzaak.md)
+* [OpenZaak resource](openzaak-resource.md)
 * [Plugins](plugin.md)
 * [Smart documents](smartdocuments.md)
 * [Temporary resource storage](temporary-resource-storage.md)

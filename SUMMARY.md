@@ -31,6 +31,7 @@
       * [Object Token Authentication](valtimo-implementation/modules/objecttokenauthentication.md)
       * [Objecttypen API](valtimo-implementation/modules/objecttypen-api.md)
       * [OpenZaak](valtimo-implementation/modules/openzaak.md)
+      * [OpenZaak resource](valtimo-implementation/modules/openzaak-resource.md)
       * [Smart documents](valtimo-implementation/modules/smartdocuments.md)
       * [Zaken API](valtimo-implementation/modules/zaken-api.md)
 * [Using Valtimo](using-valtimo/using-valtimo.md)
