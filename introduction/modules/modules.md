@@ -29,7 +29,13 @@ by the platform, but developers can create their own plugins as well. Plugins ca
 configured without writing code, and can be used during BPMN processes. A more in-depth
 description can be found [here](plugin-introduction.md).
 
+## Temporary resource storage
+
+Temporary resource storage provides a service for storing files locally, e.g. to process it during following tasks.
+These files are removed after a preconfigured time.
+
 ## Value resolvers
+
 Value resolvers provides a framework for creating custom value resolvers, which can be used inside of
 forms to retrieve data from a custom location.
 
