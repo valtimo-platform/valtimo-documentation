@@ -15,7 +15,7 @@
 * ZGW
   * [Documenten API](documenten-api.md)
   * [Objecten API](objecten-api.md)
-  * [Object Token Authentication](objecttokenauthentication.md)
+  * [Object Token Authentication](objecten-api-authentication.md)
   * [Objecttypen API](objecttypen-api.md)
   * [OpenZaak](openzaak.md)
   * [OpenZaak resource](openzaak-resource.md)

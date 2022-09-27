@@ -30,7 +30,7 @@
     * ZGW
       * [Documenten API](valtimo-implementation/modules/documenten-api.md)
       * [Objecten API](valtimo-implementation/modules/objecten-api.md)
-      * [Object Token Authentication](valtimo-implementation/modules/objecttokenauthentication.md)
+      * [Objecten API Authentication](valtimo-implementation/modules/objecten-api-authentication.md)
       * [Objecttypen API](valtimo-implementation/modules/objecttypen-api.md)
       * [OpenZaak](valtimo-implementation/modules/openzaak.md)
       * [OpenZaak resource](valtimo-implementation/modules/openzaak-resource.md)

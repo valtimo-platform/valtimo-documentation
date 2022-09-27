@@ -122,6 +122,17 @@ metadata. A plugin is provided that allows for connecting to applications that p
 The Objecten (Objects) API is a Dutch government API standard for storage of and access to objects and their
 metadata. A plugin is provided that allows for connecting to applications that provide an Objecten API.
 
+### Objecten API authentication
+
+The Objecten (Objects) API authentication provides the Object token authentication plugin for authenticating
+call to the Objecten API implementation by Maykin Media. This plugin is used by other plugins for the authentication.
+
+### Objecttypen API
+
+The Objecttypen (Objecttypes) API is a Dutch government API standard for storage of and access to object types, without having to
+create a new API for each object. A plugin is provided that allows for connecting to applications that provide an 
+Objecttypen API.
+
 ### OpenZaak
 
 [OpenZaak](https://openzaak.org/) is an application that implements APIs for the exchange of information concerning cases
@@ -132,12 +143,6 @@ authentication for other ZGW plugins.
 
 [OpenZaak](https://openzaak.org/) resource is an implementation of the resource service, providing a way to store
 a resource in OpenZaak as an *eenvoudig informatie object* (simple information object).
-
-### Objecttypes API
-
-The Objecttypes API is a Dutch government API standard for storage of and access to object types, without having to
-create a new API for each object. A plugin is provided that allows for connecting to applications that provide an 
-Objecttypes API.
 
 ### SmartDocuments
 

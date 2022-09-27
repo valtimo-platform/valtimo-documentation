@@ -16,8 +16,8 @@ A plugin configuration is required before the plugin can be used. A general desc
 plugins can be found [here](../configure-plugin.md).
 
 If the Object Token Auhentication plugin is not visible in the plugin menu, it is possible the application is missing a dependency.
-Instructions on how to add the Object Token Auhentication dependency can be found 
-[here](/valtimo-implementation/modules/objecttokenauthentication.md).
+Instructions on how to add the Objecten API authentication dependency can be found 
+[here](/valtimo-implementation/modules/objecten-api-authentication.md).
 
 To configure this plugin the following properties have to be entered:
 - **Token.** The token is configured in the Objects administration page 'api authorizations'. The token should have permissions 
