@@ -12,7 +12,7 @@ following can be added to your project, depending on whether Maven or Gradle is 
 <dependencies>
     <dependency>
         <groupId>com.ritense.valtimo</groupId>
-        <artifactId>plugin</artifactId>
+        <artifactId>plugin-valtimo</artifactId>
         <version>${valtimo_version}</version>
     </dependency>
 </dependencies>
@@ -21,7 +21,7 @@ following can be added to your project, depending on whether Maven or Gradle is 
 #### Gradle dependency:
 ```json
 dependencies {
-    implementation "com.ritense.valtimo:plugin:${valtimo_version}"
+    implementation "com.ritense.valtimo:plugin-valtimo:${valtimo_version}"
 }
 ```
 
