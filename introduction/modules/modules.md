@@ -53,6 +53,11 @@ stored in the document after completing a task.
 Document generation provides an interface for generating documents that can be used within Valtimo. An implementation
 needs to be provided by another module, or the application that this is used in.
 
+### Flowmailer
+
+[Flowmailer](https://flowmailer.com/) is a SaaS mail solution that Valtimo can use to send transactional mail. By 
+including this module in a Valtimo application it will be automatically set as the mail implementation to use.
+
 ### Form
 
 Form allows the use of Form.IO forms in Valtimo. Forms can be managed by using the provided endpoints, or loaded from
@@ -64,11 +69,46 @@ Form flow allows users to create a sequence of forms, similar to a flow chart or
 contains the configuration for each step, what the subsequent steps are, and the conditions under which they can be
 reached.
 
+### Form flow valtimo
+
+Form flow valtimo is the bridge between Valtimo and form flow. It adds the required dependencies to use the form flow
+module in a Valtimo application. 
+
+### Form link
+
+Form link manages the link between a task or start event in a process and the form by which they can be completed.
+Configuring this can be done both by configuration file, and through the REST API. Form linked this way also need
+to be submitted to the submission endpoint in this module.
+
+### Keycloak IAM
+
+Keycloak IAM enables Valtimo to [Keycloak](https://www.keycloak.org/) as the OAuth authentication server. When using
+this module, the default keycloak JWT tokens can be used. It also allows Valtimo to get users from Keycloak for features
+that require this (e.g. task assignment).
+
 ### Local document generation
 
 The local document generation module is a stub implementation of the document generation module. It is used as a local
 test implementation that allows the application to start without having to call external services when generating a
 document. This does *not* generate an actual document, but writes the calls to the application log instead.
+
+### Local mail
+
+The local mail module is a stub implementation of the mail module. It is used as a local test implementation that 
+allows the application to start without having to provide an actual implementation. This does *not* send an actual 
+mail.
+
+### Mail
+
+Mail describes how valtimo sends mail in a consistent way. Mails are filtered based on configured filters. For example, 
+mail to blacklisted addresses can be filtered out. Dispatching the email after filtering is facilitated by another 
+module.
+
+### Mandrill
+
+Mailchimp is a SaaS solution for sending email. Mailchimp is the name of the 
+[transactional mail addon](https://mailchimp.com/features/transactional-email/) that Mailchimp provides. The Valtimo
+Mandrill module provides a mail implementation that uses Mandrill to send mail.
 
 ### Milestones
 
@@ -114,30 +154,50 @@ REST API documentation) and hardening (for strengthening endpoints against outsi
 
 ### Catalogi API
 
-The Catalogi (Catalogues) API is a Dutch government API standard for defining the types of zaken and documenten that can 
-be used in the Documenten API and Zaken API. A plugin is provided that allows for connecting to applications that 
-provide a Catalogi API.
+The [Catalogi (Catalogues) API](https://vng-realisatie.github.io/gemma-zaken/standaard/catalogi/) is a Dutch government
+API standard for defining the types of zaken and documenten that can be used in the Documenten API and Zaken API. A 
+plugin is provided that allows for connecting to applications that provide a Catalogi API.
 
 ### Documenten API
 
-The Documenten (Documents) API is a Dutch government API standard for storage of and access to documents and their 
-metadata. A plugin is provided that allows for connecting to applications that provide a Documenten API.
+The [Documenten (Documents) API](https://vng-realisatie.github.io/gemma-zaken/standaard/documenten/) is a Dutch 
+government API standard for storage of and access to documents and their metadata. A plugin is provided that allows for 
+connecting to applications that provide a Documenten API.
 
 ### Objecten API
 
-The Objecten (Objects) API is a Dutch government API standard for storage of and access to objects and their
-metadata. A plugin is provided that allows for connecting to applications that provide an Objecten API.
+The [Objecten (Objects) API](https://vng.nl/projecten/overige-objecten-registratie-api) is a Dutch government API 
+standard for storage of and access to objects and their metadata. A plugin is provided that allows for connecting to 
+applications that provide an Objecten API.
 
 ### Objecten API authentication
 
 The Objecten (Objects) API authentication provides the Object token authentication plugin for authenticating
 call to the Objecten API implementation by Maykin Media. This plugin is used by other plugins for the authentication.
 
-### Objecttypen API
+### Objects API
 
-The Objecttypen (Objecttypes) API is a Dutch government API standard for storage of and access to object types, without having to
-create a new API for each object. A plugin is provided that allows for connecting to applications that provide an 
-Objecttypen API.
+Objects API is a deprecated module that contains functionality based on a connection to the Objecten API. It supports
+the *productaanvragen* workflow by receiving events through a connection with the Notificaties API. This module also 
+includes the functionality to store user tasks as object in the Objecten API to be completed externally.
+
+### Objecttypes API
+
+The [Objecttypes API](https://vng.nl/projecten/overige-objecten-registratie-api) is a Dutch government API standard for
+storage of and access to object types, without having to create a new API for each object. A plugin is provided that
+allows for connecting to applications that provide an Objecttypes API.
+
+### Haalcentraal BRP
+
+The [Haal Centraal BRP](https://vng-realisatie.github.io/Haal-Centraal-BRP-bevragen/) (basisregistratie personen) is a
+Dutch government API standard for getting data on civilians. This module provides a connector that can request this
+information.
+
+### Klant
+
+The [Klanten API](https://vng-realisatie.github.io/gemma-zaken/standaard/klanten/index) is a Dutch government API 
+standard for getting and storing data on customers. This module provides a connector that can request this
+information.
 
 ### OpenZaak
 
@@ -155,7 +215,13 @@ a resource in OpenZaak as an *eenvoudig informatie object* (simple information o
 SmartDocuments itself is an external service that deals with generating documents based on templates and placeholders.
 This module offers a plugin which can connect to this service to generate documents.
 
+### Wordpress mail
+
+The wordpress mail plugin is a plugin for the Wordpress CMS that provides a REST API for sending mail. This module 
+includes an implementation of the mail module that uses a connector to send mail through this API.
+
 ### Zaken API
 
-The Zaken (Cases) API is a Dutch government API standard for exchanging information around cases and their related data.
-A plugin is provided that allows for connecting to applications that provide a Zaken API.
+The [Zaken (Cases) API](https://vng-realisatie.github.io/gemma-zaken/standaard/zaken/index) is a Dutch government API 
+standard for exchanging information around cases and their related data. A plugin is provided that allows for connecting
+to applications that provide a Zaken API.
