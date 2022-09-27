@@ -6,6 +6,7 @@
   * [Form](form.md)
   * [Form flow](form-flow.md)
   * [Form link](form-link.md)
+  * [Milestones](milestones.md)
   * [Plugins](plugin.md)
   * [Process document](process-document.md)
   * [Resource](resource.md)
@@ -15,7 +16,7 @@
 * ZGW
   * [Documenten API](documenten-api.md)
   * [Objecten API](objecten-api.md)
-  * [Object Token Authentication](objecten-api-authentication.md)
+  * [Objecten API Authentication](objecten-api-authentication.md)
   * [Objecttypen API](objecttypen-api.md)
   * [OpenZaak](openzaak.md)
   * [OpenZaak resource](openzaak-resource.md)
