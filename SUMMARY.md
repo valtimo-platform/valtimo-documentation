@@ -27,6 +27,7 @@
     * [OpenZaak](valtimo-implementation/modules/openzaak.md)
     * [Plugins](valtimo-implementation/modules/plugin.md)
     * [Smart documents](valtimo-implementation/modules/smartdocuments.md)
+    * [Value resolvers](valtimo-implementation/modules/value-resolver.md)
     * [Web](valtimo-implementation/modules/web.md)
     * [Zaken API](valtimo-implementation/modules/zaken-api.md)
 * [Using Valtimo](using-valtimo/using-valtimo.md)

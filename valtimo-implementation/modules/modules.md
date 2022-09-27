@@ -11,5 +11,6 @@
 * [OpenZaak](openzaak.md)
 * [Plugins](plugin.md)
 * [Smart documents](smartdocuments.md)
+* [Value resolvers](value-resolver.md)
 * [Web](web.md)
 * [Zaken API](zaken-api.md)

@@ -29,6 +29,10 @@ by the platform, but developers can create their own plugins as well. Plugins ca
 configured without writing code, and can be used during BPMN processes. A more in-depth
 description can be found [here](plugin-introduction.md).
 
+## Value resolvers
+Value resolvers provides a framework for creating custom value resolvers, which can be used inside of
+forms to retrieve data from a custom location.
+
 ## Web
 
 Web offers web related configuration, such as integration with [Swagger](https://swagger.io/) (to provide 
