@@ -16,7 +16,7 @@ To create a document definition, the following steps are necessary:
   `*/resources/config/document/definition`. The name should correspond to the ID of the document ID. The ID itself
   should end with `.schema`.
 
-  #### **person.schema.json**
+  #### **`person.schema.json`**
 
   ```json
   {

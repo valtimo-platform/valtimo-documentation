@@ -10,10 +10,9 @@ add the core module as a dependency, see [here](core.md)
 In order to run the web module, several properties need to be configured. The bare minimum that has to be added to the
 application properties are the following:
 
-##### application.yml
+#### **`application.yml`**
 ```yaml
 valtimo:
   swagger:
     enabled: false
-
 ```
