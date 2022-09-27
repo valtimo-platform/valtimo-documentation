@@ -78,6 +78,12 @@ by the platform, but developers can create their own plugins as well. Plugins ca
 configured without writing code, and can be used during BPMN processes. A more in-depth
 description can be found [here](plugin-introduction.md).
 
+### Process document
+
+Process document facilitates the link between documents and processes. In order to use a process
+with a document, the process needs to be linked to a document. Process document also allows access of document data
+from inside a process.
+
 ### Resource
 
 Resource is a module that describes how resources can be uploaded and downloaded. This implemented by other modules,
