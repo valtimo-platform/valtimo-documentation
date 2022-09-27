@@ -70,6 +70,12 @@ The local document generation module is a stub implementation of the document ge
 test implementation that allows the application to start without having to call external services when generating a
 document. This does *not* generate an actual document, but writes the calls to the application log instead.
 
+### Milestones
+
+The milestones module offers a framework to keep track of how a process is progressing. Milestones can be created
+in the admin interface, and can be linked to specific tasks of a process. When that task is completed,
+the corresponding milestone is reached.
+
 ### Plugins
 
 Plugins are extensions on the Valtimo platform. These are often connections to external
