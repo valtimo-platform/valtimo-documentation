@@ -2,6 +2,44 @@
 
 ## Core
 
+### Audit
+
+Audit provides a framework to record and store actions performed by users. Certain actions in the other modules of
+Valtimo, like completing a task or uploading a file will be audited by default. It is possible to audit other actions
+by using this feature in the implementation code. The audit trail is available by case to show the history of
+actions for that case.
+
+### Besluit
+
+Besluit contains a connector used to connect to the Besluiten API, a Dutch government API standard for exchanging
+information around besluiten. It allows the creation of besluiten and their relation to documents from processes.
+
+### Connector
+
+Connectors are Valtimo configurable components that can be used to connect to external systems. This module provides a
+framework to create, configure, and use connectors. Certain Valtimo modules include their own connectors that will be
+automatically available for configuration when starting a Valtimo instance.
+
+### Contactmoment
+
+The Contactmomenten API is a Dutch government API standard for storage of and access to contactmomenten. A connector is
+provided that can be used to access the Contactmomenten API. This allows for the creation of contactmomenten. Any mail
+sent by Valtimo will be registered in this API.
+
+### Contract
+
+Contract contains certain interfaces and events that Valtimo uses in several other modules. Apart from this, contract
+sanitizes endpoint output when exceptions occur. A liquibase runner is available that allows other modules to define
+liquibase configuration that is run on startup. Finally, contract include several helper classes, like the
+`QueryDialectHelper` bean that can be used in criteria queries to add JSON column clauses to the query.
+
+### Core
+
+Core contains and builds upon the Camunda process engine that enables Valtimo to run processes. Several endpoint and
+functions are available that provide Task and Process data. It also includes choice fields. A generic way to create
+lists of values, that can be used by the application. Some security features used to control access to any Valtimo
+endpoints are also part of this module.
+
 ### Documents
 
 A document is the starting point of the case and the main data storage for that case. One or more processes can be
@@ -9,6 +47,28 @@ linked to a case, which allows for the document to be created when the case is s
 The content of the document is defined in a document definition, in JSON schema.
 Users interact with the document via user tasks; document data can be loaded into task forms, and user input can be
 stored in the document after completing a task.
+
+### Document generation
+
+Document generation provides an interface for generating documents that can be used within Valtimo. An implementation
+needs to be provided by another module, or the application that this is used in.
+
+### Form
+
+Form allows the use of Form.IO forms in Valtimo. Forms can be managed by using the provided endpoints, or loaded from
+a configuration file at application startup. These forms can be used by other modules to complete tasks for example.
+
+### Form flow
+
+Form flow allows users to create a sequence of forms, similar to a flow chart or form wizard. A form flow definition
+contains the configuration for each step, what the subsequent steps are, and the conditions under which they can be
+reached.
+
+### Local document generation
+
+The local document generation module is a stub implementation of the document generation module. It is used as a local
+test implementation that allows the application to start without having to call external services when generating a
+document. This does *not* generate an actual document, but writes the calls to the application log instead.
 
 ### Plugins
 
@@ -34,6 +94,12 @@ Web offers web related configuration, such as integration with [Swagger](https:/
 REST API documentation) and hardening (for strengthening endpoints against outside attacks).
 
 ## ZGW (Zaakgericht Werken)
+
+### Catalogi API
+
+The Catalogi (Catalogues) API is a Dutch government API standard for defining the types of zaken and documenten that can 
+be used in the Documenten API and Zaken API. A plugin is provided that allows for connecting to applications that 
+provide a Catalogi API.
 
 ### Documenten API
 
