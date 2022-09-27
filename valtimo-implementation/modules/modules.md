@@ -11,6 +11,7 @@
 * [OpenZaak](openzaak.md)
 * [OpenZaak resource](openzaak-resource.md)
 * [Plugins](plugin.md)
+* [Resource](resource.md)
 * [Smart documents](smartdocuments.md)
 * [Temporary resource storage](temporary-resource-storage.md)
 * [Value resolvers](value-resolver.md)

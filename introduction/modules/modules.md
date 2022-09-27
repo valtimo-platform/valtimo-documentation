@@ -78,6 +78,11 @@ by the platform, but developers can create their own plugins as well. Plugins ca
 configured without writing code, and can be used during BPMN processes. A more in-depth
 description can be found [here](plugin-introduction.md).
 
+### Resource
+
+Resource is a module that describes how resources can be uploaded and downloaded. This implemented by other modules,
+e.g. [OpenZaak resource](#openzaak-resource).
+
 ### Temporary resource storage
 
 Temporary resource storage provides a service for storing files locally, e.g. to process it during following tasks.
