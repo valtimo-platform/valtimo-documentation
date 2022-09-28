@@ -24,4 +24,9 @@ No new deprecations.
 
 ## Known issues
 
-No new known issues.
+This version has the following known issues:
+
+* **Multiple form associations on process definition**
+
+  When multiple start forms are associated with a single process definition the user is unable to start a new case of
+  that specific type.

@@ -14,33 +14,14 @@ The following features were added:
   to the functioning of Valtimo itself. More information about this feature can be found 
   [here](/using-valtimo/process/systemprocesses.md).
 
-* **New feature2**
-
-  Description of the new feature goes here.
-  Also link to the page that explains the feature in greater detail.
-
 
 ## Bugfixes
 
-The following bugs were fixed:
-
-* **Bug1**
-
-  Description of what the issue was.
-
-* **Bug2**
-
-  Description of what the issue was.
+No bugfixes.
 
 ## Breaking changes
 
-The following breaking changes were introduced:
-
-* **Breaking change1**
-
-* **Breaking change2**
-
-Instructions on how to migrate to this version of Valtimo can be found [here](migration.md).
+No breaking changes
 
 ## Deprecations
 
@@ -51,20 +32,13 @@ The following was deprecated:
   The method `get(String documentDefinitionName, UUID documentId, String... varNames)` was deprecated and \
   is replaced with `get(DataResolvingContext dataResolvingContext, String... varNames)`.
 
-* **Deprecation2**
-
-  X was deprecated and is replaced with Y.
-
 Instructions on how to migrate to this version of Valtimo can be found [here](migration.md).
 
 ## Known issues
 
 This version has the following known issues:
 
-* **Issue1**
-  * Discovered in version x.x.x
-  * Describe what can be done to work around the issue
+* **Multiple form associations on process definition**
 
-* **Issue2**
-  * Discovered in version x.x.x
-  * Describe what can be done to work around the issue
+  When multiple start forms are associated with a single process definition the user is unable to start a new case of
+  that specific type.

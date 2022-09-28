@@ -130,5 +130,5 @@ No new deprecations.
 
 ## Known issues
 
-No new known issues.
+No known issues.
 

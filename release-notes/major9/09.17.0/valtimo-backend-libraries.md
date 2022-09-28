@@ -52,13 +52,15 @@ No new deprecations.
 
 ## Known issues
 
-* **Multiple form associations on process definition (36319)**
+This version has the following known issues:
+
+* **Multiple form associations on process definition**
 
   When multiple start forms are associated with a single process definition the user is unable to start a new case of
   that specific type.
 
 * **New required application property**
 
-  There is a new mandatory applicaion property `valtimo.plugin.encryption-secret`. The encryption-secret has to be at least
-  16 characters long
+  There is a new mandatory application property `valtimo.plugin.encryption-secret`. The encryption-secret has to be at least
+  16 characters long.
 

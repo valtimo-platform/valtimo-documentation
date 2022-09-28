@@ -78,35 +78,18 @@ The following bugs were fixed:
 
 ## Breaking changes
 
-The following breaking changes were introduced:
-
-* **Breaking change1**
-
-* **Breaking change2**
-
-Instructions on how to migrate to this version of Valtimo can be found [here](migration.md).
+No breaking changes.
 
 ## Deprecations
 
-The following was deprecated:
-
-* **Deprecation1**
-
-  X was deprecated and is replaced with Y.
-* **Deprecation2**
-
-  X was deprecated and is replaced with Y.
-
-Instructions on how to migrate to this version of Valtimo can be found [here](migration.md).
+No new deprecations.
 
 ## Known issues
 
 This version has the following known issues:
 
-* **Issue1**
-    * Discovered in version x.x.x
-    * Describe what can be done to work around the issue
-
-* **Issue2**
-    * Discovered in version x.x.x
-    * Describe what can be done to work around the issue
+* **Experimental DMN editing**
+  * Editing only works for DRM file with a single DRM table. If multiple tables exist, the overview list of decision
+    tables shows multiple entries.
+  * It is not possible to create a new DMN table from scratch from the ui.
+  * It is not possible to edit the key of a DMN table.
