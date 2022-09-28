@@ -9,22 +9,11 @@ Valtimo, like completing a task or uploading a file will be audited by default. 
 by using this feature in the implementation code. The audit trail is available by case to show the history of
 actions for that case.
 
-### Besluit
-
-Besluit contains a connector used to connect to the Besluiten API, a Dutch government API standard for exchanging
-information around besluiten. It allows the creation of besluiten and their relation to documents from processes.
-
 ### Connector
 
 Connectors are Valtimo configurable components that can be used to connect to external systems. This module provides a
 framework to create, configure, and use connectors. Certain Valtimo modules include their own connectors that will be
 automatically available for configuration when starting a Valtimo instance.
-
-### Contactmoment
-
-The Contactmomenten API is a Dutch government API standard for storage of and access to contactmomenten. A connector is
-provided that can be used to access the Contactmomenten API. This allows for the creation of contactmomenten. Any mail
-sent by Valtimo will be registered in this API.
 
 ### Contract
 
@@ -152,11 +141,22 @@ REST API documentation) and hardening (for strengthening endpoints against outsi
 
 ## ZGW (Zaakgericht Werken)
 
+### Besluit
+
+Besluit contains a connector used to connect to the Besluiten API, a Dutch government API standard for exchanging
+information around besluiten. It allows the creation of besluiten and their relation to documents from processes.
+
 ### Catalogi API
 
 The [Catalogi (Catalogues) API](https://vng-realisatie.github.io/gemma-zaken/standaard/catalogi/) is a Dutch government
 API standard for defining the types of zaken and documenten that can be used in the Documenten API and Zaken API. A 
 plugin is provided that allows for connecting to applications that provide a Catalogi API.
+
+### Contactmoment
+
+The Contactmomenten API is a Dutch government API standard for storage of and access to contactmomenten. A connector is
+provided that can be used to access the Contactmomenten API. This allows for the creation of contactmomenten. Any mail
+sent by Valtimo will be registered in this API.
 
 ### Documenten API
 
