@@ -10,7 +10,7 @@ plugins can be found [here](../configure-plugin.md).
 
 If the Catalogi API plugin is not visible in the plugin menu, it is possible the application is missing a dependency.
 Instructions on how to add the Catalogi API dependency can be found
-[here](/valtimo-implementation/modules/documenten-api.md).
+[here](/valtimo-implementation/modules/zgw/documenten-api.md).
 
 To configure this plugin the following properties have to be entered:
 - **URL.** Contains the complete base URL of the Catalogi API to connect to. This generally includes 
