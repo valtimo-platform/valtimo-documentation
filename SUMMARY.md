@@ -105,25 +105,25 @@
   * [User interface](reference/user-interface/user-interface.md)
     * [Design philosophy](reference/user-interface/design-philosophy.md)
   * [Troubleshoot](reference/troubleshoot.md)
-* [Release notes](release-notes/release-notes.md)
-  * [9.x.x](release-notes/major9/major-9.md)
-    * [9.21.0/5.10.0 (RC)](release-notes/major9/09.21.0/9.21.0.md)
+* Release notes
+  * 9.x.x
+    * 9.21.0/5.10.0 (RC)
       * [Valtimo backend libraries (9.21.0 RC)](release-notes/major9/09.21.0/valtimo-backend-libraries.md)
       * [Valtimo frontend libraries (5.10.0 RC)](release-notes/major9/09.21.0/valtimo-frontend-libraries.md)
-    * [9.20.0/5.9.0](release-notes/major9/09.20.0/9.20.0.md)
+    * 9.20.0/5.9.0
       * [Valtimo backend libraries (9.20.0)](release-notes/major9/09.20.0/valtimo-backend-libraries.md)
       * [Valtimo frontend libraries (5.9.0)](release-notes/major9/09.20.0/valtimo-frontend-libraries.md)
-    * [9.19.0/5.8.0](release-notes/major9/09.19.0/9.19.0.md)
+    * 9.19.0/5.8.0
       * [Valtimo backend libraries (9.19.0)](release-notes/major9/09.19.0/valtimo-backend-libraries.md)
       * [Valtimo frontend libraries (5.8.0)](release-notes/major9/09.19.0/valtimo-frontend-libraries.md)
       * [Migration](release-notes/major9/09.19.0/migration.md)
-    * [9.18.0/5.6.0](release-notes/major9/09.18.0/9.18.0.md)
+    * 9.18.0/5.6.0
       * [Valtimo backend libraries (9.18.0)](release-notes/major9/09.18.0/valtimo-backend-libraries.md)
       * [Valtimo frontend libraries (5.6.0)](release-notes/major9/09.18.0/valtimo-frontend-libraries.md)
       * [Migration](release-notes/major9/09.18.0/migration.md)
-    * [9.17.0/5.5.0](release-notes/major9/09.17.0/9.17.0.md)
+    * 9.17.0/5.5.0
       * [Valtimo backend libraries (9.17.0)](release-notes/major9/09.17.0/valtimo-backend-libraries.md)
       * [Valtimo frontend libraries (5.5.0)](release-notes/major9/09.17.0/valtimo-frontend-libraries.md)
-    * [9.16.0/5.4.0](release-notes/major9/09.16.0/9.16.0.md)
+    * 9.16.0/5.4.0
       * [Valtimo backend libraries (9.16.0)](release-notes/major9/09.16.0/valtimo-backend-libraries.md)
       * [Valtimo frontend libraries (5.4.0)](release-notes/major9/09.16.0/valtimo-frontend-libraries.md)
