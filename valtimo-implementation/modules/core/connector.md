@@ -27,7 +27,7 @@ dependencies {
 
 ## Configuration
 
-In order to run the connector module, the `valtimo.connector-encryption.secret` property need to be configured. The bare
+In order to run the connector module, the `valtimo.connector-encryption.secret` property needs to be configured. The bare
 minimum that has to be added to the application properties are the following:
 
 #### **`application.yml`**
