@@ -181,11 +181,11 @@ Objects API is a deprecated module that contains functionality based on a connec
 the *productaanvragen* workflow by receiving events through a connection with the Notificaties API. This module also 
 includes the functionality to store user tasks as object in the Objecten API to be completed externally.
 
-### Objecttypes API
+### Objecttypen API
 
-The [Objecttypes API](https://vng.nl/projecten/overige-objecten-registratie-api) is a Dutch government API standard for
-storage of and access to object types, without having to create a new API for each object. A plugin is provided that
-allows for connecting to applications that provide an Objecttypes API.
+The [Objecttypeb (Object types) API](https://vng.nl/projecten/overige-objecten-registratie-api) is a Dutch government API 
+standard for storage of and access to object types, without having to create a new API for each object. A plugin is 
+provided that allows for connecting to applications that provide an Objecttypen API.
 
 ### Haalcentraal BRP
 
