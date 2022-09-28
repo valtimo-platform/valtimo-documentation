@@ -164,6 +164,18 @@ The [Documenten (Documents) API](https://vng-realisatie.github.io/gemma-zaken/st
 government API standard for storage of and access to documents and their metadata. A plugin is provided that allows for 
 connecting to applications that provide a Documenten API.
 
+### Haalcentraal BRP
+
+The [Haal Centraal BRP](https://vng-realisatie.github.io/Haal-Centraal-BRP-bevragen/) (basisregistratie personen) is a
+Dutch government API standard for getting data on civilians. This module provides a connector that can request this
+information.
+
+### Klant
+
+The [Klanten API](https://vng-realisatie.github.io/gemma-zaken/standaard/klanten/index) is a Dutch government API
+standard for getting and storing data on customers. This module provides a connector that can request this
+information.
+
 ### Objecten API
 
 The [Objecten (Objects) API](https://vng.nl/projecten/overige-objecten-registratie-api) is a Dutch government API 
@@ -186,18 +198,6 @@ includes the functionality to store user tasks as object in the Objecten API to 
 The [Objecttypes API](https://vng.nl/projecten/overige-objecten-registratie-api) is a Dutch government API standard for
 storage of and access to object types, without having to create a new API for each object. A plugin is provided that
 allows for connecting to applications that provide an Objecttypes API.
-
-### Haalcentraal BRP
-
-The [Haal Centraal BRP](https://vng-realisatie.github.io/Haal-Centraal-BRP-bevragen/) (basisregistratie personen) is a
-Dutch government API standard for getting data on civilians. This module provides a connector that can request this
-information.
-
-### Klant
-
-The [Klanten API](https://vng-realisatie.github.io/gemma-zaken/standaard/klanten/index) is a Dutch government API 
-standard for getting and storing data on customers. This module provides a connector that can request this
-information.
 
 ### OpenZaak
 

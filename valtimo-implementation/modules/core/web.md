@@ -7,7 +7,7 @@ add the core module as a dependency, see [here](core.md)
 
 ## Configuration
 
-In order to run the web module, several properties need to be configured. The bare minimum that has to be added to the
+In order to run the web module, several properties can be configured. The bare minimum that has to be added to the
 application properties are the following:
 
 #### **`application.yml`**
