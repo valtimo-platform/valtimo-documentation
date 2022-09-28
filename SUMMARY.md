@@ -36,8 +36,8 @@
       * [Web](valtimo-implementation/modules/core/web.md)
     * ZGW
       * [Besluit](valtimo-implementation/modules/zgw/besluit.md)
-      * [Catalogi API]
-      * [Contactmoment]
+      * [Catalogi API](valtimo-implementation/modules/zgw/catalogi-api.md)
+      * [Contactmoment](valtimo-implementation/modules/zgw/contactmoment.md)
       * [Documenten API](valtimo-implementation/modules/zgw/documenten-api.md)
       * [Objecten API](valtimo-implementation/modules/zgw/objecten-api.md)
       * [Objecten API Authentication](valtimo-implementation/modules/zgw/objecten-api-authentication.md)
