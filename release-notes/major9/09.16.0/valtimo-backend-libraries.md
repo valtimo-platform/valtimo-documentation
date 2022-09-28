@@ -8,7 +8,7 @@ The following features were added:
 
   The Camunda webapps, including the cockpit, were made available. For existing Valtimo projects additional
   infrastructure configuration might be required to grant access to the `/camunda/app` path. See
-  [this page](/valtimo-implementation/modules/camunda-webapps.md) for more information.
+  [this page](/valtimo-implementation/modules/core/camunda-webapps.md) for more information.
 
 * **Plugins**
 
@@ -49,7 +49,9 @@ No new deprecations.
 
 ## Known issues
 
-* **Multiple existing form associations on process definition (36319)**
+This version has the following known issues:
+
+* **Multiple existing form associations on process definition**
 
   When multiple start forms are associated with a single process definition the user is unable to start a new case of
   that specific type.

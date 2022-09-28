@@ -23,13 +23,17 @@ The following features were added:
 
 * **Added new ZGW plugins**
   * `openzaak`
-    * This plugin allows other plugins to authenticate with openzaak
+    * This plugin allows other plugins to authenticate with openzaak.
   * `documenten-api`
     * This plugin can make a connection to the Documenten API. When a document was generated this plugin is used to 
-    upload the document to the Documenten API
+    upload the document to the Documenten API.
   * `zaken-api`
     * This plugin can make a connection to the Zaken API. This plugin supports the action to link documents that have been uploaded 
-    to the Documenten API to the Zaak of the current case
+    to the Documenten API to the Zaak of the current case.
+
+* **Improved CamundaProcessJsonSchemaDocumentInstance**
+
+  The `isActive` property of the `CamundaProcessJsonSchemaDocumentInstance` indicates whether the process is still running .
 
 ## Bugfixes
 
@@ -61,4 +65,20 @@ Instructions on how to migrate to this version of Valtimo can be found [here](mi
 
 ## Known issues
 
-No new known issues.
+This version has the following known issues:
+
+* **Multiple existing form associations on process definition**
+
+  When multiple start forms are associated with a single process definition the user is unable to start a new case of
+  that specific type.
+
+* **Using formAssociationService.createFormAssociation() on application startup causing the application to crash**
+
+  When form associations are created on application startup using the formAssociationService.createFormAssociation()
+  method, these associations are duplicated. Before the bugfix in this release these duplicated associations were added
+  without errors. After the bugfix in this release the application will throw an exception when creating an already
+  existing association, causing the application to crash on startup.
+
+  **Solution.** The correct way to add form associations is by adding
+  [form link files](/using-valtimo/form-link/configure-task.md). Using of formAssociationService.createFormAssociation()
+  should be replaced with form link files.

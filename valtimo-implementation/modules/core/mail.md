@@ -1,0 +1,26 @@
+# Mail
+
+## Dependencies
+
+In order to create a custom mailing module, the mail module needs to be added as a dependency. The
+following can be added to your project, depending on whether Maven or Gradle is used:
+
+### Backend
+
+#### Maven dependency:
+```xml
+<dependencies>
+    <dependency>
+        <groupId>com.ritense.valtimo</groupId>
+        <artifactId>mail</artifactId>
+        <version>${valtimo_version}</version>
+    </dependency>
+</dependencies>
+```
+
+#### Gradle dependency:
+```json
+dependencies {
+  implementation "com.ritense.valtimo:mail:${valtimo_version}"
+}
+```

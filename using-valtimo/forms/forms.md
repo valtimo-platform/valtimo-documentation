@@ -29,6 +29,7 @@ Document definition:
 }
 ```
 Field configuration:
+
 ![Configuring the property in a form](img/simple_key_field.png)
 
 It is also possible to load properties from object within the document. In the example below the document definition
@@ -57,6 +58,7 @@ Document definition:
 ```
 
 Field configuration:
+
 ![Configuring the property in a form](img/nested_key_field.png)
 
 ## External data

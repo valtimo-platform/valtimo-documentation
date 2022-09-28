@@ -21,7 +21,7 @@ The following bugs were fixed:
 
 ## Breaking changes
 
-No known breaking changes.
+No breaking changes.
 
 ## Deprecations
 

@@ -1,4 +1,4 @@
-# Backend libraries 9.20.0 (RC)
+# Backend libraries 9.20.0
 
 ## New Features
 
@@ -20,3 +20,24 @@ The following features were added:
 * **KeyCloak**
 
   KeyCloak libraries have been updated to 19.0.1. Older KeyCloak server versions are still supported.
+
+## Bugfixes
+
+No bugfixes.
+
+## Breaking changes
+
+No breaking changes.
+
+## Deprecations
+
+No new deprecations.
+
+## Known issues
+
+This version has the following known issues:
+
+* **Multiple existing form associations on process definition**
+
+  When multiple start forms are associated with a single process definition the user is unable to start a new case of
+  that specific type.
