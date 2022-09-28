@@ -20,7 +20,7 @@
       * [Camunda](valtimo-implementation/modules/camunda-webapps.md)
       * [Connector](valtimo-implementation/modules/connector.md)
       * [Contract](valtimo-implementation/modules/contract.md)
-      * [Core]
+      * [Core](valtimo-implementation/modules/core.md)
       * [Document](valtimo-implementation/modules/document.md)
       * [Document generation]
       * [Form](valtimo-implementation/modules/form.md)
