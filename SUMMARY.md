@@ -106,6 +106,11 @@
     * [Design philosophy](reference/user-interface/design-philosophy.md)
   * [Troubleshoot](reference/troubleshoot.md)
 * Release notes
+  * 10.x.x
+    * 10.0.0 (RC)
+      * [Valtimo backend libraries](release-notes/major10/10.0.0/valtimo-backend-libraries.md)
+      * [Valtimo frontend libraries](release-notes/major10/10.0.0/valtimo-frontend-libraries.md)
+      * [Migration](release-notes/major10/10.0.0/migration.md)
   * 9.x.x
     * 9.21.0/5.10.0 (RC)
       * [Valtimo backend libraries (9.21.0 RC)](release-notes/major9/09.21.0/valtimo-backend-libraries.md)
