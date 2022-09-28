@@ -19,7 +19,7 @@
       * [Audit](valtimo-implementation/modules/audit.md)
       * [Camunda](valtimo-implementation/modules/camunda-webapps.md)
       * [Connector](valtimo-implementation/modules/connector.md)
-      * [Contract]
+      * [Contract](valtimo-implementation/modules/contract.md)
       * [Core]
       * [Document](valtimo-implementation/modules/document.md)
       * [Document generation]
