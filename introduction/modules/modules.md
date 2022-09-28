@@ -25,7 +25,7 @@ liquibase configuration that is run on startup. Finally, contract include severa
 ### Core
 
 Core contains and builds upon the Camunda process engine that enables Valtimo to run processes. Several endpoint and
-functions are available that provide Task and Process data. It also includes choice fields. A generic way to create
+functions are available that provide task and process data. It also includes choice fields. A generic way to create
 lists of values, that can be used by the application. Some security features used to control access to any Valtimo
 endpoints are also part of this module.
 
