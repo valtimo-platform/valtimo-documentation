@@ -9,11 +9,6 @@ Valtimo, like completing a task or uploading a file will be audited by default. 
 by using this feature in the implementation code. The audit trail is available by case to show the history of
 actions for that case.
 
-### Besluit
-
-Besluit contains a connector used to connect to the Besluiten API, a Dutch government API standard for exchanging
-information around besluiten. It allows the creation of besluiten and their relation to documents from processes.
-
 ### Connector
 
 Connectors are Valtimo configurable components that can be used to connect to external systems. This module provides a
@@ -105,6 +100,11 @@ Web offers web related configuration, such as integration with [Swagger](https:/
 REST API documentation) and hardening (for strengthening endpoints against outside attacks).
 
 ## ZGW (Zaakgericht Werken)
+
+### Besluit
+
+Besluit contains a connector used to connect to the Besluiten API, a Dutch government API standard for exchanging
+information around besluiten. It allows the creation of besluiten and their relation to documents from processes.
 
 ### Catalogi API
 

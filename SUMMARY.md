@@ -18,7 +18,7 @@
     * Core
       * [Audit](valtimo-implementation/modules/audit.md)
       * [Camunda](valtimo-implementation/modules/camunda-webapps.md)
-      * [Connector]
+      * [Connector](valtimo-implementation/modules/connector.md)
       * [Contract]
       * [Core]
       * [Document](valtimo-implementation/modules/document.md)
@@ -35,6 +35,7 @@
       * [Value resolvers](valtimo-implementation/modules/value-resolver.md)
       * [Web](valtimo-implementation/modules/web.md)
     * ZGW
+      * [Besluit]
       * [Catalogi API]
       * [Contactmoment]
       * [Documenten API](valtimo-implementation/modules/documenten-api.md)
