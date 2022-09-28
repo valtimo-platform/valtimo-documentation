@@ -20,12 +20,6 @@ Connectors are Valtimo configurable components that can be used to connect to ex
 framework to create, configure, and use connectors. Certain Valtimo modules include their own connectors that will be
 automatically available for configuration when starting a Valtimo instance.
 
-### Contactmoment
-
-The Contactmomenten API is a Dutch government API standard for storage of and access to contactmomenten. A connector is
-provided that can be used to access the Contactmomenten API. This allows for the creation of contactmomenten. Any mail
-sent by Valtimo will be registered in this API.
-
 ### Contract
 
 Contract contains certain interfaces and events that Valtimo uses in several other modules. Apart from this, contract
@@ -117,6 +111,12 @@ REST API documentation) and hardening (for strengthening endpoints against outsi
 The Catalogi (Catalogues) API is a Dutch government API standard for defining the types of zaken and documenten that can 
 be used in the Documenten API and Zaken API. A plugin is provided that allows for connecting to applications that 
 provide a Catalogi API.
+
+### Contactmoment
+
+The Contactmomenten API is a Dutch government API standard for storage of and access to contactmomenten. A connector is
+provided that can be used to access the Contactmomenten API. This allows for the creation of contactmomenten. Any mail
+sent by Valtimo will be registered in this API.
 
 ### Documenten API
 
