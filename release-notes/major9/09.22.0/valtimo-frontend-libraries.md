@@ -6,9 +6,11 @@ The following features were added:
 
 * **New Documenten API Form.IO upload component**
 
-  A new custom Form.IO component has been added to upload on file at a time, with a modal to input metadata for the
+  A new custom Form.IO component has been added to upload one file at a time, with a modal to input metadata for the
   Documenten API. The component can be inserted into a Form.IO form after following [these instructions](/using-valtimo/upload/upload-to-documenten-api-with-metadata.md).
   When configuring the component in the form builder, various metadata inputs can be given a default value, or be disabled.
+  If the component is included in a form for a user task, the user can input metadata for each file upload. These files
+  are then registered in the Documenten API on form submission.
 
 ## Bugfixes
 
