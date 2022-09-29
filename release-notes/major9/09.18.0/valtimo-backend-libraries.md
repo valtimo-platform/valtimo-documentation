@@ -46,7 +46,7 @@ The following bugs were fixed:
 
 ## Breaking changes
 
-* **Changed ExterenalDataSubmittedEvent data field type**
+* **Changed ExternalDataSubmittedEvent data field type**
   The `data` field for the `ExternalDataSubmittedEvent` has changed from `Map<ExternalFormFieldType, Map<String, Object>>` to
   `Map<String, Map<String, Object>>`.
 
