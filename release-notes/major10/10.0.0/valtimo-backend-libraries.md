@@ -4,10 +4,13 @@
 
 The following features were added:
 
-* **New feature1**
+* **Dependency upgrades**
 
-  Description of the new feature goes here.
-  Also link to the page that explains the feature in greater detail.
+  The following libraries were upgraded to new versions:
+
+| Dependency | New version | Old version |
+|:-----------|:------------|:------------|
+| Camunda    | 7.17        | 7.14        |
 
 * **New feature2**
 
