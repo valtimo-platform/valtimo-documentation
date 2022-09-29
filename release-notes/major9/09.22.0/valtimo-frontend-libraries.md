@@ -12,6 +12,14 @@ The following features were added:
   If the component is included in a form for a user task, the user can input metadata for each file upload. These files
   are then registered in the Documenten API on form submission.
 
+* **New date format possible for date columns in the Valtimo lists**
+
+  The `viewType` property for listFields is extended with the option to add set a custom format based on the library that we use `moment.js`.
+  Before you would declare a date column as `viewType: 'date'` and now you can add a optional format option like this `viewType: date:DD-MM-YYYY`.
+  After the separator `(:)` any `valid moment.js` formatting is allowed. 
+  A full list of all the moment.js format options can be [found here](https://momentjscom.readthedocs.io/en/latest/moment/04-displaying/01-format/).
+
+
 ## Bugfixes
 
 The following bugs were fixed:
