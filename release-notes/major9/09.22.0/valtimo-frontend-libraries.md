@@ -19,13 +19,15 @@ The following features were added:
 
 The following bugs were fixed:
 
-* **Bug1**
+* **Removed the retry in the HttpInterceptor**
 
-  Description of what the issue was.
+  Before the interceptor would always retry an API call if it failed previously.
+  This functionality has been removed since it could break applications when timeout (504) errors where being thrown.
 
-* **Bug2**
+* **Assign user in task subscription not destroyed**
 
-  Description of what the issue was.
+  Everytime when the API for getting the list of Valtimo users in a task was loading, it would keep loading even if the task was already completed.
+  The subscription is now properly killed and if the task is already completed the API won't be loading anymore.
 
 ## Breaking changes
 
