@@ -113,6 +113,7 @@
     * 9.20.0/5.9.0
       * [Valtimo backend libraries (9.20.0)](release-notes/major9/09.20.0/valtimo-backend-libraries.md)
       * [Valtimo frontend libraries (5.9.0)](release-notes/major9/09.20.0/valtimo-frontend-libraries.md)
+      * [Migration](release-notes/major9/09.20.0/migration.md)
     * 9.19.0/5.8.0
       * [Valtimo backend libraries (9.19.0)](release-notes/major9/09.19.0/valtimo-backend-libraries.md)
       * [Valtimo frontend libraries (5.8.0)](release-notes/major9/09.19.0/valtimo-frontend-libraries.md)
