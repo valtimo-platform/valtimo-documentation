@@ -34,3 +34,42 @@ export class AppModule {
   ```
 
 Afterwards, the component is available under the advanced section in the form builder.
+
+## Configuring the Case 'upload process'
+
+When a document is uploaded to a case, the case will search for the connected upload process to handle the upload. The
+upload process needs to be configured on the case page:
+
+1. Open the 'Admin' menu.
+2. Go to the 'Cases' page.
+3. Select the case that is going to handle uploads to the Documenten API.
+4. Link the upload process under section 'Link upload process to case'.
+5. Select the 'Upload Document'.
+
+![Link upload process to case](img/link-upload-process-to-case.png)
+
+## Configuring the Upload Document -process
+
+Every Valtimo implementation comes with a system process called: Upload Document. This process is meant to handle most
+generic document uploads. The Upload Document -process look like this:
+
+![Upload Document](img/document-upload.png)
+
+By default, the Upload Document -process doesn't do anything, so it won't upload anything yet. The process needs to be
+configured first.
+
+Process links can be used to configure the Upload Document -process. The first service task called 'Upload document' can
+be linked to a Documenten API plugin action called 'Save uploaded document'.
+Look [here](../plugin/documenten-api/configure-documenten-api-plugin.md) for more information.
+
+![Plugin action: Save uploaded document](img/save-uploaded-document.png)
+
+Configuring the first service task of the Upload Document -process is enough to let Valtimo users upload their documents
+to the Documenten API in Valtimo. But the documents won't be visible yet in case information within Valtimo. This is
+because the document hasn't been linked to any zaak.
+
+The second service task in the Upload Document -process is called 'Link uploaded document to zaak'. The Zaken API plugin
+can take care of this action. Look [here](../plugin/zaken-api/configure-zaken-api-plugin.md) for more information.
+
+![Plugin action: Link uploaded document to zaak](img/link-uploaded-document-to-zaak.png)
+
