@@ -27,7 +27,10 @@ No bugfixes.
 
 ## Breaking changes
 
-No breaking changes.
+* **Added extra parameter to KeycloakService**
+  The `KeycloakService` constructor now requires an additional parameter called `keycloakClientName`.
+
+Instructions on how to migrate to this version of Valtimo can be found [here](migration.md).
 
 ## Deprecations
 

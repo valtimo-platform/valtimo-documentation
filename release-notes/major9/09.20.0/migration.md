@@ -2,20 +2,17 @@
 
 This page describes how to update Valtimo from the previous version to the current.
 
-* **Breaking change 1/Deprecation 1**
+* **Added extra parameter to KeycloakService**
 
-  1. **Step1**
+  Custom implementations of the KeycloakService now require keycloakClientName as a parameter in the super constructor.
+  Either set this value to an empty string (e.g. super(properties, "") or do the following:
 
-     Description
-  2. **Step2**
-
-     Description
-
-* **Breaking change 2/Deprecation 2**
-
-  1. **Step1**
-
-      Description
-  2. **Step2**
-
-      Description
+  ```java
+  public CustomKeycloakService(
+      KeycloakSpringBootProperties properties,
+      @Value("${valtimo.keycloak.client:}") String keycloakClientName
+  ) {
+      super(properties, keycloakClientName);
+      this.properties = properties;
+  }
+  ```
