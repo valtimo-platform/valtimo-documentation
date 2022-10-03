@@ -37,7 +37,7 @@ Afterwards, the component is available under the advanced section in the form bu
 
 ## Configuring the Case 'upload process'
 
-When a document is uploaded to a case, the case will search for the connected upload process to handle the upload. The
+When a document is uploaded to a case, the case will search for the connected 'upload process' to handle the upload. The
 upload process needs to be configured on the case page:
 
 1. Open the 'Admin' menu.
@@ -72,4 +72,3 @@ The second service task in the Upload Document -process is called 'Link uploaded
 can take care of this action. Look [here](../plugin/zaken-api/configure-zaken-api-plugin.md) for more information.
 
 ![Plugin action: Link uploaded document to zaak](img/link-uploaded-document-to-zaak.png)
-
