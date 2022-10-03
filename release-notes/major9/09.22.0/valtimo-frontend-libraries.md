@@ -19,6 +19,8 @@ The following features were added:
   After the separator `(:)` any `valid moment.js` formatting is allowed. 
   A full list of all the moment.js format options can be [found here](https://momentjscom.readthedocs.io/en/latest/moment/04-displaying/01-format/).
 
+* **Added parameters to the 'ValtimoFormioOptions' class**
+  The parameters `readOnly` (boolean), `decimalSeparator` (string) and `thousandsSeparator` (string) are added to the 'ValtimoFormioOptions' class. You can now pass these parameters inside an 'options' object when using the `valtimo-form-io` Angular component.
 
 ## Bugfixes
 
