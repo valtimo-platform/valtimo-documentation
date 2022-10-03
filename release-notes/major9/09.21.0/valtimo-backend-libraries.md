@@ -17,7 +17,8 @@ The following features were added:
 
 ## Bugfixes
 
-No bugfixes.
+* Process variables of type `Boolean` and `Number` submitted via form-io using the pv. prefix 
+were incorrectly parsed as text values thereby replacing the initially submitted value with `null`.
 
 ## Breaking changes
 
