@@ -20,7 +20,16 @@ The following features were added:
   A full list of all the moment.js format options can be [found here](https://momentjscom.readthedocs.io/en/latest/moment/04-displaying/01-format/).
 
 * **Added parameters to the 'ValtimoFormioOptions' class**
+
   The parameters `readOnly` (boolean), `decimalSeparator` (string) and `thousandsSeparator` (string) are added to the 'ValtimoFormioOptions' class. You can now pass these parameters inside an 'options' object when using the `valtimo-form-io` Angular component.
+
+* **Override default task list tabs**
+
+  A new (optional) environment property `visibleTaskListTabs` is introduced to change the visibility of the default tabs in the `valtimo-task-list` component. 
+  The new property is an array which include the tabs that need to be visible on the page. The array can include the following values: `TaskListTab.MINE`, `TaskListTab.OPEN`, and `TaskListTab.ALL`.
+
+  With this new property you can either hide certain tabs that are visible by default or you could change the default order of the tabs.
+
 
 ## Bugfixes
 
