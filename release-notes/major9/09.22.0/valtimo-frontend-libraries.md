@@ -36,6 +36,11 @@ The following bugs were fixed:
   Everytime when the API for getting the list of Valtimo users in a task was loading, it would keep loading even if the task was already completed.
   The subscription is now properly killed and if the task is already completed the API won't be loading anymore.
 
+* **Added missing translations for several components**
+
+  The components `summary page`, `taskDetailModal`, and `list component` were missing translations
+
+
 ## Breaking changes
 
 The following breaking changes were introduced:
