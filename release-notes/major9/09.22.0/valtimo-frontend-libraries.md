@@ -26,7 +26,7 @@ The following features were added:
 * **Override default task list tabs**
 
   A new (optional) environment property `visibleTaskListTabs` is introduced to change the visibility of the default tabs in the `valtimo-task-list` component. 
-  The new property is an array which include the tabs that need to be visible on the page. The array can include the following values: `DefaultTab.MINE`, `DefaultTab.OPEN`, and `DefaultTab.ALL`.
+  The new property is an array which include the tabs that need to be visible on the page. The array can include the following values: `TaskListTab.MINE`, `TaskListTab.OPEN`, and `TaskListTab.ALL`.
 
   With this new property you can either hide certain tabs that are visible by default or you could change the default order of the tabs.
 
