@@ -8,7 +8,7 @@ The following features were added:
 
   The Camunda webapps, including the cockpit, were made available. For existing Valtimo projects additional
   infrastructure configuration might be required to grant access to the `/camunda/app` path. See
-  [this page](/valtimo-implementation/modules/camunda-webapps.md) for more information.
+  [this page](/valtimo-implementation/modules/core/camunda-webapps.md) for more information.
 
 * **Plugins**
 
@@ -49,7 +49,18 @@ No new deprecations.
 
 ## Known issues
 
-* **Multiple form associations on process definition (36319)**
+This version has the following known issues:
+
+* **Multiple existing form associations on process definition**
 
   When multiple start forms are associated with a single process definition the user is unable to start a new case of
   that specific type.
+
+* **Updating process variables from a form.io submission**  
+  Only process variables of type `String` and `Array<String>` are currently supported by the pv. form.io prefix. Any other types will be set to a null value.
+
+* **Using formAssociationService.createFormAssociation() on application startup causing the application to crash**
+
+  When form associations are created on application startup using the formAssociationService.createFormAssociation() method, these associations are duplicated. Before   the bugfix in this release these duplicated associations were added without errors. After the bugfix in this release the application will throw an exception when       creating an already existing association, causing the application to crash on startup.
+  
+  Solution: the correct way to add form associations is by adding [form link files](/using-valtimo/form-link/configure-task.md). Using of          formAssociationService.createFormAssociation() should be replaced with form link files.

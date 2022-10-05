@@ -1,8 +1,8 @@
-# Object Token Authentication
+# Objecten API Authentication
 
 ## Dependencies
 
-In order to use the Object Token Authentication plugin, the objecten-api-authentication module needs to 
+In order to use the Objecten API Authentication plugin, the objecten-api-authentication module needs to 
 be added as a dependency. The following can be added to your project, depending on whether Maven 
 or Gradle is used:
 
@@ -25,5 +25,3 @@ dependencies {
   implementation "com.ritense.valtimo:objecten-api-authentication:${valtimo_version}"
 }
 ```
-
-

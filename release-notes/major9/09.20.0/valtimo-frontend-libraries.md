@@ -1,4 +1,4 @@
-# Frontend libraries 5.9.0 (RC)
+# Frontend libraries 5.9.1
 
 ## New Features
 
@@ -55,6 +55,19 @@ The following bugs were fixed:
   The button to start a (sub)process on the case detail overview was always hardcoded with the label `Start`. 
   This has been replaced by a translation property `dossier.startSubProcess` which can now be overridden in any implementation. 
   The default value in Valtimo is still `Start`.
+
+* **Clicking on a case from the case list goes to dashboard**
+
+  Clicking on a case in the case list would redirect the user to the dashboard. This behaviour has been fixed. When the
+  user now clicks on a case in the case list, he/she will be redirected to the case.
+
+## Breaking changes
+
+No breaking changes.
+
+## Deprecations
+
+No new deprecations.
 
 ## Known issues
 

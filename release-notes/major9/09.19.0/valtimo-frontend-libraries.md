@@ -135,5 +135,3 @@ This version has the following known issues:
 * **Rotating blue stripes**
 
   Certain pages could show rotating blue stripes while loading data. This will be fixed in a future update.
-
-

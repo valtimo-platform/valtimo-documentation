@@ -32,7 +32,7 @@ The following features were added:
       from the module `@valtimo/plugin`, to your `app.module.ts`
   * Documenten API
     * This plugin creates a connection to the Documenten API.
-    * It currently has a single action available, it enables to read a proces varable containing
+    * It currently has a single action available, it enables to read a process variable containing
       a location to a temporary file stored locally and upload that document to the
       Documenten API. The URL to new location will be stored in a new process variable
     * Added tooltips to multiple fields of the configuration of the plugin and its action for information
