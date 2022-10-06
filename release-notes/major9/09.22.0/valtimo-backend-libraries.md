@@ -19,9 +19,10 @@ The following features were added:
 
 The following bugs were fixed:
 
-* **Bug1**
+* **SonarQube issues**
 
-  Description of what the issue was.
+  SonarQube scanned the backend code for bugs and vulnerabilities. All bugs and vulnerabilities that SonarQube found
+  have been solved.
 
 * **Bug2**
 
