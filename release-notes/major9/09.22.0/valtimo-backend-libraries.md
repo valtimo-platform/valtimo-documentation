@@ -21,8 +21,12 @@ The following bugs were fixed:
 
 * **SonarQube issues**
 
-  SonarQube scanned the backend code for bugs and vulnerabilities. All bugs and vulnerabilities that SonarQube found
-  have been solved.
+  SonarQube scanned the backend code for bugs and vulnerabilities. SonarQube found:
+  - 21 Bugs
+  - 7 Vulnerabilities
+
+  All bugs and vulnerabilities that SonarQube found have been solved.
+
 
 * **Bug2**
 
