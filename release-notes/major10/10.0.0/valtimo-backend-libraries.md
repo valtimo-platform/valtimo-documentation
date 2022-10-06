@@ -34,7 +34,9 @@ The following bugs were fixed:
 
 The following breaking changes were introduced:
 
-* **Breaking change1**
+* **Java 17**
+
+Valtimo is now compiled on Java 17 and needs to run in a Java 17 environment.
 
 * **Breaking change2**
 
