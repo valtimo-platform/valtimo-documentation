@@ -108,9 +108,8 @@
 * Release notes
   * 9.x.x
     * 9.22.0/5.11.0 (RC)
-      * [Valtimo backend libraries (9.21.0 RC)](release-notes/major9/09.22.0/valtimo-backend-libraries.md)
-      * [Valtimo frontend libraries (5.10.0 RC)](release-notes/major9/09.22.0/valtimo-frontend-libraries.md)
-      * [Migration](release-notes/major9/09.22.0/migration.md)
+      * [Valtimo backend libraries (9.22.0 RC)](release-notes/major9/09.22.0/valtimo-backend-libraries.md)
+      * [Valtimo frontend libraries (5.11.0 RC)](release-notes/major9/09.22.0/valtimo-frontend-libraries.md)
     * 9.21.0/5.10.0
       * [Valtimo backend libraries (9.21.0)](release-notes/major9/09.21.0/valtimo-backend-libraries.md)
       * [Valtimo frontend libraries (5.10.0)](release-notes/major9/09.21.0/valtimo-frontend-libraries.md)
