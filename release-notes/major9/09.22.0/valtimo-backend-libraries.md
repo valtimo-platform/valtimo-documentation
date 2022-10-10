@@ -4,15 +4,15 @@
 
 The following features were added:
 
-* **Allows ExternalFields to have a nested formfield.key structure**
+* **Allow external fields to have a nested formfield.key structure**
 
-  Defining a external field only support 1 level keys like:
-  - _**ex.keyName**_
+  Previously an external field definition only supported 1 level keys like:
+  - `ex.keyName`
 
-  Now its possible to allow for multi-levels like:
-  - _**ex.keyName.anotherKeyName**_
+  Now its possible to define nested stuctures like:
+  - `ex.keyName.anotherKeyName`
     Resulting in structures that can be mapped into the prefilling/submission phase:
-   ``` 
+   ```json
    {
        "ex" : {
            "keyName" : {
