@@ -66,7 +66,7 @@ Look [here](../plugin/documenten-api/configure-documenten-api-plugin.md) for mor
 
 Configuring the first service task of the Upload Document process is enough to let Valtimo users upload their documents
 to the Documenten API in Valtimo. But the documents will not be visible yet in case information within Valtimo. This is
-because the document hasn't been linked to any zaak.
+because the document has not been linked to any zaak.
 
 The second service task in the Upload Document process is called 'Link uploaded document to zaak'. The Zaken API plugin
 can take care of this action. Look [here](../plugin/zaken-api/configure-zaken-api-plugin.md) for more information.
