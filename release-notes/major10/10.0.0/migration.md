@@ -3,6 +3,8 @@
 This page describes how to update Valtimo from the previous version to the current.
 
 * **Node.js and NPM version upgrade**
+  
+  Scope: Frontend
 
     1. **Configure NVM on your machine**
 
@@ -22,6 +24,8 @@ This page describes how to update Valtimo from the previous version to the curre
 
 
 * **Angular upgrade**
+
+  Scope: Frontend
 
     In order to use the new front-end libraries based on Angular version 14 in an implementation, run the following
     command in the root of the implementation project:
