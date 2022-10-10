@@ -37,12 +37,12 @@ Afterwards, the component is available under the advanced section in the form bu
 
 ## Configuring the Case 'upload process'
 
-When a document is uploaded to a case, the case will search for the connected 'upload process' to handle the upload. The
+When a document is uploaded to a case, the 'upload process' connected to the case definition will be started to handle the upload. The
 upload process needs to be configured on the case page:
 
 1. Open the 'Admin' menu.
 2. Go to the 'Cases' page.
-3. Select the case that is going to handle uploads to the Documenten API.
+3. Select the case definition that you want to configure the upload process to use the Documenten API for.
 4. Link the upload process under section 'Link upload process to case'.
 5. Select the 'Upload Document', or select any custom process that can handle uploads.
 
