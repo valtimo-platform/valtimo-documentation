@@ -4,15 +4,17 @@
 
 The following features were added:
 
-* **New feature1**
+* **Upgrade Node.js to version 18 and NPM to version 8**
 
-  Description of the new feature goes here.
-  Also link to the page that expains the feature in greater detail.
+  The Node.js version used by the valtimo-frontend-libaries has been upgrade to the latest version 18 and NPM to the
+  latest version 8. [Version 18 will be released as a LTS release](https://github.com/nodejs/Release). To prevent future
+  incompatibilities, the Node.js and NPM version are now forced within the libraries. To switch over to the latest
+  version 18 on your machine, please refer to [the migration page for this release](migration.md).
 
-* **New feature2**
+* **Angular upgrade to version 14**
 
-  Description of the new feature goes here.
-  Also link to the page that expains the feature in greater detail.
+  Angular has been upgraded from version 13 to version 14. [This version supports many new features](https://blog.angular.io/angular-v14-is-now-available-391a6db736af).
+  To be able to use the libraries with this new version, please refer to [the migration page for this release](migration.md).
 
 
 ## Bugfixes
