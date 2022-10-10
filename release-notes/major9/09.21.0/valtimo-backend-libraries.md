@@ -17,7 +17,8 @@ The following features were added:
 
 ## Bugfixes
 
-No bugfixes.
+* Process variables of type `Boolean` and `Number` submitted via form-io using the pv. prefix 
+were incorrectly parsed as text values thereby replacing the initially submitted value with `null`.
 
 ## Breaking changes
 
@@ -42,3 +43,6 @@ This version has the following known issues:
 
   When multiple start forms are associated with a single process definition the user is unable to start a new case of
   that specific type.
+* **Updating process variables from a form.io submission**  
+  Only process variables of type `String`, `Number`, `Boolean` and `Array<String>` are currently supported by 
+  the pv. form.io prefix. Any other types will be set to a `null` value.

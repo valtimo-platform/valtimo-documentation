@@ -27,7 +27,7 @@
       * [Form flow](valtimo-implementation/modules/core/form-flow.md)
       * [Form link](valtimo-implementation/modules/core/form-link.md)
       * [Local document generation](valtimo-implementation/modules/core/local-document-generation.md)
-      * [Local mail](valtimo-implementation/modules/core/mail.md)
+      * [Local mail](valtimo-implementation/modules/core/local-mail.md)
       * [Mail](valtimo-implementation/modules/core/mail.md)
       * [Mandrill](valtimo-implementation/modules/core/mandrill.md)
       * [Milestones](valtimo-implementation/modules/core/milestones.md)
@@ -113,9 +113,11 @@
     * 9.21.0/5.10.0
       * [Valtimo backend libraries (9.21.0)](release-notes/major9/09.21.0/valtimo-backend-libraries.md)
       * [Valtimo frontend libraries (5.10.0)](release-notes/major9/09.21.0/valtimo-frontend-libraries.md)
-    * 9.20.0/5.9.0
+      * [Migration](release-notes/major9/09.21.0/migration.md)
+    * 9.20.0/5.9.1
       * [Valtimo backend libraries (9.20.0)](release-notes/major9/09.20.0/valtimo-backend-libraries.md)
-      * [Valtimo frontend libraries (5.9.0)](release-notes/major9/09.20.0/valtimo-frontend-libraries.md)
+      * [Valtimo frontend libraries (5.9.1)](release-notes/major9/09.20.0/valtimo-frontend-libraries.md)
+      * [Migration](release-notes/major9/09.20.0/migration.md)
     * 9.19.0/5.8.0
       * [Valtimo backend libraries (9.19.0)](release-notes/major9/09.19.0/valtimo-backend-libraries.md)
       * [Valtimo frontend libraries (5.8.0)](release-notes/major9/09.19.0/valtimo-frontend-libraries.md)
