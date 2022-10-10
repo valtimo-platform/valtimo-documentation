@@ -4,6 +4,8 @@ This page describes how to update Valtimo from the previous version to the curre
 
 * **Java 17**
 
+Scope: Backend
+
 In order to run Valtimo a Java 17 environment must be used. The way to configure this is different per implementation.
 For example, the Java version used when gradle with gradle can be set like this: 
 
