@@ -46,7 +46,7 @@ The following bugs were fixed:
 
 ## Breaking changes
 
-* **Changed ExterenalDataSubmittedEvent data field type**
+* **Changed ExternalDataSubmittedEvent data field type**
   The `data` field for the `ExternalDataSubmittedEvent` has changed from `Map<ExternalFormFieldType, Map<String, Object>>` to
   `Map<String, Map<String, Object>>`.
 
@@ -71,6 +71,9 @@ This version has the following known issues:
 
   When multiple start forms are associated with a single process definition the user is unable to start a new case of
   that specific type.
+
+* **Updating process variables from a form.io submission**  
+  Only process variables of type `String` and `Array<String>` are currently supported by the pv. form.io prefix. Any other types will be set to a null value.
 
 * **Using formAssociationService.createFormAssociation() on application startup causing the application to crash**
 

@@ -55,7 +55,10 @@ This version has the following known issues:
 
   When multiple start forms are associated with a single process definition the user is unable to start a new case of
   that specific type.
-  
+
+* **Updating process variables from a form.io submission**  
+  Only process variables of type `String` and `Array<String>` are currently supported by the pv. form.io prefix. Any other types will be set to a null value.
+
 * **Using formAssociationService.createFormAssociation() on application startup causing the application to crash**
 
   When form associations are created on application startup using the formAssociationService.createFormAssociation() method, these associations are duplicated. Before   the bugfix in this release these duplicated associations were added without errors. After the bugfix in this release the application will throw an exception when       creating an already existing association, causing the application to crash on startup.
