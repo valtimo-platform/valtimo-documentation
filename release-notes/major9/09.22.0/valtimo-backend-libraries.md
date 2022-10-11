@@ -2,63 +2,33 @@
 
 ## New Features
 
-The following features were added:
-
-* **New feature1**
-
-  Description of the new feature goes here. 
-  Also link to the page that explains the feature in greater detail.
-
-* **New feature2**
-
-  Description of the new feature goes here.
-  Also link to the page that explains the feature in greater detail.
-
+No new features.
 
 ## Bugfixes
 
 The following bugs were fixed:
 
-* **Bug1**
+* **SonarQube issues**
 
-  Description of what the issue was.
+  SonarQube scanned the backend code for bugs and vulnerabilities. SonarQube found:
+  - 21 Bugs
+  - 7 Vulnerabilities
 
-* **Bug2**
-
-  Description of what the issue was.
+  All bugs and vulnerabilities that SonarQube found have been solved.
 
 ## Breaking changes
 
-The following breaking changes were introduced:
-
-* **Breaking change1**
-
-* **Breaking change2**
-
-Instructions on how to migrate to this version of Valtimo can be found [here](migration.md).
+No breaking changes.
 
 ## Deprecations
 
-The following was deprecated:
-
-* **Deprecation1**
-
-  X was deprecated and is replaced with Y.
-
-* **Deprecation2**
-
-  X was deprecated and is replaced with Y.
-
-Instructions on how to migrate to this version of Valtimo can be found [here](migration.md).
+No new deprecations.
 
 ## Known issues
 
 This version has the following known issues:
 
-* **Issue1**
-  * Discovered in version x.x.x
-  * Describe what can be done to work around the issue
+* **Multiple existing form associations on process definition**
 
-* **Issue2**
-  * Discovered in version x.x.x
-  * Describe what can be done to work around the issue
+  When multiple start forms are associated with a single process definition the user is unable to start a new case of
+  that specific type.

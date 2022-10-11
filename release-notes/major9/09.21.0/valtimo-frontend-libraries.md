@@ -93,3 +93,12 @@ This version has the following known issues:
     tables shows multiple entries.
   * It is not possible to create a new DMN table from scratch from the ui.
   * It is not possible to edit the key of a DMN table.
+
+* **Missing flatpickr dependency**
+  
+  In front-end libraries verison 5.10.0, a new datepicker component has been added to `@valtimo/user-interface`. This
+  component has a dependency on `flatpickr`, however, this was not included in the dependencies of
+  `@valtimo/user-interface`. This dependency will be included in a future version.
+
+  To fix this for now, add the latest
+  version of `flatpickr` to the dependencies of the implementation by running `npm install flatpickr`.

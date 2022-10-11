@@ -20,7 +20,16 @@ The following features were added:
   A full list of all the moment.js format options can be [found here](https://momentjscom.readthedocs.io/en/latest/moment/04-displaying/01-format/).
 
 * **Added parameters to the 'ValtimoFormioOptions' class**
+
   The parameters `readOnly` (boolean), `decimalSeparator` (string) and `thousandsSeparator` (string) are added to the 'ValtimoFormioOptions' class. You can now pass these parameters inside an 'options' object when using the `valtimo-form-io` Angular component.
+
+* **Override default task list tabs**
+
+  A new (optional) environment property `visibleTaskListTabs` is introduced to change the visibility of the default tabs in the `valtimo-task-list` component. 
+  The new property is an array which include the tabs that need to be visible on the page. The array can include the following values: `TaskListTab.MINE`, `TaskListTab.OPEN`, and `TaskListTab.ALL`.
+
+  With this new property you can either hide certain tabs that are visible by default or you could change the default order of the tabs.
+
 
 ## Bugfixes
 
@@ -36,37 +45,34 @@ The following bugs were fixed:
   Everytime when the API for getting the list of Valtimo users in a task was loading, it would keep loading even if the task was already completed.
   The subscription is now properly killed and if the task is already completed the API won't be loading anymore.
 
+* **Added missing translations for several components**
+
+  The components `summary page`, `taskDetailModal`, and `list component` were missing translations
+
+
 ## Breaking changes
 
-The following breaking changes were introduced:
-
-* **Breaking change1**
-
-* **Breaking change2**
-
-Instructions on how to migrate to this version of Valtimo can be found [here](migration.md).
+No breaking changes.
 
 ## Deprecations
 
-The following was deprecated:
-
-* **Deprecation1**
-
-  X was deprecated and is replaced with Y.
-* **Deprecation2**
-
-  X was deprecated and is replaced with Y.
-
-Instructions on how to migrate to this version of Valtimo can be found [here](migration.md).
+No new deprecations.
 
 ## Known issues
 
 This version has the following known issues:
 
-* **Issue1**
-    * Discovered in version x.x.x
-    * Describe what can be done to work around the issue
+* **Experimental DMN editing**
+  * Editing only works for DRM file with a single DRM table. If multiple tables exist, the overview list of decision
+    tables shows multiple entries.
+  * It is not possible to create a new DMN table from scratch from the ui.
+  * It is not possible to edit the key of a DMN table.
 
-* **Issue2**
-    * Discovered in version x.x.x
-    * Describe what can be done to work around the issue
+* **Missing flatpickr dependency**
+
+  In front-end libraries verison 5.10.0, a new datepicker component has been added to `@valtimo/user-interface`. This
+  component has a dependency on `flatpickr`, however, this was not included in the dependencies of
+  `@valtimo/user-interface`. This dependency will be included in a future version.
+
+  To fix this for now, add the latest
+  version of `flatpickr` to the dependencies of the implementation by running `npm install flatpickr`.
