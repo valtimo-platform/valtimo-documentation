@@ -22,17 +22,34 @@ The following features were added:
    }
   ```
 
+* **Added modifier property to customDossierHeaderItems**
+  
+  In a `customDossierHeaderItem` you can now pass a `modifier` property to modify how the data for the
+  header item is rendered. The only allowed modifier at this moment is the `age` modifier which renders
+  a date string as an age (see example below).
+
+  ```typescript
+  customDossierHeader: {
+    dossierName: [
+      {
+        labelTranslationKey: 'Age',
+        propertyPaths: ['personA.dateOfBirth'],
+        modifier: 'age'
+      }
+    ]
+  }
+  ```
+  
+
 ## Bugfixes
 
 The following bugs were fixed:
 
-* **Bug1**
+* **Semicolon in customDossierHeaderItem**
 
-  Description of what the issue was.
-
-* **Bug2**
-
-  Description of what the issue was.
+  The semicolon between label and value in custom dossier header items were rendered when only a `labelTranslationKey`
+  was defined. It will now only render a semicolon when both the `labelTranslationKey` and the `propertyPaths` are
+  defined.
 
 ## Breaking changes
 
