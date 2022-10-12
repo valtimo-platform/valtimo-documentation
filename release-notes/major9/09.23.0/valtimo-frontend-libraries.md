@@ -6,10 +6,10 @@ The following features were added:
 
 * **Added default assignee column to the case list**
 
-  Added a new default column to the `valtimo-dossier-list` component, which displays the full name of the assignee 
-  for each case when it exists. This column is sortable, considering the first name and then the lastname.
+  Added a new default column to the `valtimo-dossier-list` component, which displays the full name of the assignee
+  for each case when present. This column is sortable, considering the first name and then the lastname.
 
-  To display the new column, it was necessary to add data in the `environment.ts` file (see example below).
+  To display the new column, it is required to add data in the `environment.ts` file (see example below).
   #### **`environment.ts`**
 
   ```typescript
