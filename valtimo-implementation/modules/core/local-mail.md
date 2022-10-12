@@ -12,7 +12,7 @@ added as a dependency. The following can be added to your project, depending on 
 <dependencies>
     <dependency>
         <groupId>com.ritense.valtimo</groupId>
-        <artifactId>local-document-generation</artifactId>
+        <artifactId>local-mail</artifactId>
         <version>${valtimo_version}</version>
     </dependency>
 </dependencies>
@@ -21,6 +21,6 @@ added as a dependency. The following can be added to your project, depending on 
 #### Gradle dependency:
 ```json
 dependencies {
-  implementation "com.ritense.valtimo:local-document-generation:${valtimo_version}"
+  implementation "com.ritense.valtimo:local-mail:${valtimo_version}"
 }
 ```
