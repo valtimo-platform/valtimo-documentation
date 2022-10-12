@@ -28,7 +28,7 @@ already existing feature).
    - Release notes to in the `release-notes` package.
    - If new pages are added, these should also be added to `SUMMARY.md`. The sidebar shown on GitBook corresponds to
       this structure.
-3. Merge the branch after getting an approval from the Valtimo team.
+2. Merge the branch after getting an approval from the Valtimo team.
 
 ## Writing documentation unrelated to an upcoming release
 
