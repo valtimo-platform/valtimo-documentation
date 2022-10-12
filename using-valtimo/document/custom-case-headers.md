@@ -56,6 +56,13 @@ export const environment: ValtimoConfig = {
                 textSize: 'sm',
                 noValueText: 'Nog niet bekend'
             },
+            {
+                labelTranslationKey: 'geboortedatum',
+                propertyPaths: ['aanvrager.geboortedatum'],
+                modifier: 'age',
+                columnSize: 3,
+                textSize: 'sm'
+            },
         ]
     }
     ...
@@ -74,6 +81,9 @@ This can also be used to show a static text in the header without data from the 
 property empty. If left blank, no label will be shown.
 - **propertyPaths** (Optional) An array of paths to the data from the document that is displayed. When this contains multiple items
 they are placed one after the other.
+- **modifier** (Optional) Modify how data is rendered using one of the predefined modifiers.
+  - Available modifiers:
+    - `age` renders a date string as an age in years relative to the current date.
 - **columnSize** (Optional) The column size based on Bootstrap columns (1-12). Bootstrap divides a row in 12 columns. If blocks are 
 added after the first 12 columns, the blocks will be pushed to the next row. If no `columnSize` is specified, the 
 default size is 3.
