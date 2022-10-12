@@ -25,7 +25,7 @@ already existing feature).
    do not forget to merge it back into that Valtimo release branch as part of the PR, and include all developers to the
    PR as reviewers.
    - Information on what language to use, as well as general guidelines can be found [here](STYLE-GUIDE.md).
-   - Release notes to in the `release-noties` package.
+   - Release notes to in the `release-notes` package.
    - If new pages are added, these should also be added to `SUMMARY.md`. The sidebar shown on GitBook corresponds to
       this structure.
 2. Merge the branch after getting an approval from the Valtimo team.
