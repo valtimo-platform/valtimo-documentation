@@ -8,6 +8,8 @@
     * [Form flow](introduction/modules/form-flow-introduction.md)
     * [Form links](introduction/modules/form-link-introduction.md)
     * [Plugins](introduction/modules/plugin-introduction.md)
+  * [How to contribute](CONTRIBUTING.md)
+  * [Style guide for contributing](STYLE-GUIDE.md)
 * [Creating your own Valtimo implementation](valtimo-implementation/valtimo-implementation.md)
   * [First dive into Valtimo](valtimo-implementation/first-dive/first-dive.md)
     * [Docker container](valtimo-implementation/first-dive/docker-container/docker-container.md)
