@@ -34,6 +34,12 @@ Instructions are written in the passive voice or in the second person.
 * **Correct**: You then import this module.
 * **Incorrect**: We then import this module.
 
+## Abbreviations
+
+The first time an abbreviation is used on a page, the fully written meaning should be included.
+
+**For example**: it is recommended to use Node Version Manager (NVM)
+
 # General guidelines
 
 ## Release notes
@@ -59,6 +65,10 @@ case-by-case basis whether a page should contain an introduction.
 
 Adding screenshots is useful when writing instructions. All text contained in the screenshot should be in English.
 Preferably show screenshots from the default Valtimo implementation, and remember to keep all screenshots up-to-date.
+
+## External references
+
+When including a reference to an external source, a link to the external documentation should be included when possible.
 
 # Target audience
 
