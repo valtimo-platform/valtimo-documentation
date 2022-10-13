@@ -88,7 +88,7 @@ class TwitterPluginFactory(
 Plugin categories denote a commonality between plugins. They can be applied to interfaces, so any plugin
 implementing this will belong to that category. When a plugin implements more than one interface with a category, it
 belongs to multiple categories. This can be used by the backend to create plugins that rely on other plugins to be
-configured and can be used by the frontend to search for plugins in a specific category.
+configured, and can be used by the frontend to search for plugins in a specific category.
 
 A plugin implementing an interface annotated with `@PluginCategory` can be autowired into a `@PluginProperty` of
 the same type on a different plugin.

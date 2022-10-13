@@ -8,7 +8,7 @@ through the frontend code of an implementation.
 To customize which tabs are shown, and in what order, open `app.module.ts` in the `src` folder of the implementation.
 Here, a function `tabsFactory()` is defined. It provides a `Map` with tab IDs of type `string` and the corresponding
 Angular component the tab needs to show. To customize the tabs shown for each case in the implementation, modify
-the existing tabs provided by `tabsFactory()` or add your own.
+the existing tabs provided by `tabsFactory()`, or add your own.
 
 #### **`app.module.ts`**
 ```typescript

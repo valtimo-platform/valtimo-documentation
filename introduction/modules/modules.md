@@ -12,7 +12,7 @@ actions of that case.
 ### Connector
 
 Connectors are Valtimo configurable components that can be used to connect to external systems. This module provides a
-framework to create, configure and use connectors. Certain Valtimo modules include their own connectors that become
+framework to create, configure, and use connectors. Certain Valtimo modules include their own connectors that become
 available automatically for configuration when starting a Valtimo instance.
 
 ### Contract
