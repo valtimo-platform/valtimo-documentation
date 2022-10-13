@@ -40,9 +40,9 @@ Afterwards, the component is available under the advanced section in the form bu
 When a document is uploaded to a case, the 'upload process' connected to the case definition will be started to handle the upload. The
 upload process needs to be configured on the case page:
 
-1. Open the 'Admin' menu.
-2. Go to the 'Cases' page.
-3. Select the case definition that you want to configure the upload process to use the Documenten API for.
+1. Open the menu 'Admin'.
+2. Go to the page 'Cases'.
+3. Select the case definition you want to configure the upload process to use the Documenten API for.
 4. Link the upload process under section 'Link upload process to case'.
 5. Select the 'Upload Document', or select any custom process that can handle uploads.
 
@@ -50,7 +50,7 @@ upload process needs to be configured on the case page:
 
 ## Configuring the Upload Document process
 
-Every Valtimo implementation comes with a system process called: Upload Document. This process is meant to handle most
+Every Valtimo implementation comes with a system process called 'Upload Document'. This process is meant to handle most
 generic document uploads. The Upload Document process look like this:
 
 ![Upload Document](img/document-upload.png)

@@ -1,6 +1,6 @@
 # Custom case columns
 
-Each case list comes with a set of four default columns. 'Reference number', 'Created by', 'Created on',
+Each case list comes with a set of four default columns: 'Reference number', 'Created by', 'Created on',
 and 'Last modified'. The columns in the list can be changed, added and removed. Any property stored in a document can be
 used as a column in a case list.
 
@@ -101,7 +101,7 @@ export const environment: ValtimoConfig = {
   ```
 
 For each case type for which custom columns are to be defined, a property is added to the `customDefinitionTables` 
-object. The key of this property is the document definition id, and the value an array of `DefinitionColumn`, i.e.:  
+object. The key of this property is the document definition id and the value an array of `DefinitionColumn`, i.e.:  
 `'document-definition-name': []`.
 
 For each column that needs to be displayed for that case type a `DefinitionColumn` is added to the array. A 

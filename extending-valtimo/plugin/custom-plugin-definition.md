@@ -38,11 +38,11 @@ meant to be used for sensitive information (e.g. passwords or API keys). Secrets
 the database and will be automatically decrypted before use in the plugin.
 
 These things should be kept in mind when creating the frontend components for secrets:
-- When editing an existing plugin configuration the value will not be sent back to the frontend to avoid exposing
-  sensitive data
-- Only when submitting a value that is not null or empty string will the property be updated.
-- This functionality requires an application property `valtimo.plugin.encryption-secret` the value of this property will
-  determine the encryption key. The encryption-secret has to be at least 16 characters long
+- When editing an existing plugin configuration, the value will not be sent back to the frontend to avoid exposing
+  sensitive data.
+- Only when submitting a value that is not null or an empty string will the property be updated.
+- This functionality requires an application property `valtimo.plugin.encryption-secret`. The value of this property 
+  determines the encryption key. The encryption secret has to be at least 16 characters long
 
 #### Plugin action
 
@@ -68,7 +68,7 @@ fun postTweet(execution: DelegateExecution, postTweetProperties: PostTweetProper
 The newly created plugin class can not be used yet because Valtimo does not know how to create the new plugin. This
 problem is solved by creating a factory that extends the `PluginFactory` and registering it as a bean. 
 The `create()` method has to be implemented to inject Spring beans or other objects that are necessary. This does not
-include plugin properties, those are set automatically.
+include plugin properties, as those are set automatically.
 
 For example:
 
@@ -87,17 +87,17 @@ class TwitterPluginFactory(
 ### Plugin categories
 Plugin categories denote a commonality between plugins. They can be applied to interfaces, so any plugin
 implementing this will belong to that category. When a plugin implements more than one interface with a category, it
-belongs to multiple categories. This can be used by backend to create plugins that rely on other plugins to be
-configured, and can be used by frontend to search for plugins in a specific category.
+belongs to multiple categories. This can be used by the backend to create plugins that rely on other plugins to be
+configured and can be used by the frontend to search for plugins in a specific category.
 
-A plugin implementing an interface annotated with `@PluginCategory` can can be autowired into a `@PluginProperty` of
+A plugin implementing an interface annotated with `@PluginCategory` can be autowired into a `@PluginProperty` of
 the same type on a different plugin.
 
 The example below explains the implementation of a tweet supplier for a Twitter plugin, which can then be used to send
 out actual tweets.
 
 First, the interface is defined that includes the required functionality. `@PluginCategory` with a key is added so that
-can be used to find configurations of that type in the front-end:
+can be used to find configurations of that type in the frontend:
 ```kotlin
 @PluginCategory(key = "tweet-supplier")
 interface TweetSupplier {
@@ -105,9 +105,9 @@ interface TweetSupplier {
 }
 ```
 
-At least one implementation of the plugin is required. In this case the `PropertyTweetSupplier` implements the
+At least one implementation of the plugin is required. In this case, the `PropertyTweetSupplier` implements the
 interface `TweetSupplier` and supports all required functionality. When searching for configurations for category
-`tweet-supplier` all stored `PropertyTweetSupplier` configurations are found.
+`tweet-supplier`, all stored `PropertyTweetSupplier` configurations are found.
 ```kotlin
 @Plugin(
   key = "property-tweet-supplier",
@@ -124,8 +124,8 @@ class PropertyTweetSupplier: TweetSupplier {
 }
 ```
 
-When creating a configuration of the `TwitterPlugin` the front-end should get and show a list of all available
-configuration of type `tweet-supplier`. The id of the chosen configuration will be part of the properties submitted for
+When creating a configuration of the `TwitterPlugin`, the frontend should get and show a list of all available
+configuration of type `tweet-supplier`. The ID of the chosen configuration will be part of the properties submitted for
 the creation of the `TwitterPlugin` configuration. The `@PluginProperty` can reference the interface type corresponding
 to the category. The plugin will then be automatically injected with the corresponding configuration when using the
 `TwitterPlugin`. 
@@ -152,9 +152,9 @@ class TwitterPlugin {
 }
 ```
 
-## Front-end
+## Frontend
 
-To develop a front-end plugin, the library `@valtimo/plugin` provides several interfaces which a front-end
+To develop a frontend plugin, the library `@valtimo/plugin` provides several interfaces which a frontend
 plugin must conform to, in order to be used in an implementation.
 
 ### Plugin specification
@@ -333,7 +333,7 @@ export {SamplePluginConfig};
 
 How a configuration component for the sample plugin can be implemented is shown below.
 The way this is implemented can differ, as long as the interfaces are conformed to. 
-Below is sample code on implementing the component using components from the library `@valtimo/user-interface`.
+Below is sample code of implementing the component using components from the library `@valtimo/user-interface`.
 
 #### **`sample-plugin-configuration.component.ts`**
 ```typescript
@@ -440,8 +440,8 @@ The corresponding template file looks like this:
 
 ### Function configuration components
 
-Each plugin action received from the back-end must have a corresponding function configuration component in the
-front-end. Implementing these components works in much the same way as implementing the plugin configuration component,
+Each plugin action received from the backend must have a corresponding function configuration component in the
+frontend. Implementing these components works in much the same way as implementing the plugin configuration component,
 The only difference is that function configuration components do not have to provide a configuration title. 
 Below is sample code for the sample plugin action with the id `sample-action`:
 
@@ -543,7 +543,7 @@ export class SamplePluginConfigurationComponent
 
 The template code shown above uses the `pluginTranslate` pipe to show translations from the plugin specification.
 To use this, first import `PluginTranslatePipeModule` from `@valtimo/plugin` and add it to the `imports` array of the 
-plugin module. Now the `pluginTranslate` pipe can be used in templates. It uses the following syntax:
+plugin module. Now, the `pluginTranslate` pipe can be used in templates. It uses the following syntax:
 
 #### **`sample-translation-pipe.component.html`**
 ```angular2html
