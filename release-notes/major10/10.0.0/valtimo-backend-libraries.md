@@ -22,9 +22,10 @@ The following features were added:
 
 The following bugs were fixed:
 
-* **Bug1**
+* **S3Resource limits changed**
 
-  Description of what the issue was.
+  The length of the 'key' value was changed to 1024 to reflect AWS limits. 
+  The 'name' fields limit has also been changed to 65535 to support longer filenames.
 
 * **Bug2**
 
