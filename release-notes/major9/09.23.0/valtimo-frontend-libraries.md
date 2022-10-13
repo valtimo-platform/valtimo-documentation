@@ -51,6 +51,11 @@ The following bugs were fixed:
   was defined. It will now only render a semicolon when both the `labelTranslationKey` and the `propertyPaths` are
   defined.
 
+* **Flatpickr inside Form.io form could not get locale**
+
+  When Flatpickr (date picker) was used inside a Form.io form, it could not properly determine the locale. The way the
+  application language is passed to the Form.io component has been changed, so that this error no longer occurs.
+
 ## Breaking changes
 
 The following breaking changes were introduced:
