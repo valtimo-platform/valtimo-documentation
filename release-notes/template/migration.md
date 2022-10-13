@@ -4,6 +4,8 @@ This page describes how to update Valtimo from the previous version to the curre
 
 * **Breaking change 1/Deprecation 1**
 
+  Scope: backend/frontend
+
   1. **Step1**
 
      Description
@@ -12,6 +14,8 @@ This page describes how to update Valtimo from the previous version to the curre
      Description
 
 * **Breaking change 2/Deprecation 2**
+
+  Scope: backend/frontend
 
   1. **Step1**
 
