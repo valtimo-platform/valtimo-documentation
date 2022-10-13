@@ -53,8 +53,8 @@ The following bugs were fixed:
 
 * **Flatpickr inside Form.io form could not get locale**
 
-  When Flatpickr (date picker) was used inside a Form.io form, it could not properly determine the locale. The way the
-  application language is passed to the Form.io component has been changed, so that this error no longer occurs.
+  When Flatpickr (date picker) was used inside a Form.io form, it could not properly determine the locale. The
+  application language is passed to the Form.io component in a different way now, resolving the error.
 
 ## Breaking changes
 
