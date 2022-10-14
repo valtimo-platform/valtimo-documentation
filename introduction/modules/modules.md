@@ -105,6 +105,11 @@ The milestones module offers a framework to keep track of how a process is progr
 in the admin interface, and can be linked to specific tasks of a process. When that task is completed,
 the corresponding milestone is reached.
 
+### Notes
+
+The notes module offers users the possibility to add notes to a case. A note that is added to the case can be read by
+other users that open that case. This makes it easier to collaborate on a case.
+
 ### Plugins
 
 Plugins are extensions on the Valtimo platform. These are often connections to external
