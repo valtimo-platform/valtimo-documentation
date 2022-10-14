@@ -101,7 +101,7 @@ export const environment: ValtimoConfig = {
   ```
 
 For each case type for which custom columns are to be defined, a property is added to the `customDefinitionTables` 
-object. The key of this property is the document definition id and the value an array of `DefinitionColumn`, i.e.:  
+object. The key of this property is the document definition id, and the value an array of `DefinitionColumn`, i.e.:  
 `'document-definition-name': []`.
 
 For each column that needs to be displayed for that case type a `DefinitionColumn` is added to the array. A 

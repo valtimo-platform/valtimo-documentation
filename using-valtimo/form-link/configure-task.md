@@ -7,7 +7,7 @@ found. What this preliminary step is, depends on the type of form that should be
 
 To create a form link for a start event or user task, the following steps are necessary:
 
-1. In the menu 'Admin', go to "Process links". This shows a select box, specifying which process and
+1. In the Admin menu, go to "Process links". This shows a select box, specifying which process and
    version are being configured, as well as a diagram for the current selection.
 2. Select the process and version that should be configured.
 3. Select a start event or user task.

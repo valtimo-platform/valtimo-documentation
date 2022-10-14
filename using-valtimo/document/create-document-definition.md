@@ -68,9 +68,9 @@ To create a document definition, the following steps are necessary:
 As an alternative to creating a document definition in the project, a document definition can also be uploaded via the
 admin interface. Creating the file itself is identical, but the path is not important as it will be uploaded to Valtimo.
 
-* Go to the menu 'Admin'.
-* Go to the menu 'Cases'.
-* Click on 'Upload case-definition'.
+* Go to the Admin menu
+* Go to the Cases menu
+* Click on Upload case-definition.
 * Upload the document definition.
 
 ![Uploading a document definition](img/upload-document-definition.png)

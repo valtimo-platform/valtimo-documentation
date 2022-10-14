@@ -13,8 +13,8 @@ This page requires the following:
 
 To link a process to a case, the following steps are necessary:
 
-1. Go to the menu 'Admin'.
-2. Go to the menu 'Cases'
+1. Go to the Admin menu
+2. Go to the Cases menu
 3. Select the case the process should be linked to.
 
    ![Selecting the case](img/cases-details.png)

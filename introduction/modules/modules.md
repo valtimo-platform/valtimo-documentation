@@ -86,7 +86,7 @@ document. This does *not* generate an actual document, but writes the calls to t
 
 ### Local mail
 
-The local email module is a stub implementation of the module called 'Mail'. It is used as a local test implementation 
+The local mail module is a stub implementation of the 'mail' module. It is used as a local test implementation 
 that allows the application to start without having to provide an actual implementation. This does *not* actually send 
 emails.
 
@@ -100,7 +100,7 @@ another module.
 
 Mailchimp is a SaaS solution for sending emails. Mailchimp is the name of the 
 [transactional mail addon](https://mailchimp.com/features/transactional-email/) that Mailchimp provides. The Valtimo
-Mandrill module provides an email implementation that uses Mandrill to send emails.
+Mandrill module provides a mail implementation that uses Mandrill to send emails.
 
 ### Milestones
 
@@ -218,10 +218,10 @@ a resource in OpenZaak as an *eenvoudig informatie object* (simple information o
 SmartDocuments itself is an external service that deals with generating documents based on templates and placeholders.
 This module offers a plugin which can connect to this service to generate documents.
 
-### Wordpress email
+### Wordpress mail
 
-The Wordpress email plugin is a plugin for the Wordpress CMS that provides a REST API for sending emails. This module 
-includes an implementation of the module called 'Mail' that uses a connector to send emails through this API.
+The Wordpress mail plugin is a plugin for the Wordpress CMS that provides a REST API for sending emails. This module
+includes an implementation of the 'mail' module, which uses a connector to send emails through this API.
 
 ### Zaken API
 

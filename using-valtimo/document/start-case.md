@@ -19,7 +19,7 @@ definition.
 
 ![Form used to start new case](img/new-case-start-form.png)
 
-After submitting the form, a new case is started and a process is started for the case. The progress of the process can
+After submitting the form, a new case is started, and a process is started for the case. The progress of the process can
 be viewed on the `Progress` tab. 
 
 ![img.png](img/case-progress-tab.png)
