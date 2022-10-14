@@ -4,6 +4,8 @@ This page describes how to update Valtimo from the previous to this version.
 
 * **FormFieldDataResolver supports method**
     
+    Scope: backend
+
     A new supports method `supports(String externalFormFieldType)` replaces the
     already existing `supports(ExternalFormFieldType externalFormFieldType)` method
     for the `FormFieldDataResolver` interface.
@@ -19,6 +21,8 @@ This page describes how to update Valtimo from the previous to this version.
      should be implemented.
 
 * **Changed ExternalDataSubmittedEvent data field type**
+
+    Scope: backend
 
      The `data` field for the `ExternalDataSubmittedEvent` has changed from `Map<ExternalFormFieldType, Map<String, Object>>` to
      `Map<String, Map<String, Object>>`.

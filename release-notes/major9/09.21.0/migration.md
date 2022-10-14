@@ -4,6 +4,8 @@ This page describes how to update Valtimo from the previous version to the curre
 
 * **FormFieldDataResolver `get` method is deprecated**
 
+  Scope: backend
+
   1. **Implement the new `get` method**
      
       Add method `get(DataResolvingContext dataResolvingContext, String... varNames)` to your class and move the logic from the deprecated `get` to this new method. 
