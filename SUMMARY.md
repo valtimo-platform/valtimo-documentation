@@ -108,7 +108,7 @@
     * [Design philosophy](reference/user-interface/design-philosophy.md)
   * [Troubleshoot](reference/troubleshoot.md)
 * Release notes
-  * 9.x.x
+  * Major 9
     * 9.22.0/5.11.0 (RC)
       * [Valtimo backend libraries (9.22.0 RC)](release-notes/major9/09.22.0/valtimo-backend-libraries.md)
       * [Valtimo frontend libraries (5.11.0 RC)](release-notes/major9/09.22.0/valtimo-frontend-libraries.md)
