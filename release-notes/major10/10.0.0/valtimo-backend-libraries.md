@@ -12,11 +12,11 @@ The following features were added:
 |:-----------|:------------|:------------|
 | Camunda    | 7.17        | 7.14        |
 
-* **New feature2**
+* **Support for MySQL 8**
 
-  Description of the new feature goes here.
-  Also link to the page that explains the feature in greater detail.
-
+  Official support for MySQL 8 has been added. If your database server is running on MySQL 5.7, it is recommended to
+  upgrade to MySQL 8. See [here](https://dev.mysql.com/doc/refman/8.0/en/upgrading.html) for instructions on how to
+  upgrade a MySQL installation
 
 ## Bugfixes
 
