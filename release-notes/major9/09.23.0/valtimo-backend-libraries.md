@@ -26,9 +26,10 @@ The following features were added:
 
 The following bugs were fixed:
 
-* **Bug1**
+* **Form flow incompatible with PostgreSQL**
 
-  Description of what the issue was.
+  The Form flow module was failed when loading form flows from the configuration files when using the PostgreSQL DBMS. 
+  This has now been resolved.
 
 * **Bug2**
 
