@@ -1,6 +1,6 @@
 # What are form links
 
-Form links are the link between forms and BPMN activities. When a user task or start event is
+Form links are the links between forms and BPMN activities. When a user task or start event is
 reached as part of a process, the configured form can be opened and completed.
 
 

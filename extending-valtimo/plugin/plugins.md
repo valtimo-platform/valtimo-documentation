@@ -1,3 +1,3 @@
 # Plugins
 
-* [Custom plugin definitions](custom-plugin-definition.md)
+- [Custom plugin definitions](custom-plugin-definition.md)

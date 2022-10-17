@@ -1,4 +1,4 @@
-# What are form flows
+# Form flow
 
 Form flow allows users to create a sequence of forms, similar to a flow chart or form wizard. A form flow definition
 contains the configuration for each step, what the subsequent steps are, and the conditions under which they can be
