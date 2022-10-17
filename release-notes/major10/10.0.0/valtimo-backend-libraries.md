@@ -16,7 +16,7 @@ The following features were added:
 
   Official support for MySQL 8 has been added. If your database server is running on MySQL 5.7, it is recommended to
   upgrade to MySQL 8. See [here](https://dev.mysql.com/doc/refman/8.0/en/upgrading.html) for instructions on how to
-  upgrade a MySQL installation
+  upgrade a MySQL installation.
 
 ## Bugfixes
 
