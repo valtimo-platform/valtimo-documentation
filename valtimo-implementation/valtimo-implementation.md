@@ -1,5 +1,9 @@
 # Create your own Valtimo implementation
 
+This section contains information on how to create a new Valtimo implementation. It contains information on which 
+modules are available and what settings at minimum are required to use them. This section is meant for people who want 
+to set up their own Valtimo installation. Some knowledge on java build tools like maven or gradle is aassumed.
+
 * [First dive](first-dive/first-dive.md)
 * [Compatibility matrix](compatibility-matrix.md)
 * [Database support](database-support.md)
