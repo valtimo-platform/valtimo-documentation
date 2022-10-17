@@ -42,7 +42,9 @@ The following features were added:
 
 * **Added warning message to user management page**
 
-  On the user management page an admin can now see a warning message that notifies them about the fact that user management is handled separately in Keycloak in case Keycloak is used for IAM. The message can be customized by using the translation key `User management not supported`.
+  In case Keycloak is used for IAM, the user management page now shows a warning message stating that user management is only supported within Keycloak. 
+  
+  The message can be customized by using the translation key `userManagement.notSupported`.
   
 ## Bugfixes
 
