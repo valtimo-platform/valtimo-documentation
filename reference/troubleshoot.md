@@ -11,7 +11,7 @@ Searching for `"$.order.order-id"` becomes `"$.order.\"order-id\""`.
 
 ## Form.IO
 
-### Custom Form.IO components are not loading
+### Front-end: Custom Form.IO components are not loading
 
 In implementations, custom Form.IO components can be registered in the `AppModule` like so:
 
@@ -30,6 +30,14 @@ export class AppModule {
 The use of these custom components is only possible if Form.IO is imported through `FormIoModule` from 
 `@valtimo/components`. Additional imports of Form.IO - for example through `FormioModule` from `@formio/angular` -
 breaks the use of these custom components.
+
+## Dependencies
+
+### Front-end: @types/node
+
+Recent versions of `@types/node` might lead to errors in implementations. Lock the version to `18.8.3` to avoid these
+errors.
+
 
 
 
