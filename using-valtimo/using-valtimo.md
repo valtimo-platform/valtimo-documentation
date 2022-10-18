@@ -1,7 +1,7 @@
 # Using Valtimo
 
 This section contains information on how to configure and use Valtimo. Any feature included in this section should be 
-usable with no or minimal code required. This section is intended for system administrators that needs to set up 
+usable with no or minimal code required. This section is intended for system administrators who need to configure 
 Valtimo.
 
 * [Document](document/document.md)
