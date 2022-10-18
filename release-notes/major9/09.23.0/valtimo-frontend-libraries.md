@@ -54,7 +54,11 @@ The following bugs were fixed:
 
   The semicolon between label and value in custom dossier header items were rendered when only a `labelTranslationKey`
   was defined. It will now only render a semicolon when both the `labelTranslationKey` and the `propertyPaths` are
-  defined.
+  defined. 
+
+* **Improved mouse pointer on user tasks**
+  
+  Clickable elements (like tasks) showed an incorrect mouse pointer. This has been fixed. 
 
 ## Breaking changes
 
