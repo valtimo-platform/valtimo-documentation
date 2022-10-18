@@ -8,9 +8,11 @@ The following features were added:
 
   The following libraries were upgraded to new versions:
 
-| Dependency | New version | Old version |
-|:-----------|:------------|:------------|
-| Camunda    | 7.17        | 7.14        |
+| Dependency                           | New version | Old version |
+|:-------------------------------------|:------------|:------------|
+| Camunda                              | 7.17        | 7.14        |
+| Spring Boot                          | 2.7.4       | 2.5.12      |
+
 
 * **Support for MySQL 8**
 
