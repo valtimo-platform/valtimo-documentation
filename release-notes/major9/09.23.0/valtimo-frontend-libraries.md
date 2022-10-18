@@ -60,6 +60,11 @@ The following bugs were fixed:
   
   Clickable elements (like tasks) showed an incorrect mouse pointer. This has been fixed. 
 
+* **Flatpickr inside Form.io form could not get locale**
+
+  When Flatpickr (date picker) was used inside a Form.io form, it could not properly determine the locale. The
+  application language is passed to the Form.io component in a different way now, resolving the error.
+
 ## Breaking changes
 
 The following breaking changes were introduced:
