@@ -11,6 +11,7 @@ The following features were added:
 | Dependency                           | New version | Old version |
 |:-------------------------------------|:------------|:------------|
 | Camunda                              | 7.17        | 7.14        |
+| Liquibase                            | 4.16.1      | 4.3.3       |
 | Spring Boot                          | 2.7.4       | 2.5.12      |
 
 
