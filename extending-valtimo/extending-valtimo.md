@@ -1,7 +1,7 @@
 # Extending Valtimo
 
 This section contains instructions and examples on how to extend functionality found in Valtimo, generally through the 
-use of code. These are usually features that have been set up in a way so that the default functionality can be easily 
+use of code. These are usually features that have been set up in a way so the default functionality can be easily 
 extended. For example, here you can find how to set up a custom FormFieldDataResolver to preload data in forms from 
 external sources.
 
