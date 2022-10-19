@@ -45,7 +45,15 @@ The following features were added:
   In case Keycloak is used for IAM, the user management page now shows a warning message stating that user management is only supported within Keycloak. 
   
   The message can be customized by using the translation key `userManagement.notSupported`.
-  
+
+* **Added 'Claim' button on case detail page**
+
+  Added a default button on the case details page to `claim` a case directly to the user logged into the 
+  application.
+
+  The case will be assigned to the user when clicking on this option. The `claim` button is disabled when the case is
+  already assigned to the logged-in user.
+
 ## Bugfixes
 
 The following bugs were fixed:
