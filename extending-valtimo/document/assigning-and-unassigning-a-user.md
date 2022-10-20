@@ -4,6 +4,8 @@ A document definition is a JSON document that defines the structure that documen
 the allowed values for each property through validation rules. This page shows how to assign and unassign 
 users to and from a case.
 
+## Assigning a user
+
 There are two methods available to assign a user
 
 1) Using the endpoint `POST /api/document/{documentId}/assign` and providing a user id in the request body.
