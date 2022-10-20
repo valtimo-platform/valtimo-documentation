@@ -11,7 +11,9 @@ Searching for `"$.order.order-id"` becomes `"$.order.\"order-id\""`.
 
 ## Form.IO
 
-### Front-end: Custom Form.IO components are not loading
+### Front-end
+
+#### Custom Form.IO components are not loading
 
 In implementations, custom Form.IO components can be registered in the `AppModule` like so:
 
@@ -33,11 +35,14 @@ breaks the use of these custom components.
 
 ## Dependencies
 
-### Front-end: @types/node
+### Front-end
 
-Recent versions of `@types/node` might lead to errors in implementations. Lock the version to `18.8.3` to avoid these
-errors.
+#### @types/node
 
+Version `18.8.4` of `@types/node` leads to errors in implementations. Lock the version to `18.8.3`.
 
+#### swagger-ui
+
+Version `4.14.3` of `swagger-ui` leads to errors in implementations. Lock the version to `4.12.0`.
 
 
