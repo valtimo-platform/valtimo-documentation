@@ -22,21 +22,14 @@ The following features were added:
    }
   ```
 
-* **Set case assignee from a process**
+* **A document can now be assigned to a user**
 
-  It is now possible to set the case assignee from within a process. This can be done with the following Camunda feel
-  expression:
-   ```java
-   ${documentDelegate.setAssignee(execution, "john.doe@ritense.com")}
-  ```
+  It is now possible to assign (and unassign) a user to a document. 
 
-* **Unassign case assignee from a process**
+  For more information on using this feature see [this page](/using-valtimo/document/assigning-a-user.md).
+ 
+  Information about the endpoints can be found [here](/extending-valtimo/document/assigning-and-unassigning-a-user.md).
 
-  It is now possible to unassign the case assignee from within a process. This can be done with the following Camunda feel
-  expression:
-   ```java
-   ${documentDelegate.unassign(execution)}
-  ```
 
 ## Bugfixes
 

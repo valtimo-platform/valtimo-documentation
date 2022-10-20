@@ -108,10 +108,7 @@ Instructions on how to migrate to this version of Valtimo can be found [here](mi
 
 This version has the following known issues:
 
-* **Issue1**
-    * Discovered in version x.x.x
-    * Describe what can be done to work around the issue
-
-* **Issue2**
-    * Discovered in version x.x.x
-    * Describe what can be done to work around the issue
+* **Assignee change via process does not update user interface**
+    * Discovered in version 9.23.0 RC
+    * Since 9.23.0 it is possible to update the assignee using a process. When the process is executed the frontend will not
+      show the new assignee until the page has been refreshed.
