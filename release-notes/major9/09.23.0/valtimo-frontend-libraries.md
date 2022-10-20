@@ -54,6 +54,14 @@ The following features were added:
   The case will be assigned to the user when clicking on this option. The `claim` button is disabled when the case is
   already assigned to the logged-in user.
 
+* **Added demo version of case search fields**
+
+  Search functionality for the case list will be replaced by configurable fields in future versions of Valtimo. A demo
+  version of the front-end for these new search fields is included in this release. This feature is not yet functional.
+
+  For testing purposes, this feature can be enabled through the `caseSearchFields` feature toggle. For more information,
+  refer to [this page](/reference/feature-toggles/available-feature-toggles.md).
+
 ## Bugfixes
 
 The following bugs were fixed:
