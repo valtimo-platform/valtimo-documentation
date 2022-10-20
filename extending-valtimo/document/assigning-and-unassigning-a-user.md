@@ -1,6 +1,10 @@
-# Assigning a user
+# Assigning and unassigning a user
 
-It is possible to assign a user to a document. There are two methods available
+A document definition is a JSON document that defines the structure that document has, as well as restrict
+the allowed values for each property through validation rules. This page shows how to assign and unassign 
+users to and from a case.
+
+There are two methods available to assign a user
 
 1) Using the endpoint `POST /api/document/{documentId}/assign` and providing a user id in the request body.
   ```json

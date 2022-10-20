@@ -1,6 +1,8 @@
 # Assigning a user to a document
 
-Every document can now be assigned to a user.
+Document assignees are users that have been put on a specific document. This is usually done 
+when they are responsible for the next user task(s) and to tell other users they will work on
+the document. This page will describe how a user can be set as the assignee of a document.
 
 ## Prerequisites
 The user must have the correct role to access case types. 
@@ -44,4 +46,15 @@ shown on the table showing all current cases of a certain type.
 
 [This page](/using-valtimo/document/custom-case-columns.md) describes how custom case columns can be added
 
+<!-- 
+Add screenshots and uncomment this when the feature of unassigning a user becomes available.
+Also update the filename, pagetitle and links when unassigning is available
 
+#Unassigning a user
+When a user is currently assigned to a document it is possible to unassign the user.
+To do this press the red x next to the name of the current assignee in the page title
+of a case detail page.
+
+![Add screenshot](img/screenshot.md)
+
+-->

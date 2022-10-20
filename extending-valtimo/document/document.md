@@ -1,3 +1,3 @@
 # Document
 
-* [Assigning a user](assigning-a-user.md)
+* [Assigning and unassigning a user](assigning-and-unassigning-a-user.md)
