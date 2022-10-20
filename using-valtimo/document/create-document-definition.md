@@ -6,14 +6,14 @@ validation to properties. How to create a process with a document can be found [
 
 ### Prerequisites
 
-This page requires you to have knowledge on JSON schema.
+This page requires you to have knowledge of JSON schema.
 
 ## Definition
 
 To create a document definition, the following steps are necessary:
 
 * Create a document definition file (ending with `.schema.json`) under the following path: 
-  `*/resources/config/document/definition`. The name should correspond to the ID of the document ID. The ID itself
+  `*/resources/config/document/definition`. The name should correspond with the ID of the document ID. The ID itself
   should end with `.schema`.
 
   #### **`person.schema.json`**
@@ -30,7 +30,7 @@ To create a document definition, the following steps are necessary:
   ```
 
 * Properties as well as validation rules can be added to the definition as per the JSON schema standard as seen
-  [here](https://json-schema.org/understanding-json-schema/index.html). Below is an example of what this definition can
+  [here](https://json-schema.org/understanding-json-schema/index.html). Below is an example of what this definition could
   look like.
 
   ```json
@@ -65,11 +65,11 @@ To create a document definition, the following steps are necessary:
 
 ### Uploading a document definition
 
-As an alternative for creating a document definition in the project, a document definition can also be uploaded via the
+As an alternative to creating a document definition in the project, a document definition can also be uploaded via the
 admin interface. Creating the file itself is identical, but the path is not important as it will be uploaded to Valtimo.
 
-* Go to the Admin menu.
-* Go to the Cases menu.
+* Go to the Admin menu
+* Go to the Cases menu
 * Click on Upload case-definition.
 * Upload the document definition.
 

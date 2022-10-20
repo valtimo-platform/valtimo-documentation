@@ -39,7 +39,7 @@ dependencies {
 
 ####  Adding a front-end plugin to the implementation
 
-For each plugin configured in the back-end, the front-end implementation needs to know what components to use in
+For each plugin configured in the backend, the frontend implementation needs to know what components to use in
 order to configure the plugin, and to configure the plugin's actions.
 
 The library `@valtimo/plugin` exports several pre-made plugins. In order to use these in the implementation, the 

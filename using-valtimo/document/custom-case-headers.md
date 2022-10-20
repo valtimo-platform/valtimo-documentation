@@ -1,6 +1,6 @@
 # Custom case headers
 
-Instead of the default case header which only shows a case name, each case header can be customized using configuration
+Instead of the default case header - which only shows a case name - each case header can be customized using configuration
 in the environment file of a front-end implementation.
 
 The custom header uses the Bootstrap grid system which is based on blocks of varying sizes that can be created by using 

@@ -5,8 +5,8 @@ By adding a new implementation of the `FormFieldDataResolver` interface and regi
 be supported. 
 
 There are two methods that need to be implemented:
-- The `supports(String externalFormFieldType)` method determines whether if the current resolver is applicable for a 
-certain prefix. When `true` is returned it means the current resolver supports the prefix that Valtimo has found and 
+- The `supports(String externalFormFieldType)` method determines if the current resolver is applicable for a 
+certain prefix. When `true` is returned, it means the current resolver supports the prefix that Valtimo has found and 
 the *get* method will be called.
 - The `get(String documentDefinitionName, UUID documentId, String... varNames)` method is used by Valtimo get retrieve
 the actual data. `documentDefinitionName` and `documentId` are passed in as context that can be used to find the data

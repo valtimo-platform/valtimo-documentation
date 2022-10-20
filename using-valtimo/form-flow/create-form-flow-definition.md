@@ -3,8 +3,8 @@
 A form flow definition is a JSON document that defines steps and which steps can be reached
 under what conditions when the current step is completed. Each step can have zero or more actions
 (e.g. retrieve external data) that trigger when the task is opened or completed. Depending
-on the type of step the step can be handled in a different way. The way a form is handled can
-differ from a payment.
+on the type of step, the step can be handled in a different way. The way a form is handled can
+differ from a payment, for example.
 
 For information on how to link a form flow definition to a task, see 
 [here](../form-link/configure-task.md).
@@ -135,7 +135,7 @@ be set. This refers to the key of the form. For more information on step types, 
 
 ## Expressions
 
-Form flow supports Spring Expression Language (SpEL) expressions in order to allow for more
+Form flow supports Spring Expression Language (SpEL) expressions to allow for more
 complex actions when a step is opened or completed. Expressions can be recognized by the surrounding
 `${ }` characters. The following additional properties are supported for steps:
 
@@ -209,7 +209,7 @@ available can be found [here](/reference/modules/form-flow.md#available-properti
 }
 ```
 
-By default, SpEL allows access to every Spring bean from inside expressions. For security reasons
-this has been changed to a whitelist instead, more information on how to whitelist Spring beans is
-available [here](/extending-valtimo/form-flow/whitelist-spring-bean.md), and more information on SpEL
+By default, SpEL allows access to every Spring bean from inside expressions. For security reasons,
+this has been changed to a whitelist instead. More information on how to whitelist Spring beans is
+available [here](/extending-valtimo/form-flow/whitelist-spring-bean.md) and more information on SpEL
 can be found [here](https://docs.spring.io/spring-framework/docs/current/reference/html/core.html#expressions).
