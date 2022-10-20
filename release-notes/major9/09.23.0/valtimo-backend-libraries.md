@@ -22,6 +22,14 @@ The following features were added:
    }
   ```
 
+* **Set case assignee from a process**
+
+  It is now possible to set the case assignee from within a process. This can be done with the following Camunda feel
+  expression:
+   ```java
+   ${documentDelegate.setAssignee(execution, "john.doe@ritense.com")}
+  ```
+
 ## Bugfixes
 
 The following bugs were fixed:
