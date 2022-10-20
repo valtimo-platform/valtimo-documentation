@@ -76,21 +76,21 @@ case with the id `aansprakelijkstelling` is added.
 
 Each `customDossierHeaderItem` in `customDossierHeader` can have the following properties:
 
-- **labelTranslationKey** (Optional) A key for the label translation. This refers to a translation key in the translation files.
+- **labelTranslationKey** (Optional). A key for the label translation. This refers to a translation key in the translation files.
 This can also be used to show a static text in the header without data from the document by leaving the `propertyPaths`
 property empty. If left blank, no label will be shown.
-- **propertyPaths** (Optional) An array of paths to the data from the document that is displayed. When this contains multiple items
+- **propertyPaths** (Optional). An array of paths to the data from the document that is displayed. When this contains multiple items
 they are placed one after the other.
-- **modifier** (Optional) Modify how data is rendered using one of the predefined modifiers.
+- **modifier** (Optional). Modify how data is rendered using one of the predefined modifiers.
   - Available modifiers:
     - `age` renders a date string as an age in years relative to the current date.
-- **columnSize** (Optional) The column size based on Bootstrap columns (1-12). Bootstrap divides a row in 12 columns. If blocks are 
+- **columnSize** (Optional). The column size based on Bootstrap columns (1-12). Bootstrap divides a row in 12 columns. If blocks are 
 added after the first 12 columns, the blocks will be pushed to the next row. If no `columnSize` is specified, the 
 default size is 3.
 - **textSize** (Optional) The size of the text for this item (xs, sm, md, lg, xl). If no textSize is specified, the default size is
 md.
-- **noValueText** (Optional) The text that will be shown if the data is not available in the document. If no `noValueText` is
+- **noValueText** (Optional). The text that will be shown if the data is not available in the document. If no `noValueText` is
 specified, the default value is '-'.
-- **customClass** (Optional) A string of classes to be applied to this item. This offers a lot of freedom in formatting the custom
+- **customClass** (Optional). A string of classes to be applied to this item. This offers a lot of freedom in formatting the custom
 header items. All Bootstrap classes are available by default. Further customisation can be achieved by adding classes 
 with corresponding styling in the implementation's style sheets.
