@@ -6,7 +6,7 @@ users to and from a case.
 
 ## Assigning a user
 
-There are two methods available to assign a user
+There are two methods available to assign a user:
 
 1) Using the endpoint `POST /api/document/{documentId}/assign` and providing a user id in the request body.
   ```json
@@ -24,4 +24,4 @@ There are two methods available to assign a user
 When a user is assigned to a document there is an endpoint to unassign a user 
 `POST /api/document/{documentId}/unassign`
 
-There is no need to provide a user id to this endpoint
+There is no need to provide a user id to this endpoint.
