@@ -22,6 +22,26 @@ The following features were added:
    }
   ```
 
+* **A document can now be assigned to a user**
+
+  There are two methods of assigning a user to a document.
+  
+  1) Using the endpoint `POST /api/document/{documentId}/assign` and providing the assignee id in the request body.
+  ```json
+  {
+    "assigneeId" : "some UUID"
+  } 
+  ```
+  2) Using an expression inside a process
+  ```
+  ${documentDelegate.setAssignee(execution, "assignee email address")}
+  ```
+
+* **A user can be unassigned from a document**
+
+  When a user is assigned to a document he/she can be unassigned by calling
+  `POST /api/document/{documentId}/unassign`
+
 ## Bugfixes
 
 The following bugs were fixed:
