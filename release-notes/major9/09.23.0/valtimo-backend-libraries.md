@@ -22,9 +22,9 @@ The following features were added:
    }
   ```
 
-* **A document can now be assigned to a user**
+* **Case assignee**
 
-  It is now possible to assign (and unassign) a user to a document. 
+  It is now possible to assign and unassign a user to a case. 
 
   For more information on using this feature see [this page](/using-valtimo/document/assigning-a-user.md).
  
