@@ -3,7 +3,7 @@
 * [Introduction](README.md)
   * [Overview](introduction/overview.md)
   * [Architectural overview](introduction/architectural-overview.md)
-  * [Modules](introduction/modules/modules.md)
+  * [Available modules](introduction/modules/modules.md)
     * [Documents](introduction/modules/document-introduction.md)
     * [Form flow](introduction/modules/form-flow-introduction.md)
     * [Form links](introduction/modules/form-link-introduction.md)
@@ -108,10 +108,13 @@
     * [Design philosophy](reference/user-interface/design-philosophy.md)
   * [Troubleshoot](reference/troubleshoot.md)
 * [Release notes](release-notes/release-notes.md)
-  * Major 9
-    * 9.22.0/5.11.0 (RC)
-      * [Valtimo backend libraries (9.22.0 RC)](release-notes/major9/09.22.0/valtimo-backend-libraries.md)
-      * [Valtimo frontend libraries (5.11.0 RC)](release-notes/major9/09.22.0/valtimo-frontend-libraries.md)
+  * 9.x.x
+    * 9.23.0/5.12.0 (RC)
+      * [Valtimo backend libraries (9.23.0 RC)](release-notes/major9/09.23.0/valtimo-backend-libraries.md)
+      * [Valtimo frontend libraries (5.12.0 RC)](release-notes/major9/09.23.0/valtimo-frontend-libraries.md)
+    * 9.22.0/5.11.0
+      * [Valtimo backend libraries (9.22.0)](release-notes/major9/09.22.0/valtimo-backend-libraries.md)
+      * [Valtimo frontend libraries (5.11.0)](release-notes/major9/09.22.0/valtimo-frontend-libraries.md)
     * 9.21.0/5.10.0
       * [Valtimo backend libraries (9.21.0)](release-notes/major9/09.21.0/valtimo-backend-libraries.md)
       * [Valtimo frontend libraries (5.10.0)](release-notes/major9/09.21.0/valtimo-frontend-libraries.md)

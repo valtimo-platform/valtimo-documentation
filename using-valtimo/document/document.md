@@ -5,3 +5,4 @@
 - [How to start a process for a case](start-case.md)
 - [Custom case columns](custom-case-columns.md)
 - [Custom case headers](custom-case-headers.md)
+- [Assigning a user to a document](assigning-a-user.md)
