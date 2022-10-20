@@ -6,5 +6,3 @@ release version. Additionally, when a new version does not work out of the box, 
 
 This section is intended for everyone who wants to know what changed in a version of Valtimo. Migration notes are 
 intended for more technical users, e.g. a system administrator who wants to keep their Valtimo installation up to date.
-
-* [Valtimo 9.x.x](major9)
