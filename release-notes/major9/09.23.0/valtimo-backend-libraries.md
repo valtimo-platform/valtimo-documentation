@@ -30,6 +30,7 @@ The following features were added:
  
   Information about the endpoints can be found [here](/extending-valtimo/document/assigning-a-user.md)
 
+
 ## Bugfixes
 
 The following bugs were fixed:
