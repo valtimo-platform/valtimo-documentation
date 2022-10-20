@@ -24,23 +24,11 @@ The following features were added:
 
 * **A document can now be assigned to a user**
 
-  There are two methods of assigning a user to a document.
-  
-  1) Using the endpoint `POST /api/document/{documentId}/assign` and providing the assignee id in the request body.
-  ```json
-  {
-    "assigneeId" : "some UUID"
-  } 
-  ```
-  2) Using an expression inside a process
-  ```
-  ${documentDelegate.setAssignee(execution, "assignee email address")}
-  ```
+  It is now possible to assign (and unassign) a user to a document. 
 
-* **A user can be unassigned from a document**
-
-  When a user is assigned to a document he/she can be unassigned by calling
-  `POST /api/document/{documentId}/unassign`
+  For more information on using this feature see [this page](/using-valtimo/document/assigning-a-user.md)
+ 
+  Information about the endpoints can be found [here](/extending-valtimo/document/assigning-a-user.md)
 
 ## Bugfixes
 
