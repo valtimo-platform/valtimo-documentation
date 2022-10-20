@@ -35,7 +35,7 @@ The following features were added:
   It is now possible to unassign the case assignee from within a process. This can be done with the following Camunda feel
   expression:
    ```java
-   ${documentDelegate.setAssignee(execution)}
+   ${documentDelegate.unassign(execution)}
   ```
 
 ## Bugfixes
