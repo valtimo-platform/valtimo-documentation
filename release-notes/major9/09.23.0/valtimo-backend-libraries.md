@@ -26,9 +26,9 @@ The following features were added:
 
   It is now possible to assign (and unassign) a user to a document. 
 
-  For more information on using this feature see [this page](/using-valtimo/document/assigning-a-user.md)
+  For more information on using this feature see [this page](/using-valtimo/document/assigning-a-user.md).
  
-  Information about the endpoints can be found [here](/extending-valtimo/document/assigning-a-user.md)
+  Information about the endpoints can be found [here](/extending-valtimo/document/assigning-and-unassigning-a-user.md).
 
 
 ## Bugfixes
