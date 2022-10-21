@@ -4,10 +4,14 @@
 
 The following features were added:
 
-* **New feature1**
+* **Added link to assign assignee to case**
 
-  Description of the new feature goes here.
-  Also link to the page that expains the feature in greater detail.
+  On the case details page, a link has been added in the header to add/change a case assignee.
+  
+  A drop-down list with the names of all available candidates will be displayed when clicking on this link. The name 
+  selected will be set to the task and shown on a label in the header.
+  
+  To unassign an assignee from a case, click on the 'remove' button present next to the label with the name.
 
 * **New feature2**
 
