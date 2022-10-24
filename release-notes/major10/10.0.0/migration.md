@@ -22,6 +22,6 @@ This page describes how to update Valtimo from the previous version to the curre
 
     In order to use the new front-end libraries based on Angular version 14 in an implementation, run the following
     command in the root of the implementation project:
-    `ng update @angular/core@14 @angular/cli@14 @angular-eslint/schematics`
+    `ng update @angular/core@14 @angular/cli@14`
 
        
