@@ -13,10 +13,11 @@ The following features were added:
   
   To unassign an assignee from a case, click on the 'remove' button present next to the label with the name.
 
-* **New feature2**
+* **Default Language Setting**
 
-  Description of the new feature goes here.
-  Also link to the page that expains the feature in greater detail.
+  A new (optional) environment property `langKey` has been added to set the default language. The new property is an enum and includes the following values: `Language.NL`, `Language.EN` and `Language.DE`.
+
+  The default language is used for every user that has not set a preferred language. If no language is set in the `environment.ts` the default is set to `Language.NL`.
 
 
 ## Bugfixes
