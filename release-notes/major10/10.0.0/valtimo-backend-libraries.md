@@ -41,6 +41,10 @@ The following breaking changes were introduced:
 
 Valtimo is now compiled on Java 17 and needs to run in a Java 17 environment.
 
+* **View configurator module**
+
+The view configurator module that was used by the old AngularJS front-end has been removed.
+
 * **Breaking change2**
 
 Instructions on how to migrate to this version of Valtimo can be found [here](migration.md).
