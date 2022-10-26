@@ -9,6 +9,10 @@ The following features were added:
   Angular has been upgraded from version 13 to version 14. [This version supports many new features](https://blog.angular.io/angular-v14-is-now-available-391a6db736af).
   To be able to use the libraries with this new version, please refer to [the migration page for this release](migration.md).
 
+* **Dependency upgrades**
+
+  Many dependencies in the libraries have been upgraded to the latest versions. To be able to use the libraries with
+  these new versions, please refer to [the migration page for this release](migration.md).
 
 ## Bugfixes
 
