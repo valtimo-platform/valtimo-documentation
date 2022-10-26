@@ -24,7 +24,7 @@ This page describes how to update Valtimo from the previous version to the curre
   and any implementation that has this on the classpath can remove this module. Any implementation that has had this 
   module on the classpath can run this database script for 
   [MySQL](https://github.com/valtimo-platform/valtimo-migration/blob/main/10.0.0/mysql/valtimo-migration-view-configurator-10.0.0-mysql.sql) 
-  and 
+  or 
   [PostgreSQL](https://github.com/valtimo-platform/valtimo-migration/blob/main/10.0.0/postgresql/valtimo-migration-view-configurator-10.0.0-postgres.sql) 
   to clean up the database.  
 
