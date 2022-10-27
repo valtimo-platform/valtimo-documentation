@@ -47,59 +47,76 @@ This page describes how to update Valtimo from the previous version to the curre
     Then, make sure the following dependencies in `package.json` in the root of your implementation have the following
     versions:
 
-  #### **`package.json`**
+    #### **`package.json`**
 
-  ```json
-  {
-    "dependencies": {
-      ...
-      "@auth0/angular-jwt": "^5.0.1",
-      "@mdi/font": "^7.0.96",
-      ...
-      "dmn-js": "^12.1.0",
-      "dropzone": "^6.0.0-beta.2",
-      "ngx-color-picker": "^13.0.0",
-      ...
-      "ngx-translate-multi-http-loader": "^9.0.0",
-      ...
-      "swagger-ui": "^4.15.0",
-      ...
-      "zone.js": "^0.11.8"
-    },
-    "devDependencies": {
-      ...
-      "@types/jasmine": "^4.3.0",
-      "@types/jasminewd2": "^2.0.10",
-      ...
-      "jasmine-core": "^4.4.0",
-    } 
-  }
-  ```
+    ```json
+    {
+      "dependencies": {
+        ...
+        "@auth0/angular-jwt": "^5.0.1",
+        "@mdi/font": "^7.0.96",
+        ...
+        "dmn-js": "^12.1.0",
+        "dropzone": "^6.0.0-beta.2",
+        "ngx-color-picker": "^13.0.0",
+        ...
+        "ngx-translate-multi-http-loader": "^9.0.0",
+        ...
+        "swagger-ui": "^4.15.0",
+        ...
+        "zone.js": "^0.11.8"
+      },
+      "devDependencies": {
+        ...
+        "@types/jasmine": "^4.3.0",
+        "@types/jasminewd2": "^2.0.10",
+        ...
+        "jasmine-core": "^4.4.0",
+      } 
+    }
+    ```
+  
+    Note: if your implementation has any dependencies not included in the above example, and installing dependencies
+    or building your application causes errors, make sure the versions of these dependencies match the versions
+    in this release of `valtimo-frontend-libraries`.
+
     *Translate loader upgrade*
 
     `ngx-translate-multi-http-loader` has been upgraded from version 7 to version 9. First of all, the import of
     `TranslateModule` in the file `app.module.ts` in your implementation needs to be adjusted. More specifically,
-    `httpClient` needs to be replaced by `HttpBackend` in the `deps` of the `loader` of `TranslateModule`.
+    `HttpClient` needs to be replaced by `HttpBackend` in the `deps` of the `loader` of `TranslateModule`.
 
-  #### **`app.module.ts.ts`**
+    #### **`app.module.ts.ts`**
 
-  ```typescript
-  import {HttpBackend, HttpClientModule} from '@angular/common/http';
-  
-  @NgModule({
+    ```typescript
+    import {HttpBackend, HttpClientModule} from '@angular/common/http';
     ...
-    imports: [
+  
+    @NgModule({
+      ...
+      imports: [
         ...
         TranslateModule.forRoot({
-            loader: {
-                provide: TranslateLoader,
-                useFactory: MultiTranslateHttpLoaderFactory,
-                deps: [HttpBackend, ConfigService],
-            },
+          loader: {
+             provide: TranslateLoader,
+             useFactory: MultiTranslateHttpLoaderFactory,
+             deps: [HttpBackend, ConfigService],
+          },
         }),
-    ],
+      ],
+      ...
+    })
     ...
-  })
-  ...
-  ```
+    ```
+    Next, if your implementation uses custom translation resources, these need to be adjusted in the environment file
+    of your implementation. The environment property `translationResources` no longer accepts an array of
+    `ITranslationResource`, but an array of strings. The properties `prefix` and `suffix` are now redundant. For
+    example, if the previous value in your environment file was `[{prefix: 'src/assets/translation', suffix: 'json'}]`,
+    it should now be `['src/assets/translation']`.
+
+    *Migrating from `Protractor` to `Cypress`*
+
+    Support for `Protractor` (an end-to-end testing framework) in the Angular CLI will be discontinued. Either remove
+    `Protractor` from your implementation, or migrate to Cypress [by following this guide](https://blog.ninja-squad.com/2021/05/05/migrating-from-protractor-to-cypress/).
+    The latter is recommended.
     
