@@ -28,6 +28,19 @@ This page describes how to update Valtimo from the previous version to the curre
   [PostgreSQL](https://github.com/valtimo-platform/valtimo-migration/blob/main/10.0.0/postgresql/valtimo-migration-view-configurator-10.0.0-postgres.sql) 
   to clean up the database.  
 
+* **Process data object relation**
+
+  Scope: Backend
+
+  Process data object relations have been removed. Any implementation that has entities that extend the
+  `IProcessDataObject` class are to remove this interface and store the data in their document definition instead. This
+  data can be the entity or a reference to the entity, and has to be migrated before upgrading to this version of 
+  Valtimo.
+
+  Additionally, the following database script should be used for [MySQL](https://github.com/valtimo-platform/valtimo-migration/blob/main/10.0.0/mysql/valtimo-migration-process-data-object-10.0.0-mysql.sql) 
+  or [PostgreSQL](https://github.com/valtimo-platform/valtimo-migration/blob/main/10.0.0/mysql/valtimo-migration-process-data-object-10.0.0-postgres.sql)
+  to clean up the database.
+
 * **Angular upgrade**
 
   Scope: Frontend

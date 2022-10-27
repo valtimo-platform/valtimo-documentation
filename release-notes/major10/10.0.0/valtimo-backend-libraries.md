@@ -39,13 +39,16 @@ The following breaking changes were introduced:
 
 * **Java 17**
 
-Valtimo is now compiled on Java 17 and needs to run in a Java 17 environment.
+  Valtimo is now compiled on Java 17 and needs to run in a Java 17 environment.
 
 * **View configurator module**
 
-The view configurator module that was used by the old AngularJS front-end has been removed.
+  The view configurator module that was used by the old AngularJS front-end has been removed.
 
-* **Breaking change2**
+* **Process data object relation**
+
+  Process data object relations were a way to link a stored object to a running process. When document definitions were
+  introduced, this functionality was made obsolete. Process data object relations have now been removed.
 
 Instructions on how to migrate to this version of Valtimo can be found [here](migration.md).
 
