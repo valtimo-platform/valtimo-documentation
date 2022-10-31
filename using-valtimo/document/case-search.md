@@ -1,5 +1,8 @@
 # Case search
 
+Valtimo offers an extensive way of searching for cases. This page offers information on how case searches work and how
+they can be configured.
+
 ## Search field configuration file
 
 A search field configuration file can be added to the resource folder. These configurations files are automatically
@@ -37,12 +40,12 @@ This is an identifying human-readable key of the field.
 
 **path**
 
-The path pointing to the property that we want to search for. This field is optional.
+The path pointing to the property that can be searched for. This field is optional.
 
 **dataType**
 
-The data type of the property that we want to search for. The options are limited to: text, number, date, datetime and
-boolean.
+The data type of the property that that can be searched for. The options are limited to: text, number, date, datetime
+and boolean.
 
 **fieldType**
 
@@ -54,5 +57,4 @@ values and with the 'range' field type, a user can search for a range of values.
 
 There are two match types: exact and like. With the 'exact' match type, a user can only find cases that match exactly
 the search query. For example, if a user searches for cases with a last name property value 'Doe', it will not return
-cases that have a last name 'Doely'. But, when the match type 'like' is used, both cases with 'Doe' and 'Doely' are
-returned.
+cases that have a last name 'Doely'. When the match type 'like' is used, both cases with 'Doe' and 'Doely' are returned.
