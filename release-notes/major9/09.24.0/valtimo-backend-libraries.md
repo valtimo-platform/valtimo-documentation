@@ -4,10 +4,10 @@
 
 The following features were added:
 
-* **New feature1**
+* **Search fields configuration deployment from resources**
 
-  Description of the new feature goes here.
-  Also link to the page that explains the feature in greater detail.
+  All search fields configurations placed in the resource folder are automatically deployed. More
+  information can be found [here](../../../using-valtimo/document/case-search.md).
 
 * **New feature2**
 
