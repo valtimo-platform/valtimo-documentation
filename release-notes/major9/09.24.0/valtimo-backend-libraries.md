@@ -18,9 +18,9 @@ The following features were added:
 
 The following bugs were fixed:
 
-* **Bug1**
+* **Form flow definition**
 
-  Description of what the issue was.
+  When defining a form flow, the `nextStep` was ignored. This is no longer the case.
 
 * **Bug2**
 
