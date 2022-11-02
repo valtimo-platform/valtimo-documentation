@@ -8,7 +8,7 @@ This page describes how the search fields are used within Valtimo.
 Configured search fields can be found on the list page of every case type. So in order to 
 find the search fields click on `Cases` in the menu and then select a specific case.
 
-Above the list of cases a box called `Search`.
+Above the list of cases is a box called `Search`.
 
 ![Search box](img/search-box.png)
 
