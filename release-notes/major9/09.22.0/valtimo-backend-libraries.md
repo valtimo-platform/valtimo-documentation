@@ -32,3 +32,7 @@ This version has the following known issues:
 
   When multiple start forms are associated with a single process definition the user is unable to start a new case of
   that specific type.
+
+* **Form flow definition does not read `nextStep` property**
+  * Discovered in version 9.19.0
+  * Instead of using `nextStep`, `nextSteps` can be used.

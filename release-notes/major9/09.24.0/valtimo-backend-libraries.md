@@ -12,6 +12,16 @@ The following features were added:
   
   Information about these endpoints can be found [here](/extending-valtimo/document/search-fields.md).
 
+* **Search fields configuration deployment from resources**
+
+  All search fields configurations placed in the resource folder are automatically deployed. More
+  information can be found [here](../../../using-valtimo/document/case-search.md).
+
+* **New Exact Plugin**
+
+  A new plugin to setup a connection with Exact. See [here](/using-valtimo/plugin/exact/configure-exact-plugin.md) for 
+  documentation.
+
 * **New feature2**
 
   Description of the new feature goes here.
@@ -21,9 +31,9 @@ The following features were added:
 
 The following bugs were fixed:
 
-* **Bug1**
+* **Form flow definition**
 
-  Description of what the issue was.
+  When defining a form flow, the `nextStep` was ignored. This is no longer the case.
 
 * **Bug2**
 
