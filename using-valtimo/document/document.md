@@ -6,3 +6,4 @@
 - [Custom case columns](custom-case-columns.md)
 - [Custom case headers](custom-case-headers.md)
 - [Assigning a user to a document](assigning-a-user.md)
+- [Search fields](search-fields.md)

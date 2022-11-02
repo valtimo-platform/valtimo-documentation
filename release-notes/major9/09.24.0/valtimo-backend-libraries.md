@@ -4,10 +4,13 @@
 
 The following features were added:
 
-* **New feature1**
+* **Search fields**
 
-  Description of the new feature goes here.
-  Also link to the page that explains the feature in greater detail.
+  It is now possible to create, read, update and delete search fields for a document definition.
+
+  For more information on using this feature see [this page](/using-valtimo/document/search-fields.md).
+  
+  Information about these endpoints can be found [here](/extending-valtimo/document/search-fields.md).
 
 * **New feature2**
 
