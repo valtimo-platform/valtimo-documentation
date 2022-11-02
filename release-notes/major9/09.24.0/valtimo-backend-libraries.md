@@ -9,6 +9,11 @@ The following features were added:
   All search fields configurations placed in the resource folder are automatically deployed. More
   information can be found [here](../../../using-valtimo/document/case-search.md).
 
+* **New Exact Plugin**
+
+  A new plugin to setup a connection with Exact. See [here](/using-valtimo/plugin/exact/configure-exact-plugin.md) for 
+  documentation.
+
 * **New feature2**
 
   Description of the new feature goes here.

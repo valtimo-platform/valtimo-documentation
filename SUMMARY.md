@@ -81,6 +81,7 @@
     * [Object Token Auhentication Plugin](using-valtimo/plugin/object-token-authentication/configure-object-token-authentication-plugin.md)
     * [Objecten API Plugin](using-valtimo/plugin/objecten-api/configure-objecten-api-plugin.md)
     * [Objecttypen API Plugin](using-valtimo/plugin/objecttypen-api/configure-objecttypen-api-plugin.md)
+    * [Exact Plugin](using-valtimo/plugin/exact/configure-exact-plugin.md)
   * [Process](using-valtimo/process/process.md)
     * [System processes](using-valtimo/process/systemprocesses.md)
   * [Upload](using-valtimo/upload/upload.md)
