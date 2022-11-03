@@ -51,11 +51,11 @@ You can find the allowed values [here](#allowed-values).
 ## Get all search fields
 
 To retrieve all the search fields created for a certain document definition use the following endpoint:
-`GET /api/v1/document-search/{documentDefinitionName}/fields`. This will return an array of search fields
+`GET /api/v1/document-search/{documentDefinitionName}/fields`. This will return an array of search fields.
 
 ## Update existing search field
 An existing search field can be updated with new values by calling the following endpoint:
-`PUT /api/v1/document-search/{documentDefinitionName}/fields` and providing the following request body
+`PUT /api/v1/document-search/{documentDefinitionName}/fields` and providing the following request body:
 
 ```json
 {
@@ -81,7 +81,7 @@ The datatype, fieldtype and matchtype only allow specific values. This paragraph
 and what the search types do.
 
 ### Datatype
-The allowed values for datatype are
+The allowed values for datatype are:
 * boolean
 * date
 * datetime
@@ -89,7 +89,7 @@ The allowed values for datatype are
 * text
 
 These values determine the type of search that will shown. For example when the datatype is `date` the 
-search field will be a datepicker
+search field will be a datepicker.
 
 ### Fieldtype
 The allowed values for fieldtype are:
