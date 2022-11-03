@@ -4,9 +4,9 @@ Search fields add the ability to filter cases. Each search field adds the abilit
 This page describes how the search fields can be created, read, updated and deleted.
 
 ## Prerequisites
-Only administrators can configure search fields, so the creation, update and deleting of search fields can only be done by administrators.
+Only administrators can configure search fields, so the creation, update and deletion of search fields can only be done by administrators.
 
-The retrieval of all available search fields can be done by all logged-in users. 
+All logged-in users can retrieve all available search fields using the GET endpoint.
 
 ## Creating search fields
 
