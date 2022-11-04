@@ -47,3 +47,7 @@ This version has the following known issues:
   
 * **Updating process variables from a form.io submission**  
   Only process variables of type `String` and `Array<String>` are currently supported by the pv. form.io prefix. Any other types will be set to a null value.
+
+* **Form flow definition does not read `nextStep` property**
+  * Discovered in version 9.19.0
+  * Instead of using `nextStep`, `nextSteps` can be used.

@@ -1,4 +1,4 @@
-# Backend libraries 9.23.0 (RC)
+# Backend libraries 9.23.0
 
 ## New Features
 
@@ -39,3 +39,11 @@ The following bugs were fixed:
 
   The Form flow module was failed when loading form flows from the configuration files when using the PostgreSQL DBMS. 
   This has now been resolved.
+
+## Known issues
+
+This version has the following known issues:
+
+* **Form flow definition does not read `nextStep` property**
+  * Discovered in version 9.19.0
+  * Instead of using `nextStep`, `nextSteps` can be used.
