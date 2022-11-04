@@ -16,7 +16,7 @@ will assign the document to the user pressing the button.
 
 ![Assigning user with claim button](img/assigning-user-claim-button.png)
 
-## Assigning using a proces
+## Assigning using a process
 It is possible to assign a user to the current process by creating a service task and add the following expression:
 
 ```
@@ -44,7 +44,7 @@ shown on the table showing all current cases of a certain type.
 ![Assignees in case overview table](img/assignees-in-case-overview-table.png)
 
 
-[This page](/using-valtimo/document/custom-case-columns.md) describes how custom case columns can be added.
+[This page](/using-valtimo/document/custom-case-list-columns.md) describes how custom case columns can be added.
 
 <!-- 
 Add screenshots and uncomment this when the feature of unassigning a user becomes available.

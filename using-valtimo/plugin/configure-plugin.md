@@ -1,6 +1,6 @@
 # Configuring Plugins
 
-Configuring a plugin can be done from the plugin menu. The plugin menu is found under the admin menu. Admin privileges
+Plugins can be configured in the plugin menu in Vatlimo. The plugin menu is found under the admin menu. Admin privileges
 are required to configure plugins.
 
 Instructions for using the configuration to link an action to a process task can be found 

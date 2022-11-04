@@ -1,5 +1,9 @@
 # Plugins
 
+Plugins are used by Valtimo to extend functionality and to make connections to external systems.
+
+This sections contains information on how plugins can be created, configured and used.
+
 * [Configure Plugin](configure-plugin.md)
 * [Creating a process link](create-process-link.md)
 * [Deleting a process link](delete-process-link.md)
