@@ -1,4 +1,4 @@
-# Backend libraries 9.24.0 (RC)
+# Backend libraries 9.25.0 (RC)
 
 ## New Features
 
