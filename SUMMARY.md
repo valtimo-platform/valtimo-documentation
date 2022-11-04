@@ -63,6 +63,7 @@
     * [How to start a process for a case](using-valtimo/document/start-case.md)
     * [Custom case columns](using-valtimo/document/custom-case-columns.md)
     * [Custom case headers](using-valtimo/document/custom-case-headers.md)
+    * [Search fields](using-valtimo/document/configuring-search-fields.md)
   * [Forms](using-valtimo/forms/forms.md)
     * [Configuring an Objecten API object form](using-valtimo/forms/configure-object-form.md)
   * [Form flow](using-valtimo/form-flow/form-flow.md)
@@ -89,6 +90,7 @@
 * [Extending Valtimo](extending-valtimo/extending-valtimo.md)
   * [Document](extending-valtimo/document/document.md)
     * [Assigning and unassigning a user](extending-valtimo/document/assigning-and-unassigning-a-user.md)
+    * [Search fields](extending-valtimo/document/configuring-search-fields.md)
   * [Forms](extending-valtimo/forms/forms.md)
     * [Creating a form field data resolver](extending-valtimo/forms/creating-form-data-resolver.md)
   * [Form flow](extending-valtimo/form-flow/form-flow.md)
@@ -113,9 +115,12 @@
   * [Troubleshoot](reference/troubleshoot.md)
 * [Release notes](release-notes/release-notes.md)
   * Major 9
-    * 9.23.0/5.12.0 (RC)
-      * [Valtimo backend libraries (9.23.0 RC)](release-notes/major9/09.23.0/valtimo-backend-libraries.md)
-      * [Valtimo frontend libraries (5.12.0 RC)](release-notes/major9/09.23.0/valtimo-frontend-libraries.md)
+    * 9.24.0/5.13.0 (RC)
+      * [Valtimo backend libraries (9.24.0 RC)](release-notes/major9/09.24.0/valtimo-backend-libraries.md)
+      * [Valtimo frontend libraries (5.13.0 RC)](release-notes/major9/09.24.0/valtimo-frontend-libraries.md)
+    * 9.23.0/5.12.0
+      * [Valtimo backend libraries (9.23.0)](release-notes/major9/09.23.0/valtimo-backend-libraries.md)
+      * [Valtimo frontend libraries (5.12.0)](release-notes/major9/09.23.0/valtimo-frontend-libraries.md)
     * 9.22.0/5.11.0
       * [Valtimo backend libraries (9.22.0)](release-notes/major9/09.22.0/valtimo-backend-libraries.md)
       * [Valtimo frontend libraries (5.11.0)](release-notes/major9/09.22.0/valtimo-frontend-libraries.md)
