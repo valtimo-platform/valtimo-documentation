@@ -31,7 +31,7 @@ This page describes how to update Valtimo from the previous version to the curre
     In order to use the front-end libraries with upgraded dependencies, make sure to first upgrade your implementation
     to Angular 14 by following the steps mentioned on this page.
 
-    *Redundant stylesheets*
+* **Redundant stylesheets**
 
     Next, you might have to delete the following lines from the `styles` array in `angular.json` in the root of your
     implementation:
@@ -42,7 +42,7 @@ This page describes how to update Valtimo from the previous version to the curre
 
     `"node_modules/dmn-js/dist/assets/dmn-font/css/dmn-ie7-codes.css"`
 
-    *Matching dependencies*
+* **Matching dependencies**
 
     Then, make sure the following dependencies in `package.json` in the root of your implementation have the following
     versions:
@@ -82,9 +82,9 @@ This page describes how to update Valtimo from the previous version to the curre
 
     *Translate loader upgrade*
 
-    `ngx-translate-multi-http-loader` has been upgraded from version 7 to version 9. First of all, the import of
-    `TranslateModule` in the file `app.module.ts` in your implementation needs to be adjusted. More specifically,
-    `HttpClient` needs to be replaced by `HttpBackend` in the `deps` of the `loader` of `TranslateModule`.
+    `ngx-translate-multi-http-loader` has been upgraded from version 7 to version 9. This upgrade requires adjustments 
+    in implementations of Valtimo: `HttpClient` needs to be replaced by `HttpBackend` in the `deps` of the `loader` of 
+    `TranslateModule`.
 
     #### **`app.module.ts.ts`**
 
@@ -108,7 +108,7 @@ This page describes how to update Valtimo from the previous version to the curre
     })
     ...
     ```
-    Next, if your implementation uses custom translation resources, these need to be adjusted in the environment file
+    If your implementation uses custom translation resources, these need to be adjusted in the environment file
     of your implementation. The environment property `translationResources` no longer accepts an array of
     `ITranslationResource`, but an array of strings. The properties `prefix` and `suffix` are now redundant. For
     example, if the previous value in your environment file was `[{prefix: 'src/assets/translation', suffix: 'json'}]`,
