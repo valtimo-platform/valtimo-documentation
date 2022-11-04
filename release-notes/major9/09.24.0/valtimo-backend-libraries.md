@@ -22,11 +22,6 @@ The following features were added:
   A new plugin to setup a connection with Exact. See [here](/using-valtimo/plugin/exact/configure-exact-plugin.md) for 
   documentation.
 
-* **New feature2**
-
-  Description of the new feature goes here.
-  Also link to the page that explains the feature in greater detail.
-
 ## Bugfixes
 
 The following bugs were fixed:
@@ -35,42 +30,14 @@ The following bugs were fixed:
 
   When defining a form flow, the `nextStep` was ignored. This is no longer the case.
 
-* **Bug2**
-
-  Description of what the issue was.
-
 ## Breaking changes
 
-The following breaking changes were introduced:
-
-* **Breaking change1**
-
-* **Breaking change2**
-
-Instructions on how to migrate to this version of Valtimo can be found [here](migration.md).
+No breaking changes.
 
 ## Deprecations
 
-The following was deprecated:
-
-* **Deprecation1**
-
-  X was deprecated and is replaced with Y.
-
-* **Deprecation2**
-
-  X was deprecated and is replaced with Y.
-
-Instructions on how to migrate to this version of Valtimo can be found [here](migration.md).
+No new deprecations.
 
 ## Known issues
 
-This version has the following known issues:
-
-* **Issue1**
-  * Discovered in version x.x.x
-  * Describe what can be done to work around the issue
-
-* **Issue2**
-  * Discovered in version x.x.x
-  * Describe what can be done to work around the issue
+No new known issues.
