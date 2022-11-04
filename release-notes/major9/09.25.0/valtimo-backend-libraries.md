@@ -4,7 +4,7 @@
 
 The following features were added:
 
-* **Feature toggle: handle disabled for input fields differently**
+* **Feature toggle: change disabled input fields behaviour**
 
   Disabled form fields are prefilled and saved by default. This behaviour deviates from the web-standard where disabled elements are not included in the submit body.
   
@@ -12,18 +12,57 @@ The following features were added:
 
   For more information on using this feature toggle see [this page](/using-valtimo/forms/forms.md).
 
+* **New feature2**
+
+  Description of the new feature goes here.
+  Also link to the page that explains the feature in greater detail.
+
+
 ## Bugfixes
 
-No bugfixes
+The following bugs were fixed:
+
+* **Bug1**
+
+  Description of what the issue was.
+
+* **Bug2**
+
+  Description of what the issue was.
 
 ## Breaking changes
 
-No breaking changes.
+The following breaking changes were introduced:
+
+* **Breaking change1**
+
+* **Breaking change2**
+
+Instructions on how to migrate to this version of Valtimo can be found [here](migration.md).
 
 ## Deprecations
 
-No new deprecations.
+The following was deprecated:
+
+* **Deprecation1**
+
+  X was deprecated and is replaced with Y.
+
+* **Deprecation2**
+
+  X was deprecated and is replaced with Y.
+
+Instructions on how to migrate to this version of Valtimo can be found [here](migration.md).
 
 ## Known issues
 
-No new known issues.
+This version has the following known issues:
+
+* **Issue1**
+  * Discovered in version x.x.x
+  * Describe what can be done to work around the issue
+
+* **Issue2**
+  * Discovered in version x.x.x
+  * Describe what can be done to work around the issue
+
