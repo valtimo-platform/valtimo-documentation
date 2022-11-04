@@ -1,6 +1,6 @@
 # Creating FormIO forms in Valtimo
 
-In Valtimo, the forms can be prefilled with data from a case or from other external sources. This page describes how 
+In Valtimo, forms can be prefilled with data from a case or from other external sources. This page describes how 
 
 ## Case data
 
@@ -29,7 +29,7 @@ Field configuration:
 
 ![Configuring the property in a form](img/simple_key_field.png)
 
-It is also possible to load properties from object within the document. In the example below the document definition
+It is also possible to load properties from an object within the document. In the example below the document definition
 contains an object 'person', that has a 'firstName' property. This property can be accessed by using `person.firstName` 
 as the field property name.
 
