@@ -61,7 +61,7 @@
     * [Creating a document definition](using-valtimo/document/create-document-definition.md)
     * [How to link a process to a case](using-valtimo/document/link-process-and-case.md)
     * [How to start a process for a case](using-valtimo/document/start-case.md)
-    * [Custom case columns](using-valtimo/document/custom-case-list-columns.md)
+    * [Custom case list columns](using-valtimo/document/custom-case-list-columns.md)
     * [Custom case headers](using-valtimo/document/custom-case-headers.md)
     * [Search fields](using-valtimo/document/configuring-search-fields.md)
   * [Forms](using-valtimo/forms/forms.md)
