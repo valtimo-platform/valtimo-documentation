@@ -1,5 +1,8 @@
 # Using the SmartDocuments Plugin
 
+The SmartDocuments plugin makes use of [SmartDocuments](https://smartdocuments.com/) to generate documents based on a
+template.
+
 ## Configure the plugin
 
 A plugin configuration is required before the plugin can be used. A general description on how to configure

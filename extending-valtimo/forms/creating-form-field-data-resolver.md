@@ -1,8 +1,14 @@
 # Creating a form field data resolver
 
+FormIO forms in Valtimo can be prefilled with data from custom sources. 
+
+## Introduction
+
 A `FormFieldDataResolver` is a spring bean that is used by Valtimo to get data to be preloaded in a form.
 By adding a new implementation of the `FormFieldDataResolver` interface and registering this as bean, a new prefix can 
 be supported. 
+
+## Implementing the FormFieldDataResolver
 
 There are two methods that need to be implemented:
 - The `supports(String externalFormFieldType)` method determines if the current resolver is applicable for a 
