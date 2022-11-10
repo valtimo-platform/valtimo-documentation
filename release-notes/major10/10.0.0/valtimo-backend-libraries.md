@@ -75,6 +75,12 @@ The following breaking changes were introduced:
   Process data object relations were a way to link a stored object to a running process. When document definitions were
   introduced, this functionality was made obsolete. Process data object relations have now been removed.
 
+* **REST API versioning**
+
+  Every REST endpoint exposed by Valtimo now contains a version, e.g. `/api/document` becomes `/api/v1/document`.
+  This makes it easier to support multiple versions in the future in case of breaking changes in the REST API, without
+  waiting for a new major version of Valtimo.
+
 Instructions on how to migrate to this version of Valtimo can be found [here](migration.md).
 
 ## Deprecations

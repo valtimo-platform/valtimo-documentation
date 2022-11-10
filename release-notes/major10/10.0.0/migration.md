@@ -144,4 +144,11 @@ This page describes how to update Valtimo from the previous version to the curre
     Support for `Protractor` (an end-to-end testing framework) in the Angular CLI will be discontinued. Either remove
     `Protractor` from your implementation, or migrate to Cypress [by following this guide](https://blog.ninja-squad.com/2021/05/05/migrating-from-protractor-to-cypress/).
     The latter is recommended.
-    
+
+* **REST API versioning**
+
+  Scope: Front-end and back-end
+
+  Versioning has been introduced for every REST endpoint exposed by Valtimo. If your implementation manually makes calls
+  to currently existing Valtimo endpoints, these will have to be changed, e.g. `/api/document` becomes 
+  `/api/v1/document`.
