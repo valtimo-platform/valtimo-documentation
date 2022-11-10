@@ -12,7 +12,12 @@ The following features were added:
 
   For more information on using this feature toggle see [this page](/using-valtimo/forms/forms.md).
 
-* **New feature2**
+* **Improved error handling and logging in case of unsupported JWT token**
+
+  A missing or empty email address in the JWT token does no longer cause nullpointer exceptions. 
+
+
+* **New feature3**
 
   Description of the new feature goes here.
   Also link to the page that explains the feature in greater detail.
