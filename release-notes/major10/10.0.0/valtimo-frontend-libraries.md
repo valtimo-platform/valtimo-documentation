@@ -60,6 +60,11 @@ The following features were added:
 | @valtimo/user-management          | 5.10.0      | 10.0.0      |
 | @valtimo/view-configurator        | 5.10.0      | 10.0.0      |
 
+* **REST API versioning**
+
+  As of major version 10, REST API versioning has been introduced to the backend libraries. The frontend libraries have
+  been adjusted to make use of these new versioned endpoints.
+
 ## Bugfixes
 
 The following bugs were fixed:
