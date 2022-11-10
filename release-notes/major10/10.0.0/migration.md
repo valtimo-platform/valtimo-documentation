@@ -26,7 +26,7 @@ This page describes how to update Valtimo from the previous version to the curre
   [MySQL](https://github.com/valtimo-platform/valtimo-migration/blob/main/10.0.0/mysql/valtimo-migration-view-configurator-10.0.0-mysql.sql) 
   or 
   [PostgreSQL](https://github.com/valtimo-platform/valtimo-migration/blob/main/10.0.0/postgresql/valtimo-migration-view-configurator-10.0.0-postgres.sql) 
-  to clean up the database.  
+  to clean up the database.
 
 * **Process data object relation**
 
@@ -49,4 +49,10 @@ This page describes how to update Valtimo from the previous version to the curre
     command in the root of the implementation project:
     `ng update @angular/core@14 @angular/cli@14`
 
-       
+* **REST API versioning**
+
+  Scope: Front-end and back-end
+
+  Versioning has been introduced for every REST endpoint exposed by Valtimo. If your implementation manually makes calls
+  to currently existing Valtimo endpoints, these will have to be changed, e.g. `/api/document` becomes 
+  `/api/v1/document`.
