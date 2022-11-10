@@ -14,7 +14,7 @@ The following features were added:
 
 * **Improved error handling and logging in case of unsupported JWT token**
 
-  A missing or empty email address in the JWT token does no longer cause nullpointer exceptions. 
+  A missing or empty email address in the JWT token no longer causes nullpointer exceptions. 
 
 
 * **New feature3**
