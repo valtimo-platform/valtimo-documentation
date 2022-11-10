@@ -52,9 +52,6 @@ This page describes how to update Valtimo from the previous version to the curre
 * **Dependency upgrades**
 
   Scope: Frontend
-* **REST API versioning**
-
-  Scope: Front-end and back-end
 
     In order to use the front-end libraries with upgraded dependencies, make sure to first upgrade your implementation
     to Angular 14 by following the steps mentioned on this page.
@@ -147,7 +144,10 @@ This page describes how to update Valtimo from the previous version to the curre
     Support for `Protractor` (an end-to-end testing framework) in the Angular CLI will be discontinued. Either remove
     `Protractor` from your implementation, or migrate to Cypress [by following this guide](https://blog.ninja-squad.com/2021/05/05/migrating-from-protractor-to-cypress/).
     The latter is recommended.
-    
+
+* **REST API versioning**
+
+  Scope: Front-end and back-end
 
   Versioning has been introduced for every REST endpoint exposed by Valtimo. If your implementation manually makes calls
   to currently existing Valtimo endpoints, these will have to be changed, e.g. `/api/document` becomes 
