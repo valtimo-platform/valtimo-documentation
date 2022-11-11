@@ -8,7 +8,7 @@ The following features were added:
 
   The Camunda webapps, including the cockpit, were made available. For existing Valtimo projects additional
   infrastructure configuration might be required to grant access to the `/camunda/app` path. See
-  [this page](/valtimo-implementation/modules/core/camunda-webapps.md) for more information.
+  [this page](/getting-started/modules/core/camunda-webapps.md) for more information.
 
 * **Plugins**
 

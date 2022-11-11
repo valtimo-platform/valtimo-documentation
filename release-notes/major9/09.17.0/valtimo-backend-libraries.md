@@ -16,7 +16,7 @@ The following features were added:
   Almost all modules within Valtimo now have support for Postgres databases. The exceptions are:
   - `form-flow-valtimo`
   
-  Information on how to use Postgres can be found [here](/valtimo-implementation/database-support.md).
+  Information on how to use Postgres can be found [here](/getting-started/database-support.md).
 
 
 * **Secret keys in plugins are encypted before storing**

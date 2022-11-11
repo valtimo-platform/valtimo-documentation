@@ -15,4 +15,4 @@ reached as part of a process, the configured form can be opened and completed.
 * **External URL.** Connects the user task or start event to an external web form.
 
 For more information on form definitions or form flow definitions, see 
-[here](/valtimo-implementation/modules/core/form-link.md).
+[here](/getting-started/modules/core/form-link.md).
