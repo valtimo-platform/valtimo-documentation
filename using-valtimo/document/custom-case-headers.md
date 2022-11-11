@@ -10,10 +10,7 @@ in the environment file of a front-end implementation.
 The custom header uses the Bootstrap grid system which is based on blocks of varying sizes that can be created by using 
 CSS classes. This way any layout can be created. 
 
-| <!-- -->                                          |
-|---------------------------------------------------|
-| ![Custom case header](img/custom-case-header.png) |
-| <center>A custom case header</center>             |
+By default, the case header looks like this: ![Custom case header](img/custom-case-header.png)
 
 ## Defining a custom case header
 

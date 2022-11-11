@@ -8,10 +8,7 @@ Each case list comes with a set of four default columns: 'Reference number', 'Cr
 and 'Last modified'. The columns in the list can be changed, added and removed. Any property stored in a document can be
 used as a column in a case list.
 
-| <!-- -->                                                      |
-|---------------------------------------------------------------|
-| ![Default case detail list](img/default-case-detail-list.png) |
-| <center>Default case list</center>                            |
+By default, the case list columns look like this: ![Default case detail list](img/default-case-detail-list.png)
 
 ## Default columns
 
