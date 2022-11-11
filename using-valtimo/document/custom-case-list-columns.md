@@ -1,6 +1,6 @@
 # Custom case list columns
 
-This page show how the columns, that are shown in the list of cases, can be changed.
+This page explains how the columns that are shown in the list of cases can be changed.
 
 ## Introduction
 
