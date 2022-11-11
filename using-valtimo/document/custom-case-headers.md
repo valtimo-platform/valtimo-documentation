@@ -1,6 +1,6 @@
 # Custom case headers
 
-This page show how a header, that is shown above every case, can be customized.
+This page explains how a header that is shown above every case can be customised.
 
 ## Introduction
 
