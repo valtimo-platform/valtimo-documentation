@@ -16,9 +16,20 @@ The following features were added:
 
 The following bugs were fixed:
 
-* **Bug1**
+* **Enum BooleanTypeConverter**
 
-  Description of what the issue was.
+  Fixed the ability to provide custom values enum to BooleanTypeConverter.
+  An example how this can be configured in environment as a property in a DefinitionColumn.
+
+  `{
+  propertyName: '$.isPropertyTrue',
+  translationKey: 'isPropertyTrue',
+  sortable: true,
+  viewType: 'boolean',
+  enum: ['Ja', 'Nee']
+  },`
+
+  The enum property only accepts maximum two string values where the first one is for true and the second one is for false. 
 
 * **Bug2**
 
