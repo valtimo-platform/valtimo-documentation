@@ -5,7 +5,7 @@ The Valtimo platform consists of multiple services/containers. Depending on the 
 For both editions, a Docker Compose repository is available. These repositories include a guide on which Compose file(s) to use and how to use them.
 
 ### Supporting services
-Both editions of Valtimo use a Keycloak instance for Identity and Access Management.
+Both editions of Valtimo require a Keycloak instance for Identity and Access Management.
 The Valtimo backend application requires a database container. Both PostgreSQL and MySQL are supported.
 
 ### Application services
