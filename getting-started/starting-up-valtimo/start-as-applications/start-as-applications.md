@@ -9,7 +9,7 @@ Depending on the Valtimo edition, three Github repositories should be checked ou
 
 ### Valtimo
 For running Valtimo as applications, the following Github repositories should be checked out:
-* valtimo-docker-compose (to be created)
+* [valtimo-docker-compose](https://github.com/valtimo-platform/valtimo-docker-compose)
 * valtimo-backend-template (to be created)
 * valtimo-frontend-template (to be created)
 
