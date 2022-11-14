@@ -11,11 +11,12 @@ There are two methods available to create a search field:
 
 ```json
 {
-    "key": "key_to_search_on",
-    "path": "/some/json/path/to/key",
-    "datatype": "date",
-    "fieldtype": "range",
-    "matchtype": "exact"
+  "title": "title",   
+  "key": "key_to_search_on",
+  "path": "/some/json/path/to/key",
+  "dataType": "date",
+  "fieldType": "range",
+  "matchType": "exact"
 }
 ```
 
@@ -27,6 +28,7 @@ should have the following structure:
 {
     "searchFields": [
         {
+            "title": "title",
             "key": "key",
             "path": "/path/to/key",
             "dataType": "text",
@@ -54,11 +56,12 @@ An existing search field can be updated with new values by calling the following
 
 ```json
 {
+  "title": "title",
   "key": "key_to_search_on",
   "path": "/some/json/path/to/key",
-  "datatype": "boolean",
-  "fieldtype": "single",
-  "matchtype": "exact"
+  "dataType": "boolean",
+  "fieldType": "single",
+  "matchType": "exact"
 }
 ```
 

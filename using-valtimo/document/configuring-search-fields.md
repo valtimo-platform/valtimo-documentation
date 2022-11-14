@@ -65,10 +65,11 @@ of moving the line, the reorder buttons will be disabled.
 
 The component handles these types of search fields:
 
-| Search field | Available types                                        | Editable     |
-|:-------------|:-------------------------------------------------------|:-------------|
-| **Key**          | Text                                                   | _Not editable_ |
-| **Path**         | Text                                                   | _Editable_     |
-| **Data type**    | Text<br/>Number<br/>Date<br/>Date and time<br/>Boolean | _Editable_      |
-| **Field type**   | Single<br/>Range                                       | _Editable_       |
-| **Match type**   | Exact<br/>Contains                                     | _Editable_       |
+| Search field   | Available types                                        | Editable     |
+|:---------------|:-------------------------------------------------------|:-------------|
+| **Title**      | Text                                                   | _Editable_ |
+| **Key**        | Text                                                   | _Not editable_ |
+| **Path**       | Text                                                   | _Editable_     |
+| **Data type**  | Text<br/>Number<br/>Date<br/>Date and time<br/>Boolean | _Editable_      |
+| **Field type** | Single<br/>Range                                       | _Editable_       |
+| **Match type** | Exact<br/>Contains                                     | _Editable_       |

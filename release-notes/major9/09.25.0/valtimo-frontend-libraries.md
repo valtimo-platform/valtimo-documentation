@@ -18,6 +18,15 @@ The following features were added:
 
   For more information on this feature, see [this page](/using-valtimo/document/configuring-search-fields.md).
 
+* **Added a new input field for case search field configuration modal**
+
+  Add new input to configure the case search field title.
+
+  The title is an optional field that appears as a label for the current search field. When the title is not set, 
+  the default value will be the search field key translation (if there is no translation available, the original key value will be displayed).
+
+  For more information on this feature, see [this page](/using-valtimo/document/configuring-search-fields.md).
+
 ## Bugfixes
 
 The following bugs were fixed:
