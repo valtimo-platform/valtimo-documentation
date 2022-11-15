@@ -12,6 +12,18 @@ The following features were added:
 
   For more information on how to enable the `caseSearchFields` feature toggle, refer to [this page](/reference/feature-toggles/available-feature-toggles.md).
 
+* **Added new actions to case search field configuration**
+
+  Creating, updating, deleting, and reordering search field rows for a document definition are now available actions.
+
+  For more information on this feature, see [this page](/using-valtimo/document/configuring-search-fields.md).
+
+* **Persist query parameters after Keycloak redirect**
+
+  Previously after a redirect by Keycloak, only the main URL was restored, so that the user remained on the same page.
+  To this functionality, saving and restoring of query parameters has been added. Now, after a Keycloak redirect, the
+  previous query parameters will remain in place.
+
 ## Bugfixes
 
 The following bugs were fixed:

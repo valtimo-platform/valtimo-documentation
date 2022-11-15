@@ -17,6 +17,12 @@ The following features were added:
 
   A missing or empty email address in the JWT token no longer causes a null pointer exception.
 
+* **Performance improvements when retrieving case definitions**
+
+  The query for retrieving list of case definitions has been improved. Performance increases for this API call have
+  improved significantly when dealing with a lot of case definitions or case definition versions. Calls that took 10
+  seconds have now been observed to take less than half a second after these improvements.
+
 
 * **Case search field configuration ordering**
 
