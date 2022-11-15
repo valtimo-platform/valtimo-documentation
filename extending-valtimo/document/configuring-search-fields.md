@@ -11,11 +11,12 @@ There are two methods available to create a search field:
 
 ```json
 {
-    "key": "key_to_search_on",
-    "path": "/some/json/path/to/key",
-    "datatype": "date",
-    "fieldtype": "range",
-    "matchtype": "exact"
+  "title": "title",   
+  "key": "key_to_search_on",
+  "path": "doc:path.to.key",
+  "dataType": "date",
+  "fieldType": "range",
+  "matchType": "exact"
 }
 ```
 
@@ -27,8 +28,9 @@ should have the following structure:
 {
     "searchFields": [
         {
+            "title": "title",
             "key": "key",
-            "path": "/path/to/key",
+            "path": "doc:path.to.key",
             "dataType": "text",
             "fieldType": "single",
             "matchType": "like"
@@ -54,11 +56,12 @@ An existing search field can be updated with new values by calling the following
 
 ```json
 {
+  "title": "title",
   "key": "key_to_search_on",
-  "path": "/some/json/path/to/key",
-  "datatype": "boolean",
-  "fieldtype": "single",
-  "matchtype": "exact"
+  "path": "doc:path.to.key",
+  "dataType": "boolean",
+  "fieldType": "single",
+  "matchType": "exact"
 }
 ```
 
@@ -75,7 +78,7 @@ value of the key that should be deleted.
 The datatype, fieldtype and matchtype only allow specific values. This paragraph will mention all available values
 and what the search types do.
 
-### Datatype
+### Data type
 The allowed values for datatype are:
 * boolean
 * date
@@ -86,7 +89,7 @@ The allowed values for datatype are:
 These values determine the type of search that will shown. For example when the datatype is `date` the 
 search field will be a datepicker.
 
-### Fieldtype
+### Field type
 The allowed values for fieldtype are:
 * multiple
 * range
@@ -95,7 +98,7 @@ The allowed values for fieldtype are:
 The fieldtype value determines how the search should be performed. For example when the fieldtype is `range`
 the search field will so from / till fields
 
-### Matchtype
+### Match type
 The allowed values for matchtype are:
 * exact
 * like
