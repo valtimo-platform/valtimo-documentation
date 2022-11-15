@@ -18,6 +18,13 @@ The following features were added:
 
   For more information on this feature, see [this page](/using-valtimo/document/configuring-search-fields.md).
 
+* **Persist query parameters after Keycloak redirect**
+
+  Previously after a redirect by Keycloak, only the main URL was restored, so that the user remained on the same page.
+  To this functionality, saving and restoring of query parameters has been added. Now, after a Keycloak redirect, the
+  previous query parameters will remain in place.
+
+
 * **Added a new input field for case search field configuration modal**
 
   Add new input to configure the case search field title.
