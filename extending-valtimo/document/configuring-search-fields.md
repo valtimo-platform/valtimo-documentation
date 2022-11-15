@@ -40,8 +40,8 @@ should have the following structure:
 If a specific search field is already present in the database this field is not overwritten. It was probably changed by an
 administrator in the user interface, these changes should be kept.
 
-The dataType, fieldType and matchType have specific values that are allowed.
-You can find the allowed values [here](#allowed-values).
+The `dataType`, `fieldType` and `matchType` only allow for specific values. A list of these allowed values can be
+found [here](#allowed-values).
 
 ## Get all search fields
 
@@ -50,8 +50,8 @@ To retrieve all the search fields created for a certain document definition use 
 
 ## Update existing search field
 
-Existing search fields can be updated with new values by the endpoint below. The endpoint below accepts a list of search
-fields. The ordering in this list is adhered.
+Existing search fields can be updated with new values by using the endpoint below. The endpoint below accepts a list of
+search fields. The ordering of search fields in this list is preserved.
 `PUT /api/v1/document-search/{documentDefinitionName}/fields` and providing the following request body:
 
 ```json
@@ -66,44 +66,45 @@ fields. The ordering in this list is adhered.
 ]
 ```
 
-The dataType, fieldType and matchType have specific values that are allowed.
-You can find the allowed values [here](#allowed-values).
+The `dataType`, `fieldType` and `matchType` only allow for specific values. A list of these allowed values can be
+found [here](#allowed-values).
 
 ## Deleting an existing search field.
 
 An existing search field can be deleted by calling the following endpoint:
-`DELETE /api/v1/document-search/{documentDefinitionName}/fields?key={someKey}` and providing both the a query parameter with the 
+`DELETE /api/v1/document-search/{documentDefinitionName}/fields?key={someKey}` and providing both a query parameter with the 
 value of the key that should be deleted.
 
 ## Allowed values
-The dataType, fieldType and matchType only allow specific values. This paragraph will mention all available values
-and what the search types do.
 
-### DataType
-The allowed values for dataType are:
+The `dataType`, `fieldType` and `matchType` only allow for specific values. This paragraph will mention all available
+values and what the search types do.
+
+### Data type
+The allowed values for `dataType` are:
 * boolean
 * date
 * datetime
 * number
 * text
 
-These values determine the type of search that will show. For example when the dataType is `date` the 
+These values determine the type of search that will show. For example when the `dataType` is `date` the 
 search field will be a datepicker.
 
-### FieldType
-The allowed values for fieldType are:
+### Field type
+The allowed values for `fieldType` are:
 * multiple
 * range
 * single
 
-The fieldType value determines how the search should be performed. For example when the fieldType is `range`
+The `fieldType` value determines how the search should be performed. For example when the `fieldType` is `range`
 the search field will so from / till fields
 
-### MatchType
-The allowed values for matchType are:
+### Match type
+The allowed values for `matchType` are:
 * exact
 * like
 
-The matchType will determine what type of search is performed. For example when the matchType is `like` and
-the search term is `John` the result will also include a `John Doe`. If the matchType is `exact` `John Doe` 
+The `matchType` will determine what type of search is performed. For example when the `matchType` is `like` and
+the search term is `John` the result will also include a `John Doe`. If the `matchType` is `exact` `John Doe` 
 will not be part of the result.

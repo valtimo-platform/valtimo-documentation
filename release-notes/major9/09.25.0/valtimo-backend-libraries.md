@@ -15,7 +15,7 @@ The following features were added:
 
 * **Improved error handling and logging in case of unsupported JWT token**
 
-  A missing or empty email address in the JWT token no longer causes nullpointer exceptions.
+  A missing or empty email address in the JWT token no longer causes a null pointer exception.
 
 
 * **Case search field configuration ordering**
@@ -46,9 +46,9 @@ The following breaking changes were introduced:
   Valtimo `9.24.0`.
     * The search field types `datatype`, `searchtype` and `matchtype` have been renamed to use uppercase characters.
       This is a breaking change for several search field API endpoints. The new names are: `dataType`, `searchType`
-      and `matchType`.
+      and `matchType`. No migration is necessary.
     * The endpoint `PUT /api/v1/document-search/{documentDefinitionName}/fields` now accepts an array of search fields
-      instead of a single search field.
+      instead of a single search field. No migration is necessary.
 
 * **Breaking change2**
 
