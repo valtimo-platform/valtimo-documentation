@@ -25,7 +25,7 @@ The content of the configuration file can look like this:
   "searchFields": [
     {
       "key": "customerLastName",
-      "path": "/customer/lastName",
+      "path": "doc:customer.lastName",
       "dataType": "text",
       "fieldType": "single",
       "matchType": "like"
