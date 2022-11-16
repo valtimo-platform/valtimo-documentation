@@ -1,7 +1,7 @@
 # How to link a process to a case
 
-In order to be able to use a process, it has to be linked up to a case. This allows for a case to be started through the
-UI.
+Before a [process can be started](start-case.md), the process has to be linked to a case first. This page describes how
+a process can be linked to a case.
 
 ### Prerequisites
 
@@ -34,15 +34,13 @@ In addition to linking a case via the UI, it is possible to link a case through 
 2. Specify the process(es) that should be linked to the document. More than one process can be linked to the same
    document.
 
-   ```JSON
-   [
-       {
-           "processDefinitionKey": "rijbewijs-aanvraag",
-           "canInitializeDocument": true,
-           "startableByUser": true,
-           "processIsVisibleInMenu": true
-       }
-   ]
-   
-   ```
-
+```json
+[
+    {
+        "processDefinitionKey": "rijbewijs-aanvraag",
+        "canInitializeDocument": true,
+        "startableByUser": true,
+        "processIsVisibleInMenu": true
+    }
+]
+```

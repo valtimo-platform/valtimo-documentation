@@ -1,7 +1,7 @@
 # Using the OpenZaak Plugin
 
 The OpenZaak plugin is used to provide authentication for ZGW (Zaakgericht Werken) plugins that connect to APIs that 
-are supported in openzaak. Currently, the plugins that this plugin can provide authentication for are the following:
+are supported in OpenZaak. Currently, the plugins that this plugin can provide authentication for are the following:
 
 - [Documenten API](/using-valtimo/plugin/documenten-api/configure-documenten-api-plugin.md)
 - [Zaken API](/using-valtimo/plugin/zaken-api/configure-zaken-api-plugin.md)

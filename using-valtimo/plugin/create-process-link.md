@@ -1,8 +1,8 @@
 # Creating a process link
 
-Plugin actions can be attached to camunda activities through process links. Configuring a process link can be done
-from the process link menu. The process link menu is found under the admin menu. Admin privileges are required to
-configure process links.
+Plugin actions can be attached to Camunda activities through process links. A process link can be configured in the
+process link menu. The process link menu is found under the admin menu. Admin privileges are required to configure
+process links.
 
 1. Go to the Admin menu
 2. Go to the 'Process connection' menu

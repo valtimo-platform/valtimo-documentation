@@ -1,5 +1,7 @@
 # Creating custom plugin definitions
 
+Valtimo offers the functionality needed to create and add plugins to Valtimo implementations.
+
 ## Back-end
 
 ### Creating a plugin definition
