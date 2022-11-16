@@ -34,6 +34,17 @@ The following features were added:
 
   For more information on this feature, see [this page](/using-valtimo/document/configuring-search-fields.md).
 
+* **Add `boolean` and `datetime` type for search fields configuration**
+
+  Added two new types for configuring search fields.
+  
+  The `boolean` field provides a selector with the following options: `yes`, `no` and `either`.
+  
+  The `datetime` field displays a calendar with the option to add a time. It is possible to create this search field 
+  with the match type **single** and **range** option.
+
+  For more information on this feature, see [this page](/using-valtimo/document/configuring-search-fields.md).
+
 ## Bugfixes
 
 The following bugs were fixed:
