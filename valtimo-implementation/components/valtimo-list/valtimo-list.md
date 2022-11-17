@@ -4,8 +4,7 @@ The valtimo list is a component to make building lists faster and easier.
 
 ## Setting up a simple list
 
-Let's begin by creating a simple list which doesn't do anything for now besides display some data. 
-Assuming you already have a project, find the html page you want to add the list to and add the following html
+To create a simple list that only display some data, add the following to a component's html 
 
 ```angular2html
 <valtimo-list
@@ -41,15 +40,15 @@ ngOnInit() {
 }
 ```
 
-This will create a simple list that shows our two items. 
+This will create a simple list that shows the two items. 
 
 ![simple-list.png](simple-list.png)
 
 ## Clicking on rows
 
-If you want some action to happen when the user clicks on a row, you can use the `(rowClicked)` property like so.
+The `(rowClicked)` property is used to add an action when the user clicks on a row
 
-Change your html to add the property
+The property must be added with a reference to a method
 ```angular2html
 <valtimo-list
     [items]="items"
@@ -58,7 +57,7 @@ Change your html to add the property
 ></valtimo-list>
 ```
 
-Add the following to your controller
+The method must be defined in the component's controller
 ```typescript
 public itemClicked(item) {
     this.router.navigateByUrl("/items/"+item.id);
@@ -67,9 +66,9 @@ public itemClicked(item) {
 
 ## Adding actions
 
-If you want clickable icons in the list, you can use the `[actions]` property.
+The `[actions]` property is used to add clickable icons in the list
 
-Change your html to add the property
+The property must be added with a reference to an array of actions
 ```angular2html
 <valtimo-list
     [items]="items"
@@ -78,7 +77,7 @@ Change your html to add the property
 ></valtimo-list>
 ```
 
-Then add the following to your controller
+The actions are defined in the component's controller
 ```typescript
 public readonly itemActions: any[] = [{
   'columnName': 'delete',
