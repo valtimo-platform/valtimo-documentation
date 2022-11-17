@@ -38,7 +38,8 @@ The following features were added:
 
   Added two new types for configuring search fields.
   
-  The `boolean` field provides a selector with the following options: `yes`, `no` and `either`.
+  The `boolean` field provides a selector with the following options: `yes` and `no`. The search will considers both 
+  options if the dropdown selection is left blank.
   
   The `datetime` field displays a calendar with the option to add a time. It is possible to create this search field 
   with the match type **single** and **range** option.
