@@ -14,6 +14,10 @@ The following features were added:
   Many dependencies in the libraries have been upgraded to the latest versions. To be able to use the libraries with
   these new versions, please refer to [the migration page for this release](migration.md).
 
+* **Removed Auth0 library**
+
+  As of major version 10, support for Auth0 as an authentication provider has been removed. Please refer to
+  [the migration page for this release](migration.md) to see how implementation should be adjusted.
 
 * **Change valtimo libraries versions**
 
