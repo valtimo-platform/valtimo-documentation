@@ -15,6 +15,8 @@
     * [Docker container](valtimo-implementation/first-dive/docker-container/docker-container.md)
     * [Creating your own Valtimo implementation](valtimo-implementation/first-dive/create-your-own/create-your-own.md)
   * [Compatibility matrix](valtimo-implementation/compatibility-matrix.md)
+  * [Components](valtimo-implementation/components/components.md)
+    * [Valtimo List](valtimo-implementation/components/valtimo-list/valtimo-list.md)
   * [Database support](valtimo-implementation/database-support.md)
   * [Modules](valtimo-implementation/modules/modules.md)
     * Core
