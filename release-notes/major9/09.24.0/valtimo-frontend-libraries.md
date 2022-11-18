@@ -1,4 +1,4 @@
-# Frontend libraries 5.13.0 (RC)
+# Frontend libraries 5.13.0
 
 ## New Features
 
