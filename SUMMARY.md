@@ -40,7 +40,8 @@
       * [Resource](valtimo-implementation/modules/core/resource.md)
       * [Temporary resource storage](valtimo-implementation/modules/core/temporary-resource-storage.md)
       * [Value resolvers](valtimo-implementation/modules/core/value-resolver.md)
-      * [Web](valtimo-implementation/modules/core/web.md)
+      * [Web](valtimo-implementation/modules/core/web/web.md)
+        * [CORS](valtimo-implementation/modules/core/web/valtimo-cors.md)
     * ZGW
       * [Besluit](valtimo-implementation/modules/zgw/besluit.md)
       * [Catalogi API](valtimo-implementation/modules/zgw/catalogi-api.md)
