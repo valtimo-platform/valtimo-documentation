@@ -6,7 +6,8 @@ The following features were added:
 
 * **Smart documents logs improvements**
 
-  Added more logs for smart documents connector so that the error message gives more specific information. And also added some tests. 
+  Added more logs for smart documents connector so that the error message gives more specific information.
+  Also added some tests. 
 
 * **New feature2**
 
