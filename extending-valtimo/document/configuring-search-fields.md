@@ -146,6 +146,7 @@ For example:
 ```
 case:"loan-accepted"
 ```
+
 ### Data type
 The allowed values for `dataType` are:
 * boolean
