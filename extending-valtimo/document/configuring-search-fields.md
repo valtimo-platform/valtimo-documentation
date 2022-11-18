@@ -171,3 +171,27 @@ For example:
 
 - **Exact**: If the `matchType` selected is `exact`, the value `John` would only be matched to the specific value 
   `John`, i.e. `John Doe` will not be part of the result.
+
+## Adding tooltip
+
+The Tooltips property display helps text when you hover over the question mark icon.
+
+To add this tooltip to search fields, a `searchField` key must exist under `searchFieldsTooltips` in the translation files 
+mentioned below:
+
+- `en.json` - for English translations
+- `nl.json` - for Dutch translations
+- `de.json` - for German translations.
+
+Within each file, it is possible to find a structure with existing translations.
+Below the `searchFieldsTooltips` object, add the name of the created key and the description you want to display.
+
+Follow the example below using `fullname` as key:
+
+```
+"searchFieldsTooltips": {
+  "fullname": "Enter the full name of the responsible person you want to search for"
+},
+```
+
+This configuration is optional and will only be displayed if previously defined in the translation files.
