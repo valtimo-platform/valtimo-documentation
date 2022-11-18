@@ -86,8 +86,8 @@ The allowed value for `title` is:
 * text
 
 #### How to use
-The `title` property is an optional field that appears as a label for the current search field. When the title is not 
-defined, the default value will be the search field key translation (the original value is displayed if no translation is available).
+The `title` property is an optional field that appears as a label for the current search field.
+When the title is not defined, the default value will be the search field key translation (the original value is displayed if no translation is available).
 
 For a better example, follow the table below:
 
@@ -96,6 +96,21 @@ For a better example, follow the table below:
 | **Yes**   | Yes/No              | _show title_          |
 | **No**        | Yes                 | _show key tranlation_ |
 | **No**       | No                  | _show key value_      |
+
+#### Add translation
+
+To add a translation to a key, a `searchField` **key** must exist under the `searchFields` object in the translations 
+files. 
+
+Add the name of the created **key** and the label you want to display.
+
+Follow the example below using `fullname` as key:
+
+```
+"searchFields": {
+  "fullname": "Full name"
+},
+```
 
 
 ### Key
@@ -176,12 +191,8 @@ For example:
 
 The Tooltips property display helps text when you hover over the question mark icon.
 
-To add this tooltip to search fields, a `searchField` key must exist under `searchFieldsTooltips` in the translation files 
-mentioned below:
-
-- `en.json` - for English translations
-- `nl.json` - for Dutch translations
-- `de.json` - for German translations.
+To add this tooltip to search fields, a `searchField` key must exist under `searchFieldsTooltips` in the translation 
+files.
 
 Within each file, it is possible to find a structure with existing translations.
 Below the `searchFieldsTooltips` object, add the name of the created key and the description you want to display.
