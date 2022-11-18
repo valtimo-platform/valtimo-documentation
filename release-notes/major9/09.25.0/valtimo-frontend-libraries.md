@@ -66,10 +66,12 @@ This version has the following known issues:
 
 * **Case search fields**
   * Discovered in version 5.14.0 RC
-    * Some case search fields can be configured, but lead to errors when performing searches (i.e. boolean range).
+    * Some case search fields can be configured, but lead to errors when performing searches. One known broken search
+      field configuration is searching for `boolean` ranges.
     * Date/time searches do not always function correctly because of time zone issues.
     * After a 500 error occurs on a search action, the front-end does not recover, and the page has to be refreshed in
-      order to perform another search.
+      order to perform another search. In order to avoid this, configure only valid search fields. Avoid the example
+      mentioned in the first point of this list (`boolean` ranges).
 * **Persisting query parameters on Keycloak redirect**
   * Discovered in version 5.14.0 RC
     * When a case detail page is opened, query parameters do not persist after a Keycloak redirect. 
