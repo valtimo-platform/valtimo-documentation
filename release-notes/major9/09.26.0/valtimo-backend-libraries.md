@@ -18,9 +18,9 @@ The following features were added:
 
 The following bugs were fixed:
 
-* **Bug1**
+* **Enhanced error information on form submission errors**
 
-  Description of what the issue was.
+  When you try to submit a form whose `Document` or `ProcessDocumentDefinition` can't be found, the parameters used to query these entities will be logged/reported back. This is especially useful when you encounter this error on a system that you don't have direct access to.
 
 * **Bug2**
 
