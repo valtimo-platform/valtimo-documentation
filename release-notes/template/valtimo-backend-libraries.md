@@ -4,10 +4,10 @@
 
 The following features were added:
 
-* **Smart documents logs improvements**
+* **New feature1**
 
-  Added more logs for smart documents connector so that the error message gives more specific information.
-  Also added some tests.
+  Description of the new feature goes here. 
+  Also link to the page that explains the feature in greater detail.
 
 * **New feature2**
 
