@@ -152,3 +152,12 @@ This page describes how to update Valtimo from the previous version to the curre
   Versioning has been introduced for every REST endpoint exposed by Valtimo. If your implementation manually makes calls
   to currently existing Valtimo endpoints, these will have to be changed, e.g. `/api/document` becomes 
   `/api/v1/document`.
+
+* **Auth0 removed as authentication provider**
+
+  Scope: Front-end
+
+  As of major version 10, Auth0 is no longer supported as an authentication provider. In order to adjust your
+  implementation remove the dependencies `@auth0/angular-jwt` and `@valtimo/auth0`. Also, remove the files
+  `auth0-config.dev.ts`, `auth0-config.prod.ts` and `auth0-config.test.ts` from `src/environments/auth` if they exist.
+  Lastly, make sure none of the environment files in your implementation use Auth0 under the key `authentication`.
