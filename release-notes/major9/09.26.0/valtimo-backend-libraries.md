@@ -22,9 +22,9 @@ The following bugs were fixed:
 
   When you try to submit a form whose `Document` or `ProcessDocumentDefinition` can't be found, the parameters used to query these entities will be logged/reported back. This is especially useful when you encounter this error on a system that you don't have direct access to.
 
-* **Bug2**
-
-  Description of what the issue was.
+* **Listing connectors could potentially exhaust the database connection pool**
+  
+  When requesting a list of connectors, some queries were locking the tables. This could result in an exhausted database connection pool. The transaction settings have been changed to prevent this from happening.
 
 ## Breaking changes
 
