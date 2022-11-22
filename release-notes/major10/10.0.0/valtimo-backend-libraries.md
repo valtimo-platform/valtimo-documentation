@@ -86,6 +86,10 @@ The following breaking changes were introduced:
   A number of deprecated methods and classes have been removed, and as a result some implementations need to make minor
   changes. 
 
+* **Removed JWT configuration properties**
+
+  The properties `valtimo.jwt.base64encoding` and  `valtimo.jwt.tokenValidityInSecondsForRememberMe` have been removed as they were used in a closed-source module that is no longer supported.
+
 Instructions on how to migrate to this version of Valtimo can be found [here](migration.md).
 
 ## Deprecations
