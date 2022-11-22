@@ -1,7 +1,7 @@
 # Configuring Cross Origin Resource Sharing in Valtimo.
-Cross Origin Resource Sharing, aka CORS, is a mechanism to allow access from javascript resources in the 
-browser to fetch resources from different domains then the javascript is served from. By default, browsers only allow
-javascript to fetch resources from the same domain.
+Cross Origin Resource Sharing, aka CORS, is a mechanism to allow access from Javascript resources in the 
+browser to fetch resources from different domains then the Javascript is served from. By default, browsers only allow
+Javascript to fetch resources from the same domain.
 
 The Valtimo Web module offers functionality to configure CORS in the application.properties file of the Valtimo 
 Implementation project. The following example shows the used parameters with specific domain names for the origin and
