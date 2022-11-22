@@ -81,6 +81,11 @@ The following breaking changes were introduced:
   This makes it easier to support multiple versions in the future in case of breaking changes in the REST API, without
   waiting for a new major version of Valtimo.
 
+* **Removed deprecated code**
+
+  A number of deprecated methods and classes have been removed, and as a result some implementations need to make minor
+  changes. 
+
 * **Removed JWT configuration properties**
 
   The properties `valtimo.jwt.base64encoding` and  `valtimo.jwt.tokenValidityInSecondsForRememberMe` have been removed as they were used in a closed-source module that is no longer supported.
