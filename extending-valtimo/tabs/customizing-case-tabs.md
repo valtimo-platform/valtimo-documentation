@@ -1,4 +1,4 @@
-# Customizing case tabs
+# Customizing case details tabs
 
 On the detail page of a case instance, a number of tabs are shown. These tabs - and their order - can be customized
 through the frontend code of an implementation.
