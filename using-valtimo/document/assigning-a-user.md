@@ -28,7 +28,7 @@ When this service task is reached the assignee will be set.
 ![Assign user in process](img/assign-user-in-process.png)
 
 ## Seeing the currently assigned users
-When a user has been assigned using the claim button or a process there are multiple ways this is presented. It is
+When a user has been assigned using the claim button or a process, there are multiple ways this is presented. It is
 shown on the case detail page just below the title of the page. Here it will show a label `Assigned to <user name>`.
 
 ![Assigning label on case detail page](img/assignee-label.png)
