@@ -61,6 +61,6 @@ This version has the following known issues:
 
 * **Using formAssociationService.createFormAssociation() on application startup causing the application to crash**
 
-  When form associations are created on application startup using the formAssociationService.createFormAssociation() method, these associations are duplicated. Before   the bugfix in this release these duplicated associations were added without errors. After the bugfix in this release the application will throw an exception when       creating an already existing association, causing the application to crash on startup.
+  When form associations are created on application startup, using the formAssociationService.createFormAssociation() method, these associations are duplicated. Before   the bugfix in this release these duplicated associations were added without errors. After the bugfix in this release the application will throw an exception when       creating an already existing association, causing the application to crash on startup.
   
   Solution: the correct way to add form associations is by adding [form link files](/using-valtimo/form-link/configure-task.md). Using of          formAssociationService.createFormAssociation() should be replaced with form link files.
