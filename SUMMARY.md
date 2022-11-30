@@ -22,6 +22,7 @@
     * Core
       * [Audit](valtimo-implementation/modules/core/audit.md)
       * [Camunda](valtimo-implementation/modules/core/camunda-webapps.md)
+      * [Case](valtimo-implementation/modules/core/case.md)
       * [Connector](valtimo-implementation/modules/core/connector.md)
       * [Contract](valtimo-implementation/modules/core/contract.md)
       * [Core](valtimo-implementation/modules/core/core.md)
@@ -90,7 +91,6 @@
     * [System processes](using-valtimo/process/systemprocesses.md)
   * [Upload](using-valtimo/upload/upload.md)
     * [Uploading to Documenten API with metadata](using-valtimo/upload/upload-to-documenten-api-with-metadata.md)
-  * [Case](using-valtimo/case/case.md)
 * [Extending Valtimo](extending-valtimo/extending-valtimo.md)
   * [Document](extending-valtimo/document/document.md)
     * [Assigning and unassigning a user](extending-valtimo/document/assigning-and-unassigning-a-user.md)

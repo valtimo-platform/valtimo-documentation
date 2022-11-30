@@ -19,7 +19,7 @@ The following features were added:
 
   Added a new setting on the case management page to indicate that a case type can have an assignee.
 
-  More information on case definition setting can be found [here](/using-valtimo/case/case.md).
+  More information on this case setting can be found [here](/using-valtimo/document/assigning-a-user.md#how-to-configure-cases-to-be-assignable).
 
 * **New feature2**
 
