@@ -31,9 +31,9 @@ The following features were added:
 
 The following bugs were fixed:
 
-* **Bug1**
+* **Size of collection in Dossier list**
 
-  Description of what the issue was.
+  In the Dossier list the total number of items on the page was shown instead of the actual number of Dossiers in the collection.
 
 * **Bug2**
 
