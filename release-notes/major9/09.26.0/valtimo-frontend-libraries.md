@@ -15,10 +15,11 @@ The following features were added:
   With this new property, you can either hide specific tabs that are visible by default or change their default order.
 
 
-* **New feature1**
+* **Case definition setting enables an option to set an assignee to a case on case management**
 
-  Description of the new feature goes here.
-  Also link to the page that expains the feature in greater detail.
+  Added a new setting on the case management page to indicate that a case type can have an assignee.
+
+  More information on this case setting can be found [here](/using-valtimo/document/assigning-a-user.md#how-to-configure-cases-to-be-assignable).
 
 * **New feature2**
 
