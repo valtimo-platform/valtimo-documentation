@@ -8,7 +8,7 @@ The following features were added:
 
   Case settings have been introduced. Settings such as being able to assign a user to a case can be found here.
   Additionally, case settings can be loaded from a file when the corresponding document definition is created. For more
-  information on how to create a case definition when a document definition is created, see [here](/using-valtimo/case/creating-case-settings.md)
+  information on how to create a case definition when a document definition is created, see [here](/using-valtimo/case/creating-case-settings.md).
 
 * **New feature2**
 
@@ -31,7 +31,7 @@ The following bugs were fixed:
 
 The following breaking changes were introduced:
 
-* **Breaking change1**
+* **Case settings**
 
 * **Breaking change2**
 
