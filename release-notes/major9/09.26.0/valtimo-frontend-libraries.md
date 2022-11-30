@@ -20,11 +20,12 @@ The following features were added:
   Description of the new feature goes here.
   Also link to the page that expains the feature in greater detail.
 
-* **New feature2**
+* **Number of open cases now shown in menu**
 
-  Description of the new feature goes here.
-  Also link to the page that expains the feature in greater detail.
+  The number of open/unassigned cases is now shown in the Valtimo menu. When the number of open cases changes, the
+  number in the menu automatically updated without reloading the page.
 
+  ![Open case count](img/open-case-count.png)
 
 ## Bugfixes
 
