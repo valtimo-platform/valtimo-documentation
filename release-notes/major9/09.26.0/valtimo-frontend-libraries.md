@@ -23,7 +23,7 @@ The following features were added:
 * **Number of open cases now shown in menu**
 
   The number of open/unassigned cases is now shown in the Valtimo menu. When the number of open cases changes, the
-  number in the menu automatically updated without reloading the page.
+  number in the menu is automatically updated without reloading the page.
 
   ![Open case count](img/open-case-count.png)
 
