@@ -31,9 +31,9 @@ The following features were added:
 
 The following bugs were fixed:
 
-* **Bug1**
+* **Total number of cases found in case list**
 
-  Description of what the issue was.
+  In the badge on the case list the total number of items on the page was shown instead of the actual number of cases found based on the search criteria.
 
 * **Bug2**
 
