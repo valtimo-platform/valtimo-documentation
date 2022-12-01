@@ -31,9 +31,9 @@ The following features were added:
 
 The following bugs were fixed:
 
-* **Size of collection in case list**
+* **Total number of cases found in case list**
 
-  In the case list the total number of items on the page was shown instead of the actual number of cases in the collection.
+  In the badge on the case list the total number of items on the page was shown instead of the actual number of cases found based on the search criteria.
 
 * **Bug2**
 
