@@ -10,10 +10,10 @@ The following features were added:
   Additionally, case settings can be loaded from a file when the corresponding document definition is created. For more
   information on how to create a case definition when a document definition is created, see [here](/using-valtimo/case/creating-case-settings.md).
 
-* **New feature2**
+* **Form Flow bean for completing the task**
 
-  Description of the new feature goes here.
-  Also link to the page that explains the feature in greater detail.
+  A bean for Form Flow was added to make it easier to complete a Camunda user task from within a Form Flow. More
+  information can be found [here](/using-valtimo/form-flow/form-flow-expressions.md)
 
 ## Bugfixes
 
