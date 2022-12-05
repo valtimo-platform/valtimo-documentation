@@ -28,6 +28,10 @@ The following features were added:
 
   ![Open case count](img/open-case-count.png)
 
+* **New tab 'list columns' on case management page**
+
+  Added a new separate tab on case management page to configure case list columns.
+
 ## Bugfixes
 
 The following bugs were fixed:
