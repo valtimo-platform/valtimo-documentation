@@ -86,7 +86,7 @@ No bugfixes.
 
 ## Breaking changes
 
-No breaking changes.
+A number of breaking changes have been made. Please refer to the [migration guide](migration.md) for more details.
 
 ## Deprecations
 
