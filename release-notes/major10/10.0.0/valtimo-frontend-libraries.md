@@ -17,8 +17,8 @@ The following features were added:
   
   Refer to [this page](migration.md) for instructions on how to adjust your implementation to work with Carbon.
 
-  Refer to [this page](/reference/user-interface/carbon-design-system.md) for an explanation on how the Carbon design
-  system is implemented.
+  Refer to [this page](/reference/user-interface/carbon-design-system.md) for an instructions on how to use Carbon,
+  and how to develop a custom Carbon theme.
 
 * **Dependency upgrades**
 
