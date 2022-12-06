@@ -120,10 +120,13 @@
   * [Troubleshoot](reference/troubleshoot.md)
 * [Release notes](release-notes/release-notes.md)
   * Major 9
-    * 9.25.0/5.14.0 (RC)
-      * [Valtimo backend libraries (9.25.0 RC)](release-notes/major9/09.25.0/valtimo-backend-libraries.md)
-      * [Valtimo frontend libraries (5.14.0 RC)](release-notes/major9/09.25.0/valtimo-frontend-libraries.md)
-      * [Migration](release-notes/major9/09.25.0/migration.md)
+    * 9.26.0/5.15.0 (RC)
+      * [Valtimo backend libraries (9.25.0 RC)](release-notes/major9/09.26.0/valtimo-backend-libraries.md)
+      * [Valtimo frontend libraries (5.14.0 RC)](release-notes/major9/09.26.0/valtimo-frontend-libraries.md)
+      * [Migration](release-notes/major9/09.26.0/migration.md)
+    * 9.25.0/5.14.0
+      * [Valtimo backend libraries (9.25.0)](release-notes/major9/09.25.0/valtimo-backend-libraries.md)
+      * [Valtimo frontend libraries (5.14.0)](release-notes/major9/09.25.0/valtimo-frontend-libraries.md)
     * 9.24.0/5.13.0
       * [Valtimo backend libraries (9.24.0)](release-notes/major9/09.24.0/valtimo-backend-libraries.md)
       * [Valtimo frontend libraries (5.13.0)](release-notes/major9/09.24.0/valtimo-frontend-libraries.md)
