@@ -10,10 +10,9 @@ The following features were added:
   Additionally, case settings can be loaded from a file when the corresponding document definition is created. For more
   information on how to create a case definition when a document definition is created, see [here](/using-valtimo/case/creating-case-settings.md).
 
-* **Form flow bean for completing an associated task**
+* **Smart documents logs improvements**
 
-  A bean for Form Flow was added to make it easier to complete a Camunda user task from within a Form Flow. More
-  information can be found [here](/references/modules/form-flow.md#form-flow-spel-beans)
+  Added more logging for the smart documents connector so that the error messages give more specific information.
 
 ## Bugfixes
 
@@ -33,32 +32,14 @@ The following breaking changes were introduced:
 
 * **Case settings**
 
-* **Breaking change2**
+  In order to support case settings, a new module `case` was introduced which is required to be used in Valtimo applications.
 
 Instructions on how to migrate to this version of Valtimo can be found [here](migration.md).
 
 ## Deprecations
 
-The following was deprecated:
-
-* **Deprecation1**
-
-  X was deprecated and is replaced with Y.
-
-* **Deprecation2**
-
-  X was deprecated and is replaced with Y.
-
-Instructions on how to migrate to this version of Valtimo can be found [here](migration.md).
+No new deprecations.
 
 ## Known issues
 
-This version has the following known issues:
-
-* **Issue1**
-  * Discovered in version x.x.x
-  * Describe what can be done to work around the issue
-
-* **Issue2**
-  * Discovered in version x.x.x
-  * Describe what can be done to work around the issue
+No new known issues.
