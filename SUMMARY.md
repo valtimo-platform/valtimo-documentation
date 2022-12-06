@@ -118,6 +118,7 @@
     * [Form links](reference/modules/form-link.md)
   * [User interface](reference/user-interface/user-interface.md)
     * [Design philosophy](reference/user-interface/design-philosophy.md)
+    * [Carbon design system](reference/user-interface/carbon-design-system.md)
   * [Troubleshoot](reference/troubleshoot.md)
 * Release notes
   * 10.x.x
