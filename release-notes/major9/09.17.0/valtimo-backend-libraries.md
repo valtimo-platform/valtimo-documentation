@@ -56,8 +56,11 @@ This version has the following known issues:
 
 * **Multiple form associations on process definition**
 
-  When multiple start forms are associated with a single process definition the user is unable to start a new case of
+  When multiple start forms are associated with a single process definition, the user is unable to start a new case of
   that specific type.
+
+* **Updating process variables from a form.io submission**  
+  Only process variables of type `String` and `Array<String>` are currently supported by the pv. form.io prefix. Any other types will be set to a null value.
 
 * **New required application property**
 

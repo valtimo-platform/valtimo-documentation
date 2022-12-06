@@ -1,4 +1,4 @@
-# Frontend libraries 5.10.0 (RC)
+# Frontend libraries 5.10.0
 
 ## New Features
 
@@ -39,9 +39,8 @@ The following features were added:
 * **New datepicker component**
 
   Added a new date picker component to `@valtimo/user-interface`: `v-date-picker`. It is based on [flatpickr](https://flatpickr.js.org/).
-  If this component is included anywhere in an implementation, add `"node_modules/flatpickr/dist/flatpickr.css"` to the
-  `styles` array in `angular.json` to avoid issues.
-
+  When using this component, see the [migration notes](/release-notes/major9/09.21.0/migration.md) on how to upgrade.
+  
 * **Added new plugin actions to Documenten API and Zaken API plugin**
 
   New actions have been added to the Documenten API and Zaken API plugins: **Link uploaded document to zaak** and
@@ -93,3 +92,14 @@ This version has the following known issues:
     tables shows multiple entries.
   * It is not possible to create a new DMN table from scratch from the ui.
   * It is not possible to edit the key of a DMN table.
+
+
+* **Missing flatpickr dependency**
+  
+  In the front-end libraries version 5.10.0, a new datepicker component has been added to `@valtimo/user-interface`. This
+  component has a dependency on `flatpickr`, however, this was not included in the dependencies of
+  `@valtimo/user-interface`. 
+  This dependency has been added in [Valtimo frontend libraries 5.12.0](/release-notes/major9/09.23.0/valtimo-frontend-libraries.md).
+
+  To fix this for now, add the latest version of `flatpickr` to the dependencies of the implementation 
+  by running `npm install flatpickr`. Also see the [migration notes](/release-notes/major9/09.21.0/migration.md) on this topic.

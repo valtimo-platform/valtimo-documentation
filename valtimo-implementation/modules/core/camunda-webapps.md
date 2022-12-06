@@ -3,8 +3,8 @@
 ## Configuring camunda webapps
 
 By default, Valtimo includes the Camunda webapps, including the [cockpit](https://camunda.com/platform-7/cockpit/). 
-This is accessible by using the path `/camunda/app` on the domain where Valtimo is hosted. 
-e.g. `http://example.valtimo.com/camunda/app`
+This is accessible by using the path `/camunda/app/` on the domain where Valtimo is hosted. 
+e.g. `http://example.valtimo.com/camunda/app/`
 
 ### Configuring an admin user
 

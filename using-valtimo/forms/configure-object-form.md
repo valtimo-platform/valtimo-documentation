@@ -6,7 +6,7 @@ will be used when opening the details of an object from the
 
 Which form is used to display an object is determined based on the name of the form. The name of the form needs to be
 the name of the objecttype followed by the `.editform` suffix. For example, to create a form to display objects of type
-'Monument' the form name would need to be `Monument.editform`. The form name is case insensitive.
+'Monument' the form name would need to be `Monument.editform`. The form name is case-insensitive.
 
 When adding fields to the form the field do **not** need to use the `zaakobject` prefix, as opposed to 
 [editing zaak objects in a task form](/reference/modules/form.md#zaakobjecten). The object data is the root used to

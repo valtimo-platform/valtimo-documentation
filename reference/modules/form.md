@@ -46,7 +46,7 @@ In order to use this type the following plugins have to be configured:
 
 References a property in a Objecten API object referenced as 'zaakobject'. The field expression contains both the name 
 of the 'objecttype' and a JSON Pointer to the property within the JSON store in the zaakobject. There can only be one
-object of the requested type linked to the zaak as zaakobject. If no object is found, or multiple objects are found
+object of the requested type linked to the zaak as zaakobject. If no or multiple objects are found,
 an exception will be thrown when loading the form. When the object is found, the JSON Pointer is used to find the
 property in the JSON stored in the `data` field of the object.
 

@@ -1,41 +1,40 @@
-# Available modules
+# Modules
 
 ## Core
 
 ### Audit
 
 Audit provides a framework to record and store actions performed by users. Certain actions in the other modules of
-Valtimo, like completing a task or uploading a file will be audited by default. It is possible to audit other actions
-by using this feature in the implementation code. The audit trail is available by case to show the history of
-actions for that case.
+Valtimo - like completing a task or uploading a file - are audited by default. It is possible to audit other actions
+by using this feature in the implementation code. The audit trail is available for each case to show the history of
+actions of that case.
 
 ### Connector
 
 Connectors are Valtimo configurable components that can be used to connect to external systems. This module provides a
-framework to create, configure, and use connectors. Certain Valtimo modules include their own connectors that will be
-automatically available for configuration when starting a Valtimo instance.
+framework to create, configure, and use connectors. Certain Valtimo modules include their own connectors that become
+available automatically for configuration when starting a Valtimo instance.
 
 ### Contract
 
 Contract contains certain interfaces and events that Valtimo uses in several other modules. Apart from this, contract
 sanitizes endpoint output when exceptions occur. A liquibase runner is available that allows other modules to define
-liquibase configuration that is run on startup. Finally, contract include several helper classes, like the
+liquibase configuration that is run on startup. Finally, Contract includes several helper classes, like the
 `QueryDialectHelper` bean that can be used in criteria queries to add JSON column clauses to the query.
 
 ### Core
 
-Core contains and builds upon the Camunda process engine that enables Valtimo to run processes. Several endpoint and
-functions are available that provide task and process data. It also includes choice fields. A generic way to create
+Core contains and builds upon the Camunda process engine that enables Valtimo to run processes. Several endpoints and
+functions are available that provide task data and process data. It also includes choice fields. A generic way to create
 lists of values, that can be used by the application. Some security features used to control access to any Valtimo
 endpoints are also part of this module.
 
 ### Documents
 
 A document is the starting point of the case and the main data storage for that case. One or more processes can be
-linked to a case, which allows for the document to be created when the case is started.
-The content of the document is defined in a document definition, in JSON schema.
-Users interact with the document via user tasks; document data can be loaded into task forms, and user input can be
-stored in the document after completing a task.
+linked to a case, which allows for the document to be created when the case is started. The content of the document is 
+defined in a document definition, in JSON schema. Users interact with the document via user tasks; document data can be 
+loaded into task forms, and user input can be stored in the document after completing a task.
 
 ### Document generation
 
@@ -44,19 +43,23 @@ needs to be provided by another module, or the application that this is used in.
 
 ### Flowmailer
 
-[Flowmailer](https://flowmailer.com/) is a SaaS mail solution that Valtimo can use to send transactional mail. By 
-including this module in a Valtimo application it will be automatically set as the mail implementation to use.
+[Flowmailer](https://flowmailer.com/) is a SaaS email solution that Valtimo uses to send transactional emails. By 
+including this module in a Valtimo application, it will be used automatically as the email solution of the application.
 
 ### Form
 
 Form allows the use of Form.IO forms in Valtimo. Forms can be managed by using the provided endpoints, or loaded from
-a configuration file at application startup. These forms can be used by other modules to complete tasks for example.
+a configuration file at application startup. These forms can be used by other modules to complete tasks, for example.
 
 ### Form flow
 
-Form flow allows users to create a sequence of forms, similar to a flow chart or form wizard. A form flow definition
+Form flow allows users to create a sequence of forms, similar to a flow chart or a form wizard. A form flow definition
 contains the configuration for each step, what the subsequent steps are, and the conditions under which they can be
-reached.
+reached. A form flow can be linked to a task, which consequently allows for more forms for the same task. Form flow
+supports forwards and backwards movement between steps without completing the task, reducing complexity in a BPMN model.
+
+For information on how to create form flow definitions, see
+[here](/using-valtimo/form-flow/create-form-flow-definition.md).
 
 ### Form flow valtimo
 
@@ -66,12 +69,12 @@ module in a Valtimo application.
 ### Form link
 
 Form link manages the link between a task or start event in a process and the form by which they can be completed.
-Configuring this can be done both by configuration file, and through the REST API. Form linked this way also need
+Configuring this can be done both by configuration file and through the REST API. Form linked this way also need
 to be submitted to the submission endpoint in this module.
 
 ### Keycloak IAM
 
-Keycloak IAM enables Valtimo to [Keycloak](https://www.keycloak.org/) as the OAuth authentication server. When using
+Keycloak IAM enables Valtimo to use [Keycloak](https://www.keycloak.org/) as the OAuth authentication server. When using
 this module, the default keycloak JWT tokens can be used. It also allows Valtimo to get users from Keycloak for features
 that require this (e.g. task assignment).
 
@@ -83,21 +86,21 @@ document. This does *not* generate an actual document, but writes the calls to t
 
 ### Local mail
 
-The local mail module is a stub implementation of the mail module. It is used as a local test implementation that 
-allows the application to start without having to provide an actual implementation. This does *not* send an actual 
-mail.
+The local mail module is a stub implementation of the 'mail' module. It is used as a local test implementation 
+that allows the application to start without having to provide an actual implementation. This does *not* actually send 
+emails.
 
 ### Mail
 
-Mail describes how valtimo sends mail in a consistent way. Mails are filtered based on configured filters. For example, 
-mail to blacklisted addresses can be filtered out. Dispatching the email after filtering is facilitated by another 
-module.
+Mail describes how Valtimo sends emails in a consistent way. Emails are filtered based on configured filters. For 
+example, emails to blacklisted addresses can be filtered out. Dispatching the email after filtering is facilitated by 
+another module.
 
 ### Mandrill
 
-Mailchimp is a SaaS solution for sending email. Mailchimp is the name of the 
+Mailchimp is a SaaS solution for sending emails. Mailchimp is the name of the 
 [transactional mail addon](https://mailchimp.com/features/transactional-email/) that Mailchimp provides. The Valtimo
-Mandrill module provides a mail implementation that uses Mandrill to send mail.
+Mandrill module provides a mail implementation that uses Mandrill to send emails.
 
 ### Milestones
 
@@ -105,12 +108,17 @@ The milestones module offers a framework to keep track of how a process is progr
 in the admin interface, and can be linked to specific tasks of a process. When that task is completed,
 the corresponding milestone is reached.
 
+### Notes
+
+The notes module offers users the possibility to add notes to a case. A note that is added to the case can be read by
+other users that open that case. This makes it easier to collaborate on a case.
+
 ### Plugins
 
 Plugins are extensions on the Valtimo platform. These are often connections to external
-services, such as transactional email and  generating documents. Some plugins are provided
+services, such as transactional email and  document generation. Some plugins are provided
 by the platform, but developers can create their own plugins as well. Plugins can be 
-configured without writing code, and can be used during BPMN processes. A more in-depth
+configured without writing code, and can be used in BPMN processes. A more in-depth
 description can be found [here](plugin-introduction.md).
 
 ### Process document
@@ -217,8 +225,8 @@ This module offers a plugin which can connect to this service to generate docume
 
 ### Wordpress mail
 
-The wordpress mail plugin is a plugin for the Wordpress CMS that provides a REST API for sending mail. This module 
-includes an implementation of the mail module that uses a connector to send mail through this API.
+The Wordpress mail plugin is a plugin for the Wordpress CMS that provides a REST API for sending emails. This module
+includes an implementation of the 'mail' module, which uses a connector to send emails through this API.
 
 ### Zaken API
 

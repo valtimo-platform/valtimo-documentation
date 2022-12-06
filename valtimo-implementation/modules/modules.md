@@ -12,7 +12,7 @@
   * [Resource](core/resource.md)
   * [Temporary resource storage](core/temporary-resource-storage.md)
   * [Value resolvers](core/value-resolver.md)
-  * [Web](core/web.md)
+  * [Web](core/web/web.md)
 * ZGW
   * [Documenten API](zgw/documenten-api.md)
   * [Objecten API](zgw/objecten-api.md)
