@@ -1,4 +1,4 @@
-# Frontend libraries x.x.x
+# Frontend libraries 10.1.0
 
 ## New Features
 
