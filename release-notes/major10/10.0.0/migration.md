@@ -193,3 +193,41 @@ In addition to this, the following classes were removed. No replacements were ad
 |:----------------------------------|:-----------------------------------------------------------------------------------------------------------------------|
 | `AuthorityHourlyRateChangedEvent` | Hourly rates were removed.                                                                                             |
 | `ExternalFormFieldType`           | Enum was removed to increase extendability. See [here](/reference/modules/form.md) for a list of external form fields. | 
+
+* **Carbon design system**
+
+  Scope: Front-end
+
+  The user interface of Valtimo will now use the Carbon design system. In order to make this work in your implementation,
+  first make sure the `@valtimo/*` dependencies in `package.json` are version 10 or higher and run `npm install`.
+  Your `node_modules` folder should now include the packages `@carbon/icons`, `carbon-components` and
+  `carbon-components-angular`.
+
+  Next, add the follow entries to the `styles` array in `angular.json` in your project root:
+  `"node_modules/@valtimo/components/assets/css/carbon.scss"` and 
+  `"node_modules/@valtimo/components/assets/css/carbon-beagle-compatibility.scss"`.
+
+  The environment files (of type `ValtimoConfig`) now support an entry `applicationTitle`. This can be left empty and
+  defaults to Valtimo. If another value is specified, the page titles, tab titles and breadcrumbs will make use of this
+  new title.
+
+  The logos of implementations are now specified through a Base64 string in the environment file, either under the key
+  `logoSvgBase64` or `logoPngBase64`, which means the logo can either be in the `.png` format or the `.svg` format,
+  encoded in Base64.
+  
+  To use your own logo, first make sure to resize it to an optimal resolution if it's a `.png` file (a height of about
+  30px is recommended). If it is a `.svg` image, you might want to make use of [an optimization tool](https://jakearchibald.github.io/svgomg/)
+  to reduce its file size and complexity.
+
+  Next, create a file in the same folder as your environment files: `logo.ts`. From this file, export a string containing
+  your base64 encoded logo. Use [this page](https://base64.guru/converter/encode/image/svg) to encode `.svg` to a 
+  Base64 string. Use [this page](https://base64.guru/converter/encode/image/png) to encode `.png` to Base64. Make sure
+  the option 'Plain text -- just the Base64' value is selected. The resulting Base64 string should not be prefixed with
+  `data:`.
+
+  Finally, import this string value containing a Base64 image in your environment file and specify it under the key
+  `logoSvgBase64` for `.svg` images, or under the key `logoPngBase64` for `.png` images.
+
+  The functionality to highlight the active menu item in the Carbon sidebar depends on the `sequence` numbers of the
+  menu items under `menu.menuItems` in your environment file(s). Make sure the sequence numbers the menu items, and
+  child menu items, are consecutive. No menu items on the same level should have the same sequence numbers
