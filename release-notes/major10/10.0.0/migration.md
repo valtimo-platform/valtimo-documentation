@@ -229,5 +229,5 @@ In addition to this, the following classes were removed. No replacements were ad
   `logoSvgBase64` for `.svg` images, or under the key `logoPngBase64` for `.png` images.
 
   The functionality to highlight the active menu item in the Carbon sidebar depends on the `sequence` numbers of the
-  menu items under `menu.menuItems` in your environment file(s). Make sure the sequence numbers the menu items, and
+  menu items under `menu.menuItems` in your environment file(s). Make sure the sequence numbers of menu items, and
   child menu items, are consecutive. No menu items on the same level should have the same sequence numbers
