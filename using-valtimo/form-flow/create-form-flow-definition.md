@@ -136,5 +136,80 @@ be set. This refers to the key of the form. For more information on step types, 
 ## Expressions
 
 Form flow supports Spring Expression Language (SpEL) expressions to allow for more
-complex actions when a step is opened or completed. More information can be
-found [here](/form-flow-expressions.md)
+complex actions when a step is opened or completed. Expressions can be recognized by the surrounding
+`${ }` characters. The following additional properties are supported for steps:
+
+* `onBack`. Triggers the expressions when navigating to the previous step, e.g. to remove data from a document.
+
+* `onOpen`. Triggers the expressions when the step is opened, e.g. to retrieve external data.
+
+* `onComplete`. Triggers the expressions when the step is complete, e.g. to store the results in a 
+document.
+
+Each of these properties supports more than one expression, e.g. when a step is opened, external data
+from more than one source is retrieved. These expressions are evaluated in order.
+
+Valtimo provides access to certain variables in the SpEL context, e.g. what the current step is. Which properties are
+available can be found [here](/reference/modules/form-flow.md#available-properties-in-spel-context)
+
+```json
+{
+    "startStep": "start",
+    "steps": [
+        {
+            "key": "start",
+            "type": {
+                "name": "form",
+                "properties":  {
+                    "definition": "start-form"
+                }
+            },
+            "onOpen": ["${someService.retrieveData(additionalProperties)}"],
+            "nextStep": "step2"
+        },
+        {
+            "key": "step2",
+            "type": {
+                "name": "form",
+                "properties":  {
+                    "definition": "step2-form"
+                }
+            },
+            "onBack": ["${someService.removeData(additionalProperties)}"],
+            "nextSteps": [
+                {
+                    "step": "step3"
+                },
+                {
+                    "step": "end"
+                }
+           ]
+        },
+        {
+            "key": "step3",
+            "type": {
+                "name": "form",
+                "properties":  {
+                    "definition": "step3-form"
+                }
+            },
+            "nextStep": "end"
+        },
+        {
+            "key": "end",
+            "type": {
+                "name": "form",
+                "properties":  {
+                    "definition": "end-form"
+                }
+            },
+            "onComplete": ["valtimoFormFlow.completeTask(additionalProperties, step.submissionData, {'doc:/':''})"]
+        }
+    ]
+}
+```
+
+By default, SpEL allows access to every Spring bean from inside expressions. For security reasons,
+this has been changed to a whitelist instead. More information on how to whitelist Spring beans is
+available [here](/extending-valtimo/form-flow/whitelist-spring-bean.md) and more information on SpEL
+can be found [here](https://docs.spring.io/spring-framework/docs/current/reference/html/core.html#expressions).
