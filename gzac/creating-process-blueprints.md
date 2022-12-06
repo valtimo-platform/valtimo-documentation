@@ -111,7 +111,7 @@ git status
 Commit the changes to the local repository:
 ```
 git add .
-git commit . 'Added a blueprint: the-new-blueprint-name'
+git commit -m 'Added a blueprint: the-new-blueprint-name'
 ```
 Push the code to the remote branch:
 ```
