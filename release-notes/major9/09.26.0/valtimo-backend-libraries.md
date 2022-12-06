@@ -10,6 +10,10 @@ The following features were added:
   Additionally, case settings can be loaded from a file when the corresponding document definition is created. For more
   information on how to create a case definition when a document definition is created, see [here](/using-valtimo/case/creating-case-settings.md).
 
+* **Smart documents logs improvements**
+
+  Added more logging for the smart documents connector so that the error messages give more specific information.
+
 ## Bugfixes
 
 The following bugs were fixed:
