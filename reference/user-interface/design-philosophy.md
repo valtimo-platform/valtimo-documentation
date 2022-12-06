@@ -4,6 +4,9 @@ In valtimo-frontend-libraries major version 5, a new library was introduced: `@v
 It aims to provide a set of components which will give Valtimo a clean and consistent look and feel.
 The initial set of components are based on [this Figma design](https://www.figma.com/file/Tl6wqdvPDTBi1LLofWxIiz/Valtimo-screens---nieuwe-opzet).
 
+Note: as of valtimo-front-end-libraries major version 10, the development and use of this library has been discontinued.
+For new features, the [Carbon design system](carbon-design-system.md) will be used.
+
 ## Design tokens
 
 All main design aspects - like color, typography, and spacing - are stored in CSS variables, which are then referenced

@@ -9,6 +9,17 @@ The following features were added:
   Angular has been upgraded from version 13 to version 14. [This version supports many new features](https://blog.angular.io/angular-v14-is-now-available-391a6db736af).
   To be able to use the libraries with this new version, please refer to [the migration page for this release](migration.md).
 
+* **Carbon design system**
+
+  The interface shell (top bar, sidebars, page layout) has been refactored to make use of the [Carbon design system](https://carbondesignsystem.com/).
+  Future features will be built using Carbon components, and existing components will be gradually replaced by Carbon
+  components. Implementations are also recommended to make use of Carbon components.
+  
+  Refer to [this page](migration.md) for instructions on how to adjust your implementation to work with Carbon.
+
+  Refer to [this page](/reference/user-interface/carbon-design-system.md) for an explanation on how the Carbon design
+  system is implemented.
+
 * **Dependency upgrades**
 
   Many dependencies in the libraries have been upgraded to the latest versions. To be able to use the libraries with
