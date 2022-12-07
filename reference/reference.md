@@ -7,5 +7,6 @@ This section is intended for people who need to know what options are available 
 developers who want to extend features in valtimo and need to know what is available. 
 
 * [Feature toggles](./feature-toggles/feature-toggles.md)
+* [Modules](./modules/modules.md)
 * [User interface](./user-interface/user-interface.md)
 * [Troubleshoot](troubleshoot.md)
