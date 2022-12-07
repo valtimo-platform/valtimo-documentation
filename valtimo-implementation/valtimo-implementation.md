@@ -10,3 +10,4 @@ or [gradle](https://gradle.org/) is assumed.
 * [Compatibility matrix](compatibility-matrix.md)
 * [Database support](database-support.md)
 * [Modules](modules/modules.md)
+* [Process blueprints](process-blueprints.md)

@@ -58,6 +58,8 @@
       * [SmartDocuments](valtimo-implementation/modules/zgw/smartdocuments.md)
       * [Wordpress mail](valtimo-implementation/modules/zgw/wordpress-mail.md)
       * [Zaken API](valtimo-implementation/modules/zgw/zaken-api.md)
+  * [Process blueprints](valtimo-implementation/process-blueprints.md)
+    * [How to import a process blueprint](valtimo-implementation/process-blueprints.md#how-to-import-a-process-blueprint)
 * [Using Valtimo](using-valtimo/using-valtimo.md)
   * [Documents](using-valtimo/document/document.md)
     * [Assigning a user to a document](using-valtimo/document/assigning-a-user.md)
