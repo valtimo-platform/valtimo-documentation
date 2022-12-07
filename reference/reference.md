@@ -4,7 +4,7 @@ This section gives a list of reference materials for various parts of Valtimo (e
 Valtimo).
 
 This section is intended for people who need to know what options are available for configuration, as well as 
-developers who want to extend features in valtimo and need to know what is available. 
+developers who want to extend features in Valtimo and need to know what is available. 
 
 * [Feature toggles](./feature-toggles/feature-toggles.md)
 * [User interface](./user-interface/user-interface.md)
