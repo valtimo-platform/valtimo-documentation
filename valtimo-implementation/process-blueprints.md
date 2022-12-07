@@ -6,6 +6,8 @@ back-end code. These blueprints can be found on GitHub [here](https://github.com
 
 How to create a process blueprint from an existing project can be found [here](TODO).
 
+### Prerequisites
+
 This page assumes you have the following knowledge:
 * How to add dependencies through Gradle/Maven.
 * How to use Git.
@@ -33,13 +35,14 @@ This is the general structure of a blueprint:
 |   |   |   |       |-- bpmn
 |   |   |   |       |-- dmn
 |   |   |   |       |-- config
-|   |   |   |         |-- document
-|   |   |   |         |-- form
-|   |   |   |         |-- form-flow
-|   |   |   |         |-- form-link
-|   |   |   |         |-- liquibase
-|   |   |   |         |-- proces-document-link
-|   |   |   |         |-- application.yml
+|   |   |   |           |-- document
+|   |   |   |           |-- form
+|   |   |   |           |-- form-flow
+|   |   |   |           |-- form-link
+|   |   |   |           |-- liquibase
+|   |   |   |           |-- proces-document-link
+|   |   |   |           |-- application.yml
+|   |   |   |-- build.gradle/pom.xml
 |   |   |-- frontend
 |   |   |   |-- app
 |   |   |   |-- assets
@@ -56,8 +59,8 @@ with the `application.yml` you already have.
 * `build.gradle` or `pom.xml`. This only includes the dependencies required by the process blueprint. These should be
 merged with the `build.gradle` or `pom.xml` you already have.
 
-Almost all files in `frontend` can be copied into the front-end of an implementation project. The exceptions is:
-*`package.json` . This only includes the dependencies required by the process blueprint. These shhould be merged with
+Almost all files in `frontend` can be copied into the front-end of an implementation project. The exceptions are:
+*`package.json`. This only includes the dependencies required by the process blueprint. These should be merged with
 the `package.json` you already have.
 
 ### Configuring and customizing the process blueprint
