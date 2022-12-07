@@ -61,6 +61,7 @@
       * [Zaken API](valtimo-implementation/modules/zgw/zaken-api.md)
   * [Process blueprints](valtimo-implementation/process-blueprints.md)
     * [How to import a process blueprint](valtimo-implementation/process-blueprints.md#how-to-import-a-process-blueprint)
+    * [Creating process blueprints for GZAC](valtimo-implementation/process-blueprints.md#creating-process-blueprints-for-gzac)
 * [Using Valtimo](using-valtimo/using-valtimo.md)
   * [Documents](using-valtimo/document/document.md)
     * [Assigning a user to a document](using-valtimo/document/assigning-a-user.md)

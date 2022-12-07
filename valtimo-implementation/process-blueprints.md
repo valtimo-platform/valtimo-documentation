@@ -4,7 +4,7 @@ Process blueprints are a collection of files, that form a starting point to kick
 consist of one or more BPMNs, a document definition, forms, as well as less common things such as custom front-end and
 back-end code. These blueprints can be found on GitHub [here](https://github.com/generiekzaakafhandelcomponent/Basisprocessen).
 
-How to create a process blueprint from an existing project can be found [here](TODO).
+How to create a process blueprint from an existing project can be found [here](#creating-process-blueprints-for-gzac).
 
 ### Prerequisites
 
@@ -50,6 +50,7 @@ This is the general structure of a blueprint:
 |   |   |   |-- package.json
 |   |   |-- README.md
 |   |-- ...
+|-- CONTRIBUTING.md
 |-- README.md
 ```
 
@@ -77,3 +78,99 @@ be configured for the appropriate tasks as well.
 * If there are form flows, are all the forms it references present?
 
 As always, be sure to follow the specific instructions that are included with the process blueprint.
+
+## Creating process blueprints for GZAC
+It is encouraged to share processes that can potentially be used by other municipalities. Another municipality can then
+implement the same process with minimal effort.
+
+### Privacy and intellectual property
+Sharing these processes is done through a public repository. This has some effects that a publisher should know before
+you continue.
+
+Shared resources should not contain:
+* any privacy- or security-sensitive information like:
+    * Names, addresses or other data of real people.
+    * Credentials of users or services
+* the municipality name in code, labels, etc.
+* licensed code that conflicts with the repository code
+
+All submitted code will inherit the license of this repository. It is up to the publisher to include a copyright notice
+that is not in conflict with the license.
+
+### Adding a process blueprint to the git repository
+This is a step-by-step guide on how to submit a process blueprint to the git repository.
+
+#### Checkout the latest code
+You can find the latest version of the repository [here](https://github.com/generiekzaakafhandelcomponent/Basisprocessen)
+
+After checking out the code, the folder structure should look similar to this:
+```
+|-- blueprints
+|   |-- [name of the blueprint]
+|   |   |-- backend
+|   |   |   |-- main
+|   |   |   |   |-- java
+|   |   |   |   |-- kotlin
+|   |   |   |   |-- resources
+|   |   |   |       |-- bpmn
+|   |   |   |       |-- dmn
+|   |   |   |       |-- config
+|   |   |   |           |-- document
+|   |   |   |           |-- form
+|   |   |   |           |-- form-flow
+|   |   |   |           |-- form-link
+|   |   |   |           |-- liquibase
+|   |   |   |           |-- proces-document-link
+|   |   |   |           |-- application.yml
+|   |   |   |-- build.gradle/pom.xml
+|   |   |-- frontend
+|   |   |   |-- app
+|   |   |   |-- assets
+|   |   |   |-- environments
+|   |   |   |-- package.json
+|   |   |-- README.md
+|   |-- ...
+|-- CONTRIBUTING.md
+|-- README.md
+```
+
+#### Preparing your files
+Before copying the files from the source project into the blueprints project, consider the following:
+- Create a separate branch in your source project in which the blueprint can be prepared.
+- Remove all code that does not adhere to the [Privacy and intellectual property](#privacy-and-intellectual-property)
+guidelines.
+- Are there any references to project specific code (e.g. code that cannot be used by other municipalities)?
+  - Are there forms that contain municipality specific fields?
+  - Are there form flows that rely on project specific code?
+  - Are there tasks in your process(es) that rely on project specific code?
+- Are there plugins that should be configured to use this process blueprint? Which tasks need to be configured via
+process links?
+- Are there dependencies that are needed (both in front-end and back-end) that are required for this specific process
+  blueprint?
+  - Consider setting up Valtimo dependencies in a more generic way(e.g.
+`implementation "com.ritense.valtimo:contactmoment:${valtimo_version}"`), to make it easier to specify versions for
+modules that share a version.
+- Are there any application specific properties that need to be set (e.g. in `application.yml` for back-end)?
+
+If some code cannot be shared, please provide an empty or simplified implementation in the code.
+
+#### Write documentation
+Every blueprint should include a README.md covering the following topics:
+* A summary of the process, including a visual representation of it.
+* Technical notes
+  * Which version of Valtimo has been tested with.
+  * Which versions for plugins this was tested with.
+* Instructions on how to implement the process blueprint for an implementation project. Consider the following:
+  * Where to copy code to.
+  * Code/tasks/forms that should be implemented.
+  * Plugins that need to be configured.
+  * Tasks that need to be configured (e.g. via process links).
+  * Reliance on external services (e.g. OpenZaak).
+  * How to use the process blueprint.
+
+#### Copy your files
+1. create a new folder in the `blueprints` folder of the blueprints project with the name of your process blueprint.
+2. copy all files related to the new blueprint to the newly created folder.
+    * Please adhere to the given folder structure.
+    * Only include files or folders that are specific for this blueprint.
+3. Create a pull request according to the contributing page found [here](https://github.com/generiekzaakafhandelcomponent/Basisprocessen/blob/feature/generieke-zaak/CONTRIBUTING.md).
