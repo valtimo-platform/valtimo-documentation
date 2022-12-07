@@ -88,11 +88,11 @@ Sharing these processes is done through a public repository. This has some effec
 you continue.
 
 Shared resources should not contain:
-* any privacy- or security-sensitive information like:
+* Any privacy- or security-sensitive information like:
     * Names, addresses or other data of real people.
     * Credentials of users or services
-* the municipality name in code, labels, etc.
-* licensed code that conflicts with the repository code
+* The municipality name in code, labels, etc.
+* Licensed code that conflicts with the repository code.
 
 All submitted code will inherit the license of this repository. It is up to the publisher to include a copyright notice
 that is not in conflict with the license.
@@ -169,8 +169,8 @@ Every blueprint should include a README.md covering the following topics:
   * How to use the process blueprint.
 
 #### Copy your files
-1. create a new folder in the `blueprints` folder of the blueprints project with the name of your process blueprint.
-2. copy all files related to the new blueprint to the newly created folder.
+1. Create a new folder in the `blueprints` folder of the blueprints project with the name of your process blueprint.
+2. Copy all files related to the new blueprint to the newly created folder.
     * Please adhere to the given folder structure.
     * Only include files or folders that are specific for this blueprint.
 3. Create a pull request according to the contributing page found [here](https://github.com/generiekzaakafhandelcomponent/Basisprocessen/blob/feature/generieke-zaak/CONTRIBUTING.md).
