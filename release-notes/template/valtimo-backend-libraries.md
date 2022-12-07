@@ -6,7 +6,7 @@ The following features were added:
 
 * **New feature1**
 
-  Description of the new feature goes here. 
+  Description of the new feature goes here.
   Also link to the page that explains the feature in greater detail.
 
 * **New feature2**
