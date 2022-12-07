@@ -1,7 +1,7 @@
-# Using the Object Token Auhentication Plugin
+# Using the Object Token Authentication Plugin
 
-The Object Token Auhentication plugin is used to provide authentication for ZGW (Zaakgericht Werken) plugins that connect to APIs which 
-use a token as authentication. Currently the plugins that this plugin can provide authentication for are the following:
+The Object Token Authentication plugin is used to provide authentication for ZGW (Zaakgericht Werken) plugins that connect to APIs which 
+use a token as authentication. Currently, the plugins that this plugin can provide authentication for are the following:
 
 - [Objecten API](/using-valtimo/plugin/objecten-api/configure-objecten-api-plugin.md)
 - [Objecttypen API](/using-valtimo/plugin/objecttypen-api/configure-objecttypen-api-plugin.md)

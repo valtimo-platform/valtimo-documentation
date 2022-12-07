@@ -1,14 +1,14 @@
 # How to link a form to a task
 
 There are two ways to connect a form to a task, with a preliminary step to ensure the form can be
-found. What this preliminary step is depends on the type of form that should be linked to a task.
+found. What this preliminary step is, depends on the type of form that should be linked to a task.
 
 ## Configuring a form link through the UI
 
 To create a form link for a start event or user task, the following steps are necessary:
 
-1. In the admin menu, go to "Process links". This shows a  select box, specifying which process and
-   version is being configured, as well as a diagram for the current selection.
+1. In the Admin menu, go to "Process links". This shows a select box, specifying which process and
+   version are being configured, as well as a diagram for the current selection.
 2. Select the process and version that should be configured.
 3. Select a start event or user task.
 4. Select the type of form link and follow the specific instructions.

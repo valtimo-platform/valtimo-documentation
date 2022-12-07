@@ -1,8 +1,8 @@
 # How to refer to external data from a form
 
-When creating a form, it can be beneficial to retrieve data which is not normally
+When creating a form, it can be beneficial to retrieve data that is not normally
 accessible from within a form. Form field data resolvers are used to access this
-data. These expose prefixes which will be used when the form is prefilled by Valtimo (e.g. when
+data. These expose prefixes that are used when the form is prefilled by Valtimo (e.g. when
 a form is displayed as part of a user task).
 
 Below is an example of how to access external data using a form field data resolver. This assumes

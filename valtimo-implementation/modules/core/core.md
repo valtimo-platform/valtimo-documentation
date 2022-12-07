@@ -28,7 +28,7 @@ dependencies {
 ## Configuration
 
 In order to run the web module, several properties need to be configured. The bare minimum that has to be added to the
-application properties are the following:
+application properties is the following:
 
 #### **`application.yml`**
 ```yaml
@@ -39,4 +39,3 @@ valtimo:
     tokenValidityInSecondsForRememberMe: 2592000
     secret: "secret-goes-here"
 ```
- 

@@ -13,7 +13,7 @@ to `true` on the model itself under the `Extensions` tab.
 
 ## Make system process updatable
 By default, system processes are marked as read-only. To override this, a property has to be set 
-in the `application.yml` of the backend implementation. The property is called
+in the `application.yml` of the back-end implementation. The property is called
 `valtimo.process.systemProcessUpdatable` and this should have the value `true`. The default value of
 this property is `false`.
 

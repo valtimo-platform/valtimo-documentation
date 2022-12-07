@@ -42,11 +42,11 @@ The following bugs were fixed:
 * **'No form linked' when a start form has been linked**
 
   For some cases, it was no longer possible to manually create a new case because of a popup saying that there was no
-  start form configured even though it had been configured. The logs would show an 500 Internal Server Error.
+  start form configured even though it had been configured. The logs would show a 500 Internal Server Error.
 
 ## Breaking changes
 
-* **Changed ExterenalDataSubmittedEvent data field type**
+* **Changed ExternalDataSubmittedEvent data field type**
   The `data` field for the `ExternalDataSubmittedEvent` has changed from `Map<ExternalFormFieldType, Map<String, Object>>` to
   `Map<String, Map<String, Object>>`.
 
@@ -71,6 +71,9 @@ This version has the following known issues:
 
   When multiple start forms are associated with a single process definition the user is unable to start a new case of
   that specific type.
+
+* **Updating process variables from a form.io submission**  
+  Only process variables of type `String` and `Array<String>` are currently supported by the pv. form.io prefix. Any other types will be set to a null value.
 
 * **Using formAssociationService.createFormAssociation() on application startup causing the application to crash**
 
