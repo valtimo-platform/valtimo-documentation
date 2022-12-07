@@ -32,6 +32,11 @@ The following features were added:
 
   Added a new separate tab on case management page to configure case list columns.
 
+* **Disable unassigned case count feature toggle**
+
+  It is now possible to disable showing the number of open cases in the menu. To do this, set `disableCaseCount` under
+  `featureToggles` in the environment file to `true`.
+
 ## Bugfixes
 
 The following bugs were fixed:
