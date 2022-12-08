@@ -151,11 +151,18 @@ process links?
 `implementation "com.ritense.valtimo:contactmoment:${valtimo_version}"`), to make it easier to specify versions for
 modules that share a version.
 - Are there any application specific properties that need to be set (e.g. in `application.yml` for back-end)?
+- Please avoid any compile-time-processing dependencies like Lombok. They might not work correctly in other implementations and can often easily replaced by code. 
 
 If some code cannot be shared, please provide an empty or simplified implementation in the code.
 
+#### Copy your files
+1. Create a new folder in the `blueprints` folder of the blueprints project with the name of your process blueprint.
+2. Copy all files related to the new blueprint from the source project to the newly created folder.
+  * Please adhere to the given folder structure.
+  * Only include files or folders that are specific for this blueprint.
+
 #### Write documentation
-Every blueprint should include a README.md covering the following topics:
+In your new blueprint folder, create a README.md file. It should cover the following topics:
 * A summary of the process, including a visual representation of it.
 * Technical notes
   * Which version of Valtimo has been tested with.
@@ -168,9 +175,5 @@ Every blueprint should include a README.md covering the following topics:
   * Reliance on external services (e.g. OpenZaak).
   * How to use the process blueprint.
 
-#### Copy your files
-1. Create a new folder in the `blueprints` folder of the blueprints project with the name of your process blueprint.
-2. Copy all files related to the new blueprint to the newly created folder.
-    * Please adhere to the given folder structure.
-    * Only include files or folders that are specific for this blueprint.
-3. Create a pull request according to the contributing page found [here](https://github.com/generiekzaakafhandelcomponent/Basisprocessen/blob/feature/generieke-zaak/CONTRIBUTING.md).
+#### Pull request
+Create a pull request according to the contributing page found [here](https://github.com/generiekzaakafhandelcomponent/Basisprocessen/blob/feature/main/CONTRIBUTING.md).
