@@ -1,6 +1,6 @@
 # Process blueprints
 
-Process blueprints are a collection of files, that form a starting point to kickstart an implementation. These often
+Process blueprints are a collection of files, that form a starting point to kickstart an implementation. These can
 consist of one or more BPMNs, a document definition, forms, as well as less common things such as custom front-end and
 back-end code. These blueprints can be found on GitHub [here](https://github.com/generiekzaakafhandelcomponent/Basisprocessen).
 
@@ -80,7 +80,7 @@ be configured for the appropriate tasks as well.
 As always, be sure to follow the specific instructions that are included with the process blueprint.
 
 ## Creating process blueprints for GZAC
-It is encouraged to share processes that can potentially be used by other municipalities. Another municipality can then
+It is encouraged to share processes that can potentially be used by other organisations. Another organisation can then
 implement the same process with minimal effort.
 
 ### Privacy and intellectual property
@@ -91,7 +91,7 @@ Shared resources should not contain:
 * Any privacy- or security-sensitive information like:
     * Names, addresses or other data of real people.
     * Credentials of users or services
-* The municipality name in code, labels, etc.
+* The organisation name in code, labels, etc.
 * Licensed code that conflicts with the repository code.
 
 All submitted code will inherit the license of this repository. It is up to the publisher to include a copyright notice
@@ -139,8 +139,8 @@ Before copying the files from the source project into the blueprints project, co
 - Create a separate branch in your source project in which the blueprint can be prepared.
 - Remove all code that does not adhere to the [Privacy and intellectual property](#privacy-and-intellectual-property)
 guidelines.
-- Are there any references to project specific code (e.g. code that cannot be used by other municipalities)?
-  - Are there forms that contain municipality specific fields?
+- Are there any references to project specific code (e.g. code that cannot be used by other organisations)?
+  - Are there forms that contain organisation specific fields?
   - Are there form flows that rely on project specific code?
   - Are there tasks in your process(es) that rely on project specific code?
 - Are there plugins that should be configured to use this process blueprint? Which tasks need to be configured via
