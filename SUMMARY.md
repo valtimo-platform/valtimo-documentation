@@ -109,8 +109,6 @@
     * [Setting extra tabs for Zaak object type](extending-valtimo/tabs/configure-tab-object-type.md)
     * [Customizing case list tabs](extending-valtimo/tabs/customizing-case-list-tabs.md)
 * [References](reference/reference.md)
-  * [Feature toggles](reference/feature-toggles/feature-toggles.md)
-    * [Available feature toggles](reference/feature-toggles/available-feature-toggles.md)
   * [Modules](reference/modules/modules.md)
     * [Document](reference/modules/document.md)
     * [Form](reference/modules/form.md)
@@ -119,6 +117,7 @@
   * [User interface](reference/user-interface/user-interface.md)
     * [Design philosophy](reference/user-interface/design-philosophy.md)
     * [Carbon design system](reference/user-interface/carbon-design-system.md)
+  * [Feature toggles](reference/feature-toggles.md)
   * [Troubleshoot](reference/troubleshoot.md)
 * Release notes
   * 10.x.x

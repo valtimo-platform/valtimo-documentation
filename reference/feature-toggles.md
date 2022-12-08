@@ -29,8 +29,12 @@ with a `boolean` value.
 * **`experimentalDmnEditing`**
 
   If enabled, it is possible to edit DMN tables from the ui from the admin page. This feature is experimental, please
-  refer to [the release notes](../../release-notes/major9/09.20.0/valtimo-frontend-libraries.md) for known issues.
+  refer to [the release notes](../release-notes/major9/09.20.0/valtimo-frontend-libraries.md) for known issues.
 
 * **`caseSearchFields`**
 
   If enabled, a non-functional demo version of case search fields will replace the search sidebar on the case list page.
+
+* **`disableCaseCount`**
+
+  If set to `true`, showing the number of open cases in the menu is disabled.
