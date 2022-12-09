@@ -14,6 +14,11 @@ The following features were added:
   The Form flow instance is now created when a user task is opened. Users configuring the form flow can now make
   changes to the form flow that is connected to the user task, as long as the task isn't opened.
 
+* **Search field path validation**
+
+  A user that is configuring a SearchField will now get a validation error when the `path` field of a search field
+  does not point to a property inside the document.
+
 ## Bugfixes
 
 The following bugs were fixed:
@@ -55,9 +60,9 @@ Instructions on how to migrate to this version of Valtimo can be found [here](mi
 This version has the following known issues:
 
 * **Issue1**
-  * Discovered in version x.x.x
-  * Describe what can be done to work around the issue
+    * Discovered in version x.x.x
+    * Describe what can be done to work around the issue
 
 * **Issue2**
-  * Discovered in version x.x.x
-  * Describe what can be done to work around the issue
+    * Discovered in version x.x.x
+    * Describe what can be done to work around the issue
