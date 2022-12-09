@@ -93,7 +93,8 @@ For a better example, follow the table below:
 
 | Has title | Key has translation | Result                 |
 |:----------|:--------------------|:-----------------------|
-| **Yes**   | Yes/No              | _show title_           |
+| **Yes**   | Yes                 | _show title_           |
+| **Yes**   | No                  | _show title_           |
 | **No**    | Yes                 | _show key translation_ |
 | **No**    | No                  | _show key value_       |
 
