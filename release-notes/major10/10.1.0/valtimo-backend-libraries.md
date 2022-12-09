@@ -4,15 +4,20 @@
 
 The following features were added:
 
-* **Search field path validation**
+* **Form flow bean for completing an associated task**
 
-  A user that is configuring a SearchField will now get a validation error when the `path` field of a search field
-  does not point to a property inside the document.
+  A bean for Form Flow was added to make it easier to complete a Camunda user task from within a Form Flow. More
+  information can be found [here](/references/modules/form-flow.md#form-flow-spel-beans)
 
 * **Form flow instance creation on task open**
 
   The Form flow instance is now created when a user task is opened. Users configuring the form flow can now make
   changes to the form flow that is connected to the user task, as long as the task isn't opened.
+
+* **Search field path validation**
+
+  A user that is configuring a SearchField will now get a validation error when the `path` field of a search field
+  does not point to a property inside the document.
 
 ## Bugfixes
 
