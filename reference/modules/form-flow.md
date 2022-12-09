@@ -56,9 +56,11 @@ So for example if you read parseExpression("1 + 1") then in the form flow defini
 ### Form flow SpEL beans
 
 Form flow offers a single bean out of the box. The `ValtimoFormFlow bean`. This bean has several methods that can be
-used inside a SPeL expression:
+used inside a SPeL expression.
 
-The method below completes a Camunda user task.
+#### Completing a Camunda user task
+
+The method below completes a Camunda user task. If there is submission data available, it will _not_ be saved.
 ```spel
 ${valtimoFormFlow.completeTask(additionalProperties)}
 ```
@@ -66,9 +68,32 @@ ${valtimoFormFlow.completeTask(additionalProperties)}
 The method below completes a Camunda user task _and_ saves the submission data into a default location in the json
 document.
 
+#### Completing a Camunda user task and saving submission data
+
 ```spel
 ${valtimoFormFlow.completeTask(additionalProperties, step.submissionData)}
 ```
+
+For example, if the submission data is:
+```json
+{
+  "street": "Funenpark",
+  "approved": true
+}
+```
+
+The document JSON will get an extra `submission` field with all data from the `submissionData`. It will
+override `submission` data if it already existed in the document JSON:
+```json
+{
+  "submission": {
+    "street": "Funenpark",
+    "approved": true
+  }
+}
+```
+
+#### Completing a Camunda user task and saving submission data to defined location
 
 The method below completes a Camunda user task and saves the submission data into a location of your choosing. The third
 parameter decides where the submission data should be saved. The third parameter expects a map from which the key
@@ -76,6 +101,32 @@ defines the location where the data should be saved, and the value is a location
 
 ```spel
 ${valtimoFormFlow.completeTask(additionalProperties, step.submissionData, {'doc:/address/streetName':'/street', 'pv:approved':'/approval'})}
+```
+
+For example, if the submission data is:
+```json
+{
+  "street": "Funenpark",
+  "approved": true,
+  "irrelevantProperty": 1234
+}
+```
+
+The data will be added to the document JSON. If data was already present in the document JSON, it will be overwritten.
+If the submission path is referencing to an object or array in the submission, the entire object/array is copied to the
+document JSON.
+```json
+{
+  "address": {
+    "streetName": "Funenpark"
+  }
+}
+```
+The Camunda process will get an extra variable:
+```json
+{
+  "approved": true
+}
 ```
 
 
