@@ -4,10 +4,10 @@
 
 The following features were added:
 
-* **New feature1**
+* **Form flow bean for completing an associated task**
 
-  Description of the new feature goes here.
-  Also link to the page that explains the feature in greater detail.
+  A bean for Form Flow was added to make it easier to complete a Camunda user task from within a Form Flow. More
+  information can be found [here](/references/modules/form-flow.md#form-flow-spel-beans)
 
 * **Form flow instance creation on task open**
 

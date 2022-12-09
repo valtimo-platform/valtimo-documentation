@@ -203,7 +203,7 @@ available can be found [here](/reference/modules/form-flow.md#available-properti
                     "definition": "end-form"
                 }
             },
-            "onComplete": ["${someDocumentService.saveFormFlowResult(additionalProperties, step.submissionData)}"]
+            "onComplete": ["${valtimoFormFlow.completeTask(additionalProperties, step.submissionData)}"]
         }
     ]
 }
