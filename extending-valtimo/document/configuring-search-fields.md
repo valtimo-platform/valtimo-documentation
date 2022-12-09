@@ -127,7 +127,7 @@ The allowed value for `path` is:
 
 #### How to use
 
-The property `path` is a path that leads to the property you want to search on.
+The property `path` is a path to the property you want to search on.
 For searching in the document's JSON schema the `path` should have a prefix `doc:` and end with a jsonpath without `$.`.
 For example:
 
