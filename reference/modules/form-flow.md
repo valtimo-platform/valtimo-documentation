@@ -51,7 +51,6 @@ not require a whitelisting. Examples of what you can enter as an expression in S
 documentation (https://spring.getdocs.org/en-US/spring-framework-docs/docs/spring-core/expressions/expressions-language-ref.html).
 
 All expressions passed as an argument to `parseExpression(...)` on this page can also be set in the form flow definition between `${}`
-function can be set in the form flow definition with ${ }.
 So for example if you read parseExpression("1 + 1") then in the form flow definition you would enter ${1 + 1}.
 
 ### Form flow SpEL beans
