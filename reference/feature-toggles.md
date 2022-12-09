@@ -38,3 +38,7 @@ with a `boolean` value.
 * **`disableCaseCount`**
 
   If set to `true`, showing the number of open cases in the menu is disabled.
+
+* **`caseListColumn`**
+
+  If enabled, the column list tab will be shown on the case management page.
