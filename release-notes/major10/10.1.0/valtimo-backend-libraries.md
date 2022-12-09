@@ -9,10 +9,10 @@ The following features were added:
   A user that is configuring a SearchField will now get a validation error when the `path` field of a search field
   does not point to a property inside the document.
 
-* **New feature2**
+* **Form flow instance creation on task open**
 
-  Description of the new feature goes here.
-  Also link to the page that explains the feature in greater detail.
+  The Form flow instance is now created when a user task is opened. Users configuring the form flow can now make
+  changes to the form flow that is connected to the user task, as long as the task isn't opened.
 
 ## Bugfixes
 
