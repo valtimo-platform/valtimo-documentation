@@ -36,7 +36,7 @@ The following properties are available in a SpEL context:
 SpEL by default can call any kind of bean to offer extra functionality to expressions. You can for instance call a
 service to send an email, create a document based on a template etcetera. This is a powerful feature, but you can't
 control what kind of beans might be called. Together with the possibility to use / fill expressions based user input,
-and we have a major security concern.
+there is a major security concern.
 
 Therefore, Valtimo has introduced an extra check surrounding the execution of SpEL expressions, only beans (i.e. classes
 and services) that are whitelisted by either the Valtimo product team or a Valtimo implementation team are allowed to be
