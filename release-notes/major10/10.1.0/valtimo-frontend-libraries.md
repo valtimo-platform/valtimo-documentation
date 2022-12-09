@@ -4,10 +4,12 @@
 
 The following features were added:
 
-* **New feature1**
+* **Improved error messages in popup**
 
-  Description of the new feature goes here.
-  Also link to the page that expains the feature in greater detail.
+  The popup showing the error messages has been improved in several ways:
+  - It now more often shows the details of the error.
+  - It now more often shows a reference ID of the error.
+  - When the popup is clicked, it won't disappear. Making it easier to copy the error from the popup. 
 
 * **New feature2**
 

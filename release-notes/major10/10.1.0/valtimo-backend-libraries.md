@@ -4,16 +4,15 @@
 
 The following features were added:
 
-* **New feature1**
+* **Search field path validation**
 
-  Description of the new feature goes here.
-  Also link to the page that explains the feature in greater detail.
+  A user that is configuring a SearchField will now get a validation error when the `path` field of a search field
+  does not point to a property inside the document.
 
 * **New feature2**
 
   Description of the new feature goes here.
   Also link to the page that explains the feature in greater detail.
-
 
 ## Bugfixes
 
@@ -56,9 +55,9 @@ Instructions on how to migrate to this version of Valtimo can be found [here](mi
 This version has the following known issues:
 
 * **Issue1**
-  * Discovered in version x.x.x
-  * Describe what can be done to work around the issue
+    * Discovered in version x.x.x
+    * Describe what can be done to work around the issue
 
 * **Issue2**
-  * Discovered in version x.x.x
-  * Describe what can be done to work around the issue
+    * Discovered in version x.x.x
+    * Describe what can be done to work around the issue
