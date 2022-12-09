@@ -11,7 +11,7 @@ The following features were added:
 
 * **Form flow instance creation on task open**
 
-  The Form flow instance is now created when a user task is opened. People configuring the form flow can now make
+  The Form flow instance is now created when a user task is opened. Users configuring the form flow can now make
   changes to the form flow that is connected to the user task, as long as the task isn't opened.
 
 ## Bugfixes
