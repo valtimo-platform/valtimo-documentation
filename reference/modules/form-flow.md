@@ -29,6 +29,7 @@ The following properties are available in a SpEL context:
 | `step`                 | `id`             | `FormFlowStepInstanceId` | The ID of the form flow step instance.                          |
 | `step`                 | `key`            | `String`                 | The current step.                                               |
 | `step`                 | `submissionData` | `String`                 | The data submitted so far as a json string.                     |
+| `instance`             | `id`             | `FormFlowInstanceId`     | The ID of the form flow instance.                               |
 | `additionalProperties` | -                | `Map<String, Any>`       | Additional properties stored as part of the form flow instance. |
 
 

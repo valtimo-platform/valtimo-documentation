@@ -7,12 +7,18 @@ The following features were added:
 * **Form flow bean for completing an associated task**
 
   A bean for Form Flow was added to make it easier to complete a Camunda user task from within a Form Flow. More
-  information can be found [here](/references/modules/form-flow.md#form-flow-spel-beans)
+  information can be found [here](/reference/modules/form-flow.md#form-flow-spel-beans)
 
 * **Form flow instance creation on task open**
 
   The Form flow instance is now created when a user task is opened. Users configuring the form flow can now make
   changes to the form flow that is connected to the user task, as long as the task isn't opened.
+
+* **Form flow context contains extra variable**
+
+  A variable called `instance.id` has been added to the SpEL context of a form flow expression. This variable contains
+  the id of a form flow instance. More
+  information can be found [here](/reference/modules/form-flow.md#available-properties-in-spel-context)
 
 * **Search field path validation**
 
