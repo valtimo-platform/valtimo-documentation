@@ -20,6 +20,11 @@ The following features were added:
   the id of a form flow instance. More
   information can be found [here](/reference/modules/form-flow.md#available-properties-in-spel-context)
 
+* **Form flow conditional next step**
+
+  A next step in a form flow can now be conditional. This allows for more complex form flows. More information can be
+  found [here](/reference/modules/form-flow.md#available-properties-in-spel-context)
+
 * **Search field path validation**
 
   A user that is configuring a SearchField will now get a validation error when the `path` field of a search field
