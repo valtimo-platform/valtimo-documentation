@@ -11,10 +11,10 @@ The following features were added:
   - It now more often shows a reference ID of the error.
   - When the popup is clicked, it won't disappear. Making it easier to copy the error from the popup. 
 
-* **New feature2**
+* **Supporting process title translatable**
 
-  Description of the new feature goes here.
-  Also link to the page that expains the feature in greater detail.
+  The option to translate subprocess title is now added. A new key with the value of the `processDefinitionKey` can be used in the translation file to override the default.
+
 
 
 ## Bugfixes
