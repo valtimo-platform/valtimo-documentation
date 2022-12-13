@@ -119,7 +119,7 @@ another module.
 
 Mailchimp is a SaaS solution for sending emails. Mandrill is the name of
 the [transactional mail addon](https://mailchimp.com/features/transactional-email/) that Mailchimp provides. The Valtimo
-Mandrill module provides a mail implementation of [Mail](#mail) that Valtimo uses to send emails..
+Mandrill module provides a mail implementation of [Mail](#mail) that Valtimo uses to send emails.
 
 ### Milestones
 
