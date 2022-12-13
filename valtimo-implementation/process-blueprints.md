@@ -20,7 +20,7 @@ Importing a process blueprint and customizing it for a specific use case can be 
 this page. Additionally, specific instructions for a blueprint can be found on GitHub for that particular process
 blueprint. These always take precedent over these general instructions.
 
-### Copying over the files
+### Copying files
 
 This is the general structure of a blueprint:
 
@@ -55,13 +55,14 @@ This is the general structure of a blueprint:
 ```
 
 Almost all the files in `backend` can be copied into the back-end of an implementation project. The exceptions are:
+
 * `application.yml`. This only includes the configurations required by the process blueprint. These should be merged
 with the `application.yml` you already have.
 * `build.gradle` or `pom.xml`. This only includes the dependencies required by the process blueprint. These should be
 merged with the `build.gradle` or `pom.xml` you already have.
 
-Almost all files in `frontend` can be copied into the front-end of an implementation project. The exceptions are:
-*`package.json`. This only includes the dependencies required by the process blueprint. These should be merged with
+Almost all files in `frontend` can be copied into the front-end of an implementation project. The exception is 
+`package.json`. This only includes the dependencies required by the process blueprint. These should be merged with
 the `package.json` you already have.
 
 ### Configuring and customizing the process blueprint
@@ -101,7 +102,7 @@ that is not in conflict with the license.
 This is a step-by-step guide on how to submit a process blueprint to the git repository.
 
 #### Checkout the latest code
-You can find the latest version of the repository [here](https://github.com/generiekzaakafhandelcomponent/Basisprocessen)
+You can find the latest version of the repository [here](https://github.com/generiekzaakafhandelcomponent/Basisprocessen).
 
 After checking out the code, the folder structure should look similar to this:
 ```
@@ -151,7 +152,8 @@ process links?
 `implementation "com.ritense.valtimo:contactmoment:${valtimo_version}"`), to make it easier to specify versions for
 modules that share a version.
 - Are there any application specific properties that need to be set (e.g. in `application.yml` for back-end)?
-- Please avoid any compile-time-processing dependencies like Lombok. They might not work correctly in other implementations and can often easily replaced by code. 
+- Please avoid any compile-time-processing dependencies like Lombok. They might not work correctly in other
+implementations and can often easily replaced by code. 
 
 If some code cannot be shared, please provide an empty or simplified implementation in the code.
 
@@ -176,4 +178,4 @@ In your new blueprint folder, create a README.md file. It should cover the follo
   * How to use the process blueprint.
 
 #### Pull request
-Create a pull request according to the contributing page found [here](https://github.com/generiekzaakafhandelcomponent/Basisprocessen/blob/feature/main/CONTRIBUTING.md).
+Create a pull request according to the contributing page found [here](https://github.com/generiekzaakafhandelcomponent/Basisprocessen/blob/main/CONTRIBUTING.md).
