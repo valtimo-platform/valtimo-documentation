@@ -27,7 +27,7 @@ between a module and Core.
 
 Apart from this, contract sanitizes endpoint output when exceptions occur. A liquibase runner is available that allows
 other modules to define liquibase configuration that is run on startup. Finally, Contract includes several helper
-classes, like the `QueryDialectHelper` bean that can be used in criteria queries to add JSON column clauses to the
+that can be used in criteria queries to call DBMS specific functions in a generic way (e.g. finding JSON data). 
 query.
 
 ### Core
