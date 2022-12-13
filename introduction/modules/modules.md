@@ -27,7 +27,7 @@ between a module and Core.
 
 Apart from this, contract sanitizes endpoint output when exceptions occur. A liquibase runner is available that allows
 other modules to define liquibase configuration that is run on startup. Finally, Contract includes several helper
-that can be used in criteria queries to call DBMS specific functions in a generic way (e.g. finding JSON data). 
+that can be used in criteria queries to call DBMS specific functions in a generic way (e.g. finding JSON data).
 query.
 
 ### Core
@@ -35,13 +35,14 @@ query.
 Core is the main module of Valtimo. It contains and builds upon the Camunda process engine that enables Valtimo to run
 processes. Several endpoints and functions are available that provide task data and process data.
 
-It also includes choice fields, a generic way to create lists of values that can be used by the application (e.g. selectboxes or radiobuttons). Some
-security features used to control access to any Valtimo endpoints are also part of this module.
+It also includes choice fields, a generic way to create lists of values that can be used by the application (e.g.
+selectboxes or radiobuttons). Some security features used to control access to any Valtimo endpoints are also part of 
+this module.
 
 ### Documents
 
-A document is the main data storage entity that contains data of a case. Processes can act upon and change the data that is contained in the document. 
-which allows for the document to be created when the case is started.
+A document is the main data storage entity that contains data of a case. Processes can act upon and change the data that
+is contained in the document, which allows for the document to be created when the case is started.
 
 The content of the document is defined in a document definition, in JSON schema. Users interact with the document via
 user tasks; document data can be loaded into task forms, and user input can be stored in the document after completing a
