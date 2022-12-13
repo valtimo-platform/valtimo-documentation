@@ -15,6 +15,14 @@ The following features were added:
 
   The option to translate subprocess title is now added. A new key with the value of the `processDefinitionKey` can be used in the translation file to override the default.
 
+* **Introducing a new case tab 'Notes'**
+
+  A new case tab `Notes` has been added which brings the following functionalities:
+  - Add a new note to a case.
+  - A view of all the notes that have been added to a case.
+
+  Currently, it's not possible yet to delete or update a note.
+
 
 
 ## Bugfixes
