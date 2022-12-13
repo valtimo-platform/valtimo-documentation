@@ -35,7 +35,7 @@ query.
 Core is the main module of Valtimo. It contains and builds upon the Camunda process engine that enables Valtimo to run
 processes. Several endpoints and functions are available that provide task data and process data.
 
-It also includes choice fields. A generic way to create lists of values, that can be used by the application. Some
+It also includes choice fields, a generic way to create lists of values that can be used by the application (e.g. selectboxes or radiobuttons). Some
 security features used to control access to any Valtimo endpoints are also part of this module.
 
 ### Documents
@@ -148,7 +148,7 @@ from inside a process.
 ### Resource
 
 Resource is a module that describes how files can be uploaded and downloaded. This implemented by other modules,
-such as the [Temporary resource storage](#temporary-resource-storage) and [OpenZaak resource](#openzaak-resource).
+such as the [temporary resource storage](#temporary-resource-storage) and [OpenZaak resource](#openzaak-resource).
 
 ### Temporary resource storage
 
