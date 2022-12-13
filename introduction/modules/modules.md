@@ -40,7 +40,7 @@ security features used to control access to any Valtimo endpoints are also part 
 
 ### Documents
 
-A document is the main data storage entity that can contain data for one or more processes. It can be linked to a case,
+A document is the main data storage entity that contains data of a case. Processes can act upon and change the data that is contained in the document. 
 which allows for the document to be created when the case is started.
 
 The content of the document is defined in a document definition, in JSON schema. Users interact with the document via
