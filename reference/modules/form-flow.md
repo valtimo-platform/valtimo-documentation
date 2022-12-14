@@ -32,11 +32,6 @@ The following properties are available in a SpEL context:
 | `instance`             | `id`             | `FormFlowInstanceId`     | The ID of the form flow instance.                               |
 | `additionalProperties` | -                | `Map<String, Any>`       | Additional properties stored as part of the form flow instance. |
 
-## Available functions in the SpEL context
-
-SpEL in form flow allows a single function: `#jsonPath`. More information about this function can be
-found [here](https://docs.spring.io/spring-integration/docs/current/reference/html/spel.html#built-in-spel-functions)
-
 ## SpEL bean whitelisting
 SpEL by default can call any kind of bean to offer extra functionality to expressions. You can for instance call a
 service to send an email, create a document based on a template etcetera. This is a powerful feature, but you can't

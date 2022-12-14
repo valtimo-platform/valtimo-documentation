@@ -86,7 +86,7 @@ of another step defined in this form flow.
             "nextSteps": [
                 {
                     "step": "loanApprovedStep",
-                    "condition": "${#jsonPath(step.submissionData, '$.personalDetails.age') >= 21}"
+                    "condition": "${step.submissionData.personalDetails.age >= 21}"
                 },
                 {
                     "step": "loanDeniedStep"
@@ -129,7 +129,7 @@ of another step defined in this form flow.
             "nextSteps": [
                 {
                     "step": "loanApprovedStep",
-                    "condition": "${#jsonPath(step.submissionData, '$.personalDetails.age') >= 21}"
+                    "condition": "${step.submissionData.personalDetails.age >= 21}"
                 },
                 {
                     "step": "loanDeniedStep"
@@ -206,7 +206,7 @@ available can be found [here](/reference/modules/form-flow.md#available-properti
             "nextSteps": [
                 {
                     "step": "loanApprovedStep",
-                    "condition": "${#jsonPath(step.submissionData, '$.personalDetails.age') >= 21}"
+                    "condition": "${step.submissionData.personalDetails.age >= 21}"
                 },
                 {
                     "step": "loanDeniedStep"

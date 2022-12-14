@@ -23,7 +23,7 @@ The following features were added:
 * **Form flow conditional next step**
 
   A next step in a form flow can now be conditional. This allows for more complex form flows. More information can be
-  found [here](/reference/modules/form-flow.md#available-properties-in-spel-context)
+  found [here](/using-valtimo/form-flow/create-form-flow-definition.md)
 
 * **Search field path validation**
 
