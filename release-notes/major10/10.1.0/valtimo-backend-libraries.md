@@ -46,7 +46,7 @@ The following bugs were fixed:
 
 The following breaking changes were introduced:
 
-* **Breaking change1**
+* **Form flow submission data type has been changed**
 
 * **Breaking change2**
 

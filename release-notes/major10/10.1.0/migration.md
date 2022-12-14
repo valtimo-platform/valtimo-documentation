@@ -2,16 +2,16 @@
 
 This page describes how to update Valtimo from the previous version to the current.
 
-* **Breaking change 1/Deprecation 1**
+* **Form flow submissionData type**
 
-  Scope: back-end/front-end
+  Scope: back-end
 
-  1. **Step1**
+  1. **Find submission data in form flow beans**
 
-     Description
-  2. **Step2**
+     Find all classes with the annotation `@FormFlowBean` and locate all methods use submission data in a parameter.
+  2. **Change submission data type**
 
-     Description
+     Change the type of the submission data from a `String` to a `com.fasterxml.jackson.databind.JsonNode`.
 
 * **Breaking change 2/Deprecation 2**
 
