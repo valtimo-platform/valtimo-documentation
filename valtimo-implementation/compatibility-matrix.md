@@ -7,7 +7,9 @@
 > Mixing versions is not recommended. Valtimo is always tested according to the matrix.
 Hotfixes are supported on all versions.
  
-## Major 10 and up
+## Major 10
+
+Starting with major 10, the valtimo-backend-libraries and valtimo-frontend-libraries use the same version.
 
 | Valtimo libraries | Java | Node |
 |-------------------|------|------|
