@@ -15,8 +15,8 @@ Valtimo consists of a frontend (Angular) and a backend (Java/Kotlin) application
 The Valtimo platform can be started in two ways:
 
 ### Start as Docker containers
-When starting the Valtimo platform as Docker containers, all supporting services and the two Valtimo services are started up with a Docker Compose file. Instructions on how to start Valtimo as Docker containers can be found [here](valtimo-documentation/getting-started/first-dive/start-as-docker-containers/run-as-docker-containers.md).
+When starting the Valtimo platform as Docker containers, all supporting services and the two Valtimo services are started up with a Docker Compose file. Instructions on how to start Valtimo as Docker containers can be found [here](start-as-docker-containers/start-as-docker-containers.md).
 
 ### Starting your own Valtimo implementation
 When starting your own Valtimo implementation, the supporting services are started up with a Docker Compose file. The two Vatlimo services are started up from their respective Git repositories using a command line interface (CLI) or integrated development environment
-(IDE). Instructions on how to start your own Valtimo implementation can be found [here](valtimo-documentation/getting-started/first-dive/creating-your-own-valtimo-implementationlementation/start-as-applications/start-as-applications.md).
+(IDE). Instructions on how to start your own Valtimo implementation can be found [here](creating-your-own-valtimo-implementation/creating-your-own-valtimo-implementation.md).
