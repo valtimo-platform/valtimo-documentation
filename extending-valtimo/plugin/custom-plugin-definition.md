@@ -571,7 +571,7 @@ translation.
 ### Plugin module
 
 Finally, after implementing the components and specification, a module has to be defined for the plugin.
-This module, together with the specification, is then imported in the app module as shown in [on this page](valtimo-documentation/getting-started/modules/core/plugin.md).
+This module, together with the specification, is then imported in the app module as shown in [on this page](../../getting-started/modules/core/plugin.md).
 
 The sample plugin module would look like this:
 #### **`sample-plugin.module.ts`**
