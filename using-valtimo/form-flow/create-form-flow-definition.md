@@ -17,119 +17,157 @@ To create form flow definition, the following steps are necessary:
 
 * Add each individual step to the form flow definition, e.g.:
 
-    ```json
-    {
-        "startStep": "start",
-        "steps": [
-            {
-                "key": "start"
-            },
-            {
-                "key": "step2"
-            },
-            {
-                "key": "step3"
-            },
-            {
-                "key": "end"
-            }
-        ]
-    }
-    ```
+```json
+{
+    "startStep": "personalDetailsStep",
+    "steps": [
+        {
+            "key": "personalDetailsStep"
+        },
+        {
+            "key": "loanApprovedStep"
+        },
+        {
+            "key": "loanDeniedStep"
+        },
+        {
+            "key": "summaryStep"
+        }
+    ]
+}
+```
 
 * Add the next steps for each of the individual steps. This can be done through the `nextStep` property, which
 supports a single step, or `nextSteps`, which supports multiple next steps. Each step should correspond to the key
-of another step defined in this form flow. Since expressions are not yet supported for `nextSteps`, the first step
-will always be selected. So in this example, step 2 will always be followed by step 3.
+of another step defined in this form flow.
 
-    ```json
-    {
-        "startStep": "start",
-        "steps": [
-            {
-                "key": "start",
-                "nextStep": "step2"
-            },
-            {
-                "key": "step2",
-                "nextSteps": [
-                    {
-                        "step": "step3"
-                    },
-                    {
-                        "step": "end"
-                    }
-               ]
-            },
-            {
-                "key": "step3",
-                "nextStep": "end"
-            },
-            {
-                "key": "end"
-            }
-        ]
-    }
-    ```
+```json
+{
+    "startStep": "personalDetailsStep",
+    "steps": [
+        {
+            "key": "personalDetailsStep",
+            "nextSteps": [
+                {
+                    "step": "loanApprovedStep"
+                },
+                {
+                    "step": "loanDeniedStep"
+                }
+           ]
+        },
+        {
+            "key": "loanApprovedStep",
+            "nextStep": "summaryStep"
+        },
+        {
+            "key": "loanDeniedStep",
+            "nextStep": "summaryStep"
+        },
+        {
+            "key": "summaryStep"
+        }
+    ]
+}
+```
+
+* The `personalDetailsStep` is now followed by two other steps. This is only allowed when at least one of the two steps
+  is conditional. The order of next step matters. The first `nextStep` with `condition` that is evaluated to `true` will
+  be the next step. When all the conditions are evaluated to `false` the next step will be the default step; which is
+  the step without condition. If no next step is found, the form flow will end. The expression inside the condition is
+  further explained [here](/reference/modules/form-flow.md#step-types).
+
+```json
+{
+    "startStep": "personalDetailsStep",
+    "steps": [
+        {
+            "key": "personalDetailsStep",
+            "nextSteps": [
+                {
+                    "step": "loanApprovedStep",
+                    "condition": "${step.submissionData.personalDetails.age >= 21}"
+                },
+                {
+                    "step": "loanDeniedStep"
+                }
+           ]
+        },
+        {
+            "key": "loanApprovedStep",
+            "nextStep": "summaryStep"
+        },
+        {
+            "key": "loanDeniedStep",
+            "nextStep": "summaryStep"
+        },
+        {
+            "key": "summaryStep"
+        }
+    ]
+}
+```
 
 * Configure the step type. Currently, the only step type supported is `form`, which requires a `definition` property to
-be set. This refers to the key of the form. For more information on step types, see [here](/reference/modules/form-flow.md#step-types)
+  be set. This refers to the key of the form. For more information on step types,
+  see [here](/reference/modules/form-flow.md#step-types)
 
   Which properties are required to be set depends on the step type.
 
-    ```json
-    {
-        "startStep": "start",
-        "steps": [
-            {
-                "key": "start",
-                "type": {
-                    "name": "form",
-                    "properties":  {
-                        "definition": "start-form"
-                    }
-                },
-                "nextStep": "step2"
+```json
+{
+    "startStep": "personalDetailsStep",
+    "steps": [
+        {
+            "key": "personalDetailsStep",
+            "type": {
+                "name": "form",
+                "properties": {
+                    "definition": "personal-details-form"
+                }
             },
-            {
-                "key": "step2",
-                "type": {
-                    "name": "form",
-                    "properties":  {
-                        "definition": "step2-form"
-                    }
+            "nextSteps": [
+                {
+                    "step": "loanApprovedStep",
+                    "condition": "${step.submissionData.personalDetails.age >= 21}"
                 },
-                "nextSteps": [
-                    {
-                        "step": "step3"
-                    },
-                    {
-                        "step": "end"
-                    }
-               ]
+                {
+                    "step": "loanDeniedStep"
+                }
+           ]
+        },
+        {
+            "key": "loanApprovedStep",
+            "type": {
+                "name": "form",
+                "properties":  {
+                    "definition": "loan-approved-form"
+                }
             },
-            {
-                "key": "step3",
-                "type": {
-                    "name": "form",
-                    "properties":  {
-                        "definition": "step3-form"
-                    }
-                },
-                "nextStep": "end"
+            "nextStep": "summaryStep"
+        },
+        {
+            "key": "loanDeniedStep",
+            "type": {
+                "name": "form",
+                "properties":  {
+                    "definition": "loan-denied-form"
+                }
             },
-            {
-                "key": "end",
-                "type": {
-                    "name": "form",
-                    "properties":  {
-                        "definition": "end-form"
-                    }
+            "nextStep": "summaryStep"
+        },
+        {
+            "key": "summaryStep",
+            "type": {
+                "name": "form",
+                "properties":  {
+                    "definition": "summary-form"
                 }
             }
-        ]
-    }
-    ```
+        }
+    ]
+}
+```
 
 * Add triggers to steps where necessary (e.g. to store data externally). See below for more information.
 
@@ -154,56 +192,57 @@ available can be found [here](/reference/modules/form-flow.md#available-properti
 
 ```json
 {
-    "startStep": "start",
+    "startStep": "personalDetailsStep",
     "steps": [
         {
-            "key": "start",
+            "key": "personalDetailsStep",
             "type": {
                 "name": "form",
-                "properties":  {
-                    "definition": "start-form"
+                "properties": {
+                    "definition": "personal-details-form"
                 }
             },
             "onOpen": ["${someService.retrieveData(additionalProperties)}"],
-            "nextStep": "step2"
+            "nextSteps": [
+                {
+                    "step": "loanApprovedStep",
+                    "condition": "${step.submissionData.personalDetails.age >= 21}"
+                },
+                {
+                    "step": "loanDeniedStep"
+                }
+            ]
         },
         {
-            "key": "step2",
+            "key": "loanApprovedStep",
             "type": {
                 "name": "form",
-                "properties":  {
-                    "definition": "step2-form"
+                "properties": {
+                    "definition": "loan-approved-form"
                 }
             },
             "onBack": ["${someService.removeData(additionalProperties)}"],
-            "nextSteps": [
-                {
-                    "step": "step3"
-                },
-                {
-                    "step": "end"
-                }
-           ]
+            "nextStep": "summaryStep"
         },
         {
-            "key": "step3",
+            "key": "loanDeniedStep",
             "type": {
                 "name": "form",
-                "properties":  {
-                    "definition": "step3-form"
+                "properties": {
+                    "definition": "loan-denied-form"
                 }
             },
-            "nextStep": "end"
+            "nextStep": "summaryStep"
         },
         {
-            "key": "end",
+            "key": "summaryStep",
+            "onComplete": ["${valtimoFormFlow.completeTask(additionalProperties, step.submissionData)}"],
             "type": {
                 "name": "form",
-                "properties":  {
-                    "definition": "end-form"
+                "properties": {
+                    "definition": "summary-form"
                 }
-            },
-            "onComplete": ["${someDocumentService.saveFormFlowResult(additionalProperties, step.submissionData)}"]
+            }
         }
     ]
 }
