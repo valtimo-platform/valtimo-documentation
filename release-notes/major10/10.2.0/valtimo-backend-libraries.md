@@ -4,10 +4,10 @@
 
 The following features were added:
 
-* **New feature1**
+* **Added new Notificaties API plugin**
 
-  Description of the new feature goes here.
-  Also link to the page that explains the feature in greater detail.
+  This plugin makes it possible for valtimo to communicate and interact 
+  with a Notificaties API specification compliant ZGW component. 
 
 * **New feature2**
 
