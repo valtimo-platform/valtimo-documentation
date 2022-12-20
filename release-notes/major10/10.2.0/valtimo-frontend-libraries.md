@@ -4,10 +4,9 @@
 
 The following features were added:
 
-* **New feature1**
+* **Notificaties API plugin added to @valtimo/plugin**
 
-  Description of the new feature goes here.
-  Also link to the page that expains the feature in greater detail.
+  The Notificaties API plugin has been added and supports plugin configuration.
 
 * **New feature2**
 
