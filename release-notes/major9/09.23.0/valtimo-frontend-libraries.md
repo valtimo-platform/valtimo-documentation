@@ -60,7 +60,7 @@ The following features were added:
   version of the front-end for these new search fields is included in this release. This feature is not yet functional.
 
   For testing purposes, this feature can be enabled through the `caseSearchFields` feature toggle. For more information,
-  refer to [this page](/reference/feature-toggles/available-feature-toggles.md).
+  refer to [this page](/reference/feature-toggles.md).
 
 ## Bugfixes
 

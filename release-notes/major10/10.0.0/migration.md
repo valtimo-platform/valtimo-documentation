@@ -203,7 +203,7 @@ In addition to this, the following classes were removed. No replacements were ad
   Your `node_modules` folder should now include the packages `@carbon/icons`, `carbon-components` and
   `carbon-components-angular`.
 
-  Next, add the follow entries to the `styles` array in `angular.json` in your project root:
+  Next, add the follow entries to the end of the `styles` array in `angular.json` in your project root:
   `"node_modules/@valtimo/components/assets/css/carbon.scss"` and 
   `"node_modules/@valtimo/components/assets/css/carbon-beagle-compatibility.scss"`.
 
