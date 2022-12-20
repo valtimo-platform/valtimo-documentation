@@ -20,6 +20,13 @@ The following features were added:
   the id of a form flow instance. More
   information can be found [here](/reference/modules/form-flow.md#available-properties-in-spel-context)
 
+* **Form flow conditional next step**
+
+  A next step in a form flow can now be conditional. This allows for more complex form flows. For this feature, the
+  submission data type has been changed. This makes it possible to directly access the submission data inside the SpEL
+  expression of the next step condition. More information can be
+  found [here](/using-valtimo/form-flow/create-form-flow-definition.md)
+
 * **Search field path validation**
 
   A user that is configuring a SearchField will now get a validation error when the `path` field of a search field
@@ -41,7 +48,7 @@ The following bugs were fixed:
 
 The following breaking changes were introduced:
 
-* **Breaking change1**
+* **Form flow submission data type has been changed**
 
 * **Breaking change2**
 
