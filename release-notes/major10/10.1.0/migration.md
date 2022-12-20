@@ -12,14 +12,3 @@ This page describes how to update Valtimo from the previous version to the curre
   2. **Change submission data type**
 
      Change the type of the submission data from a `String` to a `com.fasterxml.jackson.databind.JsonNode`.
-
-* **Breaking change 2/Deprecation 2**
-
-  Scope: back-end/front-end
-
-  1. **Step1**
-
-      Description
-  2. **Step2**
-
-      Description
