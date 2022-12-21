@@ -8,11 +8,10 @@ The following features were added:
 
   The Notificaties API plugin has been added and supports plugin configuration.
 
-* **New feature2**
+* **Form flow - store submission data when moving to the previous step**
 
-  Description of the new feature goes here.
-  Also link to the page that expains the feature in greater detail.
-
+  A user now gets the option to save changes in the form when the user clicks the button to go to the previous step in
+  the form flow.
 
 ## Bugfixes
 
