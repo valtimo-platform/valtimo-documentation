@@ -91,11 +91,12 @@ When the title is not defined, the default value will be the search field key tr
 
 For a better example, follow the table below:
 
-| Has title | Key has translation | Result                |
-|:----------|:--------------------|:----------------------|
-| **Yes**   | Yes/No              | _show title_          |
-| **No**        | Yes                 | _show key tranlation_ |
-| **No**       | No                  | _show key value_      |
+| Has title | Key has translation | Result                 |
+|:----------|:--------------------|:-----------------------|
+| **Yes**   | Yes                 | _show title_           |
+| **Yes**   | No                  | _show title_           |
+| **No**    | Yes                 | _show key translation_ |
+| **No**    | No                  | _show key value_       |
 
 #### Add translation
 
@@ -127,24 +128,41 @@ The allowed value for `path` is:
 
 #### How to use
 
-The property `path` is a path that leads to the property you want to search on. 
-For searching in the document's JSON schema, follow this example: 
+The property `path` is a path to the property you want to search on.
+For searching in the document's JSON schema the `path` should have a prefix `doc:` and end with a jsonpath without `$.`.
+For example:
 
-```
+```jsonpath
 doc:customer.firstName
 ```
-For searching in the document properties, follow one of these examples:
+
+```jsonpath
+doc:customer.addresses[0].street
 ```
+
+```jsonpath
+doc:"loan-accepted"
+```
+
+The `path` also support functions. Since the jsonpath -part is executed directly on the database, the supported
+functions might be different for different database types. Both MySQL and Postgres databases support the
+following `path`:
+
+```jsonpath
+doc:customer.addresses.size()
+```
+
+It's also possible to search for some properties that do not exist in the document JSON schema. These properties are:
+```jsonpath
 case:createdBy
+```
 
+```jsonpath
 case:sequence
+```
 
+```jsonpath
 case:assigneeFullName
-```
-**Note**: When there are special characters in a property, the property must be enclosed in quotes.
-For example:
-```
-case:"loan-accepted"
 ```
 
 ### Data type
