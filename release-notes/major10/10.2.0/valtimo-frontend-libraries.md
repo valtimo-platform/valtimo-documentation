@@ -8,7 +8,7 @@ The following features were added:
 
   The Notificaties API plugin has been added and supports plugin configuration.
 
-* Current user Form-io custom component
+* **Current user Form-io custom component**
 
   A custom form-io component has been added that provides the Valtimo user profile as form input.
   
