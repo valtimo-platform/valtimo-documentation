@@ -8,14 +8,18 @@ The following features were added:
 
   The Notificaties API plugin has been added and supports plugin configuration.
 
+* **Form flow - store submission data when moving to the previous step**
+
+  A user now gets the option to save changes in the form when the user clicks the button to go to the previous step in
+  the form flow.
+
 * **Introducing a new case tab 'Notes'**
 
   A new case tab `Notes` has been added which brings the following functionalities:
   - Add a new note to a case.
   - A view of all the notes that have been added to a case.
 
-  Currently, it's not possible yet to delete or update a note.
-
+  Currently, it's not possible to delete or update a note.
 
 ## Bugfixes
 
