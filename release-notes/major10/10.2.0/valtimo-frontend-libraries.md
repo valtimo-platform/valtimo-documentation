@@ -8,6 +8,10 @@ The following features were added:
 
   The Notificaties API plugin has been added and supports plugin configuration.
 
+* Current user Form-io custom component
+
+  A custom form-io component has been added that provides the Valtimo user profile as form input.
+  
 * **Form flow - store submission data when moving to the previous step**
 
   A user now gets the option to save changes in the form when the user clicks the button to go to the previous step in
