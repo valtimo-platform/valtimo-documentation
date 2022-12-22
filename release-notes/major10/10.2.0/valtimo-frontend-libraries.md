@@ -10,7 +10,7 @@ The following features were added:
 
 * Current user Form-io custom component
 
-  A custom form-io component has ben added that provides the Valtimo user profile as form input.
+  A custom form-io component has been added that provides the Valtimo user profile as form input.
 
 
 ## Bugfixes
