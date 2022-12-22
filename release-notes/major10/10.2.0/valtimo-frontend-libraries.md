@@ -8,10 +8,13 @@ The following features were added:
 
   The Notificaties API plugin has been added and supports plugin configuration.
 
-* **New feature2**
+* **Introducing a new case tab 'Notes'**
 
-  Description of the new feature goes here.
-  Also link to the page that expains the feature in greater detail.
+  A new case tab `Notes` has been added which brings the following functionalities:
+  - Add a new note to a case.
+  - A view of all the notes that have been added to a case.
+
+  Currently, it's not possible yet to delete or update a note.
 
 
 ## Bugfixes
