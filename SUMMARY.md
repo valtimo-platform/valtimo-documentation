@@ -59,6 +59,7 @@
       * [SmartDocuments](valtimo-implementation/modules/zgw/smartdocuments.md)
       * [Wordpress mail](valtimo-implementation/modules/zgw/wordpress-mail.md)
       * [Zaken API](valtimo-implementation/modules/zgw/zaken-api.md)
+  * [Process blueprints](valtimo-implementation/process-blueprints.md)
 * [Using Valtimo](using-valtimo/using-valtimo.md)
   * [Documents](using-valtimo/document/document.md)
     * [Assigning a user to a document](using-valtimo/document/assigning-a-user.md)
@@ -109,8 +110,6 @@
     * [Setting extra tabs for Zaak object type](extending-valtimo/tabs/configure-tab-object-type.md)
     * [Customizing case list tabs](extending-valtimo/tabs/customizing-case-list-tabs.md)
 * [References](reference/reference.md)
-  * [Feature toggles](reference/feature-toggles/feature-toggles.md)
-    * [Available feature toggles](reference/feature-toggles/available-feature-toggles.md)
   * [Modules](reference/modules/modules.md)
     * [Document](reference/modules/document.md)
     * [Form](reference/modules/form.md)
@@ -119,6 +118,7 @@
   * [User interface](reference/user-interface/user-interface.md)
     * [Design philosophy](reference/user-interface/design-philosophy.md)
     * [Carbon design system](reference/user-interface/carbon-design-system.md)
+  * [Feature toggles](reference/feature-toggles.md)
   * [Troubleshoot](reference/troubleshoot.md)
 * Release notes
   * 10.x.x
@@ -132,8 +132,8 @@
       * [Migration](release-notes/major10/10.0.0/migration.md)
   * 9.x.x
     * 9.26.0/5.15.0
-      * [Valtimo backend libraries (9.25.0 RC)](release-notes/major9/09.26.0/valtimo-backend-libraries.md)
-      * [Valtimo frontend libraries (5.14.0 RC)](release-notes/major9/09.26.0/valtimo-frontend-libraries.md)
+      * [Valtimo backend libraries (9.26.0)](release-notes/major9/09.26.0/valtimo-backend-libraries.md)
+      * [Valtimo frontend libraries (5.15.0)](release-notes/major9/09.26.0/valtimo-frontend-libraries.md)
       * [Migration](release-notes/major9/09.26.0/migration.md)
     * 9.25.0/5.14.0
       * [Valtimo backend libraries (9.25.0)](release-notes/major9/09.25.0/valtimo-backend-libraries.md)
@@ -154,6 +154,7 @@
     * 9.20.0/5.9.1
       * [Valtimo backend libraries (9.20.0)](release-notes/major9/09.20.0/valtimo-backend-libraries.md)
       * [Valtimo frontend libraries (5.9.1)](release-notes/major9/09.20.0/valtimo-frontend-libraries.md)
+      * [Migration](release-notes/major9/09.20.0/migration.md)
     * 9.19.0/5.8.0
       * [Valtimo backend libraries (9.19.0)](release-notes/major9/09.19.0/valtimo-backend-libraries.md)
       * [Valtimo frontend libraries (5.8.0)](release-notes/major9/09.19.0/valtimo-frontend-libraries.md)

@@ -10,7 +10,7 @@ The following features were added:
   (i.e. Admin -> Cases -> Leningen). On this tab, a 'Download search field configuration' button is now shown, which
   downloads the search field configuration for the current document type as a JSON file.
 
-  For more information on how to enable the `caseSearchFields` feature toggle, refer to [this page](/reference/feature-toggles/available-feature-toggles.md).
+  For more information on how to enable the `caseSearchFields` feature toggle, refer to [this page](/reference/feature-toggles.md).
 
 * **Added new actions to case search field configuration**
 
