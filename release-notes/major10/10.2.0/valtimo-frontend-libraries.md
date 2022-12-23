@@ -29,9 +29,9 @@ The following features were added:
 
 The following bugs were fixed:
 
-* **Bug1**
+* **caseassignee dropdown breaks when user has no lastname in keycloak**
 
-  Description of what the issue was.
+  When a user has been configured in keycloak without a lastname, the dropdown of the caseassignee breaks. A check as been added to handle users without a lastname.
 
 * **Bug2**
 
