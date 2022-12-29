@@ -15,6 +15,10 @@ The following features were added:
 
   The option to translate subprocess title is now added. A new key with the value of the `processDefinitionKey` can be used in the translation file to override the default.
 
+* **Moved Audit time**
+
+  The audit time is now displayed next to the date
+
 
 
 ## Bugfixes
