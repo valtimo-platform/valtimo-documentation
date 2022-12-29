@@ -33,9 +33,9 @@ The following bugs were fixed:
 
   When a user has been configured in keycloak without a lastname, the dropdown of the caseassignee breaks. A check as been added to handle users without a lastname.
 
-* **Bug2**
+* **Custom case header not working if canHaveAssignee is disabled**
 
-  Description of what the issue was.
+  The custom header was only working if the setting `canHaveAssignee` was enabled in the case settings. A fix has been applied to make the custom case header also work without this setting enabled.
 
 ## Breaking changes
 
