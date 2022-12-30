@@ -29,6 +29,10 @@ The following features were added:
 
   The audit time is now displayed next to the date
 
+* **Plant a tree button**
+
+  There is now a button in the sidebar under the logout button that sends an e-mail to request ritense to plant a tree.
+
 ## Bugfixes
 
 The following bugs were fixed:
