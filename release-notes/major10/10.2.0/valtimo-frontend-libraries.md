@@ -25,6 +25,10 @@ The following features were added:
 
   Currently, it's not possible to delete or update a note.
 
+* **Moved Audit time**
+
+  The audit time is now displayed next to the date
+
 ## Bugfixes
 
 The following bugs were fixed:
