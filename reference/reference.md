@@ -10,3 +10,5 @@ developers who want to extend features in Valtimo and need to know what is avail
 * [User interface](./user-interface/user-interface.md)
 * [Feature toggles](feature-toggles.md)
 * [Troubleshoot](troubleshoot.md)
+* [Getting started back-end](https://github.com/valtimo-platform/valtimo-backend-libraries#readme)
+* [Getting started front-end](https://github.com/valtimo-platform/valtimo-frontend-libraries#readme)
