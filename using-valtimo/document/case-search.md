@@ -24,8 +24,9 @@ The content of the configuration file can look like this:
 {
   "searchFields": [
     {
+      "title": "Last Name",
       "key": "customerLastName",
-      "path": "/customer/lastName",
+      "path": "doc:customer.lastName",
       "dataType": "text",
       "fieldType": "single",
       "matchType": "like"
@@ -33,6 +34,9 @@ The content of the configuration file can look like this:
   ]
 }
 ```
+**title**
+
+The title is a configurable property to display a custom label in the search field. This field is optional.
 
 **key**
 
@@ -40,7 +44,7 @@ This is an identifying human-readable key of the field.
 
 **path**
 
-The path pointing to the property that can be searched for. This field is optional.
+The path pointing to the property that can be searched for.
 
 **dataType**
 

@@ -1,4 +1,4 @@
-# Frontend libraries 5.13.0 (RC)
+# Frontend libraries 5.13.0
 
 ## New Features
 
@@ -19,6 +19,11 @@ The following features were added:
 
   The default language is used for every user that has not set a preferred language. If no language is set in the `environment.ts` the default is set to `Language.NL`.
 
+* **Valtimo list action callback**
+
+  A new `$event` parameter has been added to the action callback from the valtimo list component. 
+
+  You can use this parameter to call `$event.stopPropagation()` to stop the row click listener being triggered when using actions.
 
 ## Bugfixes
 

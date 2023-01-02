@@ -6,6 +6,8 @@ to set up their own Valtimo installation. Some knowledge on java build tools suc
 or [gradle](https://gradle.org/) is assumed.
 
 * [First dive](first-dive/first-dive.md)
+* [Components](components/components.md)
 * [Compatibility matrix](compatibility-matrix.md)
 * [Database support](database-support.md)
 * [Modules](modules/modules.md)
+* [Process blueprints](process-blueprints.md)

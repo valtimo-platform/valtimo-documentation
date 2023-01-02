@@ -11,7 +11,7 @@ The following features were added:
   If the user uploads a DMN table, the overview list of decision tables is now refreshed after uploading.
   If the feature toggle `experimentalDmnEditing` is enabled in the environment, the user is now redirected to a DMN
   editor, where it is possible to switch between versions, edit a version, and deploy a new version. Please refer to
-  [this page](../../../reference/feature-toggles/available-feature-toggles.md) for more information on how to enable feature toggles.
+  [this page](/reference/feature-toggles.md) for more information on how to enable feature toggles.
 
   This feature is experimental, please refer to the known issues before considering to enable it. To make this work, add 
   the following to the `scripts` array in your `angular.json` file: `"node_modules/dmn-js/dist/dmn-modeler.development.js"`.

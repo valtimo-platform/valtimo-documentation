@@ -7,8 +7,8 @@ The following features were added:
 * **Camunda webapps**
 
   The Camunda webapps, including the cockpit, were made available. For existing Valtimo projects additional
-  infrastructure configuration might be required to grant access to the `/camunda/app` path. See
-  [this page](/getting-started/modules/core/camunda-webapps.md) for more information.
+  infrastructure configuration might be required to grant access to the `/camunda/app/` path. See
+  [this page](/valtimo-implementation/modules/core/camunda-webapps.md) for more information.
 
 * **Plugins**
 
@@ -61,6 +61,6 @@ This version has the following known issues:
 
 * **Using formAssociationService.createFormAssociation() on application startup causing the application to crash**
 
-  When form associations are created on application startup using the formAssociationService.createFormAssociation() method, these associations are duplicated. Before   the bugfix in this release these duplicated associations were added without errors. After the bugfix in this release the application will throw an exception when       creating an already existing association, causing the application to crash on startup.
+  When form associations are created on application startup, using the formAssociationService.createFormAssociation() method, these associations are duplicated. Before   the bugfix in this release these duplicated associations were added without errors. After the bugfix in this release the application will throw an exception when       creating an already existing association, causing the application to crash on startup.
   
   Solution: the correct way to add form associations is by adding [form link files](/using-valtimo/form-link/configure-task.md). Using of          formAssociationService.createFormAssociation() should be replaced with form link files.

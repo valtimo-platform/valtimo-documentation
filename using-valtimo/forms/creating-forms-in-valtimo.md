@@ -75,3 +75,16 @@ A list of `FormFieldDataResolvers` that are available on the [forms reference pa
 
 A description on how to create a new `FormFieldDataResolver` is available on the 
 [creating form data resolver page](../../extending-valtimo/forms/creating-form-field-data-resolver.md)
+
+## Disabled fields
+
+Disabled form fields are prefilled and saved by default. This behaviour deviates from the web-standard where disabled elements are not included in the submit body.
+
+This behaviour can be changed by setting a toggle in application.yml:
+  ```yaml
+  valtimo:
+      form:
+        ignoreDisabledFields: true
+  ```
+
+When set to true, disabled fields will no longer be prefilled or saved. The default value is false.
