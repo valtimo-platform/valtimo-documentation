@@ -52,6 +52,10 @@ The following bugs were fixed:
 * **Total number of cases found in case list**
 
   In the badge on the case list the total number of items on the page was shown instead of the actual number of cases found based on the search criteria.
+  
+* **Form definition download**
+  
+  When downloading a form definition on the form builder page, the metadata of the form definition was included. When uploading the downloaded file, the form definition was not valid. This has been changed so the downloaded file only includes the actual form definition.
 
 ## Breaking changes
 
