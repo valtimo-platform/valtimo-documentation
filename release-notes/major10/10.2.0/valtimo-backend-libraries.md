@@ -7,7 +7,12 @@ The following features were added:
 * **Added new Notificaties API plugin**
 
   This plugin makes it possible for valtimo to communicate and interact 
-  with a Notificaties API specification compliant ZGW component. 
+  with a Notificaties API specification compliant ZGW component.
+
+* **Added new OpenNotificaties plugin**
+
+  This plugin facilitates authentication for the Notificaties API plugin when interfacing 
+  with [OpenNotificaties](https://github.com/open-zaak/open-notificaties).
 
 * **New feature2**
 
