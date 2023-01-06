@@ -11,3 +11,4 @@ or [gradle](https://gradle.org/) is assumed.
 * [Database support](database-support.md)
 * [Modules](modules/modules.md)
 * [Process blueprints](process-blueprints.md)
+* [Running the libraries](running-the-libraries.md)
