@@ -1,4 +1,5 @@
 # Running the libraries
+This is a small guide on how to run the libraries for anyone who wants to run the libraries for development purposes. The same instructions can be found in the readme's of libraries.
 
 ## Back-end
 - Clone https://github.com/valtimo-platform/valtimo-docker-profiles and run the compose file for your desired edition
@@ -8,4 +9,4 @@
 - Install all packages with npm install --legacy-peer-deps
 - Then build all libraries with npm run libs-build-all
 - And at last start the development server with npm start
-- Remember that you need to run the back-end libraries as well to use Valtimo
+- Remember that it is required to run the back-end libraries as well to use Valtimo
