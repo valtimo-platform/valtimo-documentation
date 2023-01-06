@@ -17,7 +17,7 @@ The following features were added:
 * **Automatically migrates plugin actions**
 
   Plugin actions that are linked to the latest process version will now automatically be linked to a new version of
-  the process that is deployed.
+  the process that is being deployed.
 
 ## Bugfixes
 
