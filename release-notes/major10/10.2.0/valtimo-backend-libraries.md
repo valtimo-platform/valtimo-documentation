@@ -14,7 +14,7 @@ The following features were added:
   This plugin facilitates authentication for the Notificaties API plugin when interfacing 
   with [OpenNotificaties](https://github.com/open-zaak/open-notificaties).
 
-* **Automatically migrates linked plugin actions**
+* **Automatically migrate linked plugin actions**
 
   Plugin actions that are linked to the latest process version will now automatically be linked to a new version of
   the process that is being deployed.
