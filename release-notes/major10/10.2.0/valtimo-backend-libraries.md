@@ -23,9 +23,11 @@ The following features were added:
 
 The following bugs were fixed:
 
-* **Bug1**
+* **Multiple form flow instances linked to task**
 
-  Description of what the issue was.
+  In some situations when a user tried to open a user task multiple times, the user would get the error: 'Multiple form
+  flow instances linked to task'. This has been fixed for every new user tasks that is created after the upgrade to
+  10.2.0. Users can still get the error when opening an old user task.
 
 * **Bug2**
 
