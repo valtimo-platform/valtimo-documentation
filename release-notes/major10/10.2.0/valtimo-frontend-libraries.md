@@ -33,6 +33,11 @@ The following features were added:
 
   There is now a button in the sidebar under the logout button that sends an e-mail to request ritense to plant a tree.
 
+* **Editing case list columns**
+
+  On the admin page of a case type, a tab 'List' is now available. On this tab, case list columns for this case type can
+  be added, modified, and re-ordered.
+
 ## Bugfixes
 
 The following bugs were fixed:
