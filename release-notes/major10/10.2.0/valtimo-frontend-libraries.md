@@ -45,6 +45,11 @@ The following bugs were fixed:
 
   The custom header was only working if the setting `canHaveAssignee` was enabled in the case settings. A fix has been applied to make the custom case header also work without this setting enabled.
 
+* **Connector configuration shows wrong configuration**
+
+  The popup to edit a connector configuration properties, sometimes showed the properties of another connector. This has
+  been fixed.
+
 ## Breaking changes
 
 The following breaking changes were introduced:
