@@ -14,6 +14,7 @@ Starting from major 10, `valtimo-backend-libraries` and `valtimo-frontend-librar
 | Valtimo libraries | Java | Node |
 |-------------------|------|------|
 | 10.1.0            | 17   | 14   |
+| 10.0.1            | 17   | 14   |
 | 10.0.0            | 17   | 14   |
 
 ## Major 9
