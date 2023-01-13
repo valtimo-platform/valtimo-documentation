@@ -21,9 +21,13 @@ The following features were added:
 
 * **Valtimo list action callback**
 
-  A new `$event` parameter has been added to the action callback from the valtimo list component. 
+  A new `$event` parameter has been added to the action callback from the valtimo list component.
 
   You can use this parameter to call `$event.stopPropagation()` to stop the row click listener being triggered when using actions.
+
+* **Added process key to process started and ended audit events **
+
+  Process started and process ended events in the audit trail now show the associated process name.
 
 ## Bugfixes
 
