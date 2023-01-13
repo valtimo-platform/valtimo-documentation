@@ -4,15 +4,9 @@
 
 The following features were added:
 
-* **New feature1**
+* **Trigger search when hitting Enter key**
 
-  Description of the new feature goes here.
-  Also link to the page that expains the feature in greater detail.
-
-* **New feature2**
-
-  Description of the new feature goes here.
-  Also link to the page that expains the feature in greater detail.
+  When one of the search fields has been filled in and I press 'Enter', the search is executed
 
 
 ## Bugfixes
