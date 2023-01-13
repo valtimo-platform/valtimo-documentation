@@ -27,7 +27,11 @@ The following features were added:
 
 * **Moved Audit time**
 
-  The audit time is now displayed next to the date
+  The audit time is now displayed next to the date.
+
+* **Modified audit trail dots**
+
+  The audit trail dots are now all the same color. 
 
 * **Plant a tree button**
 
