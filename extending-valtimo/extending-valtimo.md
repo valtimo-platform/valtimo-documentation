@@ -13,3 +13,4 @@ code.
 * [Form flow](form-flow/form-flow.md)
 * [Plugins](plugin/plugins.md)
 * [Tabs](tabs/tabs.md)
+* [Integrating spring beans in a process](integrate-spring-bean-in-process.md)
