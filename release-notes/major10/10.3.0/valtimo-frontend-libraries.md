@@ -8,6 +8,10 @@ The following features were added:
 
   When one of the search fields has been filled in and I press 'Enter', the search is executed
 
+* **Added process key to process started and ended audit events**
+
+  Process started and process ended events in the audit trail now show the associated process name.
+
 
 ## Bugfixes
 
