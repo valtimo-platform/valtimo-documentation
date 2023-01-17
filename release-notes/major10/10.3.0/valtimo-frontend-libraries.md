@@ -12,6 +12,9 @@ The following features were added:
 
   Process started and process ended events in the audit trail now show the associated process name.
 
+* **Added Portaaltaak plugin**
+
+  Portaaltaak plugin module is added to @valtimo/plugin which supports plugin configuration.
 
 ## Bugfixes
 
