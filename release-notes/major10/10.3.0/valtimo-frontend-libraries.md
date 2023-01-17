@@ -12,6 +12,10 @@ The following features were added:
 
   Process started and process ended events in the audit trail now show the associated process name.
 
+* **Link to change password page**
+
+  If a password change/reset url has been configured, that url is shown on the 'account' tab. If not, no url is shown
+
 
 ## Bugfixes
 
