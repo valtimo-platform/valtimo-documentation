@@ -4,6 +4,11 @@
 
 The following features were added:
 
+* **Added Portaaltaak plugin**
+
+  This plugin makes it possible for Valtimo to communicate and interact
+  with a Portal task specification compliant ZGW component.
+
 * **New feature1**
 
   Description of the new feature goes here.
