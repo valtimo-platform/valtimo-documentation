@@ -19,6 +19,11 @@ The following features were added:
   Plugin actions that are linked to the latest process version will now automatically be linked to a new version of
   the process that is being deployed.
 
+* **Added Portaaltaak plugin**
+
+  This plugin makes it possible for Valtimo to communicate and interact
+  with a Portal task specification compliant ZGW component.
+
 ## Bugfixes
 
 The following bugs were fixed:

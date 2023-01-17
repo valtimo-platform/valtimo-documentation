@@ -42,6 +42,10 @@ The following features were added:
   On the admin page of a case type, a tab 'List' is now available. On this tab, case list columns for this case type can
   be added, modified, and re-ordered.
 
+* **Added Portaaltaak plugin**
+
+  Portaaltaak plugin module is added to @valtimo/plugin which supports plugin configuration.
+
 ## Bugfixes
 
 The following bugs were fixed:
