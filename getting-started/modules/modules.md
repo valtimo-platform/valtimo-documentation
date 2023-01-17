@@ -15,6 +15,7 @@
   * [Web](core/web/web.md)
 * ZGW
   * [Documenten API](zgw/documenten-api.md)
+  * [Notificaties API](zgw/notificaties-api.md)
   * [Objecten API](zgw/objecten-api.md)
   * [Objecten API Authentication](zgw/objecten-api-authentication.md)
   * [Objecttypen API](zgw/objecttypen-api.md)
