@@ -1,6 +1,6 @@
 # How to integrate a Spring Bean into a process
 
-it is possible to use custom code in your BPMN processes by referencing a spring bean that contains the code you want 
+It is possible to use custom code in your BPMN processes by referencing a spring bean that contains the code you want 
 to run. Any spring bean can be used in camunda expressions by using the bean name.
  
 ```java
