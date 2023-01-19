@@ -22,3 +22,4 @@
   * [OpenZaak resource](zgw/openzaak-resource.md)
   * [Smart documents](zgw/smartdocuments.md)
   * [Zaken API](zgw/zaken-api.md)
+  * [Portal task](zgw/portaaltaak.md)

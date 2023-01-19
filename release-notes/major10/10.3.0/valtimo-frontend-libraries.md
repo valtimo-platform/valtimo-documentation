@@ -16,6 +16,9 @@ The following features were added:
 
   If a password change/reset url has been configured, that url is shown on the 'account' tab. If not, no url is shown
 
+* **Added Portaaltaak plugin**
+
+  Portaaltaak plugin module is added to @valtimo/plugin which supports plugin configuration.
 
 ## Bugfixes
 
