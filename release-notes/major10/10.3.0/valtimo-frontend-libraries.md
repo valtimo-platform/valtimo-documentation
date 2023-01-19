@@ -20,6 +20,12 @@ The following features were added:
 
   Portaaltaak plugin module is added to @valtimo/plugin which supports plugin configuration.
 
+* **Business logic for fieldtype/datatype/searchtype combinations**
+
+  On the case-management page the "Match" field is hidden and is only shown for fields of data type text, any other field uses "Exact". 
+  The range option is not available for fields of data type "Yes / no" in case-management.
+  If a number field has the value '0', the search form can be submitted in the cases page.
+
 ## Bugfixes
 
 The following bugs were fixed:
