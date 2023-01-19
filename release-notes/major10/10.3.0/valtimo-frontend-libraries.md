@@ -16,6 +16,10 @@ The following features were added:
 
   Portaaltaak plugin module is added to @valtimo/plugin which supports plugin configuration.
 
+* **Added Duplicate button to Forms**
+
+  A button has been added to duplicate the form that is currently being edited
+
 ## Bugfixes
 
 The following bugs were fixed:
