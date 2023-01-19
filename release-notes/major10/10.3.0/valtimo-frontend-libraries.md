@@ -12,6 +12,10 @@ The following features were added:
 
   Process started and process ended events in the audit trail now show the associated process name.
 
+* **Link to change password page**
+
+  A password reset link is shown in the 'account' tab in the right sidebar.
+
 * **Added Portaaltaak plugin**
 
   Portaaltaak plugin module is added to @valtimo/plugin which supports plugin configuration.
