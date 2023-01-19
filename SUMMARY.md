@@ -109,6 +109,8 @@
     * [Customizing case details tabs](extending-valtimo/tabs/customizing-case-tabs.md)
     * [Setting extra tabs for Zaak object type](extending-valtimo/tabs/configure-tab-object-type.md)
     * [Customizing case list tabs](extending-valtimo/tabs/customizing-case-list-tabs.md)
+  * [Integrating spring beans in a process](extending-valtimo/integrate-spring-bean-in-process.md)
+  * [Creating a custom dashboard](extending-valtimo/creating-a-custom-dashboard.md)
 * [References](reference/reference.md)
   * [Modules](reference/modules/modules.md)
     * [Document](reference/modules/document.md)
