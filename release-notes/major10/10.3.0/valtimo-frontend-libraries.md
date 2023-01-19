@@ -16,6 +16,12 @@ The following features were added:
 
   Portaaltaak plugin module is added to @valtimo/plugin which supports plugin configuration.
 
+* **Business logic for fieldtype/datatype/searchtype combinations**
+
+  The "Match" field is hidden and is only shown for fields of data type text. Any other field uses "Exact".
+  The range option is not available for fields of data type "Yes / no".
+  If a number field has the value '0', the search form can be submitted.
+
 ## Bugfixes
 
 The following bugs were fixed:
