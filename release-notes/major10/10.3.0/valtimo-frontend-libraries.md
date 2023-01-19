@@ -14,7 +14,7 @@ The following features were added:
 
 * **Link to change password page**
 
-  If a password change/reset url has been configured, that url is shown on the 'account' tab. If not, no url is shown
+  A password reset link is shown in the 'account' tab in the right sidebar.
 
 * **Added Portaaltaak plugin**
 
