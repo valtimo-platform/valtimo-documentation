@@ -12,6 +12,10 @@ The following features were added:
 
   Process started and process ended events in the audit trail now show the associated process name.
 
+* **Link to change password page**
+
+  A password reset link is shown in the 'account' tab in the right sidebar.
+
 * **Added Portaaltaak plugin**
 
   Portaaltaak plugin module is added to @valtimo/plugin which supports plugin configuration.
@@ -19,6 +23,12 @@ The following features were added:
 * **Added Duplicate button to Forms**
 
   A button has been added to duplicate the form that is currently being edited
+
+* **Business logic for fieldtype/datatype/searchtype combinations**
+
+  On the case-management page the "Match" field is hidden and is only shown for fields of data type text, any other field uses "Exact". 
+  The range option is not available for fields of data type "Yes / no" in case-management.
+  If a number field has the value '0', the search form can be submitted in the cases page.
 
 ## Bugfixes
 
