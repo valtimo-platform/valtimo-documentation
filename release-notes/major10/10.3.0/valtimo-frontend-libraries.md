@@ -30,6 +30,19 @@ The following features were added:
   The range option is not available for fields of data type "Yes / no" in case-management.
   If a number field has the value '0', the search form can be submitted in the cases page.
 
+* **Resizable Carbon sidenav**
+
+  After major 10, the product switched over to the Carbon design system. The sidenav included in this design system does
+  does not include resize functionality. This functionality is now included by default on desktop resolutions. The
+  default, minimum, and maximum sizes of the sidenav can be configured under the `customLeftSidebar` property in the
+  environment file(s). The size is saved in the local storage, so the user preference will be retained on refresh.
+
+* **Improved styling of Beagle/Bootstrap elements**
+
+  The Carbon design system resets styling and replaces it with its own. This broke the look and feel of various elements
+  throughout the product, including Form.IO forms. The compatibility between Carbon and Beagle/Bootstrap has been
+  improved in this release.
+
 ## Bugfixes
 
 The following bugs were fixed:
