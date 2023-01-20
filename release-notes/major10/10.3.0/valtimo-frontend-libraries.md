@@ -20,6 +20,10 @@ The following features were added:
 
   Portaaltaak plugin module is added to @valtimo/plugin which supports plugin configuration.
 
+* **Added Duplicate button to Forms**
+
+  A button has been added to duplicate the form that is currently being edited
+
 * **Business logic for fieldtype/datatype/searchtype combinations**
 
   On the case-management page the "Match" field is hidden and is only shown for fields of data type text, any other field uses "Exact". 
