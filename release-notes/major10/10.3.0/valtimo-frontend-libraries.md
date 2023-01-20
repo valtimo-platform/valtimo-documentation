@@ -47,13 +47,11 @@ The following features were added:
 
 The following bugs were fixed:
 
-* **Bug1**
+* **Added role support to sidenav**
 
-  Description of what the issue was.
-
-* **Bug2**
-
-  Description of what the issue was.
+  After migrating to the Carbon design system in major 10, adding menu items based on the roles of the logged-in user
+  was accidentally removed. This feature has been added again. A logged-in user will only see the menu items which they
+  can access with their roles.
 
 ## Breaking changes
 
