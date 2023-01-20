@@ -34,13 +34,9 @@ The following features were added:
 
 The following bugs were fixed:
 
-* **Bug1**
+* **Unable to switch process versions on 'Process links' page**
 
-  Description of what the issue was.
-
-* **Bug2**
-
-  Description of what the issue was.
+  Fixed an issue where the process diagram didn't update after selecting the process version on the process links page.
 
 ## Breaking changes
 
