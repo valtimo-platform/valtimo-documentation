@@ -34,9 +34,9 @@ The following features were added:
 
   The menu item `feedback` in the right sidebar is currently linked to `https://www.valtimo.nl/feedback/`. 
   An environment property `overrideFeedbackMenuItemToMailTo` is added to be able to override the default and use mailTo instead.
-  The subject and the body of this email are set in the translation files to support multiple languaes.
+  The subject and the body of this email are set in the translation files to support multiple languages.
 
-  An example of the full configuration:
+  An example of a full configuration:
   ``` 
   {
     email: '',
