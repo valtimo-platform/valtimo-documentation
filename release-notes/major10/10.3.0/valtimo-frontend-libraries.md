@@ -30,6 +30,21 @@ The following features were added:
   The range option is not available for fields of data type "Yes / no" in case-management.
   If a number field has the value '0', the search form can be submitted in the cases page.
 
+* **Add ability to override feedback menu item to trigger a mailTo**
+
+  The menu item `feedback` in the right sidebar is currently linked to `https://www.valtimo.nl/feedback/`. 
+  An environment property `overrideFeedbackMenuItemToMailTo` is added to be able to override the default and use mailTo instead.
+  The subject and the body of this email are set in the translation files to support multiple languaes.
+
+  An example of the full configuration:
+  ``` 
+  {
+    email: '',
+    subjectTranslationKey: 'subject',
+    bodyTranslationKey: 'body'
+  }
+  ```
+
 ## Bugfixes
 
 The following bugs were fixed:
