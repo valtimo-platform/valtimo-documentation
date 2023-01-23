@@ -32,10 +32,10 @@ The following features were added:
 
 * **Resizable Carbon sidenav**
 
-  After major 10, the product switched over to the Carbon design system. The sidenav included in this design system does
-  does not include resize functionality. This functionality is now included by default on desktop resolutions. The
-  default, minimum, and maximum sizes of the sidenav can be configured under the `customLeftSidebar` property in the
-  environment file(s). The size is saved in the local storage, so the user preference will be retained on refresh.
+  The sidenav included in the Carbon design system does not include resize functionality. This functionality is now
+  included by default on desktop resolutions. The default, minimum, and maximum sizes of the sidenav can be configured
+  under the `customLeftSidebar` property in the environment file(s). The size is saved in the local storage, so the user
+  preference will be retained on refresh.
 
 * **Improved styling of Beagle/Bootstrap elements**
 
