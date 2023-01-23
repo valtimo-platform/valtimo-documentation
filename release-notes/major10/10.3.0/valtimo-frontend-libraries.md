@@ -47,6 +47,10 @@ The following features were added:
 
 The following bugs were fixed:
 
+* **Unable to switch process versions on 'Process links' page**
+
+  Fixed an issue where the process diagram didn't update after selecting the process version on the process links page.
+
 * **Added role support to sidenav**
 
   After migrating to the Carbon design system in major 10, adding menu items based on the roles of the logged-in user
