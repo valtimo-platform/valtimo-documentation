@@ -53,6 +53,11 @@ The following bugs were fixed:
   was accidentally removed. This feature has been added again. A logged-in user will only see the menu items which they
   can access with their roles.
 
+* **Continue case search after error**
+
+  When searching for cases led to an HTTP error on the case list page, search after this would not be executed.
+  This has been fixed. Errors are handled gracefully and subsequent valid search are executed.
+
 ## Breaking changes
 
 The following breaking changes were introduced:
