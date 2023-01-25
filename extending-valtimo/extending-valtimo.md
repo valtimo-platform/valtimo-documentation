@@ -11,6 +11,7 @@ code.
 * [Document](document/document.md)
 * [Forms](forms/forms.md)
 * [Form flow](form-flow/form-flow.md)
+* [Modal](modal/modal.md)
 * [Plugins](plugin/plugins.md)
 * [Tabs](tabs/tabs.md)
 * [Integrating spring beans in a process](integrate-spring-bean-in-process.md)
