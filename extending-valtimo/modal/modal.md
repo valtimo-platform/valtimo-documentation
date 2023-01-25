@@ -1,4 +1,4 @@
-# Creating a modal
+# Modal
 
 Valtimo uses the IBM modals from the `angular-carbon` library. 
 
