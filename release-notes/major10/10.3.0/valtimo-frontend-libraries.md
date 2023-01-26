@@ -30,6 +30,19 @@ The following features were added:
   The range option is not available for fields of data type "Yes / no" in case-management.
   If a number field has the value '0', the search form can be submitted in the cases page.
 
+* **Resizable Carbon sidenav**
+
+  The sidenav included in the Carbon design system does not include resize functionality. This functionality is now
+  included by default on desktop resolutions. The default, minimum, and maximum sizes of the sidenav can be configured
+  under the `customLeftSidebar` property in the environment file(s). The size is saved in the local storage, so the user
+  preference will be retained on refresh.
+
+* **Improved styling of Beagle/Bootstrap elements**
+
+  The Carbon design system resets styling and replaces it with its own. This broke the look and feel of various elements
+  throughout the product, including Form.IO forms. The compatibility between Carbon and Beagle/Bootstrap has been
+  improved in this release.
+
 ## Bugfixes
 
 The following bugs were fixed:
@@ -37,6 +50,17 @@ The following bugs were fixed:
 * **Unable to switch process versions on 'Process links' page**
 
   Fixed an issue where the process diagram didn't update after selecting the process version on the process links page.
+
+* **Added role support to sidenav**
+
+  After migrating to the Carbon design system in major 10, adding menu items based on the roles of the logged-in user
+  was accidentally removed. This feature has been added again. A logged-in user will only see the menu items which they
+  can access with their roles.
+
+* **Continue case search after error**
+
+  When searching for cases led to an HTTP error on the case list page, search after this would not be executed.
+  This has been fixed. Errors are handled gracefully and subsequent valid search are executed.
 
 ## Breaking changes
 
