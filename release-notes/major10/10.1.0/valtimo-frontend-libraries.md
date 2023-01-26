@@ -33,7 +33,7 @@ No new deprecations.
 
 This version has the following known issues:
 
-* **Viewing and editing DMN tables if no 'featureToggles' object is present in the environment configuration**
+* **Viewing and editing DMN tables does not work if no 'featureToggles' object is present in the environment configuration**
 
   * Discovered in version 9.26.0
   * As a workaround, an empty 'featureToggles' object can be added to the environment configuration.
