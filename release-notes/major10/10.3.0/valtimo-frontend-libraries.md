@@ -62,6 +62,11 @@ The following bugs were fixed:
   When searching for cases led to an HTTP error on the case list page, search after this would not be executed.
   This has been fixed. Errors are handled gracefully and subsequent valid search are executed.
 
+  * **Reset password url**
+
+  When clicking on the reset password url the user was logged out. This has been fixed.
+
+
 ## Breaking changes
 
 The following breaking changes were introduced:
