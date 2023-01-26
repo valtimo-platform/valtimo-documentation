@@ -40,6 +40,23 @@ this.modalService.create({
   component: NewModalComponent
 });
 ```
+Finally, the necessary components should be imported and declared in the module
+```typescript
+import {ButtonModule, InputModule, ModalModule, PlaceholderModule} from 'carbon-components-angular';
+
+@NgModule({
+    declarations: [
+        NewModalComponent
+    ],
+    imports: [
+        ButtonModule,
+        ModalModule,
+        InputModule,
+        PlaceholderModule
+    ]
+})
+export class TutorialModule {}
+```
 
 ## Passing data to a modal
 
