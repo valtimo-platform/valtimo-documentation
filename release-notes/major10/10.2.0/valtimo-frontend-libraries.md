@@ -61,7 +61,7 @@ The following bugs were fixed:
 
 * **Wrong url on 'back' button on Form creation page**
 
-  On the Form creation page (/form-management/create), the back button redirected the user to an non-existing URL. This caused the user to be directed to the dashboard. The URL has been changed to the correct one.
+  On the Form creation page (/form-management/create), the back button directed the user to an non-existing URL. This caused the user to be redirected to the dashboard. The URL has been changed to the correct one.
 
 ## Breaking changes
 
