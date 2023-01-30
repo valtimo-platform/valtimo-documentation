@@ -42,3 +42,7 @@ with a `boolean` value.
 * **`caseListColumn`**
 
   If enabled, the column list tab will be shown on the case management page.
+
+* **`showPlantATreeButton`**
+
+  If enabled, a 'Plant a tree' button will appear in the right sidebar.

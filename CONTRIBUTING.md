@@ -8,6 +8,8 @@
 2. Implement the feature/bugfix and create a PR to the development branch. Add all 
    [team Valtimo developers](https://github.com/orgs/valtimo-platform/teams/valtimo-product-team/members) to this PR
    as reviewers.
+   * Instructions on how to run Valtimo locally is split into Valtimo core and GZAC for `backend-libraries`, which can be
+   found [here](https://github.com/valtimo-platform/valtimo-backend-libraries/blob/main/app/valtimo-core/README.md) and [here](https://github.com/valtimo-platform/valtimo-backend-libraries/blob/main/app/gzac/README.md) respectively. For instructions on how to run the `frontend-libraries`, see [here](https://github.com/valtimo-platform/valtimo-frontend-libraries/blob/development/README.md).
 3. Write release notes and documentation for the feature. See below for instructions on how to do this.
 4. Merge the branch after getting an approval from the Valtimo team.
 
