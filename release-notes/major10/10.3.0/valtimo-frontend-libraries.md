@@ -50,7 +50,7 @@ The following features were added:
 * **Added dropdown list to case search**
 
   It is now possible to use a multiselect dropdown or a single select dropdown when searching to cases. This can be
-  configured in the admin menu. The dropdown list can only 
+  configured in the admin menu. More information [here](../../../using-valtimo/document/configuring-search-fields.md).
 
 ## Bugfixes
 
