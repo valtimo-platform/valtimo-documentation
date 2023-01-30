@@ -18,6 +18,8 @@ camunda.bpm.admin-user:
     password: # enter a newly generated password here
 ```
 
+Note: The id (username) is unique. If you want to change the password, you can do it via the Camunda web interface: Dashboard => Users => Account
+
 See the
 [camunda documentation](https://docs.camunda.org/manual/latest/user-guide/spring-boot-integration/configuration/#camunda-engine-properties)
 for more configuration properties.

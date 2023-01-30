@@ -111,6 +111,8 @@
     * [Customizing case details tabs](extending-valtimo/tabs/customizing-case-tabs.md)
     * [Setting extra tabs for Zaak object type](extending-valtimo/tabs/configure-tab-object-type.md)
     * [Customizing case list tabs](extending-valtimo/tabs/customizing-case-list-tabs.md)
+  * [Integrating spring beans in a process](extending-valtimo/integrate-spring-bean-in-process.md)
+  * [Creating a custom dashboard](extending-valtimo/creating-a-custom-dashboard.md)
 * [References](reference/reference.md)
   * [Modules](reference/modules/modules.md)
     * [Document](reference/modules/document.md)
@@ -127,7 +129,10 @@
     * 10.3.0 (RC)
       * [Valtimo backend libraries](release-notes/major10/10.3.0/valtimo-backend-libraries.md)
       * [Valtimo frontend libraries](release-notes/major10/10.3.0/valtimo-frontend-libraries.md)
-    * 10.1.0 (RC)
+    * 10.2.0
+      * [Valtimo backend libraries](release-notes/major10/10.2.0/valtimo-backend-libraries.md)
+      * [Valtimo frontend libraries](release-notes/major10/10.2.0/valtimo-frontend-libraries.md)
+    * 10.1.0
       * [Valtimo backend libraries](release-notes/major10/10.1.0/valtimo-backend-libraries.md)
       * [Valtimo frontend libraries](release-notes/major10/10.1.0/valtimo-frontend-libraries.md)
       * [Migration](release-notes/major10/10.1.0/migration.md)
