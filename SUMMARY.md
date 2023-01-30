@@ -41,6 +41,7 @@
       * [Resource](getting-started/modules/core/resource.md)
       * [Temporary resource storage](getting-started/modules/core/temporary-resource-storage.md)
       * [Value resolvers](getting-started/modules/core/value-resolver.md)
+      * [Valtimo dependencies](getting-started/modules/core/valtimo-dependencies.md)
       * [Web](getting-started/modules/core/web/web.md)
         * [CORS](getting-started/modules/core/web/valtimo-cors.md)
     * ZGW
@@ -57,6 +58,7 @@
       * [OpenZaak](getting-started/modules/zgw/openzaak.md)
       * [OpenZaak resource](getting-started/modules/zgw/openzaak-resource.md)
       * [SmartDocuments](getting-started/modules/zgw/smartdocuments.md)
+      * [Valtimo GZAC dependencies](getting-started/modules/zgw/valtimo-gzac-dependencies.md)
       * [Wordpress mail](getting-started/modules/zgw/wordpress-mail.md)
       * [Zaken API](getting-started/modules/zgw/zaken-api.md)
   * [Process blueprints](getting-started/process-blueprints.md)

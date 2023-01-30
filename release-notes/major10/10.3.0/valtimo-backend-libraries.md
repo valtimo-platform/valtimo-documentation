@@ -9,10 +9,12 @@ The following features were added:
   This plugin makes it possible for Valtimo to communicate and interact
   with a Portal task specification compliant ZGW component.
 
-* **New feature1**
+* **Valtimo dependencies**
 
-  Description of the new feature goes here.
-  Also link to the page that explains the feature in greater detail.
+  Two new modules have been introduced to help with managing dependencies. These are [Valtimo dependencies](/getting-started/modules/core/valtimo-dependencies.md) and
+  [Valtimo GZAC dependencies](/getting-started/modules/zgw/valtimo-gzac-dependencies.md). Including these dependencies
+  in a project will automatically include the core modules for that edition of Valtimo, which also improves the
+  experience when upgrading Valtimo to a new version.
 
 * **New feature2**
 
