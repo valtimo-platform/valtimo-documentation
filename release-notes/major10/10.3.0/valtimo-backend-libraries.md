@@ -16,10 +16,14 @@ The following features were added:
   in a project will automatically include the core modules for that edition of Valtimo, which also improves the
   experience when upgrading Valtimo to a new version.
 
-* **New feature2**
+* **Process beans**
 
-  Description of the new feature goes here.
-  Also link to the page that explains the feature in greater detail.
+  For documentation on Spring beans, see the Spring documentation [here](https://docs.spring.io/spring-framework/docs/current/reference/html/core.html).
+  
+
+  By default, all beans are available for use within a BPMN, e.g. to send and email. By setting the
+  `valtimo.camunda.bean-whitelisting = true` property in the `application.yml`, only whitelisted beans are available.
+  Beans can be whitelisted by defining them with the `@ProcessBean` annotation.
 
 
 ## Bugfixes
