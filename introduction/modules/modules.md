@@ -208,6 +208,10 @@ The [Klanten API](https://vng-realisatie.github.io/gemma-zaken/standaard/klanten
 standard for getting and storing data on customers. This module provides a connector that can request this
 information.
 
+### Notificaties API
+
+The [Notificaties (Notifications) API](https://github.com/VNG-Realisatie/notificaties-api) routes messages from components (publishers) to other components (subscribers) according to the publish-subscribe pattern. Messages are information-poor and therefore contain no substantive information.
+
 ### Objecten API
 
 The [Objecten (Objects) API](https://vng.nl/projecten/overige-objecten-registratie-api) is a Dutch government API
