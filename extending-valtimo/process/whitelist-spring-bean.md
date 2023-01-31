@@ -23,7 +23,7 @@ itself has to be whitelisted. This is done with the `@ProcessBean` annotation.
    ```java
    @Bean
    public SomethingService somethingService() {
-      return new somethingService();
+      return new SomethingService();
    }
    ```
 
