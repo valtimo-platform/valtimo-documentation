@@ -22,7 +22,7 @@ plugin configuration can have the properties `username` and `password`.
 one action to post a tweet and another action to like a tweet.
 
 * **Plugin event.** A plugin might have methods that need to be run when the Plugin is created, updated or deleted. 
-For example, a plugin might need approval from an external service for its instantiation.
+For example, a plugin needs approval from an external service for its instantiation.
 
 * **Plugin action property.** An action can have several properties that can be configured differently, depending on
 the process instance or process definition. For example, a Twitter plugin action which posts a tweet would include both

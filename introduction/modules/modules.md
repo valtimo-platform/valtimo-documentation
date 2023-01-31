@@ -210,7 +210,8 @@ information.
 
 ### Notificaties API
 
-The [Notificaties (Notifications) API](https://github.com/VNG-Realisatie/notificaties-api) routes messages from components (publishers) to other components (subscribers) according to the publish-subscribe pattern. Messages are information-poor and therefore contain no substantive information.
+The [Notificaties (Notifications) API](https://github.com/VNG-Realisatie/notificaties-api) routes messages from components 
+(publishers) to other components (subscribers) according to the publish-subscribe pattern. Messages are information-poor and therefore contain no substantive information.
 
 ### Objecten API
 

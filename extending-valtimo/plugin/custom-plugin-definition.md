@@ -83,8 +83,14 @@ It is possible to run a method on all three of these events by specifying so in 
 A `PluginEventInvocationException` with references to the plugin and any underlying exceptions will be thrown should a method ran as part of an event fail.
 
 **NB! Limitations**  
-* If the annotation contains duplicate event types, then the method will still only be invoked once per event type per annotation.
-* Only methods without arguments are currently supported.
+* If the annotation contains duplicate event types, then the method will still only be invoked once per event type per annotation.  
+```kotlin
+@PluginEvent(invokedOn = [EventType.CREATE, EventType.DELETE, EventType.CREATE])
+fun willRunOnceOnCreateAndDelete() {
+    ...
+```
+
+* Only methods without arguments are supported.
 * Annotated methods are resolved in alphabetical order.
 
 ### Creating a plugin factory

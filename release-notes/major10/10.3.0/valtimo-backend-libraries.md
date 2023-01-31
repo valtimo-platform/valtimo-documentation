@@ -17,7 +17,7 @@ The following features were added:
   experience when upgrading Valtimo to a new version.
 
 * **Plugin Events**  
-It is now possible to have things happen whenever a plugin configuration created, updated or deleted. 
+It is now possible to have plugin methods run whenever a plugin configuration created, updated or deleted. 
 More information on this feature can be found [here](/extending-valtimo/plugin/custom-plugin-definition.md#plugin-events).
 
 * **Improved Notificaties API plugin**  
