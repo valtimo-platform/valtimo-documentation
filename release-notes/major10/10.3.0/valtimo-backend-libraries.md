@@ -16,6 +16,14 @@ The following features were added:
   in a project will automatically include the core modules for that edition of Valtimo, which also improves the
   experience when upgrading Valtimo to a new version.
 
+* **Process beans**
+
+  For documentation on Spring beans, see the Spring documentation [here](https://docs.spring.io/spring-framework/docs/current/reference/html/core.html).
+
+  By default, all beans are available for use within a BPMN, e.g. to send and email. By setting the
+  `valtimo.camunda.bean-whitelisting = true` property in the `application.yml`, only whitelisted beans are available.
+  Beans can be whitelisted by defining them with the `@ProcessBean` annotation.
+
 * **Plugin Events**  
 It is now possible to have plugin methods run whenever a plugin configuration created, updated or deleted. 
 More information on this feature can be found [here](/extending-valtimo/plugin/custom-plugin-definition.md#plugin-events).
@@ -24,7 +32,6 @@ More information on this feature can be found [here](/extending-valtimo/plugin/c
 The following improvements have been made to this plugin:
   * An additional input is required when configuring the plugin: `callbackUrl`. This is required by Notificaties API to know where to send notification requests.
   * Plugin Events have been implemented so that a Notificaties API subscription is made, updated or removed when the corresponding interaction is done with the Plugin.
-
 
 ## Bugfixes
 
