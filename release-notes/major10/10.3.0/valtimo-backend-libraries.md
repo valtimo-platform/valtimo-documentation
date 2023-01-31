@@ -16,19 +16,23 @@ The following features were added:
   in a project will automatically include the core modules for that edition of Valtimo, which also improves the
   experience when upgrading Valtimo to a new version.
 
-* **New feature2**
+* **Plugin Events**  
+It is now possible to have plugin methods run whenever a plugin configuration created, updated or deleted. 
+More information on this feature can be found [here](/extending-valtimo/plugin/custom-plugin-definition.md#plugin-events).
 
-  Description of the new feature goes here.
-  Also link to the page that explains the feature in greater detail.
+* **Improved Notificaties API plugin**  
+The following improvements have been made to this plugin:
+  * An additional input is required when configuring the plugin: `callbackUrl`. This is required by Notificaties API to know where to send notification requests.
+  * Plugin Events have been implemented so that a Notificaties API subscription is made, updated or removed when the corresponding interaction is done with the Plugin.
 
 
 ## Bugfixes
 
 The following bugs were fixed:
 
-* **Bug1**
+* **Fixed Notificaties API response mapping**
 
-  Description of what the issue was.
+  The response from OpenNotificaties when creating a subscription is missing a required property. This was causing a Runtime Exception while mapping the response.
 
 * **Bug2**
 
@@ -38,7 +42,8 @@ The following bugs were fixed:
 
 The following breaking changes were introduced:
 
-* **Breaking change1**
+* **Changed Notificaties API Abonnement Link database table column**  
+A Liquibase changeset was added to modify the column name.
 
 * **Breaking change2**
 
