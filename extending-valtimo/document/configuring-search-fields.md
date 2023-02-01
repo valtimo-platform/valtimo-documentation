@@ -141,7 +141,7 @@ doc:customer.addresses[0].street
 ```
 
 ```jsonpath
-doc:"loan-accepted"
+doc:["loan-accepted"]
 ```
 
 The `path` also support functions. Since the jsonpath -part is executed directly on the database, the supported
@@ -180,9 +180,10 @@ search field will be a datepicker.
 
 ### Field type
 The allowed values for `fieldType` are:
-* multiple
 * range
 * single
+* multi-select-dropdown
+* single-select-dropdown
 
 #### How to use
 

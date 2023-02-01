@@ -43,6 +43,15 @@ The following features were added:
   throughout the product, including Form.IO forms. The compatibility between Carbon and Beagle/Bootstrap has been
   improved in this release.
 
+* **Added new Portaaltaak plugin**
+
+  This plugin makes it possible for valtimo to manage tasks in the Objecten API.
+
+* **Added dropdown list to case search**
+
+  It is now possible to use a multiselect dropdown or a single select dropdown when searching to cases. This can be
+  configured in the admin menu. More information [here](../../../using-valtimo/document/configuring-search-fields.md).
+
 ## Bugfixes
 
 The following bugs were fixed:
