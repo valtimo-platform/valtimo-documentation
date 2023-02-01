@@ -8,9 +8,9 @@ The following features were added:
 
   It is now possible to create, read, update and delete search fields for a document definition.
 
-  For more information on using this feature see [this page](/using-valtimo/document/search-fields.md).
+  For more information on using this feature see [this page](/using-valtimo/document/configuring-search-fields.md).
   
-  Information about these endpoints can be found [here](/extending-valtimo/document/search-fields.md).
+  Information about these endpoints can be found [here](/extending-valtimo/document/configuring-search-fields.md).
 
 * **Search fields configuration deployment from resources**
 
