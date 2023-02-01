@@ -2,6 +2,7 @@
 
 * Core
   * [Camunda](core/camunda-webapps.md)
+  * [Data provider](core/data-provider.md)
   * [Document](core/document.md)
   * [Form](core/form.md)
   * [Form flow](core/form-flow.md)
