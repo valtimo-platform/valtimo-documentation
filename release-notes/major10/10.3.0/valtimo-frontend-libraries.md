@@ -18,7 +18,8 @@ The following features were added:
 
 * **Added Portaaltaak plugin**
 
-  Portaaltaak plugin module is added to @valtimo/plugin which supports plugin configuration.
+  Portaaltaak plugin module is added to @valtimo/plugin which supports plugin configuration. In this plugin, a
+  configuration component is available for the 'create-portal-task' plugin action.
 
 * **Added Duplicate button to Forms**
 
