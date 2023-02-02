@@ -78,7 +78,6 @@ This page describes how to update Valtimo from the previous version to the curre
     {
       "dependencies": {
         ...
-        "@auth0/angular-jwt": "^5.0.1",
         "@mdi/font": "^7.0.96",
         ...
         "dmn-js": "^12.1.0",
@@ -144,6 +143,12 @@ This page describes how to update Valtimo from the previous version to the curre
     Support for `Protractor` (an end-to-end testing framework) in the Angular CLI will be discontinued. Either remove
     `Protractor` from your implementation, or migrate to Cypress [by following this guide](https://blog.ninja-squad.com/2021/05/05/migrating-from-protractor-to-cypress/).
     The latter is recommended.
+
+* **New required dependency**
+
+  Scope: Front-end
+
+  `ngx-translate-multi-http-loader` requires a new dependency. Run the following command in the root of the implementation project: `npm i deepmerge-ts`.
 
 * **REST API versioning**
 
