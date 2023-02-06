@@ -51,7 +51,7 @@ upload process needs to be configured on the case page:
 ## Required plugins
 
 Make sure that the following plugins are configured.
-* OpenZaak API plugin
+* An authentication plugin (e.g.: OpenZaak plugin)
 * Documenten API plugin
 * Zaken API plugin
 * Catalogi API plugin
