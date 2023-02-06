@@ -1,4 +1,4 @@
-# Whitelisting Spring beans
+# Whitelisting Spring beans for Form flow
 
 It is possible to use SpEL expressions in Form flows. These expressions can make use of Spring beans. This page shows how Spring
 beans can be used by Form flow expressions.
