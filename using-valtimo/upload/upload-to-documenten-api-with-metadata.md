@@ -48,6 +48,14 @@ upload process needs to be configured on the case page:
 
 ![Link upload process to case](img/link-upload-process-to-case.png)
 
+## Required plugins
+
+Make sure that the following plugins are configured.
+* OpenZaak API plugin
+* Documenten API plugin
+* Zaken API plugin
+* Catalogi API plugin
+
 ## Configuring the Upload Document process
 
 Every Valtimo implementation comes with a system process called 'Upload Document'. This process is meant to handle most
