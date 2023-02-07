@@ -1,10 +1,11 @@
 # Data provider
 
-The data provider module exposes any kind of data through an API. An engineer can expose data by writing a data
-provider. 
+The data provider module exposes any kind of data through a single API endpoint. An engineer can expose data by writing
+a data provider. A data provider is useful in a scenario where the data retrieved from an API, should be fully
+customisable while the API endpoint stays the same.
 
-This module was created for a specific use-case: the admin of the application should be able to configure a
-data source that should populate a dropdown list. The admin can pick any data provider from the ui, without any code
+This module was created for a specific use-case: the admin of the application should be able to configure a data source
+that should populate a dropdown list. The admin can pick any data provider from the user interface, without any code
 changes.
 
 ## Dependencies
