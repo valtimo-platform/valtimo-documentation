@@ -30,6 +30,21 @@ The following features were added:
   The range option is not available for fields of data type "Yes / no" in case-management.
   If a number field has the value '0', the search form can be submitted in the cases page.
 
+* **Add ability to override feedback menu item to trigger a mailTo**
+
+  The menu item `feedback` in the right sidebar is currently linked to `https://www.valtimo.nl/feedback/`. 
+  An environment property `overrideFeedbackMenuItemToMailTo` is added to be able to override the default and use mailTo instead.
+  The subject and the body of this email are set in the translation files to support multiple languages.
+
+  An example of a full configuration:
+  ``` 
+  {
+    email: '',
+    subjectTranslationKey: 'subject',
+    bodyTranslationKey: 'body'
+  }
+  ```
+
 * **Resizable Carbon sidenav**
 
   The sidenav included in the Carbon design system does not include resize functionality. This functionality is now
@@ -42,6 +57,15 @@ The following features were added:
   The Carbon design system resets styling and replaces it with its own. This broke the look and feel of various elements
   throughout the product, including Form.IO forms. The compatibility between Carbon and Beagle/Bootstrap has been
   improved in this release.
+
+* **Added new Portaaltaak plugin**
+
+  This plugin makes it possible for valtimo to manage tasks in the Objecten API.
+
+* **Added dropdown list to case search**
+
+  It is now possible to use a multiselect dropdown or a single select dropdown when searching to cases. This can be
+  configured in the admin menu. More information [here](../../../using-valtimo/document/configuring-search-fields.md).
 
 ## Bugfixes
 
@@ -64,35 +88,12 @@ The following bugs were fixed:
 
 ## Breaking changes
 
-The following breaking changes were introduced:
-
-* **Breaking change1**
-
-* **Breaking change2**
-
-Instructions on how to migrate to this version of Valtimo can be found [here](migration.md).
+No breaking changes.
 
 ## Deprecations
 
-The following was deprecated:
-
-* **Deprecation1**
-
-  X was deprecated and is replaced with Y.
-* **Deprecation2**
-
-  X was deprecated and is replaced with Y.
-
-Instructions on how to migrate to this version of Valtimo can be found [here](migration.md).
+No new deprecations.
 
 ## Known issues
 
-This version has the following known issues:
-
-* **Issue1**
-    * Discovered in version x.x.x
-    * Describe what can be done to work around the issue
-
-* **Issue2**
-    * Discovered in version x.x.x
-    * Describe what can be done to work around the issue
+No new known issues.
