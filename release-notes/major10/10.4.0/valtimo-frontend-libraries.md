@@ -33,7 +33,9 @@ The following bugs were fixed:
 
 The following breaking changes were introduced:
 
-* **Breaking change1**
+* **Moved ZaakInstanceLinkService**
+  In `valtimo-backend-libraries`, the `ZaakInstanceLinkService` class has been moved and is now part of
+  the [Zaken API module](/introduction/modules/modules.md#zaken-api)
 
 * **Breaking change2**
 
