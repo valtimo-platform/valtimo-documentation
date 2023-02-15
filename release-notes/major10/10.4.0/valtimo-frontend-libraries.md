@@ -11,7 +11,7 @@ The following features were added:
 
 * **Add configuration component for 'Create Zaak' plugin action**
 
-  When the Zeken API plugin is configured, the plugin action 'Create Zaak' can now be linked to a BPMN service
+  When the Zaken API plugin is configured, the plugin action 'Create Zaak' can now be linked to a BPMN service
   task on the process links page.
 
 * **Add configuration component for the 'Verzoek' plugin**
