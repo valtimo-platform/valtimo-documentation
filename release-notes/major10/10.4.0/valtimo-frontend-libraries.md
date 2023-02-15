@@ -14,7 +14,6 @@ The following features were added:
   Description of the new feature goes here.
   Also link to the page that expains the feature in greater detail.
 
-
 ## Bugfixes
 
 The following bugs were fixed:
@@ -31,7 +30,9 @@ The following bugs were fixed:
 
 The following breaking changes were introduced:
 
-* **Breaking change1**
+* **Moved ZaakInstanceLinkService**
+  In `valtimo-backend-libraries`, the `ZaakInstanceLinkService` class has been moved and is now part of
+  the [Zaken API module](/introduction/modules/modules.md#zaken-api)
 
 * **Breaking change2**
 
