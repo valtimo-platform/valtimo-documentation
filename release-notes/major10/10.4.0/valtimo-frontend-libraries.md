@@ -9,6 +9,11 @@ The following features were added:
   When the Portal Task plugin is configured, the plugin action 'Create Portal Task' can now be linked to a BPMN user
   task on the process links page.
 
+* **Add configuration component for 'Create Zaak' plugin action**
+
+  When the Zeken API plugin is configured, the plugin action 'Create Zaak' can now be linked to a BPMN service
+  task on the process links page.
+
 * **Add configuration component for the 'Verzoek' plugin**
 
   The 'Verzoek' plugin can now be configured from the plugin management page. To support the adding of multiple Verzoek
