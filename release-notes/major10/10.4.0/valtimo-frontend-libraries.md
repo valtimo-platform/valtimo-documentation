@@ -4,28 +4,25 @@
 
 The following features were added:
 
-* **New feature1**
+* **Add configuration component for 'Create Portal Task' plugin action**
 
-  Description of the new feature goes here.
-  Also link to the page that expains the feature in greater detail.
+  When the Portal Task plugin is configured, the plugin action 'Create Portal Task' can now be linked to a BPMN user
+  task on the process links page.
 
-* **New feature2**
+* **Add configuration component for the 'Verzoek' plugin**
 
-  Description of the new feature goes here.
-  Also link to the page that expains the feature in greater detail.
-
+  The 'Verzoek' plugin can now be configured from the plugin management page. To support the adding of multiple Verzoek
+  types, a new component has been added to the `@valtimo/user-interface` library: `v-multi-input-form`. This component
+  allows the input of a template containing a `v-form` component, and allows multiple instances of this specified form
+  template within another `v-form` component.
 
 ## Bugfixes
 
 The following bugs were fixed:
 
-* **Bug1**
+* **Fix task modal scroll**
 
-  Description of what the issue was.
-
-* **Bug2**
-
-  Description of what the issue was.
+  Fixed an issue where task modals could not scroll when the task form was larger than the vertical size of the screen.
 
 ## Breaking changes
 
