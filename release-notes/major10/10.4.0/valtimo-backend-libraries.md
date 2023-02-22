@@ -31,7 +31,11 @@ The following bugs were fixed:
 
 The following breaking changes were introduced:
 
-* **Breaking change1**
+* **Renamed process 'Retrieve Document and link to Zaak'**
+
+  The BPMN process 'Retrieve Document and link to Zaak' was renamed to 'Link document to zaak'. However, applications
+  might now have both processes available in the process list. If so, the application must migrate to use the new 'Link
+  document to zaak' process.
 
 * **Breaking change2**
 
