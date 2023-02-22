@@ -34,7 +34,6 @@ The following features were added:
 
   `${this.valtimoEndpointUri}v1/zaken-api/document/${documentId}/files`
 
-
 ## Bugfixes
 
 The following bugs were fixed:
