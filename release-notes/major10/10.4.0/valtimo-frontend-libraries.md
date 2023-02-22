@@ -56,7 +56,7 @@ The following bugs were fixed:
 * **Fix case list URL parameters**
 
   Query parameters in the URL on the case list page (concerning pagination and search) were retained when navigating to
-  other pages inside the application. This issue has been resolved.
+  other pages inside the application.
 
 ## Breaking changes
 
