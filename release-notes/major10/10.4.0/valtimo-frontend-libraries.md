@@ -34,6 +34,12 @@ The following features were added:
 
   `${this.valtimoEndpointUri}v1/zaken-api/document/${documentId}/files`
 
+* **Sort files on documents tab on case detail page by date**
+
+  A feature toggle has been added to enable sorting files related to a case on the documents tab of the case detail page
+  by date in descending order. In order to use this, use the `sortFilesByDate` feature toggle. For more information,
+  refer to [this page](/reference/feature-toggles.md).
+
 ## Bugfixes
 
 The following bugs were fixed:
