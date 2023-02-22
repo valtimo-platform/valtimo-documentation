@@ -29,6 +29,10 @@ The following bugs were fixed:
 
   Fixed an issue where task modals could not scroll when the task form was larger than the vertical size of the screen.
 
+* **AssigneeFilter reset when opening case list**
+
+  Fixed an issue where the wrong assigneeFilter is active and displaying the wrong case list because of it.
+
 ## Breaking changes
 
 The following breaking changes were introduced:
