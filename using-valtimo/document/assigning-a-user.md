@@ -5,8 +5,18 @@ when they are responsible for the next user task(s) and to tell other users they
 the document. This page will describe how a user can be set as the assignee of a document.
 
 ## Prerequisites
-The user must have the correct role to access case types. 
-This is the case when the case type is visible in the `Cases` menu
+
+This page requires the following:
+- The case definition is configured to allow for cases to be assigned to users.
+- The user must have the correct role to access case types.
+- This is the case when the case type is visible in the `Cases` menu.
+
+## How to configure cases to be assignable
+
+On the case management page, a setting can be changed to indicate that cases of that type can have an assignee. This can
+be done by toggling the 'Case assignee' checkbox to enable assigning cases.
+
+![Configuring a case assignee](img/case-assignee.png)
 
 ## Assigning using the user interface
 In the menu `Cases` a case type must be selected and then a specific case must be opened.
@@ -28,7 +38,7 @@ When this service task is reached the assignee will be set.
 ![Assign user in process](img/assign-user-in-process.png)
 
 ## Seeing the currently assigned users
-When a user has been assigned using the claim button or a process there are multiple ways this is presented. It is
+When a user has been assigned using the claim button or a process, there are multiple ways this is presented. It is
 shown on the case detail page just below the title of the page. Here it will show a label `Assigned to <user name>`.
 
 ![Assigning label on case detail page](img/assignee-label.png)

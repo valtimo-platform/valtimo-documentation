@@ -1,4 +1,4 @@
-# Frontend libraries 5.14.0 (RC)
+# Frontend libraries 5.14.0
 
 ## New Features
 
@@ -10,7 +10,7 @@ The following features were added:
   (i.e. Admin -> Cases -> Leningen). On this tab, a 'Download search field configuration' button is now shown, which
   downloads the search field configuration for the current document type as a JSON file.
 
-  For more information on how to enable the `caseSearchFields` feature toggle, refer to [this page](/reference/feature-toggles/available-feature-toggles.md).
+  For more information on how to enable the `caseSearchFields` feature toggle, refer to [this page](/reference/feature-toggles.md).
 
 * **Added new actions to case search field configuration**
 
@@ -26,12 +26,34 @@ The following features were added:
 
 * **Added a new input field for case search field configuration modal**
 
-  Add new input to configure the case search field title.
+  Add new input to configure the case search field `title`.
 
-  The title is an optional field that appears as a label for the current search field. When the title is not set, 
+  The `title` is an optional field that appears as a label for the current search field. When the `title` is not set, 
   the default value will be the search field key translation (if there is no translation available, the original key value will be displayed).
 
   For more information on this feature, see [this page](/using-valtimo/document/configuring-search-fields.md).
+
+* **Add `boolean` and `datetime` type for search fields configuration**
+
+  Added two new types for configuring search fields.
+  
+  The `boolean` field provides a selector with the following options: `yes` and `no`. The search will considers both 
+  options if the dropdown selection is left blank.
+  
+  The `datetime` field displays a calendar with the option to add a time. It is possible to create this search field 
+  with the match type **single** and **range** option.
+
+  For more information on this feature, see [this page](/using-valtimo/document/configuring-search-fields.md).
+
+* **Added 'Clear' and 'Search' functionality in the search fields panel**
+
+  Navigating to the cases page (`Cases` -> <definition name> ex.: `Leningen`), within the **Search** panel, two new 
+  buttons are located at the bottom to **Clean** and **Search** the data in the search fields.
+
+  **Search**: Clicking the search button performs the case search based on the entry in the case search fields, and 
+  returns a list of the data found.
+
+  **Clear**: Clicking the clear button, clears all search field values and resets the case list to show all cases.
 
 ## Bugfixes
 

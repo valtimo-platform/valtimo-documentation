@@ -12,3 +12,4 @@ This section is intended for system administrators who need to configure Valtimo
 * [Plugins](plugin/plugins.md)
 * [Processes](process/process.md)
 * [Upload](upload/upload.md)
+* [Case](case/case.md)

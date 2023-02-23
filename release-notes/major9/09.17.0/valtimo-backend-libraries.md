@@ -16,7 +16,7 @@ The following features were added:
   Almost all modules within Valtimo now have support for Postgres databases. The exceptions are:
   - `form-flow-valtimo`
   
-  Information on how to use Postgres can be found [here](/valtimo-implementation/database-support.md).
+  Information on how to use Postgres can be found [here](/getting-started/database-support.md).
 
 
 * **Secret keys in plugins are encypted before storing**
@@ -56,7 +56,7 @@ This version has the following known issues:
 
 * **Multiple form associations on process definition**
 
-  When multiple start forms are associated with a single process definition the user is unable to start a new case of
+  When multiple start forms are associated with a single process definition, the user is unable to start a new case of
   that specific type.
 
 * **Updating process variables from a form.io submission**  

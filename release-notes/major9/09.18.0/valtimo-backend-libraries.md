@@ -42,7 +42,7 @@ The following bugs were fixed:
 * **'No form linked' when a start form has been linked**
 
   For some cases, it was no longer possible to manually create a new case because of a popup saying that there was no
-  start form configured even though it had been configured. The logs would show an 500 Internal Server Error.
+  start form configured even though it had been configured. The logs would show a 500 Internal Server Error.
 
 ## Breaking changes
 

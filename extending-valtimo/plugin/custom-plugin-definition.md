@@ -65,6 +65,34 @@ fun postTweet(execution: DelegateExecution, postTweetProperties: PostTweetProper
     ...
 ```
 
+#### Plugin events
+
+A plugin class can have methods that need to be run on plugin creation, update or deletion. This can be achieved with the `@PluginEvent` annotation.
+These methods will then be invoked during the corresponding event of a Plugin Configuration lifecycle.
+
+For example, `startListener()` will be executed when a Plugin Configuration is being created:
+
+```kotlin
+@PluginEvent(invokedOn = [EventType.CREATE])
+fun startListener() {
+    ...
+```
+
+Available event types: `CREATE`, `UPDATE` and `DELETE`.
+It is possible to run a method on all three of these events by specifying so in the `invokedOn` argument of the annotation e.g. `@PluginEvent(invokedOn = [EventType.CREATE, EventType.DELETE])`.
+A `PluginEventInvocationException` with references to the plugin and any underlying exceptions will be thrown should a method ran as part of an event fail.
+
+**NB! Limitations**  
+* If the annotation contains duplicate event types, then the method will still only be invoked once per event type per annotation.  
+```kotlin
+@PluginEvent(invokedOn = [EventType.CREATE, EventType.DELETE, EventType.CREATE])
+fun willRunOnceOnCreateAndDelete() {
+    ...
+```
+
+* Only methods without arguments are supported.
+* Annotated methods are resolved in alphabetical order.
+
 ### Creating a plugin factory
 
 The newly created plugin class can not be used yet because Valtimo does not know how to create the new plugin. This
@@ -571,7 +599,7 @@ translation.
 ### Plugin module
 
 Finally, after implementing the components and specification, a module has to be defined for the plugin.
-This module, together with the specification, is then imported in the app module as shown in [on this page](../../valtimo-implementation/modules/core/plugin.md).
+This module, together with the specification, is then imported in the app module as shown in [on this page](../../getting-started/modules/core/plugin.md).
 
 The sample plugin module would look like this:
 #### **`sample-plugin.module.ts`**

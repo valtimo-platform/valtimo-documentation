@@ -18,12 +18,12 @@ the *get* method will be called.
 the actual data. `documentDefinitionName` and `documentId` are passed in as context that can be used to find the data
 for the current form. Any fields in the form that use the same prefix will be bundled and passed into this method as 
 the varargs parameter `varNames`. The intention is to be able to combine and reduce calls to other systems and resources
-in order to reduce load and load times (e.g., retrieve a database record once, and get multiple properties from the
+in order to reduce load and load times (e.g. retrieve a database record once, and get multiple properties from the
   result). The result of this method is a `Map<String, Object>` where the key is the name of the field (one entry from 
 the `varNames`) and the value is the value that needs to be loaded in the form.
 
-Below is an example of a `FormFieldDataResolver`. This example would be called for each formfield where the `example` 
-prefix is used (e.g., `example:some-field`). 
+Below is an example of a `FormFieldDataResolver`. This example would be called for each form field where the `example` 
+prefix is used (e.g. `example:some-field`). 
 
 ```java
 public class ExampleDataResolver implements FormFieldDataResolver {

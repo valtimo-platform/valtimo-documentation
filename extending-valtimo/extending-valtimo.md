@@ -11,5 +11,8 @@ code.
 * [Document](document/document.md)
 * [Forms](forms/forms.md)
 * [Form flow](form-flow/form-flow.md)
+* [Modal (external docs)](https://angular.carbondesignsystem.com/?path=/story/components-modal--basic)
 * [Plugins](plugin/plugins.md)
 * [Tabs](tabs/tabs.md)
+* [Integrating spring beans in a process](integrate-spring-bean-in-process.md)
+* [Creating a custom dashboard](creating-a-custom-dashboard.md)

@@ -17,7 +17,7 @@ plugins can be found [here](/using-valtimo/plugin/configure-plugin.md).
 
 If the OpenZaak plugin is not visible in the plugin menu, it is possible the application is missing a dependency.
 Instructions on how to add the OpenZaak dependency can be found 
-[here](/valtimo-implementation/modules/zgw/openzaak.md).
+[here](/getting-started/modules/zgw/openzaak.md).
 
 To configure this plugin the following properties have to be entered:
 - **Client ID.** The client ID as configured for the 'applicatie' in OpenZaak

@@ -24,6 +24,7 @@ The content of the configuration file can look like this:
 {
   "searchFields": [
     {
+      "title": "Last Name",
       "key": "customerLastName",
       "path": "doc:customer.lastName",
       "dataType": "text",
@@ -34,27 +35,4 @@ The content of the configuration file can look like this:
 }
 ```
 
-**key**
-
-This is an identifying human-readable key of the field.
-
-**path**
-
-The path pointing to the property that can be searched for. This field is optional.
-
-**dataType**
-
-The data type of the property that that can be searched for. The options are limited to: text, number, date, datetime
-and boolean.
-
-**fieldType**
-
-There are three field types: single, multiple, range. When a search field is configured to have the 'single' field type,
-a user can only search for one value at once. With the 'multiple' field type, a user can search for multiple
-values and with the 'range' field type, a user can search for a range of values.
-
-**matchType**
-
-There are two match types: exact and like. With the 'exact' match type, a user can only find cases that match exactly
-the search query. For example, if a user searches for cases with a last name property value 'Doe', it will not return
-cases that have a last name 'Doely'. When the match type 'like' is used, both cases with 'Doe' and 'Doely' are returned.
+The possible values for the json fields are described [here](configuring-search-fields.md).
