@@ -13,7 +13,7 @@ These methods can be used in expressions applied to message throw events like th
 
 ![intermediate-throw-example](img/intermediate-throw-event.png)
 
-The first argument always corresponds to the message the is supposed to send. In this example, there should also be a
+The first argument is the key of the message that should be sent. In this example, there should also be a
 message start event that waits for this particular message, like so:
 
 ![message-start-event-example](img/message-start-event.png)
