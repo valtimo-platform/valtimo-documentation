@@ -93,6 +93,7 @@
     * [Exact Plugin](using-valtimo/plugin/exact/configure-exact-plugin.md)
   * [Process](using-valtimo/process/process.md)
     * [System processes](using-valtimo/process/systemprocesses.md)
+    * [Correlating messages](using-valtimo/process/correlating-messages.md)
   * [Upload](using-valtimo/upload/upload.md)
     * [Uploading to Documenten API with metadata](using-valtimo/upload/upload-to-documenten-api-with-metadata.md)
 * [Extending Valtimo](extending-valtimo/extending-valtimo.md)
