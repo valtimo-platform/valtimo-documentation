@@ -27,7 +27,7 @@ As shown in the example above, Valtimo provides a `sendStartMessage` method. The
     fun sendStartMessage(message: String, businessKey: String, variables: Map<String, Any>?, targetProcessDefinitionKey: String)
 ```
 
-Variables passed on will be stored in the process. Providing a target process definition key means the message will be
+Variables passed on will be stored as process variables for the process. Providing a target process definition key means the message will be
 correlated to a process definition matching that process definition key.
 
 ### Correlating message catch events
