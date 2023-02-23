@@ -2,7 +2,7 @@
 
 When modeling a process, correlating a message (e.g. to start another process) does not do anything by default. Valtimo
 offers several methods to facilitate message correlation. These can be separated into starting a process
-(Message Start Events) and message catch events (Message Boundary Events and Message Intermediate Catch Events).
+(Message Start Events) and receiving messages in a running process (Message Boundary Events and Message Intermediate Catch Events).
 
 ## How to use
 
