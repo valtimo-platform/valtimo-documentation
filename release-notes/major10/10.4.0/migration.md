@@ -18,18 +18,14 @@ This page describes how to update Valtimo from the previous version to the curre
      link is configured, migrating is not necessary.
   4. **Step4**
 
-     Click the service task 'Link Document to Zaak' and write down all properties of the process link. If no process
-     link is configured, migrating is not necessary.
+     Now select the process 'Process PortaalTaak Uploaded Documents'.
   5. **Step5**
 
-     Now select the process 'Link document to zaak'.
+     Click the service task 'Link Document to Zaak' and configure the process link as was written down.
   6. **Step6**
 
-     Click the service task 'Link Document to Zaak' and configure the process link as was written down.
-  7. **Step7**
-
-     (Optional) You may now delete the process 'Retrieve Document and link to Zaak'. It is, however, not possible to
-     delete a process from within Valtimo.
+     (Optional) You may now delete the process 'Retrieve Document and link to Zaak'. Unfortunately, Valtimo doesn't
+     provide a simple way of deleting a process definition.
 
 * **Breaking change 2/Deprecation 2**
 

@@ -31,11 +31,11 @@ The following bugs were fixed:
 
 The following breaking changes were introduced:
 
-* **Renamed process 'Retrieve Document and link to Zaak'**
+* **Deleted process 'Retrieve Document and link to Zaak'**
 
-  The BPMN process 'Retrieve Document and link to Zaak' was renamed to 'Link document to zaak'. However, applications
-  might now have both processes available in the process list. If so, the application must migrate to use the new 'Link
-  document to zaak' process.
+  The BPMN process 'Retrieve Document and link to Zaak' was deleted. However, applications might still have the
+  processes available in the process list. If so, any process links must be moved to the process
+  'process-portaaltaak-uploaded-documents'.
 
 * **Breaking change2**
 
