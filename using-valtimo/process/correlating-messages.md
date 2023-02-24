@@ -22,9 +22,10 @@ message start event that waits for this particular message, like so:
 As shown in the example above, Valtimo provides a `sendStartMessage` method. The following variations are possible:
 
 ```kotlin
+    fun sendStartMessage(message: String): MessageCorrelationResult
     fun sendStartMessage(message: String, businessKey: String?): MessageCorrelationResult
     fun sendStartMessage(message: String, businessKey: String?, variables: Map<String, Any>?): MessageCorrelationResult
-    fun sendStartMessage(message: String, businessKey: String, variables: Map<String, Any>?, targetProcessDefinitionKey: String)
+    fun sendStartMessageWithProcessDefinitionKey(message: String,targetProcessDefinitionKey: String,businessKey: String?, variables: Map<String, Any>?): MessageCorrelationResult
 ```
 
 Variables passed on will be stored as process variables for the process. Providing a target process definition key means the message will be
