@@ -41,6 +41,10 @@ The following bugs were fixed:
 
   The response from OpenNotificaties when creating a subscription is missing a required property. This was causing a Runtime Exception while mapping the response.
 
+* **Fixed NullPointerException on startup**
+
+  Changing a process definition could cause a NullPointerException on startup when migrating the process links. This resulted in a failed start of the application.
+
 ## Breaking changes
 
 The following breaking changes were introduced:

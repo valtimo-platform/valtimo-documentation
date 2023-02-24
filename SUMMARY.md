@@ -93,6 +93,7 @@
     * [Exact Plugin](using-valtimo/plugin/exact/configure-exact-plugin.md)
   * [Process](using-valtimo/process/process.md)
     * [System processes](using-valtimo/process/systemprocesses.md)
+    * [Correlating messages](using-valtimo/process/correlating-messages.md)
   * [Upload](using-valtimo/upload/upload.md)
     * [Uploading to Documenten API with metadata](using-valtimo/upload/upload-to-documenten-api-with-metadata.md)
 * [Extending Valtimo](extending-valtimo/extending-valtimo.md)
@@ -105,6 +106,7 @@
     * [Whitelisting Spring beans for Form flow](extending-valtimo/form-flow/whitelist-spring-bean.md)
   * [Form links](extending-valtimo/form-link/form-link.md)
     * [Custom form field data resolvers](extending-valtimo/form-link/custom-form-field-data-resolver.md)
+  * [Modals (external docs)](https://angular.carbondesignsystem.com/?path=/story/components-modal--basic)
   * [Plugins](extending-valtimo/plugin/plugins.md)
     * [Custom plugin definitions](extending-valtimo/plugin/custom-plugin-definition.md)
   * Process
