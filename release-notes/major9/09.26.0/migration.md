@@ -15,10 +15,10 @@ This page describes how to update Valtimo from the previous version to the curre
 
   Custom implementations of the DocumentSearchService now require userManagementService as a parameter in the super
   constructor. The userManagementService is a Spring bean and can be obtained in a similar fashion as all other
-  contractor parameters. The constructor should look like this:
+  constructor parameters. The constructor should look like this:
 
   ```java
-  public JsonSchemaDocumentSearchService(
+  public MyCustomDocumentSearchService(
       EntityManager entityManager,
       QueryDialectHelper queryDialectHelper,
       SearchFieldService searchFieldService,
