@@ -24,9 +24,7 @@ This page describes how to update Valtimo from the previous version to the curre
       SearchFieldService searchFieldService,
       UserManagementService userManagementService
   ) {
-      this.entityManager = entityManager;
-      this.queryDialectHelper = queryDialectHelper;
-      this.searchFieldService = searchFieldService;
-      this.userManagementService = userManagementService;
+      super(entityManager, queryDialectHelper, searchFieldService, userManagementService);
+      ...
   }
   ```
