@@ -11,10 +11,15 @@ which can be used in message throw events as an expression.
 More detail [here](/using-valtimo/process/correlating-messages.md).
 
 
-* **New feature2**
+* **Object management**
 
-  Description of the new feature goes here.
-  Also link to the page that explains the feature in greater detail.
+  For the object management you need a configured objectsApiPlugin and a configured objectTypesApi.
+  
+  The object management uses the objectapi plugin to get objects from the objects api and uses the objectTypesApi plugin to get the version and the uuid of the validate the object or to get all objects form that object type
+
+  The object management module is only available in the ZGW version of Valtimo.
+
+  The object management uses the search module to show values of the retried objects in a list. It also uses the search module to configure search fields where you can search within the objects you want to retrieve.
 
 
 ## Bugfixes
