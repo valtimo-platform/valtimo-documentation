@@ -8,19 +8,13 @@ Valtimo offers the functionality needed to create and add plugins to Valtimo imp
 
 #### Dependencies
 
-To create a custom plugin in your project, the following dependencies are needed:
+To create a custom plugin in your project, the following dependency is needed:
 - valtimo:plugin
-- valtimo:documenten-api
-- valtimo:zaken-api
-- valtimo:catalogi-api
 
 for example:
 
 ```kotlin
-    implementation("com.ritense.valtimo:plugin:$valtimoVersion")
-    implementation("com.ritense.valtimo:documenten-api:$valtimoVersion")
-    implementation("com.ritense.valtimo:zaken-api:$valtimoVersion")
-    implementation("com.ritense.valtimo:catalogi-api:$valtimoVersion")
+    implementation("com.ritense.valtimo:plugin:$valtimoVersion") 
 ```
 
 #### Creating a plugin class
