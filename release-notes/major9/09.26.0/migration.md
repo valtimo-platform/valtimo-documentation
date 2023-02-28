@@ -14,7 +14,7 @@ This page describes how to update Valtimo from the previous version to the curre
   Scope: backend
 
   Custom implementations of the `DocumentSearchService` now require `userManagementService` as a parameter in the super
-  constructor. The userManagementService is a Spring bean and can be obtained in a similar fashion as all other
+  constructor. The `userManagementService` is a Spring bean and can be obtained in a similar fashion as all other
   constructor parameters. The constructor should look like this:
 
   ```java
