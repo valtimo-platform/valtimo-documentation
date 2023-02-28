@@ -6,6 +6,23 @@ Valtimo offers the functionality needed to create and add plugins to Valtimo imp
 
 ### Creating a plugin definition
 
+#### Dependencies
+
+To create a custom plugin in your project, the following dependencies are needed:
+- valtimo:plugin
+- valtimo:documenten-api
+- valtimo:zaken-api
+- valtimo:catalogi-api
+
+for example:
+
+```kotlin
+    implementation("com.ritense.valtimo:plugin:$valtimoVersion")
+    implementation("com.ritense.valtimo:documenten-api:$valtimoVersion")
+    implementation("com.ritense.valtimo:zaken-api:$valtimoVersion")
+    implementation("com.ritense.valtimo:catalogi-api:$valtimoVersion")
+```
+
 #### Creating a plugin class
 
 A plugin can be created with the `@Plugin` annotation on the class. All classes with the plugin annotation are
@@ -565,6 +582,51 @@ export class SamplePluginConfigurationComponent
         [required]="true"
     >
 </v-form>
+```
+
+### Adding the plugin module to the @NgModule
+
+The main app.module.ts needs to be updated as well. The @NgModule needs to have added imports:
+
+#### **`app.module.ts`**
+
+```typescript
+@NgModule({
+  declarations: [
+          ...
+  ],
+  imports: [
+          ...
+    SamplePluginModule
+  ],
+  providers: [...,
+    {
+      provide: PLUGINS_TOKEN,
+      useValue: [
+        SamplePluginSpecification
+      ],
+    },
+  ],
+  bootstrap: [AppComponent]
+})
+```
+
+### Adding plugin as a menu option 
+
+The main menu.ts needs to be updated as well:
+
+#### **`menu.ts`**
+
+```typescript
+export const menuItems = [
+  {
+    roles: [ROLE_ADMIN], title: 'Admin', iconClass: 'icon mdi mdi-tune', sequence: 6, children: [
+            ...
+      {link: ['/plugins'], title: 'Plugins', sequence: 7},
+            ...
+    ]
+  }
+];
 ```
 
 ### Plugin translations
