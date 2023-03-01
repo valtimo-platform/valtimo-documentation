@@ -39,4 +39,11 @@ No new deprecations.
 
 ## Known issues
 
-No new known issues.
+* **Startup might fail due to NullPointerException**
+  * Discovered in version 10.2.0
+  * When a process definition has been updated, this might result in an error at startup:
+    
+    `java.lang.NullPointerException: Cannot invoke "org.camunda.bpm.engine.impl.interceptor.CommandContext.getProcessDefinitionManager()" because the return value of "org.camunda.bpm.engine.impl.context.Context.getCommandContext()" is null`
+  * Startup usually succeeds after a few tries.
+  * No workaround available. The issue has been fixed on 10.3.0
+  

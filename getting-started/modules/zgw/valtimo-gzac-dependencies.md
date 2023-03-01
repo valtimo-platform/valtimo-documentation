@@ -33,12 +33,12 @@ dependencies](../core/valtimo-dependencies.md). The following can be added to yo
 #### Gradle dependency:
 ```json
 dependencies {
-  implementation "com.ritense.valtimo:valtimo-dependencies:${valtimo_version}"
+  implementation "com.ritense.valtimo:valtimo-gzac-dependencies:${valtimo_version}"
 }
 
 dependencyManagement {
   imports {
-    mavenBom("com.ritense.valtimo:valtimo-dependencies:${valtimo_version}")
+    mavenBom("com.ritense.valtimo:valtimo-gzac-dependencies:${valtimo_version}")
   }
 }
 ```

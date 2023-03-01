@@ -9,18 +9,21 @@ Hotfixes are supported on all versions.
  
 ## Major 10
 
-Starting from major 10, `valtimo-backend-libraries` and `valtimo-frontend-libraries` use the same version.
+Starting from major 10, `valtimo-backend-libraries` and `valtimo-frontend-libraries` use the same major version.
 
-| Valtimo libraries | Java | Node |
-|-------------------|------|------|
-| 10.1.0            | 17   | 14   |
-| 10.0.1            | 17   | 14   |
-| 10.0.0            | 17   | 14   |
+| Valtimo backend libraries | Valtimo frontend libraries | Java | Node |
+|---------------------------|----------------------------|------|------|
+| 10.3.0                    | 10.3.0                     | 17   | 14   |
+| 10.2.0                    | 10.2.1                     | 17   | 14   |
+| 10.1.0                    | 10.1.0                     | 17   | 14   |
+| 10.0.0                    | 10.0.1                     | 17   | 14   |
+| 10.0.0                    | 10.0.0                     | 17   | 14   |
 
 ## Major 9
 
 | valtimo-backend-libraries | valtimo-frontend-libraries | Java | Kotlin | Spring Boot | Node | Angular |
 |---------------------------|----------------------------|------|--------|-------------|------|---------|
+| 9.26.1                    | 5.15.1                     | 13   | 1.6.10 | 2.5.12      | 14   | 13      |
 | 9.26.0                    | 5.15.0                     | 13   | 1.6.10 | 2.5.12      | 14   | 13      |
 | 9.25.0                    | 5.14.0                     | 13   | 1.6.10 | 2.5.12      | 14   | 13      |
 | 9.24.0                    | 5.13.0                     | 13   | 1.6.10 | 2.5.12      | 14   | 13      |
