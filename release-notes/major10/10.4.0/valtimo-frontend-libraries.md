@@ -34,10 +34,6 @@ The following bugs were fixed:
 
   Fixed an issue where task modals could not scroll when the task form was larger than the vertical size of the screen.
 
-* **AssigneeFilter reset when opening case list**
-
-  Fixed an issue where the wrong assigneeFilter is active and displaying the wrong case list because of it.
-
 * **Fix IBM Carbon accent colors**
 
   Fixed an issue where Carbon button and tag components were not themed with the Ritense blue theme colors, but with the
