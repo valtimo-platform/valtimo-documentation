@@ -26,14 +26,3 @@ This page describes how to update Valtimo from the previous version to the curre
 
      (Optional) You may now delete the process 'Retrieve Document and link to Zaak'. Unfortunately, Valtimo doesn't
      provide a simple way of deleting a process definition.
-
-* **Breaking change 2/Deprecation 2**
-
-  Scope: back-end/front-end
-
-  1. **Step1**
-
-      Description
-  2. **Step2**
-
-      Description
