@@ -22,13 +22,9 @@ The following features were added:
 
 The following bugs were fixed:
 
-* **Bug1**
+* **AssigneeFilter reset when opening case list**
 
-  Description of what the issue was.
-
-* **Bug2**
-
-  Description of what the issue was.
+  Fixed an issue where the wrong assigneeFilter is active and displaying the wrong case list because of it.
 
 ## Breaking changes
 

@@ -28,9 +28,11 @@ The following bugs were fixed:
 
 The following breaking changes were introduced:
 
-* **Breaking change1**
+* **Deleted process 'Retrieve Document and link to Zaak'**
 
-* **Breaking change2**
+  The BPMN process 'Retrieve Document and link to Zaak' was deleted. However, applications might still have the
+  processes available in the process list. If so, any process links must be moved to the process
+  'process-portaaltaak-uploaded-documents'.
 
 Instructions on how to migrate to this version of Valtimo can be found [here](migration.md).
 
