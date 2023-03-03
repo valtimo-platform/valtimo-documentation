@@ -47,10 +47,6 @@ with a `boolean` value.
 
   If enabled, a 'Plant a tree' button will appear in the right sidebar.
 
-* **`sortFilesByDate`**
-
-  If enabled, files under the documents tab on a case detail page will be sorted by date in descending order.
-
 * **`largeLogoMargin`**
 
   If enabled, the logo on the left in the top bar will have a large margin around it. This works well for logo's that
