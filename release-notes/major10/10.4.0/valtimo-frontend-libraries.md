@@ -26,20 +26,6 @@ The following features were added:
   The 'Create Natuurlijk Persoon Zaakrol' plugin action under the Zaken API plugin now includes a front-end
   configuration component.
 
-* **Use new endpoint to retrieve documents from the Zaken API**
-
-  When `uploadProvider` is set to `UploadProvider.DOCUMENTEN_API` in the environment file, a custom documents page is
-  displayed under the documents tab on a case detail page. The documents displayed in the table on this page are now
-  retrieved using a Zaken API plugin configuration, by using the new endpoint included in this release:
-
-  `${this.valtimoEndpointUri}v1/zaken-api/document/${documentId}/files`
-
-* **Sort files on documents tab on case detail page by date**
-
-  A feature toggle has been added to enable sorting files related to a case on the documents tab of the case detail page
-  by date in descending order. In order to use this, use the `sortFilesByDate` feature toggle. For more information,
-  refer to [this page](/reference/feature-toggles.md).
-
 ## Bugfixes
 
 The following bugs were fixed:
@@ -47,10 +33,6 @@ The following bugs were fixed:
 * **Fix task modal scroll**
 
   Fixed an issue where task modals could not scroll when the task form was larger than the vertical size of the screen.
-
-* **AssigneeFilter reset when opening case list**
-
-  Fixed an issue where the wrong assigneeFilter is active and displaying the wrong case list because of it.
 
 * **Fix IBM Carbon accent colors**
 
@@ -66,37 +48,12 @@ The following bugs were fixed:
 
 ## Breaking changes
 
-The following breaking changes were introduced:
-
-* **Moved ZaakInstanceLinkService**
-  In `valtimo-backend-libraries`, the `ZaakInstanceLinkService` class has been moved and is now part of
-  the [Zaken API module](/introduction/modules/modules.md#zaken-api)
-
-* **Breaking change2**
-
-Instructions on how to migrate to this version of Valtimo can be found [here](migration.md).
+No breaking changes.
 
 ## Deprecations
 
-The following was deprecated:
-
-* **Deprecation1**
-
-  X was deprecated and is replaced with Y.
-* **Deprecation2**
-
-  X was deprecated and is replaced with Y.
-
-Instructions on how to migrate to this version of Valtimo can be found [here](migration.md).
+No new deprecations.
 
 ## Known issues
 
-This version has the following known issues:
-
-* **Issue1**
-    * Discovered in version x.x.x
-    * Describe what can be done to work around the issue
-
-* **Issue2**
-    * Discovered in version x.x.x
-    * Describe what can be done to work around the issue
+No new known issues.
