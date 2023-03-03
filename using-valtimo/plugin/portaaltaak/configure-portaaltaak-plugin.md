@@ -1,15 +1,15 @@
 # Using the Portaal taak Plugin
 
-The portaal taak plugin is used to create taak objects in the Objecten API for a BPMN user task so they can be 
-completed through other applications like the NL Portal. This allows Valtimo to delegate tasks to other systems
-that are better suited to execute these tasks, or allow access from users that do not have access to the Valtimo
-frontend.
+The Portaal Taak plugin is used to generate "taak" (task) objects within the Objecten API for a BPMN 
+user task. As a result, such tasks can be completed via external applications, such as the NL Portal. This feature 
+empowers Valtimo to assign tasks to other systems that are more adept at performing them. Furthermore, it enables users 
+who lack access to the Valtimo frontend to access these tasks.
 
 ## How does the plugin work
 
 The lifecycle of a portaal taak is as follows:
 1. When a process instance reaches a user task configured with the [Create Portaal taak](#create-portaal-taak) action
-an instance of the task is created in valtimo as usual. Additionally a taak object is created in the Objecten API of
+an instance of the task is created in Valtimo as usual. Additionally a taak object is created in the Objecten API of
 object type `Taak`. The status of the taak object will be `open`. The taak object includes information on who the 
 intended recipient is. This is the person or organization that is supposed to complete the task.
 2. External applications, such as the NL Portal, can retrieve the task information and offer a way to 
@@ -19,7 +19,8 @@ and change the status in the object to `ingediend`.
 4. The Objecten API should send a notification to the Notificaties API indicating the the object has been updated.
 5. Valtimo should be subscribed to notifications from the Notificaties API as part of the plugin setup and will receive
 the notification. When an update notification for a taak object is received Valtimo will check the status. If this is 
-set to `ingediend` the updated data from the taak object will be stored, and the handling process will be started.
+set to `ingediend` the updated data from the taak object will be stored based on the value resolver configuration, and 
+the handling process will be started.
 6. As part of the handling process the [Complete Portaal taak](#complete-portaal-taak) action should be used. This 
 action will complete the task in Valtimo and update the zaak object status to `verwerkt`, indicating the the taak has 
 been processed. 
@@ -30,7 +31,7 @@ A plugin configuration is required before the plugin can be used. A general desc
 plugins can be found [here](../configure-plugin.md).
 
 If the Portaal taak plugin is not visible in the plugin menu, it is possible the application is missing a dependency.
-Instructions on how to add the Zaken API dependency can be found
+Instructions on how to add the Portaal taak Plugin dependency can be found
 [here](/getting-started/modules/zgw/portaaltaak.md).
 
 To configure this plugin the following properties have to be entered:
@@ -60,7 +61,7 @@ property. Valtimo ships with the `Process Portaaltaak uploaded Documents` proces
 
 These user tasks need to be configured with process links before the process can be used. The following actions should 
 be configured:
-- Link document to zaak - [Link Uploaded Documenten API document to Zaak](../zaken-api/configure-zaken-api-plugin.md#link-uploaded-document-to-zaak) in the Zaken API plugin
+- Link document to zaak - [Link document to zaak](../zaken-api/configure-zaken-api-plugin.md#link-document-to-zaak) in the Zaken API plugin
 - Update Portaal Taak Status - [Complete Portaal taak](#complete-portaal-taak) in the Portaal Taak plugin
 
 Instead of using the `Process Portaaltaak uploaded Documents` process it is possible to create another process that will
