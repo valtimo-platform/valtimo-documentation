@@ -14,17 +14,9 @@ No bugfixes.
 
 The following breaking changes were introduced:
 
-* **Deleted process 'Retrieve Document and link to Zaak'**
-
-  The BPMN process 'Retrieve Document and link to Zaak' was deleted. However, applications might still have the
-  processes available in the process list. If so, any process links must be moved to the process
-  'process-portaaltaak-uploaded-documents'.
-
 * **Moved ZaakInstanceLinkService**
   In `valtimo-backend-libraries`, the `ZaakInstanceLinkService` class has been moved and is now part of
-  the [Zaken API module](/introduction/modules/modules.md#zaken-api)
-
-Instructions on how to migrate to this version of Valtimo can be found [here](migration.md).
+  the [Zaken API module](/introduction/modules/modules.md#zaken-api). Implementations that use this class directly should change the package name.
 
 ## Deprecations
 

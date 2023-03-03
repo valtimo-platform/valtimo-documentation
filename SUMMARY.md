@@ -133,7 +133,6 @@
     * 10.4.0
       * [Valtimo backend libraries](release-notes/major10/10.4.0/valtimo-backend-libraries.md)
       * [Valtimo frontend libraries](release-notes/major10/10.4.0/valtimo-frontend-libraries.md)
-      * [Migration](release-notes/major10/10.4.0/migration.md)
     * 10.3.0
       * [Valtimo backend libraries](release-notes/major10/10.3.0/valtimo-backend-libraries.md)
       * [Valtimo frontend libraries](release-notes/major10/10.3.0/valtimo-frontend-libraries.md)
