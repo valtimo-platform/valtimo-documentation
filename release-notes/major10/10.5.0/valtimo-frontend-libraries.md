@@ -4,16 +4,19 @@
 
 The following features were added:
 
-* **New feature1**
+* **Use new endpoint to retrieve documents from the Zaken API**
 
-  Description of the new feature goes here.
-  Also link to the page that expains the feature in greater detail.
+  When `uploadProvider` is set to `UploadProvider.DOCUMENTEN_API` in the environment file, a custom documents page is
+  displayed under the documents tab on a case detail page. The documents displayed in the table on this page are now
+  retrieved using a Zaken API plugin configuration, by using the new endpoint included in this release:
 
-* **New feature2**
+  `${this.valtimoEndpointUri}v1/zaken-api/document/${documentId}/files`
 
-  Description of the new feature goes here.
-  Also link to the page that expains the feature in greater detail.
+* **Sort files on documents tab on case detail page by date**
 
+  A feature toggle has been added to enable sorting files related to a case on the documents tab of the case detail page
+  by date in descending order. In order to use this, use the `sortFilesByDate` feature toggle. For more information,
+  refer to [this page](/reference/feature-toggles.md).
 
 ## Bugfixes
 

@@ -4,16 +4,11 @@
 
 The following features were added:
 
-* **New feature1**
+* **Added Correlation Service ProcessBean**
 
-  Description of the new feature goes here.
-  Also link to the page that explains the feature in greater detail.
-
-* **New feature2**
-
-  Description of the new feature goes here.
-  Also link to the page that explains the feature in greater detail.
-
+  This process bean allows exposes methods that provide message correlation and association to a document
+  which can be used in message throw events as an expression.
+  More detail [here](/using-valtimo/process/correlating-messages.md).
 
 ## Bugfixes
 
