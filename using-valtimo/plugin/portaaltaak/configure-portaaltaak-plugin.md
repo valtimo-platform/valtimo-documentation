@@ -2,8 +2,8 @@
 
 The Portaal Taak plugin is used to generate "taak" (task) objects within the Objecten API for a BPMN 
 user task. These tasks can then be completed via external applications, such as the NL Portal. This feature 
-empowers Valtimo to assign tasks to other systems that are more adept at performing them. Furthermore, it enables users 
-who lack access to the Valtimo frontend to access these tasks.
+empowers Valtimo to assign certain tasks to other systems that are more adept at performing these specific tasks. 
+Furthermore, it enables users who lack access to the Valtimo frontend to access these tasks.
 
 ## How does the plugin work
 
@@ -38,7 +38,7 @@ To configure this plugin the following properties have to be entered:
 - **Notification API plugin.** Reference to another plugin configuration that will be used to receive notification on
 updates to objects. This is needed for completing tasks of which the status has been updated.
 - **Object management configuration.** Reference to the object management configuration that can be used to store the
-taak objects. If no option is available in this field an object management configuration has to be created first.
+taak objects. If no option is available in this field, an object management configuration has to be created first.
 - **Uploaded documents handler process.** Reference to the process that will be started to handle completion of tasks.
 This can do additional steps like handling the file attachments. A process task should be configured in this process 
 definition to handle the completion itself. This can be done using the [Complete Portaal taak](#complete-portaal-taak) 
@@ -50,19 +50,21 @@ An example plugin configuration:
 
 ## Configuring the task completion process 
 
-When a task object is updated and Valtimo gets the notification, a process is started to handle additional steps needed 
+When a task object is updated and Valtimo receives the notification, a process is started to handle additional steps needed 
 for completing the task. Because the task can only be considered completed when all other processing of data has 
-happened, the actual completion of the task is also a plugin action that can be configured in this process.
+happened, the actual completion of the task in the BPMN engine is also part of the plugin action that should be configured in this process.
 
-The process that is started in configured in the plugin properties by setting the 'Uploaded documents handler process'
-property. Valtimo ships with the `Process Portaaltaak uploaded Documents` process which has two user tasks.
+The process that is started needs to be configured in the plugin properties by setting the 'Uploaded documents handler process'
+property. Valtimo ships with the `Process Portaaltaak uploaded Documents` process which has two tasks.
 
 ![Process Portaaltaak uploaded Documents](img/process-portaal-taak.png)
 
-These user tasks need to be configured with process links before the process can be used. The following actions should 
+These tasks need to be configured with process links before the process can be used. The following actions should 
 be configured:
 - Link document to zaak - [Link document to zaak](../zaken-api/configure-zaken-api-plugin.md#link-document-to-zaak) in the Zaken API plugin
 - Update Portaal Taak Status - [Complete Portaal taak](#complete-portaal-taak) in the Portaal Taak plugin
+
+### Custom process
 
 Instead of using the `Process Portaaltaak uploaded Documents` process it is possible to create another process that will
 handle task completion in a different way. The process is started with a few process variables that can be used when 
@@ -81,7 +83,7 @@ multi-instance elements to iteratte over the list.
 The portaal taak plugin supports the following actions that can be configured in process links in order to create and 
 complete user tasks through external systems like the NL Portal.
 
-A general description on how to create process links, can be found [here](../create-process-link.md).
+A general description on how to create process links can be found [here](../create-process-link.md).
 
 ### Create Portaal taak
         
@@ -90,18 +92,20 @@ is created when the task is reached. This taak object is created in the Objecten
 management configuration for the plugin configuration.
 
 When creating a process link the following properties have to be entered:
-- **Form type.** The type of form to be used for completing the user task. Options are 'Form definition' to use a form 
-definition that the receiving system is supposed to understand, or 'URL' when using a url to the form definition.
-- **Formulier ID.** The identifier of the form in the receiving system. Required when using form type 'Form definition'.
-- **Formulier URL.** The URL of the form definition. Required when using form type 'URL'.
+- **Form type.** The type of form to be used for completing the user task. Options are:
+  - **Form definition.** Use a form definition that the receiving system is supposed to understand
+  - **URL' when using.** a url to the form definition.
+- **Formulier ID.** The identifier of the form in the receiving system. Field is only available when using form type 'Form definition'.
+- **Formulier URL.** The URL of the form definition. Field is only available when using form type 'URL'.
 - **Task data for the recipient.** The data in Valtimo that is relevant to the task and should be included for 
 prefilling in the task form. This fills a json object of data in the taak object. Every key is a json pointer to the
 property in the taak object data. The value is a value resolver string that is used to fill the property.
 - **Information entered by the recipient.** This is the mapping used to transfer the data received in the taak back to 
 the case. Every key is a value resolver string that is used to update the data in Valtimo. The corresponding value is a
 json pointer to the property in the taak object that contains the data.
-- **Receiver.** Indicates how to find the recipient of the task. Options are: 'Case initiator' to use the user linked by
-the zaak rol as the initiator of the case. 'Other' to manually select a recipient.
+- **Receiver.** Indicates how to find the recipient of the task. Options are: 
+  - **Case initiator.** Use the user that is linked by the zaak rol as the initiator of the case. 
+  - **Other.** Manually select a recipient. 
 - **Identification key.** Indicates what kind of recipient the task has. Required when choosing receiver type 'Other'.
 For example 'bsn' can be used to identify a user where BSN is the key.
 - **Identification value.** Indicates which user is the recipient of the task. Required when choosing receiver type
@@ -115,4 +119,5 @@ An example process link configuration:
         
 The **Complete Portaaltaak** action should be used in the `Uploaded documents handler process` to do the last step in 
 handling the update from the objects API. When executed it will complete the user task and update the status of the 
-taak object to `verwerkt`
+taak object to `verwerkt`. After this plugin action has been selected, the user does not have to input any 
+configuration data.
