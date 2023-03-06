@@ -1,7 +1,7 @@
 # Using the Portaal taak Plugin
 
 The Portaal Taak plugin is used to generate "taak" (task) objects within the Objecten API for a BPMN 
-user task. As a result, such tasks can be completed via external applications, such as the NL Portal. This feature 
+user task. These tasks can then be completed via external applications, such as the NL Portal. This feature 
 empowers Valtimo to assign tasks to other systems that are more adept at performing them. Furthermore, it enables users 
 who lack access to the Valtimo frontend to access these tasks.
 
