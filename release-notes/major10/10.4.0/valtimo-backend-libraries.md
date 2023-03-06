@@ -2,69 +2,24 @@
 
 ## New Features
 
-The following features were added:
-
-* **Added Correlation Service ProcessBean**
-
-  This process bean allows exposes methods that provide message correlation and association to a document
-which can be used in message throw events as an expression.
-More detail [here](/using-valtimo/process/correlating-messages.md).
-
-
-* **New feature2**
-
-  Description of the new feature goes here.
-  Also link to the page that explains the feature in greater detail.
-
+No features.
 
 ## Bugfixes
 
-The following bugs were fixed:
-
-* **Bug1**
-
-  Description of what the issue was.
-
-* **Bug2**
-
-  Description of what the issue was.
+No bugfixes.
 
 ## Breaking changes
 
 The following breaking changes were introduced:
 
-* **Deleted process 'Retrieve Document and link to Zaak'**
-
-  The BPMN process 'Retrieve Document and link to Zaak' was deleted. However, applications might still have the
-  processes available in the process list. If so, any process links must be moved to the process
-  'process-portaaltaak-uploaded-documents'.
-
-* **Breaking change2**
-
-Instructions on how to migrate to this version of Valtimo can be found [here](migration.md).
+* **Moved ZaakInstanceLinkService**
+  In `valtimo-backend-libraries`, the `ZaakInstanceLinkService` class has been moved and is now part of
+  the [Zaken API module](/introduction/modules/modules.md#zaken-api). Implementations that use this class directly should change the package name.
 
 ## Deprecations
 
-The following was deprecated:
-
-* **Deprecation1**
-
-  X was deprecated and is replaced with Y.
-
-* **Deprecation2**
-
-  X was deprecated and is replaced with Y.
-
-Instructions on how to migrate to this version of Valtimo can be found [here](migration.md).
+No new deprecations.
 
 ## Known issues
 
-This version has the following known issues:
-
-* **Issue1**
-  * Discovered in version x.x.x
-  * Describe what can be done to work around the issue
-
-* **Issue2**
-  * Discovered in version x.x.x
-  * Describe what can be done to work around the issue
+No new known issues.

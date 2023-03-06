@@ -4,17 +4,17 @@
 
 The following features were added:
 
+* **Added Correlation Service ProcessBean**
+
+  This process bean allows exposes methods that provide message correlation and association to a document
+  which can be used in message throw events as an expression.
+  More detail [here](/using-valtimo/process/correlating-messages.md).
+
 * **New plugin action in the Documenten API to download documents**
 
   This new plugin action downloads a document from the Documenten API and stores it in a temporary file. More
   information on this plugin action can be
   found [here](/using-valtimo/plugin/documenten-api/configure-documenten-api-plugin.md#download-document).
-
-* **New feature2**
-
-  Description of the new feature goes here.
-  Also link to the page that explains the feature in greater detail.
-
 
 ## Bugfixes
 
@@ -34,9 +34,11 @@ The following bugs were fixed:
 
 The following breaking changes were introduced:
 
-* **Breaking change1**
+* **Deleted process 'Retrieve Document and link to Zaak'**
 
-* **Breaking change2**
+  The BPMN process 'Retrieve Document and link to Zaak' was deleted. However, applications might still have the
+  processes available in the process list. If so, any process links must be moved to the process
+  'process-portaaltaak-uploaded-documents'.
 
 Instructions on how to migrate to this version of Valtimo can be found [here](migration.md).
 
