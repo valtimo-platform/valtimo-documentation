@@ -9,20 +9,20 @@ Furthermore, it enables users who lack access to the Valtimo frontend to access 
 
 The lifecycle of a portaal taak is as follows:
 1. When a process instance reaches a user task configured with the [Create Portaal taak](#create-portaal-taak) action
-an instance of the task is created in Valtimo as usual. Additionally a taak object is created in the Objecten API of
+an instance of the task is created in Valtimo as usual. Additionally, a taak object is created in the Objecten API of
 object type `Taak`. The status of the taak object will be `open`. The taak object includes information on who the 
 intended recipient is. This is the person or organization that is supposed to complete the task.
 2. External applications, such as the NL Portal, can retrieve the task information and offer a way to 
 complete the task. Often this will be a form to input data. 
 3. When the user completes the task in the external system, this system will update the taak object with the new data
 and change the status in the object to `ingediend`.
-4. The Objecten API should send a notification to the Notificaties API indicating the the object has been updated.
+4. The Objecten API should send a notification to the Notificaties API indicating the object has been updated.
 5. Valtimo should be subscribed to notifications from the Notificaties API as part of the plugin setup and will receive
 the notification. When an update notification for a taak object is received Valtimo will check the status. If this is 
 set to `ingediend` the updated data from the taak object will be stored based on the value resolver configuration, and 
 the handling process will be started.
 6. As part of the handling process the [Complete Portaal taak](#complete-portaal-taak) action should be used. This 
-action will complete the task in Valtimo and update the zaak object status to `verwerkt`, indicating the the taak has 
+action will complete the task in Valtimo and update the zaak object status to `verwerkt`, indicating the taak has 
 been processed. 
    
 ## Configure the plugin
@@ -39,10 +39,10 @@ To configure this plugin the following properties have to be entered:
 updates to objects. This is needed for completing tasks of which the status has been updated.
 - **Object management configuration.** Reference to the object management configuration that can be used to store the
 taak objects. If no option is available in this field, an object management configuration has to be created first.
-- **Uploaded documents handler process.** Reference to the process that will be started to handle completion of tasks.
+- **Process to complete Portaaltaak.** Reference to the process that will be started to handle completion of tasks.
 This can do additional steps like handling the file attachments. A process task should be configured in this process 
 definition to handle the completion itself. This can be done using the [Complete Portaal taak](#complete-portaal-taak) 
-plugin action. The process 'Process Portaaltaak uploaded Documents' that is shipped with Valtimo can be used here. See 
+plugin action. The process 'Process completed Portaaltaak' that is shipped with Valtimo can be used here. See 
 [this section](#configuring-the-task-completion-process ) on how to set up this process. 
 
 An example plugin configuration:
@@ -66,13 +66,13 @@ be configured:
 
 ### Custom process
 
-Instead of using the `Process Portaaltaak uploaded Documents` process it is possible to create another process that will
+Instead of using the `Process completed Portaaltaak` process it is possible to create another process that will
 handle task completion in a different way. The process is started with a few process variables that can be used when 
 designing another process definition. These variables are:
 - **portaalTaakObjectUrl.** The URL of the taak object.
 - **objectenApiPluginConfigurationId.** The id of the Objecten API plugin configuration that can be used to get or edit 
 the taak object.
-- **verwerkerTaakId.** The id of the of the task to be completed. 
+- **verwerkerTaakId.** The id of the task to be completed. 
 - **documentUrls.** A list of document URLs of documents stored in the Documenten API. Can be used as Collection in BPMN
 multi-instance elements to iteratte over the list.
 
@@ -117,7 +117,7 @@ An example process link configuration:
 
 ### Complete Portaal taak
         
-The **Complete Portaaltaak** action should be used in the `Uploaded documents handler process` to do the last step in 
+The **Complete Portaaltaak** action should be used in the `Process to complete Portaaltaak` to do the last step in 
 handling the update from the objects API. When executed it will complete the user task and update the status of the 
 taak object to `verwerkt`. After this plugin action has been selected, the user does not have to input any 
 configuration data.
