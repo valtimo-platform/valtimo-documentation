@@ -10,6 +10,11 @@ The following features were added:
   which can be used in message throw events as an expression.
   More detail [here](/using-valtimo/process/correlating-messages.md).
 
+* **Portaaltaak process name change**
+
+  The name for the Portaaltaak system process which, can run when portal task is completed, has been changed to
+  `Process completed Portaaltaak`.
+
 ## Bugfixes
 
 The following bugs were fixed:
