@@ -43,6 +43,19 @@ The following features were added:
   For each Verzoek type under a Verzoek plugin configuration, a mapping can now be optionally configured. This specifies
   which fields should be copied from the Verzoek object to the document, instead of copying the entire object.
 
+* **Form.io translations enabled**
+
+  Valtimo's form.io components didn't utilize the built-in translation functionality for labels and content. By enabling this feature, translations can now be added to an implementation.
+
+  To add translations, include the following property in the i18n files:
+  ````  
+  "formioTranslations": {
+    "<Label>": "<Translation>"
+    ...more
+  }
+  ````
+  Simply replace `<Label>` with the actual label and `<Translation>` with the corresponding translation.
+* 
 ## Bugfixes
 
 The following bugs were fixed:
