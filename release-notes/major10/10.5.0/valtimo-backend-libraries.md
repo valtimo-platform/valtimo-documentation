@@ -25,9 +25,10 @@ The following bugs were fixed:
   `getProcessInstanceVariables` method in `CamundaProcessService` would fail if there were multiple variables found
   with the same key.
 
-* **Bug2**
+* **Remove correlation with no business key**
 
-  Description of what the issue was.
+  * Removed methods that allowed sending messages without business key.
+  * Changed methods with business key as optional to required
 
 ## Breaking changes
 
