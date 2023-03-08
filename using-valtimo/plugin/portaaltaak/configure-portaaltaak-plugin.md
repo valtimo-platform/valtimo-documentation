@@ -87,9 +87,9 @@ A general description on how to create process links can be found [here](../crea
 
 ### Create Portaal taak
         
-The **Create portal task** action is linked to a user task that can be completed in an external system. A taak object
-is created when the task is reached. This taak object is created in the Objecten API configured for the object 
-management configuration for the plugin configuration.
+The **Create portal task** action is linked to a user task that can be completed in an external system. A taak object is
+created when the task is reached, in the Objecten API as configured for the object management configuration referenced 
+in the plugin configuration.
 
 When creating a process link the following properties have to be entered:
 - **Form type.** The type of form to be used for completing the user task. Options are:
