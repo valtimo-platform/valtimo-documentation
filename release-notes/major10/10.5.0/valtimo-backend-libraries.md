@@ -37,9 +37,10 @@ The following bugs were fixed:
   - Implementing an event listener for `DocumentRelatedFileSubmittedEvent` (Documenten API File upload component)
   - Implementing an event listener for `DocumentRelatedFileSubmittedEvent` (Valtimo File upload component)
 
-* **Bug2**
+* **Remove correlation with no business key**
 
-  Description of what the issue was.
+  * Removed methods that allowed sending messages without business key.
+  * Changed methods with business key as optional to required
 
 ## Breaking changes
 
