@@ -25,6 +25,18 @@ The following bugs were fixed:
   `getProcessInstanceVariables` method in `CamundaProcessService` would fail if there were multiple variables found
   with the same key.
 
+* **Duplicate file uploads due to form prefill**
+
+  When a file-upload user task was executed multiple times within the same process instance, the subsequent execution
+  would prefill the form with previously uploaded files. This caused the file to be duplicated on the case if the
+  prefilled file was not removed from the list by the user.
+  
+  The result data of the upload component will no longer be saved to the document at the specified key. If
+  post-processing is needed, this can be implemented by:
+  - Customizing the `document-upload` system process (Zaken API, GZAC)
+  - Implementing an event listener for `DocumentRelatedFileSubmittedEvent` (Documenten API File upload component)
+  - Implementing an event listener for `DocumentRelatedFileSubmittedEvent` (Valtimo File upload component)
+
 * **Remove correlation with no business key**
 
   * Removed methods that allowed sending messages without business key.
