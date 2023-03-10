@@ -10,6 +10,11 @@ The following features were added:
   which can be used in message throw events as an expression.
   More detail [here](/using-valtimo/process/correlating-messages.md).
 
+* **Portaaltaak process name change**
+
+  The name for the Portaaltaak system process which, can run when portal task is completed, has been changed to
+  `Process completed Portaaltaak`.
+
 * **New plugin action in the Documenten API to download documents**
 
   This new plugin action downloads a document from the Documenten API and stores it in a temporary file. More
@@ -26,9 +31,22 @@ The following bugs were fixed:
   `getProcessInstanceVariables` method in `CamundaProcessService` would fail if there were multiple variables found
   with the same key.
 
-* **Bug2**
+* **Duplicate file uploads due to form prefill**
 
-  Description of what the issue was.
+  When a file-upload user task was executed multiple times within the same process instance, the subsequent execution
+  would prefill the form with previously uploaded files. This caused the file to be duplicated on the case if the
+  prefilled file was not removed from the list by the user.
+  
+  The result data of the upload component will no longer be saved to the document at the specified key. If
+  post-processing is needed, this can be implemented by:
+  - Customizing the `document-upload` system process (Zaken API, GZAC)
+  - Implementing an event listener for `DocumentRelatedFileSubmittedEvent` (Documenten API File upload component)
+  - Implementing an event listener for `DocumentRelatedFileSubmittedEvent` (Valtimo File upload component)
+
+* **Remove correlation with no business key**
+
+  * Removed methods that allowed sending messages without business key.
+  * Changed methods with business key as optional to required
 
 ## Breaking changes
 
