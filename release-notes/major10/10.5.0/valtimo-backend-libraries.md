@@ -15,6 +15,12 @@ The following features were added:
   The name for the Portaaltaak system process which, can run when portal task is completed, has been changed to
   `Process completed Portaaltaak`.
 
+* **New plugin action in the Documenten API to download documents**
+
+  This new plugin action downloads a document from the Documenten API and stores it in a temporary file. More
+  information on this plugin action can be
+  found [here](/using-valtimo/plugin/documenten-api/configure-documenten-api-plugin.md#download-document).
+
 ## Bugfixes
 
 The following bugs were fixed:

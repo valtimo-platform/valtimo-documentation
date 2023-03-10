@@ -53,3 +53,9 @@ zaak to which the document is linked is based on the process for which the actio
 belongs to a case that should already have a zaak instance link before this action is performed. The link between a zaak
 and a document is stored as a 'zaakinformatieobject' in the Zaken API. After this plugin action has been selected,
 the user does not have to input any configuration data.
+
+This process link does the following steps:
+
+1. Take the document URL that is saved in the process variable `documentUrl`.
+2. Take the Zaak instance that is linked to the case.
+3. Link the Zaak instance to the document URL.
