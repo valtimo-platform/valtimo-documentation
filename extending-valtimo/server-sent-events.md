@@ -61,7 +61,7 @@ as used to reconnect/reestablish.
 
 ![Established connection](img/established-connection.png)
 
-If the subscription id is used to establish a connection all the events that were fired while disconnected
+If the subscription ID is used to establish a connection, all the events that were fired while disconnected
 will be received so there is no information loss on disconnect.
 
 ### Valtimo provided events
