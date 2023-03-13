@@ -4,7 +4,7 @@ Server-Sent Events (SSE) is a paradigm used to send information from the server 
 without an explicit request. 
 
 Valtimo provides an implementation of SSE to allow
-web clients to listen to specific events or for implementations to create their
+web clients to listen to specific events, and can be used by implementations to create their
 own events to be sent
 
 ### Creating events
