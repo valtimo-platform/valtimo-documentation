@@ -49,7 +49,7 @@ class CampaignService(val sseSubscriptionService: SseSubscriptionService){
 
 ### Client subscription to events
 
-Valtimo provides public apis to subscribe to events that are fired by the Server
+Valtimo provides public APIs to subscribe to events that are fired by the server
 An event stream will be established and events will be listened to by the subscriber
 ```
 GET https://valtimo-host/api/v1/sse 
