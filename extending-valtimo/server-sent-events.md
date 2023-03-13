@@ -1,6 +1,6 @@
 # Server sent events
 
-Server sent events is a paradigm used to send information from the server to the client
+Server-Sent Events (SSE) is a paradigm used to send information from the server to the client
 without an explicit request. 
 
 Valtimo provides an implementation of SSE to allow
