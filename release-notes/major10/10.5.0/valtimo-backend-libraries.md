@@ -21,6 +21,11 @@ The following features were added:
   information on this plugin action can be
   found [here](/using-valtimo/plugin/documenten-api/configure-documenten-api-plugin.md#download-document).
 
+* **Server sent events**
+
+  This feature allows for web clients to subscribe to server sent events and 
+  implementations to create and send custom events. More information can be found [here](/extending-valtimo/server-sent-events.md)
+
 ## Bugfixes
 
 The following bugs were fixed:
