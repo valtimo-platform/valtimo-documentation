@@ -3,7 +3,7 @@
 Server sent events is a paradigm used to send information from the server to the client
 without an explicit request. 
 
-As such Valtimo provides an implementation of Server sent events to allows
+Valtimo provides an implementation of SSE to allow
 web clients to listen to specific events or for implementations to create their
 own events to be sent
 
