@@ -26,7 +26,7 @@ class CampaignSseEvent(
 Valtimo provides a Spring Bean as a service to allow for events to be sent to
 subscribers.
 
-To do so Valtimo the SseSubscriptionService bean can be used as in the example bellow.
+To do so SseSubscriptionService bean can be used as in the example bellow.
 
 ```kotlin
 @Component
@@ -46,6 +46,12 @@ class CampaignService(val sseSubscriptionService: SseSubscriptionService){
     
 }
 ```
+
+***Disclaimer***
+
+The above example illustrates an option that is given to implementations.
+It is advised not to send out sensitive information in an event that may compromise
+either the user or the system itself.
 
 ### Client subscription to events
 
