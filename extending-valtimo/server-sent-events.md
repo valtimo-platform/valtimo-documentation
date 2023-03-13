@@ -9,7 +9,7 @@ own events to be sent
 
 ### Creating events
 
-To create events implementations only need to extend the BaseSseEvent class
+To create events, implementations need to extend the `BaseSseEvent` class
 and add any number of properties.
 
 ```kotlin
