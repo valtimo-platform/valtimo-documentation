@@ -10,7 +10,7 @@ own events.
 ### Creating events
 
 To create events, implementations need to extend the `BaseSseEvent` class
-and add any number of properties.
+Additional properties can be added if needed.
 
 ```kotlin
 abstract class BaseSseEvent(val eventType: String) //provided by Valtimo
