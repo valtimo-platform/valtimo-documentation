@@ -43,6 +43,11 @@ The following features were added:
   For each Verzoek type under a Verzoek plugin configuration, a mapping can now be optionally configured. This specifies
   which fields should be copied from the Verzoek object to the document, instead of copying the entire object.
 
+  * **Banner with environment name for non-prod**
+
+  In the right side-bar above the Valtimo version number a banner is visible when you are not in production.
+
+
 ## Bugfixes
 
 The following bugs were fixed:
