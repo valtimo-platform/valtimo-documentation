@@ -106,8 +106,6 @@
     * [Creating a form field data resolver](extending-valtimo/forms/creating-form-field-data-resolver.md)
   * [Form flow](extending-valtimo/form-flow/form-flow.md)
     * [Whitelisting Spring beans for Form flow](extending-valtimo/form-flow/whitelist-spring-bean.md)
-  * [Form links](extending-valtimo/form-link/form-link.md)
-    * [Custom form field data resolvers](extending-valtimo/form-link/custom-form-field-data-resolver.md)
   * [Modals (external docs)](https://angular.carbondesignsystem.com/?path=/story/components-modal--basic)
   * [Plugins](extending-valtimo/plugin/plugins.md)
     * [Custom plugin definitions](extending-valtimo/plugin/custom-plugin-definition.md)
