@@ -45,7 +45,9 @@ To configure this plugin the following properties have to be entered:
 - **Process.** Reference to the process that will be started after the plugin received a notification from
   OpenNotificaties. This process can do additional steps like creating the zaak and handling file attachments.
   See [this section](#configuring-the-create-zaakdossier-process) on how to set up this process.
-- **RSIN.** asdf
+- **RSIN.** Contains the RSIN of the organisation. The RSIN number (Rechtspersonen en
+  Samenwerkingsverbanden Identificatie Nummer in Dutch) is an identification number for legal entities and partnerships.
+  This will be used when storing document to indicate who is responsible for creating the Document record in the API.
 - **Verzoek types.** asdf
     - **Type.** asdf
     - **Case definition.** asdf
@@ -73,9 +75,11 @@ property. Valtimo ships with the `Create Zaakdossier` process which has six task
 These tasks need to be configured with process links before the process can be used. The following actions should
 be configured:
 
+- Create zaak - [Create ZaakRol](#create-zaak) in the Zaken API plugin
+- Create initiator ZaakRol - [Create ZaakRol](#create-zaakrol) in the Zaken API plugin
 - Link document to zaak - [Link document to zaak](../zaken-api/configure-zaken-api-plugin.md#link-document-to-zaak) in
   the Zaken API plugin
-- Update Verzoek Status - [Complete Verzoek](#complete-portaal-taak) in the Verzoek plugin
+- Delete Verzoek from ObjectsAPI - [Delete Verzoek](#delete-verzoek) in the Objects API plugin
 
 ### Custom process
 
@@ -91,7 +95,8 @@ designing another process definition. These variables are:
 - **initiatorType.** The type of the initiator of this verzoek. Usually has the value 'kvk' or 'bsn'.
 - **initiatorValue.** The ID of the initiator. This is usually a BSN or KVK number.
 - **processDefinitionKey.** The key of the process-defintion that should be started after this process.
-- **documentUrls.** A list of document URLs of documents stored in the Documenten API. Can be used as Collection in BPMN multi-instance elements to iterate over the list.
+- **documentUrls.** A list of document URLs of documents stored in the Documenten API. Can be used as Collection in BPMN
+  multi-instance elements to iterate over the list.
 
 ![img.png](img/document-urls-collection-example.png)
 
@@ -102,7 +107,7 @@ complete user tasks through external systems like the NL Portal.
 
 A general description on how to create process links can be found [here](../create-process-link.md).
 
-### Create Verzoek
+### Create Zaak
 
 The **Create portal task** action is linked to a user task that can be completed in an external system. A taak object is
 created when the task is reached, in the Objecten API as configured for the object management configuration referenced
@@ -135,9 +140,13 @@ When creating a process link the following properties have to be entered:
 An example process link configuration:
 ![Create portal task process link](img/configure-create-portaal-taak.png)
 
-### Complete Verzoek
+### Create ZaakRol
 
-The **Complete Portaaltaak** action should be used in the `Process to complete Portaaltaak` to do the last step in
-handling the update from the objects API. When executed it will complete the user task and update the status of the
+asdf
+
+### Delete Verzoek
+
+The **Delete Verzoek** action should be used in the `Create Zaakdossier` to do the last step in
+handling the deletion from the objects API. When executed it will complete the user task and update the status of the
 taak object to `verwerkt`. After this plugin action has been selected, the user does not have to input any
 configuration data.
