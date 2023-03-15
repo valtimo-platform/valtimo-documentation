@@ -21,6 +21,15 @@ The following features were added:
   information on this plugin action can be
   found [here](/using-valtimo/plugin/documenten-api/configure-documenten-api-plugin.md#download-document).
 
+* **New API endpoints to retrieve types from the Catalog API**
+
+  New API endpoints have been added to retrieve several different types from the Catalogi API. The following types can
+  be retrieved:
+  - Statustype
+  - Resultaattype
+  - Besluittype
+  The Catalogi API plugin must be configured in order to use the new API endpoints.
+
 ## Bugfixes
 
 The following bugs were fixed:
