@@ -1,7 +1,7 @@
 # Verzoek
 
-This plugin makes it possible for Valtimo to create a Valtimo case an GZAC zaak beased on a form submission in
-OpenFormulieren.
+This plugin makes it possible for Valtimo to create a Valtimo case with a GZAC zaak when a notification is received
+from the Notificaties API.
 
 ## Dependencies
 
