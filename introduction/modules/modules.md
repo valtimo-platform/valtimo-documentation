@@ -263,8 +263,8 @@ generate documents.
 
 ### Verzoek
 
-The verzoek module contains the verzoek plugin. The verzoek plugin can create a zaak and a Valtimo case whenever a user
-has submitten a form in openformulieren.
+The Verzoek module contains the verzoek plugin. The verzoek plugin can create a zaak and a Valtimo case whenever a user
+has submitted a form in OpenFormulieren.
 
 ### Wordpress mail
 
