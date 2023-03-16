@@ -4,10 +4,13 @@
 
 The following features were added:
 
-* **New feature1**
+* **New plugin action to set the zaak status**
 
-  Description of the new feature goes here.
-  Also link to the page that explains the feature in greater detail.
+  The Zaken Api plugin has a new plugin action to set the zaak status.
+
+* **New plugin action to create a 'Zaakresultaat'**
+
+  The Zaken Api plugin has a new plugin action to create a 'Zaakresultaat'.
 
 * **New feature2**
 
