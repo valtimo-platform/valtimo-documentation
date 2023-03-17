@@ -15,5 +15,6 @@ This sections contains information on how plugins can be created, configured and
 * [Openzaak Plugin](openzaak/configure-openzaak-plugin.md)
 * [Portaal taak Plugin](portaaltaak/configure-portaaltaak-plugin.md)
 * [SmartDocuments Plugin](smartdocuments/configure-smartdocuments-plugin.md)
+* [Verzoek Plugin](verzoek/configure-verzoek-plugin.md)
 * [Zaken API Plugin](zaken-api/configure-zaken-api-plugin.md)
 * [Exact Plugin](zaken-api/configure-exact-plugin.md)

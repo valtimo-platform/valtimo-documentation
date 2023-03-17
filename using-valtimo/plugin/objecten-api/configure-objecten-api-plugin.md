@@ -31,3 +31,17 @@ The Objecten API plugin is used with REST endpoints. The following endpoints are
 
   `/document/{documentId}/zaak/object?typeUrl={typeUrl}`
     - Response type: `Array<{index: number; registrationAt: string; title: string; url: string}>`
+
+## Available actions
+
+The Objecten API plugin supports the following actions that can be configured in process links in order to manage data that
+is part of the object. 
+
+A general description on how to create process links, can be found [here](../create-process-link.md).
+
+### Delete object
+
+The **Delete object** action permanently deletes an object from the Obecten API. The object can no longer be retrieved and any URL referencing that object has become obsolete.
+When creating a process link the following properties have to be entered:
+
+- **Object URL.** A URL referencing the object that should be deleted.
