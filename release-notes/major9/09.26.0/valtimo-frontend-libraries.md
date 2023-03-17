@@ -35,7 +35,7 @@ The following features were added:
 * **Disable unassigned case count feature toggle**
 
   It is now possible to disable showing the number of open cases in the menu. To do this, set `disableCaseCount` under
-  `featureToggles` in the environment file to `true`.
+  `featureToggles` in the environment file(s) to `true`.
 
 * **Hide assignee functionality based on the 'can have assignee' setting**
 
@@ -69,7 +69,7 @@ No new deprecations.
 
 This version has the following known issues:
 
-* **Viewing and editing DMN tables does not work if no 'featureToggles' object is present in the environment configuration**
+* **Viewing and editing DMN tables does not work if there is no 'featureToggles' object present in the environment configuration.**
 
   * Discovered in version 9.26.0
-  * As a workaround, an empty 'featureToggles' object can be added to the environment configuration.
+  * As a workaround, an empty 'featureToggles' object can be added to the environment configuration file(s).

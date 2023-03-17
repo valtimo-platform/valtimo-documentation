@@ -26,6 +26,15 @@ The following features were added:
   This feature allows for web clients to subscribe to server sent events and 
   implementations to create and send custom events. More information can be found [here](/extending-valtimo/server-sent-events.md)
 
+* **New API endpoints to retrieve types from the Catalog API**
+
+  New API endpoints have been added to retrieve several different types from the Catalogi API. The following types can
+  be retrieved:
+  - Statustype
+  - Resultaattype
+  - Besluittype
+  The Catalogi API plugin must be configured in order to use the new API endpoints.
+
 ## Bugfixes
 
 The following bugs were fixed:

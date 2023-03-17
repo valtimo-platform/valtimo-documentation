@@ -55,6 +55,14 @@ The following bugs were fixed:
 
   Dropdowns are now working in the create/edit form for the Productaanvragen connector.
 
+* **Custom List Column Date format**
+
+  Fixed formatting not passed
+
+* **Custom List Column support definition key with dots in the name**
+
+  Added support for dots in key
+
 ## Breaking changes
 
 The following breaking changes were introduced:
