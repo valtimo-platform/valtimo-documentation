@@ -2,7 +2,7 @@
 
 This page describes how to update Valtimo from the previous version to the current.
 
-* **Migrate form process 'Retrieve Document and link to Zaak' to process 'Link document to zaak'**
+* **Migrate from process 'Retrieve Document and link to Zaak' to process 'Link document to zaak'**
 
   Scope: front-end
 
