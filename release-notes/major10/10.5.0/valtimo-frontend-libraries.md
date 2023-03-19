@@ -43,27 +43,31 @@ The following features were added:
   For each Verzoek type under a Verzoek plugin configuration, a mapping can now be optionally configured. This specifies
   which fields should be copied from the Verzoek object to the document, instead of copying the entire object.
 
-* **Add configuration component for the 'Create Niet Natuurlijk Persoon Zaakrol' plugin action**
+* **Configuration component for the 'Create Niet Natuurlijk Persoon Zaakrol' plugin action**
 
   The 'Create Niet Natuurlijk Persoon Zaakrol' plugin action under the Zaken API plugin now includes a front-end
   configuration component.
 
-* **Add configuration component for the 'Set Zaakstatus' plugin action**
+* **Configuration component for the 'Set Zaakstatus' plugin action**
 
   The 'Set Zaakstatus' plugin action under the Zaken API plugin now includes a front-end configuration component.
 
-* **Add configuration component for the 'Create Zaakresultaat' plugin action**
+* **Configuration component for the 'Create Zaakresultaat' plugin action**
 
   The 'Create Zaakresultaat' plugin action under the Zaken API plugin now includes a front-end configuration component.
 
-* **Add configuration component for the 'Besluiten API plugin**
+* **Configuration component for the 'Besluiten API plugin**
 
   The Besluiten API plugin now includes a front-end configuration component.
 
-* **Add configuration component for the 'Create Zaakbesluit' plugin action**
+* **Configuration component for the 'Create Zaakbesluit' plugin action**
 
   The 'Create Zaakbesluit' plugin action under the Besluiten API plugin now includes a front-end configuration
   component.
+
+* **Valtimo frontend libraries version visible in settings menu**
+
+  The 'Settings' menu now displays the version of the Valtimo Frontend libraries.
 
 ## Bugfixes
 
