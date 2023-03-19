@@ -57,6 +57,12 @@ The following bugs were fixed:
   * Removed methods that allowed sending messages without business key.
   * Changed methods with business key as optional to required
 
+* **Portaaltaak plugin property renamed**
+  
+  The 'uploadedDocumentsHandlerProcess' plugin property has been renamed to 'completeTaakProcess'. 
+  This property indicates which process is started to process uploaded files and to complete the Camunda task.
+  Existing plugin configurations are migrated automatically.
+
 ## Breaking changes
 
 The following breaking changes were introduced:
