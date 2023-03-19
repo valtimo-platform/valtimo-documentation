@@ -6,8 +6,8 @@ The following features were added:
 
 * **Show full name of user in the top bar**
 
-  The full name of the logged-in user can now be shown in the top bar. To enables this features, set
-  `showUserNameInTopBar` to true under `featureToggles` in your environment file.
+  The full name of the logged-in user can now be shown in the top bar. To enable this feature, set
+  `showUserNameInTopBar` to true under `featureToggles` in your environment file(s).
 
 * **Modify and delete plugin configurations**
 
