@@ -71,26 +71,8 @@ Instructions on how to migrate to this version of Valtimo can be found [here](mi
 
 ## Deprecations
 
-The following was deprecated:
-
-* **Deprecation1**
-
-  X was deprecated and is replaced with Y.
-
-* **Deprecation2**
-
-  X was deprecated and is replaced with Y.
-
-Instructions on how to migrate to this version of Valtimo can be found [here](migration.md).
+No deprecations.
 
 ## Known issues
 
-This version has the following known issues:
-
-* **Issue1**
-  * Discovered in version x.x.x
-  * Describe what can be done to work around the issue
-
-* **Issue2**
-  * Discovered in version x.x.x
-  * Describe what can be done to work around the issue
+No known issues.
