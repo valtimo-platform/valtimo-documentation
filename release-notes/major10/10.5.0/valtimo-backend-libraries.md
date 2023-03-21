@@ -36,6 +36,11 @@ The following features were added:
   This property indicates which process is started to process uploaded files and to complete the Camunda task.
   Existing plugin configurations are migrated automatically.
 
+* **DocumentVariableDelegate improvements**
+
+  - `findValueByJsonPointerOrDefault(jsonPointer, execution, defaultValue)` has been added
+  - Value transformation now supports arrays and objects properly
+
 ## Bugfixes
 
 The following bugs were fixed:
@@ -62,6 +67,14 @@ The following bugs were fixed:
 
   * Removed methods that allowed sending messages without business key.
   * Changed methods with business key as optional to required
+
+* **DocumentVariableDelegate array value transformation**
+  * Array value transformation resulted in a unusable list of JsonNode objects. It will now transform values correctly
+    regardless of the type.
+
+* **Mapping to new arrays on Form submission**
+  When mapping values of a form submission into a non-existing array, this resulted in an error. It will now add the
+  node when it's missing.
 
 ## Breaking changes
 
