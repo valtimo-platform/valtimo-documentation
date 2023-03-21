@@ -46,6 +46,7 @@
         * [CORS](getting-started/modules/core/web/valtimo-cors.md)
     * ZGW
       * [Besluit](getting-started/modules/zgw/besluit.md)
+      * [Besluiten API](getting-started/modules/zgw/besluiten-api.md)
       * [Catalogi API](getting-started/modules/zgw/catalogi-api.md)
       * [Contactmoment](getting-started/modules/zgw/contactmoment.md)
       * [Documenten API](getting-started/modules/zgw/documenten-api.md)

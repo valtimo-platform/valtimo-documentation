@@ -170,12 +170,18 @@ REST API documentation, CORS configuration and sanitizing error messages and sta
 
 ## ZGW (Zaakgericht Werken)
 
-### Besluit
+### Besluit (deprecated)
 
 Besluit contains a connector used to connect to
 the [Besluiten API](https://vng-realisatie.github.io/gemma-zaken/standaard/besluiten/index), a Dutch government API
 standard for exchanging information around besluiten. It allows the creation of besluiten and their relation to
 documents from processes.
+
+### Besluiten API
+
+The [Besluiten API](https://vng-realisatie.github.io/gemma-zaken/standaard/besluiten/index) is a Dutch government API
+standard for exchanging information around besluiten. A plugin is provided that allows for the creation of besluiten
+and their relation to documents from processes.
 
 ### Catalogi API
 
