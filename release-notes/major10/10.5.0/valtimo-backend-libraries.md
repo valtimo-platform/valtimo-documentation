@@ -3,6 +3,14 @@
 ## New Features
 
 The following features were added:
+* **Changed Portaaltaak 'create-portaaltaak' action properties**
+
+  The plugin action properties of the 'create-portaaltaak' action have been changed: from the optional 'bsn' and 'kvk' properties to a generic 'key' and 'value'. 
+  These properties can be configured when the Portaaltaak is not intended for the initiator of the Zaak.
+
+* **ObjectenApiClient now supports 'host.docker.internal' objecttypes**
+
+  The ObjectenApiClient now changes objectype-urls from 'host.docker.internal' to 'localhost' and vise versa where needed.
 
 * **Added Correlation Service ProcessBean**
 
@@ -28,6 +36,7 @@ The following features were added:
   - Statustype
   - Resultaattype
   - Besluittype
+  
   The Catalogi API plugin must be configured in order to use the new API endpoints.
 
 * **Renamed Portaaltaak plugin property**
