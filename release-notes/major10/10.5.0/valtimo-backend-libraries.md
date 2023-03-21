@@ -38,7 +38,7 @@ The following features were added:
 
 * **DocumentVariableDelegate improvements**
 
-  - `findValueByJsonPointerOrDefault(jsonPointer, execution, defaultValue)` has been added
+  - `findValueByJsonPointerOrDefault(jsonPointer, execution, defaultValue)` has been added. This allows a default value to be returned if no value is found.
   - Value transformation now supports arrays and objects properly
 
 ## Bugfixes
