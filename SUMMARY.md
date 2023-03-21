@@ -60,6 +60,7 @@
       * [Portaal taak](getting-started/modules/zgw/portaaltaak.md)
       * [SmartDocuments](getting-started/modules/zgw/smartdocuments.md)
       * [Valtimo GZAC dependencies](getting-started/modules/zgw/valtimo-gzac-dependencies.md)
+      * [Verzoek](getting-started/modules/zgw/verzoek.md)
       * [Wordpress mail](getting-started/modules/zgw/wordpress-mail.md)
       * [Zaken API](getting-started/modules/zgw/zaken-api.md)
   * [Process blueprints](getting-started/process-blueprints.md)
@@ -93,6 +94,7 @@
     * [Objecttypen API Plugin](using-valtimo/plugin/objecttypen-api/configure-objecttypen-api-plugin.md)
     * [Portaal taak Plugin](using-valtimo/plugin/portaaltaak/configure-portaaltaak-plugin.md)
     * [Exact Plugin](using-valtimo/plugin/exact/configure-exact-plugin.md)
+    * [Verzoek Plugin](using-valtimo/plugin/verzoek/configure-verzoek-plugin.md)
   * [Process](using-valtimo/process/process.md)
     * [System processes](using-valtimo/process/systemprocesses.md)
     * [Correlating messages](using-valtimo/process/correlating-messages.md)
@@ -130,6 +132,10 @@
   * [Troubleshoot](reference/troubleshoot.md)
 * Release notes
   * 10.x.x
+    * 10.5.0 (RC)
+      * [Valtimo backend libraries](release-notes/major10/10.5.0/valtimo-backend-libraries.md)
+      * [Valtimo frontend libraries](release-notes/major10/10.5.0/valtimo-frontend-libraries.md)
+      * [Migration](release-notes/major10/10.5.0/migration.md)
     * 10.4.0
       * [Valtimo backend libraries](release-notes/major10/10.4.0/valtimo-backend-libraries.md)
       * [Valtimo frontend libraries](release-notes/major10/10.4.0/valtimo-frontend-libraries.md)

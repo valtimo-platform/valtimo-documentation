@@ -261,6 +261,11 @@ SmartDocuments itself is an external service that implements the [document gener
 uses templates and placeholders to generate documents. This module offers a plugin which can connect to this service to
 generate documents.
 
+### Verzoek
+
+The Verzoek module contains the verzoek plugin. The verzoek plugin can create a zaak and a Valtimo case whenever a user
+has submitted a form in OpenFormulieren.
+
 ### Wordpress mail
 
 The Wordpress mail plugin is a plugin for the [Wordpress CMS](https://wordpress.org/) that provides a REST API for

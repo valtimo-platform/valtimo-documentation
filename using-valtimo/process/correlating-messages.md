@@ -38,14 +38,12 @@ event, or correlating a single message to any number of catch events. Valtimo su
 `sendCatchEventMessage` and `sendCatchEventMessageToAll` methods. The following variations are possible:
 
 ```kotlin
-    fun sendCatchEventMessage(message: String): MessageCorrelationResult
-    fun sendCatchEventMessage(message: String, businessKey: String?): MessageCorrelationResult
-    fun sendCatchEventMessage(message: String, businessKey: String?, variables: Map<String, Any>?): MessageCorrelationResult
+    fun sendCatchEventMessage(message: String, businessKey: String): MessageCorrelationResult
+    fun sendCatchEventMessage(message: String, businessKey: String, variables: Map<String, Any>?): MessageCorrelationResult
     
-    fun sendCatchEventMessageToAll(message: String): List<MessageCorrelationResult>
-    fun sendCatchEventMessageToAll(message: String, businessKey: String?): List<MessageCorrelationResult>
-    fun sendCatchEventMessageToAll(message: String, businessKey: String?, variables: Map<String,Any>?): List<MessageCorrelationResult>
+    fun sendCatchEventMessageToAll(message: String, businessKey: String): List<MessageCorrelationResult>
+    fun sendCatchEventMessageToAll(message: String, businessKey: String, variables: Map<String,Any>?): List<MessageCorrelationResult>
 ```
 
-Variables passed on will be stored in the process. If the business key is provided, the message will be correlated to
+Variables passed on will be stored in the process. The provided business key will correlate the message to
 events with process instances matching that business key.
