@@ -55,9 +55,9 @@ for completing the task. Because the task can only be considered completed when 
 happened, the actual completion of the task in the BPMN engine is also part of the plugin action that should be configured in this process.
 
 The process that is started needs to be configured in the plugin properties by setting the 'Uploaded documents handler process'
-property. Valtimo ships with the `Process Portaaltaak uploaded Documents` process which has two tasks.
+property. Valtimo ships with the `Process completed Portaaltaak` process which has two tasks.
 
-![Process Portaaltaak uploaded Documents](img/process-portaal-taak.png)
+![Process completed Portaaltaak](img/process-portaal-taak.png)
 
 These tasks need to be configured with process links before the process can be used. The following actions should 
 be configured:
