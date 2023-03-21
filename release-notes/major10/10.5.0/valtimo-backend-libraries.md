@@ -69,12 +69,14 @@ The following bugs were fixed:
   * Changed methods with business key as optional to required
 
 * **DocumentVariableDelegate array value transformation**
-  * Array value transformation resulted in a unusable list of JsonNode objects. It will now transform values correctly
-    regardless of the type.
+
+  Values of an array were deserialized into objects of type JsonNode, which cannot be used by JUEL.
+  They are now deserialized into types that can be used properly.
 
 * **Mapping to new arrays on Form submission**
-  When mapping values of a form submission into a non-existing array, this resulted in an error. It will now add the
-  node when it's missing.
+
+  When mapping values of a form submission into a missing array, this resulted in an error. It will now add the
+  array and values instead.
 
 ## Breaking changes
 
