@@ -20,8 +20,7 @@ The lifecycle of a verzoek is as follows:
        zaak.
     3. Link the zaak initiator to the zaak.
     4. Link all documents inside the verzoek to the zaak.
-    5. Send a BPMN correlation message that can be used to start another follow-up BPMN process to further handle the
-       verzoek.
+    5. Start a handeling BPMN process to further handle the verzoek.
     6. Delete the verzoek object from the Objecten API.
 
 ## Configure the plugin
@@ -98,8 +97,7 @@ The 'Create Zaakdossier' process has several tasks with default configurations:
 
 ![img.png](img/document-urls-collection-example.png)
 
-- Start handling process - This task creates a message correlation which can be used to start a follow-up process that
-  further handles the verzoek.
+- Start handling process - This task starts a follow-up process that further handles the verzoek.
 
 ![start-handeling-process-configuration.png](img/start-handeling-process-configuration.png)
 
@@ -123,10 +121,5 @@ process definition. These variables are:
 ## Configuring the handling process
 
 The system process `Create Zaakdossier` offers the possibility to start a follow-up process which will further handle
-the verzoek. This handling process is started by the task `Start handling process`. This task sends a BPMN message
-correlation message which will start the BPMN process but only if it is configured as follows:
-
-- The handling process definition is selected in the verzoek plugin configuration by the property 'Process definition'.
-- The handling process has a start message event that listens to the message with name `zaakdossier-created`.
-
-![Message start event.png](img/configure-start-event-follow-up-process.png)
+the verzoek. This handling process is started by the task `Start handling process`. The verzoek plugin configuration
+property 'Process definition' decides which BPMN process will be started.
