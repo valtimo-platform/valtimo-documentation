@@ -4,16 +4,17 @@
 
 The following features were added:
 
-* **New feature1**
+* **Configuration component for the 'Link Document to Besluit' plugin action**
 
-  Description of the new feature goes here.
-  Also link to the page that expains the feature in greater detail.
+  The 'Link Document to Besluit' plugin action under the Besluiten API plugin now includes a front-end configuration
+  component.
 
-* **New feature2**
+* **Configuration components for Catalogi API plugin actions**
 
-  Description of the new feature goes here.
-  Also link to the page that expains the feature in greater detail.
-
+  The following Catalogi API plugin actions now have configuration components:
+  - Retrieve Statustype
+  - Retrieve Resultaattype
+  - Retrieve Besluittype
 
 ## Bugfixes
 

@@ -12,11 +12,20 @@ The following features were added:
 
   The Zaken Api plugin has a new plugin action to create a 'Zaakresultaat'.
 
-* **New feature2**
+* **New plugin action to create a 'Zaakbesluit'**
 
-  Description of the new feature goes here.
-  Also link to the page that explains the feature in greater detail.
+  The Besluiten Api plugin has a new plugin action to create a 'Zaakbesluit'.
 
+* **New plugin action to link a Document to a Besluit**
+
+  The Besluiten Api plugin has a new plugin action to link a Document to a Besluit.
+
+* **New plugin actions in Catalogi API plugin**
+
+  The following Catalogi API plugin actions have been added:
+  - Retrieve Statustype
+  - Retrieve Resultaattype
+  - Retrieve Besluittype
 
 ## Bugfixes
 
