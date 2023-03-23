@@ -55,7 +55,33 @@ The following features were added:
   }
   ````
   Simply replace `<Label>` with the actual label and `<Translation>` with the corresponding translation.
-* 
+
+* **Configuration component for the 'Create Niet Natuurlijk Persoon Zaakrol' plugin action**
+
+  The 'Create Niet Natuurlijk Persoon Zaakrol' plugin action under the Zaken API plugin now includes a front-end
+  configuration component.
+
+* **Configuration component for the 'Set Zaakstatus' plugin action**
+
+  The 'Set Zaakstatus' plugin action under the Zaken API plugin now includes a front-end configuration component.
+
+* **Configuration component for the 'Create Zaakresultaat' plugin action**
+
+  The 'Create Zaakresultaat' plugin action under the Zaken API plugin now includes a front-end configuration component.
+
+* **Configuration component for the 'Besluiten API plugin**
+
+  The Besluiten API plugin now includes a front-end configuration component.
+
+* **Configuration component for the 'Create Zaakbesluit' plugin action**
+
+  The 'Create Zaakbesluit' plugin action under the Besluiten API plugin now includes a front-end configuration
+  component.
+
+* **Valtimo frontend libraries version visible in settings menu**
+
+  The 'Settings' menu now displays the version of the Valtimo Frontend libraries.
+
 ## Bugfixes
 
 The following bugs were fixed:
@@ -68,37 +94,22 @@ The following bugs were fixed:
 
   Dropdowns are now working in the create/edit form for the Productaanvragen connector.
 
+* **Custom List Column Date format**
+
+  Fixed formatting not passed
+
+* **Custom List Column support definition key with dots in the name**
+
+  Added support for dots in key
+
 ## Breaking changes
 
-The following breaking changes were introduced:
-
-* **Breaking change1**
-
-* **Breaking change2**
-
-Instructions on how to migrate to this version of Valtimo can be found [here](migration.md).
+No breaking changes.
 
 ## Deprecations
 
-The following was deprecated:
-
-* **Deprecation1**
-
-  X was deprecated and is replaced with Y.
-* **Deprecation2**
-
-  X was deprecated and is replaced with Y.
-
-Instructions on how to migrate to this version of Valtimo can be found [here](migration.md).
+No deprecations.
 
 ## Known issues
 
-This version has the following known issues:
-
-* **Issue1**
-    * Discovered in version x.x.x
-    * Describe what can be done to work around the issue
-
-* **Issue2**
-    * Discovered in version x.x.x
-    * Describe what can be done to work around the issue
+No known issues.

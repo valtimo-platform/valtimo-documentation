@@ -170,12 +170,18 @@ REST API documentation, CORS configuration and sanitizing error messages and sta
 
 ## ZGW (Zaakgericht Werken)
 
-### Besluit
+### Besluit (deprecated)
 
 Besluit contains a connector used to connect to
 the [Besluiten API](https://vng-realisatie.github.io/gemma-zaken/standaard/besluiten/index), a Dutch government API
 standard for exchanging information around besluiten. It allows the creation of besluiten and their relation to
 documents from processes.
+
+### Besluiten API
+
+The [Besluiten API](https://vng-realisatie.github.io/gemma-zaken/standaard/besluiten/index) is a Dutch government API
+standard for exchanging information around besluiten. A plugin is provided that allows for the creation of besluiten
+and their relation to documents from processes.
 
 ### Catalogi API
 
@@ -250,11 +256,21 @@ authentication for other ZGW plugins.
 [OpenZaak](https://openzaak.org/) resource is an implementation of the [resource module](#resource), providing a way to
 store a resource in OpenZaak as an *eenvoudig informatie object* (simple information object).
 
+### Portaal Taak
+
+This module provides a way of making BPMN user tasks available in an external portal. This allows these tasks to be completed
+by users that do not have accesss to the GZAC frontend.
+
 ### SmartDocuments
 
 SmartDocuments itself is an external service that implements the [document generation module](#document-generation) and
 uses templates and placeholders to generate documents. This module offers a plugin which can connect to this service to
 generate documents.
+
+### Verzoek
+
+The Verzoek module contains the verzoek plugin. The verzoek plugin can create a zaak and a Valtimo case whenever a user
+has submitted a form in OpenFormulieren.
 
 ### Wordpress mail
 
