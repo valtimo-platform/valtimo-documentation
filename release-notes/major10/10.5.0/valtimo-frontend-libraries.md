@@ -45,7 +45,7 @@ The following features were added:
 
 * **Form.io translations enabled**
 
-  Valtimo's form.io components didn't utilize the built-in translation functionality for labels and content. By enabling this feature, translations can now be added to an implementation.
+  Valtimo's form.io components did not utilize the built-in translation functionality for labels and content. By enabling this feature, translations can now be added to an implementation.
 
   To add translations, include the following property in the i18n files:
   ````  
