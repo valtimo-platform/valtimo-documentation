@@ -4,16 +4,10 @@
 
 The following features were added:
 
-* **New feature1**
+* **Loading indicator Documenten API documents tab**
 
-  Description of the new feature goes here.
-  Also link to the page that expains the feature in greater detail.
-
-* **New feature2**
-
-  Description of the new feature goes here.
-  Also link to the page that expains the feature in greater detail.
-
+  The documents tab shown on a case detail page when Documenten API has been configured as the upload provider, now
+  shows loading animations when loading the list of files linked to the case, and when downloading files.
 
 ## Bugfixes
 
