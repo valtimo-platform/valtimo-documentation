@@ -9,11 +9,6 @@ The following features were added:
   The documents tab shown on a case detail page when Documenten API has been configured as the upload provider, now
   shows loading animations when loading the list of files linked to the case, and when downloading files.
 
-* **Correctly show escaped values in case summary**
-
-  In the summary tab on a case detail page, previously escaped values now display correctly in the summary form. For
-  example, the text `don't` is no longer displayed as `don&#39`.
-
 ## Bugfixes
 
 The following bugs were fixed:
