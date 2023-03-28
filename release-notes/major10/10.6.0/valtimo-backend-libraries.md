@@ -12,10 +12,9 @@ The following features were added:
 
   The Zaken Api plugin has a new plugin action to create a 'Zaakresultaat'.
 
-* **New feature2**
+* **Job service**
 
-  Description of the new feature goes here.
-  Also link to the page that explains the feature in greater detail.
+  A process bean to manipulate timer event dates. [here](/using-valtimo/process/process-beans/job-service.md)
 
 
 ## Bugfixes
