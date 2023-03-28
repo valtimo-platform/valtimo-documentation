@@ -9,6 +9,10 @@ The following features were added:
   The documents tab shown on a case detail page when Documenten API has been configured as the upload provider, now
   shows loading animations when loading the list of files linked to the case, and when downloading files.
 
+* **Triggering fresh searches everytime**
+
+  The search functionality on the case list page has been improved to trigger a search every time, even if the search term has not changed. 
+  This change enables users to search seamlessly, even when working with asynchronous data.
 ## Bugfixes
 
 The following bugs were fixed:
