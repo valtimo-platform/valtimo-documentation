@@ -4,6 +4,11 @@
 
 The following features were added:
 
+* **Loading indicator Documenten API documents tab**
+
+  The documents tab shown on a case detail page when Documenten API has been configured as the upload provider, now
+  shows loading animations when loading the list of files linked to the case, and when downloading files.
+
 * **Configuration component for the 'Link Document to Besluit' plugin action**
 
   The 'Link Document to Besluit' plugin action under the Besluiten API plugin now includes a front-end configuration
