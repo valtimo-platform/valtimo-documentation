@@ -9,6 +9,12 @@ The following features were added:
   The documents tab shown on a case detail page when Documenten API has been configured as the upload provider, now
   shows loading animations when loading the list of files linked to the case, and when downloading files.
 
+* **Added featureToggle to make the application title a suffix**
+
+  By default, the application title is shown in the browser tab as a prefix e.g. 'Valtimo - Processes'.
+  We have added the featureToggle `applicationTitleAsSuffix` to be able to change this to 'Processes - Valtimo' 
+  from the environment files.
+
 ## Bugfixes
 
 The following bugs were fixed:
