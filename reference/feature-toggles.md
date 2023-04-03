@@ -11,6 +11,11 @@ Below is an overview of available feature toggles for Valtimo, with a short desc
 In the frontend, feature toggles can be configured under the `featureToggles` key in the Angular environment file(s)
 with a `boolean` value.
 
+* **`applicationTitleAsSuffix`**
+
+  By default, the application title is shown in the browser tab as a prefix e.g. 'Valtimo - Processes'.
+  With this featureToggle it is possible to change this to 'Processes - Valtimo'.
+
 * **`disableFormFlow`**
 
   By default, it is assumed the `form-flow` module is configured in the backend, and thus a form flow option is
