@@ -14,3 +14,4 @@ This section contains information on how to configure and use Documents in Valti
 - [Assigning a user to a document](assigning-a-user.md)
 - [Configuring search fields](configuring-search-fields.md)
 - [Auto-deploying search fields](case-search.md)
+- [Case count](case-count.md)

@@ -75,6 +75,7 @@
     * [How to link a process to a case](using-valtimo/document/link-process-and-case.md)
     * [How to start a process for a case](using-valtimo/document/start-case.md)
     * [Search fields](using-valtimo/document/configuring-search-fields.md)
+    * [Case count](using-valtimo/document/case-count.md)
   * [Forms](using-valtimo/forms/forms.md)
     * [Configuring an Objecten API object form](using-valtimo/forms/configure-object-form.md)
   * [Form flow](using-valtimo/form-flow/form-flow.md)

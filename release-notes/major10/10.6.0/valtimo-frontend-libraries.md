@@ -21,6 +21,12 @@ The following features were added:
   - Retrieve Resultaattype
   - Retrieve Besluittype
 
+* **Retrieve unassigned case count through Server-Sent-Events**
+
+  The unassigned case count in the left navigation sidebar may be retrieved by responding to Server-Sent-Events (SSE).
+  This functionality is optional and should not break implementations which have not included SSE modules. For more
+  information on how to enable this feature, consult [this page](/using-valtimo/document/case-count.md).
+
 ## Bugfixes
 
 The following bugs were fixed:
