@@ -69,7 +69,7 @@ The following bugs were fixed:
   The result data of the upload component will no longer be saved to the document at the specified key. If
   post-processing is needed, this can be implemented by:
   - Customizing the `document-upload` system process (Zaken API, GZAC)
-  - Implementing an event listener for `DocumentRelatedFileSubmittedEvent` (Documenten API File upload component)
+  - Implementing an event listener for `TemporaryResourceSubmittedEvent` (Documenten API File upload component)
   - Implementing an event listener for `DocumentRelatedFileSubmittedEvent` (Valtimo File upload component)
 
 * **Remove correlation with no business key**
