@@ -14,7 +14,7 @@ The following features were added:
 
 * **Job service**
 
-  A process bean to manipulate timer event dates. [here](/using-valtimo/process/process-beans/job-service.md)
+  A process bean to manipulate camunda jobs. For now, only manipulation of timer event dates is supported. This is useful when a timer has to be changed after it has already started. For more information, see [here](/using-valtimo/process/process-beans/job-service.md).
 
 
 ## Bugfixes
