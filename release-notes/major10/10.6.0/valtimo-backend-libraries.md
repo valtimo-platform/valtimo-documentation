@@ -33,8 +33,7 @@ The following bugs were fixed:
 
 * **Reuse user var instead of retrieving it again**
 
-  In the document service when creating a case `var user` was not re-used instead `SecurityUtils.getCurrentUserLogin())` was used again.
-  Leading to having a possible different username when creating a case and when attaching documents.
+  In the document service when creating a case `var user` was not re-used instead `SecurityUtils.getCurrentUserLogin())` was used again leading to having a possible different username when creating a case or attaching documents.
 
 * **Bug2**
 
