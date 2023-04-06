@@ -12,19 +12,28 @@ The following features were added:
 
   The Zaken Api plugin has a new plugin action to create a 'Zaakresultaat'.
 
-* **New feature2**
+* **New plugin action to create a 'Zaakbesluit'**
 
-  Description of the new feature goes here.
-  Also link to the page that explains the feature in greater detail.
+  The Besluiten Api plugin has a new plugin action to create a 'Zaakbesluit'.
 
+* **New plugin action to link a Document to a Besluit**
+
+  The Besluiten Api plugin has a new plugin action to link a Document to a Besluit.
+
+* **New plugin actions in Catalogi API plugin**
+
+  The following Catalogi API plugin actions have been added:
+  - Retrieve Statustype
+  - Retrieve Resultaattype
+  - Retrieve Besluittype
 
 ## Bugfixes
 
 The following bugs were fixed:
 
-* **Bug1**
+* **Reuse user var instead of retrieving it again**
 
-  Description of what the issue was.
+  In the document service when creating a case `var user` was not re-used instead `SecurityUtils.getCurrentUserLogin())` was used again leading to having a possible different username when creating a case or attaching documents.
 
 * **Bug2**
 
