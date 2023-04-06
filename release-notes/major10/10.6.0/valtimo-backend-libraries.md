@@ -35,9 +35,9 @@ The following bugs were fixed:
 
   In the document service when creating a case `var user` was not re-used instead `SecurityUtils.getCurrentUserLogin())` was used again leading to having a possible different username when creating a case or attaching documents.
 
-* **Bug2**
+* **Reorder object columns**
 
-  Description of what the issue was.
+  Fixed changing the ordering of list-columns and search-fields.
 
 ## Breaking changes
 
