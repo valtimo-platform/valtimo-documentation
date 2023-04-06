@@ -27,6 +27,10 @@ The following features were added:
   - Retrieve Resultaattype
   - Retrieve Besluittype
 
+* **Triggering fresh searches every time**
+
+  The search functionality on the case list page has been improved to trigger a search every time, even if the search term has not changed. 
+  This change enables users to search seamlessly, even when working with asynchronous data.
 ## Bugfixes
 
 The following bugs were fixed:
