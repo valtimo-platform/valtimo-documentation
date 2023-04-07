@@ -43,7 +43,9 @@ The following bugs were fixed:
 
 The following breaking changes were introduced:
 
-* **Breaking change1**
+* **Renamed some classes in favor of Process links:**
+  * ProcessLinkTaskProvider.java → FormLinkTaskProvider.java
+  * FormProcessLinkTaskProvider.java → FormFormLinkTaskProvider.java
 
 * **Breaking change2**
 
