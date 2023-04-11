@@ -1,6 +1,7 @@
 # Using the Besluiten API Plugin
 
-//TODO
+The Besluiten API plugin is used to store information about besluiten (decisions) in an application that supports the 
+Besluiten API standard created and used by the Dutch government.
 
 ## Configure the plugin
 
