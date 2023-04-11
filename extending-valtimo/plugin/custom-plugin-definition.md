@@ -6,6 +6,17 @@ Valtimo offers the functionality needed to create and add plugins to Valtimo imp
 
 ### Creating a plugin definition
 
+#### Dependencies
+
+To create a custom plugin in your project, the following dependency is needed:
+- valtimo:plugin
+
+for example:
+
+```kotlin
+    implementation("com.ritense.valtimo:plugin:$valtimoVersion") 
+```
+
 #### Creating a plugin class
 
 A plugin can be created with the `@Plugin` annotation on the class. All classes with the plugin annotation are
@@ -44,7 +55,7 @@ These things should be kept in mind when creating the frontend components for se
   sensitive data.
 - Only when submitting a value that is not null or an empty string will the property be updated.
 - This functionality requires an application property `valtimo.plugin.encryption-secret`. The value of this property 
-  determines the encryption key. The encryption secret has to be at least 16 characters long
+  determines the encryption key. The encryption secret has to be EXACTLY 16, 24 or 32 bytes.
 
 #### Plugin action
 
@@ -565,6 +576,51 @@ export class SamplePluginConfigurationComponent
         [required]="true"
     >
 </v-form>
+```
+
+### Adding the plugin module to the @NgModule
+
+The main app.module.ts needs to be updated as well. The @NgModule needs to have added imports:
+
+#### **`app.module.ts`**
+
+```typescript
+@NgModule({
+  declarations: [
+          ...
+  ],
+  imports: [
+          ...
+    SamplePluginModule
+  ],
+  providers: [...,
+    {
+      provide: PLUGINS_TOKEN,
+      useValue: [
+        SamplePluginSpecification
+      ],
+    },
+  ],
+  bootstrap: [AppComponent]
+})
+```
+
+### Adding plugin as a menu option 
+
+The main menu.ts needs to be updated as well:
+
+#### **`menu.ts`**
+
+```typescript
+export const menuItems = [
+  {
+    roles: [ROLE_ADMIN], title: 'Admin', iconClass: 'icon mdi mdi-tune', sequence: 6, children: [
+            ...
+      {link: ['/plugins'], title: 'Plugins', sequence: 7},
+            ...
+    ]
+  }
+];
 ```
 
 ### Plugin translations

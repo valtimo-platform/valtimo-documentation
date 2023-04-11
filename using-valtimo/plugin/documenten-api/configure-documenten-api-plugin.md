@@ -58,6 +58,24 @@ An example process link configuration:
 
 ### Save uploaded document
 
-The **Save uploaded document.** saves a document to the Documenten API. Metadata provided by the user
-through a form after uploading a file, is transferred together with the file to the Documenten API. After this plugin
-action has been selected, the user does not have to input any configuration data.
+The **Save uploaded document** action saves a document to the Documenten API. Metadata provided by the user
+through a form after uploading a file, is transferred together with the file to the Documenten API. No configuration
+data has to be provided in order to configure this plugin action.
+
+This process link does the following steps:
+
+1. Gets the temporary file using the ID retrieved from a process variable `resourceId`.
+2. Saves the document in the Documenten API.
+3. Creates a new process variable `documentUrl` containing the URL to the uploaded document.
+
+
+### Download document
+
+The **Download document** action downloads a document from the Documenten API and saves it as a temporary file. No
+configuration data has to be provided in order to configure this plugin action.
+
+This process link does the following steps:
+
+1. Take the document URL that is saved in the process variable `documentUrl`.
+2. Download the document and saves it to a temporary file.
+3. Creates a new process variable `resourceId` containing the temporary file ID.

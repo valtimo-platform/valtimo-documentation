@@ -1,4 +1,4 @@
-# Frontend libraries 10.0.1
+# Frontend libraries 5.15.1
 
 ## New Features
 
@@ -8,9 +8,10 @@ No new features.
 
 The following bugs were fixed:
 
-* **Occasional 403 error notification**
+* **Connector configuration shows wrong configuration**
 
-  The Valtimo website would occasionally show an 403 error notification. This has been fixed.
+  The popup to edit a connector configuration properties, sometimes showed the properties of another connector. This has
+  been fixed.
 
 ## Breaking changes
 

@@ -25,7 +25,7 @@ An example plugin configuration:
 ## Available actions
 
 The Zaken API plugin supports the following actions that can be configured in process links in order to manage data that
-is part of the Zaak. Currently only linking a Document to an existing Zaak is supported.
+is part of the Zaak.
 
 A general description on how to create process links, can be found [here](../create-process-link.md).
 
@@ -53,3 +53,33 @@ zaak to which the document is linked is based on the process for which the actio
 belongs to a case that should already have a zaak instance link before this action is performed. The link between a zaak
 and a document is stored as a 'zaakinformatieobject' in the Zaken API. After this plugin action has been selected,
 the user does not have to input any configuration data.
+
+This process link does the following steps:
+
+1. Take the document URL that is saved in the process variable `documentUrl`.
+2. Take the Zaak instance that is linked to the case.
+3. Link the Zaak instance to the document URL.
+
+### Create zaak
+
+The **Create zaak** action creates a zaak in the zaken API. When creating a process link the following properties have
+to be entered:
+
+- **RSIN.** Contains the RSIN of the organisation. The RSIN number (Rechtspersonen en
+  Samenwerkingsverbanden Identificatie Nummer in Dutch) is an identification number for legal entities and partnerships.
+  This will be used when creating the zaak to indicate who is responsible for creating the zaak record in the API.
+- **Zaak type.** The type of the zaak that is created.
+
+### Create zaakrol - natural person
+
+The **Create zaakrol - natural person** action creates a zaakrol in the zaken API. Using this action, a person can be
+linked to a zaak.
+When creating a process link the following properties have to be entered:
+
+- **Role type URL.** Every person that is linked to a zaak has a role within that zaak. This property contains a URL to
+  the role of the zaak.
+- **Role explanation.** An explanation of the role that the person has within the zaak.
+- **Initiator BSN.** The BSN (Citizen service number) of the person that should be linked to the zaak.
+- **Other natural person identification.** (Optional) The unique number issued by the municipality for another natural
+  person.
+- **Administration number person.** (Optional) The administration number of the person, as referred to in the BRP Act.
