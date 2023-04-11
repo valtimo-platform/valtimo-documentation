@@ -96,6 +96,7 @@
     * [Portaal taak Plugin](using-valtimo/plugin/portaaltaak/configure-portaaltaak-plugin.md)
     * [Exact Plugin](using-valtimo/plugin/exact/configure-exact-plugin.md)
     * [Verzoek Plugin](using-valtimo/plugin/verzoek/configure-verzoek-plugin.md)
+    * [Besluiten Plugin](using-valtimo/plugin/besluiten-api/configure-besluiten-api-plugin.md)
   * [Process](using-valtimo/process/process.md)
     * [System processes](using-valtimo/process/systemprocesses.md)
     * [Correlating messages](using-valtimo/process/correlating-messages.md)
