@@ -5,6 +5,7 @@ usable with no or minimal code required.
 
 This section is intended for system administrators who need to configure Valtimo.
 
+* [Case](case/case.md)
 * [Document](document/document.md)
 * [Forms](forms/forms.md)
 * [Form flow](form-flow/form-flow.md)
@@ -12,4 +13,4 @@ This section is intended for system administrators who need to configure Valtimo
 * [Plugins](plugin/plugins.md)
 * [Processes](process/process.md)
 * [Upload](upload/upload.md)
-* [Case](case/case.md)
+* [Web](web/web.md)
