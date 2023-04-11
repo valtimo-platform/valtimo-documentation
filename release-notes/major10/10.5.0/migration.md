@@ -11,17 +11,13 @@ This page describes how to update Valtimo from the previous version to the curre
        Under the 'Admin' menu, go to the 'Process links' menu.
     2. **Select process 'Retrieve Document and link to Zaak'**
 
-       Select process 'Retrieve Document and link to Zaak'.
     3. **Check task 'Link Document to Zaak'**
-       Select process 'Retrieve Document and link to Zaak'.
 
        Click the service task 'Link Document to Zaak' and write down all properties of the process link. If no process
        link is configured, migrating is not necessary.
     4. **Select the process 'Process completed Portaaltaak'**
 
-       Now select the process 'Process PortaalTaak Uploaded Documents'.
     5. **Configure task 'Link Document to Zaak'**
-       Now select the process 'Process PortaalTaak Uploaded Documents'.
 
        Click the service task 'Link Document to Zaak' and configure the process link as was written down.
     6. **Delete process 'Retrieve Document and link to Zaak'**
