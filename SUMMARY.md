@@ -100,6 +100,8 @@
     * [Correlating messages](using-valtimo/process/correlating-messages.md)
   * [Upload](using-valtimo/upload/upload.md)
     * [Uploading to Documenten API with metadata](using-valtimo/upload/upload-to-documenten-api-with-metadata.md)
+  * [Web](using-valtimo/web/web.md)
+    * [Configure CORS in Valtimo](using-valtimo/web/valtimo-cors.md)
 * [Extending Valtimo](extending-valtimo/extending-valtimo.md)
   * [Document](extending-valtimo/document/document.md)
     * [Assigning and unassigning a user](extending-valtimo/document/assigning-and-unassigning-a-user.md)
