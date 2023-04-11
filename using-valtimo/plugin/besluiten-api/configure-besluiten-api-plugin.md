@@ -8,7 +8,7 @@ A plugin configuration is required before the plugin can be used. A general desc
 plugins can be found [here](../configure-plugin.md).
 
 If the Besluiten API plugin is not visible in the plugin menu, it is possible the application is missing a dependency.
-Instructions on how to add the Catalogi API dependency can be found
+Instructions on how to add the Besluiten API dependency can be found
 [here](/getting-started/modules/zgw/besluiten-api.md).
 
 To configure this plugin the following properties have to be entered:
@@ -16,7 +16,7 @@ To configure this plugin the following properties have to be entered:
 the path `/api/v1/`.
 - **Authentication plugin configuration.** Reference to another plugin configuration that will be used to add 
 authentication to any request performed on the Besluiten API. If no option is available in this field a plugin has to 
-be configured that is able to authenticate for the specific application that hosts the Catalogi API. (e.g. OpenZaak)
+be configured that is able to authenticate for the specific application that hosts the Besluiten API.
 
 An example plugin configuration:
 ![example plugin configuration](img/configure-plugin.png)
@@ -32,10 +32,6 @@ A general description on how to create process links can be found [here](../crea
 This action creates a Zaakbesluit in the Besluiten API.
 
 When creating a process link the following properties have to be entered:
-- **Statustype**. This description will be used to lookup the full statustype URL
-
-  A full URL can also be set here. In that case, the value will be used directly without a lookup.
-- **Process variable name**. This is the name of the process variable which value will be set to the found statustype URL.
 
 - **Besluittype-URL** URL reference to the besluit type.
 
