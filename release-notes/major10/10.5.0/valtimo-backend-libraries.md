@@ -3,6 +3,7 @@
 ## New Features
 
 The following features were added:
+
 * **Changed Portaaltaak 'create-portaaltaak' action properties**
 
   The plugin action properties of the 'create-portaaltaak' action have been changed: from the optional 'bsn' and 'kvk' properties to a generic 'key' and 'value'. 
