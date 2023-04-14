@@ -32,7 +32,7 @@ The following features were added:
 
 * **New API endpoints to retrieve types from the Catalog API**
 
-  New API endpoints have been added to retrieve several different types from the Catalogi API. The following types can
+  New API endpoints have been added to retrieve several types from the Catalogi API. The following types can
   be retrieved:
   - Statustype
   - Resultaattype
