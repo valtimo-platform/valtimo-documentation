@@ -1,6 +1,7 @@
 # Modules
 
 ## Core
+![Core modules](img/module-dependencies-core.svg)
 
 ### Audit
 
@@ -169,6 +170,7 @@ Web offers web related configuration, such as integration with [OpenAPI](https:/
 REST API documentation, CORS configuration and sanitizing error messages and stacktraces).
 
 ## ZGW (Zaakgericht Werken)
+![ZGW](img/module-dependencies-zgw.svg)
 
 ### Besluit
 
