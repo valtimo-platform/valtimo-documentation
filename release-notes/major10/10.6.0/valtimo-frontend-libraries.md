@@ -31,6 +31,13 @@ The following features were added:
 
   The search functionality on the case list page has been improved to trigger a search every time, even if the search term has not changed. 
   This change enables users to search seamlessly, even when working with asynchronous data.
+
+* **Task forms are now retrieve using a new API**
+
+  When opening a user task, the form is now loaded using the new API endpoint:
+
+  ```GET /api/v2/process-link/task/{id}```
+
 ## Bugfixes
 
 The following bugs were fixed:
