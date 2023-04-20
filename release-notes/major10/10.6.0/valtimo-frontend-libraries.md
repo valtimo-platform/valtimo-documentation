@@ -31,17 +31,31 @@ The following features were added:
 
   The search functionality on the case list page has been improved to trigger a search every time, even if the search term has not changed. 
   This change enables users to search seamlessly, even when working with asynchronous data.
+
+* **Case list refactor**
+
+  Over time, much functionality had been added to the case list page. All these elements did not always work
+  together properly, nor were they optimal from a user experience perspective. The case list component has been
+  refactored with the following points in mind:
+  * State (pagination, sorting) is no longer saved in the local storage. When navigating to the case list page
+    of a document definition, the default state as configured in the environment file or in the API is shown.
+  * The current assignee filter is now saved in query parameters in the URL.
+  * When navigating to a case list page using a URL with query parameters, the list state (pagination, sorting, search,
+    assignee filter) is restored from these parameters. This includes going back to the case list page from a case
+    detail page using the back button.
+
 ## Bugfixes
 
 The following bugs were fixed:
 
-* **Bug1**
+* **Case list bug fixes**
 
-  Description of what the issue was.
-
-* **Bug2**
-
-  Description of what the issue was.
+  In conjunction with the case list refactor mentioned under new features, the following issues were fixed:
+  * Boolean values (displayed as Yes/No) are now translated.
+  * When navigating to a case list page without query parameters, the default sort as specified in an environment file
+    or in the API is now used on first load.
+  * Date formats specified in list columns of type date are used to correctly display the date value in the desired
+    format.
 
 ## Breaking changes
 
