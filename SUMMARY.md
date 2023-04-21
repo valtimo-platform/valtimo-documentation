@@ -134,6 +134,9 @@
   * [Troubleshoot](reference/troubleshoot.md)
 * Release notes
   * 10.x.x
+    * 10.7.0
+      * [Valtimo backend libraries](release-notes/major10/10.7.0/valtimo-backend-libraries.md)
+      * [Valtimo frontend libraries](release-notes/major10/10.7.0/valtimo-frontend-libraries.md)
     * 10.6.0 (RC)
     * [Valtimo backend libraries](release-notes/major10/10.6.0/valtimo-backend-libraries.md)
     * [Valtimo frontend libraries](release-notes/major10/10.6.0/valtimo-frontend-libraries.md)
