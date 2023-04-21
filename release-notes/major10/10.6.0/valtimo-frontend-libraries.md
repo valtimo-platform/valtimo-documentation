@@ -38,6 +38,10 @@ The following features were added:
 
   ```GET /api/v2/process-link/task/{id}```
 
+* **Upgraded deprecated `carbon-components` package in `@valtimo/components` to `@carbon/styles`**
+
+  One of the Carbon Design System packages was deprecated and has been upgraded to the new package
+
 ## Bugfixes
 
 The following bugs were fixed:
