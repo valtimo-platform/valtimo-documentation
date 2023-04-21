@@ -50,6 +50,12 @@ The following features were added:
 
   ```DELETE /api/v1/process-link/{processLinkId}```
 
+* **Deprecate OpenZaak Connector**
+
+  The OpenZaak Connector has been deprecated. It can be replaced by
+  the [Zaken API plugin](/using-valtimo/plugin/zaken-api/configure-zaken-api-plugin.md). The OpenZaak Connector will be
+  removed entirely in Valtimo v12.
+
 ## Bugfixes
 
 The following bugs were fixed:
