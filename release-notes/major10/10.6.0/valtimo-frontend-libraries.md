@@ -32,9 +32,16 @@ The following features were added:
   The search functionality on the case list page has been improved to trigger a search every time, even if the search term has not changed. 
   This change enables users to search seamlessly, even when working with asynchronous data.
 
+* **Task forms are now retrieve using a new API**
+
+  When opening a user task, the form is now loaded using the new API endpoint:
+
+  ```GET /api/v2/process-link/task/{id}```
+
 * **Upgraded deprecated `carbon-components` package in `@valtimo/components` to `@carbon/styles`**
 
   One of the Carbon Design System packages was deprecated and has been upgraded to the new package
+
 ## Bugfixes
 
 The following bugs were fixed:
