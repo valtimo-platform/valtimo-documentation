@@ -50,6 +50,17 @@ The following features were added:
 
   ```DELETE /api/v1/process-link/{processLinkId}```
 
+* **Updated dependency versions**
+
+  Many dependencies have been updated. A few of the dependency updates:
+  - `org.camunda.bpm:camunda-engine` has been updated to version 7.19.0
+  - `org.liquibase:liquibase-core` has been updated to version 4.21.1
+  - `com.mattbertolini:liquibase-slf4j` has been updated to version 5.0.0
+  - `org.yaml:snakeyaml` has been updated to version 2.0
+  - `org.keycloak:keycloak-admin-client` has been updated to version 21.1.0
+  
+  Versions of other libraries can be found [here](https://github.com/valtimo-platform/valtimo-backend-libraries/blob/10.6.0.RELEASE/gradle.properties).
+
 * **Deprecate OpenZaak Connector**
 
   The OpenZaak Connector has been deprecated. It can be replaced by
