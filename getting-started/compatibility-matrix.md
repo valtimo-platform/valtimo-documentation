@@ -6,6 +6,13 @@
 > **Warning**
 > Mixing versions is not recommended. Valtimo is always tested according to the matrix.
 Hotfixes are supported on all versions.
+
+## Major 11
+
+| Valtimo backend libraries | Valtimo frontend libraries | Java | Node |
+|---------------------------|----------------------------|------|------|
+| 11.0.0                    | 11.0.0                     | 17   | 14   |
+
  
 ## Major 10
 
