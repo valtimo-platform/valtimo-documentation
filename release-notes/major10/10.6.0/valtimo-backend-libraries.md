@@ -61,6 +61,12 @@ The following features were added:
   
   Versions of other libraries can be found [here](https://github.com/valtimo-platform/valtimo-backend-libraries/blob/10.6.0.RELEASE/gradle.properties).
 
+* **Deprecate OpenZaak Connector**
+
+  The OpenZaak Connector has been deprecated. It can be replaced by
+  the [Zaken API plugin](/using-valtimo/plugin/zaken-api/configure-zaken-api-plugin.md). The OpenZaak Connector will be
+  removed entirely in Valtimo v12.
+
 ## Bugfixes
 
 The following bugs were fixed:
