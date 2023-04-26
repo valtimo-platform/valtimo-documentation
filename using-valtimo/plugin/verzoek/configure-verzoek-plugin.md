@@ -43,7 +43,7 @@ To configure this plugin the following properties have to be entered:
 - **RSIN.** Contains the RSIN of the organisation. The RSIN number (Rechtspersonen en
   Samenwerkingsverbanden Identificatie Nummer in Dutch) is an identification number for legal entities and partnerships.
   This will be used when storing document to indicate who is responsible for creating the zaak record in the API.
-- **Verzoek types.** The verzoek plugin can be configured to handle multiple verzoek types. EWach verzoek type can be
+- **Verzoek types.** The verzoek plugin can be configured to handle multiple verzoek types. Each verzoek type can be
   handled in a different way.
     - **Type.** The type of the verzoek. This type should match the type that is inside the verzoek object from the
       Objecten API, in property `record.data.type`.
@@ -77,7 +77,7 @@ property. Valtimo is shipped with the `Create Zaakdossier` process which has six
 Some of these tasks need to be configured with process links before the process can be used. The following actions
 should be configured:
 
-- Create zaak - [Create ZaakRol](../zaken-api/configure-zaken-api-plugin.md#create-zaak) in the Zaken API plugin
+- Create zaak - [Create Zaak](../zaken-api/configure-zaken-api-plugin.md#create-zaak) in the Zaken API plugin
 - Create initiator
   ZaakRol - [Create ZaakRol](../zaken-api/configure-zaken-api-plugin.md#create-zaakrol---natural-person) in the Zaken
   API plugin
