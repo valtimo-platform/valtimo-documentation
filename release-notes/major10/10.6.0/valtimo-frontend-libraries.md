@@ -46,13 +46,9 @@ The following features were added:
 
 The following bugs were fixed:
 
-* **Bug1**
+* **Context detail not loading properly**
 
-  Description of what the issue was.
-
-* **Bug2**
-
-  Description of what the issue was.
+    Fixed an issue where the buttons next to the processes weren't initialized properly.
 
 ## Breaking changes
 
