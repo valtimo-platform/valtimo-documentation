@@ -5,7 +5,7 @@ usable with no or minimal code required.
 
 This section is intended for system administrators who need to configure Valtimo.
 
-* [Case](case/case.md)
+* [Case](case/creating-case-settings.md)
 * [Document](document/document.md)
 * [Forms](forms/forms.md)
 * [Form flow](form-flow/form-flow.md)
