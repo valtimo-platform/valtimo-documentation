@@ -14,3 +14,4 @@ This section is intended for system administrators who need to configure Valtimo
 * [Processes](process/process.md)
 * [Process links](process-link/process-link.md)
 * [Upload](upload/upload.md)
+* [Web](web/web.md)

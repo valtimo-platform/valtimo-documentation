@@ -33,7 +33,7 @@ whether Maven or Gradle is used:
 #### Gradle dependency:
 ```json
 dependencies {
-  implementation "com.ritense.valtimo:valtimo-dependencies:${valtimo_version}"
+  implementation platform("com.ritense.valtimo:valtimo-dependencies:${valtimo_version}")
 }
 
 dependencyManagement {
