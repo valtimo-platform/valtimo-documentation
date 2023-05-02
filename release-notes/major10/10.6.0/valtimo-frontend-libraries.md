@@ -46,9 +46,9 @@ The following features were added:
 
 The following bugs were fixed:
 
-* **Bug1**
+* **Modal dispersal on error when creating an object in Object management**
 
-  Description of what the issue was.
+  The modal will now stay open and an error will be shown when used enters invalid information when creating an object.
 
 * **Bug2**
 
