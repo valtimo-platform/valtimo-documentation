@@ -1,7 +1,7 @@
 # Building blocks
 
 Building blocks are a collection of files, that can be used to supplement a process or other parts of an implementation.
-These can consist of forms, form flows, custom front-end, and back-end code. Unlike [process blueprints](blueprints.md),
+These can consist of forms, form flows, plugins, custom front-end, and back-end code. Unlike [process blueprints](blueprints.md),
 building blocks do not contain a process definition. For example, a plugin that allows sending messages via Slack.
 Building blocks can be found on GitHub [here](https://github.com/generiekzaakafhandelcomponent/Bouwblokken).
 
@@ -100,8 +100,8 @@ You can find the latest version of the repository [here](https://github.com/gene
 
 After checking out the code, the folder structure should look similar to this:
 ```
-|-- blueprints
-|   |-- [name of the blueprint]
+|-- building-blocks
+|   |-- [name of the building block]
 |   |   |-- backend
 |   |   |   |-- main
 |   |   |   |   |-- java
