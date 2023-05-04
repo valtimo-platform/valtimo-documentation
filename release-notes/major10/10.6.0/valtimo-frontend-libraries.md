@@ -46,6 +46,10 @@ The following features were added:
 
 The following bugs were fixed:
 
+* **Context detail not loading properly**
+
+  Fixed an issue where the buttons next to the processes weren't initialized properly.
+
 * **Modal dispersal on error when creating an object in Object management**
 
   The modal will now stay open and an error will be shown when used enters invalid information when creating an object.
