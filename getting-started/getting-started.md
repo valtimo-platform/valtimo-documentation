@@ -14,4 +14,4 @@ custom functions can be found in the [Extending Valtimo](/extending-valtimo/exte
 * [Compatibility matrix](compatibility-matrix.md)
 * [Database support](database-support.md)
 * [Modules](modules/modules.md)
-* [Process blueprints](process-blueprints.md)
+* [Exchange](exchange/exchange.md)
