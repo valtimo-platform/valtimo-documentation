@@ -76,6 +76,7 @@
     * [How to start a process for a case](using-valtimo/document/start-case.md)
     * [Search fields](using-valtimo/document/configuring-search-fields.md)
   * [Forms](using-valtimo/forms/forms.md)
+    * [Creating FormIO forms in Valtimo](using-valtimo/forms/creating-forms-in-valtimo.md)
     * [Configuring an Objecten API object form](using-valtimo/forms/configure-object-form.md)
   * [Form flow](using-valtimo/form-flow/form-flow.md)
     * [Creating a form flow definition](using-valtimo/form-flow/create-form-flow-definition.md)
@@ -84,8 +85,6 @@
     * [How to link a form to a task](using-valtimo/form-link/configure-task.md)
   * [Plugins](using-valtimo/plugin/plugins.md)
     * [Configuring plugins](using-valtimo/plugin/configure-plugin.md)
-    * [Creating process links](using-valtimo/plugin/create-process-link.md)
-    * [Deleting process links](using-valtimo/plugin/delete-process-link.md)
     * [SmartDocuments plugin](using-valtimo/plugin/smartdocuments/configure-smartdocuments-plugin.md)
     * [OpenZaak plugin](using-valtimo/plugin/openzaak/configure-openzaak-plugin.md)
     * [Documenten API plugin](using-valtimo/plugin/documenten-api/configure-documenten-api-plugin.md)
@@ -100,8 +99,14 @@
   * [Process](using-valtimo/process/process.md)
     * [System processes](using-valtimo/process/systemprocesses.md)
     * [Correlating messages](using-valtimo/process/correlating-messages.md)
+  * [Process links](using-valtimo/process-link/process-link.md)
+    * [Create process links](using-valtimo/process-link/create-process-link.md)
+    * [Delete process links](using-valtimo/process-link/delete-process-link.md)
+
   * [Upload](using-valtimo/upload/upload.md)
     * [Uploading to Documenten API with metadata](using-valtimo/upload/upload-to-documenten-api-with-metadata.md)
+  * [Web](using-valtimo/web/web.md)
+    * [Configure CORS in Valtimo](using-valtimo/web/valtimo-cors.md)
 * [Extending Valtimo](extending-valtimo/extending-valtimo.md)
   * [Document](extending-valtimo/document/document.md)
     * [Assigning and unassigning a user](extending-valtimo/document/assigning-and-unassigning-a-user.md)
@@ -161,6 +166,9 @@
       * [Valtimo frontend libraries](release-notes/major10/10.0.0/valtimo-frontend-libraries.md)
       * [Migration](release-notes/major10/10.0.0/migration.md)
   * 9.x.x
+    * 9.26.1/5.15.1
+      * [Valtimo backend libraries (9.26.1)](release-notes/major9/09.26.1/valtimo-backend-libraries.md)
+      * [Valtimo frontend libraries (5.15.1)](release-notes/major9/09.26.1/valtimo-frontend-libraries.md)
     * 9.26.0/5.15.0
       * [Valtimo backend libraries (9.26.0)](release-notes/major9/09.26.0/valtimo-backend-libraries.md)
       * [Valtimo frontend libraries (5.15.0)](release-notes/major9/09.26.0/valtimo-frontend-libraries.md)

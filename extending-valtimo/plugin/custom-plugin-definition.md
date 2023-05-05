@@ -55,7 +55,7 @@ These things should be kept in mind when creating the frontend components for se
   sensitive data.
 - Only when submitting a value that is not null or an empty string will the property be updated.
 - This functionality requires an application property `valtimo.plugin.encryption-secret`. The value of this property 
-  determines the encryption key. The encryption secret has to be at least 16 characters long
+  determines the encryption key. The encryption secret has to be EXACTLY 16, 24 or 32 bytes.
 
 #### Plugin action
 

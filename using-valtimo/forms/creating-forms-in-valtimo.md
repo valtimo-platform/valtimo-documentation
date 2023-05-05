@@ -89,6 +89,26 @@ This behaviour can be changed by setting a toggle in application.yml:
 
 When set to true, disabled fields will no longer be prefilled or saved. The default value is false.
 
+## Disabling prefill
+<sub>Available since 10.5.0</sub>
+
+In some cases it is desirable to be able to disable a form input prefill. For example, an upload input might result in duplicate files when prefilled.
+
+To disable prefilling a component, the `prefill` property can be set in the FormIO definition:
+
+```json
+{
+  "key": "file-attachments",
+  "type": "valtimo-file",
+  "input": true,
+  "label": "Relevant files",
+  "prefill": false,
+  ...
+}
+```
+
+In contrast to [Disabled fields](#disabled-fields), setting this property to false will still save the result in the document.
+
 ## Translations
 To display forms in different languages, we can utilize translations. This involves translating all the labels based on their label property, and using a function `instance.t('translationKey')` to display content from the translation file inside the htmlContent.
 

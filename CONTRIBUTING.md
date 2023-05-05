@@ -2,12 +2,8 @@
 
 ## Adding a feature or bugfix to Valtimo
 
-1. Discuss the (approach for the) feature or bugfix with someone from the Valtimo team. This is to reduce the work that
-   is required, as it can both reduce the chances of feedback and allows for the Valtimo team to provide some pointers
-   on how to proceed. It is not necessary to do this for smaller bugfixes.
-2. Implement the feature/bugfix and create a PR to the development branch. Add all 
-   [team Valtimo developers](https://github.com/orgs/valtimo-platform/teams/valtimo-product-team/members) to this PR
-   as reviewers.
+1. Create an issue in the [Valtimo issues repository](https://github.com/valtimo-platform/valtimo-issues) to discuss your contribution. This is to reduce the work that is required, as it can both reduce the chances of feedback and allows for the Valtimo team to provide some pointers on how to proceed.
+2. Implement the feature/bugfix and create a PR to the development branch. No reviewers are necessary.
    * Instructions on how to run Valtimo locally is split into Valtimo core and GZAC for `backend-libraries`, which can be
    found [here](https://github.com/valtimo-platform/valtimo-backend-libraries/blob/main/app/valtimo-core/README.md) and [here](https://github.com/valtimo-platform/valtimo-backend-libraries/blob/main/app/gzac/README.md) respectively. For instructions on how to run the `frontend-libraries`, see [here](https://github.com/valtimo-platform/valtimo-frontend-libraries/blob/development/README.md).
 3. Write release notes and documentation for the feature. See below for instructions on how to do this.

@@ -53,17 +53,35 @@ The following features were added:
 * **Updated dependency versions**
 
   Many dependencies have been updated. A few of the dependency updates:
-  - `org.camunda.bpm:camunda-engine` has been updated to version 7.19.0
-  - `org.yaml:snakeyaml` has been updated to version 2.0
-  - `org.keycloak:keycloak-admin-client` has been updated to version 21.1.0
-  
-  Versions of other dependencies can be found [here](https://github.com/valtimo-platform/valtimo-backend-libraries/blob/10.6.0.RELEASE/gradle.properties).
+    - `org.camunda.bpm:camunda-engine` has been updated to version 7.19.0
+    - `org.yaml:snakeyaml` has been updated to version 2.0
+    - `org.keycloak:keycloak-admin-client` has been updated to version 21.1.0
+
+  Versions of other dependencies can be
+  found [here](https://github.com/valtimo-platform/valtimo-backend-libraries/blob/10.6.0.RELEASE/gradle.properties).
 
 * **Deprecate OpenZaak Connector**
 
   The OpenZaak Connector has been deprecated. It can be replaced by
   the [Zaken API plugin](/using-valtimo/plugin/zaken-api/configure-zaken-api-plugin.md). The OpenZaak Connector will be
   removed entirely in Valtimo v12.
+
+* **Process links configuration autodeployment**
+
+  Process links can now be created by adding a configuration file in Valtimo. This configuration file is automatically
+  used when rebooting Valtimo. More
+  information [here](/using-valtimo/process-link/create-process-link.md#configuration-by-autodeployment)
+
+* **New REST API endpoints have been added**
+
+  A new endpoint has been added to return a prefilled Form IO form that was configured on a start-event of a BPMN:
+
+  `GET /api/v1/process-definition/{process-definition-id}/start-form`
+
+  A new endpoint has been added to return a list of process-link-types with a single property 'enabled'. The property '
+  enabled' is true when the process-link-type is enabled for the specified activity-type:
+
+  `GET /api/v1/process-link/types?activityType={activityType}`
 
 ## Bugfixes
 
@@ -88,6 +106,10 @@ The following bugs were fixed:
   The maximum number of 20 SmartDocument placeholders has been removed. It is now possible to enter many more
   placeholders. The maximum has been removed for all multi-input components within Valtimo. Which means that the maximum
   has also been removed for other features, such as the Verzoeken plugin mapping.
+
+* **Object management list column date format**
+
+  The list columns of Object API objects now displays dates with the configured date format.
 
 * **Objecten API search bugfixes**
   
