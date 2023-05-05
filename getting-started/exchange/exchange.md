@@ -7,7 +7,7 @@ development.
 
 Process blueprints are generic processes that can be used to cover a certain type of scenario. For example, a process
 that deals with City Pass applications. This is a process that in broad strokes is the same for a lot of municipalities.
-Redeveloping such a process for every municipality would take a lot of time, so this process blueprint can be grabbed
+Redeveloping such a process for every municipality would take a lot of time, so this process blueprint can be copied
 off the shelf and customized to fit the needs of that particular municipality. Information on how to use
 process blueprints or how to contribute to the repository can be found [here](blueprints.md).
 
