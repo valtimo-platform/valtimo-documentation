@@ -62,7 +62,7 @@ with a `boolean` value.
   If enabled, the user will be returned to the page they were last on before they were automatically logged out after
   their refresh token expired.
 
-**`enableObjectManagement`**
+* **`enableObjectManagement`**
 
 If enabled, a new menuitem 'objects' will appear in the left sidebar menu. This menu item can have one or more submenu
 items depending on the configuration. For more information [here](/getting-started/modules/zgw/object-management.md)
