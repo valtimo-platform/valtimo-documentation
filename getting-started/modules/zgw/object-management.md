@@ -1,10 +1,10 @@
 # Object management
 
-Object management makes it possible to manage Objecten API object inside of Valtimo.
+Object management makes it possible to manage Objecten API objects inside Valtimo.
 
 ## Dependencies
 
-In order to use Object management, the Object management module needs to be added as a dependency. 
+In order to use Object management, the Object management module needs to be added as a dependency.
 
 ### Backend
 
@@ -33,20 +33,22 @@ dependencies {
 
 Two packages are required to make use of Object management.
 
-The object-management package makes it possible to manage objecttypes from the objecttypes-api directly in Valtimo:
+The object-management package makes it possible to manage objecttypen from the Objecttypen API directly in Valtimo:
 
 ```@valtimo/object-management```
 
-The object package makes it possible to manage objecttypes from the objecttypes-api directly in Valtimo:
+The object package makes it possible to view, create, update and delete objects from the Objecten API directly in
+Valtimo:
 
 ```@valtimo/object```.
 
 #### Menu items
 
-Object management is disabled by default. Even after including the packages, the menu items aren't visible. Some
+Object management is disabled by default. After including the packages, the menu items are not yet visible. Some
 additional steps are required.
 
-##### Enable the feature toggle 
+##### Enable the feature toggle
+
 ```json
 {
   featureToggles: {
