@@ -76,12 +76,16 @@ The following features were added:
 
   A new endpoint has been added to return a prefilled Form IO form that was configured on a start-event of a BPMN:
 
-  `GET /api/v1/process-definition/{process-definition-id}/start-form`
+  ```GET /api/v1/process-definition/{process-definition-id}/start-form```
 
   A new endpoint has been added to return a list of process-link-types with a single property 'enabled'. The property '
   enabled' is true when the process-link-type is enabled for the specified activity-type:
 
-  `GET /api/v1/process-link/types?activityType={activityType}`
+  ```GET /api/v1/process-link/types?activityType={activityType}```
+
+  A new endpoint has been added for submitting form when the form was initiated using a processlink:
+
+  ```POST /api/v1/process-link/{processLinkId}/form/submission```
 
 ## Bugfixes
 
