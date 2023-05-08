@@ -111,9 +111,25 @@ The following bugs were fixed:
 
   The list columns of Object API objects now displays dates with the configured date format.
 
+* **Objecten API search bugfixes**
+  
+  Several bugs have been fixed for the Objecten API search:
+  - The search now properly searches through nested properties using a different path notation.
+  - It is now possible to search for properties with data type 'boolean'.
+  - It is now possible to search for properties with data type 'date'.
+  - It is now possible to search for properties with data type 'datetime'.
+
 ## Breaking changes
 
 The following breaking changes were introduced:
+
+* **Object search path**
+
+  The path -field that is used for searching for objects, has changed. It now uses the following notation:
+
+  ```obj:/customer/name```
+
+  There is no need to manually change the path. Applications that upgrade to 10.6.0 are automatically migrated.
 
 * **Renamed some classes in favor of Process links:**
     * ProcessLinkTaskProvider.java → FormLinkTaskProvider.java
