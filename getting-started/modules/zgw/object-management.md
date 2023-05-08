@@ -42,6 +42,16 @@ Valtimo:
 
 ```@valtimo/object```.
 
+Both dependencies contain a module that has to be added to the `app.module.ts`:
+
+```ts
+imports: [
+    ...
+    ObjectModule,
+    ObjectManagementModule
+]
+```
+
 #### Menu items
 
 Object management is disabled by default. After including the packages, the menu items are not yet visible. Some
