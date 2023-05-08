@@ -44,9 +44,28 @@ The following features were added:
     assignee filter) is restored from these parameters. This includes going back to the case list page from a case
     detail page using the back button.
 
+
+* **Task forms are now retrieve using a new API**
+
+  When opening a user task, the form is now loaded using the new API endpoint:
+
+  ```GET /api/v2/process-link/task/{id}```
+
+* **Upgraded deprecated `carbon-components` package in `@valtimo/components` to `@carbon/styles`**
+
+  One of the Carbon Design System packages was deprecated and has been upgraded to the new package
+
 ## Bugfixes
 
 The following bugs were fixed:
+
+* **Context detail not loading properly**
+
+  Fixed an issue where the buttons next to the processes weren't initialized properly.
+
+* **Modal dispersal on error when creating an object in Object management**
+
+  The modal will now stay open and an error will be shown when used enters invalid information when creating an object.
 
 * **Case list bug fixes**
 
