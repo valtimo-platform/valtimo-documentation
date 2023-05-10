@@ -19,18 +19,18 @@ process links.
 A form process link can be added to user-tasks. When the process reaches the user-task, a user will be presented with
 the configured form when opening it.
 
-More information about forms can be found [here](/using-valtimo/forms/forms.md)
+More information about forms can be found [here](/using-valtimo/forms/forms.md).
 
 ### Creating a form-flow process link
 
 A form-flow process link can be added to user-tasks. When the process reaches the user-task, an instance of the
 form-flow will be created and be made visible to the user.
 
-More information about form-flows can be found [here](/using-valtimo/form-flow/form-flow.md)
+More information about form-flows can be found [here](/using-valtimo/form-flow/form-flow.md).
 
 ### Creating a plugin process link
 
-When configuring a plugin process link, a wizard is presented to choose beteen the available plugin configuration,
+When configuring a plugin process link, a wizard is presented to choose between the available plugin configuration,
 actions and (optionally) additional settings for that action.
 
 ![Creating a plugin process link](img/create-plugin-process-link.png)
@@ -70,11 +70,19 @@ This is an example of an autodeployment file for 2 user task for process:
       "activityType": "bpmn:UserTask:start",
       "processLinkType": "form-flow",
       "formFlowDefinitionId": "do-another-thing:latest"
+   },
+   {
+      "activityId": "delete-object-from-objectsapi",
+      "activityType": "bpmn:ServiceTask:start",
+      "processLinkType": "plugin",
+      "pluginConfigurationId": "7d77d894-6458-4213-8bc0-9a65d523845b",
+      "pluginActionDefinitionKey": "delete-object",
+      "actionProperties": {
+         "objectUrl": "pv:myObjectUrl"
+      }
    }
 ]
 ```
-
-Autodeployment of plugin process links is not supported yet.
 
 ## Migration from form-links
 As form-links will be deprecated in the future, it is advised to migrate these to process-links.
