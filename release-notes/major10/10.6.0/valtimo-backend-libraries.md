@@ -73,6 +73,10 @@ The following features were added:
 
   ```GET /api/v1/process-definition/{process-definition-id}/start-form```
 
+  A new endpoint has been added to return a prefilled Form IO form that was configured on a user-task of a BPMN:
+
+  ```GET /api/v2/process-link/task/{taskId}```
+
   A new endpoint has been added to return a list of process-link-types with a single property 'enabled'. The property '
   enabled' is true when the process-link-type is enabled for the specified activity-type:
 
