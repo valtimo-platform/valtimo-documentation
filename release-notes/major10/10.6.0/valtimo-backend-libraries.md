@@ -63,7 +63,8 @@ The following features were added:
 * **Process links configuration autodeployment**
 
   Process links can now be created by adding a configuration file in Valtimo. This configuration file is automatically
-  used when rebooting Valtimo. More
+  used when rebooting Valtimo. This release adds support for the autodeployment of process links of type form,
+  form-flow, and plugin action. More
   information [here](/using-valtimo/process-link/create-process-link.md#configuration-by-autodeployment)
 
 * **New REST API endpoints have been added**
