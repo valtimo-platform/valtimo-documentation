@@ -14,6 +14,8 @@ process links.
     - Depending on the type of activity, a list of supported process link types might be shown.
 4. Follow the steps
 
+![Select process link type](img/select-process-link-type.png)
+
 ### Creating a form process link
 
 A form process link can be added to user-tasks. When the process reaches the user-task, a user will be presented with
