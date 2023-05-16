@@ -84,6 +84,10 @@ The following bugs were fixed:
   When mapping values of a form submission into a missing array, this resulted in an error. It will now add the
   array and values instead.
 
+* **Not all users shown in candidate users dropdown**
+  The dropdown list with candidate users on a case page, now shows all users. There was a bug that caused the API
+  endpoint to not respond with all users when there were more than 200 Keycloak users.
+
 ## Breaking changes
 
 The following breaking changes were introduced:

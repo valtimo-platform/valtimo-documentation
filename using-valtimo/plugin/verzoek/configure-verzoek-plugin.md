@@ -74,18 +74,40 @@ property. Valtimo is shipped with the `Create Zaakdossier` process which has six
 
 ![Create Zaakdossier](img/create-zaakdossier-process.png)
 
-Some of these tasks need to be configured with process links before the process can be used. The following actions
-should be configured:
+The Create Zaakdossier process is started with a few process variables that can be used inside the process links. These
+variables are:
 
-- Create zaak - [Create Zaak](../zaken-api/configure-zaken-api-plugin.md#create-zaak) in the Zaken API plugin
+- **RSIN.** The RSIN configured in the Verzoek plugin.
+- **zaakTypeUrl.** The URL of the zaak-type that is associated to the document definition.
+- **rolTypeUrl.** The URL of the rol-type that is configured in the Verzoek plugin.
+- **rolDescription.** The rol description that is configured in the Verzoek plugin.
+- **verzoekObjectUrl.** The url from the verzoek object in the Objecten API.
+- **initiatorType.** The type of the initiator of this verzoek. Usually has the value 'kvk' or 'bsn'.
+- **initiatorValue.** The ID of the initiator. This is usually a BSN or KVK number.
+- **processDefinitionKey.** The key of the process-definition that should be started after this process.
+- **documentUrls.** A list of document URLs of documents stored in the Documenten API. Can be used as Collection in BPMN
+  multi-instance elements to iterate over the list.
+
+The tasks inside the Create Zaakdossier process need to be configured with process links before the process can be used.
+The following actions should be configured:
+
+- Create zaak - [Create Zaak](../zaken-api/configure-zaken-api-plugin.md#create-zaak) in the Zaken API plugin. This
+  plugin link can be configured using the process variables above. Namely:
+    - `pv:RSIN`
+    - `pv:zaakTypeUrl`
 - Create initiator
   ZaakRol - [Create ZaakRol](../zaken-api/configure-zaken-api-plugin.md#create-zaakrol---natural-person) in the Zaken
-  API plugin
+  API plugin. This plugin link can be configured using the process variables above. Namely:
+    - `pv:rolTypeUrl`
+    - `pv:rolDescription`
+    - `pv:initiatorValue`
 - Link document to zaak - [Link document to zaak](../zaken-api/configure-zaken-api-plugin.md#link-document-to-zaak) in
-  the Zaken API plugin
+  the Zaken API plugin. This plugin link can be configured using the process variables above. Namely:
+    - `pv:documentUrl`
 - Delete Verzoek from
   ObjectsAPI - [Delete Verzoek object](../objecten-api/configure-objecten-api-plugin.md#delete-object) in the Objects
-  API plugin
+  API plugin. This plugin link can be configured using the process variables above. Namely:
+    - `pv:verzoekObjectUrl`
 
 The 'Create Zaakdossier' process has several tasks with default configurations:
 
@@ -104,19 +126,8 @@ The 'Create Zaakdossier' process has several tasks with default configurations:
 ### Custom process
 
 Instead of using the `Create Zaakdossier` process it is possible to create another process that will handle zaak
-creation in a different way. The process is started with a few process variables that can be used when designing another
-process definition. These variables are:
-
-- **RSIN.** The RSIN configured in the Verzoek plugin.
-- **zaakTypeUrl.** The URL of the zaak-type that is associated to the document definition.
-- **rolTypeUrl.** The URL of the rol-type that is configured in the Verzoek plugin.
-- **rolDescription.** The rol description that is configured in the Verzoek plugin.
-- **verzoekObjectUrl.** The url from the verzoek object in the Objecten API.
-- **initiatorType.** The type of the initiator of this verzoek. Usually has the value 'kvk' or 'bsn'.
-- **initiatorValue.** The ID of the initiator. This is usually a BSN or KVK number.
-- **processDefinitionKey.** The key of the process-definition that should be started after this process.
-- **documentUrls.** A list of document URLs of documents stored in the Documenten API. Can be used as Collection in BPMN
-  multi-instance elements to iterate over the list.
+creation in a different way. The verzoek plugin must then be configured to use a custom process in the **Process**
+field. The custom process will then automatically be started with all necessary process variables.
 
 ## Configuring the handling process
 
