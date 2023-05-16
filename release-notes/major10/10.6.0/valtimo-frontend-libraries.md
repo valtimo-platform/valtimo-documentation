@@ -44,7 +44,6 @@ The following features were added:
     assignee filter) is restored from these parameters. This includes going back to the case list page from a case
     detail page using the back button.
 
-
 * **Task forms are now retrieve using a new API**
 
   When opening a user task, the form is now loaded using the new API endpoint:
@@ -54,6 +53,13 @@ The following features were added:
 * **Upgraded deprecated `carbon-components` package in `@valtimo/components` to `@carbon/styles`**
 
   One of the Carbon Design System packages was deprecated and has been upgraded to the new package
+
+* **Form, Form-flow and Plugins are now all supported in the process-links dialog**
+
+  When adding a process-link, a dialog page is shown where a process-link type can be chosen (form, form-flow or plugin).
+  The available options depend on the selected task, and the page is skipped when only one type is available. 
+
+  The layout has been changed to Carbon.
 
 ## Bugfixes
 
