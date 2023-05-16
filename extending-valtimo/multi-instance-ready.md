@@ -1,7 +1,7 @@
 # Making Valtimo multi instance ready
 
 It can be desirable to run multiple instances of the same Valtimo implementation. In that case, some additional steps
-are required to mak your Valtimo implementation multi instance ready.
+are required to make your Valtimo implementation multi instance ready.
 
 ## Shared storage
 
@@ -11,6 +11,5 @@ storage.
 ## Shared directory for temporary files
 
 Besides having shared storage, all Valtimo instances must also be configured to use the same directory for temporary
-files. This can be set with the property: `valtimo.resource.temp.directory`
-
-Or environment variable: `VALTIMO_RESOURCE_TEMP_DIRECTORY`
+files. This can be set with the property: `valtimo.resource.temp.directory` or with environment
+variable: `VALTIMO_RESOURCE_TEMP_DIRECTORY`
