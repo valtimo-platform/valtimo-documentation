@@ -67,10 +67,10 @@ The following features were added:
   form-flow, and plugin action. More
   information [here](/using-valtimo/process-link/create-process-link.md#configuration-by-autodeployment)
 
-  * **Plugin configuration autodeployment**
+  * **Plugin configuration auto deployment**
 
   Plugin configurations can now be created by adding a configuration file in Valtimo.
-  More information [here](/extending-valtimo/plugin/autodeployment-plugin-configurations.md)
+  More information [here](/using-valtimo/plugin/configure-plugin.md)
 
 * **New REST API endpoints have been added**
 
