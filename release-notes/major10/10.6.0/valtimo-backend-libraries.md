@@ -67,6 +67,11 @@ The following features were added:
   form-flow, and plugin action. More
   information [here](/using-valtimo/process-link/create-process-link.md#configuration-by-autodeployment)
 
+  * **Plugin configuration autodeployment**
+
+  Plugin configurations can now be created by adding a configuration file in Valtimo.
+  More information [here](/extending-valtimo/plugin/autodeployment-plugin-configurations.md)
+
 * **New REST API endpoints have been added**
 
   A new endpoint has been added to return a prefilled Form IO form that was configured on a start-event of a BPMN:
