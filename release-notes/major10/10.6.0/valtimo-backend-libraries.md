@@ -115,12 +115,18 @@ The following bugs were fixed:
   The list columns of Object API objects now displays dates with the configured date format.
 
 * **Objecten API search bugfixes**
-  
+
   Several bugs have been fixed for the Objecten API search:
-  - The search now properly searches through nested properties using a different path notation.
-  - It is now possible to search for properties with data type 'boolean'.
-  - It is now possible to search for properties with data type 'date'.
-  - It is now possible to search for properties with data type 'datetime'.
+    - The search now properly searches through nested properties using a different path notation.
+    - It is now possible to search for properties with data type 'boolean'.
+    - It is now possible to search for properties with data type 'date'.
+    - It is now possible to search for properties with data type 'datetime'.
+
+* **Configurable directory for temporary files**
+
+  It's now possible to configure a directory that can be used for temporary files with the new
+  property: `valtimo.resource.temp.directory`. This property can be used to make Valtimo multi instance ready. More
+  information [here](/extending-valtimo/multi-instance-ready.md).
 
 ## Breaking changes
 
