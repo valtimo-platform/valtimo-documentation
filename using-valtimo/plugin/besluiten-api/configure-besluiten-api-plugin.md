@@ -13,21 +13,19 @@ Instructions on how to add the Besluiten API dependency can be found
 [here](/getting-started/modules/zgw/besluiten-api.md).
 
 To configure this plugin the following properties have to be entered:
-- **URL.** Contains the complete base URL of the Besluiten API to connect to. This generally includes 
+- **URL (`url`)**. Contains the complete base URL of the Besluiten API to connect to. This generally includes 
 the path `/api/v1/`.
-- **Authentication plugin configuration.** Reference to another plugin configuration that will be used to add 
+- **RSIN (`rsin`).** Legal entities and partnership number
+- **Authentication plugin configuration (`authenticationPluginConfiguration`).** Reference to another plugin configuration that will be used to add 
 authentication to any request performed on the Besluiten API. If no option is available in this field a plugin has to 
 be configured that is able to authenticate for the specific application that hosts the Besluiten API.
-
-An example plugin configuration:
-![example plugin configuration](img/configure-plugin.png)
 
 ## Available actions
 
 The Besluiten API plugin supports the following actions that can be configured in process links in order to retrieve type
 data.
 
-A general description on how to create process links can be found [here](../create-process-link.md).
+A general description on how to create process links can be found [here](../../process-link/create-process-link.md).
 
 ### Create besluit
 This action creates a Zaakbesluit in the Besluiten API.
