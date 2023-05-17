@@ -88,6 +88,7 @@ The following bugs were fixed:
     or in the API is now used on first load.
   * Date formats specified in list columns of type date are used to correctly display the date value in the desired
     format.
+  
 * **Form dropdown list on object management page not loading all forms**
   When there were more than 50 forms available not all of them would be listed in the view and edit form dropdowns on
   the edit page of the object management definition. This has now been resolved.
