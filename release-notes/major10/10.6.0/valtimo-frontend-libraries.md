@@ -55,6 +55,19 @@ The following features were added:
 
   One of the Carbon Design System packages was deprecated and has been upgraded to the new package
 
+* **New process links screen*
+
+  The process links screen (/process-links) has been updated to use Carbon design. The linking of forms, FormFlow and
+  plugin actions to a process step is now unified in a single modal. From this same modal, process links can also be
+  edited and unlinked.
+
+* **User settings / navigation bar always collapsible*
+  
+  The right sidebar now saves the currently selected language in the database under user settings, which means that the
+  language a user has selected will be the default when they log in with another device. In addition, a setting to always
+  make the navigation bar collapsible, regardless of screen size, has been added. This setting is also stored in the
+  database and thus the same on any device the user uses.
+
 ## Bugfixes
 
 The following bugs were fixed:
