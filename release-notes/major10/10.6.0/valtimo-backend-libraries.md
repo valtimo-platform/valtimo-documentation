@@ -90,6 +90,8 @@ The following features were added:
   A new endpoint has been added for submitting form when the form was initiated using a processlink:
 
   ```POST /api/v1/process-link/{processLinkId}/form/submission```
+* **Prefilling of start forms for supporting processes**
+  Start forms configured for supporting processes are now prefilled with case data when opened.
 
 ## Bugfixes
 

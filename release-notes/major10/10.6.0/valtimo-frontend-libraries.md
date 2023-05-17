@@ -55,13 +55,13 @@ The following features were added:
 
   One of the Carbon Design System packages was deprecated and has been upgraded to the new package
 
-* **New process links screen*
+* **New process links screen**
 
   The process links screen (/process-links) has been updated to use Carbon design. The linking of forms, FormFlow and
   plugin actions to a process step is now unified in a single modal. From this same modal, process links can also be
   edited and unlinked.
 
-* **User settings / navigation bar always collapsible*
+* **User settings / navigation bar always collapsible**
   
   The right sidebar now saves the currently selected language in the database under user settings, which means that the
   language a user has selected will be the default when they log in with another device. In addition, a setting to always
@@ -88,6 +88,9 @@ The following bugs were fixed:
     or in the API is now used on first load.
   * Date formats specified in list columns of type date are used to correctly display the date value in the desired
     format.
+* **Form dropdown list on object management page not loading all forms**
+  When there were more than 50 forms available not all of them would be listed in the view and edit form dropdowns on
+  the edit page of the object management definition. This has now been resolved.
 
 ## Breaking changes
 
