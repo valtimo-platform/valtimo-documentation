@@ -91,6 +91,11 @@ The following features were added:
 
   ```POST /api/v1/process-link/{processLinkId}/form/submission```
 
+  Two new endpoints have been added for retrieving and updating user configuration:
+
+  ```GET /api/v1/user/settings```
+  ```PUT /api/v1/user/settings```
+
 * **Prefilling of start forms for supporting processes**
   Start forms configured for supporting processes are now prefilled with case data when opened.
 
@@ -135,6 +140,21 @@ The following bugs were fixed:
   It's now possible to configure a directory that can be used for temporary files with the new
   property: `valtimo.resource.temp.directory`. This property can be used to make Valtimo multi instance ready. More
   information [here](/extending-valtimo/multi-instance-ready.md).
+
+* **Plugin configuration validation**
+
+  It is now possible to add `javax.validation.constraints` on plugin properties. Some plugins are now validated:
+  - The `URL` property must now be a valid url in the following plugins:
+    - Besluiten API Plugin
+    - Catalogi API Plugin
+    - Notificaties API Plugin
+    - Objecten API Plugin
+    - Objecttypen API Plugin
+    - SmartDocuments Plugin
+    - Zaken API Plugin
+  - The Documenten API Plugin property `Bronorganisatie` must now have a length of 9.
+  - The Notificaties API Plugin property `Callback URL` must now be a valid url.
+  - The Object Token Authentication Plugin property `Token` now has a minimum length of 20.
 
 ## Breaking changes
 
