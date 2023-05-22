@@ -91,6 +91,11 @@ The following features were added:
 
   ```POST /api/v1/process-link/{processLinkId}/form/submission```
 
+  Two new endpoints have been added for retrieving and updating user configuration:
+
+  ```GET /api/v1/user/settings```
+  ```PUT /api/v1/user/settings```
+
 * **Prefilling of start forms for supporting processes**
   Start forms configured for supporting processes are now prefilled with case data when opened.
 
