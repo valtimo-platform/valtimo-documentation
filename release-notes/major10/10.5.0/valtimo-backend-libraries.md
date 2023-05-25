@@ -3,6 +3,7 @@
 ## New Features
 
 The following features were added:
+
 * **Changed Portaaltaak 'create-portaaltaak' action properties**
 
   The plugin action properties of the 'create-portaaltaak' action have been changed: from the optional 'bsn' and 'kvk' properties to a generic 'key' and 'value'. 
@@ -31,7 +32,7 @@ The following features were added:
 
 * **New API endpoints to retrieve types from the Catalog API**
 
-  New API endpoints have been added to retrieve several different types from the Catalogi API. The following types can
+  New API endpoints have been added to retrieve several types from the Catalogi API. The following types can
   be retrieved:
   - Statustype
   - Resultaattype

@@ -33,31 +33,31 @@ Instructions on how to add the Verzoek Plugin dependency can be found [here](/ge
 
 To configure this plugin the following properties have to be entered:
 
-- **Notification API plugin.** Reference to another plugin configuration that will be used to receive a notification
+- **Notification API plugin (`notificatiesApiPluginConfiguration`).** Reference to another plugin configuration that will be used to receive a notification
   when a new verzoek is made.
-- **Object management configuration.** Reference to the object management configuration that describes the verzoek
+- **Object management configuration (`objectManagementId`).** Reference to the object management configuration that describes the verzoek
   object. If no option is available in this field, an object management configuration has to be created first.
-- **Process.** Reference to the process that will be started after the plugin received a notification from
+- **Process (`processToStart`).** Reference to the process that will be started after the plugin received a notification from
   Notificaties API. This process can do additional steps like creating the zaak and handling file attachments.
-  See [this section](#configuring-the-create-zaakdossier-process) on how to set up this process.
-- **RSIN.** Contains the RSIN of the organisation. The RSIN number (Rechtspersonen en
+  See [this section](#configuring-the--create-zaakdossier-process) on how to set up this process.
+- **RSIN (`rsin`).** Contains the RSIN of the organisation. The RSIN number (Rechtspersonen en
   Samenwerkingsverbanden Identificatie Nummer in Dutch) is an identification number for legal entities and partnerships.
   This will be used when storing document to indicate who is responsible for creating the zaak record in the API.
-- **Verzoek types.** The verzoek plugin can be configured to handle multiple verzoek types. Each verzoek type can be
+- **Verzoek types (`verzoekProperties`).** The verzoek plugin can be configured to handle multiple verzoek types. Each verzoek type can be
   handled in a different way.
-    - **Type.** The type of the verzoek. This type should match the type that is inside the verzoek object from the
+    - **Type (`type`).** The type of the verzoek. This type should match the type that is inside the verzoek object from the
       Objecten API, in property `record.data.type`.
-    - **Case definition.** The Valtimo case definition that should be created when a verzoek was made.
-    - **Role type.** The role of the person who created the verzoek. Usually this is the zaak initiator role. The person
+    - **Case definition (`caseDefinitionName`).** The Valtimo case definition that should be created when a verzoek was made.
+    - **Role type (`initiatorRoltypeUrl`).** The role of the person who created the verzoek. Usually this is the zaak initiator role. The person
       who created the verzoek is linked to the zaak using this role.
-    - **Role description.** This text describes the role of the person who initiated the verzoek.
-    - **Process definition.** The definition of the handling process. This process is started as a follow-up process to
+    - **Role description (`initiatorRolDescription`).** This text describes the role of the person who initiated the verzoek.
+    - **Process definition (`processDefinitionKey`).** The definition of the handling process. This process is started as a follow-up process to
       further handle the verzoek.
-    - **Copy strategy.** This option determines whether the entire verzoek data is included in the Valtimo case, or only
+    - **Copy strategy (`copyStrategy`).** This option determines whether the entire verzoek data is included in the Valtimo case, or only
       the defined fields.
-        - **Mapping.** Determines which fields of the verzoek data are copied to the Valtimo case
-            - **Source.** A jsonpointer that points to a property inside the verzoek data that should be copied.
-            - **Target.** A jsonpointer that points to a property inside the Valtimo case where the verzoek data should
+        - **Mapping (`mapping`).** Determines which fields of the verzoek data are copied to the Valtimo case
+            - **Source (`source`).** A jsonpointer that points to a property inside the verzoek data that should be copied.
+            - **Target (`target`).** A jsonpointer that points to a property inside the Valtimo case where the verzoek data should
               be pasted.
 
 An example plugin configuration:

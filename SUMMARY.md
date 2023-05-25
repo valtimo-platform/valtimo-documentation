@@ -46,6 +46,7 @@
         * [CORS](getting-started/modules/core/web/valtimo-cors.md)
     * ZGW
       * [Besluit](getting-started/modules/zgw/besluit.md)
+      * [Besluiten API](getting-started/modules/zgw/besluiten-api.md)
       * [Catalogi API](getting-started/modules/zgw/catalogi-api.md)
       * [Contactmoment](getting-started/modules/zgw/contactmoment.md)
       * [Documenten API](getting-started/modules/zgw/documenten-api.md)
@@ -87,8 +88,6 @@
     * [How to link a form to a task](using-valtimo/form-link/configure-task.md)
   * [Plugins](using-valtimo/plugin/plugins.md)
     * [Configuring plugins](using-valtimo/plugin/configure-plugin.md)
-    * [Creating process links](using-valtimo/plugin/create-process-link.md)
-    * [Deleting process links](using-valtimo/plugin/delete-process-link.md)
     * [SmartDocuments plugin](using-valtimo/plugin/smartdocuments/configure-smartdocuments-plugin.md)
     * [OpenZaak plugin](using-valtimo/plugin/openzaak/configure-openzaak-plugin.md)
     * [Documenten API plugin](using-valtimo/plugin/documenten-api/configure-documenten-api-plugin.md)
@@ -99,9 +98,15 @@
     * [Portaal taak Plugin](using-valtimo/plugin/portaaltaak/configure-portaaltaak-plugin.md)
     * [Exact Plugin](using-valtimo/plugin/exact/configure-exact-plugin.md)
     * [Verzoek Plugin](using-valtimo/plugin/verzoek/configure-verzoek-plugin.md)
+    * [Besluiten Plugin](using-valtimo/plugin/besluiten-api/configure-besluiten-api-plugin.md)
   * [Process](using-valtimo/process/process.md)
     * [System processes](using-valtimo/process/systemprocesses.md)
     * [Correlating messages](using-valtimo/process/correlating-messages.md)
+  * [Process links](using-valtimo/process-link/process-link.md)
+    * [Creating a process link](using-valtimo/process-link/create-process-link.md)
+    * [Editing a process link](using-valtimo/process-link/edit-process-link.md)
+    * [Unlinking a process link](using-valtimo/process-link/unlink-process-link.md)
+
   * [Upload](using-valtimo/upload/upload.md)
     * [Uploading to Documenten API with metadata](using-valtimo/upload/upload-to-documenten-api-with-metadata.md)
   * [Web](using-valtimo/web/web.md)
@@ -138,11 +143,15 @@
   * [Troubleshoot](reference/troubleshoot.md)
 * Release notes
   * 10.x.x
+    * 10.6.0 (RC)
+      * [Valtimo backend libraries](release-notes/major10/10.6.0/valtimo-backend-libraries.md)
+      * [Valtimo frontend libraries](release-notes/major10/10.6.0/valtimo-frontend-libraries.md)
     * 10.5.2
       * [Valtimo backend libraries](release-notes/major10/10.5.2/valtimo-backend-libraries.md)
     * 10.5.1
       * [Valtimo backend libraries](release-notes/major10/10.5.1/valtimo-backend-libraries.md)
       * [Valtimo frontend libraries](release-notes/major10/10.5.1/valtimo-frontend-libraries.md)
+
     * 10.5.0
       * [Valtimo backend libraries](release-notes/major10/10.5.0/valtimo-backend-libraries.md)
       * [Valtimo frontend libraries](release-notes/major10/10.5.0/valtimo-frontend-libraries.md)

@@ -6,3 +6,4 @@ This section contains information on how to configure and use BPMN processes in 
 
 * [System processes](systemprocesses.md)
 * [Correlating messages](correlatingmessages.md)
+* [Manipulating jobs](process-beans/job-service.md)

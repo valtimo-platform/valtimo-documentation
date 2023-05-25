@@ -35,11 +35,11 @@ Instructions on how to add the Portaal taak Plugin dependency can be found
 [here](/getting-started/modules/zgw/portaaltaak.md).
 
 To configure this plugin the following properties have to be entered:
-- **Notification API plugin.** Reference to another plugin configuration that will be used to receive notification on
+- **Notification API plugin (`notificatiesApiPluginConfiguration`).** Reference to another plugin configuration that will be used to receive notification on
 updates to objects. This is needed for completing tasks of which the status has been updated.
-- **Object management configuration.** Reference to the object management configuration that can be used to store the
+- **Object management configuration (`objectManagementConfigurationId`).** Reference to the object management configuration that can be used to store the
 taak objects. If no option is available in this field, an object management configuration has to be created first.
-- **Process to complete Portaaltaak.** Reference to the process that will be started to handle completion of tasks.
+- **Process to complete Portaaltaak (`completeTaakProcess`).** Reference to the process that will be started to handle completion of tasks.
 This can do additional steps like handling the file attachments. A process task should be configured in this process 
 definition to handle the completion itself. This can be done using the [Complete Portaal taak](#complete-portaal-taak) 
 plugin action. The process 'Process completed Portaaltaak' that is shipped with Valtimo can be used here. See 
@@ -83,7 +83,7 @@ multi-instance elements to iteratte over the list.
 The portaal taak plugin supports the following actions that can be configured in process links in order to create and 
 complete user tasks through external systems like the NL Portal.
 
-A general description on how to create process links can be found [here](../create-process-link.md).
+A general description on how to create process links can be found [here](../../process-link/create-process-link.md).
 
 ### Create Portaal taak
         
