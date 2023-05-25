@@ -103,9 +103,9 @@
     * [System processes](using-valtimo/process/systemprocesses.md)
     * [Correlating messages](using-valtimo/process/correlating-messages.md)
   * [Process links](using-valtimo/process-link/process-link.md)
-    * [Create process links](using-valtimo/process-link/create-process-link.md)
-    * [Edit process links](using-valtimo/process-link/edit-process-link.md)
-    * [Unlink process links](using-valtimo/process-link/unlink-process-link.md)
+    * [Creating a process link](using-valtimo/process-link/create-process-link.md)
+    * [Editing a process link](using-valtimo/process-link/edit-process-link.md)
+    * [Unlinking a process link](using-valtimo/process-link/unlink-process-link.md)
 
   * [Upload](using-valtimo/upload/upload.md)
     * [Uploading to Documenten API with metadata](using-valtimo/upload/upload-to-documenten-api-with-metadata.md)
