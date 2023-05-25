@@ -68,6 +68,12 @@ The following features were added:
   make the navigation bar collapsible, regardless of screen size, has been added. This setting is also stored in the
   database and thus the same on any device the user uses.
 
+* **Maximum of 20 SmartDocument placeholders**
+
+  The maximum number of 20 SmartDocument placeholders has been removed. It is now possible to enter many more
+  placeholders. The maximum has been removed for all multi-input components within Valtimo. Which means that the maximum
+  has also been removed for other features, such as the Verzoeken plugin mapping.
+
 ## Bugfixes
 
 The following bugs were fixed:

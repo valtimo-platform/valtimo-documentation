@@ -22,13 +22,13 @@ The following features were added:
 
 * **Job service**
 
-  A process bean to manipulate camunda jobs. For now, only manipulation of timer event dates is supported. This is
+  A process bean to manipulate Camunda jobs. For now, only manipulation of timer event dates is supported. This is
   useful when a timer has to be changed after it has already started. For more information,
   see [here](/using-valtimo/process/process-beans/job-service.md).
 
 * **API responses now include charsets**
 
-  All Valtimo API responses now include a character set in the Content-Type header. The Character set has been set to
+  All Valtimo API responses now include a character set in the Content-Type header. The character set has been set to
   UTF-8.
 
 * **New API endpoint to retrieve prefilled forms**
@@ -116,12 +116,6 @@ The following bugs were fixed:
 
   The dropdown list with candidate users on a case page, now shows all users. There was a bug that cases the API
   endpoint to not respond with all users when there were more than 200 Keycloak users.
-
-* **Maximum of 20 SmartDocument placeholders**
-
-  The maximum number of 20 SmartDocument placeholders has been removed. It is now possible to enter many more
-  placeholders. The maximum has been removed for all multi-input components within Valtimo. Which means that the maximum
-  has also been removed for other features, such as the Verzoeken plugin mapping.
 
 * **Object management list column date format**
 
