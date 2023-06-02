@@ -20,7 +20,7 @@ Instructions on how to add the Objecten API authentication dependency can be fou
 [here](/getting-started/modules/zgw/objecten-api-authentication.md).
 
 To configure this plugin the following properties have to be entered:
-- **Token.** The token is configured in the Objects administration page 'api authorizations'. The token should have permissions 
+- **Token (`token`).** The token is configured in the Objects administration page 'api authorizations'. The token should have permissions 
 to object(types) registered to it.
 
 An example plugin configuration:

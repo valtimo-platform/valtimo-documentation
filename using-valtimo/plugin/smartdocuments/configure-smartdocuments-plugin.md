@@ -12,7 +12,7 @@ If the SmartDocuments plugin is not visible in the plugin menu, it is possible t
 Instructions on how to add the SmartDocuments dependency can be
 found [here](/getting-started/modules/zgw/smartdocuments.md).
 
-The 'SmartDocuments URL', 'Username' and 'Password' should all be retrieved from the SmartDocuments application.
+The **SmartDocuments URL** (`url`), **Username** (`username`) and **Password** (`password`) should all be retrieved from the SmartDocuments application.
 
 An example plugin configuration:
 ![example plugin configuration](img/configure-plugin.png)
@@ -21,7 +21,7 @@ An example plugin configuration:
 
 SmartDocuments' main function is to generate documents based on a template.
 
-A general description on how to create process links can be found [here](../create-process-link.md).
+A general description on how to create process links can be found [here](../../process-link/create-process-link.md).
 
 ### Generate document
 

@@ -51,9 +51,8 @@ A plugin configuration is required before the plugin can be used. A general desc
 plugins can be found [here](/using-valtimo/plugin/configure-plugin.md).
 
 To configure this plugin the following properties have to be entered:
-- **Configurationname** The name given to the configuration you are creating.
-- **Client ID** A Client ID for the Exact app that is being used for setting up the connection.
-- **Client Secret** A Client Secret for the Exact app that is being used for setting up the connection.
+- **Client ID (`clientId`)** A Client ID for the Exact app that is being used for setting up the connection.
+- **Client Secret (`clientSecret`)** A Client Secret for the Exact app that is being used for setting up the connection.
 
 To be able to save the configuration an access token and refresh token should be retrieved first. This can be done with
 the help of the 'Give authorization' button. This allows the user to login to exact and give permission. This will open 

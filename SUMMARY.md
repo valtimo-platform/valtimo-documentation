@@ -64,8 +64,11 @@
       * [Verzoek](getting-started/modules/zgw/verzoek.md)
       * [Wordpress mail](getting-started/modules/zgw/wordpress-mail.md)
       * [Zaken API](getting-started/modules/zgw/zaken-api.md)
-  * [Process blueprints](getting-started/process-blueprints.md)
+  * [Exchange](getting-started/exchange/exchange.md)
+    * [Building blocks](getting-started/exchange/building-blocks.md)
+    * [Process blueprints](getting-started/exchange/blueprints.md)
 * [Using Valtimo](using-valtimo/using-valtimo.md)
+  * [Case](using-valtimo/case/creating-case-settings.md)
   * [Documents](using-valtimo/document/document.md)
     * [Assigning a user to a document](using-valtimo/document/assigning-a-user.md)
     * [Creating a document definition](using-valtimo/document/create-document-definition.md)
@@ -76,6 +79,7 @@
     * [How to start a process for a case](using-valtimo/document/start-case.md)
     * [Search fields](using-valtimo/document/configuring-search-fields.md)
   * [Forms](using-valtimo/forms/forms.md)
+    * [Creating FormIO forms in Valtimo](using-valtimo/forms/creating-forms-in-valtimo.md)
     * [Configuring an Objecten API object form](using-valtimo/forms/configure-object-form.md)
   * [Form flow](using-valtimo/form-flow/form-flow.md)
     * [Creating a form flow definition](using-valtimo/form-flow/create-form-flow-definition.md)
@@ -84,8 +88,6 @@
     * [How to link a form to a task](using-valtimo/form-link/configure-task.md)
   * [Plugins](using-valtimo/plugin/plugins.md)
     * [Configuring plugins](using-valtimo/plugin/configure-plugin.md)
-    * [Creating process links](using-valtimo/plugin/create-process-link.md)
-    * [Deleting process links](using-valtimo/plugin/delete-process-link.md)
     * [SmartDocuments plugin](using-valtimo/plugin/smartdocuments/configure-smartdocuments-plugin.md)
     * [OpenZaak plugin](using-valtimo/plugin/openzaak/configure-openzaak-plugin.md)
     * [Documenten API plugin](using-valtimo/plugin/documenten-api/configure-documenten-api-plugin.md)
@@ -100,8 +102,14 @@
   * [Process](using-valtimo/process/process.md)
     * [System processes](using-valtimo/process/systemprocesses.md)
     * [Correlating messages](using-valtimo/process/correlating-messages.md)
+  * [Process links](using-valtimo/process-link/process-link.md)
+    * [Creating a process link](using-valtimo/process-link/create-process-link.md)
+    * [Editing a process link](using-valtimo/process-link/edit-process-link.md)
+    * [Unlinking a process link](using-valtimo/process-link/unlink-process-link.md)
   * [Upload](using-valtimo/upload/upload.md)
     * [Uploading to Documenten API with metadata](using-valtimo/upload/upload-to-documenten-api-with-metadata.md)
+  * [Web](using-valtimo/web/web.md)
+    * [Configure CORS in Valtimo](using-valtimo/web/valtimo-cors.md)
 * [Extending Valtimo](extending-valtimo/extending-valtimo.md)
   * [Document](extending-valtimo/document/document.md)
     * [Assigning and unassigning a user](extending-valtimo/document/assigning-and-unassigning-a-user.md)
@@ -110,6 +118,7 @@
     * [Creating a form field data resolver](extending-valtimo/forms/creating-form-field-data-resolver.md)
   * [Form flow](extending-valtimo/form-flow/form-flow.md)
     * [Whitelisting Spring beans for Form flow](extending-valtimo/form-flow/whitelist-spring-bean.md)
+  * [Making Valtimo multi instance ready](extending-valtimo/multi-instance-ready.md)
   * [Modals (external docs)](https://angular.carbondesignsystem.com/?path=/story/components-modal--basic)
   * [Plugins](extending-valtimo/plugin/plugins.md)
     * [Custom plugin definitions](extending-valtimo/plugin/custom-plugin-definition.md)
@@ -134,12 +143,18 @@
   * [Troubleshoot](reference/troubleshoot.md)
 * Release notes
   * 10.x.x
-    * 10.7.0
+    * 10.7.0 (RC)
       * [Valtimo backend libraries](release-notes/major10/10.7.0/valtimo-backend-libraries.md)
       * [Valtimo frontend libraries](release-notes/major10/10.7.0/valtimo-frontend-libraries.md)
     * 10.6.0 (RC)
-    * [Valtimo backend libraries](release-notes/major10/10.6.0/valtimo-backend-libraries.md)
-    * [Valtimo frontend libraries](release-notes/major10/10.6.0/valtimo-frontend-libraries.md)
+      * [Valtimo backend libraries](release-notes/major10/10.6.0/valtimo-backend-libraries.md)
+      * [Valtimo frontend libraries](release-notes/major10/10.6.0/valtimo-frontend-libraries.md)
+    * 10.5.2
+      * [Valtimo backend libraries](release-notes/major10/10.5.2/valtimo-backend-libraries.md)
+    * 10.5.1
+      * [Valtimo backend libraries](release-notes/major10/10.5.1/valtimo-backend-libraries.md)
+      * [Valtimo frontend libraries](release-notes/major10/10.5.1/valtimo-frontend-libraries.md)
+
     * 10.5.0
       * [Valtimo backend libraries](release-notes/major10/10.5.0/valtimo-backend-libraries.md)
       * [Valtimo frontend libraries](release-notes/major10/10.5.0/valtimo-frontend-libraries.md)
@@ -164,6 +179,11 @@
       * [Valtimo frontend libraries](release-notes/major10/10.0.0/valtimo-frontend-libraries.md)
       * [Migration](release-notes/major10/10.0.0/migration.md)
   * 9.x.x
+    * 9.26.2/5.15.1
+      * [Valtimo backend libraries (9.26.2)](release-notes/major9/09.26.2/valtimo-backend-libraries.md)
+    * 9.26.1/5.15.1
+      * [Valtimo backend libraries (9.26.1)](release-notes/major9/09.26.1/valtimo-backend-libraries.md)
+      * [Valtimo frontend libraries (5.15.1)](release-notes/major9/09.26.1/valtimo-frontend-libraries.md)
     * 9.26.0/5.15.0
       * [Valtimo backend libraries (9.26.0)](release-notes/major9/09.26.0/valtimo-backend-libraries.md)
       * [Valtimo frontend libraries (5.15.0)](release-notes/major9/09.26.0/valtimo-frontend-libraries.md)
