@@ -33,31 +33,31 @@ Instructions on how to add the Verzoek Plugin dependency can be found [here](/ge
 
 To configure this plugin the following properties have to be entered:
 
-- **Notification API plugin.** Reference to another plugin configuration that will be used to receive a notification
+- **Notification API plugin (`notificatiesApiPluginConfiguration`).** Reference to another plugin configuration that will be used to receive a notification
   when a new verzoek is made.
-- **Object management configuration.** Reference to the object management configuration that describes the verzoek
+- **Object management configuration (`objectManagementId`).** Reference to the object management configuration that describes the verzoek
   object. If no option is available in this field, an object management configuration has to be created first.
-- **Process.** Reference to the process that will be started after the plugin received a notification from
+- **Process (`processToStart`).** Reference to the process that will be started after the plugin received a notification from
   Notificaties API. This process can do additional steps like creating the zaak and handling file attachments.
-  See [this section](#configuring-the-create-zaakdossier-process) on how to set up this process.
-- **RSIN.** Contains the RSIN of the organisation. The RSIN number (Rechtspersonen en
+  See [this section](#configuring-the--create-zaakdossier-process) on how to set up this process.
+- **RSIN (`rsin`).** Contains the RSIN of the organisation. The RSIN number (Rechtspersonen en
   Samenwerkingsverbanden Identificatie Nummer in Dutch) is an identification number for legal entities and partnerships.
   This will be used when storing document to indicate who is responsible for creating the zaak record in the API.
-- **Verzoek types.** The verzoek plugin can be configured to handle multiple verzoek types. Each verzoek type can be
+- **Verzoek types (`verzoekProperties`).** The verzoek plugin can be configured to handle multiple verzoek types. Each verzoek type can be
   handled in a different way.
-    - **Type.** The type of the verzoek. This type should match the type that is inside the verzoek object from the
+    - **Type (`type`).** The type of the verzoek. This type should match the type that is inside the verzoek object from the
       Objecten API, in property `record.data.type`.
-    - **Case definition.** The Valtimo case definition that should be created when a verzoek was made.
-    - **Role type.** The role of the person who created the verzoek. Usually this is the zaak initiator role. The person
+    - **Case definition (`caseDefinitionName`).** The Valtimo case definition that should be created when a verzoek was made.
+    - **Role type (`initiatorRoltypeUrl`).** The role of the person who created the verzoek. Usually this is the zaak initiator role. The person
       who created the verzoek is linked to the zaak using this role.
-    - **Role description.** This text describes the role of the person who initiated the verzoek.
-    - **Process definition.** The definition of the handling process. This process is started as a follow-up process to
+    - **Role description (`initiatorRolDescription`).** This text describes the role of the person who initiated the verzoek.
+    - **Process definition (`processDefinitionKey`).** The definition of the handling process. This process is started as a follow-up process to
       further handle the verzoek.
-    - **Copy strategy.** This option determines whether the entire verzoek data is included in the Valtimo case, or only
+    - **Copy strategy (`copyStrategy`).** This option determines whether the entire verzoek data is included in the Valtimo case, or only
       the defined fields.
-        - **Mapping.** Determines which fields of the verzoek data are copied to the Valtimo case
-            - **Source.** A jsonpointer that points to a property inside the verzoek data that should be copied.
-            - **Target.** A jsonpointer that points to a property inside the Valtimo case where the verzoek data should
+        - **Mapping (`mapping`).** Determines which fields of the verzoek data are copied to the Valtimo case
+            - **Source (`source`).** A jsonpointer that points to a property inside the verzoek data that should be copied.
+            - **Target (`target`).** A jsonpointer that points to a property inside the Valtimo case where the verzoek data should
               be pasted.
 
 An example plugin configuration:
@@ -74,18 +74,40 @@ property. Valtimo is shipped with the `Create Zaakdossier` process which has six
 
 ![Create Zaakdossier](img/create-zaakdossier-process.png)
 
-Some of these tasks need to be configured with process links before the process can be used. The following actions
-should be configured:
+The Create Zaakdossier process is started with a few process variables that can be used inside the process links. These
+variables are:
 
-- Create zaak - [Create Zaak](../zaken-api/configure-zaken-api-plugin.md#create-zaak) in the Zaken API plugin
+- **RSIN.** The RSIN configured in the Verzoek plugin.
+- **zaakTypeUrl.** The URL of the zaak-type that is associated to the document definition.
+- **rolTypeUrl.** The URL of the rol-type that is configured in the Verzoek plugin.
+- **rolDescription.** The rol description that is configured in the Verzoek plugin.
+- **verzoekObjectUrl.** The url from the verzoek object in the Objecten API.
+- **initiatorType.** The type of the initiator of this verzoek. Usually has the value 'kvk' or 'bsn'.
+- **initiatorValue.** The ID of the initiator. This is usually a BSN or KVK number.
+- **processDefinitionKey.** The key of the process-definition that should be started after this process.
+- **documentUrls.** A list of document URLs of documents stored in the Documenten API. Can be used as Collection in BPMN
+  multi-instance elements to iterate over the list.
+
+The tasks inside the Create Zaakdossier process need to be configured with process links before the process can be used.
+The following actions should be configured:
+
+- Create zaak - [Create Zaak](../zaken-api/configure-zaken-api-plugin.md#create-zaak) in the Zaken API plugin. This
+  plugin link can be configured using the process variables above. Namely:
+    - `pv:RSIN`
+    - `pv:zaakTypeUrl`
 - Create initiator
   ZaakRol - [Create ZaakRol](../zaken-api/configure-zaken-api-plugin.md#create-zaakrol---natural-person) in the Zaken
-  API plugin
+  API plugin. This plugin link can be configured using the process variables above. Namely:
+    - `pv:rolTypeUrl`
+    - `pv:rolDescription`
+    - `pv:initiatorValue`
 - Link document to zaak - [Link document to zaak](../zaken-api/configure-zaken-api-plugin.md#link-document-to-zaak) in
-  the Zaken API plugin
+  the Zaken API plugin. This plugin link can be configured using the process variables above. Namely:
+    - `pv:documentUrl`
 - Delete Verzoek from
   ObjectsAPI - [Delete Verzoek object](../objecten-api/configure-objecten-api-plugin.md#delete-object) in the Objects
-  API plugin
+  API plugin. This plugin link can be configured using the process variables above. Namely:
+    - `pv:verzoekObjectUrl`
 
 The 'Create Zaakdossier' process has several tasks with default configurations:
 
@@ -104,19 +126,8 @@ The 'Create Zaakdossier' process has several tasks with default configurations:
 ### Custom process
 
 Instead of using the `Create Zaakdossier` process it is possible to create another process that will handle zaak
-creation in a different way. The process is started with a few process variables that can be used when designing another
-process definition. These variables are:
-
-- **RSIN.** The RSIN configured in the Verzoek plugin.
-- **zaakTypeUrl.** The URL of the zaak-type that is associated to the document definition.
-- **rolTypeUrl.** The URL of the rol-type that is configured in the Verzoek plugin.
-- **rolDescription.** The rol description that is configured in the Verzoek plugin.
-- **verzoekObjectUrl.** The url from the verzoek object in the Objecten API.
-- **initiatorType.** The type of the initiator of this verzoek. Usually has the value 'kvk' or 'bsn'.
-- **initiatorValue.** The ID of the initiator. This is usually a BSN or KVK number.
-- **processDefinitionKey.** The key of the process-definition that should be started after this process.
-- **documentUrls.** A list of document URLs of documents stored in the Documenten API. Can be used as Collection in BPMN
-  multi-instance elements to iterate over the list.
+creation in a different way. The verzoek plugin must then be configured to use a custom process in the **Process**
+field. The custom process will then automatically be started with all necessary process variables.
 
 ## Configuring the handling process
 

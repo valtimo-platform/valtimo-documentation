@@ -32,6 +32,19 @@ The following features were added:
   The search functionality on the case list page has been improved to trigger a search every time, even if the search term has not changed. 
   This change enables users to search seamlessly, even when working with asynchronous data.
 
+* **Case list refactor**
+
+  Over time, much functionality had been added to the case list page. All these elements did not always work
+  together properly, nor were they optimal from a user experience perspective. The case list component has been
+  refactored with the following points in mind:
+  * State (pagination, sorting) is no longer saved in the local storage. When navigating to the case list page
+    of a document definition, the default state as configured in the environment file or in the API is shown.
+  * The current assignee filter is now saved in query parameters in the URL.
+  * When navigating to a case list page using a URL with query parameters, the list state (pagination, sorting, search,
+    assignee filter) is restored from these parameters. This includes going back to the case list page from a case
+    detail page using the back button.
+
+
 * **Task forms are now retrieve using a new API**
 
   When opening a user task, the form is now loaded using the new API endpoint:
@@ -42,49 +55,58 @@ The following features were added:
 
   One of the Carbon Design System packages was deprecated and has been upgraded to the new package
 
+* **New process links screen**
+
+  The process links screen (/process-links) has been updated to use Carbon design. The linking of forms, FormFlow and
+  plugin actions to a process step is now unified in a single modal. From this same modal, process links can also be
+  edited and unlinked.
+
+* **User settings / navigation bar always collapsible**
+  
+  The right sidebar now saves the currently selected language in the database under user settings, which means that the
+  language a user has selected will be the default when they log in with another device. In addition, a setting to always
+  make the navigation bar collapsible, regardless of screen size, has been added. This setting is also stored in the
+  database and thus the same on any device the user uses.
+
+* **Maximum of 20 SmartDocument placeholders**
+
+  The maximum number of 20 SmartDocument placeholders has been removed. It is now possible to enter many more
+  placeholders. The maximum has been removed for all multi-input components within Valtimo. Which means that the maximum
+  has also been removed for other features, such as the Verzoeken plugin mapping.
+
 ## Bugfixes
 
 The following bugs were fixed:
 
-* **Bug1**
+* **Context detail not loading properly**
 
-  Description of what the issue was.
+  Fixed an issue where the buttons next to the processes weren't initialized properly.
 
-* **Bug2**
+* **Modal dispersal on error when creating an object in Object management**
 
-  Description of what the issue was.
+  The modal will now stay open and an error will be shown when used enters invalid information when creating an object.
+
+* **Case list bug fixes**
+
+  In conjunction with the case list refactor mentioned under new features, the following issues were fixed:
+  * Boolean values (displayed as Yes/No) are now translated.
+  * When navigating to a case list page without query parameters, the default sort as specified in an environment file
+    or in the API is now used on first load.
+  * Date formats specified in list columns of type date are used to correctly display the date value in the desired
+    format.
+  
+* **Form dropdown list on object management page not loading all forms**
+  When there were more than 50 forms available not all of them would be listed in the view and edit form dropdowns on
+  the edit page of the object management definition. This has now been resolved.
 
 ## Breaking changes
 
-The following breaking changes were introduced:
-
-* **Breaking change1**
-
-* **Breaking change2**
-
-Instructions on how to migrate to this version of Valtimo can be found [here](migration.md).
+No breaking changes.
 
 ## Deprecations
 
-The following was deprecated:
-
-* **Deprecation1**
-
-  X was deprecated and is replaced with Y.
-* **Deprecation2**
-
-  X was deprecated and is replaced with Y.
-
-Instructions on how to migrate to this version of Valtimo can be found [here](migration.md).
+No deprecations.
 
 ## Known issues
 
-This version has the following known issues:
-
-* **Issue1**
-    * Discovered in version x.x.x
-    * Describe what can be done to work around the issue
-
-* **Issue2**
-    * Discovered in version x.x.x
-    * Describe what can be done to work around the issue
+No known issues.

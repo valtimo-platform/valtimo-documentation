@@ -13,9 +13,9 @@ Instructions on how to add the Catalogi API dependency can be found
 [here](/getting-started/modules/zgw/documenten-api.md).
 
 To configure this plugin the following properties have to be entered:
-- **URL.** Contains the complete base URL of the Catalogi API to connect to. This generally includes 
+- **URL (`url`).** Contains the complete base URL of the Catalogi API to connect to. This generally includes 
 the path `/api/v1/`.
-- **Authentication plugin configuration.** Reference to another plugin configuration that will be used to add 
+- **Authentication plugin configuration (`authenticationPluginConfiguration`).** Reference to another plugin configuration that will be used to add 
 authentication to any request performed on the Catalogi API. If no option is available in this field a plugin has to 
 be configured that is able to authenticate for the specific application that hosts the Catalogi API. (e.g. OpenZaak)
 
@@ -27,7 +27,7 @@ An example plugin configuration:
 The Catalogi API plugin supports the following actions that can be configured in process links in order to retrieve type 
 data.
 
-A general description on how to create process links can be found [here](../create-process-link.md).
+A general description on how to create process links can be found [here](../../process-link/create-process-link.md).
 
 ### Retrieve statustype
 This action retrieves the statustype URL using the statustype description, and will assign it to a process variable. 
