@@ -166,3 +166,24 @@ Where form.io definition is using the following translation properties:
 ```
 Which results in:
 ![Configuring the property in a form](img/form_io_translations.png)
+
+## Disabling prefill
+<sub>Available since 10.5.0</sub>
+
+In some cases it is desirable to be able to disable a form input prefill. For example, an upload input might result in duplicate files when prefilled.
+
+To disable prefilling a component, the `prefill` property can be set in the FormIO definition:
+
+```json
+{
+  "key": "file-attachments",
+  "type": "valtimo-file",
+  "input": true,
+  "label": "Relevant files",
+  "prefill": false,
+  ...
+}
+```
+
+In contrast to [Disabled fields](#disabled-fields), setting this property to false will still save the result in the document.
+

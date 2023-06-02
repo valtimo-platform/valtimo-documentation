@@ -31,4 +31,8 @@ dependencies {
 }
 ```
 
+### Frontend
+ A general instruction to add a front-end plugin to the implementation can be found [here](../core/plugin.md#adding-a-front-end-plugin-to-the-implementation).
+
+
 
