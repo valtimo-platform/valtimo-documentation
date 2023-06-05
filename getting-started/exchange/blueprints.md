@@ -40,9 +40,9 @@ This is the general structure of a blueprint:
 |   |   |   |           |-- document
 |   |   |   |           |-- form
 |   |   |   |           |-- form-flow
-|   |   |   |           |-- form-link
+|   |   |   |           |-- formlink
 |   |   |   |           |-- liquibase
-|   |   |   |           |-- proces-document-link
+|   |   |   |           |-- process-document-link
 |   |   |   |           |-- application.yml
 |   |   |   |-- build.gradle/pom.xml
 |   |   |-- frontend
@@ -121,9 +121,9 @@ After checking out the code, the folder structure should look similar to this:
 |   |   |   |           |-- document
 |   |   |   |           |-- form
 |   |   |   |           |-- form-flow
-|   |   |   |           |-- form-link
+|   |   |   |           |-- formlink
 |   |   |   |           |-- liquibase
-|   |   |   |           |-- proces-document-link
+|   |   |   |           |-- process-document-link
 |   |   |   |           |-- application.yml
 |   |   |   |-- build.gradle/pom.xml
 |   |   |-- frontend
