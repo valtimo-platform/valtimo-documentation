@@ -4,10 +4,9 @@
 
 The following features were added:
 
-* **New feature1**
+* **Added edit note and delete note options on the notes tab**
 
-  Description of the new feature goes here.
-  Also link to the page that expains the feature in greater detail.
+  Added the functionality to edit and delete a note in an order. It can only be edited if the text field is not empty.
 
 * **New feature2**
 
