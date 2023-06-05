@@ -4,16 +4,15 @@
 
 The following features were added:
 
-* **New feature1**
+* **Security smoke test is now available**
 
-  Description of the new feature goes here.
-  Also link to the page that explains the feature in greater detail.
+  There now exists a way to quickly check if all REST API endpoints are properly secured using the
+  new `SecuritySmokeIntegrationTest`. More information [here](/extending-valtimo/test-utils-common/security-testing.md).
 
 * **New feature2**
 
   Description of the new feature goes here.
   Also link to the page that explains the feature in greater detail.
-
 
 ## Bugfixes
 
@@ -56,9 +55,9 @@ Instructions on how to migrate to this version of Valtimo can be found [here](mi
 This version has the following known issues:
 
 * **Issue1**
-  * Discovered in version x.x.x
-  * Describe what can be done to work around the issue
+    * Discovered in version x.x.x
+    * Describe what can be done to work around the issue
 
 * **Issue2**
-  * Discovered in version x.x.x
-  * Describe what can be done to work around the issue
+    * Discovered in version x.x.x
+    * Describe what can be done to work around the issue
