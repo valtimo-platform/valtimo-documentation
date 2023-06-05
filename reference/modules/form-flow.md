@@ -129,4 +129,76 @@ The Camunda process will get an extra variable:
 }
 ```
 
+#### Starting a new case and saving submission data to defined location
 
+The method below creates a new case and saves the submission data to the document and process variables. Currently
+storing data in other location is not supported. The second parameter decides where in the document the submission data 
+should be saved. The second parameter expects a map from which the key defines the location where the data should be 
+saved, and the value is a location inside the `step.submissionData`.
+
+```spel
+${valtimoFormFlow.startCase(instance.id, {'doc:/address/streetName':'/street', 'pv:approved':'/approval'})}
+```
+
+For example, if the submission data is:
+```json
+{
+  "street": "Funenpark",
+  "approved": true,
+  "irrelevantProperty": 1234
+}
+```
+A new document is created with this data. If the submission path is referencing to an object or array in the submission, 
+the entire object/array is copied to the document JSON.
+
+```json
+{
+  "address": {
+    "streetName": "Funenpark"
+  }
+}
+```
+The Camunda process will be started with a process variable:
+```json
+{
+  "approved": true
+}
+```
+
+#### Starting a supporting process for a case
+
+The method below start a new process instance for an existing case and saves the submission data to the document and 
+process variables. Currently storing data in other location is not supported. The second parameter decides where in the 
+document the submission data should be saved. The second parameter expects a map from which the key defines the location 
+where the data should be saved, and the value is a location inside the `step.submissionData`.
+
+```spel
+${valtimoFormFlow.startSupportingProcess(instance.id, {'doc:/address/streetName':'/street', 'pv:approved':'/approval'})}
+```
+
+For example, if the submission data is:
+```json
+{
+  "street": "Funenpark",
+  "approved": true,
+  "irrelevantProperty": 1234
+}
+```
+
+The data will be added to the document JSON. If data was already present in the document JSON, it will be overwritten.
+If the submission path is referencing to an object or array in the submission, the entire object/array is copied to the
+document JSON.
+
+```json
+{
+  "address": {
+    "streetName": "Funenpark"
+  }
+}
+```
+The Camunda process will be started with a process variable:
+```json
+{
+  "approved": true
+}
+```
