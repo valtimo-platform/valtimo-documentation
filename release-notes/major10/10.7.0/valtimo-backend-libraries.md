@@ -9,11 +9,10 @@ The following features were added:
   Description of the new feature goes here.
   Also link to the page that explains the feature in greater detail.
 
-* **New feature2**
+* **New dashboard**
 
-  Description of the new feature goes here.
-  Also link to the page that explains the feature in greater detail.
-
+  Valtimo is working on a new dashboard. To support the new dashboard, a new module was introduced.
+  Information on how to include this module can be found [here](/getting-started/modules/core/dashboard.md).
 
 ## Bugfixes
 

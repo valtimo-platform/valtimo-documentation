@@ -26,6 +26,7 @@
       * [Connector](getting-started/modules/core/connector.md)
       * [Contract](getting-started/modules/core/contract.md)
       * [Core](getting-started/modules/core/core.md)
+      * [Dashboard](getting-started/modules/core/dashboard.md)
       * [Document](getting-started/modules/core/document.md)
       * [Document generation](getting-started/modules/core/document-generation.md)
       * [Form](getting-started/modules/core/form.md)
