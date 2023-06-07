@@ -22,7 +22,7 @@ public class MyProjectSecuritySmokeIntegrationTest extends SecuritySmokeIntegrat
 
     public MyProjectSecuritySmokeIntegrationTest() {
         super("com.mycompany.package", Set.of(
-                "/api/v1/open/exclude-this-endpoint/because-its-not-secured"
+                "GET /api/v1/open/exclude-this-endpoint/because-its-not-secured"
         ));
     }
 }

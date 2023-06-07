@@ -6,7 +6,7 @@ The following features were added:
 
 * **Security smoke test is now available**
 
-  There now exists a way to quickly check if all REST API endpoints are properly secured using the
+  A new test class is made available to quickly check if all REST API endpoints apply some form of security using the
   new `SecuritySmokeIntegrationTest`. More information [here](/extending-valtimo/test-utils-common/security-testing.md).
 
 * **New feature2**
