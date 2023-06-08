@@ -71,6 +71,7 @@
   * [Case](using-valtimo/case/creating-case-settings.md)
   * [Documents](using-valtimo/document/document.md)
     * [Assigning a user to a document](using-valtimo/document/assigning-a-user.md)
+    * [Automatic task assignment](using-valtimo/document/automatic-task-assignment.md)
     * [Creating a document definition](using-valtimo/document/create-document-definition.md)
     * [Creating case settings](using-valtimo/case/creating-case-settings.md)
     * [Custom case list columns](using-valtimo/document/custom-case-list-columns.md)
