@@ -6,7 +6,7 @@ The following features were added:
 
 * **Automatic User Task assignment to Case Handler**
 
-  It is now possible to have User Tasks automatically assigned to a Case Handler
+  It is now possible to have user tasks automatically assigned to a case handler.
   Refer [to this page](/using-valtimo/document/automatic-task-assignment.md) to learn more about this feature.
 
 * **New feature2**
