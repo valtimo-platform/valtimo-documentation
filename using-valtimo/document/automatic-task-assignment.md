@@ -1,6 +1,6 @@
 # Automatic task assignment
 
-It is possible to have user tasks be automatically assigned to a Case Assignee making the tasks in a Case appear under 
+It is possible to have user tasks be automatically assigned to a case assignee making the tasks in a case appear under 
 the Case Assignee's Task List.
 
 ## Functionality
