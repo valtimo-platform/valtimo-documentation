@@ -5,7 +5,7 @@ the case assignee's task list.
 
 ## Functionality
 
-This feature causes User Tasks (existing and new) to be assigned to the current case assignee if there is one assigned.  
+This feature causes user tasks (existing and new) to be assigned to the current case assignee if there is one assigned.  
 Upon the (re-)assignment of a case all user tasks from all processes currently using the same business key will 
 have their assignee updated to match the new case assignee.  
 Removal of an assignee from the case will also clear the assignee on all assigned user tasks withing all processes 
