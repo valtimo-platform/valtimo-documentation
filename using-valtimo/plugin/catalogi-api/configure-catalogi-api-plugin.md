@@ -77,7 +77,6 @@ This action retrieves the statustype URL using the statustype description, and w
 
 When creating a process link the following properties have to be entered:
 - **Statustype**. This description will be used to lookup the full statustype URL.
-  
     A full URL can also be set here. In that case, the value will be used directly without a lookup.
 - **Process variable name**. This is the name of the process variable which value will be set to the found statustype URL.
 
@@ -89,7 +88,6 @@ This action retrieves the resultaattype URL using the resultaattype description,
 
 When creating a process link the following properties have to be entered:
 - **Resultaattype**. This description will be used to lookup the full resultaattype URL.
-
   A full URL can also be set here. In that case, the value will be used directly without a lookup.
 - **Process variable name**. This is the name of the process variable which value will be set to the found resultaattype URL.
 
