@@ -18,7 +18,7 @@ This feature requires the following:
 
 ## How to configure automatic assignment of tasks
 
-Automatic assignment of tasks can be enabled at the bottom of a Case Configuration page (`Admin` -> `Case` -> 
+Automatic assignment of tasks can be enabled at the bottom of an individual case configuration page (`Admin` -> `Case` -> 
 `[your case definition]`). This option becomes visible when the Case is allowed to have an assignee.
 
 ![Configuring automatic task assignment](img/case-automatic-task-assignment.png)
