@@ -76,7 +76,7 @@ A general description on how to create process links can be found [here](../crea
 This action retrieves the statustype URL using the statustype description, and will assign it to a process variable. 
 
 When creating a process link the following properties have to be entered:
-- **Statustype**. This description will be used to lookup the full statustype URL 
+- **Statustype**. This description will be used to lookup the full statustype URL.
   
     A full URL can also be set here. In that case, the value will be used directly without a lookup.
 - **Process variable name**. This is the name of the process variable which value will be set to the found statustype URL.
