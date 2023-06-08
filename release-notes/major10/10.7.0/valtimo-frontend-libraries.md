@@ -10,7 +10,7 @@ Added the functionality to edit and delete a note in an order. It can only be ed
 
 * **Automatic User Task assignment to Case Handler**
 
-  An additional checkbox has been added to the Case Assignee section of a Case Configuration that enables the user to 
+  An additional checkbox has been added to the case assignee section of a case configuration that enables the user to 
   toggle on and off the automatic assignment of User Tasks to a Case Handler if a Case has one assigned to it/is 
   claimed by one.  
   Refer [to this page](/using-valtimo/document/automatic-task-assignment.md) to learn more about this feature.
