@@ -98,7 +98,6 @@ This action retrieves the besluittype URL using the besluittype description, and
 
 When creating a process link the following properties have to be entered:
 - **Besluittype**. This description will be used to lookup the full besluittype URL.
-
   A full URL can also be set here. In that case, the value will be used directly without a lookup.
 - **Process variable name**. This is the name of the process variable which value will be set to the found besluittype URL.
 
