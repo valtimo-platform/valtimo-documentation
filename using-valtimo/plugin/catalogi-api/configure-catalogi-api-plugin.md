@@ -88,7 +88,7 @@ An example action configuration:
 This action retrieves the resultaattype URL using the resultaattype description, and will assign it to a process variable.
 
 When creating a process link the following properties have to be entered:
-- **Resultaattype**. This description will be used to lookup the full resultaattype URL
+- **Resultaattype**. This description will be used to lookup the full resultaattype URL.
 
   A full URL can also be set here. In that case, the value will be used directly without a lookup.
 - **Process variable name**. This is the name of the process variable which value will be set to the found resultaattype URL.
