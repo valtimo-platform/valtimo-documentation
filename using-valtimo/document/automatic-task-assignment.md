@@ -26,5 +26,5 @@ Automatic assignment of tasks can be enabled at the bottom of an individual case
 ## Limitations
 
 * Only tasks that the user has access to (user has the required role) are assigned to the case assignee.
-* Tasks already loaded on a Dossier Detail page do not automatically show the new assignment. A component reload (switching 
+* Tasks already loaded on a dossier detail page do not automatically show the new assignment. A component reload (switching 
 tabs or reload the page) is required to see the up-to-date assignee in the task modal.
