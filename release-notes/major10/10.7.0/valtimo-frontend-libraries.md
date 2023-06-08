@@ -4,9 +4,16 @@
 
 The following features were added:
 
-* **Added edit note and delete note options on the notes tab**
+**Added edit note and delete note options on the notes tab**
 
-  Added the functionality to edit and delete a note in an order. It can only be edited if the text field is not empty.
+Added the functionality to edit and delete a note in an order. It can only be edited if the text field is not empty.
+
+* **Automatic User Task assignment to Case Handler**
+
+  An additional checkbox has been added to the case assignee section of a case configuration that enables the user to 
+  toggle on and off the automatic assignment of user tasks to a case handler if a case has one assigned to it/is 
+  claimed by one.  
+  Refer [to this page](/using-valtimo/document/automatic-task-assignment.md) to learn more about this feature.
 
 * **New feature2**
 
