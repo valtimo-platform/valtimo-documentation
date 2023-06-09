@@ -131,8 +131,8 @@ The Camunda process will get an extra variable:
 
 #### Starting a new case and saving submission data to defined location
 
-The method below creates a new case and saves the submission data to the document and process variables. Currently
-storing data in other location is not supported. The second parameter decides where in the document the submission data 
+The method below creates a new case and saves the submission data to the document and process variables. Storing data 
+in other location is currently not supported. The second parameter decides where in the document the submission data 
 should be saved. The second parameter expects a map from which the key defines the location where the data should be 
 saved, and the value is a location inside the `step.submissionData`.
 
@@ -168,7 +168,7 @@ The Camunda process will be started with a process variable:
 #### Starting a supporting process for a case
 
 The method below start a new process instance for an existing case and saves the submission data to the document and 
-process variables. Currently storing data in other location is not supported. The second parameter decides where in the 
+process variables. Storing data in other location is currently not supported. The second parameter decides where in the 
 document the submission data should be saved. The second parameter expects a map from which the key defines the location 
 where the data should be saved, and the value is a location inside the `step.submissionData`.
 
