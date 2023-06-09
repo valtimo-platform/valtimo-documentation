@@ -15,11 +15,12 @@ Added the functionality to edit and delete a note in an order. It can only be ed
   claimed by one.  
   Refer [to this page](/using-valtimo/document/automatic-task-assignment.md) to learn more about this feature.
 
-* **New feature2**
+* **Carbon breadcrumbs and page title**
 
-  Description of the new feature goes here.
-  Also link to the page that expains the feature in greater detail.
-
+  New breadcrumbs and page titles have been introduced throughout the application, in order to provide a consistent user
+  experience with Carbon components. Since previously URLs and breadcrumbs were not implemented consistently, some
+  logic had to be introduced in order to provide proper breadcrumbs. How this was implemented, and how to use this logic
+  in your implementation, is explained on [this page](/reference/user-interface/breadcrumbs.md).
 
 ## Bugfixes
 
