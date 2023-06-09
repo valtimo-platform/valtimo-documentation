@@ -99,6 +99,10 @@ The following features were added:
 * **Prefilling of start forms for supporting processes**
   Start forms configured for supporting processes are now prefilled with case data when opened.
 
+* **Support for form flows to start cases and supporting processes** 
+  Form flows can now be used to start a new case or supporting processes for an existing case.
+  More information [here](/reference/modules/form-flow.md#starting-a-new-case-and-saving-submission-data-to-defined-location)
+
 ## Bugfixes
 
 The following bugs were fixed:
