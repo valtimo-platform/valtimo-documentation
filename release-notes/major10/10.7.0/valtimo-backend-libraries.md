@@ -9,6 +9,11 @@ The following features were added:
   A new test class is made available to quickly check if all REST API endpoints apply some form of security using the
   new `SecuritySmokeIntegrationTest`. More information [here](/extending-valtimo/test-utils-common/security-testing.md).
 
+* **Automatic User Task assignment to Case Handler**
+
+  It is now possible to have user tasks automatically assigned to a case handler.
+  Refer [to this page](/using-valtimo/document/automatic-task-assignment.md) to learn more about this feature.
+
 * **New feature2**
 
   Description of the new feature goes here.
