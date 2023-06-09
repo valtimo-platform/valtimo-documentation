@@ -140,6 +140,7 @@
   * [User interface](reference/user-interface/user-interface.md)
     * [Design philosophy](reference/user-interface/design-philosophy.md)
     * [Carbon design system](reference/user-interface/carbon-design-system.md)
+    * [Breadcrumbs](reference/user-interface/breadcrumbs.md)
   * [Feature toggles](reference/feature-toggles.md)
   * [Troubleshoot](reference/troubleshoot.md)
 * Release notes
