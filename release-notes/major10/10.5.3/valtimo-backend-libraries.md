@@ -2,6 +2,8 @@
 
 ## New Features
 
+No new features.
+
 ## Bugfixes
 
 The following bugs were fixed:
