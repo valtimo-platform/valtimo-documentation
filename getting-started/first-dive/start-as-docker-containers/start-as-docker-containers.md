@@ -1,7 +1,8 @@
 # Start as Docker Containers
 
+This page contains instructions on how to start up the Valtimo platform with Docker. The containers are designed for evaluation purposes only. Best results are made using an IDE. For creating production processes in Valtimo a CI/CD pipeline is required. See https://docs.valtimo.nl/getting-started/first-dive/creating-your-own-valtimo-implementation.  
+
 ## Repositories
-This page contains instructions on how to start up the Valtimo platform with Docker.
 Depending on the Valtimo edition, a Github repository should be checked out that contains the Docker Compose file.
 
 ### Valtimo
