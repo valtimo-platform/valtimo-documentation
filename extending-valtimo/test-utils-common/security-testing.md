@@ -2,7 +2,7 @@
 
 ## Smoke testing
 
-Valtimo supports security smoke testing. Which tests if all the REST API endpoints are properly secured. This test is
+Valtimo supports security smoke testing, which tests if all the REST API endpoints are properly secured. This test is
 called the `SecuritySmokeIntegrationTest`.
 
 The following steps are required to run the `SecuritySmokeIntegrationTest`:
@@ -10,7 +10,7 @@ The following steps are required to run the `SecuritySmokeIntegrationTest`:
 ### Step 1: include the dependency
 
 The test-utils-common dependency should be included in your project. More
-information [here](/getting-started/modules/core/test-utils-common.md).
+information can be found [here](/getting-started/modules/core/test-utils-common.md).
 
 ### Step 2: create the security smoke test
 

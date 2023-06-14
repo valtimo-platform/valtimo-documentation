@@ -2,7 +2,7 @@
 
 ## Dependencies
 
-Contains utilities that are useful when creating tests for Valtimo.
+This module contains utilities that are useful when creating tests for Valtimo.
 
 ### Backend
 
