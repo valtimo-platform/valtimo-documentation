@@ -17,7 +17,7 @@ The following features were added:
 * **Additional status on TaakObject**
 
   An additional status option `GESLOTEN` has been added to the 
-  [TaakStatus](https://github.com/valtimo-platform/valtimo-backend-libraries/blob/44143e0708ba32a01e9c0765a701ca2a5294da4b/zgw/portaaltaak/src/main/kotlin/com/ritense/portaaltaak/TaakObject.kt#L49)
+  [TaakStatus](https://github.com/valtimo-platform/valtimo-backend-libraries/blob/main/zgw/portaaltaak/src/main/kotlin/com/ritense/portaaltaak/TaakObject.kt#L49)
   enum of a TaakObject.
 
 * **New feature2**
