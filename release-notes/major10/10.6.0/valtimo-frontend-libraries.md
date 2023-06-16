@@ -94,6 +94,8 @@ The following bugs were fixed:
     or in the API is now used on first load.
   * Date formats specified in list columns of type date are used to correctly display the date value in the desired
     format.
+  * List columns configured using `defaultDefinitionTable` or `customDefinitionTables` did not handle array values
+    properly. It now shows and sorts columns properly when using a propertyName like `$.testArray[0].value`
   
 * **Form dropdown list on object management page not loading all forms**
   When there were more than 50 forms available not all of them would be listed in the view and edit form dropdowns on
