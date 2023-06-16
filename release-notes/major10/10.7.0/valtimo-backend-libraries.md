@@ -14,6 +14,12 @@ The following features were added:
   It is now possible to have user tasks automatically assigned to a case handler.
   Refer [to this page](/using-valtimo/document/automatic-task-assignment.md) to learn more about this feature.
 
+* **Additional status on TaakObject**
+
+  An additional status option `GESLOTEN` has been added to the 
+  [TaakStatus](https://github.com/valtimo-platform/valtimo-backend-libraries/blob/main/zgw/portaaltaak/src/main/kotlin/com/ritense/portaaltaak/TaakObject.kt#L49)
+  enum of a TaakObject.
+
 * **New feature2**
 
   Description of the new feature goes here.
