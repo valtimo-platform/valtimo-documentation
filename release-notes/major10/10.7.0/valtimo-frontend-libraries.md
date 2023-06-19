@@ -4,15 +4,23 @@
 
 The following features were added:
 
-* **Added edit note and delete note options on the notes tab**
+**Added edit note and delete note options on the notes tab**
 
-  Added the functionality to edit and delete a note in an order. It can only be edited if the text field is not empty.
+Added the functionality to edit and delete a note in an order. It can only be edited if the text field is not empty.
 
-* **New feature2**
+* **Automatic User Task assignment to Case Handler**
 
-  Description of the new feature goes here.
-  Also link to the page that expains the feature in greater detail.
+  An additional checkbox has been added to the case assignee section of a case configuration that enables the user to 
+  toggle on and off the automatic assignment of user tasks to a case handler if a case has one assigned to it/is 
+  claimed by one.  
+  Refer [to this page](/using-valtimo/document/automatic-task-assignment.md) to learn more about this feature.
 
+* **Carbon breadcrumbs and page title**
+
+  New breadcrumbs and page titles have been introduced throughout the application, in order to provide a consistent user
+  experience with Carbon components. Since previously URLs and breadcrumbs were not implemented consistently, some
+  logic had to be introduced in order to provide proper breadcrumbs. How this was implemented, and how to use this logic
+  in your implementation, is explained on [this page](/reference/user-interface/breadcrumbs.md).
 
 ## Bugfixes
 

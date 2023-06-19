@@ -15,8 +15,11 @@ then the json file should be named `loans.json.`
 
 ```json
 {
-    "canHaveAssignee": true
+    "canHaveAssignee": true,
+    "autoAssignTasks": true
 }
 ```
+`autoAssignTasks` can only be set to true when `canHaveAssignee` is true.
 
-Any value not present in the json file will not be loaded and will instead use the default value.
+Any value not present in the json file will not be loaded and will instead use the default value (`false`).
+Auto-deployed case configuration settings are validated against unsupported properties or invalid values.
