@@ -71,7 +71,7 @@ This version has the following known issues:
     in `com.ritense.valtimo`, some configurations are not picked up properly. Known features that will be impacted are:
     * **Audit log**: view does not show any logs.
     * **Exception handling**: Exceptions are not translated to the correct http status codes. For instance,
-      a `AccessDeniedException` results in a status `500` instead of `403`
+      a `AccessDeniedException` results in a status `500` instead of `403`.
   * As a workaround, the following can be added to your main application
     class: `@SpringBootApplication(scanBasePackages = {"com.ritense.valtimo", "your.custom.package"})`
 
