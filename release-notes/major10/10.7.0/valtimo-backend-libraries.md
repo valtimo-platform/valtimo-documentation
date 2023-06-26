@@ -65,9 +65,15 @@ Instructions on how to migrate to this version of Valtimo can be found [here](mi
 
 This version has the following known issues:
 
-* **Issue1**
-    * Discovered in version x.x.x
-    * Describe what can be done to work around the issue
+* **Main application in alternative package does not work properly**
+  * Discovered in version 10.7.0
+  * When the main Spring Boot application class (annotated with `@SpringBootApplication`) is not
+    in `com.ritense.valtimo`, some configurations are not picked up properly. Known features that will be impacted are:
+    * **Audit log**: view does not show any logs.
+    * **Exception handling**: Exceptions are not translated to the correct http status codes. For instance,
+      a `AccessDeniedException` results in a status `500` instead of `403`.
+  * As a workaround, the following can be added to your main application
+    class: `@SpringBootApplication(scanBasePackages = {"com.ritense.valtimo", "your.custom.package"})`.
 
 * **Issue2**
     * Discovered in version x.x.x
