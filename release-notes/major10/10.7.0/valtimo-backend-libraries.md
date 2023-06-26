@@ -69,7 +69,7 @@ This version has the following known issues:
   * Discovered in version 10.7.0
   * When the main Spring Boot application class (annotated with `@SpringBootApplication`) is not
     in `com.ritense.valtimo`, some configurations are not picked up properly. Known features that will be impacted are:
-    * **Audit log**: view does not show any logs
+    * **Audit log**: view does not show any logs.
     * **Exception handling**: Exceptions are not translated to the correct http status codes. For instance,
       a `AccessDeniedException` results in a status `500` instead of `403`
   * As a workaround, the following can be added to your main application
