@@ -100,15 +100,15 @@ The following bugs were fixed:
 
 * **Case configuration bug fixes**
 
-  On double refresh of the Configuration modal, the "Link upload process to case" no longer gets emptied
+  On double refresh of the Configuration modal, the "Link upload process to case" no longer gets emptied.
   
 * **Form dropdown list on object management page not loading all forms**
   When there were more than 50 forms available not all of them would be listed in the view and edit form dropdowns on
   the edit page of the object management definition. This has now been resolved.
 
 * **Plugin configuration**
-  * Secret visibility is no longer toggled when pressing "Enter" while configuring plugins
-  * Plugin configuration modal now stays open until the configuration is successful
+  * Secret visibility is no longer toggled when pressing "Enter" while configuring plugins.
+  * Plugin configuration modal now stays open until the configuration is successful.
 
 ## Breaking changes
 
