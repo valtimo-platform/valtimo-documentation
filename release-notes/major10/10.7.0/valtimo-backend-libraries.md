@@ -73,7 +73,7 @@ This version has the following known issues:
     * **Exception handling**: Exceptions are not translated to the correct http status codes. For instance,
       a `AccessDeniedException` results in a status `500` instead of `403`.
   * As a workaround, the following can be added to your main application
-    class: `@SpringBootApplication(scanBasePackages = {"com.ritense.valtimo", "your.custom.package"})`
+    class: `@SpringBootApplication(scanBasePackages = {"com.ritense.valtimo", "your.custom.package"})`.
 
 * **Issue2**
     * Discovered in version x.x.x
