@@ -157,7 +157,7 @@ The following bugs were fixed:
 * **Attempts to double decrypt plugin secret**
 
 When deploying a plugin configuration file, Valtimo would try to decrypt plugin secrets twice. This would often result
-in errors. This has been fixed now. Valtimo will now only decrypt the plugin secrets once.
+in errors. Valtimo will now only decrypt the plugin secrets once.
 
 ## Breaking changes
 
