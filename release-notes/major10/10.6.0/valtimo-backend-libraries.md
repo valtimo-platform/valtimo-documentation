@@ -154,6 +154,11 @@ The following bugs were fixed:
   - The Notificaties API Plugin property `Callback URL` must now be a valid url.
   - The Object Token Authentication Plugin property `Token` now has a minimum length of 20.
 
+* **Attempts to double decrypt plugin secret**
+
+When deploying a plugin configuration file, Valtimo would try to decrypt plugin secrets twice. This would often result
+in errors. This has been fixed now. Valtimo will now only decrypt the plugin secrets once.
+
 ## Breaking changes
 
 The following breaking changes were introduced:
@@ -181,10 +186,6 @@ The following breaking changes were introduced:
     * `PluginProcessLinkResultDto` has a new mandatory constructor property `activityType`
     * `PluginProcessLinkResultDto.activityType` is now of type `ActivityTypeWithEventName`
     * `PluginProcessLinkRepository` no longer extends `JpaRepository`
-
-## Breaking changes
-
-No breaking changes.
 
 ## Deprecations
 
