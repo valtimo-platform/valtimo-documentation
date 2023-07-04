@@ -151,15 +151,16 @@
 * Release notes
   * [Release notes](release-notes/release-notes.md)
   * 10.x.x
-    * 10.6.0 (RC)
+    * 10.6.0
       * [Valtimo backend libraries](release-notes/major10/10.6.0/valtimo-backend-libraries.md)
       * [Valtimo frontend libraries](release-notes/major10/10.6.0/valtimo-frontend-libraries.md)
+    * 10.5.3
+      * [Valtimo backend libraries](release-notes/major10/10.5.3/valtimo-backend-libraries.md)
     * 10.5.2
       * [Valtimo backend libraries](release-notes/major10/10.5.2/valtimo-backend-libraries.md)
     * 10.5.1
       * [Valtimo backend libraries](release-notes/major10/10.5.1/valtimo-backend-libraries.md)
       * [Valtimo frontend libraries](release-notes/major10/10.5.1/valtimo-frontend-libraries.md)
-
     * 10.5.0
       * [Valtimo backend libraries](release-notes/major10/10.5.0/valtimo-backend-libraries.md)
       * [Valtimo frontend libraries](release-notes/major10/10.5.0/valtimo-frontend-libraries.md)
