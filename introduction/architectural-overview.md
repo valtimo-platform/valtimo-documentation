@@ -5,7 +5,7 @@ Valtimo is a based on a three-tier architecture.
 
 -	The presentation tier is the user interface, based on Angular. It’s referred to as Frontend. 
 -	The (business) logic tier is the heart of Valtimo, built in Kotlin/Java. It’s referred to as Backend.
--	For the data tier PostgreSQL is used – MySQL is supported for versions < 9.
+-	For the data tier PostgreSQL (advised) and MySQL are supported.  
 
 ## Product v.s. implementation
 
