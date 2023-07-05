@@ -86,6 +86,11 @@ export class ProcessManagementBuilderComponent implements OnInit, OnDestroy {
 ...
   ```
 
+## Custom page subtitle
+
+In a similar manner as in the above example, a custom page subtitle can be displayed by adding `customPageSubtitle: true`
+to the route data and using the method `setCustomPageSubtitle` on the `PageTitleService`.
+
 ## Hide page title
 
 In some scenario's, it is desirable to show the breadcrumbs, but not the page title. To enable this, add the
@@ -211,3 +216,23 @@ export class DossierListComponent implements OnInit, OnDestroy {
     ...
 }
   ```
+
+## Displaying a template next to the breadcrumbs
+
+On some pages, certain elements such as page actions should be displayed to the right of the breadcrumbs. This can be
+achieved by importing `RenderInPageHeaderDirectiveModule` from `@valtimo/components` into the module of which your page
+component is a part.
+
+Next, include a `ng-template` inside a `ng-container` with the directive `renderInPageHeader` inside your page component,
+like in the below example. The template will then be rendered to the right of the breadcrumbs.
+
+#### **`sample.component.html`**
+```angular2html
+...
+
+<ng-container renderInPageHeader>
+    <ng-template>
+        This text is displayed to the right of the breadcrumbs
+    </ng-template>
+</ng-container>
+```
