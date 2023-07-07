@@ -1,7 +1,7 @@
 # Building blocks
 
 Building blocks are a collection of files, that can be used to supplement a process or other parts of an implementation.
-These can consist of bpmn process defintions, forms, form flows, plugins, custom front-end, and back-end code.  
+These can consist of bpmn process definitions, forms, form flows, plugins, custom front-end, and back-end code.  
 For example, a plugin that allows sending messages via Slack could be a building block.
 Building blocks can be found on GitHub [here](https://github.com/generiekzaakafhandelcomponent/Bouwblokken).
 
