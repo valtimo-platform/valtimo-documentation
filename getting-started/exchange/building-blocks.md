@@ -33,6 +33,7 @@ This is the general structure of a building block:
 |   |   |   |   |-- java
 |   |   |   |   |-- kotlin
 |   |   |   |   |-- resources
+|   |   |   |       |-- bpmn
 |   |   |   |       |-- dmn
 |   |   |   |       |-- config
 |   |   |   |           |-- form
