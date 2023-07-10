@@ -4,10 +4,14 @@
 
 The following features were added:
 
-* **New feature1**
-
-  Description of the new feature goes here.
-  Also link to the page that expains the feature in greater detail.
+* **Policy Based Access Control**
+  
+  Implemented PBAC frontend integration for the following features:
+  - Assigning an user to a Case
+  - Claiming a Case
+  - Adding a Case Note
+  - Editing a Case Note
+  - Deleting a Case Note
 
 * **New feature2**
 
