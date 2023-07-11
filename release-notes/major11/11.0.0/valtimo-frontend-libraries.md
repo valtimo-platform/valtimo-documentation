@@ -13,6 +13,8 @@ The following features were added:
   - Editing a Case Note
   - Deleting a Case Note
 
+  For more information on how to use access control in the front-end, refer to [this page](/using-valtimo/access-control/frontend-access-control.md).
+
 * **New feature2**
 
   Description of the new feature goes here.

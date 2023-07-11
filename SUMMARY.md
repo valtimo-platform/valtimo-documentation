@@ -66,6 +66,8 @@
       * [Zaken API](getting-started/modules/zgw/zaken-api.md)
   * [Process blueprints](getting-started/process-blueprints.md)
 * [Using Valtimo](using-valtimo/using-valtimo.md)
+  * [Access control](using-valtimo/access-control/access-control.md)
+    * [Front-end access control](using-valtimo/access-control/frontend-access-control.md)
   * [Documents](using-valtimo/document/document.md)
     * [Assigning a user to a document](using-valtimo/document/assigning-a-user.md)
     * [Creating a document definition](using-valtimo/document/create-document-definition.md)
