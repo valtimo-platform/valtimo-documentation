@@ -29,9 +29,10 @@ The following features were added:
 
 The following bugs were fixed:
 
-* **Bug1**
+* **Limit ClassGraph scanning**
 
-  Description of what the issue was.
+  In rare cases an out of memory error could occur. This has been fixed by limiting the ClassGraph scanning by
+  introducing a blacklist of libraries that don't need to be scanned.
 
 * **Bug2**
 
