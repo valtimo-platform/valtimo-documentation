@@ -25,4 +25,23 @@ dependencies {
 }
 ```
 
+### Frontend
+
+In order to use the Catalogi API plugin in the frontend the following can be added to your `app.module.ts`:
+
+```typescript
+@NgModule({
+  imports: [
+      CatalogiApiPluginModule,
+  ],
+  providers: [
+      {
+          provide: PLUGIN_TOKEN,
+          useValue: [
+              catalogiApiPluginSpecification,
+          ]
+      }
+  ]
+})
+```
 
