@@ -1,7 +1,8 @@
 # Access control
 
-Access control allows application functionality to be enabled or restricted through policies. 
+Valtimo implements Policy Based Access Control (PBAC). 
+This allows you to restrict access to functionality or data based on roles and policies.
 
-This section contains information on how to configure and use access control.
+The following sections contains information on how to configure and use access control.
 
 * [Front-end access control](frontend-access-control.md)
