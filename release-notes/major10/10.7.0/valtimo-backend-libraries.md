@@ -31,7 +31,7 @@ The following bugs were fixed:
 
 * **Limit ClassGraph scanning**
 
-  In rare cases an out of memory error could occur. This has been fixed by limiting the ClassGraph scanning by
+  In rare cases an out of memory error could occur due t ClassGraph scanning all packages. This has been resolved by
   introducing a blacklist of libraries that don't need to be scanned.
 
 * **Bug2**
