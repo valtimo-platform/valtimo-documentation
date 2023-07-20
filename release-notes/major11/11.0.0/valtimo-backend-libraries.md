@@ -4,10 +4,14 @@
 
 The following features were added:
 
-* **New feature1**
+* **Policy Based Access Control (PBAC)**
 
-  Description of the new feature goes here.
-  Also link to the page that explains the feature in greater detail.
+  Valtimo now supports Policy Based Access Control (PBAC), which provides detailed authorization checks on actions and data.
+  More information can be found here:
+  * [Introduction](/introduction/modules/modules.md#authorization)
+  * [Getting started](/getting-started/modules/core/authorization.md)
+  * [Using Valtimo](/using-valtimo/access-control/access-control.md)
+  
 
 * **New feature2**
 
