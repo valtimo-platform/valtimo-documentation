@@ -1,5 +1,7 @@
 # Access control
 
-Controlling the access of users. 
+Valtimo provides policy based access control, which allows control over who can access what resource.
 
-* [Creating a resource](creating-a-resource.md)
+
+This section contains information and examples on how to extend functionality regarding access control.
+* [Registering a resource](registering-a-resource.md)
