@@ -21,7 +21,7 @@ The following features were added:
   enum of a TaakObject.
 
 * **Whitelisting by mime-type of files uploaded to temporary file storage**
-  Uploads to the temporary file storage can now be restricted by whitelisting allowed mime-types.
+  The types of files uploaded to the temporary file storage can now be restricted by whitelisting allowed mime-types.
   For more information on this feature can be found [here](/using-valtimo/upload/temporary-file-storage.md#whitelisting-file-types-for-uploads)
 
 * **New feature2**
