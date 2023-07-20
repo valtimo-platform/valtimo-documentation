@@ -1,6 +1,7 @@
 # Access control
 
-Valtimo provides policy based access control, which allows control over who can access what resource.
+Valtimo provides Policy Based Access Control (PBAC) as an authorization layer, which allows control over who can access what 
+resource, under which circumstances.
 
 
 This section contains information and examples on how to extend functionality regarding access control.
