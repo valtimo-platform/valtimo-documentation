@@ -1,12 +1,12 @@
 # Backend-end access control
-This section describes how Policy Based Access Control (PBAC) can be configured in the backend.
+This section describes how permissions can be configured in the backend.
 
 ## Autodeployment
-PBAC can be configured in the backend using auto-deployment. 
+PBAC can be configured in the backend using auto-deployment. This is useful when you want to keep permissions identical over multiple environments.
 The deployment will scan for files on the classpath matching either `**/*.role.json` or `**/*.permission.json` for respectively role- and permission configurations.
 
 Every deployment file for PBAC represents a changeset, much like Liquibase. 
-These files contain a `changesetId` that should be unique over all deployment files that use changesets (currently only PBAC).
+These files contain a `changesetId` that should be unique over all deployment files that use changesets (currently only the Authorization module).
 
 The contents of a changeset cannot change as long as the `changesetId` does not. A change to an existing changeset can only be made when the `changesetId` also changes.
 Changes made to the deployment files of PBAC will result in a full recreation of existing role- or permission configuration.
@@ -17,14 +17,13 @@ The roles should be defined before permissions can be deployed. The file contain
 `all.role.json`:
 ``` json
 {
-    "changesetId": "pbac-roles-v1",
+    "changesetId": "pbac-roles",
     "roles": [
         "ROLE_USER",
         "ROLE_ADMIN"
     ]
 }
 ```
-
 
 ## Configuring permissions
 The example below defines 2 permissions:
@@ -36,7 +35,7 @@ The example below defines 2 permissions:
 `document.permission.json`:
 ``` json
 {
-    "changesetId": "pbac-documents-v1",
+    "changesetId": "pbac-documents",
     "permissions": [
         {
             "resourceType": "com.ritense.document.domain.impl.JsonSchemaDocument",
@@ -69,7 +68,7 @@ The example below defines 2 permissions:
     ]
 }
 ```
-
+### Joining entities using a container
 The example below shows how container conditions can be used to join other entities.
 In this case, the permission is defined:
 - A user with `ROLE_USER` can `VIEW` notes where
@@ -79,7 +78,7 @@ In this case, the permission is defined:
 `note.permission.json`:
 ``` json
 {
-    "changesetId": "pbac-note-v1",
+    "changesetId": "pbac-notes",
     "permissions": [
         {
             "resourceType": "com.ritense.note.domain.Note",

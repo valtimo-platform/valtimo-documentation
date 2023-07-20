@@ -21,6 +21,7 @@
   * [Modules](getting-started/modules/modules.md)
     * Core
       * [Audit](getting-started/modules/core/audit.md)
+      * [Authorization](getting-started/modules/core/authorization.md)
       * [Camunda](getting-started/modules/core/camunda-webapps.md)
       * [Case](getting-started/modules/core/case.md)
       * [Connector](getting-started/modules/core/connector.md)
