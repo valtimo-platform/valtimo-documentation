@@ -13,7 +13,6 @@ Changes made to the deployment files of PBAC will result in a full recreation of
 
 ## Configuring roles
 The roles should be defined before permissions can be deployed. The file contains only a list of role names next to the mandatory `changesetId`.
-Roles names should match the roles in Keycloak (or Active Directory, depending on the configuration).
 
 `all.role.json`:
 ``` json
@@ -28,8 +27,11 @@ Roles names should match the roles in Keycloak (or Active Directory, depending o
 
 
 ## Configuring permissions
-Permissions are a bit more complex than the roles.
-> **TODO: Add a detailed explanation of the contents of a permission**
+The example below defines 2 permissions:
+- A user with `ROLE_ADMIN` can `VIEW` any document
+- A user with `ROLE_USER` can `VIEW` documents where:
+  - the name of the document-definition equals `loans`
+  - the `height` of the loan is less than 20000
 
 `document.permission.json`:
 ``` json
@@ -59,7 +61,7 @@ Permissions are a bit more complex than the roles.
                         "type": "field",
                         "field": "documentDefinitionId.name",
                         "operator": "==",
-                        "value": "leningen"
+                        "value": "loans"
                     }
                 ]
             }
@@ -67,6 +69,12 @@ Permissions are a bit more complex than the roles.
     ]
 }
 ```
+
+The example below shows how container conditions can be used to join other entities.
+In this case, the permission is defined:
+- A user with `ROLE_USER` can `VIEW` notes where
+  - the related document-definition name equals `loans`
+  - the related document is assigned to the current user
 
 `note.permission.json`:
 ``` json
@@ -87,7 +95,7 @@ Permissions are a bit more complex than the roles.
                                 "type": "field",
                                 "field": "documentDefinitionId.name",
                                 "operator": "==",
-                                "value": "leningen"
+                                "value": "loans"
                             },
                             {
                                 "type": "field",
