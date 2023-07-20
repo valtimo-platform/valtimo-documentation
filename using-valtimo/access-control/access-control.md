@@ -3,13 +3,10 @@
 Valtimo supports Policy Based Access Control (PBAC) as an authorization layer via this module.
 This layer allows you to restrict access to functionality or data based on policies.
 
-## The model
-
-
-### Roles
+## Roles
 A role is a simple entity where permissions can be linked to. The role names should match the roles in the JWT token by OpenId/OAuth2 (Keycloak).
 
-### Permissions
+## Permissions
 Permissions are quite a bit more complex than the roles.
 
 Multiple permissions are evaluated as OR:
@@ -21,7 +18,7 @@ When selecting applicable permissions for evaluation, the following checks are p
 - The requested resource matches the permissions' resource
 - The required action matches the permissions' action 
 
-### Conditions
+## Conditions
 Extra conditions can be applied to a permission to tighten the access to resources. These conditions are optional.
 Conditions are evaluated as AND, which means the ALL configured conditions on a permission should evaluate to true to pass the permission checks.
 
