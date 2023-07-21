@@ -125,6 +125,7 @@
   * [Creating a custom dashboard](extending-valtimo/creating-a-custom-dashboard.md)
 * [References](reference/reference.md)
   * [Modules](reference/modules/modules.md)
+    * [Authorization](reference/modules/authorization.md)
     * [Document](reference/modules/document.md)
     * [Form](reference/modules/form.md)
     * [Form flow](reference/modules/form-flow.md)
