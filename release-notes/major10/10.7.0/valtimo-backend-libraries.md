@@ -20,6 +20,10 @@ The following features were added:
   [TaakStatus](https://github.com/valtimo-platform/valtimo-backend-libraries/blob/main/zgw/portaaltaak/src/main/kotlin/com/ritense/portaaltaak/TaakObject.kt#L49)
   enum of a TaakObject.
 
+* **Whitelisting by mime-type of files uploaded to temporary file storage**
+  The types of files uploaded to the temporary file storage can now be restricted by whitelisting allowed mime-types.
+  More information on this feature can be found [here](/using-valtimo/upload/temporary-file-storage.md#whitelisting-file-types-for-uploads)
+
 * **New feature2**
 
   Description of the new feature goes here.
