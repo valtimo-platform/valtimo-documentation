@@ -107,6 +107,8 @@
   * [Upload](using-valtimo/upload/upload.md)
     * [Uploading to Documenten API with metadata](using-valtimo/upload/upload-to-documenten-api-with-metadata.md)
 * [Extending Valtimo](extending-valtimo/extending-valtimo.md)
+  * [Access control](extending-valtimo/access-control/access-control.md)
+    * [Creating a resource](extending-valtimo/access-control/registering-a-resource.md)
   * [Document](extending-valtimo/document/document.md)
     * [Assigning and unassigning a user](extending-valtimo/document/assigning-and-unassigning-a-user.md)
     * [Search fields](extending-valtimo/document/configuring-search-fields.md)
