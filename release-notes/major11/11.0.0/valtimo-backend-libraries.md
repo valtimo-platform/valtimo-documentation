@@ -33,7 +33,7 @@ The following breaking changes were introduced:
 
 * **Removed REST endpoints**
   Several endpoints were meant for public use. By default, Valtimo should not offer any public endpoints,
-  and as a result these have been moved. This is the list of removed endpoints:
+  and as a result these have been removed. This is the list of removed endpoints:
   * `/api/v1/public/process/definition/{processDefinitionKey}/start-form`
   * `/api/v1/public/process/definition/{processDefinitionKey}/{businessKey}/start`
   * `/api/v1/public/task/{taskDefinitionId}/resource/pre-signed-url/{fileName}`
