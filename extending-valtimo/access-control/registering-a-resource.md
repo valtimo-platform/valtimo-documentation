@@ -26,7 +26,7 @@ In the example below, the `Audit` resource will be registered for access control
 `AuthorizationSpecification` has to apply to this resource in order for the Authorization module to see it as a
 registered resource.
 
-```java
+```kotlin
 class AuditSpecification(
     authRequest: AuthorizationRequest<Audit>,
     permissions: List<Permission>,
@@ -79,7 +79,7 @@ In the example below, the `Audit` resource will be registered for access control
 `AuthorizationSpecificationFactory` has to apply to this resource in order for the Authorization module to see it as a
 registered resource.
 
-```java
+```kotlin
 class AuditSpecificationFactory(
     private val auditService: AuditService,
     private var queryDialectHelper: QueryDialectHelper
