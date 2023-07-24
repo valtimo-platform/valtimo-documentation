@@ -21,6 +21,7 @@
   * [Modules](getting-started/modules/modules.md)
     * Core
       * [Audit](getting-started/modules/core/audit.md)
+      * [Authorization](getting-started/modules/core/authorization.md)
       * [Camunda](getting-started/modules/core/camunda-webapps.md)
       * [Case](getting-started/modules/core/case.md)
       * [Connector](getting-started/modules/core/connector.md)
@@ -68,6 +69,7 @@
 * [Using Valtimo](using-valtimo/using-valtimo.md)
   * [Access control](using-valtimo/access-control/access-control.md)
     * [Front-end access control](using-valtimo/access-control/frontend-access-control.md)
+    * [Backend-end access control](using-valtimo/access-control/backend-access-control.md)
   * [Documents](using-valtimo/document/document.md)
     * [Assigning a user to a document](using-valtimo/document/assigning-a-user.md)
     * [Creating a document definition](using-valtimo/document/create-document-definition.md)
