@@ -20,9 +20,11 @@ The `AuthorizationSpecification` is an abstract class built upon the Spring `Spe
 two methods have to be overridden. The `toPredicate` method creates predicates that are used to enhance queries. For
 example, when a user looks at a list of documents, only the documents this user has access to will be shown.
 
-Secondly, the `identifierToEntity` method is used to go from an identifier to the actual entity. 
+Secondly, the `identifierToEntity` method is used to go from an identifier to the actual entity. This is used when
+checking permissions for an entity directly, e.g. when checking if a user has a specific permission via the 
+`userHasPermission` endpoint.
 
-In the example below, the `Audit` resource will be registered for access control. The  class extending 
+In the example below, the `Audit` resource will be registered for access control. The class extending 
 `AuthorizationSpecification` has to apply to this resource in order for the Authorization module to see it as a
 registered resource.
 
@@ -44,6 +46,8 @@ class AuditSpecification(
         groupList.add(root.get<UUID>("id"))
         query.groupBy(groupList)
 
+        // This will be mostly the same across classes implementing AuthorizationSpecification
+        // It ensures predicates are created based on permissions
         val predicates = permissions.stream()
             .filter { permission: Permission ->
                 Audit::class.java == permission.resourceType &&
