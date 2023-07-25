@@ -4,10 +4,14 @@
 
 The following features were added:
 
-* **New feature1**
+* **Policy Based Access Control (PBAC)**
 
-  Description of the new feature goes here.
-  Also link to the page that explains the feature in greater detail.
+  Valtimo now supports Policy Based Access Control (PBAC), which provides detailed authorization checks on actions and data.
+  More information can be found here:
+  * [Introduction](/introduction/modules/modules.md#authorization)
+  * [Getting started](/getting-started/modules/core/authorization.md)
+  * [Using Valtimo](/using-valtimo/access-control/access-control.md)
+  
 
 * **New feature2**
 
@@ -31,7 +35,13 @@ The following bugs were fixed:
 
 The following breaking changes were introduced:
 
-* **Breaking change1**
+* **Removed REST endpoints**
+  Several endpoints were meant for public use. By default, Valtimo should not offer any public endpoints,
+  and as a result these have been removed. This is the list of removed endpoints:
+  * `/api/v1/public/process/definition/{processDefinitionKey}/start-form`
+  * `/api/v1/public/process/definition/{processDefinitionKey}/{businessKey}/start`
+  * `/api/v1/public/task/{taskDefinitionId}/resource/pre-signed-url/{fileName}`
+  * `/api/v1/public/task/{taskDefinitionId}/resource/{resourceId}`
 
 * **Breaking change2**
 
