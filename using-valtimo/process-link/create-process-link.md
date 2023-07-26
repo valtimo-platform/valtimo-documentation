@@ -89,6 +89,6 @@ This is an example of an autodeployment file for 2 user task for process:
 ## Migration from form-links
 As form-links will be deprecated in the future, it is advised to migrate these to process-links.
 
-You can find a script to simplify this task [here](script/migrate-formlinks.sh)
+You can find a script to simplify this task [here](script/migrate-formlinks.sh).
 
 
