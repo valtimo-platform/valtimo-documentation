@@ -28,7 +28,7 @@ The following features were added:
 
   A Spring Actuator health check has been added to monitor the number of Camunda incidents.
   If any incidents exist, the health indicator will be 'UNKNOWN'. When no incidents exist, the indicator will be 'UP'.
-  More information about the Spring Actuator health endpoint can be found [here](https://docs.spring.io/spring-boot/docs/current/reference/html/actuator.html#actuator.endpoints.health)
+  More information about the Spring Actuator health endpoint can be found [here](https://docs.spring.io/spring-boot/docs/current/reference/html/actuator.html#actuator.endpoints.health).
 
 * **New feature2**
 
