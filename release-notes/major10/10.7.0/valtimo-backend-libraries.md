@@ -23,6 +23,7 @@ The following features were added:
 * **Whitelisting by mime-type of files uploaded to temporary file storage**
   The types of files uploaded to the temporary file storage can now be restricted by whitelisting allowed mime-types.
   More information on this feature can be found [here](/using-valtimo/upload/temporary-file-storage.md#whitelisting-file-types-for-uploads)
+* 
 * **Spring Actuator health check for Camunda incidents**
 
   A Spring Actuator health check has been added to monitor the number of Camunda incidents.
