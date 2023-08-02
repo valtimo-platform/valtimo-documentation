@@ -1,7 +1,7 @@
-# Backend-end access control
+# Auto-deployment for access control
 This section describes how permissions can be configured in the backend.
 
-## Autodeployment
+## Auto-deployment
 PBAC can be configured in the backend using auto-deployment. This is useful when you want to keep permissions identical over multiple environments.
 The deployment will scan for files on the classpath matching either `**/*.role.json` or `**/*.permission.json` for respectively role- and permission configurations.
 
