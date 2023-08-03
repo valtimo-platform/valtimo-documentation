@@ -57,6 +57,57 @@ This page describes how to update Valtimo from the previous version to the curre
           Active:
           <svg class="cds--btn__icon" cdsIcon="arrow--down" size="16"></svg>
 
+  3.  **Registering @carbon/icons**
+
+    - In order to use @carbon/icons, the IconModule needs to be imported.
+
+      #### **`sample.module.ts`**
+      ````typescript
+      ...
+      // import IconModule
+      import {IconModule} from 'carbon-components-angular';
+      ...
+
+      @NgModule({
+          ...
+          imports: [
+            ...
+            IconModule
+            ...
+          ]
+          ...
+      })
+      export class SampleModule {
+       ...
+      }
+      ````
+    - Some icons may not be available by default, so they need to be registered in the component where they are needed. This is accomplished via the Carbon IconService
+      #### **`sample.component.ts`**
+      ````typescript
+      ...
+      // import IconService
+      import {IconService} from 'carbon-components-angular';
+      ...
+      // import Icons
+      import {ArrowDown16, ArrowUp16} from '@carbon/icons';
+      ...
+
+      @Component({
+          ...
+      })
+      export class SampleComponent implements OnInit{
+       ...
+       constructor(private readonly iconService: IconService) {}
+       ...
+       public ngOnInit(): void {
+        this.iconService.registerAll([ArrowDown16, ArrowUp16]);
+       }
+       ...
+      }
+      ````
+    - All icons available through the Carbon library can be found [here](https://angular.carbondesignsystem.com/?path=/docs/components-icon--docs)
+
+
 * **Breaking change 2/Deprecation 2**
 
   Scope: back-end/front-end
