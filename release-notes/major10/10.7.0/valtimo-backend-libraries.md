@@ -24,6 +24,11 @@ The following features were added:
   The types of files uploaded to the temporary file storage can now be restricted by whitelisting allowed mime-types.
   More information on this feature can be found [here](/using-valtimo/upload/temporary-file-storage.md#whitelisting-file-types-for-uploads)
 
+* **New service ObjectsService, for access to ObjectenAPI and ObjecttypenAPI**
+  A new service `ObjectsService` has been added to module `zgw/object-management`. 
+* This service allows implementations to make calls to ObjectsAPI without needing to explicitly initialize the plugin 
+* configurations for every single use.
+
 * **New feature2**
 
   Description of the new feature goes here.
