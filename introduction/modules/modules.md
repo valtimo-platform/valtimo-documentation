@@ -14,7 +14,9 @@ actions of that case.
 
 ### Authorization
 Valtimo supports Policy Based Access Control (PBAC) as an authorization layer via this module.
-This layer allows you to restrict access to functionality or data based on policies.
+This layer allows you to restrict access to functionality or data based on policies. Other modules that utilize the
+authorization module can define their own resource types (e.g. camunda tasks), so they can be used to grant access to
+certain functionality in Valtimo.
 
 ### Connector
 
