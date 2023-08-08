@@ -21,7 +21,8 @@ can then be updated.
 
 ## Deleting a role
 Roles can be deleted by clicking on that role. Then, by clicking on the three dots next to the `Save` button, the role
-can then be deleted.
+can then be deleted. Take caution, as deleting roles will also result in the deletion of related permission.
+Deleting roles will not delete the role in Keycloak.
 
 ![deleting-a-role-example](img/deleting-a-role.png)
 

@@ -46,24 +46,22 @@ The example below defines 2 permissions:
             "resourceType": "com.ritense.document.domain.impl.JsonSchemaDocument",
             "action": "list_view",
             "roleKey": "ROLE_USER",
-            "conditionContainer": {
-                "conditions": [
-                    {
-                        "type": "expression",
-                        "field": "content.content",
-                        "path": "$.height",
-                        "operator": "<",
-                        "value": 20000,
-                        "clazz": "int"
-                    },
-                    {
-                        "type": "field",
-                        "field": "documentDefinitionId.name",
-                        "operator": "==",
-                        "value": "loans"
-                    }
-                ]
-            }
+            "conditions": [
+                {
+                    "type": "expression",
+                    "field": "content.content",
+                    "path": "$.height",
+                    "operator": "<",
+                    "value": 20000,
+                    "clazz": "int"
+                },
+                {
+                    "type": "field",
+                    "field": "documentDefinitionId.name",
+                    "operator": "==",
+                    "value": "loans"
+                }
+            ]
         }
     ]
 }
@@ -84,28 +82,26 @@ In this case, the permission is defined:
             "resourceType": "com.ritense.note.domain.Note",
             "action": "view",
             "roleKey": "ROLE_USER",
-            "conditionContainer": {
-                "conditions": [
-                    {
-                        "type": "container",
-                        "resourceType": "com.ritense.document.domain.impl.JsonSchemaDocument",
-                        "conditions": [
-                            {
-                                "type": "field",
-                                "field": "documentDefinitionId.name",
-                                "operator": "==",
-                                "value": "loans"
-                            },
-                            {
-                                "type": "field",
-                                "field": "assigneeId",
-                                "operator": "==",
-                                "value": "${currentUserId}"
-                            }
-                        ]
-                    }
-                ]
-            }
+            "conditions": [
+                {
+                    "type": "container",
+                    "resourceType": "com.ritense.document.domain.impl.JsonSchemaDocument",
+                    "conditions": [
+                        {
+                            "type": "field",
+                            "field": "documentDefinitionId.name",
+                            "operator": "==",
+                            "value": "loans"
+                        },
+                        {
+                            "type": "field",
+                            "field": "assigneeId",
+                            "operator": "==",
+                            "value": "${currentUserId}"
+                        }
+                    ]
+                }
+            ]
         }
     ]
 }

@@ -24,7 +24,7 @@ The access to the following resources is limited by Valtimo access control.
 | **Delete**     | `delete`      | Allows deletion of documents.                                              |
 | **Claim**      | `claim`       | Allows users to assign themselves as the case handler.                     |
 | **Assign**     | `assign`      | Allows assigning a case handler of both the current and other users.       |
-| **Assignable** | `assignable`  | Allows users with permissions on this action to be assigned to a document. |
+| **Assignable** | `assignable`  | Allows users with permissions for this action to be assigned to a document. |
 
 
 #### Supported relations
@@ -71,7 +71,7 @@ No relations are supported for this type.
 | **View list**  | `view_list`  | Allows retrieving lists of tasks.                                        |
 | **Claim**      | `claim`      | Allows users to assign themselves as the task                            |
 | **Assign**     | `assign`     | Allows assigning a tasks handler of both the current and other users.    |
-| **Assignable** | `assignable` | Allows users with permissions on this action to be assigned to the task. |
+| **Assignable** | `assignable` | Allows users with permissions for this action to be assigned to the task. |
 | **Complete**   | `complete`   | Allows users to complete the task.                                       |
 
 #### Supported relations
@@ -98,6 +98,16 @@ The following conditions can be used with their respective structures:
 | `operator` | The operator for the comparison.                | `==`, `<`                                 |
 | `value`    | The value to compare the field against.         | `20000`, `${currentUserId}`               |
 
+#### Operators
+
+| Operator | Description               |
+|:---------|:--------------------------|
+| `==`     | Equal to.                 |
+| `!=`     | Not equal to.             |
+| `>`      | Greater than.             |
+| `>=`     | Greater than or equal to. |
+| `<`      | Smaller than.             |
+| `<=`     | Smaller than or equal to. |
 
 ### Expression
 
@@ -110,6 +120,16 @@ The following conditions can be used with their respective structures:
 | `value`    | The value to compare the field against.           | `20000`, `${currentUserId}` |
 | `clazz`    | The name of the class that is found at the path.  | `int`                       |
 
+#### Operators
+
+| Operator | Description               |
+|:---------|:--------------------------|
+| `==`     | Equal to.                 |
+| `!=`     | Not equal to.             |
+| `>`      | Greater than.             |
+| `>=`     | Greater than or equal to. |
+| `<`      | Smaller than.             |
+| `<=`     | Smaller than or equal to. |
 
 ### Container
 
