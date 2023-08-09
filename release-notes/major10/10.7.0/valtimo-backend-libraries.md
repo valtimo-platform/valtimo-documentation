@@ -38,9 +38,10 @@ The following bugs were fixed:
   In rare cases an out of memory error could occur due to ClassGraph scanning all packages. This has been resolved by
   introducing a blacklist of libraries that don't need to be scanned.
 
-* **Bug2**
+* **Summary pages fail to load because of duplicate process variables**
 
-  Description of what the issue was.
+  When one or more process had multiple process variables of the same name, the summary page for the related case would
+  no longer load. Since process variables should not be used for the summary, these are no longer retrieved.
 
 ## Breaking changes
 
