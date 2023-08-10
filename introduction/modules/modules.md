@@ -40,6 +40,11 @@ It also includes choice fields, a generic way to create lists of values that can
 selectboxes or radiobuttons). Some security features used to control access to any Valtimo endpoints are also part of 
 this module.
 
+### Dashboards
+
+Dashboards can provide the user with statistical information. 
+Using this information, the user will be enabled to prioritize and focus on specific tasks.
+
 ### Documents
 
 A document is the main data storage entity that contains data of a case. Processes can act upon and change the data that
