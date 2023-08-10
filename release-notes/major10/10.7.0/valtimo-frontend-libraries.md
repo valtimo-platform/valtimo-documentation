@@ -67,10 +67,29 @@ Instructions on how to migrate to this version of Valtimo can be found [here](mi
 
 This version has the following known issues:
 
-* **Issue1**
-    * Discovered in version x.x.x
-    * Describe what can be done to work around the issue
+* **Error when installing latest version of `ng-multiselect-dropdown`**
 
-* **Issue2**
-    * Discovered in version x.x.x
-    * Describe what can be done to work around the issue
+  Recently, a new version of `ng-multiselect-dropdown` has been released. This is a dependency of `@valtimo/components`,
+  and this new version is automatically installed. The version of this dependency has been corrected in this release.
+  For previous release of Valtimo front-end libraries, add the following to the root of your `package.json` to correct
+  the error.
+
+#### **`package.json`**
+
+```json
+{
+  ...
+  "overrides": {
+    "@valtimo/components": {
+      "ng-multiselect-dropdown": "1.0.0-beta.19"
+    }
+  },
+  ...
+}
+```
+
+  After adding this, it might be necessary to completely delete the `node_modules` folder and `package-lock.json` before
+  performing a new install of dependencies and build. It is most effective to do this with the commands
+  `rm -Rf node_modules` and `rm -Rf package-lock.json`. Also, it might be necessary to clean your NPM cache through
+  `npm cache clean`.
+    
