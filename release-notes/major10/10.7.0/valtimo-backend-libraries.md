@@ -25,17 +25,36 @@ The following features were added:
   Valtimo is working on a new dashboard. To support the new dashboard, a new module was introduced.
   Information on how to include this module can be found [here](/getting-started/modules/core/dashboard.md).
 
+* **Whitelisting by mime-type of files uploaded to temporary file storage**
+  The types of files uploaded to the temporary file storage can now be restricted by whitelisting allowed mime-types.
+  More information on this feature can be found [here](/using-valtimo/upload/temporary-file-storage.md#whitelisting-file-types-for-uploads)
+
+* **Spring Actuator health check for Camunda incidents**
+
+  A Spring Actuator health check has been added to monitor the number of Camunda incidents.
+  If any incidents exist, the health indicator will be `UNKNOWN`. When no incidents exist, the indicator will be `UP`.
+  More information about the Spring Actuator health endpoint can be found [here](https://docs.spring.io/spring-boot/docs/current/reference/html/actuator.html#actuator.endpoints.health).
+
+  In addition, a custom `HealthAggregator` has been implemented to set the overall status to UNKNOWN in case one of the individual statuses is `UNKNOWN`.
+
+* **New feature2**
+
+  Description of the new feature goes here.
+  Also link to the page that explains the feature in greater detail.
+
 ## Bugfixes
 
 The following bugs were fixed:
 
-* **Bug1**
+* **Limit ClassGraph scanning**
 
-  Description of what the issue was.
+  In rare cases an out of memory error could occur due to ClassGraph scanning all packages. This has been resolved by
+  introducing a blacklist of libraries that don't need to be scanned.
 
-* **Bug2**
+* **Summary pages fail to load because of duplicate process variables**
 
-  Description of what the issue was.
+  When one or more processes had multiple process variables of the same name, the summary page for the related case would
+  no longer load. Since process variables should not be used for the summary, these are no longer retrieved.
 
 ## Breaking changes
 
@@ -65,9 +84,15 @@ Instructions on how to migrate to this version of Valtimo can be found [here](mi
 
 This version has the following known issues:
 
-* **Issue1**
-    * Discovered in version x.x.x
-    * Describe what can be done to work around the issue
+* **Main application in alternative package does not work properly**
+  * Discovered in version 10.7.0
+  * When the main Spring Boot application class (annotated with `@SpringBootApplication`) is not
+    in `com.ritense.valtimo`, some configurations are not picked up properly. Known features that will be impacted are:
+    * **Audit log**: view does not show any logs.
+    * **Exception handling**: Exceptions are not translated to the correct http status codes. For instance,
+      a `AccessDeniedException` results in a status `500` instead of `403`.
+  * As a workaround, the following can be added to your main application
+    class: `@SpringBootApplication(scanBasePackages = {"com.ritense.valtimo", "your.custom.package"})`.
 
 * **Issue2**
     * Discovered in version x.x.x

@@ -24,5 +24,24 @@ dependencies {
   implementation "com.ritense.valtimo:notificaties-api:${valtimo_version}"
 }
 ```
+### Frontend
+
+In order to use the Notificaties API plugin in the frontend the following can be added to your `app.module.ts`:
+
+```typescript
+@NgModule({
+  imports: [
+      NotificatiesApiPluginModule,
+  ],
+  providers: [
+      {
+          provide: PLUGIN_TOKEN,
+          useValue: [
+              notificatiesApiPluginSpecification,
+          ]
+      }
+  ]
+})
+```
 
 

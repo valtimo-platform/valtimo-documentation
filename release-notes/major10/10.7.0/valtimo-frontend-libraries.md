@@ -4,9 +4,9 @@
 
 The following features were added:
 
-**Added edit note and delete note options on the notes tab**
+* **Added edit note and delete note options on the notes tab**
 
-Added the functionality to edit and delete a note in an order. It can only be edited if the text field is not empty.
+  Added the functionality to edit and delete a note in an order. It can only be edited if the text field is not empty.
 
 * **Automatic User Task assignment to Case Handler**
 
@@ -21,6 +21,12 @@ Added the functionality to edit and delete a note in an order. It can only be ed
   experience with Carbon components. Since previously URLs and breadcrumbs were not implemented consistently, some
   logic had to be introduced in order to provide proper breadcrumbs. How this was implemented, and how to use this logic
   in your implementation, is explained on [this page](/reference/user-interface/breadcrumbs.md).
+
+* **Open menu items in new tab**
+
+  With the release of Valtimo front-end libraries major 10, right-clicking on menu items in the left sidebar and opening
+  them in a new tab, was no longer supported. This functionality has been restored in this release. Moreover, menu items
+  can be opened in a new tab by holding down the control key on Windows, or the command key on Mac OS, and clicking them.
 
 ## Bugfixes
 

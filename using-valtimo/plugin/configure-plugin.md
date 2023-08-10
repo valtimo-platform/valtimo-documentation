@@ -46,4 +46,6 @@ An example configuration can be found below:
 
 The id (UUID) of the plugin should be generated manually. The same id's should be used when referencing configurations at the [plugin processlink autodeployment](../process-link/create-process-link.md#configuration-by-autodeployment).
 
-The available properties can be found in the documentation of the plugin.
+The available properties can be found in the documentation of the plugin. 
+
+Values within the `properties` attribute can be resolved from the ENV (`System.getEnv()`) by using the `${SOME_ENV_VALUE}` syntax.
