@@ -24,6 +24,14 @@ The following features were added:
   The types of files uploaded to the temporary file storage can now be restricted by whitelisting allowed mime-types.
   More information on this feature can be found [here](/using-valtimo/upload/temporary-file-storage.md#whitelisting-file-types-for-uploads)
 
+* **Spring Actuator health check for Camunda incidents**
+
+  A Spring Actuator health check has been added to monitor the number of Camunda incidents.
+  If any incidents exist, the health indicator will be `UNKNOWN`. When no incidents exist, the indicator will be `UP`.
+  More information about the Spring Actuator health endpoint can be found [here](https://docs.spring.io/spring-boot/docs/current/reference/html/actuator.html#actuator.endpoints.health).
+
+  In addition, a custom `HealthAggregator` has been implemented to set the overall status to UNKNOWN in case one of the individual statuses is `UNKNOWN`.
+
 * **New feature2**
 
   Description of the new feature goes here.
