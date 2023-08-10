@@ -30,7 +30,7 @@ The following features were added:
   If any incidents exist, the health indicator will be `UNKNOWN`. When no incidents exist, the indicator will be `UP`.
   More information about the Spring Actuator health endpoint can be found [here](https://docs.spring.io/spring-boot/docs/current/reference/html/actuator.html#actuator.endpoints.health).
 
-  In addition, a custom HealthAggregator has been implemented to set the overall status to UNKNOWN in case one of the individual statuses is UNKNOWN.
+  In addition, a custom `HealthAggregator` has been implemented to set the overall status to UNKNOWN in case one of the individual statuses is `UNKNOWN`.
 
 * **New feature2**
 
