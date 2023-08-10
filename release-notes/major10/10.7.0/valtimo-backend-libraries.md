@@ -40,7 +40,7 @@ The following bugs were fixed:
 
 * **Summary pages fail to load because of duplicate process variables**
 
-  When one or more process had multiple process variables of the same name, the summary page for the related case would
+  When one or more processes had multiple process variables of the same name, the summary page for the related case would
   no longer load. Since process variables should not be used for the summary, these are no longer retrieved.
 
 ## Breaking changes
