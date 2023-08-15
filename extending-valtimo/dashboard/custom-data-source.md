@@ -12,10 +12,8 @@ specification with explanations for each property:
 
 #### **`sample-data-source.specification.ts`**
 ```typescript
-import {PluginSpecification} from '@valtimo/plugin';
-import {SamplePluginConfigurationComponent} from './components/sample-plugin-configuration/sample-plugin-configuration.component';
-import {SAMPLE_PLUGIN_LOGO_BASE64} from './assets';
-import {SampleActionConfigurationComponent} from './components/sample-action-configuration/sample-action-configuration.component';
+import {DataSourceSpecification} from '@valtimo/dashboard';
+import {SampleConfigurationComponent} from './components/sample-configuration/sample-configuration.component';
 
 const sampleDataSourceSpecification: DataSourceSpecification = {
     // The data source key. This needs to be the same as the id received from the back-end.
@@ -134,7 +132,7 @@ export class SampleDataSourceConfigurationComponent
     // the data source key defined in the specification is passed to the component
     @Input() public dataSourceKey: string;
 
-    // A form group is created which fits the SampleDataSourceConfig interface
+    // a form group is created which fits the SampleDataSourceConfig interface
     public readonly form = this.fb.group({
         documentDefinition: this.fb.control(null, [Validators.required]),
     });
