@@ -28,4 +28,12 @@ dependencies {
 }
 ```
 
+### Frontend
 
+```json
+{
+    "dependencies": {
+        "@valtimo/dashboard": "<valtimo_frontend_version>"
+    }
+}
+```
