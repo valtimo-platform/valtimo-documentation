@@ -11,7 +11,13 @@ The following features were added:
   * [Introduction](/introduction/modules/modules.md#authorization)
   * [Getting started](/getting-started/modules/core/authorization.md)
   * [Using Valtimo](/using-valtimo/access-control/access-control.md)
-  
+
+
+* **New service ObjectManagementFacade, for access to ObjectenAPI and ObjecttypenAPI**
+
+  A new service `ObjectManagementFacade` has been added to module `zgw/object-management`. 
+  This service allows implementations to make calls to ObjectsAPI without needing to explicitly initialize the plugin
+  configurations for every single use.
 
 * **New feature2**
 
