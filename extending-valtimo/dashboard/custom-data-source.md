@@ -6,8 +6,8 @@ The dependency `com.ritense.valtimo:dashboard` is required to develop a data sou
 
 ### Data source specification
 
-First, a data source specification using the `@WidgetDataSource` annotation needs to be created. Below is an example
-data source:
+Data source specifications can be created using the `@WidgetDataSource` on a method in a Spring bean. Below is an
+example data source:
 
 ```kotlin
 @Component
@@ -27,8 +27,11 @@ used in the front end data source.
 
 The function can be named anything.
 
-The function can have either 0 or 1 argument. The single argument must be an object that contains the same fields that
-are defined in the front end and configured by the admin. For example:
+If the datasource requires any configuration this will be passed in through the arguments of the function. All
+properties should be contained in a single object that is used as the argument for this function. The configuration from
+the front-end will be deserialized to this type, so the json structure should match that of the object. If no
+configuration is required the argument can be left out.
+Below is an example of a properties object that can be passed to the data source function.
 
 ```kotlin
 data class RandomNumberDataSourceProperties(
