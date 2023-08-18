@@ -14,5 +14,5 @@ These dashboards and widgets can be configured by an administrator accordingly.
 * **Data-source** Retrieves data from any desired source. 
     Every datasource can publish output features like `value`, `total` or `values`.
 * **Display-type** A display type is responsible for the visualisation of data. 
-    For example: a number, graph, table, or any custom. 
+    For example: bar char, big number, meter, gauge, or any custom. 
     Display types are strictly available for datasources that publish the required features
