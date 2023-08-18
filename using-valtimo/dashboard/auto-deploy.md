@@ -14,7 +14,11 @@ All changesets can be executed again, even when the content has changed, by sett
 
 ### Example
 
-You can find an example of the JSON below:
+You can find an example of the JSON below.
+
+In this example a widget is created with display type `number` and data source `case-count`. Different display types
+and data sources can be used to customize the layout of the dashboard. The types that are available can be found on the 
+[reference page](/reference/modules/dashboard.md).
 
 ```json
 {
