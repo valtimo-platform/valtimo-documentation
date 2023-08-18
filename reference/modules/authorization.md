@@ -3,12 +3,14 @@
 ## Available resources
 The access to the following resources is limited by Valtimo access control.
 
-| Resource name                     | Class name                                                 | Module   |
-|-----------------------------------|:-----------------------------------------------------------|:---------|
-| **[Document](#document)**         | `com.ritense.document.domain.impl.JsonSchemaDocument`      | Document |
-| **[Search field](#search-field)** | `com.ritense.document.domain.impl.searchfield.SearchField` | Document |
-| **[Note](#note)**                 | `com.ritense.note.domain.Note`                             | Notes    |
-| **[Task](#task)**                 | `com.ritense.valtimo.camunda.domain.CamundaTask`           | Core     |
+| Resource name                                   | Class name                                                      | Module   |
+|-------------------------------------------------|:----------------------------------------------------------------|:---------|
+| **[Document](#document)**                       | `com.ritense.document.domain.impl.JsonSchemaDocument`           | Document |
+| **[Document definition](#document-definition)** | `com.ritense.document.domain.impl.JsonSchemaDocumentDefinition` | Document |
+| **[Document snapshot](#document-snapshot)**     | `com.ritense.document.domain.impl.JsonSchemaDocumentSnapshot`   | Document |
+| **[Search field](#search-field)**               | `com.ritense.document.domain.impl.searchfield.SearchField`      | Document |
+| **[Note](#note)**                               | `com.ritense.note.domain.Note`                                  | Notes    |
+| **[Task](#task)**                               | `com.ritense.valtimo.camunda.domain.CamundaTask`                | Core     |
 
 
 ### Document
@@ -26,6 +28,36 @@ The access to the following resources is limited by Valtimo access control.
 | **Assign**     | `assign`      | Allows assigning a case handler of both the current and other users       |
 | **Assignable** | `assignable`  | Allows users with permissions on this action to be assigned to a document |
 
+
+#### Supported relations
+
+No relations are supported for this type
+
+### Document definition
+
+#### Supported actions
+
+| Action        | key         | Description                                     |
+|---------------|:------------|:------------------------------------------------|
+| **View**      | `view`      | Allows reading of documents definitions         |
+| **View list** | `view_list` | Allows retrieving lists of document definitions |
+| **Create**    | `create`    | Allows creation of document definitions         |
+| **Modify**    | `modify`    | Allows modification of document definitions     |
+| **Delete**    | `delete`    | Allows deletion of document definitions         |
+
+
+#### Supported relations
+
+No relations are supported for this type
+
+### Document snapshot
+
+#### Supported actions
+
+| Action         | key           | Description                                         |
+|----------------|:--------------|:----------------------------------------------------|
+| **View**       | `view`        | Allows reading of document snapshots and their data |
+| **View list**  | `view_list`   | Allows retrieving lists of document snapshots       |
 
 #### Supported relations
 
