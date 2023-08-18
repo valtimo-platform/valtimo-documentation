@@ -2,7 +2,7 @@
 
 ## Back-end
 
-The dependency `com.ritense.valtimo:dashboard` can be used to develop a back-end for a data source.
+The dependency `com.ritense.valtimo:dashboard` is required to develop a data source in the Valtimo back-end.
 
 ### Data source specification
 
