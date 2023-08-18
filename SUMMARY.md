@@ -4,6 +4,7 @@
   * [Overview](introduction/overview.md)
   * [Architectural overview](introduction/architectural-overview.md)
   * [Available modules](introduction/modules/modules.md)
+    * [Dashboards](introduction/modules/dashboard-introduction.md)
     * [Documents](introduction/modules/document-introduction.md)
     * [Form flow](introduction/modules/form-flow-introduction.md)
     * [Form links](introduction/modules/form-link-introduction.md)
