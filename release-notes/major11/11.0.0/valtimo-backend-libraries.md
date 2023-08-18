@@ -43,7 +43,13 @@ The following breaking changes were introduced:
   * `/api/v1/public/task/{taskDefinitionId}/resource/pre-signed-url/{fileName}`
   * `/api/v1/public/task/{taskDefinitionId}/resource/{resourceId}`
 
-* **Breaking change2**
+* **Custom plugin scanning**
+
+  Scanning for plugins has changed. Only whitelisted packages will be scanned for possible custom plugins. Custom
+  plugins might not be found anymore when the plugin's package name is not whitelisted. To make sure all custom plugins
+  are found, an annotation has been added:
+  
+  `valtimo.annotation-scan.accepted-packages: test.package1, test.package2`
 
 Instructions on how to migrate to this version of Valtimo can be found [here](migration.md).
 
