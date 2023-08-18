@@ -42,7 +42,7 @@ this module.
 
 ### Dashboards
 
-Dashboards can provide the user with statistical information. 
+Dashboards give users quick insight into the current state of the application. Usually by giving the user statistical information about cases and processes.
 Using this information, the user will be enabled to prioritize and focus on specific tasks.
 
 ### Documents
