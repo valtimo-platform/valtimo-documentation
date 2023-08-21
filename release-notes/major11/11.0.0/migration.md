@@ -107,6 +107,17 @@ This page describes how to update Valtimo from the previous version to the curre
       ````
     - All icons available through the Carbon library can be found [here](https://angular.carbondesignsystem.com/?path=/docs/components-icon--docs)
 
+* **Update connector and plugin keys**
+
+  Scope: back-end/front-end
+
+  In order for keys to be encrypted with GCM (as apposed to ECB, see
+  [here](valtimo-backend-libraries.md#new-features) for more information), all existing plugin configurations need
+  to be updated.
+
+  1. **Save existing connector configurations with their keys**
+  2. **Save plugin configurations with their keys**
+  3. **See if encryption is used anywhere else in the application**
 
 * **Breaking change 2/Deprecation 2**
 
