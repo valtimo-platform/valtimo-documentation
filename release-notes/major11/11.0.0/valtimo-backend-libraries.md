@@ -43,6 +43,20 @@ The following breaking changes were introduced:
   * `/api/v1/public/task/{taskDefinitionId}/resource/pre-signed-url/{fileName}`
   * `/api/v1/public/task/{taskDefinitionId}/resource/{resourceId}`
 
+* **Property 'valtimo.jwt.secret' renamed**
+  The application property `valtimo.jwt.secret` has been renamed to `valtimo.oauth.public-key`. To better describe what
+  this property is used for.
+
+  As a consequence of this change, the environment variable `VALTIMO_JWT_SECRET` has been renamed
+  to `VALTIMO_OAUTH_PUBLIC_KEY`.
+
+* **Property 'valtimo.jwt.tokenValidityInSeconds' renamed**
+  The application property `valtimo.jwt.tokenValidityInSeconds` has been renamed
+  to `valtimo.oauth.tokenValidityInSeconds`. To better describe what this property is used for.
+
+  As a consequence of this change, the environment variable `VALTIMO_JWT_TOKEN_VALIDITY_IN_SECONDS` has been renamed
+  to `VALTIMO_OAUTH_TOKEN_VALIDITY_IN_SECONDS`.
+
 * **Custom plugin scanning**
 
   Scanning for plugins has changed. Only whitelisted packages will be scanned for possible custom plugins. Custom
