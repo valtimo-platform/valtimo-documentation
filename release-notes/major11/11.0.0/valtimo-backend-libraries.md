@@ -57,6 +57,15 @@ The following breaking changes were introduced:
   As a consequence of this change, the environment variable `VALTIMO_JWT_TOKEN_VALIDITY_IN_SECONDS` has been renamed
   to `VALTIMO_OAUTH_TOKEN_VALIDITY_IN_SECONDS`.
 
+* **Custom plugin scanning**
+
+  Scanning for plugins has changed. Only whitelisted packages will be scanned for possible custom plugins. Custom
+  plugins might not be found anymore when the plugin's package name is not whitelisted. By default, only Valtimo default
+  plugins, and plugins in the classpath of your spring application main class will be found. To make sure all custom
+  plugins can be found, an annotation has been added:
+  
+  `valtimo.annotation-scan.accepted-packages: test.package1, test.package2`
+
 Instructions on how to migrate to this version of Valtimo can be found [here](migration.md).
 
 ## Deprecations
