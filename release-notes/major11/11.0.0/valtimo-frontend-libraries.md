@@ -38,7 +38,7 @@ The following bugs were fixed:
 The following breaking changes were introduced:
 
 * **Remove context**
-  Valtimo no longer uses 'contexts'. As a result of this, the admin menu 'Context' has been removed.
+  Valtimo no longer uses 'contexts'. As a result of this, the admin menu 'Contexts' has been removed.
 
 * **Breaking change2**
 

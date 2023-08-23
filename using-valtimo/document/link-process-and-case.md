@@ -39,8 +39,7 @@ In addition to linking a case via the UI, it is possible to link a case through 
     {
         "processDefinitionKey": "rijbewijs-aanvraag",
         "canInitializeDocument": true,
-        "startableByUser": true,
-        "processIsVisibleInMenu": true
+        "startableByUser": true
     }
 ]
 ```

@@ -41,12 +41,12 @@ This page describes how to update Valtimo from the previous version to the curre
 
   Scope: front-end
 
-    1. **Remove context**
+    1. **Remove @valtimo/context**
 
         - Remove `@valtimo/context` library from the `package.json`.
         - Remove `ContextModule` module from the `app.module.ts`.
 
-    2. **Remove management**
+    2. **Remove @valtimo/management**
 
         - Remove `@valtimo/management` library from the `package.json`.
         - Remove `ManagementContextModule` module from the `app.module.ts`.
