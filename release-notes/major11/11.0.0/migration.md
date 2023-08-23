@@ -37,13 +37,16 @@ This page describes how to update Valtimo from the previous version to the curre
         - AWS Parameter store
         - Kubernetes `.yaml` file
 
-* **Breaking change 2/Deprecation 2**
+* **Form-links page**
 
-  Scope: back-end/front-end
+  Scope: front-end
 
-    1. **Step1**
+    1. **environment.ts**
 
-       Description
-    2. **Step2**
-
-       Description
+       Go to the environment.ts file and change this line:
+       
+       ```{link: ['/form-links'], title: 'Form links'...```
+       
+       To this line:
+       
+       ```{link: ['/process-links'], title: 'Process links'...```

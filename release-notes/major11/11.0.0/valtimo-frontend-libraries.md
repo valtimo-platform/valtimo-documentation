@@ -37,7 +37,8 @@ The following bugs were fixed:
 
 The following breaking changes were introduced:
 
-* **Breaking change1**
+* **Removed form-links page**
+  The form-links page has now been removed in favor of the new process-links page. 
 
 * **Breaking change2**
 
