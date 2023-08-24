@@ -67,6 +67,12 @@ This page describes how to update Valtimo from the previous version to the curre
 
     `"node_modules/dmn-js/dist/assets/dmn-font/css/dmn-ie7-codes.css"`
 
+* **New required dependency**
+
+  Scope: Front-end
+
+  `ngx-translate-multi-http-loader` requires a new dependency. Run the following command in the root of the implementation project: `npm i deepmerge-ts`.
+
 * **Matching dependencies**
 
     Then, make sure the following dependencies in `package.json` in the root of your implementation have the following
@@ -143,12 +149,6 @@ This page describes how to update Valtimo from the previous version to the curre
     Support for `Protractor` (an end-to-end testing framework) in the Angular CLI will be discontinued. Either remove
     `Protractor` from your implementation, or migrate to Cypress [by following this guide](https://blog.ninja-squad.com/2021/05/05/migrating-from-protractor-to-cypress/).
     The latter is recommended.
-
-* **New required dependency**
-
-  Scope: Front-end
-
-  `ngx-translate-multi-http-loader` requires a new dependency. Run the following command in the root of the implementation project: `npm i deepmerge-ts`.
 
 * **REST API versioning**
 
