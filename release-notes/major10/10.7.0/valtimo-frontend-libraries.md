@@ -3,6 +3,12 @@
 ## New Features
 
 The following features were added:
+* **Dashboard**
+
+  The dashboard module has been added to support the new dashboard.
+  - Information on how to include this module can be found [here](/getting-started/modules/core/dashboard.md).
+  - Information on how to configure a dashboard can be found [here](/using-valtimo/dashboard/dashboard.md).
+  - Information on how to implement custom display types and datasources can be found [here](/extending-valtimo/dashboard/dashboard.md).
 
 * **Added edit note and delete note options on the notes tab**
 
