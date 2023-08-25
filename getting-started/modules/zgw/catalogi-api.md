@@ -27,9 +27,14 @@ dependencies {
 
 ### Frontend
 
+A general instruction to add a front-end plugin to the implementation can be
+found [here](../core/plugin.md#adding-a-front-end-plugin-to-the-implementation).
+
 In order to use the Catalogi API plugin in the frontend the following can be added to your `app.module.ts`:
 
 ```typescript
+import { CatalogiApiPluginModule, catalogiApiPluginSpecification } from '@valtimo/plugin';
+
 @NgModule({
   imports: [
       CatalogiApiPluginModule,
@@ -45,3 +50,6 @@ In order to use the Catalogi API plugin in the frontend the following can be add
 })
 ```
 
+Before the Catalogi API plugin can be used, an authentication plugin is needed. One of such an authentication plugin is the
+OpenZaak plugin. Instructions on how to add the OpenZaak plugin can be
+found [here](openzaak.md).

@@ -32,7 +32,26 @@ dependencies {
 ```
 
 ### Frontend
- A general instruction to add a front-end plugin to the implementation can be found [here](../core/plugin.md#adding-a-front-end-plugin-to-the-implementation).
 
+A general instruction to add a front-end plugin to the implementation can be
+found [here](../core/plugin.md#adding-a-front-end-plugin-to-the-implementation).
 
+In order to use the Verzoek plugin in the frontend, the following can be added to your `app.module.ts`:
 
+```typescript
+import { VerzoekPluginModule, verzoekPluginSpecification } from '@valtimo/plugin';
+
+@NgModule({
+  imports: [
+      VerzoekPluginModule,
+  ],
+  providers: [
+      {
+          provide: PLUGIN_TOKEN,
+          useValue: [
+              verzoekPluginSpecification,
+          ]
+      }
+  ]
+})
+```
