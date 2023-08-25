@@ -20,9 +20,9 @@ The following features were added:
   [TaakStatus](https://github.com/valtimo-platform/valtimo-backend-libraries/blob/main/zgw/portaaltaak/src/main/kotlin/com/ritense/portaaltaak/TaakObject.kt#L49)
   enum of a TaakObject.
 
-* **New dashboard**
+* **Dashboard**
 
-  Valtimo is working on a new dashboard. To support the new dashboard, a new module was introduced.
+  The dashboard module has been added to support the new dashboard. 
   Information on how to include this module can be found [here](/getting-started/modules/core/dashboard.md).
 
 * **Whitelisting by mime-type of files uploaded to temporary file storage**
@@ -36,11 +36,6 @@ The following features were added:
   More information about the Spring Actuator health endpoint can be found [here](https://docs.spring.io/spring-boot/docs/current/reference/html/actuator.html#actuator.endpoints.health).
 
   In addition, a custom `HealthAggregator` has been implemented to set the overall status to UNKNOWN in case one of the individual statuses is `UNKNOWN`.
-
-* **New feature2**
-
-  Description of the new feature goes here.
-  Also link to the page that explains the feature in greater detail.
 
 ## Bugfixes
 
@@ -58,27 +53,11 @@ The following bugs were fixed:
 
 ## Breaking changes
 
-The following breaking changes were introduced:
-
-* **Breaking change1**
-
-* **Breaking change2**
-
-Instructions on how to migrate to this version of Valtimo can be found [here](migration.md).
+No breaking changes.
 
 ## Deprecations
 
-The following was deprecated:
-
-* **Deprecation1**
-
-  X was deprecated and is replaced with Y.
-
-* **Deprecation2**
-
-  X was deprecated and is replaced with Y.
-
-Instructions on how to migrate to this version of Valtimo can be found [here](migration.md).
+No deprecations.
 
 ## Known issues
 
@@ -93,7 +72,3 @@ This version has the following known issues:
       a `AccessDeniedException` results in a status `500` instead of `403`.
   * As a workaround, the following can be added to your main application
     class: `@SpringBootApplication(scanBasePackages = {"com.ritense.valtimo", "your.custom.package"})`.
-
-* **Issue2**
-    * Discovered in version x.x.x
-    * Describe what can be done to work around the issue
