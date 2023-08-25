@@ -54,6 +54,8 @@ The following features were added:
 
   Many dependencies have been updated. A few of the dependency updates:
     - `org.camunda.bpm:camunda-engine` has been updated to version 7.19.0
+    - `org.liquibase:liquibase-core` has been updated to version 4.21.1
+    - `com.mattbertolini:liquibase-slf4j` has been updated to version 5.0.0
     - `org.yaml:snakeyaml` has been updated to version 2.0
     - `org.keycloak:keycloak-admin-client` has been updated to version 21.1.0
 
@@ -121,6 +123,12 @@ The following bugs were fixed:
   The dropdown list with candidate users on a case page, now shows all users. There was a bug that cases the API
   endpoint to not respond with all users when there were more than 200 Keycloak users.
 
+* **Maximum of 20 SmartDocument placeholders**
+
+  The maximum number of 20 SmartDocument placeholders has been removed. It is now possible to enter many more
+  placeholders. The maximum has been removed for all multi-input components within Valtimo. Which means that the maximum
+  has also been removed for other features, such as the Verzoeken plugin mapping.
+
 * **Object management list column date format**
 
   The list columns of Object API objects now displays dates with the configured date format.
@@ -128,10 +136,10 @@ The following bugs were fixed:
 * **Objecten API search bugfixes**
 
   Several bugs have been fixed for the Objecten API search:
-    - The search now properly searches through nested properties using a different path notation.
-    - It is now possible to search for properties with data type 'boolean'.
-    - It is now possible to search for properties with data type 'date'.
-    - It is now possible to search for properties with data type 'datetime'.
+  - The search now properly searches through nested properties using a different path notation.
+  - It is now possible to search for properties with data type 'boolean'.
+  - It is now possible to search for properties with data type 'date'.
+  - It is now possible to search for properties with data type 'datetime'.
 
 * **Configurable directory for temporary files**
 

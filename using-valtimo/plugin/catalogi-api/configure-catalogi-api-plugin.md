@@ -64,3 +64,43 @@ When creating a process link the following properties have to be entered:
 An example action configuration:
 ![Retrieve statustype](img/retrieve-besluittype.png)
 
+
+## Available actions
+
+The Catalogi API plugin supports the following actions that can be configured in process links in order to retrieve type 
+data.
+
+A general description on how to create process links can be found [here](../create-process-link.md).
+
+### Retrieve statustype
+This action retrieves the statustype URL using the statustype description, and will assign it to a process variable. 
+
+When creating a process link the following properties have to be entered:
+- **Statustype**. This description will be used to lookup the full statustype URL.
+    A full URL can also be set here. In that case, the value will be used directly without a lookup.
+- **Process variable name**. This is the name of the process variable which value will be set to the found statustype URL.
+
+An example action configuration:
+![Retrieve statustype](img/retrieve-statustype.png)
+
+### Retrieve resultaattype
+This action retrieves the resultaattype URL using the resultaattype description, and will assign it to a process variable.
+
+When creating a process link the following properties have to be entered:
+- **Resultaattype**. This description will be used to lookup the full resultaattype URL.
+  A full URL can also be set here. In that case, the value will be used directly without a lookup.
+- **Process variable name**. This is the name of the process variable which value will be set to the found resultaattype URL.
+
+An example action configuration:
+![Retrieve statustype](img/retrieve-resultaattype.png)
+### Retrieve besluittype
+This action retrieves the besluittype URL using the besluittype description, and will assign it to a process variable.
+
+When creating a process link the following properties have to be entered:
+- **Besluittype**. This description will be used to lookup the full besluittype URL.
+  A full URL can also be set here. In that case, the value will be used directly without a lookup.
+- **Process variable name**. This is the name of the process variable which value will be set to the found besluittype URL.
+
+An example action configuration:
+![Retrieve statustype](img/retrieve-besluittype.png)
+
