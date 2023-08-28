@@ -103,7 +103,7 @@
     * [Besluiten Plugin](using-valtimo/plugin/besluiten-api/configure-besluiten-api-plugin.md)
   * [Process](using-valtimo/process/process.md)
     * [System processes](using-valtimo/process/systemprocesses.md)
-    * [Correlating messages](using-valtimo/process/correlating-messages.md)
+    * [Correlating messages](using-valtimo/process/process-beans/correlation-service.md)
   * [Upload](using-valtimo/upload/upload.md)
     * [Uploading to Documenten API with metadata](using-valtimo/upload/upload-to-documenten-api-with-metadata.md)
 * [Extending Valtimo](extending-valtimo/extending-valtimo.md)
@@ -139,6 +139,7 @@
     * [Design philosophy](reference/user-interface/design-philosophy.md)
     * [Carbon design system](reference/user-interface/carbon-design-system.md)
   * [Feature toggles](reference/feature-toggles.md)
+  * [process-beans.md](reference/process-beans.md)
   * [Troubleshoot](reference/troubleshoot.md)
 * Release notes
   * 11.x.x
