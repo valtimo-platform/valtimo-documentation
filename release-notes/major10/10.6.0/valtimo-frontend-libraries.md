@@ -112,7 +112,14 @@ The following bugs were fixed:
 
 ## Breaking changes
 
-No breaking changes.
+The following breaking changes were introduced:
+
+* **Process link V2**
+
+  The existing method: `TaskService.getTaskProcessLink()` will now respond with process links V2 instead of V1. A new
+  method has been introduced that still works with V1 process links: `TaskService.getTaskProcessLinkV1()`
+
+Instructions on how to migrate to this version of Valtimo can be found [here](migration.md).
 
 ## Deprecations
 
