@@ -22,12 +22,6 @@ with a `boolean` value.
   available on the Process links admin page. If this module is not configured, use this toggle to disable the option on
   the Process links page.
 
-* **`enableHackathonCasesPage`**
-
-  The Valtimo product development team participated in a Hackathon and developed a special cases page for
-  municipalities.
-  This feature toggle exists for demo purposes, and it is advised not to configure it, leaving the page disabled.
-
 * **`showUserNameInTopBar`**
 
   If enabled, the full name of the user currently logged in is shown in the top bar next to the user menu button.
