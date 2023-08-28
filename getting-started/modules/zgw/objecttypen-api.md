@@ -50,6 +50,6 @@ import { ObjecttypenApiPluginModule, objecttypenApiPluginSpecification } from '@
 })
 ```
 
-Before the Object Typen API plugin can be used, an authentication plugin is needed. One of such an authentication plugin
+Before the Object Typen API plugin can be used, an authentication plugin is needed. One such authentication plugin
 is the Objecten API authentication plugin. Instructions on how to add this plugin can be
 found [here](objecten-api-authentication.md).

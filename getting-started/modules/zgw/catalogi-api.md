@@ -50,6 +50,6 @@ import { CatalogiApiPluginModule, catalogiApiPluginSpecification } from '@valtim
 })
 ```
 
-Before the Catalogi API plugin can be used, an authentication plugin is needed. One of such an authentication plugin is the
+Before the Catalogi API plugin can be used, an authentication plugin is needed. One such authentication plugin is the
 OpenZaak plugin. Instructions on how to add the OpenZaak plugin can be
 found [here](openzaak.md).
