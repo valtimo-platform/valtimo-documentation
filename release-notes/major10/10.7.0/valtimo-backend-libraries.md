@@ -23,7 +23,9 @@ The following features were added:
 * **Dashboard**
 
   The dashboard module has been added to support the new dashboard. 
-  Information on how to include this module can be found [here](/getting-started/modules/core/dashboard.md).
+  - Information on how to include this module can be found [here](/getting-started/modules/core/dashboard.md).
+  - Information on how to configure a dashboard can be found [here](/using-valtimo/dashboard/dashboard.md).
+  - Information on how to implement custom display types and datasources can be found [here](/extending-valtimo/dashboard/dashboard.md).
 
 * **Whitelisting by mime-type of files uploaded to temporary file storage**
   The types of files uploaded to the temporary file storage can now be restricted by whitelisting allowed mime-types.
