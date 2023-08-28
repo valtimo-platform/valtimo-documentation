@@ -53,6 +53,7 @@
       * [Haalcentraal BRP](getting-started/modules/zgw/haalcentraal-brp.md)
       * [Klant](getting-started/modules/zgw/klant.md)
       * [Notificaties API](getting-started/modules/zgw/notificaties-api.md)
+      * [Notificaties API Authentication](getting-started/modules/zgw/notificaties-api-authentication.md)
       * [Objecten API](getting-started/modules/zgw/objecten-api.md)
       * [Objecten API Authentication](getting-started/modules/zgw/objecten-api-authentication.md)
       * [Object management](getting-started/modules/zgw/object-management.md)
