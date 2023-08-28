@@ -18,7 +18,7 @@
   * [Compatibility matrix](getting-started/compatibility-matrix.md)
   * [Components](getting-started/components/components.md)
     * [Valtimo List](getting-started/components/valtimo-list/valtimo-list.md)
-  * [Database support](getting-started/database-support.md)
+  * [Configure database](getting-started/configure-database.md)
   * [Modules](getting-started/modules/modules.md)
     * Core
       * [Audit](getting-started/modules/core/audit.md)
@@ -160,6 +160,7 @@
     * [v-button](reference/user-interface/components/v-button.md)
     * [Breadcrumbs](reference/user-interface/breadcrumbs.md)
   * [Feature toggles](reference/feature-toggles.md)
+  * [supported-databases.md](reference/supported-databases.md)
   * [Troubleshoot](reference/troubleshoot.md)
 * Release notes
   * [Release notes](release-notes/release-notes.md)
