@@ -50,6 +50,6 @@ import { NotificatiesApiPluginModule, notificatiesApiPluginSpecification } from 
 })
 ```
 
-Before the Notificaties API plugin can be used, an authentication plugin is needed. One of such an authentication plugin
+Before the Notificaties API plugin can be used, an authentication plugin is needed. One such authentication plugin
 is the Notificaties API authentication plugin. Instructions on how to add this plugin can be
 found [here](notificaties-api-authentication.md).
