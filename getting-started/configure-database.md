@@ -1,4 +1,4 @@
-# Database support
+# Configure database
 
 Valtimo supports MySQL and PostgreSQL, and can be configured to make use of either one of these.
 

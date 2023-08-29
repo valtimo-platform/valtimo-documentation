@@ -2,6 +2,13 @@
 
 This page describes how to update Valtimo from the previous version to the current.
 
+* **MySQL 5.7 end of life**
+
+  Scope: Backend
+
+  Now that the extended support for MySQL 5.7 is ending, it is recommended to upgrade any MySQL database to MySQL 8 or
+  higher. More information [here](../../../reference/supported-databases.md).
+
 * **Java 17**
     
     Scope: Backend
