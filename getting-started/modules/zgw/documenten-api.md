@@ -27,9 +27,14 @@ dependencies {
 
 ### Frontend
 
+A general instruction to add a front-end plugin to the implementation can be
+found [here](../core/plugin.md#adding-a-front-end-plugin-to-the-implementation).
+
 In order to use the Documenten API plugin in the frontend the following can be added to your `app.module.ts`:
 
 ```typescript
+import { DocumentenApiPluginModule, documentenApiPluginSpecification } from '@valtimo/plugin';
+
 @NgModule({
   imports: [
       DocumentenApiPluginModule,
@@ -45,4 +50,6 @@ In order to use the Documenten API plugin in the frontend the following can be a
 })
 ```
 
-
+Before the Documenten API plugin can be used, an authentication plugin is needed. One such authentication plugin is the
+OpenZaak plugin. Instructions on how to add the OpenZaak plugin can be
+found [here](openzaak.md).

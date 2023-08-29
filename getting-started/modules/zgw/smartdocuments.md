@@ -25,4 +25,27 @@ dependencies {
 }
 ```
 
+### Frontend
 
+A general instruction to add a front-end plugin to the implementation can be
+found [here](../core/plugin.md#adding-a-front-end-plugin-to-the-implementation).
+
+In order to use the SmartDocuments plugin in the frontend, the following can be added to your `app.module.ts`:
+
+```typescript
+import { SmartDocumentsPluginModule, smartDocumentsPluginSpecification } from '@valtimo/plugin';
+
+@NgModule({
+  imports: [
+      SmartDocumentsPluginModule,
+  ],
+  providers: [
+      {
+          provide: PLUGIN_TOKEN,
+          useValue: [
+              smartDocumentsPluginSpecification,
+          ]
+      }
+  ]
+})
+```
