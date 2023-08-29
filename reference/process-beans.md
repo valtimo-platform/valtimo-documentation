@@ -87,10 +87,10 @@ fun unassign(execution: DelegateExecution)
 - `getDocumentCreatedBy` - Returns the email of the creator of the document.
 - `getDocumentModifiedOn` - Returns the last modified date of the document.
 - `getDocumentAssigneeId` - Returns the ID of the person assigned to the document version.
-- `getDocumentAssigneeFullName` - Returns full name of the person assigned to the document.
+- `getDocumentAssigneeFullName` - Returns the full name of the person assigned to the document.
 - `getDocument` - Returns the entire document as an object.
 - `findValueByJsonPointer` - Returns the value retrieved from the document at a given pointer.
-- `findValueByJsonPointerOrDefault` - Returns the value retrieved from the document at a given pointer.
+- `findValueByJsonPointerOrDefault` - Returns the value retrieved from the document at a given pointer, or the given default when the property described by the pointer does not exist.
 - `setAssignee` - Assigns a person to a document.
 - `unassign` - Removes the assigned person from a document.
 
