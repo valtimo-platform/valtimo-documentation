@@ -47,6 +47,21 @@ This page describes how to update Valtimo from the previous version to the curre
         - AWS Parameter store
         - Kubernetes `.yaml` file
 
+* **Remove 'Context' admin menu**
+
+  Scope: front-end
+
+    1. **Remove @valtimo/context**
+
+        - Remove `@valtimo/context` library from the `package.json`.
+        - Remove `ContextModule` module from the `app.module.ts`.
+
+    2. **Remove @valtimo/management**
+
+        - Remove `@valtimo/management` library from the `package.json`.
+        - Remove `ManagementContextModule` module from the `app.module.ts`.
+        - Remove the `Contexts` link from the `environment.ts`
+
 * **Breaking change 2/Deprecation 2**
 
   Scope: back-end/front-end
