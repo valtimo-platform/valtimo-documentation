@@ -34,6 +34,11 @@ The following features were added:
   them in a new tab, was no longer supported. This functionality has been restored in this release. Moreover, menu items
   can be opened in a new tab by holding down the control key on Windows, or the command key on Mac OS, and clicking them.
 
+* **New featureToggle 'hideValtimoVersionsForNonAdmins'**
+
+  We have added a new featureToggle, 'hideValtimoVersionsForNonAdmins', so we can choose to hide the Valtimo version
+  information, in the right sidebar, for users that are not admins.
+
 ## Bugfixes
 
 No bugfixes.

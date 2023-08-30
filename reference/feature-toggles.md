@@ -63,5 +63,10 @@ with a `boolean` value.
 
 * **`enableObjectManagement`**
 
-If enabled, a new menuitem 'objects' will appear in the left sidebar menu. This menu item can have one or more submenu
-items depending on the configuration. For more information [here](/getting-started/modules/zgw/object-management.md)
+  If enabled, a new menuitem 'objects' will appear in the left sidebar menu. This menu item can have one or more submenu
+  items depending on the configuration. For more information [here](/getting-started/modules/zgw/object-management.md)
+
+* **`hideValtimoVersionsForNonAdmins`**
+
+  If enabled, the Valtimo version information in the right sidebar will only be visible for admins and will be hidden
+  for any other users.
