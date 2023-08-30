@@ -1,7 +1,7 @@
 # Creating a dashboard
 
 Dashboard with widgets can be configured manually using the [Admin UI](#configuration-using-the-admin-menu),
-or by using [autodeployment](/using-valtimo/dashboard/create-dashboard).
+or by using [autodeployment](/using-valtimo/dashboard/auto-deploy).
 
 ## Configuration using the Admin menu
 
