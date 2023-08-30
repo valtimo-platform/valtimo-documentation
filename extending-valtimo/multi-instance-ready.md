@@ -6,7 +6,7 @@ are required to make your Valtimo implementation multi instance ready.
 ## Shared storage
 
 In some cases, Valtimo saves a file to the local storage. All instances of Valtimo must be configured to use the same
-storage.
+storage. Please note that this directory should already exist and will not be created by Valtimo.
 
 ## Shared directory for temporary files
 

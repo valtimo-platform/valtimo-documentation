@@ -18,7 +18,7 @@ The dashboard menu is found under the admin menu. Admin privileges are required 
 When creating a dashboard, two fields need to be filled in:
 
 - The 'Dashboard name' will be shown to the user on the dashboard page.
-- The 'Description' field will never be shown to the user.
+- The 'Description' field is only visible for the system administrator. It will not be shown to the end users.
 
 ## Adding widgets
 
@@ -35,6 +35,6 @@ After creating a dashboard, widgets can be added to the dashboard.
 
 ### Adding widget: Case count
 
-Currently, there is only one widget that is supported. That is the widget with datasource 'Case count' and display
-type 'Big number'. This widget can be created by following the instructions above. More information on how to fill in
+Valtimo 10.7, there is one supported widget, with datasource 'Case count' and display type 'Big number'. 
+This widget can be created by following the instructions above. More information on how to fill in
 the form, can be found [here](/reference/modules/dashboard.md#case-count)

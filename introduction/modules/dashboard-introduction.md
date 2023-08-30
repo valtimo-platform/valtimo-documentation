@@ -14,4 +14,4 @@ These dashboards and widgets can be configured by an administrator accordingly.
 * **Data-source** Every dashboard widget retrieves its data from a data-source. 
 * **Display-type** A display type is responsible for the visualisation of data. 
     For example: bar char, big number, meter, gauge, or any custom. 
-    Display types are strictly available for datasources that publish the required features
+    Display types are only available for data-sources that return the required data.
