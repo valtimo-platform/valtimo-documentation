@@ -23,9 +23,9 @@ The following features were added:
 
 The following bugs were fixed:
 
-* **Bug1**
+* **Fix: RESTEASY004687**
 
-  Description of what the issue was.
+  The logs will no longer show the warning message 'RESTEASY004687'.
 
 * **Bug2**
 
