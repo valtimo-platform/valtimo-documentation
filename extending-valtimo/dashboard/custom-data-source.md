@@ -23,7 +23,7 @@ class RandomNumberWidgetDataSource {
 
 Please keep the following in mind:
 - The new data source should be registered as a Spring bean, for example with an `@Bean` or `@Component` annotation
-- The data source key `randomNumber` must be unique and is used the identify the data source. The same key must also be
+- The data source key (in this example `randomNumber`) must be unique and is used the identify the data source. The same key must also be
 used in the front end data source.
 - The function can be named anything.
 
