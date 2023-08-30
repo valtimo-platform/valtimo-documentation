@@ -21,13 +21,13 @@ class RandomNumberWidgetDataSource {
 }
 ```
 
-The `@Component` is necessary to register the new data source as a Spring bean.
-
-The data source key `randomNumber` must be unique and is used the identify the data source. The same key must also be
+Please keep the following in mind:
+- The new data source should be registered as a Spring bean, for example with an `@Bean` or `@Component` annotation
+- The data source key `randomNumber` must be unique and is used the identify the data source. The same key must also be
 used in the front end data source.
+- The function can be named anything.
 
-The function can be named anything.
-
+### Data source properties
 If the datasource requires any configuration this will be passed in through the arguments of the function. All
 properties should be contained in a single object that is used as the argument for this function. The configuration from
 the front-end will be deserialized to this type, so the json structure should match that of the object. If no
