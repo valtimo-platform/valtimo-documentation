@@ -107,7 +107,6 @@ This page describes how to update Valtimo from the previous version to the curre
       ````
     - All icons available through the Carbon library can be found [here](https://angular.carbondesignsystem.com/?path=/docs/components-icon--docs)
 
-* **Update connector and plugin keys**
 * **Change in Recipient.Type values**
 
   Scope: back-end
