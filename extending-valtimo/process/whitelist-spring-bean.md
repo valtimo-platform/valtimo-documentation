@@ -9,16 +9,7 @@ Camunda by default allows access to Spring beans, e.g. to send an email. Valtimo
 as exposing every bean is a security concern. In order to add a Spring bean to this whitelist, the bean definittion
 itself has to be whitelisted. This is done with the `@ProcessBean` annotation.
 
-1. Set the whitelist configuration property to `true`.
-
-   #### **`application.yml`**
-   ```yaml
-   valtimo:
-     camunda:
-       bean-whitelisting: true
-   ```
-
-2. Ensure a bean for the class that should be whitelisted is provided.
+1. Ensure a bean for the class that should be whitelisted is provided.
 
    ```java
    @Bean
@@ -27,7 +18,7 @@ itself has to be whitelisted. This is done with the `@ProcessBean` annotation.
    }
    ```
 
-3. Add the `@ProcessBean` annotation.
+2. Add the `@ProcessBean` annotation.
 
    ```java
    @Bean
@@ -39,3 +30,12 @@ itself has to be whitelisted. This is done with the `@ProcessBean` annotation.
 
 The bean can now be used. For information on how to use these beans inside a BPMN,
 see [here](/extending-valtimo/integrate-spring-bean-in-process.md).
+
+Note: the whitelist can be disabled by setting the following Spring property to `false`.
+
+   #### **`application.yml`**
+   ```yaml
+   valtimo:
+     camunda:
+       bean-whitelisting: false
+   ```
