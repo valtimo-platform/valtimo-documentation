@@ -54,8 +54,15 @@ The following breaking changes were introduced:
   * `/api/v1/public/process/definition/{processDefinitionKey}/{businessKey}/start`
   * `/api/v1/public/task/{taskDefinitionId}/resource/pre-signed-url/{fileName}`
   * `/api/v1/public/task/{taskDefinitionId}/resource/{resourceId}`
+  * `GET /api/v1/document-definition/{name}/roles`
+  * `PUT /api/v1/document-definition/{name}/roles`
+  * `GET /api/v1/document-definition?filteredOnRole=false`
+    * Has been replaced by `GET /api/management/v1/document-definition`
 
-* **Breaking change2**
+* **Removed classes**
+  Several classes have been removed in favor of PBAC policies:
+  * JsonSchemaDocumentDefintionRole
+  * JsonSchemaDocumentDefintionRoleId
 
 Instructions on how to migrate to this version of Valtimo can be found [here](migration.md).
 
