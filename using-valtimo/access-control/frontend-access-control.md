@@ -1,4 +1,4 @@
-# Front-end access control
+# Applying access control in front-end
 
 For each element of the user interface which is shown/hidden or enabled/disabled in the front-end based on an access
 control policy, a separate call is defined. These calls are subsequently bundled by the `PermissionService`, which is

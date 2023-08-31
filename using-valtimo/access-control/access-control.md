@@ -23,9 +23,11 @@ Extra conditions can be applied to a permission to tighten the access to resourc
 Conditions are evaluated as `AND`, which means the **all** configured conditions on a permission should evaluate to `true` to pass the permission checks.
 
 Conditions can also be nested by using a container. This allows you to join another resource to the root resource, on which you can add conditions as well.
-An example of this can be found [here](backend-access-control.md#joining-entities-using-a-container)
+An example of this can be found [here](auto-deployment-access-control.md#joining-entities-using-a-container)
 
 ## Configuration
 The following sections contains information on how to configure and use access control.
-* [Back-end access control](backend-access-control.md)
-* [Front-end access control](frontend-access-control.md)
+* [Auto-deployment access control](auto-deployment-access-control.md)
+* [Applying access control in front-end](frontend-access-control.md)
+* [Configuring roles](configuring-roles.md)
+* [Configuring permissions](configuring-permissions.md)

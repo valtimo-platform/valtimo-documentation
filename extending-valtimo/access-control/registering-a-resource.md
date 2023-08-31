@@ -3,6 +3,8 @@
 Access control can be exercised over resources that have been registered. Valtimo registers a few resources out of 
 the box. These are:
 - `com.ritense.document.domain.impl.JsonSchemaDocument`
+- `com.ritense.document.domain.impl.JsonSchemaDocumentDefinition`
+- `com.ritense.document.domain.impl.JsonSchemaDocumentSnapshot`
 - `com.ritense.document.domain.impl.searchfield.SearchField`
 - `com.ritense.note.domain.Note`
 - `com.ritense.valtimo.camunda.domain.CamundaTask`

@@ -11,13 +11,25 @@ The following features were added:
   * [Introduction](/introduction/modules/modules.md#authorization)
   * [Getting started](/getting-started/modules/core/authorization.md)
   * [Using Valtimo](/using-valtimo/access-control/access-control.md)
-  
 
-* **New feature2**
 
-  Description of the new feature goes here.
-  Also link to the page that explains the feature in greater detail.
+* **New service ObjectManagementFacade, for access to ObjectenAPI and ObjecttypenAPI**
 
+  A new service `ObjectManagementFacade` has been added to module `zgw/object-management`. 
+  This service allows implementations to make calls to ObjectsAPI without needing to explicitly initialize the plugin
+  configurations for every single use.
+
+* **Changed encryption algorithm mode**
+
+  The block cypher algorithm used was previously set to use ECB (Electronic Codebook) instead of GCM (Galois Counter Mode). As a result, this means, as long as the key
+  does not change, encrypting plaintext blocks will always result in the same ciphertext block. This matters mainly for
+  larger pieces of text (or images) where patterns can be recognized and some information can be derived. For example,
+  see this image:
+
+  ![encryption modes](img/encryption-modes.png)
+
+  Since encryption in Valtimo is applied to keys in valtimo, these are generally a lot shorter, and deriving any kind of
+  information becomes more difficult as a result.
 
 ## Bugfixes
 
@@ -42,6 +54,15 @@ The following breaking changes were introduced:
   * `/api/v1/public/process/definition/{processDefinitionKey}/{businessKey}/start`
   * `/api/v1/public/task/{taskDefinitionId}/resource/pre-signed-url/{fileName}`
   * `/api/v1/public/task/{taskDefinitionId}/resource/{resourceId}`
+  * `GET /api/v1/document-definition/{name}/roles`
+  * `PUT /api/v1/document-definition/{name}/roles`
+  * `GET /api/v1/document-definition?filteredOnRole=false`
+    * Has been replaced by `GET /api/management/v1/document-definition`
+
+* **Removed classes**
+  Several classes have been removed in favor of PBAC policies:
+  * JsonSchemaDocumentDefintionRole
+  * JsonSchemaDocumentDefintionRoleId
 
 * **Property 'valtimo.jwt.secret' renamed**
   The application property `valtimo.jwt.secret` has been renamed to `valtimo.oauth.public-key`. To better describe what
