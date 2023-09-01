@@ -76,21 +76,19 @@ them, the following configuration can be used.
     "resourceType": "com.ritense.example.Meeting",
     "action": "view",
     "roleKey": "ROLE_USER",
-    "conditionContainer": {
-        "conditions": [
-            {
-                "type": "container",
-                "resourceType": "com.ritense.document.domain.impl.JsonSchemaDocument",
-                "conditions": [
-                    {
-                        "type": "field",
-                        "field": "assigneeId",
-                        "operator": "==",
-                        "value": "${currentUserId}"
-                    }
-                ]
-            }
-        ]
-    }
+    "conditions": [
+        {
+            "type": "container",
+            "resourceType": "com.ritense.document.domain.impl.JsonSchemaDocument",
+            "conditions": [
+                {
+                    "type": "field",
+                    "field": "assigneeId",
+                    "operator": "==",
+                    "value": "${currentUserId}"
+                }
+            ]
+        }
+    ]
 }
 ```
