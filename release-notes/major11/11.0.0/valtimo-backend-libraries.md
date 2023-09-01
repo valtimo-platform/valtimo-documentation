@@ -11,21 +11,23 @@ The following features were added:
   * [Introduction](/introduction/modules/modules.md#authorization)
   * [Getting started](/getting-started/modules/core/authorization.md)
   * [Using Valtimo](/using-valtimo/access-control/access-control.md)
+
+* **Plugin export API endpoint**
+
+  It is now possible to export the plugin configurations through a REST API endpoint.
   
+* **Process links export API endpoint**
 
-* **New feature2**
-
-  Description of the new feature goes here.
-  Also link to the page that explains the feature in greater detail.
-
+  It is now possible to export the process link configurations through a REST API endpoint.
 
 ## Bugfixes
 
 The following bugs were fixed:
 
-* **Fix: RESTEASY004687**
+* **RESTEASY004687 warnings**
 
-  The logs will no longer show the warning message 'RESTEASY004687'.
+  The logs will no longer show the warning message 'RESTEASY004687'. This warning happened because a REST client wasn't
+  closed properly. This has been solved now.
 
 * **Bug2**
 
