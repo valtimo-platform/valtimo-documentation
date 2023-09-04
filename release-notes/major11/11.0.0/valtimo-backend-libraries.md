@@ -12,7 +12,6 @@ The following features were added:
   * [Getting started](/getting-started/modules/core/authorization.md)
   * [Using Valtimo](/using-valtimo/access-control/access-control.md)
 
-
 * **New service ObjectManagementFacade, for access to ObjectenAPI and ObjecttypenAPI**
 
   A new service `ObjectManagementFacade` has been added to module `zgw/object-management`. 
@@ -31,13 +30,22 @@ The following features were added:
   Since encryption in Valtimo is applied to keys in valtimo, these are generally a lot shorter, and deriving any kind of
   information becomes more difficult as a result.
 
+* **Plugin export API endpoint**
+
+  It is now possible to export the plugin configurations through a REST API endpoint.
+  
+* **Process links export API endpoint**
+
+  It is now possible to export the process link configurations through a REST API endpoint.
+
 ## Bugfixes
 
 The following bugs were fixed:
 
-* **Bug1**
+* **RESTEASY004687 warnings**
 
-  Description of what the issue was.
+  The logs will no longer show the warning message 'RESTEASY004687'. This warning happened because a REST client wasn't
+  closed properly. This has been solved now.
 
 * **Bug2**
 
