@@ -47,9 +47,9 @@ The following bugs were fixed:
   The logs will no longer show the warning message 'RESTEASY004687'. This warning happened because a REST client wasn't
   closed properly. This has been solved now.
 
-* **Bug2**
+* **Unable to save choice field values in PostgreSQL**
 
-  Description of what the issue was.
+  Saving choice field values to a PostgreSQL database would fail because a property was only compatible with MySQL and not PostgreSQL. The datatype has been modified, so choice field values can now be saved in PostgreSQL databases.   
 
 ## Breaking changes
 
