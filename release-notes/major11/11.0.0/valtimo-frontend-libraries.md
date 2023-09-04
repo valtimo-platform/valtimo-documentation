@@ -37,6 +37,9 @@ The following bugs were fixed:
 
 The following breaking changes were introduced:
 
+* **Removed form-links page**
+  The form-links page has now been removed in favor of the new process-links page. 
+
 * **Remove context**
   Valtimo no longer uses 'contexts'. As a result of this, the admin menu 'Contexts' has been removed.
 

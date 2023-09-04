@@ -156,6 +156,20 @@ This page describes how to update Valtimo from the previous version to the curre
         - Remove `ManagementContextModule` module from the `app.module.ts`.
         - Remove the `Contexts` link from the `environment.ts`
 
+* **Form-links page**
+
+  Scope: front-end
+
+    1. **environment.ts**
+
+       Go to the environment.ts file and change this line:
+       
+       ```{link: ['/form-links'], title: 'Form links'...```
+       
+       To this line:
+       
+       ```{link: ['/process-links'], title: 'Process links'...```
+
 * **Update connector and plugin keys**
 
   Scope: back-end/front-end
