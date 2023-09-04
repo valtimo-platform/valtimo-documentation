@@ -1,7 +1,7 @@
-# Backend-end access control
+# Auto-deployment for access control
 This section describes how permissions can be configured in the backend.
 
-## Autodeployment
+## Auto-deployment
 PBAC can be configured in the backend using auto-deployment. This is useful when you want to keep permissions identical over multiple environments.
 The deployment will scan for files on the classpath matching either `**/*.role.json` or `**/*.permission.json` for respectively role- and permission configurations.
 
@@ -46,24 +46,22 @@ The example below defines 2 permissions:
             "resourceType": "com.ritense.document.domain.impl.JsonSchemaDocument",
             "action": "list_view",
             "roleKey": "ROLE_USER",
-            "conditionContainer": {
-                "conditions": [
-                    {
-                        "type": "expression",
-                        "field": "content.content",
-                        "path": "$.height",
-                        "operator": "<",
-                        "value": 20000,
-                        "clazz": "int"
-                    },
-                    {
-                        "type": "field",
-                        "field": "documentDefinitionId.name",
-                        "operator": "==",
-                        "value": "loans"
-                    }
-                ]
-            }
+            "conditions": [
+                {
+                    "type": "expression",
+                    "field": "content.content",
+                    "path": "$.height",
+                    "operator": "<",
+                    "value": 20000,
+                    "clazz": "int"
+                },
+                {
+                    "type": "field",
+                    "field": "documentDefinitionId.name",
+                    "operator": "==",
+                    "value": "loans"
+                }
+            ]
         }
     ]
 }
@@ -84,28 +82,26 @@ In this case, the permission is defined:
             "resourceType": "com.ritense.note.domain.Note",
             "action": "view",
             "roleKey": "ROLE_USER",
-            "conditionContainer": {
-                "conditions": [
-                    {
-                        "type": "container",
-                        "resourceType": "com.ritense.document.domain.impl.JsonSchemaDocument",
-                        "conditions": [
-                            {
-                                "type": "field",
-                                "field": "documentDefinitionId.name",
-                                "operator": "==",
-                                "value": "loans"
-                            },
-                            {
-                                "type": "field",
-                                "field": "assigneeId",
-                                "operator": "==",
-                                "value": "${currentUserId}"
-                            }
-                        ]
-                    }
-                ]
-            }
+            "conditions": [
+                {
+                    "type": "container",
+                    "resourceType": "com.ritense.document.domain.impl.JsonSchemaDocument",
+                    "conditions": [
+                        {
+                            "type": "field",
+                            "field": "documentDefinitionId.name",
+                            "operator": "==",
+                            "value": "loans"
+                        },
+                        {
+                            "type": "field",
+                            "field": "assigneeId",
+                            "operator": "==",
+                            "value": "${currentUserId}"
+                        }
+                    ]
+                }
+            ]
         }
     ]
 }
