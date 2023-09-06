@@ -3,6 +3,28 @@
 Process beans are Spring beans that can be used inside a Camunda BPMN process. The BPMN expression fields have access to
 all process beans. This page gives an overview of all available process beans.
 
+## ConnectorService
+
+This process bean makes it possible to interact with connectors inside the BPMN process.
+
+```kotlin
+fun getConnectorTypes()
+fun getConnectorInstances(pageable: Pageable = Pageable.unpaged())
+fun getConnectorInstancesByType(typeId: UUID, pageable: Pageable = Pageable.unpaged())
+fun getConnectorInstancesByTypeName(typeName: String, pageable: Pageable = Pageable.unpaged())
+fun getConnectorInstanceById(id: UUID): ConnectorInstance
+fun loadByName(name: String)
+fun loadByClassName(clazz: Class<T>)
+```
+
+ -  `getConnectorTypes` - Lists all connector-types
+ -  `getConnectorInstances` - Lists all connector-instances
+ -  `getConnectorInstancesByType` - Get a list of connector-instances by type ID
+ -  `getConnectorInstancesByTypeName` - Get a list of connector-instances by type name
+ -  `getConnectorInstanceById` - Get a connector-instance by id
+ -  `loadByName` - Loads the connector-instance by name
+ -  `loadByClassName` - Loads the connector-instance by class name
+
 ## CorrelationService
 
 This process bean provides a way to manipulate jobs within the current process.

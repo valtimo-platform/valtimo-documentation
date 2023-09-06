@@ -95,6 +95,20 @@ The following breaking changes were introduced:
   
   `valtimo.annotation-scan.accepted-packages: test.package1, test.package2`
 
+* **Deleted 'Authority' entities**
+  Valtimo has switched to a new policy based access control system. As a consequence, the old authorities have been
+  removed. The following entities can no longer be used:
+  - Database table: 'jhi_authority'
+  - Spring events: AuthorityCreatedEvent, AuthorityDeletedEvent, AuthorityEvent, AuthorityNameChangedEvent
+  - Spring beans: AuthorityResource, AuthorityService, AuthorityRepository
+  - Domain: Authority, AuthorityRequest, Money
+
+* **Deleted 'Context' entities**
+  Valtimo no longer supports 'contexts'. The following entities can no longer be used:
+  - Database table: 'context_processes', 'context_roles', 'menu_item', 'context'
+  - Spring beans: ContextResource, ContextService, ContextRepository, UserContextRepository
+  - Domain: UserContextDTO, Context, ContextProcess, MenuItem, UserContext
+
 Instructions on how to migrate to this version of Valtimo can be found [here](migration.md).
 
 ## Deprecations

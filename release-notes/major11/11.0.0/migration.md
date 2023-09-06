@@ -141,7 +141,7 @@ This page describes how to update Valtimo from the previous version to the curre
       ````
     - All icons available through the Carbon library can be found [here](https://angular.carbondesignsystem.com/?path=/docs/components-icon--docs)
 
-* **Remove 'Context' admin menu**
+* **Remove deleted admin menu items**
 
   Scope: front-end
 
@@ -155,6 +155,18 @@ This page describes how to update Valtimo from the previous version to the curre
         - Remove `@valtimo/management` library from the `package.json`.
         - Remove `ManagementContextModule` module from the `app.module.ts`.
         - Remove the `Contexts` link from the `environment.ts`
+
+    3. **Remove @valtimo/user-management**
+
+        - Remove `@valtimo/user-management` library from the `package.json`.
+        - Remove `UserManagementModule` module from the `app.module.ts`.
+        - Remove the `Users` link from the `environment.ts`
+
+    4. **Remove @valtimo/authority**
+
+        - Remove `@valtimo/authority` library from the `package.json`.
+        - Remove `AuthorityModule` module from the `app.module.ts`.
+        - Remove the `Entitlements` link from the `environment.ts`
 
 * **Form-links page**
 
