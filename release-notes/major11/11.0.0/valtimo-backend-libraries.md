@@ -72,6 +72,11 @@ The following breaking changes were introduced:
   * JsonSchemaDocumentDefintionRole
   * JsonSchemaDocumentDefintionRoleId
 
+* **Spring bean whitelisting for Camunda**
+  Spring beans that are used inside Camunda BPMN's and DMN's must now be whitelisted before they can be used. This can
+  be done using the `@ProcessBean` annotation. More
+  information [here](/extending-valtimo/process/whitelist-spring-bean.md).
+
 * **Property 'valtimo.jwt.secret' renamed**
   The application property `valtimo.jwt.secret` has been renamed to `valtimo.oauth.public-key`. To better describe what
   this property is used for.

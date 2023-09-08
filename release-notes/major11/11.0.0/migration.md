@@ -47,6 +47,69 @@ This page describes how to update Valtimo from the previous version to the curre
         - AWS Parameter store
         - Kubernetes `.yaml` file
 
+* **Whitelist all services used in Camunda processes**
+
+  Scope: back-end
+
+    1. **List all services**
+
+       Open all BPMN and DMN files and list all the services and other java/kotlin classes that are used.
+
+    2. **Find all services in code**
+
+       All the listed services must then be found inside the java/kotlin code.
+
+    3. **Whitelist the service**
+
+       Whitelisting a service should be done in one of two different ways:
+        1. Either, add `@ProcessBean` above the class.
+           For example:
+            ```kotlin
+            @ProcessBean
+            @Service
+            class MyCustomClass {
+                ...
+            ```
+        2. Or add `@ProcessBean` above the bean definition.
+           For example:
+            ```kotlin
+            @ProcessBean
+            @Bean
+            @ConditionalOnMissingBean(MyCustomService::class)
+            fun myCustomService(...): MyCustomService {
+                return MyCustomService(...)
+            }
+            ```
+
+* **Remove the use of authority and contexts entities**
+
+  Scope: back-end
+
+    1. **Find and delete the use of authority classes as they are no longer supported**
+
+        - AuthorityResource.java
+        - AuthorityService.java
+        - AuthorityRepository.java
+        - AuthorityCreatedEvent.java
+        - AuthorityDeletedEvent.java
+        - AuthorityEvent.java
+        - AuthorityNameChangedEvent.java
+        - Authority.java
+        - AuthorityRequest.java
+        - Money.java
+
+    2. **Find and delete the use of context classes as they are no longer supported**
+
+        - ContextResource.java
+        - ContextService.java
+        - ContextRepository.java
+        - UserContextRepository.java
+        - UserContextDTO.java
+        - Context.java
+        - ContextProcess.java
+        - MenuItem.java
+        - UserContext.java
+
 * **Change in Carbon Design System version**
 
   Scope: front-end
@@ -91,7 +154,7 @@ This page describes how to update Valtimo from the previous version to the curre
           Active:
           <svg class="cds--btn__icon" cdsIcon="arrow--down" size="16"></svg>
 
-  3.  **Registering @carbon/icons**
+  4.  **Registering @carbon/icons**
 
     - In order to use @carbon/icons, the IconModule needs to be imported.
 
