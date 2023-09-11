@@ -101,13 +101,24 @@ Instructions on how to migrate to this version of Valtimo can be found [here](mi
 
 The following was deprecated:
 
-* **Deprecation1**
+* **Renamed form-flow endpoints**
 
-  X was deprecated and is replaced with Y.
+  Several REST API endpoints for form-flow have been given a new path. The old paths are still functioning but have been
+  deprecated. The following changes have been made:
+  - `GET /api/v1/process-link/form-flow-definition` has been replaced with `GET /api/v1/form-flow/definition`
+  - `GET /api/v1/form-flow/{formFlowInstanceId}` has been replaced by `GET /api/v1/form-flow/instance/{id}`
+  - `POST /api/v1/form-flow/{formFlowId}/step/{stepInstanceId}` has been replaced by `POST /api/v1/form-flow/instance/{id}/step/instance/{id}`
+  - `POST /api/v1/form-flow/{formFlowId}/back` has been replaced by `POST /api/v1/form-flow/instance/{id}/back`
+  - `POST /api/v1/form-flow/{formFlowId}/save` has been replaced by `POST /api/v1/form-flow/instance/{id}/save`
 
-* **Deprecation2**
+* **Renamed case endpoints**
 
-  X was deprecated and is replaced with Y.
+  Several REST API endpoints for cases have been given a new path. The old paths are still functioning but have been
+  deprecated. The following changes have been made:
+  - `PATCH /api/v1/case/{caseDefinitionName}/settings` has been replaced with `PATCH /api/management/v1/case/{caseDefinitionName}/settings`
+  - `POST /api/v1/case/{caseDefinitionName}/list-column` has been replaced with `POST /api/management/v1/case/{caseDefinitionName}/list-column`
+  - `PUT /api/v1/case/{caseDefinitionName}/list-column` has been replaced with `PUT /api/management/v1/case/{caseDefinitionName}/list-column`
+  - `DELETE /api/v1/case/{caseDefinitionName}/list-column/{columnKey}` has been replaced with `DELETE /api/management/v1/case/{caseDefinitionName}/list-column/{columnKey}`
 
 Instructions on how to migrate to this version of Valtimo can be found [here](migration.md).
 
