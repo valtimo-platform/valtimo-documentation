@@ -9,21 +9,45 @@ This process bean makes it possible to interact with connectors inside the BPMN 
 
 ```kotlin
 fun getConnectorTypes()
+```
+
+Lists all connector-types.
+
+```kotlin
 fun getConnectorInstances(pageable: Pageable = Pageable.unpaged())
+```
+
+Lists all connector-instances.
+
+```kotlin
 fun getConnectorInstancesByType(typeId: UUID, pageable: Pageable = Pageable.unpaged())
+```
+
+Get a list of connector-instances by type ID
+
+```kotlin
 fun getConnectorInstancesByTypeName(typeName: String, pageable: Pageable = Pageable.unpaged())
+```
+
+Get a list of connector-instances by type name.
+
+```kotlin
 fun getConnectorInstanceById(id: UUID): ConnectorInstance
+```
+
+Get a connector-instance by id.
+
+```kotlin
 fun loadByName(name: String)
+```
+
+Loads the connector-instance by name.
+
+```kotlin
 fun loadByClassName(clazz: Class<T>)
 ```
 
- -  `getConnectorTypes` - Lists all connector-types
- -  `getConnectorInstances` - Lists all connector-instances
- -  `getConnectorInstancesByType` - Get a list of connector-instances by type ID
- -  `getConnectorInstancesByTypeName` - Get a list of connector-instances by type name
- -  `getConnectorInstanceById` - Get a connector-instance by id
- -  `loadByName` - Loads the connector-instance by name
- -  `loadByClassName` - Loads the connector-instance by class name
+Loads the connector-instance by class name
 
 ## CorrelationService
 
@@ -36,7 +60,7 @@ fun sendStartMessageWithProcessDefinitionKey(message: String, targetProcessDefin
 fun sendCatchEventMessage(message: String, businessKey: String)
 fun sendCatchEventMessage(message: String, businessKey: String, variables: Map<String, Any>?)
 fun sendCatchEventMessageToAll(message: String, businessKey: String)
-fun sendCatchEventMessageToAll(message: String, businessKey: String, variables: Map<String,Any>?)
+fun sendCatchEventMessageToAll(message: String, businessKey: String, variables: Map<String, Any>?)
 ```
 
 Information on all methods can be found [here](../using-valtimo/process/process-beans/correlation-service.md).
@@ -60,8 +84,8 @@ This process bean provides an interface for generating documents.
 fun generate(execution: DelegateExecution, mediaType: String, templateIdentifier: String)
 ```
 
-- `generate` - provides an interface for generating documents. This method only works if your implementation has
-  overriden the interface to actually generate a document.
+Provides an interface for generating documents. This method only works if your implementation has overriden the
+interface to actually generate a document.
 
 ## MailService
 
@@ -71,12 +95,12 @@ This process bean is for sending emails.
 fun sendElementTemplateTaskMail(execution: DelegateExecution)
 ```
 
-- `sendElementTemplateTaskMail` - is able to send an email using the configured Camunda extension properties. The extension properties are:
-  - `mailSendTaskFrom` - The email-address of the sender.
-  - `mailSendTaskSubject` - The subject of the email.
-  - `mailSendTaskTo` - The email-address of the receiver.
-  - `mailSendTaskTemplate` - The template that is used for the email. The template often has placeholders. The method
-    uses all process variables as possible placeholders for the template.
+Is able to send an email using the configured Camunda extension properties. The extension properties are:
+- `mailSendTaskFrom` - The email-address of the sender.
+- `mailSendTaskSubject` - The subject of the email.
+- `mailSendTaskTo` - The email-address of the receiver.
+- `mailSendTaskTemplate` - The template that is used for the email. The template often has placeholders. The method
+uses all process variables as possible placeholders for the template.
 
 ## DocumentDelegate
 
@@ -92,37 +116,78 @@ This process bean is for retrieving and updating the document.
 
 ```kotlin
 fun getDocumentVersion(execution: DelegateExecution)
+```
+
+Returns the version of the document.
+
+```kotlin
 fun getDocumentCreatedOn(execution: DelegateExecution)
+```
+
+Returns the creation date of the document.
+
+```kotlin
 fun getDocumentCreatedBy(execution: DelegateExecution)
+```
+
+Returns the email of the creator of the document.
+
+```kotlin
 fun getDocumentModifiedOn(execution: DelegateExecution)
+```
+
+Returns the last modified date of the document.
+
+```kotlin
 fun getDocumentAssigneeId(execution: DelegateExecution)
+```
+
+Returns the ID of the person assigned to the document version.
+
+```kotlin
 fun getDocumentAssigneeFullName(execution: DelegateExecution)
+```
+
+Returns the full name of the person assigned to the document.
+
+```kotlin
 fun getDocument(execution: DelegateExecution)
+```
+
+Returns the entire document as an object.
+
+```kotlin
 fun findValueByJsonPointer(jsonPointer: String?, execution: DelegateExecution?)
+```
+
+Returns the value retrieved from the document at a given pointer.
+
+```kotlin
 fun findValueByJsonPointerOrDefault(jsonPointer: String?, execution: DelegateExecution, defaultValue: Any)
+```
+
+Returns the value retrieved from the document at a given pointer, or the given
+default when the property described by the pointer does not exist.
+
+```kotlin
 fun setAssignee(execution: DelegateExecution, userEmail: String?)
+```
+
+Assigns a person to a document.
+
+```kotlin
 fun unassign(execution: DelegateExecution)
 ```
 
-- `getDocumentVersion` - Returns the version of the document.
-- `getDocumentCreatedOn` - Returns the creation date of the document.
-- `getDocumentCreatedBy` - Returns the email of the creator of the document.
-- `getDocumentModifiedOn` - Returns the last modified date of the document.
-- `getDocumentAssigneeId` - Returns the ID of the person assigned to the document version.
-- `getDocumentAssigneeFullName` - Returns the full name of the person assigned to the document.
-- `getDocument` - Returns the entire document as an object.
-- `findValueByJsonPointer` - Returns the value retrieved from the document at a given pointer.
-- `findValueByJsonPointerOrDefault` - Returns the value retrieved from the document at a given pointer, or the given default when the property described by the pointer does not exist.
-- `setAssignee` - Assigns a person to a document.
-- `unassign` - Removes the assigned person from a document.
+Removes the assigned person from a document.
 
 ## ProcessDocumentsService
 
-This process bean is for retrieving and updating the document.
+This process bean is for functions that affect both the document and the process.
 
 ```kotlin
 fun startProcessByProcessDefinitionKey(processDefinitionKey: String, documentId: String)
 fun startProcessByProcessDefinitionKey(processDefinitionKey: String, documentId: String, variables: Map<String, Any>?)
 ```
 
-- `startProcessByProcessDefinitionKey` - Starts a new process and attaches it to the current document.
+Starts a new process and attaches it to the current document.
