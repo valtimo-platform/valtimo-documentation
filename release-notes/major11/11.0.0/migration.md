@@ -51,7 +51,7 @@ This page describes how to update Valtimo from the previous version to the curre
 
   Scope: back-end
 
-    1. **List all services**
+    1. **Find all services used in processes and decision tables**
 
        Open all BPMN and DMN files and list all the services and other java/kotlin classes that are used.
 
