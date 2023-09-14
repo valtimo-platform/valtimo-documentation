@@ -4,6 +4,12 @@
 
 The following features were added:
 
+* *Angular and dependency upgrades**
+
+  Angular has been upgraded from version 14 to 16. In addition, various dependencies have been upgraded with their
+  versions now locked. Please refer to the [migration guide](./migration.md) for instructions on how to upgrade your
+  implementation to be compatible with this version of the front-end libraries.
+
 * **Policy Based Access Control**
   
   Implemented PBAC frontend integration for the following features:
@@ -14,11 +20,6 @@ The following features were added:
   - Deleting a Case Note
 
   For more information on how to use access control in the front-end, refer to [this page](/using-valtimo/access-control/frontend-access-control.md).
-
-* **New feature2**
-
-  Description of the new feature goes here.
-  Also link to the page that expains the feature in greater detail.
 
 
 ## Bugfixes
