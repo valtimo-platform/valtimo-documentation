@@ -268,13 +268,38 @@ This page describes how to update Valtimo from the previous version to the curre
   2. **Save plugin configurations with their keys**
   3. **See if encryption is used anywhere else in the application**
 
-* **Breaking change 2/Deprecation 2**
+* **Removal of @valtimo/user-interface library**
 
-  Scope: back-end/front-end
+  Scope: front-end
 
-  1. **Step1**
+  1. **Remove @valtimo/user-interface as a dependency**
 
-      Description
-  2. **Step2**
+      The library `@valtimo/user-interface` has been removed. All of its components, directives and services have been
+      been moved to `@valtimo/components`. In order to migrate, remove `@valtimo/user-interface` as a dependency in your
+      implementation.
+  2. **Change stylesheet in `angular.json`**
 
-      Description
+      The `angular.json` file in the root of your implementation includes the following value:
+     
+      `"node_modules/@valtimo/user-interface/assets/design-tokens.css"`
+
+      This should be changed to:
+
+      `"node_modules/@valtimo/components/assets/css/design-tokens.css"`
+
+  3.  **Change imports**
+
+      Most components, services and directives from `@valtimo/user-interface` are now exported from
+      `@valtimo/components`. Search your implementations for any imports and change them accordingly.
+
+  4.   **Renamed components**
+
+     The component `v-multi-input` has been renamed to `valtimo-carbon-multi-input`. If it is used anywhere in your
+     implementation, change the selector.
+
+     `ModaleModule` exported from `@valtimo/user-interface` is renamed to `VModalModule`.
+
+     `CardModule` exported from `@valtimo/user-interface` is renamed to `VCardModule`.
+    
+
+

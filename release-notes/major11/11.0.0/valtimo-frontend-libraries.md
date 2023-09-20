@@ -4,7 +4,7 @@
 
 The following features were added:
 
-* *Angular and dependency upgrades**
+* **Angular and dependency upgrades**
 
   Angular has been upgraded from version 14 to 16. In addition, various dependencies have been upgraded with their
   versions now locked. Please refer to the [migration guide](./migration.md) for instructions on how to upgrade your
@@ -21,6 +21,10 @@ The following features were added:
 
   For more information on how to use access control in the front-end, refer to [this page](/using-valtimo/access-control/frontend-access-control.md).
 
+* **Migration of old design components**
+
+  The library `@valtimo/user-interface` has been removed. All of its components have been moved to `@valtimo/components`.
+  In order order to migrate, please refer to the [migration guide](./migration.md).
 
 ## Bugfixes
 
