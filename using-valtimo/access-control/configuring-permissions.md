@@ -108,3 +108,33 @@ document.
     }
 ]
 ```
+
+### User task candidate groups permissions
+
+Access to a user task is usually controlled by setting the 'Candidate groups' to a role. To make sure that the user task
+candidate groups work together with PBAC, an additional permission should be set. The example below shows how that can
+be done.
+
+```json
+[
+    {
+        "resourceType": "com.ritense.valtimo.camunda.domain.CamundaTask",
+        "action": "view_list",
+        "roleKey": "ROLE_USER",
+        "conditions": [
+            {
+                "type": "container",
+                "resourceType": "com.ritense.valtimo.camunda.domain.CamundaIdentityLink",
+                "conditions": [
+                    {
+                        "type": "field",
+                        "field": "groupId",
+                        "operator": "==",
+                        "value": "ROLE_USER"
+                    }
+                ]
+            }
+        ]
+    }
+]
+```
