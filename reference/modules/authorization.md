@@ -7,7 +7,7 @@ The access to the following resources is limited by Valtimo access control.
 |-------------------------------------------------|:----------------------------------------------------------------|:---------|
 | **[Document](#document)**                       | `com.ritense.document.domain.impl.JsonSchemaDocument`           | Document |
 | **[Document definition](#document-definition)** | `com.ritense.document.domain.impl.JsonSchemaDocumentDefinition` | Document |
-| **[Document snapshot](#document-snapshot)**     | `com.ritense.document.domain.impl.JsonSchemaDocumentSnapshot`   | Document |
+| **[Document snapshot](#document-snapshot)**     | `com.ritense.document.domain.impl.snapshot.JsonSchemaDocumentSnapshot` | Document |
 | **[Search field](#search-field)**               | `com.ritense.document.domain.impl.searchfield.SearchField`      | Document |
 | **[Note](#note)**                               | `com.ritense.note.domain.Note`                                  | Notes    |
 | **[Task](#task)**                               | `com.ritense.valtimo.camunda.domain.CamundaTask`                | Core     |

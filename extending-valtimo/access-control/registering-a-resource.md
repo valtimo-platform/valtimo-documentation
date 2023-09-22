@@ -4,7 +4,7 @@ Access control can be exercised over resources that have been registered. Valtim
 the box. These are:
 - `com.ritense.document.domain.impl.JsonSchemaDocument`
 - `com.ritense.document.domain.impl.JsonSchemaDocumentDefinition`
-- `com.ritense.document.domain.impl.JsonSchemaDocumentSnapshot`
+- `com.ritense.document.domain.impl.snapshot.JsonSchemaDocumentSnapshot`
 - `com.ritense.document.domain.impl.searchfield.SearchField`
 - `com.ritense.note.domain.Note`
 - `com.ritense.valtimo.camunda.domain.CamundaTask`
