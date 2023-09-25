@@ -8,6 +8,7 @@ the box. These are:
 - `com.ritense.document.domain.impl.searchfield.SearchField`
 - `com.ritense.note.domain.Note`
 - `com.ritense.valtimo.camunda.domain.CamundaTask`
+- `com.ritense.valtimo.camunda.domain.CamundaIdentityLink`
 
 The authorization module allows developers to register their own resources, which allows said resources to be used when
 configuring permissions.
