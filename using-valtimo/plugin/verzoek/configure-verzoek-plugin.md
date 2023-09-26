@@ -36,8 +36,6 @@ To configure this plugin the following properties have to be entered:
 
 - **Notification API plugin.** Reference to another plugin configuration that will be used to receive a notification
   when a new verzoek is made.
-- **Object management configuration.** Reference to the object management configuration that describes the verzoek
-  object. If no option is available in this field, an object management configuration has to be created first.
 - **Process.** Reference to the process that will be started after the plugin received a notification from
   Notificaties API. This process can do additional steps like creating the zaak and handling file attachments.
   See [this section](#configuring-the-create-zaakdossier-process) on how to set up this process.
@@ -49,6 +47,8 @@ To configure this plugin the following properties have to be entered:
     - **Type.** The type of the verzoek. This type should match the type that is inside the verzoek object from the
       Objecten API, in property `record.data.type`.
     - **Case definition.** The Valtimo case definition that should be created when a verzoek was made.
+    - **Object management configuration.** Reference to the object management configuration that describes the verzoek
+      object. If no option is available in this field, an object management configuration has to be created first.
     - **Role type.** The role of the person who created the verzoek. Usually this is the zaak initiator role. The person
       who created the verzoek is linked to the zaak using this role.
     - **Role description.** This text describes the role of the person who initiated the verzoek.

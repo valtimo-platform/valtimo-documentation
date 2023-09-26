@@ -376,5 +376,20 @@ This page describes how to update Valtimo from the previous version to the curre
 
      `CardModule` exported from `@valtimo/user-interface` is renamed to `VCardModule`.
     
+* **Moved Verzoek plugin property 'objectManagementId'**
 
+  Scope: back-end
 
+  1. **Locate any .pluginconfig.json file**
+
+      Go to the `/resource` folder of you project and locate any file ending with `.pluginconfig.json`.
+
+  2. **Find the 'verzoek' plugin configurations**
+
+     Every `.pluginconfig.json` can contain Verzoek plugin configuration. This plugin can be recognized where the
+     property 'pluginDefinitionKey' is 'verzoek'.
+
+  3.  **Move the 'objectManagementId'**
+
+      Every Verzoek plugin configuration has a field called 'objectManagementId'. This field should be moved out of
+      the 'properties' field and into every 'verzoekProperties' field.
