@@ -2,10 +2,25 @@
 
 In Valtimo, forms can be prefilled with data from a case or from other external sources. This page describes how 
 
+## Value resolvers
+<sup>Available since 11.0.0</sup>
+
+Value resolvers can be used to prefill a form with external data by adding the custom property `sourceKey`:
+![Configuring the sourceKey property in a form](img/custom_property.png)
+
+The following prefixes are supported by default: 
+- `doc` (Document)
+- `pv` (Process variable)
+
+Submitted values will also be stored using the reference provided in `sourceKey`.
+
 ## Case data
 
 By default, when creating fields in a form the data will be retrieved from and stored in the case. The property of the
 case that is used depends on the 'Property Name' field on the 'API' tab of the field settings. 
+
+> This behaviour has been deprecated as of version 11.0.0 and will be removed in the future. 
+> Please use value resolvers instead.
 
 In the example below a document definition is defined with the `firstName` property. A form field is created that 
 corresponds to this property to allow data to be loaded and saved.
@@ -60,6 +75,9 @@ Field configuration:
 
 ## External data
 
+> This feature has been deprecated as of version 11.0.0 and will be removed in the future. 
+> Please use value resolvers instead.
+
 In some cases there is other data related to the case, but not part of the document that needs to be displayed in a 
 form. The form module allows for `FormFieldDataResolver` to fetch data by using expressions as property name in forms.
 On loading the form the data is automatically preloaded. The expression generally looks like `<prefix>:<field-expression>` 
@@ -75,6 +93,25 @@ A list of `FormFieldDataResolvers` that are available on the [forms reference pa
 
 A description on how to create a new `FormFieldDataResolver` is available on the 
 [creating form data resolver page](../../extending-valtimo/forms/creating-form-field-data-resolver.md)
+
+## Disable prefilling of fields
+
+Prefilling can be disabled for specific input fields by configuring a `prefill` property in the JSON of the form
+definition as follows:
+
+```json
+{
+  "display": "form",
+  "components": [
+    {
+      "key": "firstName",
+      "type": "textfield",
+      "input": true,
+      "prefill": false
+    }
+  ]
+}
+```
 
 ## Disabled fields
 
