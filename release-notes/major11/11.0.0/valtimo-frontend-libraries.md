@@ -26,6 +26,20 @@ The following features were added:
   The library `@valtimo/user-interface` has been removed. All of its components have been moved to `@valtimo/components`.
   In order order to migrate, please refer to the [migration guide](./migration.md).
 
+* **Update of Carbon Table**
+
+  The CarbonTableComponent is now backwards compatible with the ListComponent, making for a easier process of replacing it. Instructions on how to migrate to this version of the CarbonTable can be found in the [migration guide](./migration.md).
+
+  CarbonTable now also supports different translations for the multi-select functionality through the *@Input selectTranslations*.
+
+* **Case List**
+
+  Case List has been updated to the Carbon Design System and is now using the CarbonTable.
+
+* **Bulk assign cases**
+
+  Implemented the bulk assign functionality withing the Case List.
+
 ## Bugfixes
 
 The following bugs were fixed:
