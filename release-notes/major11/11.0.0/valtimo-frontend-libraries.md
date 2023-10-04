@@ -30,6 +30,10 @@ The following features were added:
 
   Placeholders are added for plugin configuration fields, so it's more clear what formats are expected for urls.
 
+* **v-input component extended**
+
+    The `v-input` component has been extended with a placeholder input.
+
 ## Bugfixes
 
 The following bugs were fixed:
