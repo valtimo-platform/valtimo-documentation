@@ -24,7 +24,11 @@ The following features were added:
 * **Migration of old design components**
 
   The library `@valtimo/user-interface` has been removed. All of its components have been moved to `@valtimo/components`.
-  In order order to migrate, please refer to the [migration guide](./migration.md).
+  In order to migrate, please refer to the [migration guide](./migration.md).
+
+* **Placeholders for plugin configuration fields**
+
+  Placeholders are added for plugin configuration fields, so it's more clear what formats are expected for urls.
 
 ## Bugfixes
 
