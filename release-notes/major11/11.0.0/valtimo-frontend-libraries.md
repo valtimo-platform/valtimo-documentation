@@ -32,7 +32,7 @@ The following features were added:
 
 * **v-input component extended**
 
-    The `v-input` component has been extended with a placeholder input.
+  The `v-input` component has been extended with a placeholder input.
 
 ## Bugfixes
 
