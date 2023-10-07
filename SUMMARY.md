@@ -137,7 +137,7 @@
     * [Creating custom data sources](extending-valtimo/dashboard/custom-data-source.md)
     * [Creating custom display types](extending-valtimo/dashboard/custom-display-type.md)
     * [Widget translations](extending-valtimo/dashboard/widget-translations.md)
-    * [Document](extending-valtimo/document/document.md)
+  * [Document](extending-valtimo/document/document.md)
     * [Assigning and unassigning a user](extending-valtimo/document/assigning-and-unassigning-a-user.md)
     * [Search fields](extending-valtimo/document/configuring-search-fields.md)
   * [Forms](extending-valtimo/forms/forms.md)
