@@ -34,7 +34,7 @@ The name of the file needs to correspond to the process definition key.
             "formAssociationType": "start-event"
         },
         {
-            "formFlowName": "order.submit-request-task",
+            "formFlowName": "order.submit-request-task:latest",
             "formLinkElementId": "SubmitRequestTask",
             "formAssociationType": "user-task"
         },

@@ -13,12 +13,12 @@ Instructions on how to add the Documenten API dependency can be found
 [here](/getting-started/modules/zgw/documenten-api.md).
 
 To configure this plugin the following properties have to be entered:
-- **Documenten API URL.** Contains the complete base URL of the Documenten API to connect to. This 
+- **Documenten API URL (`url`).** Contains the complete base URL of the Documenten API to connect to. This 
 generally includes the path `/api/v1/`.
-- **Organisation RSIN.** Contains the RSIN of the organisation. The RSIN number (Rechtspersonen en 
+- **Organisation RSIN (`bronorganisatie`).** Contains the RSIN of the organisation. The RSIN number (Rechtspersonen en 
 Samenwerkingsverbanden Identificatie Nummer in Dutch) is an identification number for legal entities and partnerships.
 This will be used when storing document to indicate who is responsible for creating the Document record in the API.
-- **Authentication plugin configuration.** Reference to another plugin configuration that will be used to add 
+- **Authentication plugin configuration (`authenticationPluginConfiguration`).** Reference to another plugin configuration that will be used to add 
 authentication to any request performed on the Documenten API. If no option is available in this field a plugin has to 
 be configured that is able to authenticate for the specific application that hosts the Documenten API. (e.g. OpenZaak)
 
@@ -30,7 +30,7 @@ An example plugin configuration:
 The Documenten API plugin supports the following actions that can be configured in process links in order to store 
 documents and their metadata. 
 
-A general description on how to create process links, can be found [here](../create-process-link.md).
+A general description on how to create process links, can be found [here](../../process-link/create-process-link.md).
 
 ### Save document
 

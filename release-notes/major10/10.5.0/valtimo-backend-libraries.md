@@ -67,11 +67,7 @@ The following bugs were fixed:
   would prefill the form with previously uploaded files. This caused the file to be duplicated on the case if the
   prefilled file was not removed from the list by the user.
   
-  The result data of the upload component will no longer be saved to the document at the specified key. If
-  post-processing is needed, this can be implemented by:
-  - Customizing the `document-upload` system process (Zaken API, GZAC)
-  - Implementing an event listener for `DocumentRelatedFileSubmittedEvent` (Documenten API File upload component)
-  - Implementing an event listener for `DocumentRelatedFileSubmittedEvent` (Valtimo File upload component)
+  The prefill of a form input can now be disabled by using the `prefill` property. More information can be found [here](/using-valtimo/forms/creating-forms-in-valtimo.md#disabling-prefill)
 
 * **Remove correlation with no business key**
 
@@ -87,6 +83,10 @@ The following bugs were fixed:
 
   When mapping values of a form submission into a missing array, this resulted in an error. It will now add the
   array and values instead.
+
+* **Not all users shown in candidate users dropdown**
+  The dropdown list with candidate users on a case page, now shows all users. There was a bug that caused the API
+  endpoint to not respond with all users when there were more than 200 Keycloak users.
 
 ## Breaking changes
 

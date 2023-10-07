@@ -87,6 +87,22 @@ $ritense-blue-10: #f1f4f6;
     )
 );
 
+/* Other Carbon themes are available for use*/
+$themeVariables: (
+  'g10': themes.$g10,
+  'g90': themes.$g90,
+  'g100': themes.$g100,
+);
+
+/* Class names are generated for all available themes, so they can be used wherever necessary */
+/* An example of a theme class: 'carbon-theme-g10' */
+@each $name, $variable in $themeVariables {
+  .carbon-theme-#{$name} {
+    @include theme.theme($variable);
+  }
+}
+
+
 /* Finally, all Carbon styles are included. This step is obligatory to use Carbon styling in your implementation */
 @use '@carbon/styles';
 ```

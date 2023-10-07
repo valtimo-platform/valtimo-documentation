@@ -1,6 +1,7 @@
 # Modules
 
 ## Core
+![Core modules](img/module-dependencies-core.svg)
 
 ### Audit
 
@@ -44,6 +45,11 @@ processes. Several endpoints and functions are available that provide task data 
 It also includes choice fields, a generic way to create lists of values that can be used by the application (e.g.
 selectboxes or radiobuttons). Some security features used to control access to any Valtimo endpoints are also part of 
 this module.
+
+### Dashboards
+
+Dashboards give users quick insight into the current state of the application. Usually by giving the user statistical information about cases and processes.
+Using this information, the user will be enabled to prioritize and focus on specific tasks.
 
 ### Documents
 
@@ -175,6 +181,7 @@ Web offers web related configuration, such as integration with [OpenAPI](https:/
 REST API documentation, CORS configuration and sanitizing error messages and stacktraces).
 
 ## ZGW (Zaakgericht Werken)
+![ZGW](img/module-dependencies-zgw.svg)
 
 ### Besluit (deprecated)
 
