@@ -171,8 +171,8 @@
     * [v-button](reference/user-interface/components/v-button.md)
     * [Breadcrumbs](reference/user-interface/breadcrumbs.md)
   * [Feature toggles](reference/feature-toggles.md)
-  * [supported-databases.md](reference/supported-databases.md)
-  * [process-beans.md](reference/process-beans.md)
+  * [Supported databases](reference/supported-databases.md)
+  * [Process beans](reference/process-beans.md)
   * [Troubleshoot](reference/troubleshoot.md)
 * Release notes
   * [Release notes](release-notes/release-notes.md)
