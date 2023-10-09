@@ -38,7 +38,11 @@ The following features were added:
 
 * **Bulk assign cases**
 
-  Implemented the bulk assign functionality withing the Case List.
+  Implemented the bulk assign functionality within the Case List.
+
+* **S3 Upload update**
+
+  Added *documentId* to the request body of the S3 Resource(this is not used by the default Valtimo backend)
 
 ## Bugfixes
 
