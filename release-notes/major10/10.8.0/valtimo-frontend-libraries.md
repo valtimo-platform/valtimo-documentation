@@ -4,16 +4,9 @@
 
 The following features were added:
 
-* **New feature1**
+* **Id's added to menu items (optional) and search field buttons**
 
-  Description of the new feature goes here.
-  Also link to the page that expains the feature in greater detail.
-
-* **New feature2**
-
-  Description of the new feature goes here.
-  Also link to the page that expains the feature in greater detail.
-
+  The menu items can be configured to have an id just add the property in the enviorment file. The case search fields have id's added to the drop down arrow and the clear/search buttons.
 
 ## Bugfixes
 
