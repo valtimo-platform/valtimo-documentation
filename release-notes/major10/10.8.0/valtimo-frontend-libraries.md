@@ -4,9 +4,9 @@
 
 The following features were added:
 
-* **IDs added to menu items (optional) and search field buttons**
+* **IDs added to menu items and search field buttons**
 
-  The menu items can be configured to have an id just add the property in the enviorment file. The case search fields have ids added to the drop down arrow and the clear/search buttons.
+  IDs can be configured for menu items in the ValtimoConfig by adding the optional 'id' property. IDs have been added to buttons in the searchfields component.
 
 ## Bugfixes
 
