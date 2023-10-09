@@ -24,7 +24,8 @@ The following features were added:
 * **Migration of old design components**
 
   The library `@valtimo/user-interface` has been removed. All of its components have been moved to `@valtimo/components`.
-  In order to migrate, please refer to the [migration guide](./migration.md).
+  In order order to migrate, please refer to the [migration guide](./migration.md). The design of the form components
+  previously included in `@valtimo/user-interface` has been migrated to the Carbon design system.
 
 * **Placeholders for plugin configuration fields**
 
