@@ -22,11 +22,6 @@ with a `boolean` value.
   available on the Process links admin page. If this module is not configured, use this toggle to disable the option on
   the Process links page.
 
-* **`enableHackathonCasesPage`**
-
-  The Valtimo product development team participated in a Hackathon and developed a special cases page for municipalities.
-  This feature toggle exists for demo purposes, and it is advised not to configure it, leaving the page disabled.
-
 * **`showUserNameInTopBar`**
 
   If enabled, the full name of the user currently logged in is shown in the top bar next to the user menu button.
@@ -66,3 +61,12 @@ with a `boolean` value.
   If enabled, the user will be returned to the page they were last on before they were automatically logged out after
   their refresh token expired.
 
+* **`enableObjectManagement`**
+
+  If enabled, a new menuitem 'objects' will appear in the left sidebar menu. This menu item can have one or more submenu
+  items depending on the configuration. For more information [here](/getting-started/modules/zgw/object-management.md)
+
+* **`hideValtimoVersionsForNonAdmins`**
+
+  If enabled, the Valtimo version information in the right sidebar will only be visible for admins and will be hidden
+  for any other users.

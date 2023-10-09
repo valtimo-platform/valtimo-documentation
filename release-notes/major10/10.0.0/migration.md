@@ -2,6 +2,13 @@
 
 This page describes how to update Valtimo from the previous version to the current.
 
+* **MySQL 5.7 end of life**
+
+  Scope: Backend
+
+  Now that the extended support for MySQL 5.7 is ending, it is recommended to upgrade any MySQL database to MySQL 8 or
+  higher. More information [here](../../../reference/supported-databases.md).
+
 * **Java 17**
     
     Scope: Backend
@@ -66,6 +73,12 @@ This page describes how to update Valtimo from the previous version to the curre
     `"node_modules/dmn-js/dist/assets/dmn-font/css/dmn-ie7.css"`
 
     `"node_modules/dmn-js/dist/assets/dmn-font/css/dmn-ie7-codes.css"`
+
+* **New required dependency**
+
+  Scope: Front-end
+
+  `ngx-translate-multi-http-loader` requires a new dependency. Run the following command in the root of the implementation project: `npm i deepmerge-ts`.
 
 * **Matching dependencies**
 
@@ -143,12 +156,6 @@ This page describes how to update Valtimo from the previous version to the curre
     Support for `Protractor` (an end-to-end testing framework) in the Angular CLI will be discontinued. Either remove
     `Protractor` from your implementation, or migrate to Cypress [by following this guide](https://blog.ninja-squad.com/2021/05/05/migrating-from-protractor-to-cypress/).
     The latter is recommended.
-
-* **New required dependency**
-
-  Scope: Front-end
-
-  `ngx-translate-multi-http-loader` requires a new dependency. Run the following command in the root of the implementation project: `npm i deepmerge-ts`.
 
 * **REST API versioning**
 
