@@ -35,6 +35,24 @@ The following features were added:
 
   The `v-input` component has been extended with a placeholder input.
 
+* **Update of Carbon Table**
+
+  The CarbonTableComponent is now backwards compatible with the ListComponent, making for a easier process of replacing it. Instructions on how to migrate to this version of the CarbonTable can be found in the [migration guide](./migration.md).
+
+  CarbonTable now also supports different translations for the multi-select functionality through the *@Input selectTranslations*.
+
+* **Case List**
+
+  Case List has been updated to the Carbon Design System and is now using the CarbonTable.
+
+* **Bulk assign cases**
+
+  Implemented the bulk assign functionality within the Case List.
+
+* **S3 Upload update**
+
+  Added *documentId* to the request body of the S3 Resource(this is not used by the default Valtimo backend)
+
 ## Bugfixes
 
 The following bugs were fixed:

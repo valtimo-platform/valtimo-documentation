@@ -375,6 +375,17 @@ This page describes how to update Valtimo from the previous version to the curre
      `ModaleModule` exported from `@valtimo/user-interface` is renamed to `VModalModule`.
 
      `CardModule` exported from `@valtimo/user-interface` is renamed to `VCardModule`.
+
+* **Update of CarbonTable for backwards compatibility**
+
+  Scope: front-end
+
+  Updates in the *@Input* fields:
+    
+    - *@Input paginationConfig* -> *@Input paginatorConfig*
+    - *@Input fields* has been added instead of having the columnConfigs in the tableConfig. ColumnConfig now extends the ListField for backwards compatibility.
+    - Remove *fields* property from any instances of CarbonTableConfig as it is no longer a part of the interface
+    
     
 
 
