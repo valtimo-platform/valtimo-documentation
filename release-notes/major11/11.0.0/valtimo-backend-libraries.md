@@ -114,6 +114,9 @@ The following breaking changes were introduced:
   - Spring beans: ContextResource, ContextService, ContextRepository, UserContextRepository
   - Domain: UserContextDTO, Context, ContextProcess, MenuItem, UserContext
 
+* **Deleted method from ProcessLinkService**
+  `ProcessLinkService.getProcessLinks(activityId, activityType, processLinkType)` was only used for testing.
+
 Instructions on how to migrate to this version of Valtimo can be found [here](migration.md).
 
 ## Deprecations
