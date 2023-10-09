@@ -55,7 +55,7 @@ These things should be kept in mind when creating the frontend components for se
   sensitive data.
 - Only when submitting a value that is not null or an empty string will the property be updated.
 - This functionality requires an application property `valtimo.plugin.encryption-secret`. The value of this property 
-  determines the encryption key. The encryption secret has to be at least 16 characters long
+  determines the encryption key. The encryption secret has to be EXACTLY 16, 24 or 32 bytes.
 
 #### Plugin action
 
@@ -116,8 +116,9 @@ For example:
 ```kotlin
 @Component
 class TwitterPluginFactory(
+    pluginService: PluginService,
     private val twitterClient: TwitterClient
-) : PluginFactory<TwitterPlugin>() {
+) : PluginFactory<TwitterPlugin>(pluginService) {
 
     override fun create(): TwitterPlugin {
         return TwitterPlugin(twitterClient)
@@ -205,7 +206,7 @@ specification with explanations for each property:
 
 #### **`sample.plugin.specification.ts`**
 ```typescript
-import {PluginSpecification} from '@valtimo/plguin';
+import {PluginSpecification} from '@valtimo/plugin';
 import {SamplePluginConfigurationComponent} from './components/sample-plugin-configuration/sample-plugin-configuration.component';
 import {SAMPLE_PLUGIN_LOGO_BASE64} from './assets';
 import {SampleActionConfigurationComponent} from './components/sample-action-configuration/sample-action-configuration.component';
@@ -296,7 +297,8 @@ property.
 
 #### **`plugin.ts`**
 ```typescript
-...
+import {Observable} from 'rxjs';
+import {EventEmitter} from '@angular/core';
 
 /* 
 The required data outputted from the component.
@@ -307,8 +309,6 @@ interface PluginConfigurationData {
     configurationTitle: string;
     [key: string]: any;
 }
-
-...
 
 /*
 The generic interface for a configuration component.
@@ -350,7 +350,6 @@ interface PluginConfigurationComponent extends ConfigurationComponent {
     configuration: EventEmitter<PluginConfigurationData>;
 }
 
-...
 ```
 
 ### Typing the plugin configuration data
@@ -507,7 +506,7 @@ import {SampleActionConfig} from '../models';
     templateUrl: './sample-action-configuration.component.html',
     styleUrls: ['./sample-action-configuration.component.scss'],
 })
-export class SamplePluginConfigurationComponent
+export class SampleActionConfigurationComponent
     // The component explicitly implements the FunctionConfigurationComponent interface
     implements FunctionConfigurationComponent, OnInit, OnDestroy
 {
@@ -672,7 +671,7 @@ import {SampleActionConfigurationComponent} from './components/sample-action-con
     imports: [CommonModule, PluginTranslatePipeModule, FormModule, InputModule],
     exports: [SamplePluginConfigurationComponent, SampleActionConfigurationComponent],
 })
-export class DocumentenApiPluginModule {}
+export class SamplePluginModule {}
 ```
 
 

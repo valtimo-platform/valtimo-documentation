@@ -27,6 +27,14 @@ The following features were added:
   In order order to migrate, please refer to the [migration guide](./migration.md). The design of the form components
   previously included in `@valtimo/user-interface` has been migrated to the Carbon design system.
 
+* **Placeholders for plugin configuration fields**
+
+  Placeholders are added for plugin configuration fields, so it's more clear what formats are expected for urls.
+
+* **v-input component extended**
+
+  The `v-input` component has been extended with a placeholder input.
+
 ## Bugfixes
 
 The following bugs were fixed:
@@ -43,13 +51,16 @@ The following bugs were fixed:
 
 The following breaking changes were introduced:
 
-* **Removed form-links page**
-  The form-links page has now been removed in favor of the new process-links page. 
+* **Removed several admin menu items**
+  Several admin menu items have been removed:
+  - The 'Form-links' page has now been removed in favor of the new 'Process links' page.
+  - The 'Contexts' page has been removed. Valtimo no longer supports contexts.
+  - The 'Users' page has now been removed.
+  - The 'Entitlements' page has now been removed in favor of the new 'Access control' page.
 
-* **Remove context**
-  Valtimo no longer uses 'contexts'. As a result of this, the admin menu 'Contexts' has been removed.
-
-* **Breaking change2**
+* **Removed case 'Entitlements'**
+  The case management page no longer has the option to set the entitlements. This has been replaced by the new 'Access
+  control' page.
 
 Instructions on how to migrate to this version of Valtimo can be found [here](migration.md).
 

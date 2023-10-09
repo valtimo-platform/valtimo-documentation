@@ -8,6 +8,7 @@ external sources.
 This section is intended for people who want to get more out of Valtimo and are able to write Java, Kotlin or TypeScript
 code.
 
+* [Dashboard](dashboard/dashboard.md)
 * [Document](document/document.md)
 * [Forms](forms/forms.md)
 * [Form flow](form-flow/form-flow.md)
@@ -16,3 +17,4 @@ code.
 * [Tabs](tabs/tabs.md)
 * [Integrating spring beans in a process](integrate-spring-bean-in-process.md)
 * [Creating a custom dashboard](creating-a-custom-dashboard.md)
+* [Making Valtimo multi instance ready](multi-instance-ready.md)

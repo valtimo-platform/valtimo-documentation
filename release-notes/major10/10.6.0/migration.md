@@ -2,24 +2,11 @@
 
 This page describes how to update Valtimo from the previous version to the current.
 
-* **Breaking change 1/Deprecation 1**
+* **Migrate getTaskProcessLink()**
 
-  Scope: back-end/front-end
+  Scope: front-end
 
-  1. **Step1**
+    1. **Find and replace getTaskProcessLink()**
 
-     Description
-  2. **Step2**
-
-     Description
-
-* **Breaking change 2/Deprecation 2**
-
-  Scope: back-end/front-end
-
-  1. **Step1**
-
-      Description
-  2. **Step2**
-
-      Description
+       Find all occurrences of `TaskService.getTaskProcessLink()` in your frontend project and replace them
+       with `TaskService.getTaskProcessLinkV1()`. 

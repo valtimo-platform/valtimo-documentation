@@ -22,12 +22,19 @@ be configured that is able to authenticate for the specific application that hos
 An example plugin configuration:
 ![example plugin configuration](img/configure-plugin.png)
 
+- **URL (`url`)**. Contains the complete base URL of the Besluiten API to connect to. This generally includes
+  the path `/api/v1/`.
+- **RSIN (`rsin`).** Legal entities and partnership number
+- **Authentication plugin configuration (`authenticationPluginConfiguration`).** Reference to another plugin configuration that will be used to add
+  authentication to any request performed on the Besluiten API. If no option is available in this field a plugin has to
+  be configured that is able to authenticate for the specific application that hosts the Besluiten API.
+
 ## Available actions
 
 The Besluiten API plugin supports the following actions that can be configured in process links in order to retrieve type
 data.
 
-A general description on how to create process links can be found [here](../create-process-link.md).
+A general description on how to create process links can be found [here](../../process-link/create-process-link.md).
 
 ### Create besluit
 This action creates a Zaakbesluit in the Besluiten API.

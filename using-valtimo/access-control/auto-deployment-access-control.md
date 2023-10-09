@@ -44,7 +44,7 @@ The example below defines 2 permissions:
         },
         {
             "resourceType": "com.ritense.document.domain.impl.JsonSchemaDocument",
-            "action": "list_view",
+            "action": "view_list",
             "roleKey": "ROLE_USER",
             "conditions": [
                 {

@@ -72,6 +72,11 @@ The following breaking changes were introduced:
   * JsonSchemaDocumentDefintionRole
   * JsonSchemaDocumentDefintionRoleId
 
+* **Spring bean whitelisting for Camunda**
+  Spring beans that are used inside Camunda BPMN's and DMN's must now be whitelisted before they can be used. This can
+  be done using the `@ProcessBean` annotation. More
+  information [here](/extending-valtimo/process/whitelist-spring-bean.md).
+
 * **Property 'valtimo.jwt.secret' renamed**
   The application property `valtimo.jwt.secret` has been renamed to `valtimo.oauth.public-key`. To better describe what
   this property is used for.
@@ -94,6 +99,20 @@ The following breaking changes were introduced:
   To scan additional packages for custom plugins or data-sources, the following Spring property should be configured:
   
   `valtimo.annotation-scan.accepted-packages: test.package1, test.package2`
+
+* **Deleted 'Authority' entities**
+  Valtimo has switched to a new policy based access control system. As a consequence, the old authorities have been
+  removed. The following entities can no longer be used:
+  - Database table: 'jhi_authority'
+  - Spring events: AuthorityCreatedEvent, AuthorityDeletedEvent, AuthorityEvent, AuthorityNameChangedEvent
+  - Spring beans: AuthorityResource, AuthorityService, AuthorityRepository
+  - Domain: Authority, AuthorityRequest, Money
+
+* **Deleted 'Context' entities**
+  Valtimo no longer supports 'contexts'. The following entities can no longer be used:
+  - Database table: 'context_processes', 'context_roles', 'menu_item', 'context'
+  - Spring beans: ContextResource, ContextService, ContextRepository, UserContextRepository
+  - Domain: UserContextDTO, Context, ContextProcess, MenuItem, UserContext
 
 Instructions on how to migrate to this version of Valtimo can be found [here](migration.md).
 

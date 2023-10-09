@@ -1,8 +1,10 @@
 # Process blueprints
 
-Process blueprints are a collection of files, that form a starting point to kickstart an implementation. These can
-consist of one or more BPMNs, a document definition, forms, as well as less common things such as custom front-end and
-back-end code. These blueprints can be found on GitHub [here](https://github.com/generiekzaakafhandelcomponent/Basisprocessen).
+Process blueprints are a collection of files, that either form a starting point to speed up development for an
+implementation. There are two kinds of blueprints. Process blueprints that directly add value (e.g. a blueprint for City
+Pass applications), and process blueprints that are a part of the bigger picture (e.g. a process on handling change
+requests for a case). These can consist of one or more BPMNs, a document definition, forms, as well as less common
+things such as custom front-end and back-end code. These blueprints can be found on GitHub [here](https://github.com/generiekzaakafhandelcomponent/Basisprocessen).
 
 How to create a process blueprint from an existing project can be found [here](#creating-process-blueprints-for-gzac).
 
@@ -38,9 +40,9 @@ This is the general structure of a blueprint:
 |   |   |   |           |-- document
 |   |   |   |           |-- form
 |   |   |   |           |-- form-flow
-|   |   |   |           |-- form-link
+|   |   |   |           |-- formlink
 |   |   |   |           |-- liquibase
-|   |   |   |           |-- proces-document-link
+|   |   |   |           |-- process-document-link
 |   |   |   |           |-- application.yml
 |   |   |   |-- build.gradle/pom.xml
 |   |   |-- frontend
@@ -119,9 +121,9 @@ After checking out the code, the folder structure should look similar to this:
 |   |   |   |           |-- document
 |   |   |   |           |-- form
 |   |   |   |           |-- form-flow
-|   |   |   |           |-- form-link
+|   |   |   |           |-- formlink
 |   |   |   |           |-- liquibase
-|   |   |   |           |-- proces-document-link
+|   |   |   |           |-- process-document-link
 |   |   |   |           |-- application.yml
 |   |   |   |-- build.gradle/pom.xml
 |   |   |-- frontend
@@ -153,7 +155,7 @@ process links?
 modules that share a version.
 - Are there any application specific properties that need to be set (e.g. in `application.yml` for back-end)?
 - Please avoid any compile-time-processing dependencies like Lombok. They might not work correctly in other
-implementations and can often easily replaced by code. 
+implementations and can often be replaced by code. 
 
 If some code cannot be shared, please provide an empty or simplified implementation in the code.
 

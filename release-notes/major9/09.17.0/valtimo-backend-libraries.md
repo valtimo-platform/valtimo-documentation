@@ -1,4 +1,4 @@
-# Backend libraries 9.17.0 RC
+# Backend libraries 9.17.0
 
 ## New Features
 
@@ -16,7 +16,7 @@ The following features were added:
   Almost all modules within Valtimo now have support for Postgres databases. The exceptions are:
   - `form-flow-valtimo`
   
-  Information on how to use Postgres can be found [here](/getting-started/database-support.md).
+  Information on how to use Postgres can be found [here](/getting-started/configure-database.md).
 
 
 * **Secret keys in plugins are encypted before storing**

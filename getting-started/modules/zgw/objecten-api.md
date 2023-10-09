@@ -25,4 +25,31 @@ dependencies {
 }
 ```
 
+### Frontend
 
+A general instruction to add a front-end plugin to the implementation can be
+found [here](../core/plugin.md#adding-a-front-end-plugin-to-the-implementation).
+
+In order to use the Objecten API plugin in the frontend the following can be added to your `app.module.ts`:
+
+```typescript
+import { ObjectenApiPluginModule, objectenApiPluginSpecification } from '@valtimo/plugin';
+
+@NgModule({
+  imports: [
+      ObjectenApiPluginModule,
+  ],
+  providers: [
+      {
+          provide: PLUGIN_TOKEN,
+          useValue: [
+              objectenApiPluginSpecification,
+          ]
+      }
+  ]
+})
+```
+
+Before the Objecten API plugin can be used, an authentication plugin is needed. One such authentication plugin
+is the Objecten API authentication plugin. Instructions on how to add this plugin can be
+found [here](objecten-api-authentication.md).

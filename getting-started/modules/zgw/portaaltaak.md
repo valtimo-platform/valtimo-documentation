@@ -26,4 +26,27 @@ dependencies {
 }
 ```
 
+### Frontend
 
+A general instruction to add a front-end plugin to the implementation can be
+found [here](../core/plugin.md#adding-a-front-end-plugin-to-the-implementation).
+
+In order to use the Portaaltaak plugin in the frontend, the following can be added to your `app.module.ts`:
+
+```typescript
+import { PortaaltaakPluginModule, portaaltaakPluginSpecification } from '@valtimo/plugin';
+
+@NgModule({
+  imports: [
+      PortaaltaakPluginModule,
+  ],
+  providers: [
+      {
+          provide: PLUGIN_TOKEN,
+          useValue: [
+              portaaltaakPluginSpecification,
+          ]
+      }
+  ]
+})
+```

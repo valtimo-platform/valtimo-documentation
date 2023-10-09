@@ -3,29 +3,30 @@
 ## Available resources
 The access to the following resources is limited by Valtimo access control.
 
-| Resource name                                   | Class name                                                      | Module   |
-|-------------------------------------------------|:----------------------------------------------------------------|:---------|
-| **[Document](#document)**                       | `com.ritense.document.domain.impl.JsonSchemaDocument`           | Document |
-| **[Document definition](#document-definition)** | `com.ritense.document.domain.impl.JsonSchemaDocumentDefinition` | Document |
-| **[Document snapshot](#document-snapshot)**     | `com.ritense.document.domain.impl.JsonSchemaDocumentSnapshot`   | Document |
-| **[Search field](#search-field)**               | `com.ritense.document.domain.impl.searchfield.SearchField`      | Document |
-| **[Note](#note)**                               | `com.ritense.note.domain.Note`                                  | Notes    |
-| **[Task](#task)**                               | `com.ritense.valtimo.camunda.domain.CamundaTask`                | Core     |
+| Resource name                                   | Class name                                                             | Module   |
+|-------------------------------------------------|:-----------------------------------------------------------------------|:---------|
+| **[Document](#document)**                       | `com.ritense.document.domain.impl.JsonSchemaDocument`                  | Document |
+| **[Document definition](#document-definition)** | `com.ritense.document.domain.impl.JsonSchemaDocumentDefinition`        | Document |
+| **[Document snapshot](#document-snapshot)**     | `com.ritense.document.domain.impl.snapshot.JsonSchemaDocumentSnapshot` | Document |
+| **[Search field](#search-field)**               | `com.ritense.document.domain.impl.searchfield.SearchField`             | Document |
+| **[Note](#note)**                               | `com.ritense.note.domain.Note`                                         | Notes    |
+| **[Task](#task)**                               | `com.ritense.valtimo.camunda.domain.CamundaTask`                       | Core     |
+| **[Task identity link](#task)**                 | `com.ritense.valtimo.camunda.domain.CamundaIdentityLink`               | Core     |
 
 
 ### Document
 
 #### Supported actions
 
-| Action         | key           | Description                                                                |
-|----------------|:--------------|:---------------------------------------------------------------------------|
-| **View**       | `view`        | Allows reading of documents and their data.                                |
-| **View list**  | `view_list`   | Allows retrieving lists of documents.                                      |
-| **Create**     | `create`      | Allows creation of documents.                                              |
-| **Modify**     | `modify`      | Allows modification of documents.                                          |
-| **Delete**     | `delete`      | Allows deletion of documents.                                              |
-| **Claim**      | `claim`       | Allows users to assign themselves as the case handler.                     |
-| **Assign**     | `assign`      | Allows assigning a case handler of both the current and other users.       |
+| Action         | key           | Description                                                                 |
+|----------------|:--------------|:----------------------------------------------------------------------------|
+| **View**       | `view`        | Allows reading of documents and their data.                                 |
+| **View list**  | `view_list`   | Allows retrieving lists of documents.                                       |
+| **Create**     | `create`      | Allows creation of documents.                                               |
+| **Modify**     | `modify`      | Allows modification of documents.                                           |
+| **Delete**     | `delete`      | Allows deletion of documents.                                               |
+| **Claim**      | `claim`       | Allows users to assign themselves as the case handler.                      |
+| **Assign**     | `assign`      | Allows assigning a case handler of both the current and other users.        |
 | **Assignable** | `assignable`  | Allows users with permissions for this action to be assigned to a document. |
 
 
@@ -132,14 +133,15 @@ The following conditions can be used with their respective structures:
 
 #### Operators
 
-| Operator | Description               |
-|:---------|:--------------------------|
-| `==`     | Equal to.                 |
-| `!=`     | Not equal to.             |
-| `>`      | Greater than.             |
-| `>=`     | Greater than or equal to. |
-| `<`      | Smaller than.             |
-| `<=`     | Smaller than or equal to. |
+| Operator   | Description                                      |
+|:-----------|:-------------------------------------------------|
+| `==`       | Equal to.                                        |
+| `!=`       | Not equal to.                                    |
+| `>`        | Greater than.                                    |
+| `>=`       | Greater than or equal to.                        |
+| `<`        | Smaller than.                                    |
+| `<=`       | Smaller than or equal to.                        |
+| `contains` | Checks if a collection contains the given value. |
 
 ### Expression
 
@@ -154,14 +156,15 @@ The following conditions can be used with their respective structures:
 
 #### Operators
 
-| Operator | Description               |
-|:---------|:--------------------------|
-| `==`     | Equal to.                 |
-| `!=`     | Not equal to.             |
-| `>`      | Greater than.             |
-| `>=`     | Greater than or equal to. |
-| `<`      | Smaller than.             |
-| `<=`     | Smaller than or equal to. |
+| Operator   | Description                                      |
+|:-----------|:-------------------------------------------------|
+| `==`       | Equal to.                                        |
+| `!=`       | Not equal to.                                    |
+| `>`        | Greater than.                                    |
+| `>=`       | Greater than or equal to.                        |
+| `<`        | Smaller than.                                    |
+| `<=`       | Smaller than or equal to.                        |
+| `contains` | Checks if a collection contains the given value. |
 
 ### Container
 
