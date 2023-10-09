@@ -118,6 +118,10 @@ The following breaking changes were introduced:
   For the Verzoek plugin configuration, the property `objectManagementId` has been moved to a deeper level. This change
   can break any auto-deployment field that contains a Verzoek plugin.
 
+* **Deleted method from ProcessLinkService**
+  `ProcessLinkService.getProcessLinks(activityId, activityType, processLinkType)` was only used for testing.
+
+
 Instructions on how to migrate to this version of Valtimo can be found [here](migration.md).
 
 ## Deprecations
