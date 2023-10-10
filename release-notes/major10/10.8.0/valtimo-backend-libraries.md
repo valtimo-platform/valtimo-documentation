@@ -19,9 +19,11 @@ The following features were added:
 
 The following bugs were fixed:
 
-* **Bug1**
+* **Task candidate users list was incomplete**
 
-  Description of what the issue was.
+  The list of assignees for a user task is no longer incomplete. The bug happened when the user task was configured to
+  have more than one role in the candidate groups. The list of assignees would only contain users for the first role in
+  the candidate groups.
 
 * **Bug2**
 
