@@ -55,7 +55,7 @@ The following features were added:
 
 * **Task form loading text**
 
-  When a task is opened, it will first show a loading text before the actual form is shown.
+  When a task is opened, it will first show a loading text while the form is loading.
 
 ## Bugfixes
 
@@ -63,7 +63,7 @@ The following bugs were fixed:
 
 * **Show correct task assignee**
 
-  Sometimes when a task was opened, it showed the wrong assignee. This has now been fixed.
+  Sometimes when a task was opened, it showed the wrong assignee.
 
 * **Bug2**
 
