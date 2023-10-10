@@ -53,13 +53,17 @@ The following features were added:
 
   Added *documentId* to the request body of the S3 Resource(this is not used by the default Valtimo backend)
 
+* **Task form loading text**
+
+  When a task is opened, it will first show a loading text before the actual form is shown.
+
 ## Bugfixes
 
 The following bugs were fixed:
 
-* **Bug1**
+* **Show correct task assignee**
 
-  Description of what the issue was.
+  Sometimes when a task was opened, it showed the wrong assignee. This has now been fixed.
 
 * **Bug2**
 
