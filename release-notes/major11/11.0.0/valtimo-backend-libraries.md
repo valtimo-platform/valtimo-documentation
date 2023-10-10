@@ -114,7 +114,7 @@ The following breaking changes were introduced:
   - Spring beans: ContextResource, ContextService, ContextRepository, UserContextRepository
   - Domain: UserContextDTO, Context, ContextProcess, MenuItem, UserContext
 
-* **Moved Verzoek plugin property 'objectManagementId'**
+* **Moved Verzoek plugin property `objectManagementId`**
   For the Verzoek plugin configuration, the property `objectManagementId` has been moved to a deeper level. This change
   can break any auto-deployment field that contains a Verzoek plugin.
 
