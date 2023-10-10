@@ -11,6 +11,7 @@ Hotfixes are supported on all versions.
 
 | Valtimo backend libraries | Valtimo frontend libraries | Java | Node |
 |---------------------------|----------------------------|------|------|
+| 11.1.0                    | 11.1.0                     | 17   | 14   |
 | 11.0.0                    | 11.0.0                     | 17   | 14   |
 
  
