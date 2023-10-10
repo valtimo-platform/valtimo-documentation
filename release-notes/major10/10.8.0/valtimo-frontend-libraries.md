@@ -4,16 +4,9 @@
 
 The following features were added:
 
-* **New feature1**
+* **IDs added to menu items and search field buttons**
 
-  Description of the new feature goes here.
-  Also link to the page that expains the feature in greater detail.
-
-* **New feature2**
-
-  Description of the new feature goes here.
-  Also link to the page that expains the feature in greater detail.
-
+  IDs can be configured for menu items in the ValtimoConfig by adding the optional 'id' property. IDs have been added to buttons in the searchfields component.
 
 ## Bugfixes
 
