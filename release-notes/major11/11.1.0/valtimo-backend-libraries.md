@@ -19,9 +19,9 @@ The following features were added:
 
 The following bugs were fixed:
 
-* **Bug1**
+* **Fix DMN upload**
 
-  Description of what the issue was.
+  The uploading of DMN files through the endpoint `/v1/process/definition/deployment` has been fixed.
 
 * **Bug2**
 
