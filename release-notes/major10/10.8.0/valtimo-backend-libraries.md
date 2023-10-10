@@ -23,7 +23,7 @@ The following bugs were fixed:
 
   The list of assignees for a user task is no longer incomplete. The bug happened when the user task was configured to
   have more than one role in the candidate groups. The list of assignees would only contain users for the first role in
-  the candidate groups. This has been fixed.
+  the candidate groups.
 
 * **Bug2**
 
