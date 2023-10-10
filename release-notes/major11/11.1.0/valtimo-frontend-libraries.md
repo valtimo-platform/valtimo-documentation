@@ -4,10 +4,12 @@
 
 The following features were added:
 
-* **New feature1**
+* **Improved support for plugin auto-deployment properties placeholders**
 
-  Description of the new feature goes here.
-  Also link to the page that expains the feature in greater detail.
+  A plugin configuration auto-deployment file now supports:
+  - Placeholders that refer to Java system properties.
+  - Placeholders inside nested properties.
+  - Multiple placeholders in a single field.
 
 * **New feature2**
 
