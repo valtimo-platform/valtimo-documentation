@@ -13,6 +13,12 @@ Valtimo - like completing a task or uploading a file - are audited by default. I
 by using this feature in the implementation code. The audit trail is available for each case to show the history of
 actions of that case.
 
+### Authorization
+Valtimo supports Policy Based Access Control (PBAC) as an authorization layer via this module.
+This layer allows you to restrict access to functionality or data based on policies. Other modules that utilize the
+authorization module can define their own resource types (e.g. camunda tasks), so they can be used to grant access to
+certain functionality in Valtimo.
+
 ### Connector
 
 Connectors are Valtimo configurable components that can be used to connect to external systems. This module provides a

@@ -17,7 +17,7 @@ The following features were added:
 
   This process bean allows exposes methods that provide message correlation and association to a document
   which can be used in message throw events as an expression.
-  More detail [here](/using-valtimo/process/correlating-messages.md).
+  More detail [here](/using-valtimo/process/process-beans/correlation-service.md).
 
 * **Portaaltaak process name change**
 

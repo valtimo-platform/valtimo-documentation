@@ -1,6 +1,7 @@
 # Modules
 
 * Core
+  * [Authorization](core/authorization.md)
   * [Camunda](core/camunda-webapps.md)
   * [Document](core/document.md)
   * [Form](core/form.md)

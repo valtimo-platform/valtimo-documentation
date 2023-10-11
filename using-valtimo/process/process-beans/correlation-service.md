@@ -11,12 +11,12 @@ method to use depends on the use case. For more information on the separate use 
 
 These methods can be used in expressions applied to message throw events like this:
 
-![intermediate-throw-example](img/intermediate-throw-event.png)
+![intermediate-throw-example](../img/intermediate-throw-event.png)
 
 The first argument is the key of the message that should be sent. In this example, there should also be a
 message start event that waits for this particular message, like so:
 
-![message-start-event-example](img/message-start-event.png)
+![message-start-event-example](../img/message-start-event.png)
 
 ### Correlating start events
 As shown in the example above, Valtimo provides a `sendStartMessage` method. The following variations are possible:

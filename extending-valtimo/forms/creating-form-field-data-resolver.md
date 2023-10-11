@@ -2,6 +2,9 @@
 
 FormIO forms in Valtimo can be prefilled with data from custom sources. 
 
+> Form field data resolvers have been deprecated as of version 11.0.0 and will be removed in the future. 
+> Please use value resolvers instead.
+
 ## Introduction
 
 A `FormFieldDataResolver` is a spring bean that is used by Valtimo to get data to be preloaded in a form.
