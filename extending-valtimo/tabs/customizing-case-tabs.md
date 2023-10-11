@@ -1,4 +1,8 @@
-# Customizing case details tabs
+# ⚠️**WARNING**⚠️
+
+There is a new preferred way to configure case tabs. [Link](/using-valtimo/case/creating-case-tabs.md).
+
+# Customizing case details tabs (deprecated)
 
 On the detail page of a case instance, a number of tabs are shown. These tabs - and their order - can be customized
 through the frontend code of an implementation.
