@@ -1,6 +1,4 @@
-# ⚠️**WARNING**⚠️
-
-There is a new preferred way to configure case tabs. [Link](/using-valtimo/case/creating-case-tabs.md).
+There is a new preferred way to configure case tabs. [Link](/using-valtimo/case/case-tabs.md).
 
 # Customizing case list tabs (deprecated)
 

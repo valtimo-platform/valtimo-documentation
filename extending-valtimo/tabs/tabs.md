@@ -2,7 +2,7 @@
 
 ## ⚠️**WARNING**⚠️
 
-There is a new preferred way to configure case tabs. [Link](/using-valtimo/case/creating-case-tabs.md).
+There is a new preferred way to configure case tabs. [Link](/using-valtimo/case/case-tabs.md).
 
 ## Deprecated case tab
 Valtimo uses tabs to group information into separate web pages.
