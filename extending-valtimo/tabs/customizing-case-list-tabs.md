@@ -1,6 +1,4 @@
-There is a new preferred way to configure case tabs. [Link](/using-valtimo/case/case-tabs.md).
-
-# Customizing case list tabs (deprecated)
+# Customizing case list tabs
 
 On the case list page, three new tabs have been added to show the current state of the workload. These tabs - and 
 their order - can be customized through the frontend code of an implementation.
