@@ -5,7 +5,7 @@ logical categories. The tabs that are shown can be configured per case type.
 
 ![Example of case tabs for a case](img/case-tab-example.png)
 
-By default, each newly created case type has a number of tabs that are preconfigured. Which tabs are used can be found 
+By default, each newly created case type has a number of tabs that are preconfigured. A list of default tabs is available 
 on the [reference page](/reference/modules/case.md#default-case-tabs).
 
 Case tab can be configured manually using the [Admin UI](#configuration-using-the-admin-menu),
