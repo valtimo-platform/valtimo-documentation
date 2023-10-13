@@ -63,13 +63,13 @@ This is an example of an autodeployment file for 2 user task for process:
 [
    {
       "activityId": "do-something",
-      "activityType": "bpmn:UserTask:start",
+      "activityType": "bpmn:UserTask:create",
       "processLinkType": "form",
       "formDefinitionName": "do-something"
    },
    {
       "activityId": "do-another-thing",
-      "activityType": "bpmn:UserTask:start",
+      "activityType": "bpmn:UserTask:create",
       "processLinkType": "form-flow",
       "formFlowDefinitionId": "do-another-thing:latest"
    },
