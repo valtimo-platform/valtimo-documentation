@@ -12,9 +12,9 @@ The following features were added:
 
 The following bugs were fixed:
 
-* **Bug1**
+* **Can not upload files from user task**
 
-  Description of what the issue was.
+  A bug that prevented some users from uploading files in a user task has been fixed.
 
 * **Bug2**
 
