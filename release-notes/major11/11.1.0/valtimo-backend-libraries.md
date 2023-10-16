@@ -41,9 +41,9 @@ Instructions on how to migrate to this version of Valtimo can be found [here](mi
 
 The following was deprecated:
 
-* **Deprecation1**
+* **Task comments**
 
-  X was deprecated and is replaced with Y.
+  Task comments have been deprecated and will be removed in a future Valtimo version.
 
 * **Deprecation2**
 
