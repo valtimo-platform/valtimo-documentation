@@ -63,8 +63,6 @@ export class AppModule {
 
 The case tab menu is found under the admin menu. Admin privileges are required to configure case tabs.
 
-TODO FE: include some screenshots and maybe add more detail to this section
-
 1. Go to the Admin menu
 
 2. Go to the 'Cases' menu
@@ -79,21 +77,20 @@ TODO FE: include some screenshots and maybe add more detail to this section
 
    ![Example of selecting a tab type](img/tab-select-modal.png)
 
-6. Fill in the form
+6. Fill in the form. If no name is set, then the key will be used for translation (in your translation files, add the key under 'dossier.tabs')
 
    ![Example of configuring a tab](img/tab-config-modal.png)
 
-5. Click the button 'Add tab'
+7. Click the button 'Add tab'
 
 If there are no tabs to be configured for one specific type, then the button in the Step 5 modal will be disabled.
 
-   ![Example of disabled tab type](img/tab-select-disabled.png)
+![Example of disabled tab type](img/tab-select-disabled.png)
 
 This can occur for one of two reasons:
-    
+
 - You have already configured all possible tabs of a type
 - There are no tabs provided for configuration (i.e. no form definitions or no configurations for custom tabs)
-
 
 ## Auto deploying case tabs
 
