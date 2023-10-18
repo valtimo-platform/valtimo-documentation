@@ -15,7 +15,7 @@ The following case types are supported by Valtimo.
 
 | Type                | Type key        | Description                                                                                                                                                             |
 |---------------------|-----------------|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Summary**         | summary         | Shows a single form.io form with the name: '<case-key>.summary'.                                                                                                        |
+| **Summary**         | summary         | Shows a single Form.io form with the name: '<case-key>.summary'.                                                                                                        |
 | **Progress**        | progress        | Shows a BPMN model with the progress of the case.                                                                                                                       |
 | **Audit**           | audit           | Shows the audit logging for the case.                                                                                                                                   |
 | **Documents**       | documents       | Shows all files and documents that are associated with the case.                                                                                                        |
