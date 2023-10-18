@@ -5,7 +5,7 @@ logical categories. The tabs that are shown can be configured per case type.
 
 ![Example of case tabs for a case](img/case-tab-example.png)
 
-By default, each newly created case type has a number of tabs that are preconfigured. A list of default tabs is available 
+By default, each newly created case type has a number of tabs that are preconfigured. A list of default tabs is available
 on the [reference page](/reference/modules/case.md#default-case-tabs).
 
 Case tab can be configured manually using the [Admin UI](#configuration-using-the-admin-menu),
@@ -16,22 +16,48 @@ or by using [autodeployment](#auto-deploying-case-tabs).
 Valtimo supports the following 3 different types of case tab.
 
 ### Standard tabs
+
 Valtimo comes with a number of tabs that support different features. These range from showing a summary form, or showing
 an audit log to showing the current state of the BPMN process.
 
 The standard tabs that are available are listed on the [reference page](/reference/modules/case.md#standard-tabs).
 
 ### Form.io tabs
-Form.io tabs are tabs that show a single form.io form as the tab content. Any form.io form that has been registered 
+
+Form.io tabs are tabs that show a single form.io form as the tab content. Any form.io form that has been registered
 with valtimo can be chosen. This is purely meant to display information, as there is no way to submit the information
 even if a submit button has been added to the form definition.
 
 ### Custom tabs
-When you want tab with functionality that is not covered by the other tab types you can create a custom angular 
+
+When you want tab with functionality that is not covered by the other tab types you can create a custom angular
 component that is used as a case tab. These angular components have to be registered in the
 angular application as a potential tab.
 
-TODO FE: include an example how to register a component as a tab. 
+#### **`app.module.ts`**
+
+```typescript
+...
+// import CASE_TAB_TOKEN
+import { CASE_TAB_TOKEN } from '@valtimo/dossier';
+...
+// import your Custom Component from wherever you have defined it
+import {CustomTabComponent} from 'component-path';
+...
+
+// add this to the providers array of the AppModule
+...
+    {
+      provide: CASE_TAB_TOKEN,
+      useValue: {
+        'custom-tab-name': CustomTabComponent,
+      },
+    }
+...
+export class AppModule {
+    ...
+}
+```
 
 ## Configuration using the Admin menu
 
@@ -40,10 +66,33 @@ The case tab menu is found under the admin menu. Admin privileges are required t
 TODO FE: include some screenshots and maybe add more detail to this section
 
 1. Go to the Admin menu
+
 2. Go to the 'Cases' menu
+
 3. Click on the case for which tabs need to be configured
-4. Click the button 'Add new case tab'
-5. Fill in the form
+
+4. Click on the 'Add tab' button
+
+   ![Add tab button](img/add-tab-button.png)
+
+5. Select which tab type you want to configure
+
+   ![Example of selecting a tab type](img/tab-select-modal.png)
+
+6. Fill in the form
+
+   ![Example of configuring a tab](img/tab-config-modal.png)
+
+5. Click the button 'Add tab'
+
+If there are no tabs to be configured for one specific type, then the button in the Step 5 modal will be disabled.
+
+   ![Example of disabled tab type](img/tab-select-disabled.png)
+
+This can occur for one of two reasons:
+    
+- You have already configured all possible tabs of a type
+- There are no tabs provided for configuration (i.e. no form definitions or no configurations for custom tabs)
 
 
 ## Auto deploying case tabs
@@ -72,31 +121,31 @@ that are available can be found on the [reference page](/reference/modules/case.
 
 ```json
 {
-    "changesetId": "my-case-definition-name-tabs-v1",
-    "case-definitions": [
+  "changesetId": "my-case-definition-name-tabs-v1",
+  "case-definitions": [
+    {
+      "key": "my-case-definition-name",
+      "tabs": [
         {
-            "key": "my-case-definition-name",
-            "tabs": [
-                {
-                    "name": "Summary",
-                    "key": "summary",
-                    "type": "standard",
-                    "contentKey": "summary"
-                },
-                {
-                    "name": "Progress",
-                    "key": "progress",
-                    "type": "standard",
-                    "contentKey": "progress"
-                },
-                {
-                    "name": "Zaak objects",
-                    "key": "zaakobjecten",
-                    "type": "standard",
-                    "contentKey": "zaakobjecten"
-                }
-            ]
+          "name": "Summary",
+          "key": "summary",
+          "type": "standard",
+          "contentKey": "summary"
+        },
+        {
+          "name": "Progress",
+          "key": "progress",
+          "type": "standard",
+          "contentKey": "progress"
+        },
+        {
+          "name": "Zaak objects",
+          "key": "zaakobjecten",
+          "type": "standard",
+          "contentKey": "zaakobjecten"
         }
-    ]
+      ]
+    }
+  ]
 }
 ```
