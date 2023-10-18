@@ -11,6 +11,11 @@ on the [reference page](/reference/modules/case.md#default-case-tabs).
 Case tab can be configured manually using the [Admin UI](#configuration-using-the-admin-menu),
 or by using [autodeployment](#auto-deploying-case-tabs).
 
+## Enabling case tabs
+
+To enable case tabs, set the `enableTabManagement` feature toggle to `true` in your front-end implementation. For more
+information on this feature toggle, visit [this page](/reference/feature-toggles.md).
+
 ## Different types of case tabs
 
 Valtimo supports the following 3 different types of case tab.
