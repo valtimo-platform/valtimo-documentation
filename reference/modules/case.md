@@ -4,11 +4,11 @@
 
 The following case types are supported by Valtimo.
 
-| Type         | Type key | Description                                                                                                              |
-|--------------|----------|:-------------------------------------------------------------------------------------------------------------------------|
-| **Standard** | standard | A collection of tabs is available that support different Valtimo features. The tabs that are available are listed below. |
-| **Form.io**  | formio   | Form.io tabs can be configured to show a form.io form.                                                                   |
-| **Custom**   | custom   | Custom tabs can be configured to show a custom Angular component.                                                        |
+| Type             | Type key | Description                                                                                                              |
+|------------------|----------|:-------------------------------------------------------------------------------------------------------------------------|
+| **Standard**     | standard | A collection of tabs is available that support different Valtimo features. The tabs that are available are listed below. |
+| **Form.io form** | formio   | Form.io tabs can be configured to show a form.io form.                                                                   |
+| **Custom**       | custom   | Custom tabs can be configured to show a custom Angular component.                                                        |
 
 
 ### Standard tabs

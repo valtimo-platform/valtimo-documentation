@@ -24,15 +24,15 @@ The standard tabs that are available are listed on the [reference page](/referen
 
 ### Form.io tabs
 
-Form.io tabs are tabs that show a single form.io form as the tab content. Any form.io form that has been registered
+Form.io tabs are tabs that show a single Form.io form as the tab content. Any Form.io form that has been registered
 with valtimo can be chosen. This is purely meant to display information, as there is no way to submit the information
 even if a submit button has been added to the form definition.
 
 ### Custom tabs
 
-When you want tab with functionality that is not covered by the other tab types you can create a custom angular
-component that is used as a case tab. These angular components have to be registered in the
-angular application as a potential tab.
+When you want tab with functionality that is not covered by the other tab types you can create a custom Angular
+component that is used as a case tab. These Angular components have to be registered in the
+Angular application as a potential tab.
 
 #### **`app.module.ts`**
 
@@ -41,7 +41,7 @@ angular application as a potential tab.
 // import CASE_TAB_TOKEN
 import { CASE_TAB_TOKEN } from '@valtimo/dossier';
 ...
-// import your Custom Component from wherever you have defined it
+// import your custom component from wherever you have defined it
 import {CustomTabComponent} from 'component-path';
 ...
 
@@ -77,7 +77,7 @@ The case tab menu is found under the admin menu. Admin privileges are required t
 
    ![Example of selecting a tab type](img/tab-select-modal.png)
 
-6. Fill in the form. If no name is set, then the key will be used for translation (in your translation files, add the key under 'dossier.tabs')
+6. Fill in the form. If no name is set, then the key will be used for translation (in your translation files, add the key under 'dossier.tabs.{YOUR_TAB_KEY}')
 
    ![Example of configuring a tab](img/tab-config-modal.png)
 
@@ -94,7 +94,7 @@ This can occur for one of two reasons:
 
 ## Auto deploying case tabs
 
-Case tabs can be auto-deployed from a json file at startup. This is useful to keep the case tab configuration identical
+Case tabs can be auto-deployed from a JSON file at startup. This is useful to keep the case tab configuration identical
 across multiple environments. Case tabs are auto-deployed by scanning files on the classpath that end
 in `.case-tab.json`.
 
