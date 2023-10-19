@@ -4,10 +4,10 @@
 
 The following features were added:
 
-* **New feature1**
+* **Form.io forms targetKey property**
 
-  Description of the new feature goes here.
-  Also link to the page that explains the feature in greater detail.
+  Form.io forms in Valtimo now support a `targetKey` property. This property defines a location to which the submitted
+  form values should be stored.
 
 * **New feature2**
 
@@ -23,9 +23,9 @@ The following bugs were fixed:
 
   The uploading of DMN files through the endpoint `/v1/process/definition/deployment` has been fixed.
 
-* **Bug2**
+* **Error when uploading Form.io forms**
 
-  Description of what the issue was.
+  The uploading of Form.io forms in the form admin menu has been fixed. 
 
 ## Breaking changes
 
