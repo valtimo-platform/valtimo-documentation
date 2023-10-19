@@ -23,7 +23,7 @@ The following bugs were fixed:
 
   The uploading of DMN files through the endpoint `/v1/process/definition/deployment` has been fixed.
 
-* **Fix Form.io upload**
+* **Error when uploading Form.io forms**
 
   The uploading of Form.io forms in the form admin menu has been fixed. 
 
