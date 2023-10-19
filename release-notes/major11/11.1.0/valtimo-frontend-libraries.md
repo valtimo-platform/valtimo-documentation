@@ -21,9 +21,9 @@ The following features were added:
 
 The following bugs were fixed:
 
-* **Bug1**
+* **Search with no results breaking the case list**
 
-  Description of what the issue was.
+  When doing a search with no results on the case list, after resetting the search fields, the cases would not be clickable anymore. Same issue was happening when navigating to the second page of the list.
 
 * **Bug2**
 
