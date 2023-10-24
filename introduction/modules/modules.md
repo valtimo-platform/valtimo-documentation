@@ -143,6 +143,11 @@ linear progress to the user without communication each specific step between mil
 Notes make it easier to collaborate with users on a case. It offers the ability to attach messages to a case that can be
 read by other users.
 
+### Outbox
+
+The outbox module contains an implementation of the [transactional outbox
+pattern](https://microservices.io/patterns/data/transactional-outbox.html).
+
 ### Plugins
 
 Plugins are extensions on the Valtimo platform. These are often connections to external services, such as transactional

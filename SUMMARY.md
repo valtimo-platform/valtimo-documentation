@@ -40,6 +40,7 @@
       * [Mandrill](getting-started/modules/core/mandrill.md)
       * [Milestones](getting-started/modules/core/milestones.md)
       * [Plugins](getting-started/modules/core/plugin.md)
+      * [Outbox](getting-started/modules/core/outbox.md)
       * [Process document](getting-started/modules/core/process-document.md)
       * [Resource](getting-started/modules/core/resource.md)
       * [Temporary resource storage](getting-started/modules/core/temporary-resource-storage.md)
