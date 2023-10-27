@@ -8,6 +8,10 @@ The following features were added:
 
   IDs can be configured for menu items in the ValtimoConfig by adding the optional 'id' property. IDs have been added to buttons in the searchfields component.
 
+* **Added due date configuration to portaal taak plugin**
+
+  Added a field to configure the number of days for the task to expire on the 'Create Portaal taak' action of the portaaltaak plguin.
+
 ## Bugfixes
 
 The following bugs were fixed:
