@@ -1,5 +1,5 @@
 # Portaaltaak
-This plugin makes it possible for Valtimo to communicate and interact with a Portal task specification compliant ZGW component.
+This plugin makes it possible for Valtimo to communicate and interact with a Portaal taak specification compliant ZGW component.
 
 ## Dependencies
 

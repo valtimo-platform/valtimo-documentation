@@ -21,7 +21,7 @@ The following features were added:
 
 * **Portaaltaak process name change**
 
-  The name for the Portaaltaak system process which, can run when portal task is completed, has been changed to
+  The name for the Portaaltaak system process which, can run when portaal taak is completed, has been changed to
   `Process completed Portaaltaak`.
 
 * **New plugin action in the Documenten API to download documents**

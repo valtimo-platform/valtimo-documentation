@@ -4,9 +4,9 @@
 
 The following features were added:
 
-* **Add configuration component for 'Create Portal Task' plugin action**
+* **Add configuration component for 'Create Portaal Taak' plugin action**
 
-  When the Portal Task plugin is configured, the plugin action 'Create Portal Task' can now be linked to a BPMN user
+  When the Portaaltaak plugin is configured, the plugin action 'Create Portaal Taak' can now be linked to a BPMN user
   task on the process links page.
 
 * **Add configuration component for 'Create Zaak' plugin action**
