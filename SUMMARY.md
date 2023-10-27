@@ -163,6 +163,7 @@
 * [References](reference/reference.md)
   * [Modules](reference/modules/modules.md)
     * [Authorization](reference/modules/authorization.md)
+    * [CloudEvents](reference/modules/cloud-events.md)
     * [Dashboard](reference/modules/dashboard.md)
     * [Document](reference/modules/document.md)
     * [Form](reference/modules/form.md)
