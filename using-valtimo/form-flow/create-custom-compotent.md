@@ -12,7 +12,7 @@ data can be stored for use in form flow.
 
 The component needs to be registered in the angular application so that the form flow framework can use it. Registering
 is done by adding a reference to the component to the providers array in the angular application. The 
-`FORM_FLOW_COMPONENT_TOKEN` token can be provided with an array of component registrations. Each one contains an `id` 
+`FORM_FLOW_COMPONENT_TOKEN` injection token can be provided with an array of component registrations. Each one contains an `id` 
 that is used to reference the component from the form flow configuration, and the `component` property that contains 
 the component. The injection token `FORM_FLOW_COMPONENT_TOKEN` can be found in the `@valtimo/form-link` package.
 
