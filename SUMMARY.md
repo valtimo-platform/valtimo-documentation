@@ -93,7 +93,7 @@
     * [Configuring an Objecten API object form](using-valtimo/forms/configure-object-form.md)
   * [Form flow](using-valtimo/form-flow/form-flow.md)
     * [Creating a form flow definition](using-valtimo/form-flow/create-form-flow-definition.md)
-    * [Creating a custom form flow component](using-valtimo/form-flow/create-custom-compotent.md)
+    * [Creating a custom form flow component](using-valtimo/form-flow/create-custom-component.md)
   * [Form links](using-valtimo/form-link/form-link.md)
     * [How to refer to external data from a form](using-valtimo/form-link/using-form-field-data-resolvers.md)
     * [How to link a form to a task](using-valtimo/form-link/configure-task.md)
