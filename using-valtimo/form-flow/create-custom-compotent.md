@@ -5,7 +5,7 @@ custom front-end component.
 
 Any Angular component can be used as a step in a form flow. Handling the form needs to be done in the component
 as well. To submit the data for the step, and go to the next step a `POST` call needs to be done to the
-`/api/v1/form-flow/{formFlowId}/step/{stepInstanceId}` endpoint. By providing a json body for this request, submission 
+`/api/v1/form-flow/{formFlowId}/step/{stepInstanceId}` endpoint. By providing a JSON body for this request, submission 
 data can be stored for use in form flow. 
 
 ## Registering a custom component
