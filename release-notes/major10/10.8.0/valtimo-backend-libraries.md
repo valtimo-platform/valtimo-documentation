@@ -6,7 +6,7 @@ The following features were added:
 
 * **Added more information to portaal taak**
 
-- When creating a portaal taak is created through the portaaltaak plugin, a due date and a link to the related zaak
+- When a portaal taak is created through the portaaltaak plugin, a due date and a link to the related zaak
 is included in the object.
 
 * **New feature2**
