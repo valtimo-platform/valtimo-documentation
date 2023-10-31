@@ -1,6 +1,6 @@
 # Creating a custom form flow component
 
-Sometimes it isn't possible to capture the requirements for a form in Form.io. In cases like this you can create a 
+Sometimes it is not possible to capture the requirements for a form in Form.io. In cases like this you can create a 
 custom front-end component.
 
 Any Angular component can be used as a step in a form flow. Handling the form needs to be done in the component
