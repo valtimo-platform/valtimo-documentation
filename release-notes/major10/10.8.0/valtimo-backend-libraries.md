@@ -4,10 +4,10 @@
 
 The following features were added:
 
-* **New feature1**
+* **Added more information to portaal taak**
 
-  Description of the new feature goes here.
-  Also link to the page that explains the feature in greater detail.
+- When a portaal taak is created through the portaaltaak plugin, a due date and a link to the related zaak
+is included in the object.
 
 * **New feature2**
 

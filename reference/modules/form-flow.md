@@ -19,6 +19,21 @@ The `form` step type is used to associate a step with a specific form. The follo
     ...
 ```
 
+### Custom component
+
+The `custom-component` step type is used to associate a step with a custom-made front-end component. The following properties are supported:
+
+```json
+    ...
+      "type": {
+        "name": "custom-component",
+        "properties": {
+          "componentId": "String" //The key of the component in the front-end
+        }
+      }
+    ...
+```
+
 ## Available properties in SpEL context
 
 The following properties are available in a SpEL context:

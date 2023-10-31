@@ -87,7 +87,7 @@ A general description on how to create process links can be found [here](../../p
 
 ### Create Portaal taak
         
-The **Create portal task** action is linked to a user task that can be completed in an external system. A taak object is
+The **Create portal taak** action is linked to a user task that can be completed in an external system. A taak object is
 created when the task is reached, in the Objecten API as configured for the object management configuration referenced 
 in the plugin configuration.
 
@@ -111,9 +111,11 @@ For example 'bsn' can be used to identify a user where BSN is the key.
 - **Identification value.** Indicates which user is the recipient of the task. Required when choosing receiver type
 'Other'. For example when Identification key 'bsn' is used, the value could be '059861095' to indicate that is the BSN 
 of the user.
+- **Number of days for the task to expire.** The number of days from the creation time until the task expires. 
+This will only be used in the portaal taak. The BPMN due date needs to be configured separately.
 
 An example process link configuration:
-![Create portal task process link](img/configure-create-portaal-taak.png)
+![Create portaal taak process link](img/configure-create-portaal-taak.png)
 
 ### Complete Portaal taak
         
