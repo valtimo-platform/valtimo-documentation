@@ -10,7 +10,7 @@ The following features were added:
 
 * **Added due date configuration to portaal taak plugin**
 
-  Added a field to configure the number of days for the task to expire on the 'Create Portaal taak' action of the portaaltaak plguin.
+  Added a field to configure the number of days before the task expires on the 'Create Portaal taak' action of the portaaltaak plugin.
 
 ## Bugfixes
 
