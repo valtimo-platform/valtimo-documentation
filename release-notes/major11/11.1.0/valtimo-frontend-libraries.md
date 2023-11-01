@@ -25,9 +25,9 @@ The following bugs were fixed:
 
   When editing a form and navigating to a different page, a modal pops up asking for confirmation.
 
-* **Bug2**
+* **FormIO token refreshes only once**
 
-  Description of what the issue was.
+  When using the **valtimo-form-io** component from *@valtimo/components*, the local storage property *formioToken* gets updated every time the token refreshes after expiring.
 
 ## Breaking changes
 
