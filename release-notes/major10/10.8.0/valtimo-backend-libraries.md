@@ -4,11 +4,11 @@
 
 The following features were added:
 
-* **Added more information to portaal taak**
+* **Added properties to portaal taak**
 
-- When a portaal taak is created through the portaaltaak plugin, a due date and a link to the related zaak
-is included in the object.
-
+  When a portaal taak is created through the portaaltaak plugin, the 'verloopdatum' and 'zaak' properties are included in the object. 
+  - The 'verloopdatum' property is calculated based on the configured 'verloopDurationInDays'
+  - The 'zaak' property includes the full URL to the Zaak, if present
 
 ## Bugfixes
 
