@@ -27,7 +27,7 @@ The following bugs were fixed:
 
 * **FormIO token refreshes only once**
 
-  On FormIO token refresh, the localStorage gets updated with the new token.
+  When using the **valtimo-form-io** component from *@valtimo/components*, the local storage property *formioToken* gets updated every time the token refreshes after expiring.
 
 ## Breaking changes
 
