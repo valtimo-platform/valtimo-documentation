@@ -21,13 +21,11 @@ The following features were added:
 
 The following bugs were fixed:
 
-* **Bug1**
+* **Remove hardcoded Form.io app configuration**
 
-  Description of what the issue was.
-
-* **Bug2**
-
-  Description of what the issue was.
+  Previously the [app configuration](https://help.form.io/developers/introduction/application) supplied to Form.io
+  contained a hardcoded URL to the development environment. This has been corrected. The Form.io instance running in
+  Valtimo now uses the URL and the API URL of the environment it is running in.
 
 ## Breaking changes
 
