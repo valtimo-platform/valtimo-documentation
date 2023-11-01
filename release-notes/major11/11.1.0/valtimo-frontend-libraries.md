@@ -25,9 +25,9 @@ The following bugs were fixed:
 
   When editing a form and navigating to a different page, a modal pops up asking for confirmation.
 
-* **Bug2**
+* **FormIO token refreshes only once**
 
-  Description of what the issue was.
+  On FormIO token refresh, the localStorage gets updated with the new token.
 
 ## Breaking changes
 
