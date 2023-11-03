@@ -17,4 +17,5 @@ code.
 * [Tabs](tabs/tabs.md)
 * [Integrating spring beans in a process](integrate-spring-bean-in-process.md)
 * [Creating a custom dashboard](creating-a-custom-dashboard.md)
+* [Creating a custom value resolver](value-resolver/creating-value-resolver.md)
 * [Making Valtimo multi instance ready](multi-instance-ready.md)
