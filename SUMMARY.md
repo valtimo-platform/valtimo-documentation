@@ -65,7 +65,7 @@
       * [Objecttypen API](getting-started/modules/zgw/objecttypen-api.md)
       * [OpenZaak](getting-started/modules/zgw/openzaak.md)
       * [OpenZaak resource](getting-started/modules/zgw/openzaak-resource.md)
-      * [Portaal taak](getting-started/modules/zgw/portaaltaak.md)
+      * [Portaaltaak](getting-started/modules/zgw/portaaltaak.md)
       * [SmartDocuments](getting-started/modules/zgw/smartdocuments.md)
       * [Valtimo GZAC dependencies](getting-started/modules/zgw/valtimo-gzac-dependencies.md)
       * [Verzoek](getting-started/modules/zgw/verzoek.md)
@@ -100,6 +100,7 @@
     * [Configuring an Objecten API object form](using-valtimo/forms/configure-object-form.md)
   * [Form flow](using-valtimo/form-flow/form-flow.md)
     * [Creating a form flow definition](using-valtimo/form-flow/create-form-flow-definition.md)
+    * [Creating a custom form flow component](using-valtimo/form-flow/create-custom-component.md)
   * [Form links](using-valtimo/form-link/form-link.md)
     * [How to refer to external data from a form](using-valtimo/form-link/using-form-field-data-resolvers.md)
     * [How to link a form to a task](using-valtimo/form-link/configure-task.md)
@@ -113,7 +114,7 @@
     * [Object Token Auhentication Plugin](using-valtimo/plugin/object-token-authentication/configure-object-token-authentication-plugin.md)
     * [Objecten API Plugin](using-valtimo/plugin/objecten-api/configure-objecten-api-plugin.md)
     * [Objecttypen API Plugin](using-valtimo/plugin/objecttypen-api/configure-objecttypen-api-plugin.md)
-    * [Portaal taak Plugin](using-valtimo/plugin/portaaltaak/configure-portaaltaak-plugin.md)
+    * [Portaaltaak Plugin](using-valtimo/plugin/portaaltaak/configure-portaaltaak-plugin.md)
     * [Exact Plugin](using-valtimo/plugin/exact/configure-exact-plugin.md)
     * [Verzoek Plugin](using-valtimo/plugin/verzoek/configure-verzoek-plugin.md)
     * [Besluiten Plugin](using-valtimo/plugin/besluiten-api/configure-besluiten-api-plugin.md)
@@ -185,6 +186,9 @@
       * [Valtimo frontend libraries](release-notes/major11/11.0.0/valtimo-frontend-libraries.md)
       * [Migration](release-notes/major11/11.0.0/migration.md)
   * 10.x.x
+    * 10.8.0
+      * [Valtimo backend libraries](release-notes/major10/10.8.0/valtimo-backend-libraries.md)
+      * [Valtimo frontend libraries](release-notes/major10/10.8.0/valtimo-frontend-libraries.md)
     * 10.7.0
       * [Valtimo backend libraries](release-notes/major10/10.7.0/valtimo-backend-libraries.md)
       * [Valtimo frontend libraries](release-notes/major10/10.7.0/valtimo-frontend-libraries.md)
