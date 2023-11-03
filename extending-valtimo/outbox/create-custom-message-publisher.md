@@ -50,6 +50,7 @@ The custom message publisher should be configured as a Bean in the Spring applic
 
 ```kotlin
 @Configuration
+@ConditionalOnOutboxEnabled // This will disable the bean creation when `valtimo.outbox.enabled` is set to false
 class CustomMessagePublisherAutoconfiguration {
 
     @Bean
