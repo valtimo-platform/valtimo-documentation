@@ -19,7 +19,7 @@ dependency. The following can be added to your project, depending on whether Mav
 ```
 
 #### Gradle dependency:
-```json
+```groovy
 dependencies {
   implementation "com.ritense.valtimo:document-generation:${valtimo_version}"
 }

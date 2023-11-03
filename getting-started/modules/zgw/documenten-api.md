@@ -19,7 +19,7 @@ following can be added to your project, depending on whether Maven or Gradle is 
 ```
 
 #### Gradle dependency:
-```json
+```groovy
 dependencies {
   implementation "com.ritense.valtimo:documenten-api:${valtimo_version}"
 }

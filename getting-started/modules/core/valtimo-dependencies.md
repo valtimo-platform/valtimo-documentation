@@ -31,7 +31,7 @@ whether Maven or Gradle is used:
 ```
 
 #### Gradle dependency:
-```json
+```groovy
 dependencies {
   implementation platform("com.ritense.valtimo:valtimo-dependencies:${valtimo_version}")
 }

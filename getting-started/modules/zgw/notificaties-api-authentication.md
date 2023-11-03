@@ -20,7 +20,7 @@ or Gradle is used:
 ```
 
 #### Gradle dependency:
-```json
+```groovy
 dependencies {
   implementation "com.ritense.valtimo:notificaties-api-authentication:${valtimo_version}"
 }

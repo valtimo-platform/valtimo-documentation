@@ -20,7 +20,7 @@ However, if more control is needed the following can be added to your project:
 ```
 
 #### Gradle dependency:
-```json
+```groovy
 dependencies {
   implementation "com.ritense.valtimo:authorization:${valtimo_version}"
 }
