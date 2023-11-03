@@ -9,12 +9,6 @@ The following features were added:
   Form.io forms in Valtimo now support a `targetKey` property. This property defines a location to which the submitted
   form values should be stored.
 
-* **New feature2**
-
-  Description of the new feature goes here.
-  Also link to the page that explains the feature in greater detail.
-
-
 ## Bugfixes
 
 The following bugs were fixed:
