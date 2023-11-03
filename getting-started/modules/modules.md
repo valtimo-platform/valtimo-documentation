@@ -9,6 +9,7 @@
   * [Form link](core/form-link.md)
   * [Milestones](core/milestones.md)
   * [Plugins](core/plugin.md)
+  * [Outbox](core/outbox.md)
   * [Process document](core/process-document.md)
   * [Resource](core/resource.md)
   * [Temporary resource storage](core/temporary-resource-storage.md)

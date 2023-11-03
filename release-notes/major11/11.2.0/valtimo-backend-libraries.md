@@ -4,16 +4,19 @@
 
 The following features were added:
 
-* **New feature1**
+* **Transactional outbox**
 
-  Description of the new feature goes here.
-  Also link to the page that explains the feature in greater detail.
+  Valtimo now supports an implementation of
+  the [transactional outbox pattern](https://microservices.io/patterns/data/transactional-outbox.html). See
+  [this page](/getting-started/modules/core/outbox.md) for more information.
 
-* **New feature2**
+* **Added Audit CloudEvents**
 
-  Description of the new feature goes here.
-  Also link to the page that explains the feature in greater detail.
-
+  Several CloudEvents have been added for auditing purposes. These events are:
+  - DocumentCreated
+  - DocumentUpdated
+  - DocumentViewed
+  - TaskCompleted
 
 ## Bugfixes
 
