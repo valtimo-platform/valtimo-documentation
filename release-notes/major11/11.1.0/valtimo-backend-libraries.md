@@ -15,7 +15,7 @@ The following bugs were fixed:
 
 * **Fix DMN upload**
 
-  The uploading of DMN files through the endpoint `/v1/process/definition/deployment` has been fixed.
+  The `/v1/process/definition/deployment` endpoint only accepted uploaded files with the .bpmn extension, causing DMN uploads to fail.
 
 * **Error when uploading Form.io forms**
 

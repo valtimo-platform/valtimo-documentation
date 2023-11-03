@@ -35,7 +35,6 @@ The following bugs were fixed:
 
   When using the **valtimo-form-io** component from *@valtimo/components*, the local storage property *formioToken* gets updated every time the token refreshes after expiring.
 
-
 ## Breaking changes
 
 No breaking changes.
