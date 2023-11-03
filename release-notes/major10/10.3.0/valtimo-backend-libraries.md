@@ -7,7 +7,7 @@ The following features were added:
 * **Added Portaaltaak plugin**
 
   This plugin makes it possible for Valtimo to communicate and interact
-  with a Portaal taak specification compliant ZGW component.
+  with a Portaaltaak specification compliant ZGW component.
 
 * **Valtimo dependencies**
 

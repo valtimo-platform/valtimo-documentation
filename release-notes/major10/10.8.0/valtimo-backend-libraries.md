@@ -4,11 +4,11 @@
 
 The following features were added:
 
-* **Added more information to portaal taak**
+* **Added properties to portaaltaak**
 
-- When a portaal taak is created through the portaaltaak plugin, a due date and a link to the related zaak
-is included in the object.
-
+  When a portaaltaak is created through the portaaltaak plugin, the 'verloopdatum' and 'zaak' properties are included in the object. 
+  - The 'verloopdatum' property is calculated based on the configured 'verloopDurationInDays'
+  - The 'zaak' property includes the full URL to the Zaak, if present
 
 ## Bugfixes
 
@@ -16,9 +16,7 @@ The following bugs were fixed:
 
 * **Task candidate users list was incomplete**
 
-  The list of assignees for a user task is no longer incomplete. The bug happened when the user task was configured to
-  have more than one role in the candidate groups. The list of assignees would only contain users for the first role in
-  the candidate groups.
+  The candidate-user list of a user task was incomplete for tasks with multiple candidate groups. In this case, the candidate-user list would only contain users based on the first candidate group.
 
 ## Breaking changes
 

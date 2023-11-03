@@ -6,11 +6,13 @@ The following features were added:
 
 * **IDs added to menu items and search field buttons**
 
-  IDs can be configured for menu items in the ValtimoConfig by adding the optional 'id' property. IDs have been added to buttons in the searchfields component.
+  - The menu item configuration in the Angular environment file now supports an optional 'id' property. When configured, the 'id' property is added to the HTML element.
+  - 'id' attributes have been added to the 'clear' and 'search' buttons on the case list page.
 
-* **Added due date configuration to portaal taak plugin**
+* **Added due date configuration to portaaltaak plugin**
 
-  Added a field to configure the number of days before the task expires on the 'Create Portaal taak' action of the portaaltaak plugin.
+  The 'Create Portaaltaak' action of the Portaaltaak plugin now supports the optional 'verloopDurationInDays' field. 
+  When this field has been configured, the 'verloopdatum' property of the task object contains the calculated due date. 
 
 ## Bugfixes
 
