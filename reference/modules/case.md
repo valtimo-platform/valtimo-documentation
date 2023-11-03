@@ -25,7 +25,7 @@ The following case types are supported by Valtimo.
 
 ### Default case tabs
 
-By default, each case is given the following standard tabs:
+By default, each new case is given the following standard tabs:
 - Summary
 - Progress
 - Audit
