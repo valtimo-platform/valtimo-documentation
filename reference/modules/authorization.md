@@ -12,6 +12,7 @@ The access to the following resources is limited by Valtimo access control.
 | **[Note](#note)**                               | `com.ritense.note.domain.Note`                                         | Notes    |
 | **[Task](#task)**                               | `com.ritense.valtimo.camunda.domain.CamundaTask`                       | Core     |
 | **[Task identity link](#task)**                 | `com.ritense.valtimo.camunda.domain.CamundaIdentityLink`               | Core     |
+| **[Case tab](#case)**                           | `com.ritense.case.domain.CaseTab`                                      | CaseTab  |
 
 
 ### Document
@@ -112,6 +113,19 @@ No relations are supported for this type.
 | Related resource |
 |------------------|
 | **Document**     |
+
+### Case
+
+#### Supported actions
+
+| Action         | key           | Description                    |
+|----------------|:--------------|:-------------------------------|
+| **View**       | `view`        | Allows viewing tabs of a case. |
+
+
+#### Supported relations
+
+No relations are supported for this type.
 
 ## Supported conditions
 The following conditions can be used with their respective structures:
