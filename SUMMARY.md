@@ -41,7 +41,7 @@
       * [Milestones](getting-started/modules/core/milestones.md)
       * [Plugins](getting-started/modules/core/plugin.md)
       * [Outbox](getting-started/modules/core/outbox.md)
-      * [Outbox RabbitMQ](getting-started/modules/core/outbox-rabbitmq.md)
+        * [Outbox RabbitMQ](getting-started/modules/core/outbox-rabbitmq.md)
       * [Process document](getting-started/modules/core/process-document.md)
       * [Resource](getting-started/modules/core/resource.md)
       * [Temporary resource storage](getting-started/modules/core/temporary-resource-storage.md)
