@@ -48,5 +48,5 @@ valtimo:
     publisher:
       rabbitmq:
         routingKey: valtimo-audit # change to queue name or routing key
-        delivery-timeout: "PT0.5S"
+        delivery-timeout: "PT0.5S" # ISO 8601 duration format
 ```
