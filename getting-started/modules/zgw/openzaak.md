@@ -19,7 +19,7 @@ The following can be added to your project, depending on whether Maven or Gradle
 ```
 
 #### Gradle dependency:
-```json
+```groovy
 dependencies {
   implementation "com.ritense.valtimo:openzaak:${valtimo_version}"
 }
@@ -56,7 +56,7 @@ For this, the following needs to be added to your project:
 ```
 
 #### Gradle dependency:
-```json
+```groovy
 dependencies {
   implementation "com.ritense.valtimo:documenten-api:$valtimoVersion"
   implementation "com.ritense.valtimo:zaken-api:$valtimoVersion"

@@ -19,7 +19,7 @@ added as a dependency. The following can be added to your project, depending on 
 ```
 
 #### Gradle dependency:
-```json
+```groovy
 dependencies {
   implementation "com.ritense.valtimo:local-mail:${valtimo_version}"
 }

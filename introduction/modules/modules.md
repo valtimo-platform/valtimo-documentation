@@ -145,8 +145,11 @@ read by other users.
 
 ### Outbox
 
-The outbox module contains an implementation of the [transactional outbox
+The `outbox` module contains an implementation of the [transactional outbox
 pattern](https://microservices.io/patterns/data/transactional-outbox.html).
+
+### Outbox RabbitMQ
+The `outbox-rabbitmq` module adds support for publishing `outbox` messages to RabbitMQ ([AMQP 0.9.1](https://www.rabbitmq.com/protocol.html).
 
 ### Plugins
 

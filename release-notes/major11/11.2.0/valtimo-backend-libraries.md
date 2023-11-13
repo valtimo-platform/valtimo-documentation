@@ -18,6 +18,10 @@ The following features were added:
   - DocumentViewed
   - TaskCompleted
 
+* **Added Outbox message publisher for RabbitMQ**
+
+  A RabbitMQ (AMQP 0.9.1) message publisher has been in the `outbox-rabbitmq` module. More information can be found [here](/getting-started/modules/core/outbox-rabbitmq.md)  
+
 ## Bugfixes
 
 The following bugs were fixed:

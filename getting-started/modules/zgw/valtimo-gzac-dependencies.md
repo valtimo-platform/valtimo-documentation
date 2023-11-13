@@ -31,7 +31,7 @@ dependencies](../core/valtimo-dependencies.md). The following can be added to yo
 ```
 
 #### Gradle dependency:
-```json
+```groovy
 dependencies {
   implementation platform("com.ritense.valtimo:valtimo-gzac-dependencies:$valtimo_version")
 }
