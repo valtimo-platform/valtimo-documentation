@@ -32,7 +32,7 @@ dependencies {
 
 ## Configuration
 
-In order to use this module, the following configuration properties need to be added to the application properties. Please adjust values to match the environment:
+The outbox can be configured to better match the environment:
 
 #### **`application.yml`**
 ```yaml
