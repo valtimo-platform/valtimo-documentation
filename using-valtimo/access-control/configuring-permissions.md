@@ -111,7 +111,7 @@ document.
 
 ### Create case permissions
 
-The following example demonstrates how to allow any user with `ROLE_USER` to create a case of type 'leningen'. When 
+The following example demonstrates how to allow any user with `ROLE_USER` to create a case of type `leningen`. When 
 trying to create a case, the case itself does not yet exist. So in order for conditions  to be evaluated, they have to be
 defined based on the relation between the two resources,`JsonSchemaDocument` and `JsonSchemaDocumentDefinition`.
 
