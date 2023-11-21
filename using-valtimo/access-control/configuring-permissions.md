@@ -86,7 +86,7 @@ Deleting permissions will also delete the accompanying role. Deleting roles will
 In the example below, the `contains` operator is used to check if a specific flower is present inside the
 JsonSchemaDocument. Where the JsonSchemaDocument content could look like this: `{"flowers": ["lily", "rose", "daisy"]}`.
 
-If the flower 'rose' is present in the JsonSchemaDocument, any user with the role 'ROLE_USER' will be able to view that
+If the flower 'rose' is present in the JsonSchemaDocument, any user with the role `ROLE_USER` will be able to view that
 document.
 
 ```json
@@ -103,6 +103,36 @@ document.
                 "operator": "contains",
                 "value": "rose",
                 "clazz": "java.util.Collection"
+            }
+        ]
+    }
+]
+```
+
+### Create case permissions
+
+The following example demonstrates how to allow any user with `ROLE_USER` to create a case of type 'leningen'. When 
+trying to create a case, the case itself does not yet exist. So in order for conditions  to be evaluated, they have to be
+defined based on the relation between the two resources,`JsonSchemaDocument` and `JsonSchemaDocumentDefinition`.
+
+```json
+[
+    {
+        "resourceType": "com.ritense.document.domain.impl.JsonSchemaDocument",
+        "action": "create",
+        "roleKey": "ROLE_USER",
+        "conditions": [
+            {
+                "type": "container",
+                "resourceType": "com.ritense.document.domain.impl.JsonSchemaDocumentDefinition",
+                "conditions": [
+                    {
+                        "type": "field",
+                        "field": "id.name",
+                        "operator": "==",
+                        "value": "leningen"
+                    }
+                ]
             }
         ]
     }

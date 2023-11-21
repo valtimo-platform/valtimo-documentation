@@ -13,6 +13,7 @@ The following features were added:
 * **Policy Based Access Control**
   
   Implemented PBAC frontend integration for the following features:
+  - Creating a Case
   - Assigning an user to a Case
   - Claiming a Case
   - Adding a Case Note
