@@ -22,6 +22,11 @@ The following features were added:
 
   A RabbitMQ (AMQP 0.9.1) message publisher has been in the `outbox-rabbitmq` module. More information can be found [here](/getting-started/modules/core/outbox-rabbitmq.md)  
 
+* **Added option for custom process variable name to download document plugin action in documentAPI**
+
+  Added option for custom process variable name to download document plugin action in documentAPI so you have the option to choose a custom process variable name.
+  When left empty the default name is: "resourceId"
+
 ## Bugfixes
 
 The following bugs were fixed:

@@ -78,4 +78,4 @@ This process link does the following steps:
 
 1. Take the document URL that is saved in the process variable `documentUrl`.
 2. Download the document and saves it to a temporary file.
-3. Creates a new process variable `resourceId` containing the temporary file ID.
+3. Creates a new process variable with the name of your choosing, by default: `resourceId`, containing the temporary file ID.
