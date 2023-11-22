@@ -4,15 +4,15 @@
 
 The following features were added:
 
-* **New feature1**
+* **Added option for custom process variable name to download document plugin action in documentAPI**
 
-  Description of the new feature goes here.
-  Also link to the page that expains the feature in greater detail.
+  Added option for custom process variable name to download document plugin action in documentAPI so you have the option to choose a custom process variable name.
+  When left empty the default name is: "resourceId"
 
 * **New feature2**
 
   Description of the new feature goes here.
-  Also link to the page that expains the feature in greater detail.
+  Also link to the page that explains the feature in greater detail.
 
 
 ## Bugfixes
