@@ -3,7 +3,7 @@
 ## Available resources
 The access to the following resources is limited by Valtimo access control.
 
-| Resource name                                   | Class name                                                             | Module   |
+| Resource name                                   | Resource type                                                          | Module   |
 |-------------------------------------------------|:-----------------------------------------------------------------------|:---------|
 | **[Document](#document)**                       | `com.ritense.document.domain.impl.JsonSchemaDocument`                  | Document |
 | **[Document definition](#document-definition)** | `com.ritense.document.domain.impl.JsonSchemaDocumentDefinition`        | Document |
@@ -11,14 +11,13 @@ The access to the following resources is limited by Valtimo access control.
 | **[Search field](#search-field)**               | `com.ritense.document.domain.impl.searchfield.SearchField`             | Document |
 | **[Note](#note)**                               | `com.ritense.note.domain.Note`                                         | Notes    |
 | **[Task](#task)**                               | `com.ritense.valtimo.camunda.domain.CamundaTask`                       | Core     |
-| **[Task identity link](#task)**                 | `com.ritense.valtimo.camunda.domain.CamundaIdentityLink`               | Core     |
-| **[Case tab](#case)**                           | `com.ritense.case.domain.CaseTab`                                      | CaseTab  |
-
+| **[Task identity link](#task-identity-link)**   | `com.ritense.valtimo.camunda.domain.CamundaIdentityLink`               | Core     |
+| **[Case tab](#case-tab)**                       | `com.ritense.case.domain.CaseTab`                                      | CaseTab  |
 
 ### Document
+Resource type: `com.ritense.document.domain.impl.JsonSchemaDocument`
 
 #### Supported actions
-
 | Action         | key           | Description                                                                 |
 |----------------|:--------------|:----------------------------------------------------------------------------|
 | **View**       | `view`        | Allows reading of documents and their data.                                 |
@@ -30,15 +29,13 @@ The access to the following resources is limited by Valtimo access control.
 | **Assign**     | `assign`      | Allows assigning a case handler of both the current and other users.        |
 | **Assignable** | `assignable`  | Allows users with permissions for this action to be assigned to a document. |
 
-
 #### Supported relations
-
 No relations are supported for this type.
 
 ### Document definition
+Resource type: `com.ritense.document.domain.impl.JsonSchemaDocumentDefinition`
 
 #### Supported actions
-
 | Action        | key         | Description                                     |
 |---------------|:------------|:------------------------------------------------|
 | **View**      | `view`      | Allows reading of documents definitions         |
@@ -47,41 +44,36 @@ No relations are supported for this type.
 | **Modify**    | `modify`    | Allows modification of document definitions     |
 | **Delete**    | `delete`    | Allows deletion of document definitions         |
 
-
 #### Supported relations
 
 No relations are supported for this type
 
 ### Document snapshot
-
+Resource type: `com.ritense.document.domain.impl.snapshot.JsonSchemaDocumentSnapshot`
 #### Supported actions
-
 | Action         | key           | Description                                         |
 |----------------|:--------------|:----------------------------------------------------|
 | **View**       | `view`        | Allows reading of document snapshots and their data |
 | **View list**  | `view_list`   | Allows retrieving lists of document snapshots       |
 
 #### Supported relations
-
 No relations are supported for this type
 
 ### Search field
+Resource type: `com.ritense.document.domain.impl.searchfield.SearchField`
 
 #### Supported actions
-
 | Action        | key         | Description                                               |
 |---------------|:------------|:----------------------------------------------------------|
 | **View list** | `view_list` | Allows use of search fields when searching for documents. |
 
-
 #### Supported relations
-
 No relations are supported for this type.
 
 ### Note
+Resource type: `com.ritense.note.domain.Note`
 
 #### Supported actions
-
 | Action         | key         | Description                       |
 |----------------|:------------|:----------------------------------|
 | **View list**  | `view_list` | Allows retrieving lists of notes. |
@@ -90,15 +82,14 @@ No relations are supported for this type.
 | **Delete**     | `delete`    | Allows deletion of notes.         |
 
 #### Supported relations
-
-| Related resource |
-|------------------|
-| **Document**     |
+| Related resource          |
+|---------------------------|
+| **[Document](#document)** |
 
 ### Task
+Resource type: `com.ritense.valtimo.camunda.domain.CamundaTask`
 
 #### Supported actions
-
 | Action         | key          | Description                                                              |
 |----------------|:-------------|:-------------------------------------------------------------------------|
 | **View**       | `view`       | Allows viewing tasks.                                                    |
@@ -109,22 +100,26 @@ No relations are supported for this type.
 | **Complete**   | `complete`   | Allows users to complete the task.                                       |
 
 #### Supported relations
+| Related resource                              |
+|-----------------------------------------------|
+| **[Document](#document)**                     |
+| **[Task identity link](#task-identity-link)** |
 
-| Related resource |
-|------------------|
-| **Document**     |
-
-### Case
+### Task identity link
+Resource type: `com.ritense.valtimo.camunda.domain.CamundaIdentityLink`
 
 #### Supported actions
+No actions are supported for this type.
 
+### Case tab
+Resource type: `com.ritense.case.domain.CaseTab`
+
+#### Supported actions
 | Action         | key           | Description                    |
 |----------------|:--------------|:-------------------------------|
 | **View**       | `view`        | Allows viewing tabs of a case. |
 
-
 #### Supported relations
-
 No relations are supported for this type.
 
 ## Supported conditions
