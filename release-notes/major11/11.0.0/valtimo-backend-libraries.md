@@ -56,6 +56,7 @@ The following bugs were fixed:
 The following breaking changes were introduced:
 
 * **Removed REST endpoints**
+
   Several endpoints were meant for public use. By default, Valtimo should not offer any public endpoints,
   and as a result these have been removed. This is the list of removed endpoints:
   * `/api/v1/public/process/definition/{processDefinitionKey}/start-form`
@@ -68,16 +69,19 @@ The following breaking changes were introduced:
     * Has been replaced by `GET /api/management/v1/document-definition`
 
 * **Removed classes**
+
   Several classes have been removed in favor of PBAC policies:
   * JsonSchemaDocumentDefintionRole
   * JsonSchemaDocumentDefintionRoleId
 
 * **Spring bean whitelisting for Camunda**
+
   Spring beans that are used inside Camunda BPMN's and DMN's must now be whitelisted before they can be used. This can
   be done using the `@ProcessBean` annotation. More
   information [here](/extending-valtimo/process/whitelist-spring-bean.md).
 
 * **Property 'valtimo.jwt.secret' renamed**
+
   The application property `valtimo.jwt.secret` has been renamed to `valtimo.oauth.public-key`. To better describe what
   this property is used for.
 
@@ -85,6 +89,7 @@ The following breaking changes were introduced:
   to `VALTIMO_OAUTH_PUBLIC_KEY`.
 
 * **Property 'valtimo.jwt.tokenValidityInSeconds' renamed**
+
   The application property `valtimo.jwt.tokenValidityInSeconds` has been renamed
   to `valtimo.oauth.tokenValidityInSeconds`. To better describe what this property is used for.
 
@@ -101,6 +106,7 @@ The following breaking changes were introduced:
   `valtimo.annotation-scan.accepted-packages: test.package1, test.package2`
 
 * **Deleted 'Authority' entities**
+
   Valtimo has switched to a new policy based access control system. As a consequence, the old authorities have been
   removed. The following entities can no longer be used:
   - Database table: 'jhi_authority'
@@ -109,21 +115,29 @@ The following breaking changes were introduced:
   - Domain: Authority, AuthorityRequest, Money
 
 * **Deleted 'Context' entities**
+
   Valtimo no longer supports 'contexts'. The following entities can no longer be used:
   - Database table: 'context_processes', 'context_roles', 'menu_item', 'context'
   - Spring beans: ContextResource, ContextService, ContextRepository, UserContextRepository
   - Domain: UserContextDTO, Context, ContextProcess, MenuItem, UserContext
 
 * **Moved Verzoek plugin property `objectManagementId`**
+
   For the Verzoek plugin configuration, the property `objectManagementId` has been moved to a deeper level. This change
   can break any auto-deployment field that contains a Verzoek plugin.
 
 * **Deleted method from ProcessLinkService**
+
   `ProcessLinkService.getProcessLinks(activityId, activityType, processLinkType)` was only used for testing.
 
 * **Renamed methods on CamundaTaskService**
+
   `CamundaTaskService.completeTaskWithoutFormData(taskId)` -> `CamundaTaskService.complete(taskId)`
   `CamundaTaskService.completeTask(taskId)` -> `CamundaTaskService.completeTaskWithFormData(taskId)`
+
+* **Return type changed for CamundaTaskService.findTaskById()** 
+
+  `org.camunda.bpm.engine.task.Task` -> `com.ritense.valtimo.camunda.domain.CamundaTask`
 
 Instructions on how to migrate to this version of Valtimo can be found [here](migration.md).
 
