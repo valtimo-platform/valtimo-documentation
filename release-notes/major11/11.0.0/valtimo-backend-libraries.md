@@ -121,6 +121,9 @@ The following breaking changes were introduced:
 * **Deleted method from ProcessLinkService**
   `ProcessLinkService.getProcessLinks(activityId, activityType, processLinkType)` was only used for testing.
 
+* **Renamed methods on CamundaTaskService**
+  `CamundaTaskService.completeTaskWithoutFormData(taskId)` -> `CamundaTaskService.complete(taskId)`
+  `CamundaTaskService.completeTask(taskId)` -> `CamundaTaskService.completeTaskWithFormData(taskId)`
 
 Instructions on how to migrate to this version of Valtimo can be found [here](migration.md).
 
