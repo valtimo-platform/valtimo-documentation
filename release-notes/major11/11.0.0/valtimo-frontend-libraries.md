@@ -65,6 +65,11 @@ The following bugs were fixed:
 
   Sometimes when a task was opened, it showed the wrong assignee.
 
+* **Forms upload and download**
+
+  The form upload now works again with newly downloaded forms. When downloading a form, it will now only download the
+  Form IO content without metadata fields.
+
 ## Breaking changes
 
 The following breaking changes were introduced:
