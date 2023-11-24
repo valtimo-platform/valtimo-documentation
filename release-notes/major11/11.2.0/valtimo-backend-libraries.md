@@ -12,11 +12,8 @@ The following features were added:
 
 * **Added Audit CloudEvents**
 
-  Several CloudEvents have been added for auditing purposes. These events are:
-  - DocumentCreated
-  - DocumentUpdated
-  - DocumentViewed
-  - TaskCompleted
+  Several CloudEvents have been added for auditing purposes. For an overview of available cloud events, refer to
+  [this page](/reference/modules/cloud-events.md)
 
 * **Added Outbox message publisher for RabbitMQ**
 
