@@ -30,5 +30,5 @@ This table shows all available CloudEvents in Valtimo.
 | **ObjectDeleted**                      | N/A                                                         |
 | **NoteCreated**                        | `com.ritense.document.domain.Note`                          |
 | **NoteUpdated**                        | `com.ritense.document.domain.Note`                          |
-| **NoteDeleted**                        | N/A                                                         |
+| **NoteDeleted**                        | `com.ritense.document.domain.Note`                          |
 | **NotesListed**                        | `List<com.ritense.document.domain.Note>`                    |
