@@ -12,8 +12,8 @@ The following features were added:
 
 * **Added Audit CloudEvents**
 
-  Several CloudEvents have been added for auditing purposes. For an overview of available cloud events, refer to
-  [this page](/reference/modules/cloud-events.md)
+  Several outbox events have been added for auditing purposes. For an overview of the available events, refer to
+  [this page](/reference/modules/outbox.md)
 
 * **Added Outbox message publisher for RabbitMQ**
 

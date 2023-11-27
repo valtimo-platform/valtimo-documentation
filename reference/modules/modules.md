@@ -3,7 +3,7 @@
 The following section describes the various modules that are applicable for Valtimo:
 
 * [Authorization](authorization.md)
-* [CloudEvents](cloud-events.md)
+* [Outbox](outbox.md)
 * [Dashboard](dashboard.md)
 * [Documents](document.md)
 * [Form](form.md)
