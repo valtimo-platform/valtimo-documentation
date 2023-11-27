@@ -20,7 +20,7 @@ See [here](../../getting-started/modules/core/plugin.md) for instructions on how
 
 ![Configuring a plugin](img/configure-plugin.png)
 
-## Autodeployment
+## Auto-deployment
 Plugin configurations can also be deployed when starting the application.
 
 This can be done by creating one or more files anywhere on the classpath (resource folder) matching the following pattern: 
@@ -35,7 +35,7 @@ An example configuration can be found below:
     "pluginDefinitionKey": "example",
     "properties": {
       "someProperty": "value",
-      "someSecret": "${SOME_ENV_VALUE}"
+      "someSecret": "${SOME_VALUE}"
     }
   },
   {
@@ -44,8 +44,11 @@ An example configuration can be found below:
 ]
 ```
 
-The id (UUID) of the plugin should be generated manually. The same id's should be used when referencing configurations at the [plugin processlink autodeployment](../process-link/create-process-link.md#configuration-by-autodeployment).
+The id (UUID) of the plugin should be generated manually. The same id's should be used when referencing configurations
+at the [plugin processlink autodeployment](../process-link/create-process-link.md#configuration-by-autodeployment).
 
-The available properties can be found in the documentation of the plugin. 
+The available properties can be found in the documentation of the plugin.
 
-Values within the `properties` attribute can be resolved from the ENV (`System.getEnv()`) by using the `${SOME_ENV_VALUE}` syntax.
+Values within the `properties` attribute can be resolved by using the `${SOME_VALUE}` syntax. The `SOME_VALUE` is then
+retrieved from an environment variable. If no environment variable with that name is found, the variable is retrieved
+from a Java system property. 

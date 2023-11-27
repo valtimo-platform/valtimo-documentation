@@ -1,5 +1,6 @@
 # Case
 
-This section contains information on how to configure a Case in Valtimo.
+This section contains instructions on how to configure a case.
 
-- [Creating case settings](creating-case-settings.md)
+- [Create case settings](creating-case-settings.md)
+- [Case tabs](case-tabs.md)

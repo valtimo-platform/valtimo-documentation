@@ -9,6 +9,7 @@ the box. These are:
 - `com.ritense.note.domain.Note`
 - `com.ritense.valtimo.camunda.domain.CamundaTask`
 - `com.ritense.valtimo.camunda.domain.CamundaIdentityLink`
+- `com.ritense.case.domain.CaseTab`
 
 The authorization module allows developers to register their own resources, which allows said resources to be used when
 configuring permissions.
