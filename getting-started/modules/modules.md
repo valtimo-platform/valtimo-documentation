@@ -26,4 +26,4 @@
   * [Smart documents](zgw/smartdocuments.md)
   * [Verzoek](zgw/verzoek.md)
   * [Zaken API](zgw/zaken-api.md)
-  * [Portal task](zgw/portaaltaak.md)
+  * [Portaaltaak](zgw/portaaltaak.md)
