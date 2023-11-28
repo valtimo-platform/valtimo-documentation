@@ -33,7 +33,7 @@ found [here](https://www.keycloak.org/docs/latest/securing_apps/#_java_adapter_c
 ## Client roles
 
 By default, Valtimo uses Keycloak _realm_ roles. But Valtimo can be configured to also use the Keycloak _client_ roles.
-To make use of Keycloak client roles, the following property is needed:
+To make use of Keycloak client roles together with the realm roles, the following property is needed:
 
 ```yaml
 valtimo:
