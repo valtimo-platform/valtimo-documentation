@@ -4,20 +4,26 @@
 
 The following features were added:
 
+* **Export case definitions**
+
+  Case definitions can now be exported as an archive, containing all process definitions, forms, form flows,
+  process links and the document definition that make up the case definition. See 
+  [this page](/using-valtimo/case/exporting-case-definitions.md) for more information.
+
 * **Transactional outbox**
 
   Valtimo now supports an implementation of
   the [transactional outbox pattern](https://microservices.io/patterns/data/transactional-outbox.html). See
   [this page](/getting-started/modules/core/outbox.md) for more information.
 
-* **Added Audit CloudEvents**
+* **Audit CloudEvents**
 
   Several outbox events have been added for auditing purposes. For an overview of the available events, refer to
   [this page](/reference/modules/outbox.md)
 
-* **Added Outbox message publisher for RabbitMQ**
+* **Outbox message publisher for RabbitMQ**
 
-  A RabbitMQ (AMQP 0.9.1) message publisher has been in the `outbox-rabbitmq` module. More information can be found [here](/getting-started/modules/core/outbox-rabbitmq.md)  
+  A RabbitMQ (AMQP 0.9.1) message publisher has been in the `outbox-rabbitmq` module. More information can be found [here](/getting-started/modules/core/outbox-rabbitmq.md) . 
 
 * **Added option for custom process variable name to download document plugin action in documentAPI**
 
