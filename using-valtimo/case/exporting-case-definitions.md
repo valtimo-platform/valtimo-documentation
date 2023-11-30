@@ -14,7 +14,7 @@ that makes use of the auto-deployment offered by Valtimo.
 
 ### Excluded from the export
 
-Some configurations that are related are not exported, as they are not case definition specific. These are:
+Some related configurations are not exported, as they are not case definition specific. These are:
 - Dashboards
 - Access control
 - Plugin configurations
