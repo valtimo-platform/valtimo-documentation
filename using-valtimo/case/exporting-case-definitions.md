@@ -8,7 +8,7 @@ be imported via the UI, added to the repository or shared with others.
 
 Exporting can be done by navigating to the case definition detail page. This will result in a ZIP archive containing 
 configurations and definitions that make up the case definition. The structure is the same as found in any application
-that makes use the auto-deployment offered by Valtimo.
+that makes use of the auto-deployment offered by Valtimo.
 
 ![Exporting a case definition](img/export-case-definition.png)
 
