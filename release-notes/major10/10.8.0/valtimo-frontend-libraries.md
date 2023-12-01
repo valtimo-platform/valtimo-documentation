@@ -14,6 +14,10 @@ The following features were added:
   The 'Create Portaaltaak' action of the Portaaltaak plugin now supports the optional 'verloopDurationInDays' field. 
   When this field has been configured, the 'verloopdatum' property of the task object contains the calculated due date. 
 
+* **Task form loading text**
+
+  When a task is opened, it will first show a loading text while the form is loading.
+
 ## Bugfixes
 
 The following bugs were fixed:
@@ -21,6 +25,10 @@ The following bugs were fixed:
 * **Can not upload files from user task**
 
   A bug that prevented some users from uploading files in a user task has been fixed.
+
+* **Show correct task assignee**
+
+  Sometimes when a task was opened, it showed the wrong assignee.
 
 ## Breaking changes
 
