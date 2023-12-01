@@ -13,8 +13,6 @@ The following features were added:
 
 The following bugs were fixed:
 
-* **Fix DMN upload**
-
 No bugfixes. 
 
 ## Breaking changes
