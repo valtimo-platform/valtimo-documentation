@@ -15,7 +15,7 @@ The following bugs were fixed:
 
 * **Fix DMN upload**
 
-  The `/v1/process/definition/deployment` endpoint only accepted uploaded files with the .bpmn extension, causing DMN uploads to fail.
+No bugfixes. 
 
 ## Breaking changes
 

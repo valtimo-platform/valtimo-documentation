@@ -22,6 +22,10 @@ The following bugs were fixed:
 
   The candidate-user list of a user task was incomplete for tasks with multiple candidate groups. In this case, the candidate-user list would only contain users based on the first candidate group.
 
+* **Upload DMN files failed**
+
+  The `/v1/process/definition/deployment` endpoint only accepted uploaded files with the .bpmn extension, causing DMN uploads to fail.
+
 ## Breaking changes
 
 No breaking changes.
