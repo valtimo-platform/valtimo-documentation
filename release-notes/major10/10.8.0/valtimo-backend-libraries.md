@@ -10,6 +10,10 @@ The following features were added:
   - The 'verloopdatum' property is calculated based on the configured 'verloopDurationInDays'
   - The 'zaak' property includes the full URL to the Zaak, if present
 
+* **Error when uploading Form.io forms**
+
+  The uploading of Form.io forms in the form admin menu has been fixed.
+
 ## Bugfixes
 
 The following bugs were fixed:
