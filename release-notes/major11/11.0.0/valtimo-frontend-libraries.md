@@ -53,6 +53,10 @@ The following features were added:
 * **S3 Upload update**
 
   Added *documentId* to the request body of the S3 Resource(this is not used by the default Valtimo backend)
+  
+* **Submenu items**
+
+  Added *restrictions based on ROLES* to the submenu items.
 
 ## Bugfixes
 
