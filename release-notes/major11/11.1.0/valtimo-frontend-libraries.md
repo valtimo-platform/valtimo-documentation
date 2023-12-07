@@ -17,6 +17,13 @@ The following features were added:
 
   Instructions on how to set this up can be found [here](/using-valtimo/pending-changes/pending-changes.md).
 
+* **Case tabs**
+
+  Custom case tabs can now be managed from within the application. This can be used after enabling
+  the [feature toggle](/reference/feature-toggles.md) `enableTabManagement`.
+
+  Instructions on how to set this up can be found [here](/using-valtimo/case/case-tabs.md).
+
 ## Bugfixes
 
 The following bugs were fixed:

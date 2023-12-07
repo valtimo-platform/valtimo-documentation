@@ -58,6 +58,11 @@ The following features were added:
 
 No bugfixes.
 
+* **Forms upload and download**
+
+  The form upload now works again with newly downloaded forms. When downloading a form, it will now only download the
+  Form IO content without metadata fields.
+
 ## Breaking changes
 
 The following breaking changes were introduced:

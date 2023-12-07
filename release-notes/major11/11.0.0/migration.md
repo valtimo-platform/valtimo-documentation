@@ -387,6 +387,22 @@ This page describes how to update Valtimo from the previous version to the curre
     - Remove *fields* property from any instances of CarbonTableConfig as it is no longer a part of the interface
     
     
+* **Enable the JSON PBAC editor**
+
+  Scope: front-end
+
+  **Change in `angular.json`**
+  1. Go to the file `angular.json`.
+  2. Locate the array with assets: `projects.architect.build.options.assets`.
+  3. Add the `monaco-editor`:
+  ```json
+  {
+      "glob": "**/*",
+      "input": "node_modules/monaco-editor",
+      "output": "assets/monaco-editor"
+  }
+  ```
+
 * **Moved Verzoek plugin property `objectManagementId`**
 
   Scope: back-end
