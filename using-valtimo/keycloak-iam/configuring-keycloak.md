@@ -1,6 +1,7 @@
 # Configuring Keycloak
 
-Valtimo can use Keycloak to retrieve information about users and roles.
+Keycloak is the default authentication provider for Valtimo. It is used to authenticate users, and Valtimo can 
+retrieve information about users and roles from Keycloak.
 
 ## Properties for connecting to Keycloak
 
@@ -49,8 +50,9 @@ VALTIMO_KEYCLOAK_CLIENT=valtimo-console
 
 ## Keycloak token authentication
 
-Valtimo can authenticate Keycloak users. For that, Valtimo needs to be configured  by using a public key from Keycloak. The following envirnoment variable can be set in
-Valtimo:
+When keycloak is used as authentication provider for Valtimo, the public key from Keycloak needs to be configured 
+in order to validate the JWT tokens. The public key can be provided by configuring the following environment 
+variable:
 
 ```properties
 VALTIMO_OAUTH_PUBLIC_KEY=MIIBI/EXAMPLE//PUBLIC+KEY
