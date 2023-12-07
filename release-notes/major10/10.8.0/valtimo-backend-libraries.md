@@ -14,6 +14,10 @@ The following features were added:
 
   The uploading of Form.io forms in the form admin menu has been fixed.
 
+* **Faster loading of task assignees**
+
+  The list of users that can be assigned to a task now load significantly faster.
+
 ## Bugfixes
 
 The following bugs were fixed:
