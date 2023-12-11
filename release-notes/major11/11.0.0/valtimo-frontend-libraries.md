@@ -56,8 +56,8 @@ The following features were added:
 
 * **Abstract _refreshDocument$**
 
-  Moved *_refreshDocument$* from DossierDetailComponent to DossierService and added its corresponding methods for correct behaviour. An implementation could use the refresh method to get the *_refreshDocument$* variable and be able to refresh the document information.
-
+  Moved *_refreshDocument$* from DossierDetailComponent to DossierService and added its corresponding methods for correct behaviour. An implementation can now use the refresh method on DossierService to refresh the document on the case detail page from implementation code.
+  
 ## Bugfixes
 
 No bugfixes.
