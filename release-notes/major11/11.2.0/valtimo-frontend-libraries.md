@@ -9,23 +9,30 @@ The following features were added:
   Added option for custom process variable name to download document plugin action in documentAPI so you have the option to choose a custom process variable name.
   When left empty the default name is: "resourceId"
 
-* **New feature2**
+* **Export case definitions**
 
-  Description of the new feature goes here.
-  Also link to the page that explains the feature in greater detail.
+  On the case admin detail page, export functionality is now available in the top right corner. This exports the case
+  definition and its related configurations.
 
+* **Switch document definition versions**
+
+  On the case admin detail page, a dropdown is now shown, which allows the user to switch the document definition version
+  currently displayed. The selected version affects the version that is exported when the export button is clicked, and
+  the version of the document definition that is downloaded when the download button is clicked.
+
+* **Display document definition in Monaco editor**
+
+  The document definition displayed on the admin case detail page is now displayed using the Monaco editor in read-only
+  mode.
 
 ## Bugfixes
 
 The following bugs were fixed:
 
-* **Bug1**
+* **Clear Form.IO token on logout**
 
-  Description of what the issue was.
-
-* **Bug2**
-
-  Description of what the issue was.
+  To make Form.IO work correctly, a token is saved in the browser's local storage under the key `formioToken`. This
+  local storage entry is now cleared on closing the Form.IO component and on closing the browser.
 
 ## Breaking changes
 
