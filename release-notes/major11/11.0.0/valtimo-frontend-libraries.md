@@ -56,7 +56,7 @@ The following features were added:
   
 * **Disable submenu items**
 
-  Added *restriction* based on user roles to the submenu items to be able to disable them.
+  Added *restriction* based on user roles to the submenu items to be able to disable them. An implementation can now specify required roles in submenu items by adding *roles* attribute to menu item children.
 
 ## Bugfixes
 
