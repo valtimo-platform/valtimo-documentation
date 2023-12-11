@@ -30,7 +30,9 @@ Resource type: `com.ritense.document.domain.impl.JsonSchemaDocument`
 | **Assignable** | `assignable`  | Allows users with permissions for this action to be assigned to a document. |
 
 #### Supported relations
-No relations are supported for this type.
+| Related resource                                |
+|-------------------------------------------------|
+| **[Document definition](#document-definition)** |
 
 ### Document definition
 Resource type: `com.ritense.document.domain.impl.JsonSchemaDocumentDefinition`
