@@ -168,4 +168,6 @@ Instructions on how to migrate to this version of Valtimo can be found [here](mi
 
 ## Known issues
 
-No new known issues.
+* **Roles assigned via groups in Keycloak are not fully supported**
+  Functionality where the Keycloak API is used to retrieve user data will not be
+  able to use roles assigned via groups. Any functionality that relies on the JWT token will work as expected.
