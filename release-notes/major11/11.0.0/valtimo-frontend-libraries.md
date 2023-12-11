@@ -13,6 +13,7 @@ The following features were added:
 * **Policy Based Access Control**
   
   Implemented PBAC frontend integration for the following features:
+  - Creating a Case
   - Assigning an user to a Case
   - Claiming a Case
   - Adding a Case Note
@@ -53,17 +54,17 @@ The following features were added:
 
   Added *documentId* to the request body of the S3 Resource(this is not used by the default Valtimo backend)
 
-* **Task form loading text**
-
-  When a task is opened, it will first show a loading text while the form is loading.
-
 ## Bugfixes
 
-The following bugs were fixed:
+* **Forms upload and download**
 
-* **Show correct task assignee**
+  The form upload now works again with newly downloaded forms. When downloading a form, it will now only download the
+  Form IO content without metadata fields.
 
-  Sometimes when a task was opened, it showed the wrong assignee.
+* **Sequence numbers not showing**
+
+  Fixed an issue where sequence numbers were not showing on the case list when an environment case list configuration
+  is used.
 
 ## Breaking changes
 

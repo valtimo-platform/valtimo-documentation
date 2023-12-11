@@ -53,7 +53,7 @@ The example below defines 2 permissions:
                     "path": "$.height",
                     "operator": "<",
                     "value": 20000,
-                    "clazz": "int"
+                    "clazz": "java.lang.Integer"
                 },
                 {
                     "type": "field",

@@ -30,10 +30,12 @@ The following features were added:
   Added option for custom process variable name to download document plugin action in documentAPI so you have the option to choose a custom process variable name.
   When left empty the default name is: "resourceId"
 
-* **Added endpoint for retrieving a specific version of a document definition**
+* **Selecting and retrieving a specific version of a document definition**
   
-  To support switching between document definition versions, an API endpoint has been added to retrieve a specific version:
-  ```GET /api/management/v1/document-definition/{name}/version/{version}```
+  To support switching between document definition versions, two new API endpoints have been added. The first is to
+  retrieve a list of versions available for that document definition, and the second to retrieve a specific version:
+  - ```GET /api/management/v1/document-definition/{name}/version```
+  - ```GET /api/management/v1/document-definition/{name}/version/{version}```
 
 ## Bugfixes
 
