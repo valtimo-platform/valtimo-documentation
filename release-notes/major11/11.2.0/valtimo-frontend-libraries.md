@@ -14,6 +14,17 @@ The following features were added:
   On the case admin detail page, export functionality is now available in the top right corner. This exports the case
   definition and its related configurations.
 
+* **Switch document definition versions**
+
+  On the case admin detail page, a dropdown is now shown, which allows the user to switch the document definition version
+  currently displayed. The selected version affects the version that is exported when the export button is clicked, and
+  the version of the document definition that is downloaded when the download button is clicked.
+
+* **Display document definition in Monaco editor**
+
+  The document definition displayed on the admin case detail page is now displayed using the Monaco editor in read-only
+  mode.
+
 ## Bugfixes
 
 The following bugs were fixed:
