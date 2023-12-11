@@ -54,6 +54,10 @@ The following features were added:
 
   Added *documentId* to the request body of the S3 Resource(this is not used by the default Valtimo backend)
 
+* **Abstract _refreshDocument$**
+
+  Added *_refreshDocument$* to DossierService and its corresponding methods for correct behaviour.
+
 ## Bugfixes
 
 No bugfixes.
