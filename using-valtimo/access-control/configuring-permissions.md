@@ -83,7 +83,7 @@ Deleting permissions will also delete the accompanying role. Deleting roles will
 
 ### Expression permission with contains operator
 
-In the example below, the `contains` operator is used to check if a specific flower is present inside the
+In the example below, the `list_contains` operator is used to check if a specific flower is present inside the
 JsonSchemaDocument. Where the JsonSchemaDocument content could look like this: `{"flowers": ["lily", "rose", "daisy"]}`.
 
 If the flower 'rose' is present in the JsonSchemaDocument, any user with the role `ROLE_USER` will be able to view that
@@ -100,7 +100,7 @@ document.
                 "type": "expression",
                 "field": "content.content",
                 "path": "$.flowers",
-                "operator": "contains",
+                "operator": "list_contains",
                 "value": "rose",
                 "clazz": "java.util.Collection"
             }

@@ -152,7 +152,8 @@ The following conditions can be used with their respective structures:
 | `>=`       | Greater than or equal to.                        |
 | `<`        | Smaller than.                                    |
 | `<=`       | Smaller than or equal to.                        |
-| `contains` | Checks if a collection contains the given value. |
+| `list_contains` | Checks if a collection contains the given value.        |
+| `in`            | Checks if a value is contained in the given collection. |
 
 ### Expression
 
@@ -167,15 +168,16 @@ The following conditions can be used with their respective structures:
 
 #### Operators
 
-| Operator   | Description                                      |
-|:-----------|:-------------------------------------------------|
-| `==`       | Equal to.                                        |
-| `!=`       | Not equal to.                                    |
-| `>`        | Greater than.                                    |
-| `>=`       | Greater than or equal to.                        |
-| `<`        | Smaller than.                                    |
-| `<=`       | Smaller than or equal to.                        |
-| `contains` | Checks if a collection contains the given value. |
+| Operator        | Description                                             |
+|:----------------|:--------------------------------------------------------|
+| `==`            | Equal to.                                               |
+| `!=`            | Not equal to.                                           |
+| `>`             | Greater than.                                           |
+| `>=`            | Greater than or equal to.                               |
+| `<`             | Smaller than.                                           |
+| `<=`            | Smaller than or equal to.                               |
+| `list_contains` | Checks if a collection contains the given value.        |
+| `in`            | Checks if a value is contained in the given collection. |
 
 ### Container
 
@@ -184,3 +186,10 @@ The following conditions can be used with their respective structures:
 | `type`         | The type of condition. In this case `container`.                 | `container`                                            |
 | `resourceType` | The related resource type the conditions should apply to.        | `com.ritense.document.domain.impl.JsonSchemaDocument ` |
 | `conditions`   | The conditions that should apply to the specified resource type. | See [supported conditions](#supported-conditions).     |
+
+### Special values for the value field
+| Value                 | Description                                     |
+|:----------------------|:------------------------------------------------|
+| `${currentUserId}`    | The identifier assigned to the current user.    |
+| `${currentUserEmail}` | The email address the current user has.         |
+| `${currentUserRoles}` | The list of roles the current user has.         |
