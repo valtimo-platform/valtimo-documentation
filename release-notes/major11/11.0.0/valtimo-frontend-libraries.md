@@ -54,6 +54,11 @@ The following features were added:
 
   Added *documentId* to the request body of the S3 Resource(this is not used by the default Valtimo backend)
 
+* **Unit tests**
+
+  The unit tests set-up inside (valtimo-frontend-libraries)(https://github.com/valtimo-platform/valtimo-frontend-libraries) has been fixed.
+  Any tests included in the libraries can now be run using Karma and Jasmin.
+
 ## Bugfixes
 
 * **Forms upload and download**
