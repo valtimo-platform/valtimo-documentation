@@ -56,12 +56,15 @@ The following features were added:
 
 ## Bugfixes
 
-No bugfixes.
-
 * **Forms upload and download**
 
   The form upload now works again with newly downloaded forms. When downloading a form, it will now only download the
   Form IO content without metadata fields.
+
+* **Sequence numbers not showing**
+
+  Fixed an issue where sequence numbers were not showing on the case list when an environment case list configuration
+  is used.
 
 ## Breaking changes
 
