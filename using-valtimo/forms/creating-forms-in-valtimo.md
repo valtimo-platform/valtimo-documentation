@@ -90,7 +90,7 @@ In some cases there is other data related to the case, but not part of the docum
 form. The form module allows for `FormFieldDataResolver` to fetch data by using expressions as property name in forms.
 On loading the form the data is automatically preloaded. The expression generally looks like `<prefix>:<field-expression>` 
 where the prefix indicates which `FormFieldDataResolver` is used. The `<field-expression>` in this expression gives the 
-resolver information on what data to load. For example, when using the expression `oz:firstName` for a field, the
+resolver information on what data to load. For example, when using the expression `openzaak:firstName` for a field, the
 `OpenZaakFormFieldDataResolver` is used to access the zaakeigenschappen in the Zaken API and get the `firstName` property.
 
 Even though technically a `FormFieldDataResolver` is not used, the prefix `pv` is available to access the process 
