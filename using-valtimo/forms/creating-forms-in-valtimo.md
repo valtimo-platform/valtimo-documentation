@@ -22,6 +22,44 @@ property `targetKey` is added, it will store submitted values to the reference p
 If a `sourceKey` is provided, it will store submitted values using the reference provided in the `sourceKey`. Unless
 there is a `targetKey` provided. Then the `targetKey` takes priority.
 
+### ZGW Value resolvers
+
+<sup>Available since 11.2.0</sup>
+
+Valtimo contains additional value resolvers for ZGW services:
+- `zaak` (Zaken API)
+- `zaakstatus` (Zaken API & Catalogi API)
+- `zaakobject` (Zaken API)
+
+With the `zaak` prefix, all data inside
+a [zaak response](https://redocly.github.io/redoc/?url=https://raw.githubusercontent.com/VNG-Realisatie/zaken-api/master/src/openapi.yaml#tag/zaken/operation/zaak_create)
+can be used to prefill the form. Some examples:
+
+| Source key         | Type of data                                            | Example                                                                         |
+|--------------------|:--------------------------------------------------------|---------------------------------------------------------------------------------|
+| zaak:url           | A URL reference to the zaak                             | https://example.com/zaken/api/v1/zaken/f4086828-b0b7-4e6c-a0ac-5ca1e44c5b06     |
+| zaak:uuid          | Zaak UUID                                               | f4086828-b0b7-4e6c-a0ac-5ca1e44c5b06                                            |
+| zaak:identificatie | The URL to the zaak                                     | ZK2023-00001                                                                    |
+| zaak:startdatum    | The date at which the execution of the zaak was started | 2023-12-12                                                                      |
+| zaak:status        | A URL reference to the zaak status                      | https://example.com/zaken/api/v1/statussen/8265450b-9a96-4948-8a0f-eb40a26f7aea |
+
+With the `zaakstatus` prefix, all data inside
+a [zaak statustypen response](https://redocly.github.io/redoc/?url=https://raw.githubusercontent.com/VNG-Realisatie/catalogi-api/master/src/openapi.yaml#tag/statustypen/operation/statustype_retrieve)
+can be used to prefill the form. Some examples:
+
+| Source key                      | Type of data                | Example                                                                              |
+|---------------------------------|:----------------------------|--------------------------------------------------------------------------------------|
+| zaakstatus:url                  | A URL reference to the zaak | https://example.com/catalogi/api/v1/statustypen/7dff40e0-edca-4b98-998a-6bc75c3c8b9d |
+| zaakstatus:omschrijvingGeneriek | Zaak UUID                   | Intake finished                                                                      |
+| zaakstatus:volgnummer           | The URL to the zaak         | 2                                                                                    |
+
+With the `zaakobject` prefix, all data inside a zaak-object can be queried and used to prefill the form. Some examples:
+
+| Source key                           | Type of data                                                                    | Example      |
+|--------------------------------------|:--------------------------------------------------------------------------------|--------------|
+| zaakobject:adres:/path/to/streetname | Retrieves the streetname that is located inside the zaak-object of type 'adres' | Hengelstraat |
+| zaakobject:besluit:/path/to/status   | Retrieves the status that is located inside the zaak-object of type 'besluit'   | In progress  |
+
 ## Case data
 
 By default, when creating fields in a form the data will be retrieved from and stored in the case. The property of the

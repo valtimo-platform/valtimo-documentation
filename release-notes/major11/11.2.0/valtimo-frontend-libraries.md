@@ -25,6 +25,11 @@ The following features were added:
   The document definition displayed on the admin case detail page is now displayed using the Monaco editor in read-only
   mode.
 
+* **Prefilling forms with data from the Zaken API**
+
+  Formio forms can now be prefilled with data from the Zaken API. See
+  [this page](/using-valtimo/forms/creating-forms-in-valtimo.md#zgw-value-resolvers) for more information.
+
 ## Bugfixes
 
 The following bugs were fixed:
