@@ -139,6 +139,10 @@ The following breaking changes were introduced:
 
   `org.camunda.bpm.engine.task.Task` -> `com.ritense.valtimo.camunda.domain.CamundaTask`
 
+* **Updated Spring Boot**
+
+  Spring Boot has been updated to version 2.7.18
+
 Instructions on how to migrate to this version of Valtimo can be found [here](migration.md).
 
 ## Deprecations
