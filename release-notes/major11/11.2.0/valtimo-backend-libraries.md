@@ -8,7 +8,13 @@ The following features were added:
 
   Case definitions can now be exported as an archive, containing all process definitions, forms, form flows,
   process links and the document definition that make up the case definition. See 
-  [this page](/using-valtimo/case/exporting-case-definitions.md) for more information.
+  [this page](/using-valtimo/case/exporting-case-definitions.md#export) for more information.
+
+* **Import case definitions**
+
+  Case definitions can now be imported from an archive, containing all process definitions, forms, form flows,
+  process links and the document definition that make up the case definition. See
+  [this page](/using-valtimo/case/exporting-case-definitions.md#import) for more information.
 
 * **Transactional outbox**
 

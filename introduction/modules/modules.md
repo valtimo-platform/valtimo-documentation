@@ -65,6 +65,11 @@ task.
 Document generation provides an interface in Valtimo for generating files like (like PDF) using given data. An
 implementation needs to be provided by another module or the Valtimo application that this is used in.
 
+### Exporter
+
+The exporter module provides export functionality for Valtimo. By default, Valtimo provides a way to export case
+definitions, but this can be used for other kinds of exports as well.
+
 ### Flowmailer
 
 [Flowmailer](https://flowmailer.com/) is a SaaS email service that Valtimo uses to send transactional emails. By
@@ -97,6 +102,11 @@ module in a Valtimo application.
 Form link manages the link between a task or start event in a process and the form by which they can be completed.
 Configuring this can be done both by configuration file and through the REST API. Form linked this way also need
 to be submitted to the submission endpoint in this module.
+
+### Importer
+
+The importer module provides import functionality for Valtimo. By default, Valtimo provides a way to import case
+definitions, but this can be used for other kinds of imports as well.
 
 ### Keycloak IAM
 
