@@ -47,11 +47,11 @@ With the `zaakstatus` prefix, all data inside
 a [zaak statustypen response](https://redocly.github.io/redoc/?url=https://raw.githubusercontent.com/VNG-Realisatie/catalogi-api/master/src/openapi.yaml#tag/statustypen/operation/statustype_retrieve)
 can be used to prefill the form. Some examples:
 
-| Source key                      | Type of data                | Example                                                                              |
-|---------------------------------|:----------------------------|--------------------------------------------------------------------------------------|
-| zaakstatus:url                  | A URL reference to the zaak | https://example.com/catalogi/api/v1/statustypen/7dff40e0-edca-4b98-998a-6bc75c3c8b9d |
-| zaakstatus:omschrijvingGeneriek | Zaak UUID                   | Intake finished                                                                      |
-| zaakstatus:volgnummer           | The URL to the zaak         | 2                                                                                    |
+| Source key                      | Type of data                      | Example                                                                         |
+|---------------------------------|:----------------------------------|---------------------------------------------------------------------------------|
+| zaakstatus:url                  | A URL reference to the zaakstatus | https://example.com/zaken/api/v1/statussen/8265450b-9a96-4948-8a0f-eb40a26f7aea |
+| zaakstatus:omschrijvingGeneriek | Zaak status description           | Intake finished                                                                 |
+| zaakstatus:volgnummer           | The status trace number           | 2                                                                               |
 
 With the `zaakobject` prefix, all data inside a zaak-object can be queried and used to prefill the form. Some examples:
 
