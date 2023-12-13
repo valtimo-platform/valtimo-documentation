@@ -54,6 +54,10 @@ The following features were added:
 
   Added *documentId* to the request body of the S3 Resource(this is not used by the default Valtimo backend)
 
+* **Abstract _refreshDocument$**
+
+  Moved *_refreshDocument$* from DossierDetailComponent to DossierService and added its corresponding methods for correct behaviour. An implementation can now use the refresh method on DossierService to refresh the document on the case detail page from implementation code.
+  
 ## Bugfixes
 
 * **Forms upload and download**
