@@ -28,7 +28,7 @@ The following features were added:
 * **Prefilling forms with data from the Zaken API**
 
   Formio forms can now be prefilled with data from the Zaken API. See
-  [this page](/using-valtimo/forms/creating-forms-in-valtimo.md#zgw-value-resolvers) for more information.
+  [this page](/reference/modules/form.md#external-data-types) for more information.
 
 ## Bugfixes
 
