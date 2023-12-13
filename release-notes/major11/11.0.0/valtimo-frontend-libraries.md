@@ -53,6 +53,10 @@ The following features were added:
 * **S3 Upload update**
 
   Added *documentId* to the request body of the S3 Resource(this is not used by the default Valtimo backend)
+  
+* **Disable submenu items**
+
+  Added *restriction* based on user roles to the submenu items to be able to disable them. An implementation can now specify required roles in submenu items by adding *roles* attribute to menu item children.
 
 * **Abstract _refreshDocument$**
 
