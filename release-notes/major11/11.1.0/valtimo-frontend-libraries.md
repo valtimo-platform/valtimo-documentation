@@ -42,11 +42,6 @@ The following bugs were fixed:
 
   When using the **valtimo-form-io** component from *@valtimo/components*, the local storage property *formioToken* gets updated every time the token refreshes after expiring.
 
-* **Fixed broken Carbon select box**
-
-  After navigating away from the form admin detail page, Carbon components using overlays did not work anymore
-  throughout the application. This issue has been fixed.
-
 ## Breaking changes
 
 No breaking changes.
