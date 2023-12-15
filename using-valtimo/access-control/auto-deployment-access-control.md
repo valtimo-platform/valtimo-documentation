@@ -2,16 +2,10 @@
 This section describes how permissions can be configured in the backend.
 
 ## Auto-deployment
-PBAC can be configured in the backend using auto-deployment. This is useful when you want to keep permissions identical over multiple environments.
-The deployment will scan for files on the classpath matching either `**/*.role.json` or `**/*.permission.json` for respectively role- and permission configurations.
+PBAC can be configured in the backend using auto-deployment. The autodeployment of PBAC configuration is based on the [changlog framework](/using-valtimo/changelog/changelog.md).
+The changelog framework will scan for files on the classpath matching either `**/*.role.json` or `**/*.permission.json` for respectively role- and permission configurations.
 
-Every deployment file for PBAC represents a changeset, much like Liquibase. 
-These files contain a `changesetId` that should be unique over all deployment files that use changesets (currently only the Authorization module).
-
-The contents of a changeset cannot change as long as the `changesetId` does not. A change to an existing changeset can only be made when the `changesetId` also changes.
-Changes made to the deployment files of PBAC will result in a full recreation of existing role- or permission configuration.
-
-## Configuring roles
+### Configuring roles
 The roles should be defined before permissions can be deployed. The file contains only a list of role names next to the mandatory `changesetId`.
 
 `all.role.json`:
@@ -25,7 +19,7 @@ The roles should be defined before permissions can be deployed. The file contain
 }
 ```
 
-## Configuring permissions
+### Configuring permissions
 The example below defines 2 permissions:
 - A user with `ROLE_ADMIN` can `VIEW` any document
 - A user with `ROLE_USER` can `VIEW` documents where:
@@ -66,44 +60,11 @@ The example below defines 2 permissions:
     ]
 }
 ```
-### Joining entities using a container
-The example below shows how container conditions can be used to join other entities.
-In this case, the permission is defined:
-- A user with `ROLE_USER` can `VIEW` notes where
-  - the related document-definition name equals `loans`
-  - the related document is assigned to the current user
 
-`note.permission.json`:
-``` json
-{
-    "changesetId": "pbac-notes",
-    "permissions": [
-        {
-            "resourceType": "com.ritense.note.domain.Note",
-            "action": "view",
-            "roleKey": "ROLE_USER",
-            "conditions": [
-                {
-                    "type": "container",
-                    "resourceType": "com.ritense.document.domain.impl.JsonSchemaDocument",
-                    "conditions": [
-                        {
-                            "type": "field",
-                            "field": "documentDefinitionId.name",
-                            "operator": "==",
-                            "value": "loans"
-                        },
-                        {
-                            "type": "field",
-                            "field": "assigneeId",
-                            "operator": "==",
-                            "value": "${currentUserId}"
-                        }
-                    ]
-                }
-            ]
-        }
-    ]
-}
-```
+### Clear tables
+PBAC configuration that has been added using autodeployment can conflict with manual changes that have been done through the admin interface.
+A way to resolve this conflict is by setting the `valtimo.changelog.pbac.clear-tables` Spring property to `true`. 
+If 'clear tables' is enabled, all roles and permissions in the database will be cleared when Valtimo starts, and the configuration in the autodeployment files will be deployed.
 
+### Examples
+More examples of PBAC configuration can be found in the [valtimo-examples repository](https://github.com/valtimo-platform/valtimo-examples).

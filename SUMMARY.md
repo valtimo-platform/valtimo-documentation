@@ -83,6 +83,7 @@
   * [Case](using-valtimo/case/case.md)
     * [Creating case settings](using-valtimo/case/creating-case-settings.md)
     * [Case tabs](using-valtimo/case/case-tabs.md)
+  * [Changelog](using-valtimo/changelog/changelog.md)
   * [Dashboard](using-valtimo/dashboard/dashboard.md)
     * [Auto deploying dashboards](using-valtimo/dashboard/auto-deploy.md)
     * [Create dashboard](using-valtimo/dashboard/create-dashboard.md)
