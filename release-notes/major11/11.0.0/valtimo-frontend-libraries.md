@@ -74,6 +74,11 @@ The following features were added:
   Fixed an issue where sequence numbers were not showing on the case list when an environment case list configuration
   is used.
 
+* **Fixed broken Carbon select box**
+
+  After navigating away from the form admin detail page, Carbon components using overlays did not work anymore
+  throughout the application. This issue has been fixed.
+
 ## Breaking changes
 
 The following breaking changes were introduced:
