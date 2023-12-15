@@ -6,13 +6,21 @@ In Valtimo, forms can be prefilled with data from a case or from other external 
 <sup>Available since 11.0.0</sup>
 
 Value resolvers can be used to prefill a form with external data by adding the custom property `sourceKey`:
-![Configuring the sourceKey property in a form](img/custom_property.png)
+
+![Configuring the sourceKey property in a form](img/custom_source_key_property.png)
 
 The following prefixes are supported by default: 
 - `doc` (Document)
 - `pv` (Process variable)
 
-Submitted values will also be stored using the reference provided in `sourceKey`.
+<sup>Available since 11.1.0</sup>
+Value resolvers can also be used to handle submitted form values using the custom property `targetKey`. If the custom
+property `targetKey` is added, it will store submitted values to the reference provided in the `targetKey`:
+
+![Configuring the targetKey property in a form](img/custom_target_key_property.png)
+
+If a `sourceKey` is provided, it will store submitted values using the reference provided in the `sourceKey`. Unless
+there is a `targetKey` provided. Then the `targetKey` takes priority.
 
 ## Case data
 
@@ -82,7 +90,7 @@ In some cases there is other data related to the case, but not part of the docum
 form. The form module allows for `FormFieldDataResolver` to fetch data by using expressions as property name in forms.
 On loading the form the data is automatically preloaded. The expression generally looks like `<prefix>:<field-expression>` 
 where the prefix indicates which `FormFieldDataResolver` is used. The `<field-expression>` in this expression gives the 
-resolver information on what data to load. For example, when using the expression `oz:firstName` for a field, the
+resolver information on what data to load. For example, when using the expression `openzaak:firstName` for a field, the
 `OpenZaakFormFieldDataResolver` is used to access the zaakeigenschappen in the Zaken API and get the `firstName` property.
 
 Even though technically a `FormFieldDataResolver` is not used, the prefix `pv` is available to access the process 

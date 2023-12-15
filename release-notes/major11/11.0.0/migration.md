@@ -2,158 +2,153 @@
 
 This page describes how to update Valtimo from the previous version to the current.
 
-- **Change in Recipient.Type values**
+* **Change in Recipient.Type values**
 
   Scope: back-end
 
-  To meet coding standards, the Enum values of `com.ritense.valtimo.contract.mail.model.value.Recipient.Type` have been changed to all uppercase.
+  To meet coding standards, the Enum values of ```com.ritense.valtimo.contract.mail.model.value.Recipient.Type``` have been changed to all uppercase.
   References to these Enum values should be changed in implementations:
+    - Change uses of Type.To to Type.TO
+    - Change uses of Type.Cc to Type.CC
+    - Change uses of Type.Bcc to Type.BCC
 
-  - Change uses of Type.To to Type.TO
-  - Change uses of Type.Cc to Type.CC
-  - Change uses of Type.Bcc to Type.BCC
-
-- **Rename application property valtimo.jwt.secret**
-
-  Scope: back-end
-
-  1. **Find valtimo.jwt.secret**
-
-     Find all occurrences of `valtimo.jwt.secret` and rename them all to `valtimo.oauth.public-key`. This property is
-     usually found in the `application.yml`.
-
-  2. **Find `VALTIMO_JWT_SECRET`**
-
-     Find all occurrences of `VALTIMO_JWT_SECRET` and rename them to `VALTIMO_OAUTH_PUBLIC_KEY`. This environment
-     variable can potentially be found in many different places such as:
-
-     - `.env.properties` file inside the repository
-     - AWS Parameter store
-     - Kubernetes `.yaml` file
-
-- **Rename application property valtimo.jwt.tokenValidityInSeconds**
+* **Rename application property valtimo.jwt.secret**
 
   Scope: back-end
 
-  1. **Find valtimo.jwt.tokenValidityInSeconds**
+    1. **Find valtimo.jwt.secret**
 
-     Find all occurrences of `valtimo.jwt.tokenValidityInSeconds` and rename them all
-     to `valtimo.oauth.tokenValidityInSeconds`. This property is usually found in the `application.yml`.
+       Find all occurrences of `valtimo.jwt.secret` and rename them all to `valtimo.oauth.public-key`. This property is
+       usually found in the `application.yml`.
 
-  2. **Find `VALTIMO_JWT_TOKEN_VALIDITY_IN_SECONDS`**
+    2. **Find `VALTIMO_JWT_SECRET`**
 
-     Find all occurrences of `VALTIMO_JWT_TOKEN_VALIDITY_IN_SECONDS` and rename them
-     to `VALTIMO_OAUTH_TOKEN_VALIDITY_IN_SECONDS`. This environment variable can potentially be found in many
-     different places such as:
+       Find all occurrences of `VALTIMO_JWT_SECRET` and rename them to `VALTIMO_OAUTH_PUBLIC_KEY`. This environment
+       variable can potentially be found in many different places such as:
+        - `.env.properties` file inside the repository
+        - AWS Parameter store
+        - Kubernetes `.yaml` file
 
-     - `.env.properties` file inside the repository
-     - AWS Parameter store
-     - Kubernetes `.yaml` file
-
-- **Whitelist all services used in Camunda processes**
+* **Rename application property valtimo.jwt.tokenValidityInSeconds**
 
   Scope: back-end
 
-  1. **Find all services used in processes and decision tables**
+    1. **Find valtimo.jwt.tokenValidityInSeconds**
 
-     Open all BPMN and DMN files and list all the services and other java/kotlin classes that are used.
+       Find all occurrences of `valtimo.jwt.tokenValidityInSeconds` and rename them all
+       to `valtimo.oauth.tokenValidityInSeconds`. This property is usually found in the `application.yml`.
 
-  2. **Find all services in code**
+    2. **Find `VALTIMO_JWT_TOKEN_VALIDITY_IN_SECONDS`**
 
-     All the listed services must then be found inside the java/kotlin code.
+       Find all occurrences of `VALTIMO_JWT_TOKEN_VALIDITY_IN_SECONDS` and rename them
+       to `VALTIMO_OAUTH_TOKEN_VALIDITY_IN_SECONDS`. This environment variable can potentially be found in many
+       different places such as:
+        - `.env.properties` file inside the repository
+        - AWS Parameter store
+        - Kubernetes `.yaml` file
 
-  3. **Whitelist the service**
-
-     Whitelisting a service should be done in one of two different ways:
-
-     1. Either, add `@ProcessBean` above the class.
-        For example:
-        ```kotlin
-        @ProcessBean
-        @Service
-        class MyCustomClass {
-            ...
-        ```
-     2. Or add `@ProcessBean` above the bean definition.
-        For example:
-        ```kotlin
-        @ProcessBean
-        @Bean
-        @ConditionalOnMissingBean(MyCustomService::class)
-        fun myCustomService(...): MyCustomService {
-            return MyCustomService(...)
-        }
-        ```
-
-- **Remove the use of authority and contexts entities**
+* **Whitelist all services used in Camunda processes**
 
   Scope: back-end
 
-  1. **Find and delete the use of authority classes as they are no longer supported**
+    1. **Find all services used in processes and decision tables**
 
-     - AuthorityResource.java
-     - AuthorityService.java
-     - AuthorityRepository.java
-     - AuthorityCreatedEvent.java
-     - AuthorityDeletedEvent.java
-     - AuthorityEvent.java
-     - AuthorityNameChangedEvent.java
-     - Authority.java
-     - AuthorityRequest.java
-     - Money.java
+       Open all BPMN and DMN files and list all the services and other java/kotlin classes that are used.
 
-  2. **Find and delete the use of context classes as they are no longer supported**
+    2. **Find all services in code**
 
-     - ContextResource.java
-     - ContextService.java
-     - ContextRepository.java
-     - UserContextRepository.java
-     - UserContextDTO.java
-     - Context.java
-     - ContextProcess.java
-     - MenuItem.java
-     - UserContext.java
+       All the listed services must then be found inside the java/kotlin code.
 
-- **Angular and dependency upgrades**
+    3. **Whitelist the service**
+
+       Whitelisting a service should be done in one of two different ways:
+        1. Either, add `@ProcessBean` above the class.
+           For example:
+            ```kotlin
+            @ProcessBean
+            @Service
+            class MyCustomClass {
+                ...
+            ```
+        2. Or add `@ProcessBean` above the bean definition.
+           For example:
+            ```kotlin
+            @ProcessBean
+            @Bean
+            @ConditionalOnMissingBean(MyCustomService::class)
+            fun myCustomService(...): MyCustomService {
+                return MyCustomService(...)
+            }
+            ```
+
+* **Remove the use of authority and contexts entities**
+
+  Scope: back-end
+
+    1. **Find and delete the use of authority classes as they are no longer supported**
+
+        - AuthorityResource.java
+        - AuthorityService.java
+        - AuthorityRepository.java
+        - AuthorityCreatedEvent.java
+        - AuthorityDeletedEvent.java
+        - AuthorityEvent.java
+        - AuthorityNameChangedEvent.java
+        - Authority.java
+        - AuthorityRequest.java
+        - Money.java
+
+    2. **Find and delete the use of context classes as they are no longer supported**
+
+        - ContextResource.java
+        - ContextService.java
+        - ContextRepository.java
+        - UserContextRepository.java
+        - UserContextDTO.java
+        - Context.java
+        - ContextProcess.java
+        - MenuItem.java
+        - UserContext.java
+
+* **Angular and dependency upgrades**
 
   Scope: front-end
 
   1. **Upgrading Angular**
 
-     - The Valtimo front-end libraries have been upgraded from Angular 14 to Angular 16 in major 11. In order to use
-       them, your implementation also needs to upgrade to Angular 16.
-     - Follow [this guide](https://update.angular.io/?v=14.0-15.0) to upgrade from Angular 14 to Angular 15. You will
+      - The Valtimo front-end libraries have been upgraded from Angular 14 to Angular 16 in major 11. In order to use
+        them, your implementation also needs to upgrade to Angular 16.
+      - Follow [this guide](https://update.angular.io/?v=14.0-15.0) to upgrade from Angular 14 to Angular 15. You will
+        probably need to use `ng update` commands with the `--force` option at the end.
+      - After the migration is complete, commit your changes.
+      - Follow [this guide](https://update.angular.io/?v=15.0-16.0) to upgrade from Angular 15 to Angular 16. You will
        probably need to use `ng update` commands with the `--force` option at the end.
-     - After the migration is complete, commit your changes.
-     - Follow [this guide](https://update.angular.io/?v=15.0-16.0) to upgrade from Angular 15 to Angular 16. You will
-       probably need to use `ng update` commands with the `--force` option at the end.
-     - After the migration is complete, commit your changes.
-     - Verify whether all Angular related dependencies in the `package.json` in the root of your project are at
-       version 16. If some have been skipped, check https://www.npmjs.com/ for their latest version and upgrade them
-       manually.
+      - After the migration is complete, commit your changes.
+      - Verify whether all Angular related dependencies in the `package.json` in the root of your project are at
+        version 16. If some have been skipped, check https://www.npmjs.com/ for their latest version and upgrade them
+        manually.
 
-  2. **Removing dependencies**
+  2.  **Removing dependencies**
 
-     - Some dependencies have been removed from the Valtimo front-end libraries. It is advised to remove them from your
-       implementation as well.
-     - `@angular/flex-layout` has been deprecated. Remove it from your implementation. To replace its directives, we
-       advise to write regular CSS classes with flexbox styling.
-     - If your implementation does not use any `@angular/material` related dependencies, and they are included in your
-       `package.json` dependencies, we advise to remove them.
+      - Some dependencies have been removed from the Valtimo front-end libraries. It is advised to remove them from your
+        implementation as well.
+      - `@angular/flex-layout` has been deprecated. Remove it from your implementation. To replace its directives, we
+        advise to write regular CSS classes with flexbox styling.
+      - If your implementation does not use any `@angular/material` related dependencies, and they are included in your
+        `package.json` dependencies, we advise to remove them.
 
   3. **Locking dependencies**
 
-     - In Valtimo front-end libraries, all dependencies not related to Angular have been locked to specific versions,
-       in order to avoid issues which are frequently encountered with automatic minor or patch dependency upgrades.
-     - We advise you to do the same; lock all dependencies except for the ones related to Angular. You can achieve this
-       by removing tilde `~` and caret `^` symbols from your implementation's `package.json`.
-     - Next, we advise you to lock your dependencies to the same versions used in the Valtimo front-end libraries.
-       A non-exhaustive list of dependencies and their versions is included below. If you cannot find your dependency
-       in the list below, refer to the major 11 front-end libraries `package.json` [here](https://github.com/valtimo-platform/valtimo-frontend-libraries/blob/rc/11.0.0/package.json).
+      - In Valtimo front-end libraries, all dependencies not related to Angular have been locked to specific versions,
+        in order to avoid issues which are frequently encountered with automatic minor or patch dependency upgrades.
+      - We advise you to do the same; lock all dependencies except for the ones related to Angular. You can achieve this
+        by removing tilde `~` and caret `^` symbols from your implementation's `package.json`.
+      - Next, we advise you to lock your dependencies to the same versions used in the Valtimo front-end libraries.
+        A non-exhaustive list of dependencies and their versions is included below. If you cannot find your dependency
+        in the list below, refer to the major 11 front-end libraries `package.json` [here](https://github.com/valtimo-platform/valtimo-frontend-libraries/blob/ac6d123c95fb761079e9d471f6b5aa6943e2bf1e/package.json).
 
      #### **`package.json`**
-
-     ```json
+     ````json
      {
        ...
        "dependencies": {
@@ -194,14 +189,14 @@ This page describes how to update Valtimo from the previous version to the curre
          "typescript": "5.1.6"
        }
      }
-     ```
+     ````
 
-  4. **Changing typescript config**
+  3. **Changing typescript config**
 
-     - In `tsconfig.json` in the root of your implementation, change `module` to `es2020` and also change `es****` in
-       the `lib` array to `es2020`.
+      - In `tsconfig.json` in the root of your implementation, change `module` to `es2020` and also change `es****` in
+        the `lib` array to `es2020`.
 
-- **Change in Carbon Design System version**
+* **Change in Carbon Design System version**
 
   Scope: front-end
 
@@ -239,7 +234,6 @@ This page describes how to update Valtimo from the previous version to the curre
   3.  **Remove all usages of @carbon/icons-angular**
 
       #### **`Icon`**:
-
           Deprecated:
           <svg class="ibm--btn__icon" ibmIconArrowDown size="16"></svg>
 
@@ -248,101 +242,96 @@ This page describes how to update Valtimo from the previous version to the curre
 
   4.  **Registering @carbon/icons**
 
-  - In order to use @carbon/icons, the IconModule needs to be imported.
+    - In order to use @carbon/icons, the IconModule needs to be imported.
 
-    #### **`sample.module.ts`**
+      #### **`sample.module.ts`**
+      ````typescript
+      ...
+      // import IconModule
+      import {IconModule} from 'carbon-components-angular';
+      ...
 
-    ```typescript
-    ...
-    // import IconModule
-    import {IconModule} from 'carbon-components-angular';
-    ...
-
-    @NgModule({
-        ...
-        imports: [
+      @NgModule({
           ...
-          IconModule
+          imports: [
+            ...
+            IconModule
+            ...
+          ]
           ...
-        ]
-        ...
-    })
-    export class SampleModule {
-     ...
-    }
-    ```
+      })
+      export class SampleModule {
+       ...
+      }
+      ````
+    - Some icons may not be available by default, so they need to be registered in the component where they are needed. This is accomplished via the Carbon IconService
+      #### **`sample.component.ts`**
+      ````typescript
+      ...
+      // import IconService
+      import {IconService} from 'carbon-components-angular';
+      ...
+      // import Icons
+      import {ArrowDown16, ArrowUp16} from '@carbon/icons';
+      ...
 
-  - Some icons may not be available by default, so they need to be registered in the component where they are needed. This is accomplished via the Carbon IconService
+      @Component({
+          ...
+      })
+      export class SampleComponent implements OnInit{
+       ...
+       constructor(private readonly iconService: IconService) {}
+       ...
+       public ngOnInit(): void {
+        this.iconService.registerAll([ArrowDown16, ArrowUp16]);
+       }
+       ...
+      }
+      ````
+    - All icons available through the Carbon library can be found [here](https://angular.carbondesignsystem.com/?path=/docs/components-icon--docs)
 
-    #### **`sample.component.ts`**
-
-    ```typescript
-    ...
-    // import IconService
-    import {IconService} from 'carbon-components-angular';
-    ...
-    // import Icons
-    import {ArrowDown16, ArrowUp16} from '@carbon/icons';
-    ...
-
-    @Component({
-        ...
-    })
-    export class SampleComponent implements OnInit{
-     ...
-     constructor(private readonly iconService: IconService) {}
-     ...
-     public ngOnInit(): void {
-      this.iconService.registerAll([ArrowDown16, ArrowUp16]);
-     }
-     ...
-    }
-    ```
-
-  - All icons available through the Carbon library can be found [here](https://angular.carbondesignsystem.com/?path=/docs/components-icon--docs)
-
-- **Remove deleted admin menu items**
+* **Remove deleted admin menu items**
 
   Scope: front-end
 
-  1. **Remove @valtimo/context**
+    1. **Remove @valtimo/context**
 
-     - Remove `@valtimo/context` library from the `package.json`.
-     - Remove `ContextModule` module from the `app.module.ts`.
+        - Remove `@valtimo/context` library from the `package.json`.
+        - Remove `ContextModule` module from the `app.module.ts`.
 
-  2. **Remove @valtimo/management**
+    2. **Remove @valtimo/management**
 
-     - Remove `@valtimo/management` library from the `package.json`.
-     - Remove `ManagementContextModule` module from the `app.module.ts`.
-     - Remove the `Contexts` link from the `environment.ts`
+        - Remove `@valtimo/management` library from the `package.json`.
+        - Remove `ManagementContextModule` module from the `app.module.ts`.
+        - Remove the `Contexts` link from the `environment.ts`
 
-  3. **Remove @valtimo/user-management**
+    3. **Remove @valtimo/user-management**
 
-     - Remove `@valtimo/user-management` library from the `package.json`.
-     - Remove `UserManagementModule` module from the `app.module.ts`.
-     - Remove the `Users` link from the `environment.ts`
+        - Remove `@valtimo/user-management` library from the `package.json`.
+        - Remove `UserManagementModule` module from the `app.module.ts`.
+        - Remove the `Users` link from the `environment.ts`
 
-  4. **Remove @valtimo/authority**
+    4. **Remove @valtimo/authority**
 
-     - Remove `@valtimo/authority` library from the `package.json`.
-     - Remove `AuthorityModule` module from the `app.module.ts`.
-     - Remove the `Entitlements` link from the `environment.ts`
+        - Remove `@valtimo/authority` library from the `package.json`.
+        - Remove `AuthorityModule` module from the `app.module.ts`.
+        - Remove the `Entitlements` link from the `environment.ts`
 
-- **Form-links page**
+* **Form-links page**
 
   Scope: front-end
 
-  1. **environment.ts**
+    1. **environment.ts**
 
-     Go to the environment.ts file and change this line:
+       Go to the environment.ts file and change this line:
+       
+       ```{link: ['/form-links'], title: 'Form links'...```
+       
+       To this line:
+       
+       ```{link: ['/process-links'], title: 'Process links'...```
 
-     `{link: ['/form-links'], title: 'Form links'...`
-
-     To this line:
-
-     `{link: ['/process-links'], title: 'Process links'...`
-
-- **Update connector and plugin keys**
+* **Update connector and plugin keys**
 
   Scope: back-end/front-end
 
@@ -354,144 +343,80 @@ This page describes how to update Valtimo from the previous version to the curre
   2. **Save plugin configurations with their keys**
   3. **See if encryption is used anywhere else in the application**
 
-- **Removal of @valtimo/user-interface library**
+* **Removal of @valtimo/user-interface library**
 
   Scope: front-end
 
   1. **Remove @valtimo/user-interface as a dependency**
 
-     The library `@valtimo/user-interface` has been removed. All of its components, directives and services have been
-     been moved to `@valtimo/components`. In order to migrate, remove `@valtimo/user-interface` as a dependency in your
-     implementation.
-
+      The library `@valtimo/user-interface` has been removed. All of its components, directives and services have been
+      been moved to `@valtimo/components`. In order to migrate, remove `@valtimo/user-interface` as a dependency in your
+      implementation.
   2. **Change stylesheet in `angular.json`**
 
-     The `angular.json` file in the root of your implementation includes the following value:
+      The `angular.json` file in the root of your implementation includes the following value:
+     
+      `"node_modules/@valtimo/user-interface/assets/design-tokens.css"`
 
-     `"node_modules/@valtimo/user-interface/assets/design-tokens.css"`
+      This should be changed to:
 
-     This should be changed to:
+      `"node_modules/@valtimo/components/assets/css/design-tokens.css"`
 
-     `"node_modules/@valtimo/components/assets/css/design-tokens.css"`
+  3.  **Change imports**
 
-  3. **Change imports**
+      Most components, services and directives from `@valtimo/user-interface` are now exported from
+      `@valtimo/components`. Search your implementations for any imports and change them accordingly.
 
-     Most components, services and directives from `@valtimo/user-interface` are now exported from
-     `@valtimo/components`. Search your implementations for any imports and change them accordingly.
+  4.   **Renamed components**
 
-  4. **Renamed components**
+     The component `v-multi-input` has been renamed to `valtimo-carbon-multi-input`. If it is used anywhere in your
+     implementation, change the selector.
 
-  The component `v-multi-input` has been renamed to `valtimo-carbon-multi-input`. If it is used anywhere in your
-  implementation, change the selector.
+     `ModaleModule` exported from `@valtimo/user-interface` is renamed to `VModalModule`.
 
-  `ModaleModule` exported from `@valtimo/user-interface` is renamed to `VModalModule`.
+     `CardModule` exported from `@valtimo/user-interface` is renamed to `VCardModule`.
 
-  `CardModule` exported from `@valtimo/user-interface` is renamed to `VCardModule`.
-
-- **Updating to the CarbonListCmponent**
+* **Update of CarbonTable for backwards compatibility**
 
   Scope: front-end
 
-  The new `valtimo-carbon-list` is backwards compatible with the `valtimo-list`.
+  Updates in the *@Input* fields:
+    
+    - *@Input paginationConfig* -> *@Input paginatorConfig*
+    - *@Input fields* has been added instead of having the columnConfigs in the tableConfig. ColumnConfig now extends the ListField for backwards compatibility.
+    - Remove *fields* property from any instances of CarbonTableConfig as it is no longer a part of the interface
+    
+    
+* **Enable the JSON PBAC editor**
 
-  A few fields from the `valtimo-list` have been marked as deprecated in the `valtimo-carbon-list`:
+  Scope: front-end
 
-  - _@Input() actions_
-  - _@Input() lastColumnTemplate_
+  **Change in `angular.json`**
+  1. Go to the file `angular.json`.
+  2. Locate the array with assets: `projects.architect.build.options.assets`.
+  3. Add the `monaco-editor`:
+  ```json
+  {
+      "glob": "**/*",
+      "input": "node_modules/monaco-editor",
+      "output": "assets/monaco-editor"
+  }
+  ```
 
-  While these are still supported in the new list, we do recommend that you remove them, as they will no longer be functional in the future versions of the frontend libraries.
-
-  You can instead use the _fields_ property. Check the [CarbonListComponent reference](../../../reference/user-interface/components/valtimo-carbon-list/valtimo-carbon-list.md) for more details.
-
-  In order to switch to the new list these steps must be followed:
-
-  1. Import the CarbonListModule into your module and remove ListModule:
-
-     #### **`sample.module.ts`**
-
-     ```angular2html
-     ...
-     import {CarbonListModule} from '@valtimo/components'
-     ...
-     @NgModule({
-       ...
-       imports: [
-         ...
-         CarbonListModule,
-         ...
-       ]
-     })
-     export class SampleModule
-     ```
-
-  2. Change your tag from 'valtimo-list' to 'valtimo-carbon-list':
-
-     #### **`sample.component.html`**
-
-     ```angular2html
-     <valtimo-carbon-list
-     ...
-     ></valtimo-carbon-list>
-     ```
-
-  3. (For lists that use lastColumnTemplate) All of the old properties used in the template for the last column are now added in a 'data' field in the template (this was necessary because of the way Carbon operates).
-
-     #### **`sample.component.html` with the old list**:
-
-     ```angular2html
-     <ng-template #sampleTemplate let-index="index" let-item="item">
-     {{index}}
-
-     {{item}}
-     </ng-template>
-     ```
-
-     #### **`sample.component.html` with the new list**:
-
-     ```angular2html
-     <ng-template #sampleTemplate let-data="data">
-     {{data.index}}
-
-     {{data.item}}
-     </ng-template>
-     ```
-
-  4. (For lists that use backend pagination) Because of the way that Carbon needs to consume data, a change in how the pagination is handled in a parent component needs to be added. All changes should be happening now by deconstructing, to make sure the reference to the parent pagination is updated.
-
-     #### **`sample.component.ts` with the old list**:
-
-     ```typescript
-     ...
-     public paginationChange(size: number): void {
-       this.pagination.size = size;
-     }
-     ...
-     ```
-
-     #### **`sample.component.ts` with the new list**:
-
-     ```typescript
-     ...
-     public paginationChange(size: number): void {
-       this.pagination = {...this.pagination, size};
-     }
-     ...
-     ```
-
-- **Moved Verzoek plugin property `objectManagementId`**
+* **Moved Verzoek plugin property `objectManagementId`**
 
   Scope: back-end
 
   1. **Locate any .pluginconfig.json file**
 
-     Go to the `/resource` folder of you project and locate any file ending with `.pluginconfig.json`.
+      Go to the `/resource` folder of you project and locate any file ending with `.pluginconfig.json`.
 
   2. **Find the `verzoek` plugin configurations**
 
      Every `.pluginconfig.json` can contain Verzoek plugin configuration. This plugin can be recognized where the
      property `pluginDefinitionKey` is `verzoek`.
 
-  3. **Move the `objectManagementId`**
+  3.  **Move the `objectManagementId`**
 
-     Every Verzoek plugin configuration has a field called `objectManagementId`. This field should be moved out of
-     the `properties` field and into every `verzoekProperties` field.
+      Every Verzoek plugin configuration has a field called `objectManagementId`. This field should be moved out of
+      the `properties` field and into every `verzoekProperties` field.

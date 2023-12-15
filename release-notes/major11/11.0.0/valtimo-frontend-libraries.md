@@ -4,16 +4,16 @@
 
 The following features were added:
 
-- **Angular and dependency upgrades**
+* **Angular and dependency upgrades**
 
   Angular has been upgraded from version 14 to 16. In addition, various dependencies have been upgraded with their
   versions now locked. Please refer to the [migration guide](./migration.md) for instructions on how to upgrade your
   implementation to be compatible with this version of the front-end libraries.
 
-- **Policy Based Access Control**
-
+* **Policy Based Access Control**
+  
   Implemented PBAC frontend integration for the following features:
-
+  - Creating a Case
   - Assigning an user to a Case
   - Claiming a Case
   - Adding a Case Note
@@ -22,67 +22,75 @@ The following features were added:
 
   For more information on how to use access control in the front-end, refer to [this page](/using-valtimo/access-control/frontend-access-control.md).
 
-- **Migration of old design components**
+* **Migration of old design components**
 
   The library `@valtimo/user-interface` has been removed. All of its components have been moved to `@valtimo/components`.
   In order order to migrate, please refer to the [migration guide](./migration.md). The design of the form components
   previously included in `@valtimo/user-interface` has been migrated to the Carbon design system.
 
-- **Placeholders for plugin configuration fields**
+* **Placeholders for plugin configuration fields**
 
   Placeholders are added for plugin configuration fields, so it's more clear what formats are expected for urls.
 
-- **v-input component extended**
+* **v-input component extended**
 
   The `v-input` component has been extended with a placeholder input.
 
-- **Carbon List**
+* **Update of Carbon Table**
 
-  A new component `valtimo-carbon-list` has been added. This component is backwards compatible with the `valtimo-list`, making it easier to transition to the new Carbon look and feel. A guide on how to replace the `valtimo-list` with the `valtimo-carbon-list` can be found in the [migration guide](./migration.md).
+  The CarbonTableComponent is now backwards compatible with the ListComponent, making for a easier process of replacing it. Instructions on how to migrate to this version of the CarbonTable can be found in the [migration guide](./migration.md).
 
-  For a full view on the new list check the [CarbonListComponent reference](../../../reference/user-interface/components/valtimo-carbon-list/valtimo-carbon-list.md)
+  CarbonTable now also supports different translations for the multi-select functionality through the *@Input selectTranslations*.
 
-- **Task List**
+* **Case List**
 
-  Task List has been updated to the Carbon Design System and is now using the CarbonListComponent.
+  Case List has been updated to the Carbon Design System and is now using the CarbonTable.
 
-- **Case List**
-
-  Case List has been updated to the Carbon Design System and is now using the CarbonListComponent.
-
-- **Bulk assign cases**
+* **Bulk assign cases**
 
   Implemented the bulk assign functionality within the Case List.
 
-- **S3 Upload update**
+* **S3 Upload update**
 
-  Added _documentId_ to the request body of the S3 Resource(this is not used by the default Valtimo backend)
+  Added *documentId* to the request body of the S3 Resource(this is not used by the default Valtimo backend)
+  
+* **Disable submenu items**
 
-- **Task form loading text**
+  Added *restriction* based on user roles to the submenu items to be able to disable them. An implementation can now specify required roles in submenu items by adding *roles* attribute to menu item children.
 
-  When a task is opened, it will first show a loading text while the form is loading.
+* **Abstract _refreshDocument$**
 
+  Moved *_refreshDocument$* from DossierDetailComponent to DossierService and added its corresponding methods for correct behaviour. An implementation can now use the refresh method on DossierService to refresh the document on the case detail page from implementation code.
+  
 ## Bugfixes
 
-The following bugs were fixed:
+* **Forms upload and download**
 
-- **Show correct task assignee**
+  The form upload now works again with newly downloaded forms. When downloading a form, it will now only download the
+  Form IO content without metadata fields.
 
-  Sometimes when a task was opened, it showed the wrong assignee.
+* **Sequence numbers not showing**
+
+  Fixed an issue where sequence numbers were not showing on the case list when an environment case list configuration
+  is used.
+
+* **Fixed broken Carbon select box**
+
+  After navigating away from the form admin detail page, Carbon components using overlays did not work anymore
+  throughout the application. This issue has been fixed.
 
 ## Breaking changes
 
 The following breaking changes were introduced:
 
-- **Removed several admin menu items**
+* **Removed several admin menu items**
   Several admin menu items have been removed:
-
   - The 'Form-links' page has now been removed in favor of the new 'Process links' page.
   - The 'Contexts' page has been removed. Valtimo no longer supports contexts.
   - The 'Users' page has now been removed.
   - The 'Entitlements' page has now been removed in favor of the new 'Access control' page.
 
-- **Removed case 'Entitlements'**
+* **Removed case 'Entitlements'**
   The case management page no longer has the option to set the entitlements. This has been replaced by the new 'Access
   control' page.
 

@@ -4,12 +4,12 @@
 
 This table lists which types of data can be referred to from a form field, and which prefix to use.
 
-| Prefix                        | Type of data                                                                                                    |
-|-------------------------------|:----------------------------------------------------------------------------------------------------------------|
-| [No prefix](#case-data)       | The data in the document of a case.                                                                             |
-| [`oz`](#zaakeigenschappen)    | The 'zaakeigenschappen' stored for the zaak in the Zaken API. Not to be confused with the properties of a zaak. |
-| [`pv`](#process-variables)    | Process variables stored for any process instance that is linked to the case                                    |
-| [`zaakobject`](#zaakobjecten) | The properties of 'zaakobjecten'. Objects linked to a zaak in the Zaken API                                     |
+| Prefix                           | Type of data                                                                                                    |
+|----------------------------------|:----------------------------------------------------------------------------------------------------------------|
+| [No prefix](#case-data)          | The data in the document of a case.                                                                             |
+| [`openzaak`](#zaakeigenschappen) | The 'zaakeigenschappen' stored for the zaak in the Zaken API. Not to be confused with the properties of a zaak. |
+| [`pv`](#process-variables)       | Process variables stored for any process instance that is linked to the case                                    |
+| [`zaakobject`](#zaakobjecten)    | The properties of 'zaakobjecten'. Objects linked to a zaak in the Zaken API                                     |
 
 
 ### Case data
@@ -21,12 +21,12 @@ data in nested objects.
 Example: `person.firstName`
 
 ### Zaakeigenschappen
-Prefix: `oz`
+Prefix: `openzaak`
 
 Gets the [zaakeigenschap](https://zaken-api.vng.cloud/api/v1/schema/#operation/zaakeigenschap_list) that is indicated in 
 the field expression. The available items are defined for a 'zaaktype' in de Catalogi API.
 
-Example: `oz:firstName`
+Example: `openzaak:firstName`
 
 ### Process variables
 Prefix: `pv`

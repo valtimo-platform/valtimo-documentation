@@ -269,7 +269,7 @@ authentication for other ZGW plugins.
 [OpenZaak](https://openzaak.org/) resource is an implementation of the [resource module](#resource), providing a way to
 store a resource in OpenZaak as an *eenvoudig informatie object* (simple information object).
 
-### Portaal Taak
+### Portaaltaak
 
 This module provides a way of making BPMN user tasks available in an external portal. This allows these tasks to be completed
 by users that do not have accesss to the GZAC frontend.
