@@ -47,9 +47,9 @@ The following features were added:
 
 The following bugs were fixed:
 
-* **Bug1**
+* **Deadlock**
 
-  Description of what the issue was.
+  Solved a deadlock that could happen under certain conditions when modifying the document inside a BPMN process.
 
 * **Bug2**
 
