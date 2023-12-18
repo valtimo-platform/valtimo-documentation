@@ -25,7 +25,7 @@ A lot of configurations and definitions are included in the export. These are:
 - Decision definitions
 - Process links
 - Form flows
-- Forms
+- Forms (includes case summary if present)
 
 ### Excluded from the export
 
