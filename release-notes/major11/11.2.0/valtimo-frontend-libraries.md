@@ -25,6 +25,10 @@ The following features were added:
   The document definition displayed on the admin case detail page is now displayed using the Monaco editor in read-only
   mode.
 
+* **Edit plugin configuration ID**
+
+  The plugin configuration ID can now be edited from within the plugin configuration management menu.
+
 ## Bugfixes
 
 The following bugs were fixed:
