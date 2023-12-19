@@ -53,7 +53,15 @@ The following features were added:
 * **S3 Upload update**
 
   Added *documentId* to the request body of the S3 Resource(this is not used by the default Valtimo backend)
+  
+* **Disable submenu items**
 
+  Added *restriction* based on user roles to the submenu items to be able to disable them. An implementation can now specify required roles in submenu items by adding *roles* attribute to menu item children.
+
+* **Abstract _refreshDocument$**
+
+  Moved *_refreshDocument$* from DossierDetailComponent to DossierService and added its corresponding methods for correct behaviour. An implementation can now use the refresh method on DossierService to refresh the document on the case detail page from implementation code.
+  
 ## Bugfixes
 
 * **Forms upload and download**
@@ -65,6 +73,11 @@ The following features were added:
 
   Fixed an issue where sequence numbers were not showing on the case list when an environment case list configuration
   is used.
+
+* **Fixed broken Carbon select box**
+
+  After navigating away from the form admin detail page, Carbon components using overlays did not work anymore
+  throughout the application. This issue has been fixed.
 
 ## Breaking changes
 

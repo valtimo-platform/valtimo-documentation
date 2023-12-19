@@ -200,7 +200,7 @@
     * 11.1.0 (RC)
       * [Valtimo backend libraries](release-notes/major11/11.1.0/valtimo-backend-libraries.md)
       * [Valtimo frontend libraries](release-notes/major11/11.1.0/valtimo-frontend-libraries.md)
-    * 11.0.0 (RC)
+    * 11.0.0
       * [Valtimo backend libraries](release-notes/major11/11.0.0/valtimo-backend-libraries.md)
       * [Valtimo frontend libraries](release-notes/major11/11.0.0/valtimo-frontend-libraries.md)
       * [Migration](release-notes/major11/11.0.0/migration.md)
