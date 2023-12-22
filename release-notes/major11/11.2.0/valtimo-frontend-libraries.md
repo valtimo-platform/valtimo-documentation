@@ -25,6 +25,10 @@ The following features were added:
   The document definition displayed on the admin case detail page is now displayed using the Monaco editor in read-only
   mode.
 
+* **Edit plugin configuration ID**
+
+  The plugin configuration ID can now be edited in the plugin configuration management screens.
+
 * **Prefilling forms with data from the Zaken API**
 
   Formio forms can now be prefilled with data from the Zaken API. See
