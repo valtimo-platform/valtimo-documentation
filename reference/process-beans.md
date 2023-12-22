@@ -205,7 +205,7 @@ fun resolveValue(execution: DelegateExecution, key: String)
 
 Resolves a value from a specified source. The resolved value is only returned. An example:
 
-```SPeL
+```spel
 ${execution.setVariable('firstName', valueResolverDelegateService.resolveValue(execution, 'doc:person.firstName'))}
 ```
 
@@ -217,6 +217,6 @@ fun handleValue(execution: DelegateExecution, key: String, value: Any)
 
 Handles a value from a specified source. The resolved value is only returned. An example:
 
-```SPeL
+```spel
 ${valueResolverDelegateService.handleValue(execution, 'doc:person.firstName', execution.getVariable('firstName'))}
 ```
