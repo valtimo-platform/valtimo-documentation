@@ -191,3 +191,32 @@ fun startProcessByProcessDefinitionKey(processDefinitionKey: String, documentId:
 ```
 
 Starts a new process and attaches it to the current document.
+
+## ValueResolverDelegateService
+
+This process bean contains functions for accessing the Valtimo value resolver. More
+information [here](/reference/modules/value-resolver.md)
+
+### Resolve value
+
+```kotlin
+fun resolveValue(execution: DelegateExecution, key: String)
+```
+
+Resolves a value from a specified source. The resolved value is only returned. An example:
+
+```spel
+${execution.setVariable('firstName', valueResolverDelegateService.resolveValue(execution, 'doc:person.firstName'))}
+```
+
+### Handle value
+
+```kotlin
+fun handleValue(execution: DelegateExecution, key: String, value: Any)
+```
+
+Handles a value from a specified source. The resolved value is only returned. An example:
+
+```spel
+${valueResolverDelegateService.handleValue(execution, 'doc:person.firstName', execution.getVariable('firstName'))}
+```

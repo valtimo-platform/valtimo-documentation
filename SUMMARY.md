@@ -158,6 +158,7 @@
     * [Whitelisting Spring beans for Form flow](extending-valtimo/form-flow/whitelist-spring-bean.md)
   * [Making Valtimo multi instance ready](extending-valtimo/multi-instance-ready.md)
   * [Modals (external docs)](https://angular.carbondesignsystem.com/?path=/story/components-modal--basic)
+  * [Creating a custom outbox message publisher](extending-valtimo/outbox/create-custom-message-publisher.md)
   * [Plugins](extending-valtimo/plugin/plugins.md)
     * [Custom plugin definitions](extending-valtimo/plugin/custom-plugin-definition.md)
   * Process
@@ -181,6 +182,7 @@
     * [Form flow](reference/modules/form-flow.md)
     * [Form links](reference/modules/form-link.md)
     * [Object management](reference/modules/object-management.md)
+    * [Value resolvers](reference/modules/value-resolver.md)
   * [User interface](reference/user-interface/user-interface.md)
     * [Design philosophy](reference/user-interface/design-philosophy.md)
     * [Carbon design system](reference/user-interface/carbon-design-system.md)

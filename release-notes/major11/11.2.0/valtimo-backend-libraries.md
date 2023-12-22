@@ -43,6 +43,15 @@ The following features were added:
   - ```GET /api/management/v1/document-definition/{name}/version```
   - ```GET /api/management/v1/document-definition/{name}/version/{version}```
 
+* **Javascript in Camunda script task**
+  
+  Added support for Javascript in Camunda script tasks.
+
+* **Value resolver process bean**
+
+  Added a new process bean that can resolve and handle values from several sources. More information can be
+  found [here](/reference/process-beans.md#valueresolverdelegateservice)
+
 ## Bugfixes
 
 The following bugs were fixed:
