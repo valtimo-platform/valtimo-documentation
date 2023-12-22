@@ -52,7 +52,7 @@ can be used to prefill the form. Some examples:
 |--------------------|:--------------------------------------------------------|---------------------------------------------------------------------------------|
 | zaak:url           | A URL reference to the zaak                             | https://example.com/zaken/api/v1/zaken/f4086828-b0b7-4e6c-a0ac-5ca1e44c5b06     |
 | zaak:uuid          | Zaak UUID                                               | f4086828-b0b7-4e6c-a0ac-5ca1e44c5b06                                            |
-| zaak:identificatie | The URL to the zaak                                     | ZK2023-00001                                                                    |
+| zaak:identificatie | The zaak identifier                                     | ZK2023-00001                                                                    |
 | zaak:startdatum    | The date at which the execution of the zaak was started | 2023-12-12                                                                      |
 | zaak:status        | A URL reference to the zaak status                      | https://example.com/zaken/api/v1/statussen/8265450b-9a96-4948-8a0f-eb40a26f7aea |
 
