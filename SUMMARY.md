@@ -82,7 +82,6 @@
     * [Front-end access control](using-valtimo/access-control/frontend-access-control.md)
   * [Case](using-valtimo/case/case.md)
     * [Creating case settings](using-valtimo/case/creating-case-settings.md)
-    * [Case tabs](using-valtimo/case/case-tabs.md)
   * [Dashboard](using-valtimo/dashboard/dashboard.md)
     * [Auto deploying dashboards](using-valtimo/dashboard/auto-deploy.md)
     * [Create dashboard](using-valtimo/dashboard/create-dashboard.md)
@@ -169,7 +168,6 @@
   * [Modules](reference/modules/modules.md)
     * [Authorization](reference/modules/authorization.md)
     * [Dashboard](reference/modules/dashboard.md)
-    * [Case](reference/modules/case.md)
     * [Document](reference/modules/document.md)
     * [Form](reference/modules/form.md)
     * [Form flow](reference/modules/form-flow.md)
@@ -187,9 +185,6 @@
 * Release notes
   * [Release notes](release-notes/release-notes.md)
   * 11.x.x
-    * 11.1.0 (RC)
-      * [Valtimo backend libraries](release-notes/major11/11.1.0/valtimo-backend-libraries.md)
-      * [Valtimo frontend libraries](release-notes/major11/11.1.0/valtimo-frontend-libraries.md)
     * 11.0.0
       * [Valtimo backend libraries](release-notes/major11/11.0.0/valtimo-backend-libraries.md)
       * [Valtimo frontend libraries](release-notes/major11/11.0.0/valtimo-frontend-libraries.md)
