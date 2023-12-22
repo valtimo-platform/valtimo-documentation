@@ -22,6 +22,15 @@ property `targetKey` is added, it will store submitted values to the reference p
 If a `sourceKey` is provided, it will store submitted values using the reference provided in the `sourceKey`. Unless
 there is a `targetKey` provided. Then the `targetKey` takes priority.
 
+### ZGW Value resolvers
+
+Valtimo contains additional value resolvers for ZGW services:
+- `zaak` (Zaken API)
+- `zaakstatus` (Zaken API & Catalogi API)
+- `zaakobject` (Zaken API)
+
+More information [here](/reference/modules/form.md#external-data-types)
+
 ## Case data
 
 By default, when creating fields in a form the data will be retrieved from and stored in the case. The property of the
