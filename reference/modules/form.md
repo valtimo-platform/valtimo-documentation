@@ -9,6 +9,8 @@ This table lists which types of data can be referred to from a form field, and w
 | [No prefix](#case-data)          | The data in the document of a case.                                                                             |
 | [`openzaak`](#zaakeigenschappen) | The 'zaakeigenschappen' stored for the zaak in the Zaken API. Not to be confused with the properties of a zaak. |
 | [`pv`](#process-variables)       | Process variables stored for any process instance that is linked to the case                                    |
+| [`zaak`](#zaakobjecten)          | The properties of a zaak in the Zaken API                                                                       |
+| [`zaakstatus`](#zaakobjecten)    | The properties of 'zaakstatus' linked to a zaak in the Zaken API                                                |
 | [`zaakobject`](#zaakobjecten)    | The properties of 'zaakobjecten'. Objects linked to a zaak in the Zaken API                                     |
 
 
@@ -35,6 +37,41 @@ Accesses process variables for the case for which the form is loaded. It can acc
 instances for the case. 
 
 Example: `pv:firstName`
+
+### Zaak
+
+<sup>Available since 11.2.0</sup>
+
+Prefix: `zaak`
+
+With the `zaak` prefix, all data inside
+a [zaak response](https://redocly.github.io/redoc/?url=https://raw.githubusercontent.com/VNG-Realisatie/zaken-api/master/src/openapi.yaml#tag/zaken/operation/zaak_create)
+can be used to prefill the form. Some examples:
+
+| Source key         | Type of data                                            | Example                                                                         |
+|--------------------|:--------------------------------------------------------|---------------------------------------------------------------------------------|
+| zaak:url           | A URL reference to the zaak                             | https://example.com/zaken/api/v1/zaken/f4086828-b0b7-4e6c-a0ac-5ca1e44c5b06     |
+| zaak:uuid          | Zaak UUID                                               | f4086828-b0b7-4e6c-a0ac-5ca1e44c5b06                                            |
+| zaak:identificatie | The zaak identifier                                     | ZK2023-00001                                                                    |
+| zaak:startdatum    | The date at which the execution of the zaak was started | 2023-12-12                                                                      |
+| zaak:status        | A URL reference to the zaak status                      | https://example.com/zaken/api/v1/statussen/8265450b-9a96-4948-8a0f-eb40a26f7aea |
+
+### Zaakstatus
+
+<sup>Available since 11.2.0</sup>
+
+Prefix: `zaakstatus`
+
+With the `zaakstatus` prefix, all data inside
+a [zaak statustypen response](https://redocly.github.io/redoc/?url=https://raw.githubusercontent.com/VNG-Realisatie/catalogi-api/master/src/openapi.yaml#tag/statustypen/operation/statustype_retrieve)
+can be used to prefill the form. Some examples:
+
+| Source key                      | Type of data                      | Example                                                                         |
+|---------------------------------|:----------------------------------|---------------------------------------------------------------------------------|
+| zaakstatus:url                  | A URL reference to the zaakstatus | https://example.com/zaken/api/v1/statussen/8265450b-9a96-4948-8a0f-eb40a26f7aea |
+| zaakstatus:omschrijvingGeneriek | Zaak status description           | Intake finished                                                                 |
+| zaakstatus:volgnummer           | The status trace number           | 2                                                                               |
+
 
 ### Zaakobjecten
 Prefix: `zaakobject`

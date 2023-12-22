@@ -29,6 +29,11 @@ The following features were added:
 
   The plugin configuration ID can now be edited in the plugin configuration management screens.
 
+* **Prefilling forms with data from the Zaken API**
+
+  Formio forms can now be prefilled with data from the Zaken API. See
+  [this page](/reference/modules/form.md#external-data-types) for more information.
+
 ## Bugfixes
 
 The following bugs were fixed:
