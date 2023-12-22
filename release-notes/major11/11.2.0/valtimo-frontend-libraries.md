@@ -27,7 +27,7 @@ The following features were added:
 
 * **Edit plugin configuration ID**
 
-  The plugin configuration ID can now be edited from within the plugin configuration management menu.
+  The plugin configuration ID can now be edited in the plugin configuration management screens.
 
 ## Bugfixes
 
