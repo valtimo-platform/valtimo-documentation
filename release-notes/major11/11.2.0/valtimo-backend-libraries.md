@@ -52,6 +52,11 @@ The following features were added:
   Added a new process bean that can resolve and handle values from several sources. More information can be
   found [here](/reference/process-beans.md#valueresolverdelegateservice)
 
+
+* **Configure due date from BPMN for portaaltaak**
+
+  A portaaltaak due date can now be configured inside the BPMN user-task due date field.
+
 ## Bugfixes
 
 The following bugs were fixed:
