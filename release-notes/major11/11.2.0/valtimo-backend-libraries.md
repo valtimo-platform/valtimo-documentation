@@ -55,7 +55,7 @@ The following features were added:
 
 * **Configure due date from BPMN for portaaltaak**
 
-  A portaaltaak due date can now be configured inside the BPMN user-task due date field.
+  If no due date is given in the *Create portaal taak* action, the due date of the user task is used instead.
 
 ## Bugfixes
 
