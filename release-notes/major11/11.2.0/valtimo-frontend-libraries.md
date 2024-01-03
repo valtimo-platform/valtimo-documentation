@@ -47,6 +47,20 @@ The following bugs were fixed:
   To make Form.IO work correctly, a token is saved in the browser's local storage under the key `formioToken`. This
   local storage entry is now cleared on closing the Form.IO component and on closing the browser.
 
+* **Added permission check on 'Go to case' link**
+
+  A permission check has been added so that the 'Go to case' link inside the task list no longer result in an
+  unauthorized-error.
+
+* **Added permission check on case-list**
+
+  Permission checks have been added to the case-list to avoid an unauthorized-error when clicking on a case.
+
+* **Added permission check on 'Create New Case' button**
+
+  A permission check has been added to the 'Create New Case' button, so that it can no longer result in an
+  unauthorized-error.
+
 ## Breaking changes
 
 The following breaking changes were introduced:

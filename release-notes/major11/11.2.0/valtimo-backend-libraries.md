@@ -52,6 +52,10 @@ The following features were added:
   Added a new process bean that can resolve and handle values from several sources. More information can be
   found [here](/reference/process-beans.md#valueresolverdelegateservice)
 
+* **Added support for Keycloak group roles**
+
+  Valtimo access control can now make use of Keycloak group roles.
+
 ## Bugfixes
 
 The following bugs were fixed:
@@ -60,9 +64,10 @@ The following bugs were fixed:
 
   Solved a deadlock that could happen under certain conditions when modifying the document inside a BPMN process.
 
-* **Bug2**
+* **Fix process link 'Create zaakstatus**
 
-  Description of what the issue was.
+  A bug has been fixed where the process link 'Create zaakstatus' would result in an error when the 'Zaakstatus
+  explanation' field was left empty.
 
 ## Breaking changes
 
