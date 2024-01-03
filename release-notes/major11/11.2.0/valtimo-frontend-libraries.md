@@ -34,6 +34,10 @@ The following features were added:
   Formio forms can now be prefilled with data from the Zaken API. See
   [this page](/reference/modules/form.md#external-data-types) for more information.
 
+* **Show process version on progress tab**
+
+  The version of the process is now visible on the 'Progress' tab of a case.
+
 ## Bugfixes
 
 The following bugs were fixed:
