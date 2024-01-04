@@ -56,6 +56,10 @@ The following features were added:
 
   Valtimo access control can now make use of Keycloak group roles.
 
+* **Fix: PBAC mapping CamundaTask to JsonSchemaDocument**
+
+  The PBAC CamundaTask resource can now make use of a JsonSchemaDocument for conditions.
+
 ## Bugfixes
 
 The following bugs were fixed:
