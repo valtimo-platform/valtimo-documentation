@@ -52,6 +52,11 @@ The following features were added:
   Added a new process bean that can resolve and handle values from several sources. More information can be
   found [here](/reference/process-beans.md#valueresolverdelegateservice)
 
+
+* **Configure due date from BPMN for portaaltaak**
+
+  If no due date is given in the *Create portaal taak* action, the due date of the user task is used instead.
+
 ## Bugfixes
 
 The following bugs were fixed:
