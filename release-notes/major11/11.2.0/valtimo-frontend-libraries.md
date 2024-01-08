@@ -47,6 +47,10 @@ The following bugs were fixed:
   To make Form.IO work correctly, a token is saved in the browser's local storage under the key `formioToken`. This
   local storage entry is now cleared on closing the Form.IO component and on closing the browser.
 
+* **No `null` while loading menu items**
+
+  Previously, while menu items in the left sidebar were loading, they would show `null`. This issue has been resolved.
+
 ## Breaking changes
 
 The following breaking changes were introduced:
