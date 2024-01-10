@@ -60,6 +60,10 @@ The following features were added:
 
   The PBAC CamundaTask resource can now make use of a JsonSchemaDocument for conditions.
 
+* **Configure due date from BPMN for portaaltaak**
+
+  If no due date is given in the *Create portaal taak* action, the due date of the user task is used instead.
+
 ## Bugfixes
 
 The following bugs were fixed:
