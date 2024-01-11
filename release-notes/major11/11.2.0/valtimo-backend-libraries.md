@@ -70,7 +70,12 @@ The following bugs were fixed:
 
 * **Deadlock**
 
-  Solved a deadlock that could happen under certain conditions when modifying the document inside a BPMN process.
+  A deadlock could happen under certain conditions when modifying the document inside a BPMN process.
+
+* **Form flow instance back and forward navigation**
+
+  When moving forwards and backwards in a form flow instance with conditional steps, steps might exist that were
+  completed in a different branch of the path. This could sometimes result in navigation issues.
 
 * **Error in 'Create zaakstatus' action**
 
