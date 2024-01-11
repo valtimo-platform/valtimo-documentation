@@ -168,3 +168,34 @@ be done.
     }
 ]
 ```
+
+### User task document property permissions
+
+Access to a user task can be controlled based on properties inside the JsonSchemaDocument. The example below shows how
+that can be done.
+
+```json
+[
+    {
+        "resourceType": "com.ritense.valtimo.camunda.domain.CamundaTask",
+        "action": "view_list",
+        "roleKey": "ROLE_USER",
+        "conditions": [
+            {
+                "type": "container",
+                "resourceType": "com.ritense.document.domain.impl.JsonSchemaDocument",
+                "conditions": [
+                    {
+                        "type": "expression",
+                        "field": "content.content",
+                        "path": "$.city",
+                        "operator": "==",
+                        "value": "Amsterdam",
+                        "clazz": "java.lang.String"
+                    }
+                ]
+            }
+        ]
+    }
+]
+```

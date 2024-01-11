@@ -215,7 +215,8 @@ ${execution.setVariable('firstName', valueResolverDelegateService.resolveValue(e
 fun handleValue(execution: DelegateExecution, key: String, value: Any)
 ```
 
-Handles a value from a specified source. The resolved value is only returned. An example:
+Handles a value for a specified target. The example below shows how a process-variable is stored in the document on
+path `/person/firstName`:
 
 ```spel
 ${valueResolverDelegateService.handleValue(execution, 'doc:person.firstName', execution.getVariable('firstName'))}
