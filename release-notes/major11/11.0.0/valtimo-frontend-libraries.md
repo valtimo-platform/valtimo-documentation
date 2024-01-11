@@ -102,4 +102,13 @@ No new deprecations.
 
 ## Known issues
 
-No new known issues.
+* **Two types of process link can't be saved**
+  * Discovered in version 11.0.0
+  * The 'generate document' (SmartDocuments plugin) and the 'create Portaaltaak' (Portaaltaak plugin) plugin actions can't be configured due to a broken multi-input field.
+    This has been fixed in Valtimo 11.1.
+* **Loading icon visible after completing the process**
+  * Discovered in version 11.0.0
+  * On the case detail page, a loading icon is visible when the tasks are being retrieved from the backend. When the process has ended, the loading icon persists.
+* **Incomplete export of permissions for a specific role**
+  * Discovered in version 11.0.0
+  * Download the export from the access control list page instead.
