@@ -43,9 +43,10 @@ dependencyManagement {
 }
 ```
 
-### Dependencies
+## Configuration
 
-The following modules are added when a dependency on Valtimo dependencies is added:
+Please check the individual pages of the individual dependencies for any required configuration:
+
 * [Audit](audit.md)
 * [Case](case.md)
 * [Connector](connector.md)
