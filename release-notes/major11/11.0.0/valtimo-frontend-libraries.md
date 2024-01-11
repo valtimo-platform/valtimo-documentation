@@ -102,4 +102,6 @@ No new deprecations.
 
 ## Known issues
 
-No new known issues.
+* **Incomplete export of permissions for a specific role**
+  * Discovered in version 11.0.0
+  * Download the export from the access control list page instead.
