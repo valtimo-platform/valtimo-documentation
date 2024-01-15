@@ -65,6 +65,11 @@ The following bugs were fixed:
   A permission check has been added to the 'Create New Case' button, so that it can no longer result in an
   unauthorized-error.
 
+* **Send along timezone offset with every HTTP request**
+
+  All HTTP request sent from the client now include a `X-Timezone-Offset` header, which contains the user's timezone
+  offset (compared to UTC). The back-end now uses this offset to return the correct results when searching cases by date.
+
 ## Breaking changes
 
 The following breaking changes were introduced:
