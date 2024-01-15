@@ -52,17 +52,35 @@ The following features were added:
   Added a new process bean that can resolve and handle values from several sources. More information can be
   found [here](/reference/process-beans.md#valueresolverdelegateservice)
 
+* **Support for Keycloak group roles in access control**
+
+  Valtimo access control can now make use of Keycloak group roles.
+
+* **Access control mapping CamundaTask to JsonSchemaDocument**
+
+  The PBAC CamundaTask resource can now make use of a JsonSchemaDocument for conditions.
+
+* **Configure due date from BPMN for portaaltaak**
+
+  If no due date is given in the *Create portaal taak* action, the due date of the user task is used instead.
+
 ## Bugfixes
 
 The following bugs were fixed:
 
 * **Deadlock**
 
-  Solved a deadlock that could happen under certain conditions when modifying the document inside a BPMN process.
+  A deadlock could happen under certain conditions when modifying the document inside a BPMN process.
 
-* **Bug2**
+* **Form flow instance back and forward navigation**
 
-  Description of what the issue was.
+  When moving forwards and backwards in a form flow instance with conditional steps, steps might exist that were
+  completed in a different branch of the path. This could sometimes result in navigation issues.
+
+* **Error in 'Create zaakstatus' action**
+
+  A bug has been fixed where the process link 'Create zaakstatus' would result in an error when the 'Zaakstatus
+  explanation' field was left empty.
 
 ## Breaking changes
 

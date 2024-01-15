@@ -51,6 +51,20 @@ The following bugs were fixed:
 
   Previously, while menu items in the left sidebar were loading, they would show `null`. This issue has been resolved.
 
+* **Added permission check on 'Go to case' link**
+
+  A permission check has been added so that the 'Go to case' link inside the task list no longer result in an
+  unauthorized-error.
+
+* **Added permission check on case-list**
+
+  Permission checks have been added to the case-list to avoid an unauthorized-error when clicking on a case.
+
+* **Added permission check on 'Create New Case' button**
+
+  A permission check has been added to the 'Create New Case' button, so that it can no longer result in an
+  unauthorized-error.
+
 ## Breaking changes
 
 The following breaking changes were introduced:
