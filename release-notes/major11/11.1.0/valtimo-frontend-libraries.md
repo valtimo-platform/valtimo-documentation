@@ -42,9 +42,9 @@ The following bugs were fixed:
 
   When using the **valtimo-form-io** component from *@valtimo/components*, the local storage property *formioToken* gets updated every time the token refreshes after expiring.
 
-* **Fixed infinitely loading task list**
+* **Task list loading**
 
-  Fixed an issue where the task list on a case detail page would show a spinner indefinitely when all tasks were completed.
+  The task list on a case detail page would show a spinner indefinitely when all tasks were completed.
 
 ## Breaking changes
 
