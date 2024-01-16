@@ -82,6 +82,11 @@ The following bugs were fixed:
   A bug has been fixed where the process link 'Create zaakstatus' would result in an error when the 'Zaakstatus
   explanation' field was left empty.
 
+* **Case date search**
+
+  Date search fields now take into account the timezone offset sent along with requests under the `X-Timezone-Offset`
+  request header. If this header is not present, UTC+0 is used.
+
 ## Breaking changes
 
 The following breaking changes were introduced:
