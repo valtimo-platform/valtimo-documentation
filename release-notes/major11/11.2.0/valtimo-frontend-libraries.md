@@ -68,7 +68,7 @@ The following bugs were fixed:
 * **Send along timezone offset with every HTTP request**
 
   All HTTP request sent from the client now include a `X-Timezone-Offset` header, which contains the user's timezone
-  offset (compared to UTC). The back-end now uses this offset to return the correct results when searching cases by date.
+  offset (compared to UTC). The back-end libraries now use this offset to return the correct results when searching cases by date.
 
 ## Breaking changes
 
