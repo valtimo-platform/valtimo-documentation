@@ -72,7 +72,7 @@ The following bugs were fixed:
 
 * **Slow loading of notes**
 
-  The loading of the case notes was slow depending on the access control settings. This has been solved.
+  The loading of the case notes could take a long time depending on the access control settings. This has been solved.
 
 ## Breaking changes
 
