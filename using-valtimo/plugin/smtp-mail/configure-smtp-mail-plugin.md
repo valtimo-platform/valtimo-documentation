@@ -4,6 +4,8 @@ The SMTP Mail Plugin lets you send emails using any SMTP server.
 
 ## Before You Start
 
+The SMTP Mail Plugin is not a standard part of Valtimo. It is available in the Plugins Repo. More information can be found [here](https://docs.valtimo.nl/readme/modules/plugin-introduction#plugins-repo).
+
 ## Configure the plugin
 
 Just follow these easy steps to configure the plugin:
