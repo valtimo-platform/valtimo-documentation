@@ -11,6 +11,12 @@ Hotfixes are supported on all versions.
 
 | Valtimo backend libraries | Valtimo frontend libraries | Java | Kotlin | Spring Boot | Node   | Camunda |
 |---------------------------|----------------------------|------|--------|-------------|--------|---------|
+| 12.0.0                    | 12.0.0                     | 17   | 1.9.21 | 3.1.7       | 18 LTS | 7.20.0  |
+
+## Major 11
+
+| Valtimo backend libraries | Valtimo frontend libraries | Java | Kotlin | Spring Boot | Node   | Camunda |
+|---------------------------|----------------------------|------|--------|-------------|--------|---------|
 | 11.2.0                    | 11.2.0                     | 17   | 1.8.20 | 2.7.11      | 18 LTS | 7.19.0  |
 | 11.1.0                    | 11.1.0                     | 17   | 1.8.20 | 2.7.11      | 18 LTS | 7.19.0  |
 | 11.0.0                    | 11.0.0                     | 17   | 1.8.20 | 2.7.11      | 18 LTS | 7.19.0  |
