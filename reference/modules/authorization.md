@@ -10,6 +10,8 @@ The access to the following resources is limited by Valtimo access control.
 | **[Document snapshot](#document-snapshot)**     | `com.ritense.document.domain.impl.snapshot.JsonSchemaDocumentSnapshot` | Document |
 | **[Search field](#search-field)**               | `com.ritense.document.domain.impl.searchfield.SearchField`             | Document |
 | **[Note](#note)**                               | `com.ritense.note.domain.Note`                                         | Notes    |
+| **[Execution](#execution)**                     | `com.ritense.valtimo.camunda.domain.CamundaExecution`                  | Core     |
+| **[Process definition](#process-definition)**   | `com.ritense.valtimo.camunda.domain.CamundaProcessDefinition`          | Core     |
 | **[Task](#task)**                               | `com.ritense.valtimo.camunda.domain.CamundaTask`                       | Core     |
 | **[Task identity link](#task-identity-link)**   | `com.ritense.valtimo.camunda.domain.CamundaIdentityLink`               | Core     |
 | **[Case tab](#case-tab)**                       | `com.ritense.case.domain.CaseTab`                                      | CaseTab  |
@@ -87,6 +89,28 @@ Resource type: `com.ritense.note.domain.Note`
 | Related resource          |
 |---------------------------|
 | **[Document](#document)** |
+
+### Execution
+Resource type: `com.ritense.valtimo.camunda.domain.CamundaExecution`
+
+#### Supported actions
+| Action         | key          | Description                                                               |
+|----------------|:-------------|:--------------------------------------------------------------------------|
+| **Create**     | `create`     | Allows creating an execution.                                             |
+
+#### Supported relations
+| Related resource                              |
+|-----------------------------------------------|
+| **[Process definition](#process-definition)** |
+
+### Process definition
+Resource type: `com.ritense.valtimo.camunda.domain.CamundaProcessDefinition`
+
+#### Supported actions
+No actions are currently supported.
+
+#### Supported relations
+No relations are currently supported.
 
 ### Task
 Resource type: `com.ritense.valtimo.camunda.domain.CamundaTask`

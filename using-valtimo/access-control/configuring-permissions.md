@@ -139,6 +139,37 @@ defined based on the relation between the two resources,`JsonSchemaDocument` and
 ]
 ```
 
+### Create process instance permissions
+
+The example below shows how to allow users with `ROLE_USER` to create a process instance of process definition type 
+`GenericProces`. When trying to create a process instance, the execution itself does not yet exist. So in order for
+conditions to be evaluated, they have to be defined based on the relation between the two resources, `CamundaExecution`
+and `CamundaProcessDefinition`.
+
+```json
+[
+    {
+        "resourceType": "com.ritense.valtimo.camunda.domain.CamundaExecution",
+        "action": "create",
+        "roleKey": "ROLE_USER",
+        "conditions": [
+            {
+                "type": "container",
+                "resourceType": "com.ritense.valtimo.camunda.domain.CamundaProcessDefinition",
+                "conditions": [
+                    {
+                        "type": "field",
+                        "field": "key",
+                        "operator": "==",
+                        "value": "GeneriekProces"
+                    }
+                ]
+            }
+        ]
+    }
+]
+```
+
 ### User task candidate groups permissions
 
 Access to a user task is usually controlled by setting the 'Candidate groups' to a role. To make sure that the user task
