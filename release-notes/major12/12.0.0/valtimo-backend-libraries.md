@@ -8,8 +8,10 @@ The following features were added:
 
   A new `valtimo-dependency-versions` module has been created, 
   which at the same time removes the version control from `valtimo-dependencies` and `valtimo-gzac-depenencies`.
-  More information can be found [here](../../../getting-started/modules/core/valtimo-dependency-versions.md).
 
+  This module specifies versions for dependencies of Valtimo.
+
+  More information can be found [here](../../../getting-started/modules/core/valtimo-dependency-versions.md).
 
 * **New feature2**
 
