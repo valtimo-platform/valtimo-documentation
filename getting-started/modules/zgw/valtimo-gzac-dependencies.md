@@ -7,24 +7,14 @@ dependency. This includes the most common modules that are used by Valtimo GZAC 
 dependencies](../core/valtimo-dependencies.md). The following can be added to your project, depending on whether Maven or Gradle is used:
 
 ### Backend
+The samples below assume the [valtimo-dependency-versions](../core/valtimo-dependency-versions.md) module is used. If not, please specify the artifact version as well.
 
 #### Maven dependency:
 ```xml
-<dependencyManagement>
-    <dependencies>
-        <dependency>
-            <groupId>com.ritense.valtimo</groupId>
-            <artifactId>valtimo-gzac-dependencies</artifactId>
-            <version>${valtimo_version}</version>
-        </dependency>
-    </dependencies>
-</dependencyManagement>
-
 <dependencies>
     <dependency>
         <groupId>com.ritense.valtimo</groupId>
         <artifactId>valtimo-gzac-dependencies</artifactId>
-        <version>${valtimo_version}</version>
     </dependency>
 </dependencies>
 
@@ -33,13 +23,7 @@ dependencies](../core/valtimo-dependencies.md). The following can be added to yo
 #### Gradle dependency:
 ```groovy
 dependencies {
-  implementation platform("com.ritense.valtimo:valtimo-gzac-dependencies:$valtimo_version")
-}
-
-dependencyManagement {
-  imports {
-    mavenBom("com.ritense.valtimo:valtimo-gzac-dependencies:${valtimo_version}")
-  }
+  implementation("com.ritense.valtimo:valtimo-gzac-dependencies")
 }
 ```
 
@@ -48,19 +32,21 @@ dependencyManagement {
 The following modules are added when a dependency on Valtimo GZAC dependencies is added:
 * [Valtimo dependencies](../core/valtimo-dependencies.md)
 * [Besluit](besluit.md)
+* [Besluiten API](besluiten-api.md)
 * [Catalogi API](catalogi-api.md)
 * [Contactmoment](contactmoment.md)
 * [Documenten API](documenten-api.md)
 * [Haalcentraal BRP](haalcentraal-brp.md)
 * [Klant](klant.md)
-* Notificaties API
-* Notificaties API authentication
-* Object management
+* [Notificaties API](notificaties-api.md)
+* [Notificaties API authentication](notificaties-api-authentication.md)
+* [Object management](object-management.md)
 * [Objecten API](objecten-api.md)
 * [Objecten API authentication](objecten-api-authentication.md)
 * [Objects API](objects-api.md)
 * [Objecttypen API](objecttypen-api.md)
 * [Openzaak](openzaak.md)
-* [Openzaak](openzaak-resource.md)
-* Verzoek
+* [Openzaak resource](openzaak-resource.md)
+* [Portaaltaak](portaaltaak.md)
+* [Verzoek](verzoek.md)
 * [Zaken API](zaken-api.md)

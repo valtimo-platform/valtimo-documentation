@@ -2,16 +2,18 @@
 
 This page describes how to update Valtimo from the previous version to the current.
 
-* **Breaking change 1/Deprecation 1**
+* **Spring boot 3 upgrade**
 
-  Scope: back-end/front-end
+  Scope: back-end
 
-  1. **Step1**
+  Full migration instructions for this change can be found [here](spring-boot3-migration.md)
 
-     Description
-  2. **Step2**
+* **Valtimo dependencies**
 
-     Description
+  Scope: back-end
+
+  `valtimo-dependencies` and `valtimo-gzac-depenencies` should no longer be used for `dependencyManagement` or `platform`.
+  This functionality has been replaced by [valtimo-dependency-versions](../../../getting-started/modules/core/valtimo-dependency-versions.md)
 
 * **Breaking change 2/Deprecation 2**
 
