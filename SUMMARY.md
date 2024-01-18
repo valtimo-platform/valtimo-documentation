@@ -34,6 +34,7 @@
       * [Exporter](getting-started/modules/core/exporter.md)
       * [Form](getting-started/modules/core/form.md)
       * [Form flow](getting-started/modules/core/form-flow.md)
+      * [Form flow Valtimo](getting-started/modules/core/form-flow-valtimo.md)
       * [Form link](getting-started/modules/core/form-link.md)
       * [Importer](getting-started/modules/core/importer.md)
       * [Local document generation](getting-started/modules/core/local-document-generation.md)
