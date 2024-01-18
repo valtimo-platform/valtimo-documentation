@@ -5,9 +5,9 @@
 The `valtimo-dependency-versions` module specifies dependency versions for Valtimo.
 When this module is used, please specify dependency versions only when needed. 
 
-> NOTE: This dependency will not add any other dependencies to the classpath. It will only define the versions.
+> **_NOTE:_** This dependency does not add any other dependencies to the classpath. It only defines the versions.
 > 
-> Please also take a look at [valtimo-dependencies](valtimo-dependencies.md) or [valtimo-gzac-dependencies](../zgw/valtimo-gzac-dependencies.md) when creating an implementation
+> Please also take a look at [valtimo-dependencies](valtimo-dependencies.md) or [valtimo-gzac-dependencies](../zgw/valtimo-gzac-dependencies.md) when creating an implementation.
 
 This module specifies versions for:
 - Valtimo 

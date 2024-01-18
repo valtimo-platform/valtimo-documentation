@@ -7,8 +7,8 @@ The following features were added:
 * **valtimo-dependency-versions module**
 
   A new `valtimo-dependency-versions` module has been created, 
-  which at the same time removes the version control from `valtimo-dependencies` and `valtimo-gzac-depenencies`
-  More information can be found [here](../../../getting-started/modules/core/valtimo-dependency-versions.md)
+  which at the same time removes the version control from `valtimo-dependencies` and `valtimo-gzac-depenencies`.
+  More information can be found [here](../../../getting-started/modules/core/valtimo-dependency-versions.md).
 
 
 * **New feature2**
@@ -38,11 +38,11 @@ The following breaking changes were introduced:
   Valtimo has been upgraded to Spring Boot 3.
   This was needed to keep the product up to date with the latest (transitive) dependencies.
 
-  Migration instructions related to this change can be found [here](spring-boot3-migration)
+  Migration instructions related to this change can be found [here](spring-boot3-migration).
 
 * **Valtimo dependencies have changed**
   `valtimo-dependencies` and `valtimo-gzac-depenencies` should no longer be used for `dependencyManagement` or `platform`. 
-  This functionality has been replaced by [valtimo-dependency-versions](../../../getting-started/modules/core/valtimo-dependency-versions.md)
+  This functionality has been replaced by [valtimo-dependency-versions](../../../getting-started/modules/core/valtimo-dependency-versions.md).
 
 Instructions on how to migrate to this version of Valtimo can be found [here](migration.md).
 
