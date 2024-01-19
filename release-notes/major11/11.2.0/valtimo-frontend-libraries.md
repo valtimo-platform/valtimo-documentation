@@ -38,6 +38,21 @@ The following features were added:
 
   The version of the process is now visible on the 'Progress' tab of a case.
 
+* **Updates to the Carbon look and feel**
+
+  The following components have been updated to the Carbon library:
+    - Case Definition Search Fields tab
+    - Case Definition List tab
+    - Plugin list
+
+* **Processes Tab**
+
+  The Connected Processes list has been moved and migrated to the ValtimoCarbonList from the Configuration tab and has been added to a new *Processes* of its own.
+
+* **Connected processes to a Document Definition Version**
+
+  Now a process can be connected to a specific version of a Case Definition.
+
 ## Bugfixes
 
 The following bugs were fixed:
