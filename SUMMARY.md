@@ -34,6 +34,7 @@
       * [Exporter](getting-started/modules/core/exporter.md)
       * [Form](getting-started/modules/core/form.md)
       * [Form flow](getting-started/modules/core/form-flow.md)
+      * [Form flow Valtimo](getting-started/modules/core/form-flow-valtimo.md)
       * [Form link](getting-started/modules/core/form-link.md)
       * [Importer](getting-started/modules/core/importer.md)
       * [Local document generation](getting-started/modules/core/local-document-generation.md)
@@ -50,6 +51,7 @@
       * [Test utils common](getting-started/modules/core/test-utils-common.md)
       * [Value resolvers](getting-started/modules/core/value-resolver.md)
       * [Valtimo dependencies](getting-started/modules/core/valtimo-dependencies.md)
+      * [Valtimo dependency versions](getting-started/modules/core/valtimo-dependency-versions.md)
       * [Web](getting-started/modules/core/web/web.md)
         * [CORS](getting-started/modules/core/web/valtimo-cors.md)
     * ZGW
@@ -199,6 +201,7 @@
       * [Valtimo backend libraries](release-notes/major12/12.0.0/valtimo-backend-libraries.md)
       * [Valtimo frontend libraries](release-notes/major12/12.0.0/valtimo-frontend-libraries.md)
       * [Migration](release-notes/major12/12.0.0/migration.md)
+        * [Spring Boot 3](release-notes/major12/12.0.0/spring-boot3-migration.md)
   * 11.x.x
     * 11.2.0 (RC)
       * [Valtimo backend libraries](release-notes/major11/11.2.0/valtimo-backend-libraries.md)

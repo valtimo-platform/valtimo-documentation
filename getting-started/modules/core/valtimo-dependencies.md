@@ -7,24 +7,14 @@ most common modules that are used by Valtimo implementations. The following can 
 whether Maven or Gradle is used:
 
 ### Backend
+The samples below assume the [valtimo-dependency-versions](valtimo-dependency-versions.md) module is used. If not, please specify the artifact version as well.
 
 #### Maven dependency:
 ```xml
-<dependencyManagement>
-    <dependencies>
-        <dependency>
-            <groupId>com.ritense.valtimo</groupId>
-            <artifactId>valtimo-dependencies</artifactId>
-            <version>${valtimo_version}</version>
-        </dependency>
-    </dependencies>
-</dependencyManagement>
-
 <dependencies>
     <dependency>
         <groupId>com.ritense.valtimo</groupId>
         <artifactId>valtimo-dependencies</artifactId>
-        <version>${valtimo_version}</version>
     </dependency>
 </dependencies>
 
@@ -33,13 +23,7 @@ whether Maven or Gradle is used:
 #### Gradle dependency:
 ```groovy
 dependencies {
-  implementation platform("com.ritense.valtimo:valtimo-dependencies:${valtimo_version}")
-}
-
-dependencyManagement {
-  imports {
-    mavenBom("com.ritense.valtimo:valtimo-dependencies:${valtimo_version}")
-  }
+  implementation("com.ritense.valtimo:valtimo-dependencies")
 }
 ```
 
@@ -47,19 +31,28 @@ dependencyManagement {
 
 The following modules are added when a dependency on Valtimo dependencies is added:
 * [Audit](audit.md)
+* [Authorization](authorization.md)
 * [Case](case.md)
+* Changelog
 * [Connector](connector.md)
 * [Contract](contract.md)
+* [Core](core.md)
+* [Dashboard](dashboard.md)
+* Data provider
 * [Document](document.md)
+* [Exporter](exporter.md)
 * [Form](form.md)
-* Form flow
-* [Form flow Valtimo](form-flow.md)
+* [Form flow](form-flow.md)
+* [Form flow Valtimo](form-flow-valtimo.md)
 * [Form link](form-link.md)
+* [Importer](importer.md)
 * Keycloak IAM
 * Notes
 * Plugin
 * [Plugin Valtimo](plugin.md)
 * [Process document](process-document.md)
+* Process link
 * [Temporary resource storage](temporary-resource-storage.md)
+* Search
 * [Value resolver](value-resolver.md)
 * [Web](web/web.md)

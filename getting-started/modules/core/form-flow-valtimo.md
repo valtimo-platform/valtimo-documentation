@@ -1,11 +1,8 @@
-# Form flow
+# Form flow Valtimo
 
 ## Dependencies
 
-Form flow can be used without Valtimo. 
-This module provides the bare minimum to implement form flows, without any dependencies to Valtimo or Camunda. 
-
-In order to use form flow, the `form-flow` module needs to be added as a dependency. The
+In order to use form flow in Valtimo, the `form-flow-valtimo` needs to be added as a dependency. The
 following can be added to your project, depending on whether Maven or Gradle is used:
 
 ### Backend
@@ -17,7 +14,7 @@ If not, please specify the artifact version as well.
 <dependencies>
     <dependency>
         <groupId>com.ritense.valtimo</groupId>
-        <artifactId>form-flow</artifactId>
+        <artifactId>form-flow-valtimo</artifactId>
     </dependency>
 </dependencies>
 ```
@@ -25,6 +22,6 @@ If not, please specify the artifact version as well.
 #### Gradle dependency:
 ```groovy
 dependencies {
-  implementation "com.ritense.valtimo:form-flow"
+  implementation "com.ritense.valtimo:form-flow-valtimo"
 }
 ```
