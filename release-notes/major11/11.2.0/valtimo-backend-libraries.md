@@ -7,7 +7,7 @@ The following features were added:
 * **Export case definitions**
 
   Case definitions can now be exported as an archive, containing all process definitions, forms, form flows,
-  process links and the document definition that make up the case definition. See 
+  process links and the document definition that make up the case definition. See
   [this page](/using-valtimo/case/exporting-case-definitions.md#export) for more information.
 
 * **Import case definitions**
@@ -31,26 +31,29 @@ The following features were added:
   Two new access control resources have been added, these are `CamundaExecution` and `CamundaProcessDefinition`. The
   former has one action that can be used to allow users to create process instances, which is the `create` action.
   These resources can be used to restrict creation of certain process instances to a subset of roles. Information on
-  how to use this can be found [here](/using-valtimo/access-control/configuring-permissions.md#create-process-instance-permissions).
+  how to use this can be
+  found [here](/using-valtimo/access-control/configuring-permissions.md#create-process-instance-permissions).
 
 * **Outbox message publisher for RabbitMQ**
 
-  A RabbitMQ (AMQP 0.9.1) message publisher has been in the `outbox-rabbitmq` module. More information can be found [here](/getting-started/modules/core/outbox-rabbitmq.md). 
+  A RabbitMQ (AMQP 0.9.1) message publisher has been in the `outbox-rabbitmq` module. More information can be
+  found [here](/getting-started/modules/core/outbox-rabbitmq.md).
 
 * **Added option for custom process variable name to download document plugin action in documentAPI**
 
-  Added option for custom process variable name to download document plugin action in documentAPI so you have the option to choose a custom process variable name.
+  Added option for custom process variable name to download document plugin action in documentAPI so you have the option
+  to choose a custom process variable name.
   When left empty the default name is: "resourceId"
 
 * **Selecting and retrieving a specific version of a document definition**
-  
+
   To support switching between document definition versions, two new API endpoints have been added. The first is to
   retrieve a list of versions available for that document definition, and the second to retrieve a specific version:
-  - ```GET /api/management/v1/document-definition/{name}/version```
-  - ```GET /api/management/v1/document-definition/{name}/version/{version}```
+    - ```GET /api/management/v1/document-definition/{name}/version```
+    - ```GET /api/management/v1/document-definition/{name}/version/{version}```
 
 * **Javascript in Camunda script task**
-  
+
   Added support for Javascript in Camunda script tasks.
 
 * **Value resolver process bean**
@@ -69,6 +72,11 @@ The following features were added:
 * **Configure due date from BPMN for portaaltaak**
 
   If no due date is given in the *Create portaal taak* action, the due date of the user task is used instead.
+
+* **User task assignees saved by user ID**
+
+  The assignees of a user task are now saved in the database by their user ID. When implementations use keycloak, the
+  assignee column from the task table in the databases is automatically migrated from email to user ID.
 
 ## Bugfixes
 
@@ -92,6 +100,11 @@ The following bugs were fixed:
 
   Date search fields now take into account the timezone offset sent along with requests under the `X-Timezone-Offset`
   request header. If this header is not present, UTC+0 is used.
+
+* **Error in some plugin action properties**
+
+  A bug has been fixed where the plugin action property would throw an error when the plugin action property was set to
+  a process variable that contained a list.
 
 ## Breaking changes
 
@@ -122,9 +135,9 @@ Instructions on how to migrate to this version of Valtimo can be found [here](mi
 This version has the following known issues:
 
 * **Issue1**
-  * Discovered in version x.x.x
-  * Describe what can be done to work around the issue
+    * Discovered in version x.x.x
+    * Describe what can be done to work around the issue
 
 * **Issue2**
-  * Discovered in version x.x.x
-  * Describe what can be done to work around the issue
+    * Discovered in version x.x.x
+    * Describe what can be done to work around the issue
