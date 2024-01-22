@@ -85,6 +85,10 @@ The following bugs were fixed:
   All HTTP request sent from the client now include a `X-Timezone-Offset` header, which contains the user's timezone
   offset (compared to UTC). The back-end libraries now use this offset to return the correct results when searching cases by date.
 
+* **Slow loading of notes**
+
+  The loading of the case notes could take a long time depending on the access control settings. This has been solved.
+
 ## Breaking changes
 
 The following breaking changes were introduced:
