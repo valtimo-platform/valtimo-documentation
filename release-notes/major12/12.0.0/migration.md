@@ -42,7 +42,7 @@ This page describes how to update Valtimo from the previous version to the curre
     3. **Step3**
        Change `${currentUserEmail}` to `${currentUserId}`.
 
-       If the `value` field contains an actual email, email must be changed to a user ID.
+       If the `value` field contains an actual email, then the email must be changed to a user ID.
 
 * **Access control database**
 
@@ -72,7 +72,7 @@ This page describes how to update Valtimo from the previous version to the curre
     3. **Step3**
        Change `${currentUserEmail}` to `${currentUserId}`
 
-       If the `value` field contains an actual email, email must be changed to a user ID.
+       If the `value` field contains an actual email, then the email must be changed to a user ID.
 
 * **Breaking change 2/Deprecation 2**
 

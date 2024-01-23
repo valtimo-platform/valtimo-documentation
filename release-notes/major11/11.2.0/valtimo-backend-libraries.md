@@ -73,11 +73,6 @@ The following features were added:
 
   If no due date is given in the *Create portaal taak* action, the due date of the user task is used instead.
 
-* **User task assignees saved by user ID**
-
-  The assignees of a user task are now saved in the database by their user ID. When implementations use keycloak, the
-  assignee column from the task table in the databases is automatically migrated from email to user ID.
-
 ## Bugfixes
 
 The following bugs were fixed:
@@ -100,11 +95,6 @@ The following bugs were fixed:
 
   Date search fields now take into account the timezone offset sent along with requests under the `X-Timezone-Offset`
   request header. If this header is not present, UTC+0 is used.
-
-* **Error in some plugin action properties**
-
-  A bug has been fixed where the plugin action property would throw an error when the plugin action property was set to
-  a process variable that contained a list.
 
 ## Breaking changes
 
