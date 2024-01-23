@@ -1,53 +1,61 @@
-# SMTP Mail Plugin: A Simple Guide
+# SMTP Mail Plugin
 
 The SMTP Mail Plugin lets you send emails using any SMTP server.
-
-## Before You Start
 
 The SMTP Mail Plugin is not a standard part of Valtimo. It is available in the Plugins Repo. More information can be found [here](https://docs.valtimo.nl/readme/modules/plugin-introduction#plugins-repo).
 
 ## Configure the plugin
 
-Just follow these easy steps to configure the plugin:
+A plugin configuration is required before the plugin can be used. A general description on how to configure
+plugins can be found [here](../configure-plugin.md).
 
-1. Title: Give your plugin a name.
-2. Host: Enter the address of your SMTP server. No prefixes needed.
-3. Port: The port number of your SMTP server, usually 587.
-4. Username: (If needed) Your SMTP server login name.
-5. Password: (If needed) Your SMTP server password.
-6. Protocol: (Optional. Default = “smtp”) The email protocol you're using.
-7. Debug: (Optional. Default = true) Turn this on to find and fix problems.
-8. Auth: (Optional. Default = true) Let the plugin know if it needs to log in.
-9. StartTlsEnable: (Optional. Default = true) This sets up secure TLS encryption.
+To configure this plugin the following properties have to be entered:
+
+- **Title**. The name of the plugin. 
+- **Host**. The address of the SMTP server.
+- **Port**: The port number of the SMTP server, usually 587.
+- **Username**: The SMTP server login name. Not required. 
+- **Password**: The SMTP server password. Not required.
+- **Protocol**: The email protocol. Default is set to "smtp". 
+- **Debug**: Gives more specific logging. Default is set to true.
+- **Auth**: Determines whether logging is needed . Default is set to true.
+- **StartTlsEnable**: This sets up secure TLS encryption. Default is set to true.
+
+An example plugin configuration:
+
+![example plugin configuration](img/configure-plugin.png)
 
 ## Available actions
 
+The SMTP mailplugin supports the following actions that can be configured in process links in order to store
+documents and their metadata.
+
+A general description on how to create process links, can be found [here](../../process-link/create-process-link.md).
 
 ### Send email
 
-To send emails during a process:
+The **Send email** action takes mail metadata and temporary storage resourceId's of the attachments from the 
+process variables of the process, fetches the HTML and attachments from the Valtimo Temporary Storage and sends
+this data to the SMTP server.
 
-1. Create a service task.
-2. Select the SMTP plugin and fill in the required details:
-   1. Sender: Who's sending the email.
-   2. Recipients: The main people you're emailing.
-   3. CC: Others who need a copy of the email.
-   4. BCC: People who get the email without others knowing.
-   5. Subject: What your email is about.
-   6. Content: The resource id of the main message in your email.
-   7. Attachments:  The resource id of any files you want to include.
+When creating a process link the following properties have to be entered:
+- **Sender**: Mail address of the sender.
+- **Recipients**: Mail address(es) of the receivers.
+- **CC**: Mail address(es) to send a copy of the email.
+- **BCC**: Mail address(es) to send a copy of the email. Recipients are hidden. 
+- **Subject**: Subject of the email. 
+- **Attachments**: The resource id of files (in Valtimo Temporary Storage) that need to be send with the mail.
 
-Tip: Use process variables/process links to manage these details more efficiently and to select multiple items for email and attachments.
-A general description on how to create process links can be found [here](../../process-link/create-process-link.md).
+Use process variables/process links to select multiple items for recipients, CC, BCC and attachments.
 
-## Creating the Email Body
-This plugin doesn't create the email body. You'll need to:
+an example process link configuration:
+![example process link configuration](img/send-email-process-link.png)
 
-1. Make your email content separately. 
+### Creating the Email Body
+This plugin does not create the email body. For this it is needed to
+
+1. Make the email content separately. 
 2. Store it in Valtimo temporary storage. 
-3. Add any attachments to the Valtimo temporary storage. 
-4. Save the resource id of step 2 and 3 and pass it as argument in Content and Attachments.
+3. Store the resource id in Process Variables with the key **resourceId**
 
-You can use tools like SmartDocuments or upload documents in Form.io  to generate and store content.
-
-Important: The Valtimo temporary storage isn't permanent. If the server or Docker container restarts, the data will be lost.
+Use e.g. SmartDocuments or upload documents in Form.io to generate and store content.
