@@ -8,5 +8,5 @@ The following section describes the various modules that are applicable for Valt
 * [Documents](document.md)
 * [Form](form.md)
 * [Form flow](form-flow.md)
-* [Form links](form-link.md)
+* [Form links (deprecated)](form-link.md)
 * [Object management](object-management.md)

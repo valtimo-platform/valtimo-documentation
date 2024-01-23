@@ -9,7 +9,7 @@ This section is intended for system administrators who need to configure Valtimo
 * [Case](case/creating-case-settings.md)
 * [Document](document/document.md)
 * [Form flow](form-flow/form-flow.md)
-* [Form links](form-link/form-link.md)
+* [Form links (deprecated)](form-link/form-link.md)
 * [Forms](forms/forms.md)
 * [Keycloak](keycloak-iam/keycloak.md)
 * [Pending changes](pending-changes/pending-changes.md)

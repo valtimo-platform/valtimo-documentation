@@ -1,4 +1,4 @@
-# Form flow
+# Form flow (deprecated)
 
 Form flow offers a way to configure a flow between different Form IO forms.
 

@@ -1,4 +1,4 @@
-# Form links
+# Form links (deprecated)
 
 ## Dependencies
 
