@@ -13,19 +13,20 @@ The following features were added:
 
   More information can be found [here](../../../getting-started/modules/core/valtimo-dependency-versions.md).
 
-* **New feature2**
+* **User task assignees saved by user ID**
 
-  Description of the new feature goes here.
-  Also link to the page that explains the feature in greater detail.
+  The assignees of a user task are now saved in the database by their user ID. When implementations use keycloak, the
+  assignee column from the task table in the databases is automatically migrated from email to user ID.
 
 
 ## Bugfixes
 
 The following bugs were fixed:
 
-* **Bug1**
+* **Error in some plugin action properties**
 
-  Description of what the issue was.
+  The plugin action property would throw an error when the plugin action property was set to a process variable that
+  contained a list.
 
 * **Bug2**
 
