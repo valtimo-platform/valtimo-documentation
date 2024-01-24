@@ -6,7 +6,7 @@
   * [Document](core/document.md)
   * [Form](core/form.md)
   * [Form flow](core/form-flow.md)
-  * [Form link](core/form-link.md)
+  * [Form links (deprecated)](core/form-link.md)
   * [Milestones](core/milestones.md)
   * [Plugins](core/plugin.md)
   * [Outbox](core/outbox.md)

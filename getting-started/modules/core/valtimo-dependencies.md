@@ -54,7 +54,7 @@ The following modules are added when a dependency on Valtimo dependencies is add
 * [Form](form.md)
 * Form flow
 * [Form flow Valtimo](form-flow.md)
-* [Form link](form-link.md)
+* [Form links (deprecated)](form-link.md)
 * Keycloak IAM
 * Notes
 * Plugin

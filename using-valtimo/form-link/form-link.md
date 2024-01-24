@@ -1,4 +1,4 @@
-# Form links
+# Form links (deprecated)
 
 Form links make a connection between a task inside a process and a form. 
 

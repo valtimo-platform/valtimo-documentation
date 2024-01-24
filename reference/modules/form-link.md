@@ -1,4 +1,4 @@
-# Form links
+# Form links (deprecated)
 
 ## Supported form types
 
