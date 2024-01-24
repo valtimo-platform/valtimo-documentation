@@ -66,7 +66,6 @@ The following was deprecated:
   * `AuditService.findByEventAndOccurredBetween(Class<? extends AuditEvent> event, LocalDateTime from, LocalDateTime until, Pageable pageable)`
   * `AuditService.findByProperty(String key, Object value, Pageable pageable)`
   * `AuditService.findByEventTypeAndProperty(Class<? extends AuditEvent> event, String key, Object value)`
-  * `AuditSearchService`
 
 * **Audit module classes**
 
