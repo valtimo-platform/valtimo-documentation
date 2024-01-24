@@ -2,31 +2,20 @@
 
 ## New Features
 
-The following features were added:
-
-- Feature
+No new features.
 
 ## Bugfixes
 
-The following bugs were fixed:
-
-- Bugfix
+No bugfixes.
 
 ## Breaking changes
 
-The following breaking changes were added:
-
-* Breaking change
+No breaking changes.
 
 ## Deprecations
 
-The following was deprecated:
-
-* Deprecation
-
+No deprecations.
 
 ## Known issues
 
-The folowing are known issues:
-
-* Known issue
+No known issues.
