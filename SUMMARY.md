@@ -191,6 +191,7 @@
   * [Feature toggles](reference/feature-toggles.md)
   * [Supported databases](reference/supported-databases.md)
   * [Process beans](reference/process-beans.md)
+  * [Content Security Policy (CSP)](reference/content-security-policy.md)
   * [Troubleshoot](reference/troubleshoot.md)
 * Release notes
   * [Release notes](release-notes/release-notes.md)

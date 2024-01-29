@@ -53,6 +53,12 @@ The following features were added:
 
   Now a process can be connected to a specific version of a Case Definition.
 
+* **Configure Content Security Policy (CSP) from environment**
+
+  In order to make the client more secure, the option has been added to configure CSP headers from the environment file.
+  Please refer to [this page](/reference/content-security-policy.md) for information on how to configure your CSP.
+
+
 ## Bugfixes
 
 The following bugs were fixed:
