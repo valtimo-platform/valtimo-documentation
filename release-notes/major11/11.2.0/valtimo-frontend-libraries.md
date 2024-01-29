@@ -89,6 +89,10 @@ The following bugs were fixed:
 
   The loading of the case notes could take a long time depending on the access control settings. This has been solved.
 
+* **Add note button not clickable on small windows**
+
+  The *Add note* button is now clickable even when resizing the window to a smaller size.
+
 ## Breaking changes
 
 The following breaking changes were introduced:
