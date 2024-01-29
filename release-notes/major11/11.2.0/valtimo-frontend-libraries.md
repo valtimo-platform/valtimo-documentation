@@ -89,6 +89,12 @@ The following bugs were fixed:
 
   The loading of the case notes could take a long time depending on the access control settings. This has been solved.
 
+* **Form.IO calendar component**
+
+  When having two or more calendar components in a Form.IO form, and having a language other than English selected in
+  the application, only one calendar component could be expanded. Now calendar components correctly take into account
+  the currently selected locale.
+
 ## Breaking changes
 
 The following breaking changes were introduced:
