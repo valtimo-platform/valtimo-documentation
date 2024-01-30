@@ -101,6 +101,10 @@ The following bugs were fixed:
   the application, only one calendar component could be expanded. Now calendar components correctly take into account
   the currently selected locale.
 
+* **Add note button not clickable on small windows**
+
+  The *Add note* button is now clickable even when resizing the window to a smaller size.
+
 ## Breaking changes
 
 The following breaking changes were introduced:
