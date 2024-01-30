@@ -33,7 +33,7 @@ export const cspHeaderParamsDev: CSPHeaderParams = {
         UNSAFE_EVAL is needed because of javascript in form.io forms (i.e. on summary page)
         Scripts loaded from https://cdn.form.io/ are allowed, otherwise Form.IO won't work in our app.
          */
-        'script-src': [SELF, 'https://cdn.form.io/', UNSAFE_EVAL],
+        'script-src': [SELF, UNSAFE_EVAL, UNSAFE_INLINE, 'https://cdn.form.io/'],
         /* 
         DATA is needed because of use of inline fonts.
         Some external sources are allowed which are used in the Valtimo front-end libraries.
@@ -41,6 +41,7 @@ export const cspHeaderParamsDev: CSPHeaderParams = {
         'font-src': [
             SELF,
             DATA,
+            UNSAFE_INLINE,
             'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/',
             'https://fonts.gstatic.com',
         ],
