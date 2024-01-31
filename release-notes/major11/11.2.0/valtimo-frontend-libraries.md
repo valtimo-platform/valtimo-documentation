@@ -53,6 +53,11 @@ The following features were added:
 
   Now a process can be connected to a specific version of a Case Definition.
 
+* **Added feature toggle `useStartEventNameAsStartFormTitle`**
+
+  Now you can set this feature toggle to show BPMN start event names as title of start forms instead of the standard 
+  `Start - ${process-name}` format.
+
 ## Bugfixes
 
 The following bugs were fixed:

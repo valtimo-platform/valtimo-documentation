@@ -77,3 +77,7 @@ with a `boolean` value.
   [this page ](/using-valtimo/case/case-tabs.md). If disabled, the tabs for each case type will be the same, and will be
   configured from the `AppModule`. For information on this option, visit [this page](/extending-valtimo/tabs/customizing-case-tabs.md).
 
+* **`useStartEventNameAsStartFormTitle`**
+
+  If enabled, BPMN start event names will be used as title for start forms instead of the standard 
+  `Start - ${process-name}` format.
