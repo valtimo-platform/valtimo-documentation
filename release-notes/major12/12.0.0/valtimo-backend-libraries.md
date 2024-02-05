@@ -55,6 +55,11 @@ The following breaking changes were introduced:
   `valtimo-dependencies` and `valtimo-gzac-depenencies` should no longer be used for `dependencyManagement` or `platform`. 
   This functionality has been replaced by [valtimo-dependency-versions](../../../getting-started/modules/core/valtimo-dependency-versions.md).
 
+* **Moved KvKProvider and BsnProvider.**
+  The `KvKProvider` and `BsnProvider` and implementations (`ZaakKvKProvider` and `ZaakBsnProvider`)have been moved to the `zaken-api` module. 
+  The [objects-api module](../../../getting-started/modules/zgw/objects-api.md) has been changed to use the relocated interfaces.
+  Please be aware that the new implementations require at least one Zaken API Plugin to be configured.
+
 Instructions on how to migrate to this version of Valtimo can be found [here](migration.md).
 
 ## Deprecations
