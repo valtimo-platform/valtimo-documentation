@@ -30,3 +30,5 @@ the user and the message.
 
 In order to use an existing plugin, a plugin configuration needs to be added. This can be found 
 [here](../../using-valtimo/plugin/configure-plugin.md).
+
+## Plugins repository

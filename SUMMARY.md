@@ -123,6 +123,7 @@
     * [Exact Plugin](using-valtimo/plugin/exact/configure-exact-plugin.md)
     * [Verzoek Plugin](using-valtimo/plugin/verzoek/configure-verzoek-plugin.md)
     * [Besluiten Plugin](using-valtimo/plugin/besluiten-api/configure-besluiten-api-plugin.md)
+    * [SMTP Mail Plugin](using-valtimo/plugin/smtp-mail/configure-smtp-mail-plugin.md)
   * [Process](using-valtimo/process/process.md)
     * [System processes](using-valtimo/process/systemprocesses.md)
     * [Correlating messages](using-valtimo/process/process-beans/correlation-service.md)
