@@ -18,6 +18,14 @@ The following features were added:
   The assignees of a user task are now saved in the database by their user ID. When implementations use keycloak, the
   assignee column from the task table in the databases is automatically migrated from email to user ID.
 
+* **New endpoint to retrieve Zaaktypen**
+  A new endpoint has been added to the zaken-api module to retrieve zaaktypen: `/api/management/v1/zgw/zaaktype`. 
+  This replaces the `/api/v1/openzaak/zaaktype` endpoint from the openzaak module, which is now deprecated.
+  The new endpoint requires at least one Zaken API Plugin to be configured.
+
+* **Moved OpenZaak plugin to new `openzaak-plugin-authentication` module**
+  Since the `openzaak` modules has been deprecated, the `OpenZaakPlugin` has been moved to the new `openzaak-plugin-authentication` module.
+  The packages are still the same to keep it backwards-compatible without configuration migrations.
 
 ## Bugfixes
 

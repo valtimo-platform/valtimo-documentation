@@ -70,6 +70,7 @@
       * [Objects API](getting-started/modules/zgw/objects-api.md)
       * [Objecttypen API](getting-started/modules/zgw/objecttypen-api.md)
       * [OpenZaak](getting-started/modules/zgw/openzaak.md)
+      * [OpenZaak Plugin Authentication](getting-started/modules/zgw/openzaak-plugin-authentication.md)
       * [OpenZaak resource](getting-started/modules/zgw/openzaak-resource.md)
       * [Portaaltaak](getting-started/modules/zgw/portaaltaak.md)
       * [SmartDocuments](getting-started/modules/zgw/smartdocuments.md)

@@ -4,16 +4,12 @@
 
 The following features were added:
 
-* **New feature1**
+* **New Zaak type link endpoint**
+  The document Zaaktype link configuration now uses the `/api/management/v1/zgw/zaaktype` endpoint. 
+  This new endpoint requires a zaken-api plugin to be configured.
 
-  Description of the new feature goes here.
-  Also link to the page that expains the feature in greater detail.
-
-* **New feature2**
-
-  Description of the new feature goes here.
-  Also link to the page that expains the feature in greater detail.
-
+* **Document object type selection is now conditional**
+  When connecting a zaak to the document, the document object type selection is now only shown when using the OPEN_ZAAK upload-provider.
 
 ## Bugfixes
 

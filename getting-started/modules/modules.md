@@ -22,6 +22,7 @@
   * [Objecten API Authentication](zgw/objecten-api-authentication.md)
   * [Objecttypen API](zgw/objecttypen-api.md)
   * [OpenZaak](zgw/openzaak.md)
+  * [OpenZaak Plugin Authentication](zgw/openzaak-plugin-authentication.md)
   * [OpenZaak resource](zgw/openzaak-resource.md)
   * [Smart documents](zgw/smartdocuments.md)
   * [Verzoek](zgw/verzoek.md)
