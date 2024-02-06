@@ -277,7 +277,7 @@ API standard for storage of and access to object types, without having to create
 provided that allows for connecting to applications that provide an Objecttypen API.
 
 ### OpenZaak
-> **_NOTE_**: This module has been deprecated
+> **_NOTE:_** This module has been deprecated
 
 [OpenZaak](https://openzaak.org/) is an application that implements APIs for the exchange of information concerning
 cases using the Dutch government API standards for ZGW (Zaakgericht Werken). This module provides a plugin that provides

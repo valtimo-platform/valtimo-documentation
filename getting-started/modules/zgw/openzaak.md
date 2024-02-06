@@ -5,7 +5,7 @@
 In order to use OpenZaak, the OpenZaak module needs to be added as a dependency.
 The following can be added to your project, depending on whether Maven or Gradle is used:
 
-> **_NOTE_**: The OpenZaak module has been deprecated.
+> **_NOTE:_** The OpenZaak module has been deprecated.
 > 
 > The OpenZaakPlugin can now be found in the [openzaak-plugin-authentication](openzaak-plugin-authentication.md) module.
 
