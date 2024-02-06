@@ -18,6 +18,10 @@ The following features were added:
   The assignees of a user task are now saved in the database by their user ID. When implementations use keycloak, the
   assignee column from the task table in the databases is automatically migrated from email to user ID.
 
+* **Localization module**
+
+  A new module `localization` has been added, which provides endpoints for user configurable translations. For more
+  information on how to use these translations in the front-end, [refer to this page](/using-valtimo/localization/configuring-localization.md).
 
 ## Bugfixes
 

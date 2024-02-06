@@ -4,16 +4,10 @@
 
 The following features were added:
 
-* **New feature1**
+* **Translation management**
 
-  Description of the new feature goes here.
-  Also link to the page that expains the feature in greater detail.
-
-* **New feature2**
-
-  Description of the new feature goes here.
-  Also link to the page that expains the feature in greater detail.
-
+  An administrator can now configure and override translations from a front-end admin page. For more information on how
+  to configure and use this, [refer to this page](/using-valtimo/localization/configuring-localization.md).
 
 ## Bugfixes
 

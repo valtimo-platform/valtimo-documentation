@@ -116,6 +116,8 @@
   * [Keycloak](using-valtimo/keycloak-iam/keycloak.md)
     * [Configuring Keycloak](using-valtimo/keycloak-iam/configuring-keycloak.md)
   * [Pending Changes mechanism](using-valtimo/pending-changes/pending-changes.md)
+  * [Localization](using-valtimo/localization/localization.md)
+    * [Configuring localization](using-valtimo/localization/configuring-localization.md)
   * [Plugins](using-valtimo/plugin/plugins.md)
     * [Catalogi API plugin](using-valtimo/plugin/catalogi-api/configure-catalogi-api-plugin.md)
     * [Configuring plugins](using-valtimo/plugin/configure-plugin.md)

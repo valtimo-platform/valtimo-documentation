@@ -12,6 +12,7 @@ This section is intended for system administrators who need to configure Valtimo
 * [Form links](form-link/form-link.md)
 * [Forms](forms/forms.md)
 * [Keycloak](keycloak-iam/keycloak.md)
+* [Localization](localization/localization.md)
 * [Pending changes](pending-changes/pending-changes.md)
 * [Plugins](plugin/plugins.md)
 * [Processes](process/process.md)
