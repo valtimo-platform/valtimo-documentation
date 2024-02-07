@@ -70,6 +70,10 @@ The following features were added:
 
   If no due date is given in the *Create portaal taak* action, the due date of the user task is used instead.
 
+* **Spring bean for JSON mapper**
+
+  Valtimo now uses a Spring managed ObjectMapper to map from JSON to classes and vice versa.
+
 ## Bugfixes
 
 The following bugs were fixed:
