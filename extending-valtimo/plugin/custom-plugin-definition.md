@@ -70,7 +70,7 @@ For example:
     key = "post-tweet",
     title = "Post tweet",
     description = "Post a tweet on twitter.",
-    activityTypes = [ActivityType.SERVICE_TASK_START]
+    activityTypes = [ActivityTypeWithEventName.SERVICE_TASK_START]
 )
 fun postTweet(execution: DelegateExecution, postTweetProperties: PostTweetProperties) {
     ...
@@ -185,7 +185,7 @@ class TwitterPlugin {
     key = "post-tweet",
     title = "Post tweet",
     description = "Post a tweet on twitter.",
-    activityTypes = [ActivityType.SERVICE_TASK_START]
+    activityTypes = [ActivityTypeWithEventName.SERVICE_TASK_START]
   )
   fun postTweet(execution: DelegateExecution, postTweetProperties: PostTweetProperties) {
       val message = tweetSupplier.supplyTweet()

@@ -74,6 +74,27 @@ This page describes how to update Valtimo from the previous version to the curre
 
        If the `value` field contains an actual email, then the email must be changed to a user ID.
 
+* **Plugin action activity types**
+
+  Scope: back-end
+
+    1. **Step1**
+       Locate all `@PluginAction` annotations in the implementation code.
+
+    2. **Step2**
+       Change parameter `activityTypes` to use the new type `com.ritense.processlink.domain.ActivityTypeWithEventName`.
+       For example:
+       ```kotlin
+       @PluginAction(
+           key = "send-email",
+           title = "Send email",
+           description = "Send an email with <example-product>.",
+           activityTypes = [ActivityTypeWithEventName.SERVICE_TASK_START]
+       )
+       fun sendEmail(execution: DelegateExecution, emailProperties: EmailProperties) {
+           ...
+       ```
+
 * **Breaking change 2/Deprecation 2**
 
   Scope: back-end/front-end
