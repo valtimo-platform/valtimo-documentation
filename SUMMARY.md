@@ -37,6 +37,7 @@
       * [Form flow Valtimo](getting-started/modules/core/form-flow-valtimo.md)
       * [Form link](getting-started/modules/core/form-link.md)
       * [Importer](getting-started/modules/core/importer.md)
+      * [Localization](getting-started/modules/core/localization.md)
       * [Local document generation](getting-started/modules/core/local-document-generation.md)
       * [Local mail](getting-started/modules/core/local-mail.md)
       * [Mail](getting-started/modules/core/mail.md)
