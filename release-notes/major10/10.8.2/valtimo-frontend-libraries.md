@@ -17,6 +17,10 @@ The following bugs were fixed:
 
   The custom case header did not show all properties when one of the properties was not present in the document.
 
+* **Custom boolean values don't show correctly in the CarbonList**
+
+  When using custom boolean values in the Carbon list, they would show with 'viewTypeConverter.' as a prefix.
+
 ## Breaking changes
 
 No breaking changes.
