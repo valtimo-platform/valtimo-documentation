@@ -21,6 +21,10 @@ The following bugs were fixed:
 
   When using custom boolean values in the Carbon list, they would show with 'viewTypeConverter.' as a prefix.
 
+* **Add note button not clickable on small windows**
+
+  The *Add note* button is now clickable even when resizing the window to a smaller size.
+
 ## Breaking changes
 
 No breaking changes.
