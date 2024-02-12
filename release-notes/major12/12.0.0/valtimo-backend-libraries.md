@@ -50,6 +50,11 @@ The following breaking changes were introduced:
   `valtimo-dependencies` and `valtimo-gzac-depenencies` should no longer be used for `dependencyManagement` or `platform`. 
   This functionality has been replaced by [valtimo-dependency-versions](../../../getting-started/modules/core/valtimo-dependency-versions.md).
 
+* **Removed deprecated code**
+  The `form-link` module, which was deprecated in 10.6.0, has been removed. Process links should be used instead.
+  Additionally, `CamundaProcessJsonSchemaDocumentService.getDocument(DelegateExecution execution)` has been removed.
+  This method is replaced by `DocumentDelegateService.getDocument(DelegateExecution execution`.
+
 Instructions on how to migrate to this version of Valtimo can be found [here](migration.md).
 
 ## Deprecations
@@ -60,9 +65,18 @@ The following was deprecated:
 
   The connector framework, including all connectors, have been deprecated.
 
-* **Deprecation2**
+* **Audit module methods**
 
-  X was deprecated and is replaced with Y.
+  Several methods have been deprecated as they were not used for anything. No alternatives are offered.
+  These are:
+  * `AuditRecordRepository.findAuditRecordByProperty(String key, Object value, Pageable pageable)`
+  * `AuditService.findByEventAndOccurredBetween(Class<? extends AuditEvent> event, LocalDateTime from, LocalDateTime until, Pageable pageable)`
+  * `AuditService.findByProperty(String key, Object value, Pageable pageable)`
+  * `AuditService.findByEventTypeAndProperty(Class<? extends AuditEvent> event, String key, Object value)`
+
+* **Audit module classes**
+
+  The `AuditSearchService` class has been deprecated as it was not used for anything.
 
 Instructions on how to migrate to this version of Valtimo can be found [here](migration.md).
 
