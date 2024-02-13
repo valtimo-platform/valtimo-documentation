@@ -25,6 +25,17 @@ Conditions are evaluated as `AND`, which means the **all** configured conditions
 Conditions can also be nested by using a container. This allows you to join another resource to the root resource, on which you can add conditions as well.
 An example of this can be found [here](auto-deployment-access-control.md#joining-entities-using-a-container)
 
+## When is access control applied?
+
+Access control is always applied by default. This means that when a user requests a resource, the access control layer 
+will check if the user has the required permissions to access the resource. To prevent certain actions from being checked 
+by the access control layer, this needs to be explicitly configured. Tasks and listeners used in BPMN models are not 
+considered being accessed by a user, and therefore do not have access control applied to them.
+
+To prevent access control from being applied when writing custom code, `runWithoutAuthorization` can be used. See [the
+extending valtimo page](/extending-valtimo/access-control/run-without-access-control.md) for more information.
+
+
 ## Configuration
 The following sections contains information on how to configure and use access control.
 * [Auto-deployment access control](auto-deployment-access-control.md)
