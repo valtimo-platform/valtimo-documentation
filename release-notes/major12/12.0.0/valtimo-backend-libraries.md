@@ -53,20 +53,20 @@ The following breaking changes were introduced:
 
 * **ResourceService implementation is now optional**
   Valtimo can now start without providing any implementation of the `ResourceService`.
-  However, when no implementation is provided, the following features will not work:
+  When no implementation is provided, the following features will not work:
   - The `camundaSmartDocumentGenerator` and `smartDocumentGenerator` beans will not be available. The plugin should work as normal.
   - The `documentRelatedFileSubmittedEventListenerImpl` bean will not be available.
   - `JsonSchemaDocumentService.assignResource` will throw an error when invoked.
   - The `FormIoFormFileResource` bean will not be available.
 
 * **`OpenZaakUrlProvider` has been replaced
-  The `OpenZaakUrlProvider` class and bean (`openZaakUrlProvider`) has been removed. 
-  It has been replaced by:
-  - `ZaakUrlProvider`: implemented by `DefaultZaakUrlProvider` in the zaken-api module
-  - `ZaaktypeUrlProvider`: implemented by `DefaultZaaktypeUrlProvider` in the zaken-api module
+  The `OpenZaakUrlProvider` class and bean (`openZaakUrlProvider`) have been removed. 
+  These have been replaced by:
+  - `ZaakUrlProvider`: implemented by `DefaultZaakUrlProvider` in the zaken-api module.
+  - `ZaaktypeUrlProvider`: implemented by `DefaultZaaktypeUrlProvider` in the zaken-api module.
 
-* **`ZaakUrlProvider.getZaak(documentId: UUID): String` has been removed
-  Replaced by `ZaakUrlProvider.getZaakUrl(documentId: UUID): URI`
+* **`ZaakUrlProvider.getZaak(documentId: UUID): String` has been removed.
+  This method is replaced by `ZaakUrlProvider.getZaakUrl(documentId: UUID): URI`.
 
 Instructions on how to migrate to this version of Valtimo can be found [here](migration.md).
 
@@ -90,8 +90,8 @@ The following was deprecated:
 Instructions on how to migrate to this version of Valtimo can be found [here](migration.md).
 
 * **OpenZaak module**
-  The OpenZaak module has been deprecated. The deprecated methods have been annotated with instructions on how to replace them.
-  In general: please use the available (Plugin) functionality from the ZWG modules.
+  The OpenZaak module has been deprecated. The deprecated methods and classes have been annotated with instructions on how to replace them.
+  The general guideline here is to use the available (Plugin) functionality from the ZWG modules as replacement.
 
 ## Known issues
 
