@@ -18,7 +18,6 @@ The following features were added:
   The assignees of a user task are now saved in the database by their user ID. When implementations use keycloak, the
   assignee column from the task table in the databases is automatically migrated from email to user ID.
 
-
 ## Bugfixes
 
 The following bugs were fixed:
@@ -52,6 +51,23 @@ The following breaking changes were introduced:
   Additionally, `CamundaProcessJsonSchemaDocumentService.getDocument(DelegateExecution execution)` has been removed.
   This method is replaced by `DocumentDelegateService.getDocument(DelegateExecution execution`.
 
+* **ResourceService implementation is now optional**
+  Valtimo can now start without providing any implementation of the `ResourceService`.
+  However, when no implementation is provided, the following features will not work:
+  - The `camundaSmartDocumentGenerator` and `smartDocumentGenerator` beans will not be available. The plugin should work as normal.
+  - The `documentRelatedFileSubmittedEventListenerImpl` bean will not be available.
+  - `JsonSchemaDocumentService.assignResource` will throw an error when invoked.
+  - The `FormIoFormFileResource` bean will not be available.
+
+* **`OpenZaakUrlProvider` has been replaced
+  The `OpenZaakUrlProvider` class and bean (`openZaakUrlProvider`) has been removed. 
+  It has been replaced by:
+  - `ZaakUrlProvider`: implemented by `DefaultZaakUrlProvider` in the zaken-api module
+  - `ZaaktypeUrlProvider`: implemented by `DefaultZaaktypeUrlProvider` in the zaken-api module
+
+* **`ZaakUrlProvider.getZaak(documentId: UUID): String` has been removed
+  Replaced by `ZaakUrlProvider.getZaakUrl(documentId: UUID): URI`
+
 Instructions on how to migrate to this version of Valtimo can be found [here](migration.md).
 
 ## Deprecations
@@ -72,6 +88,10 @@ The following was deprecated:
   The `AuditSearchService` class has been deprecated as it was not used for anything.
 
 Instructions on how to migrate to this version of Valtimo can be found [here](migration.md).
+
+* **OpenZaak module**
+  The OpenZaak module has been deprecated. The deprecated methods have been annotated with instructions on how to replace them.
+  In general: please use the available (Plugin) functionality from the ZWG modules.
 
 ## Known issues
 

@@ -31,13 +31,11 @@ dependencies {
 
 The following modules are added when a dependency on Valtimo GZAC dependencies is added:
 * [Valtimo dependencies](../core/valtimo-dependencies.md)
-* [Besluit](besluit.md)
 * [Besluiten API](besluiten-api.md)
 * [Catalogi API](catalogi-api.md)
 * [Contactmoment](contactmoment.md)
 * [Documenten API](documenten-api.md)
 * [Haalcentraal BRP](haalcentraal-brp.md)
-* [Klant](klant.md)
 * [Notificaties API](notificaties-api.md)
 * [Notificaties API authentication](notificaties-api-authentication.md)
 * [Object management](object-management.md)
@@ -45,8 +43,6 @@ The following modules are added when a dependency on Valtimo GZAC dependencies i
 * [Objecten API authentication](objecten-api-authentication.md)
 * [Objects API](objects-api.md)
 * [Objecttypen API](objecttypen-api.md)
-* [Openzaak](openzaak.md)
-* [Openzaak resource](openzaak-resource.md)
 * [Portaaltaak](portaaltaak.md)
 * [Verzoek](verzoek.md)
 * [Zaken API](zaken-api.md)
