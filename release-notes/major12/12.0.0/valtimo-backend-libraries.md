@@ -20,7 +20,7 @@ The following features were added:
 
 * **Introduced replacement to header based pagination**
   
-  Several endpoints that use links in the HTTP headers to paginate results have a new version with endpoints that return
+  Several endpoints that use URLs in the HTTP headers to paginate results have a new version with endpoints that return
   the pagination information in the response body. The following endpoints are impacted by this change:
   
   *  `/api/v1/choice-fields` -> `/api/v2/choice-fields`
