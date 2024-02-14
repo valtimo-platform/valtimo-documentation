@@ -25,15 +25,15 @@ Each chapter below describes the changes for the relevant framework or dependenc
   - When implementing the `HttpSecurityConfigurer`, this cannot be mixed with the replacement (`authorizeHttpRequests`).
 
 Before:
-```java
+```kotlin
 http.authorizeRequests()
-    .antMatchers(GET, "/api/v1/ping").permitAll();
+    .antMatchers(GET, "/api/v1/ping").permitAll()
 ```
 New:
-```java
-http.authorizeHttpRequests((requests) ->
+```kotlin
+http.authorizeHttpRequests { requests ->
     requests.requestMatchers(antMatcher(GET, "/api/v1/ping")).permitAll()
-);
+}
 ```
 - `WebSecurityConfigurerAdapter` has been removed.
   - Removed `CoreHttpSecurityConfigurerAdapter`. This has been replaced by `ValtimoCoreSecurityFactory`.

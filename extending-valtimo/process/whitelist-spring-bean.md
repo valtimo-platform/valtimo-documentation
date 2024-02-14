@@ -11,20 +11,20 @@ itself has to be whitelisted. This is done with the `@ProcessBean` annotation.
 
 1. Ensure a bean for the class that should be whitelisted is provided.
 
-   ```java
+   ```kotlin
    @Bean
-   public SomethingService somethingService() {
-      return new SomethingService();
+   fun somethingService(): SomethingService {
+      return SomethingService()
    }
    ```
 
 2. Add the `@ProcessBean` annotation.
 
-   ```java
+   ```kotlin
    @Bean
    @ProcessBean
-   public SomethingService somethingService() {
-      return new SomethingService();
+   fun somethingService(): SomethingService {
+      return SomethingService()
    }
    ```
 
