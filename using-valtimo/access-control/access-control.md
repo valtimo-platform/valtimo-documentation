@@ -29,8 +29,10 @@ An example of this can be found [here](auto-deployment-access-control.md#joining
 
 Access control is always applied by default. This means that when a user requests a resource, the access control layer 
 will check if the user has the required permissions to access the resource. To prevent certain actions from being checked 
-by the access control layer, this needs to be explicitly configured. Tasks and listeners used in BPMN models are not 
-considered being accessed by a user, and therefore do not have access control applied to them.
+by the access control layer, this needs to be explicitly configured. Tasks and listeners executed by BPMN models are not 
+considered being accessed by a user, and therefore do not have access control applied to them. The exception is user 
+tasks. Since a user completes these tasks, access control is applied to them to verify the user is allowed to complete 
+the task.
 
 To prevent access control from being applied when writing custom code, `runWithoutAuthorization` can be used. See [the
 extending valtimo page](/extending-valtimo/access-control/run-without-access-control.md) for more information.

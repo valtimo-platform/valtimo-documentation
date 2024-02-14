@@ -8,7 +8,8 @@ For example, when creating a method that specifically updates a name in the
 document, this method needs to retrieve the document and update the name. Assuming this method already checks for the 
 update permission on documents, permission for retrieving the document should not be checked again. 
 
-The two ways to run code without access control are explained below.
+There are two ways to run code without access control. The first is through a method, and the second is by using an 
+annotation. These are explained below.
 
 ## Using the `AuthorizationContext.runWithoutAuthorization` method
 
@@ -43,6 +44,7 @@ class SomeDocumentService(
         )
     }
 }
+```
 
 ## Using the `@RunWithoutAuthorization` annotation
 
