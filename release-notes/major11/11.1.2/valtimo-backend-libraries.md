@@ -1,8 +1,9 @@
-# Backend libraries 11.1.0
+# Backend libraries 11.1.2
 
 ## New Features
 
-No new features.
+* Code called from within BPMN or DMN models is no longer subject to access control checks. This means any plugin 
+actions or custom code called from within a BPMN or DMN model will use `runWithoutAuthorization` by default.
 
 ## Bugfixes
 
@@ -10,7 +11,8 @@ No bugfixes.
 
 ## Breaking changes
 
-No breaking changes.
+* Code called from within BPMN or DMN models is no longer subject to access control checks. User information about the user
+that initiated the camunda execution is still available through spring security as before.
 
 ## Deprecations
 
