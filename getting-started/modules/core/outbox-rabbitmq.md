@@ -5,6 +5,8 @@
 The `outbox-rabbitmq` module provides an outbox message publisher for RabbitMQ. 
 
 ### Backend
+The samples below assume the [valtimo-dependency-versions](valtimo-dependency-versions.md) module is used.
+If not, please specify the artifact version as well.
 
 #### Maven dependency:
 
@@ -21,9 +23,9 @@ The `outbox-rabbitmq` module provides an outbox message publisher for RabbitMQ.
 
 #### Gradle dependency:
 
-```groovy
+```kotlin
 dependencies {
-    implementation "com.ritense.valtimo:outbox-rabbitmq:${valtimo_version}"
+    implementation("com.ritense.valtimo:outbox-rabbitmq")
 }
 ```
 

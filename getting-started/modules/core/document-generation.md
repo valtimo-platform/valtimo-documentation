@@ -6,6 +6,8 @@ In order to create a custom document generation implementation, the document gen
 dependency. The following can be added to your project, depending on whether Maven or Gradle is used:
 
 ### Backend
+The samples below assume the [valtimo-dependency-versions](valtimo-dependency-versions.md) module is used.
+If not, please specify the artifact version as well.
 
 #### Maven dependency:
 ```xml
@@ -13,15 +15,14 @@ dependency. The following can be added to your project, depending on whether Mav
     <dependency>
         <groupId>com.ritense.valtimo</groupId>
         <artifactId>document-generation</artifactId>
-        <version>${valtimo_version}</version>
     </dependency>
 </dependencies>
 ```
 
 #### Gradle dependency:
-```groovy
+```kotlin
 dependencies {
-  implementation "com.ritense.valtimo:document-generation:${valtimo_version}"
+  implementation("com.ritense.valtimo:document-generation")
 }
 ```
 

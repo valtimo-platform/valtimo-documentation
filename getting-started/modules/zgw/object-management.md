@@ -7,6 +7,8 @@ Object management makes it possible to manage Objecten API objects inside Valtim
 In order to use Object management, the Object management module needs to be added as a dependency.
 
 ### Backend
+The samples below assume the [valtimo-dependency-versions](../core/valtimo-dependency-versions.md) module is used.
+If not, please specify the artifact version as well.
 
 #### Maven dependency:
 
@@ -23,9 +25,9 @@ In order to use Object management, the Object management module needs to be adde
 
 #### Gradle dependency:
 
-```groovy
+```kotlin
 dependencies {
-    implementation "com.ritense.valtimo:object-management:${valtimo_version}"
+    implementation("com.ritense.valtimo:object-management")
 }
 ```
 

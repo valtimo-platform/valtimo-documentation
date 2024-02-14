@@ -7,6 +7,8 @@ The authorization module is a transitive dependency of `core`, so no action shou
 However, if more control is needed the following can be added to your project:
 
 ### Backend
+The samples below assume the [valtimo-dependency-versions](valtimo-dependency-versions.md) module is used.
+If not, please specify the artifact version as well.
 
 #### Maven dependency:
 ```xml
@@ -14,15 +16,14 @@ However, if more control is needed the following can be added to your project:
     <dependency>
         <groupId>com.ritense.valtimo</groupId>
         <artifactId>authorization</artifactId>
-        <version>${valtimo_version}</version>
     </dependency>
 </dependencies>
 ```
 
 #### Gradle dependency:
-```groovy
+```kotlin
 dependencies {
-  implementation "com.ritense.valtimo:authorization:${valtimo_version}"
+  implementation("com.ritense.valtimo:authorization")
 }
 ```
 

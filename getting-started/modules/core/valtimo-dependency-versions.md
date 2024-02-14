@@ -43,13 +43,13 @@ For the full list, please take a look at the POM file of this module.
 
 dependencyManagement {
   imports {
-    mavenBom("com.ritense.valtimo:valtimo-dependencies:${valtimo_version}")
+    mavenBom("com.ritense.valtimo:valtimo-dependencies"))
   }
 }
 ```
 or
-```groovy
+```kotlin
 dependencies {
-    implementation(platform(project("com.ritense.valtimo:valtimo-dependencies:${valtimo_version}")))
+    implementation(platform(project("com.ritense.valtimo:valtimo-dependencies"))))
 }
 ```
