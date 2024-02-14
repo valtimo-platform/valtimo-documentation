@@ -7,6 +7,8 @@ be added as a dependency. The following can be added to your project, depending 
 or Gradle is used:
 
 ### Backend
+The samples below assume the [valtimo-dependency-versions](../core/valtimo-dependency-versions.md) module is used.
+If not, please specify the artifact version as well.
 
 #### Maven dependency:
 ```xml
@@ -14,15 +16,14 @@ or Gradle is used:
     <dependency>
         <groupId>com.ritense.valtimo</groupId>
         <artifactId>notificaties-api-authentication</artifactId>
-        <version>${valtimo_version}</version>
     </dependency>
 </dependencies>
 ```
 
 #### Gradle dependency:
-```groovy
+```kotlin
 dependencies {
-  implementation "com.ritense.valtimo:notificaties-api-authentication:${valtimo_version}"
+  implementation("com.ritense.valtimo:notificaties-api-authentication")
 }
 ```
 

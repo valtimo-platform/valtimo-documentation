@@ -7,6 +7,8 @@ the process document module needs to be added as a dependency. The following can
 project, depending on whether Maven or Gradle is used:
 
 ### Backend
+The samples below assume the [valtimo-dependency-versions](valtimo-dependency-versions.md) module is used.
+If not, please specify the artifact version as well.
 
 #### Maven dependency:
 ```xml
@@ -14,14 +16,13 @@ project, depending on whether Maven or Gradle is used:
     <dependency>
         <groupId>com.ritense.valtimo</groupId>
         <artifactId>process-document</artifactId>
-        <version>${valtimo_version}</version>
     </dependency>
 </dependencies>
 ```
 
 #### Gradle dependency:
-```groovy
+```kotlin
 dependencies {
-    implementation "com.ritense.valtimo:process-document:${valtimo_version}"
+    implementation("com.ritense.valtimo:process-document")
 }
 ```

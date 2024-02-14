@@ -7,7 +7,8 @@ dependency. This includes the most common modules that are used by Valtimo GZAC 
 dependencies](../core/valtimo-dependencies.md). The following can be added to your project, depending on whether Maven or Gradle is used:
 
 ### Backend
-The samples below assume the [valtimo-dependency-versions](../core/valtimo-dependency-versions.md) module is used. If not, please specify the artifact version as well.
+The samples below assume the [valtimo-dependency-versions](../core/valtimo-dependency-versions.md) module is used. 
+If not, please specify the artifact version as well.
 
 #### Maven dependency:
 ```xml
@@ -21,7 +22,7 @@ The samples below assume the [valtimo-dependency-versions](../core/valtimo-depen
 ```
 
 #### Gradle dependency:
-```groovy
+```kotlin
 dependencies {
   implementation("com.ritense.valtimo:valtimo-gzac-dependencies")
 }
@@ -33,7 +34,6 @@ The following modules are added when a dependency on Valtimo GZAC dependencies i
 * [Valtimo dependencies](../core/valtimo-dependencies.md)
 * [Besluiten API](besluiten-api.md)
 * [Catalogi API](catalogi-api.md)
-* [Contactmoment](contactmoment.md)
 * [Documenten API](documenten-api.md)
 * [Haalcentraal BRP](haalcentraal-brp.md)
 * [Notificaties API](notificaties-api.md)
@@ -41,7 +41,6 @@ The following modules are added when a dependency on Valtimo GZAC dependencies i
 * [Object management](object-management.md)
 * [Objecten API](objecten-api.md)
 * [Objecten API authentication](objecten-api-authentication.md)
-* [Objects API](objects-api.md)
 * [Objecttypen API](objecttypen-api.md)
 * [Portaaltaak](portaaltaak.md)
 * [Verzoek](verzoek.md)

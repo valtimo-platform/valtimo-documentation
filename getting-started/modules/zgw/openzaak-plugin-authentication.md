@@ -1,9 +1,10 @@
-# SmartDocuments
+# OpenZaak Plugin Authentication
 
 ## Dependencies
 
-In order to use SmartDocuments, the SmartDocuments module needs to be added as a dependency. The
-following can be added to your project, depending on whether Maven or Gradle is used:
+In order to use the OpenZaak Plugin Authentication plugin, the `openzaak-plugin-authentication` module needs to 
+be added as a dependency. The following can be added to your project, depending on whether Maven 
+or Gradle is used:
 
 ### Backend
 The samples below assume the [valtimo-dependency-versions](../core/valtimo-dependency-versions.md) module is used.
@@ -14,7 +15,7 @@ If not, please specify the artifact version as well.
 <dependencies>
     <dependency>
         <groupId>com.ritense.valtimo</groupId>
-        <artifactId>smartdocuments</artifactId>
+        <artifactId>openzaak-plugin-authentication</artifactId>
     </dependency>
 </dependencies>
 ```
@@ -22,7 +23,7 @@ If not, please specify the artifact version as well.
 #### Gradle dependency:
 ```kotlin
 dependencies {
-  implementation("com.ritense.valtimo:smartdocuments")
+  implementation("com.ritense.valtimo:openzaak-plugin-authentication")
 }
 ```
 
@@ -31,20 +32,20 @@ dependencies {
 A general instruction to add a front-end plugin to the implementation can be
 found [here](../core/plugin.md#adding-a-front-end-plugin-to-the-implementation).
 
-In order to use the SmartDocuments plugin in the frontend, the following can be added to your `app.module.ts`:
+In order to use the OpenZaak plugin in the frontend, the following can be added to your `app.module.ts`:
 
 ```typescript
-import { SmartDocumentsPluginModule, smartDocumentsPluginSpecification } from '@valtimo/plugin';
+import { OpenZaakPluginModule, openZaakPluginSpecification } from '@valtimo/plugin';
 
 @NgModule({
   imports: [
-      SmartDocumentsPluginModule,
+      OpenZaakPluginModule,
   ],
   providers: [
       {
           provide: PLUGIN_TOKEN,
           useValue: [
-              smartDocumentsPluginSpecification,
+              openZaakPluginSpecification,
           ]
       }
   ]
