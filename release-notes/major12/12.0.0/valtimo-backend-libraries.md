@@ -27,9 +27,9 @@ The following bugs were fixed:
   The plugin action property would throw an error when the plugin action property was set to a process variable that
   contained a list.
 
-* **Bug2**
+* **Plugin auto deployment fails on nullable property**
 
-  Description of what the issue was.
+  If the plugin configuration file contained a 'null' value for a plugin property, an error was thrown.
 
 ## Breaking changes
 
