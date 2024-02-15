@@ -6,6 +6,8 @@ In order to connect to the Objects API, the Objects API module needs to be added
 following can be added to your project, depending on whether Maven or Gradle is used:
 
 ### Backend
+The samples below assume the [valtimo-dependency-versions](../core/valtimo-dependency-versions.md) module is used.
+If not, please specify the artifact version as well.
 
 #### Maven dependency:
 ```xml
@@ -13,14 +15,13 @@ following can be added to your project, depending on whether Maven or Gradle is 
     <dependency>
         <groupId>com.ritense.valtimo</groupId>
         <artifactId>objects-api</artifactId>
-        <version>${valtimo_version}</version>
     </dependency>
 </dependencies>
 ```
 
 #### Gradle dependency:
-```groovy
+```kotlin
 dependencies {
-  implementation "com.ritense.valtimo:objects-api:${valtimo_version}"
+  implementation("com.ritense.valtimo:objects-api")
 }
 ```

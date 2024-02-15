@@ -74,6 +74,56 @@ This page describes how to update Valtimo from the previous version to the curre
 
        If the `value` field contains an actual email, then the email must be changed to a user ID.
 
+* **Removed form links module**
+
+  Scope: back-end
+
+  The `form-link` module was removed in favor of using the `process-link` module. The following changes should be made:
+
+    1. **Migrate existing form links**
+
+       Existing form link configurations should be migrated to process links. You can find a script to simplify this
+       task [here](/using-valtimo/process-link/script/migrate-formlinks.sh).
+    2. **Remove form link configuration files (optional)**
+
+       Existing form link configuration files should be removed. This is optional as the files will just get ignored.
+    3. **Remove existing tables (optional)**
+
+       Existing form link configurations should be removed. This is optional as the tables technically do not have to
+       be removed. Below is a changelog that removes the tables.
+       
+       ```xml
+       <?xml version="1.1" encoding="UTF-8" standalone="no"?>
+       <databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                          xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.6.xsd">
+           <changeSet author="Ritense" id="1">
+               <dropAllForeignKeyConstraints baseTableName="process_form_association"/>
+               <dropAllForeignKeyConstraints baseTableName="process_form_association_v2"/>
+           </changeSet>
+    
+           <changeSet author="Ritense" id="2">
+               <dropTable tableName="process_form_association"/>
+               <dropTable tableName="process_form_association_v2"/>
+           </changeSet>
+       </databaseChangeLog>
+       ```
+
+* **Removed DocumentVariableDelegate class**
+  
+  Scope: back-end
+  
+  The `DocumentVariableDelegate` is replaced by the `DocumentDelegateService` class. As such, usages in processes and
+  code should be updated to use `DocumentDelegateService` instead.
+
+* **Deprecated code**
+
+  Scope: back-end
+
+  `CamundaProcessJsonSchemaDocumentService.getDocument(DelegateExecution execution)` has been deprecated. As such,
+  usages in processes and code should be updated to use `DocumentDelegateService.getDocument(DelegateExecution)`
+  instead.
+
 * **Value resolvers**
 
   Scope: back-end
