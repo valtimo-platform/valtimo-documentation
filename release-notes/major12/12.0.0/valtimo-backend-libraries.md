@@ -20,7 +20,7 @@ The following features were added:
 
 * **Plugin actions on all activity types**
 
-  Support for plugin action on all activity types has been added
+  Support for plugin action on all activity types has been added.
 
 ## Bugfixes
 
