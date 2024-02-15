@@ -6,9 +6,9 @@ This service is process bean that provides a way to manipulate jobs within the c
 
 Job service currently provides two methods that allow for an update on the timer due date in the current process.
 
-```java
-updateTimerDueDateByActivityId("2300-01-01T00:00:00Z","timer-id",execution);
-addOffsetInMillisToTimerDueDateByActivityId(1000,"timer-id",execution);
+```kotlin
+updateTimerDueDateByActivityId("2300-01-01T00:00:00Z","timer-id",execution)
+addOffsetInMillisToTimerDueDateByActivityId(1000,"timer-id",execution)
 ```
 - "updateTimerDueDateByActivityId" - allows changing the date by passing it as "String", in the ISO 8601 format , as the
   first parameter along with the timer event id and the current execution of the process as second and third parameters

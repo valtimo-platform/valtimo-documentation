@@ -55,6 +55,42 @@ The following breaking changes were introduced:
   Additionally, `CamundaProcessJsonSchemaDocumentService.getDocument(DelegateExecution execution)` has been removed.
   This method is replaced by `DocumentDelegateService.getDocument(DelegateExecution execution`.
 
+* **ResourceService implementation is now optional**
+  Valtimo can now start without providing any implementation of the `ResourceService`.
+  When no implementation is provided, the following features will not work:
+  - The `camundaSmartDocumentGenerator` and `smartDocumentGenerator` beans will not be available. The plugin should work as normal.
+  - The `documentRelatedFileSubmittedEventListenerImpl` bean will not be available.
+  - `JsonSchemaDocumentService.assignResource` will throw an error when invoked.
+  - The `FormIoFormFileResource` bean will not be available.
+
+* **`OpenZaakUrlProvider` has been replaced
+  The `OpenZaakUrlProvider` class and bean (`openZaakUrlProvider`) have been removed. 
+  These have been replaced by:
+  - `ZaakUrlProvider`: implemented by `DefaultZaakUrlProvider` in the zaken-api module.
+  - `ZaaktypeUrlProvider`: implemented by `DefaultZaaktypeUrlProvider` in the zaken-api module.
+
+* **`ZaakUrlProvider.getZaak(documentId: UUID): String` has been removed.
+  This method is replaced by `ZaakUrlProvider.getZaakUrl(documentId: UUID): URI`.
+
+* **Removed dependencies from [`valtimo-gzac-dependencies`](/getting-started/modules/zgw/valtimo-gzac-dependencies.md)**
+
+  The following modules have been removed from [`valtimo-gzac-dependencies`](/getting-started/modules/zgw/valtimo-gzac-dependencies.md):
+  - [`com.ritense.valtimo:besluit`](/getting-started/modules/zgw/besluit.md)
+  - [`com.ritense.valtimo:contactmoment`](/getting-started/modules/zgw/contactmoment.md)
+  - [`com.ritense.valtimo:klant`](/getting-started/modules/zgw/klant.md)
+  - [`com.ritense.valtimo:objects-api`](/getting-started/modules/zgw/objects-api.md)
+  - [`com.ritense.valtimo:openzaak-resource`](/getting-started/modules/zgw/openzaak-resource.md)
+  - [`com.ritense.valtimo:openzaak`](/getting-started/modules/zgw/openzaak.md)
+  
+  These modules are still defined in the `valtimo-dependency-versions`. Please add them to your project manually if needed.
+
+* **OpenZaak module has been deprecated**
+  Its functionality has been moved or copied to the following modules:
+  - [Catalogi API](/getting-started/modules/zgw/catalogi-api.md)
+  - [Documenten API](/getting-started/modules/zgw/documenten-api.md)
+  - [OpenZaak Plugin Authentication](/getting-started/modules/zgw/openzaak-plugin-authentication.md)
+  - [Zaken API](/getting-started/modules/zgw/zaken-api.md)
+
 Instructions on how to migrate to this version of Valtimo can be found [here](migration.md).
 
 ## Deprecations
@@ -79,6 +115,10 @@ The following was deprecated:
   The `AuditSearchService` class has been deprecated as it was not used for anything.
 
 Instructions on how to migrate to this version of Valtimo can be found [here](migration.md).
+
+* **OpenZaak module**
+  The OpenZaak module has been deprecated. The deprecated methods and classes have been annotated with instructions on how to replace them.
+  The general guideline here is to use the available (Plugin) functionality from the ZWG modules as replacement.
 
 ## Known issues
 

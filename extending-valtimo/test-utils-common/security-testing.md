@@ -17,13 +17,13 @@ information can be found [here](/getting-started/modules/core/test-utils-common.
 Some custom code is needed to run the security smoke test. The code below shows how the `SecuritySmokeIntegrationTest`
 can be used to run the smoke test on a REST API endpoints in your application.
 
-```java
-public class MyProjectSecuritySmokeIntegrationTest extends SecuritySmokeIntegrationTest {
+```kotlin
+class MyProjectSecuritySmokeIntegrationTest : SecuritySmokeIntegrationTest {
 
-    public MyProjectSecuritySmokeIntegrationTest() {
-        super("com.mycompany.package", Set.of(
+    fun myProjectSecuritySmokeIntegrationTest() {
+        super("com.mycompany.package", setOf(
                 "GET /api/v1/open/exclude-this-endpoint/because-its-not-secured"
-        ));
+        ))
     }
 }
 ```
