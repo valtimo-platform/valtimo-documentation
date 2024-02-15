@@ -28,18 +28,20 @@ the `varNames`) and the value is the value that needs to be loaded in the form.
 Below is an example of a `FormFieldDataResolver`. This example would be called for each form field where the `example` 
 prefix is used (e.g. `example:some-field`). 
 
-```java
-public class ExampleDataResolver implements FormFieldDataResolver {
-    private static final String PREFIX = "example";
-
-    @Override
-    public boolean supports(String externalFormFieldType) {
-        return externalFormFieldType.equals(PREFIX);
+```kotlin
+class ExampleDataResolver : FormFieldDataResolver {
+    
+    override fun supports(externalFormFieldType: String): Boolean {
+        return externalFormFieldType == PREFIX
     }
 
     @Override
-    public Map<String, Object> get(String documentDefinitionName, UUID documentId, String... varNames) {
+    override fun get(documentDefinitionName: String, documentId: UUID, vararg varNames: String): Map<String, Object> {
         // get values for all requested variables
+    }
+
+    companion object {
+        private const val PREFIX = "example"
     }
 }
 ```
