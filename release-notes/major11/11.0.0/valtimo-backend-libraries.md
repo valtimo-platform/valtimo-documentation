@@ -11,6 +11,8 @@ The following features were added:
   * [Introduction](/introduction/modules/modules.md#authorization)
   * [Getting started](/getting-started/modules/core/authorization.md)
   * [Using Valtimo](/using-valtimo/access-control/access-control.md)
+  
+  In order to use Valtimo, permissions and roles must be defined as described [here](/using-valtimo/access-control/access-control.md).
 
 * **New service ObjectManagementFacade, for access to ObjectenAPI and ObjecttypenAPI**
 
