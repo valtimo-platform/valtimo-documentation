@@ -190,11 +190,8 @@ This page describes how to update Valtimo from the previous version to the curre
        }
      }
      ````
-  4. **Adding dependencies**
 
-      - `@valtimo/access-control`, should be added to your implementation as it is a required dependency.
-
-  5. **Changing typescript config**
+  3. **Changing typescript config**
 
       - In `tsconfig.json` in the root of your implementation, change `module` to `es2020` and also change `es****` in
         the `lib` array to `es2020`.
@@ -405,6 +402,30 @@ This page describes how to update Valtimo from the previous version to the curre
       "output": "assets/monaco-editor"
   }
   ```
+
+* **Add PBAC dependencies and menu items**
+
+  Scope: front-end
+
+  1. **Add PBAC dependencies**
+    
+    Run `npm i @valtimo/access-control@11.0.0 @valtimo/access-control-management@11.0.0` in the root of your implementation.
+
+  2. **AppModule**
+
+    Add the following line to the top of `app.module.ts`:
+
+    `import {AccessControlManagementModule} from '@valtimo/access-control-management';`
+
+    Next, add `AccessControlManagementModule` to the `imports` array of `AppModule`.
+
+  3. **Access control management menu item**
+
+    Add the following to the admin menu items in your environment config:
+    
+    `{link: ['/access-control'], title: 'Access Control', sequence: UNIQUE_SEQUENCE_NUMBER}`
+
+    Make sure to update `UNIQUE_SEQUENCE_NUMBER` with a unique sequence number.
 
 * **Moved Verzoek plugin property `objectManagementId`**
 
