@@ -13,11 +13,7 @@ The following features were added:
 - **Policy Based Access Control**
 
   Implemented PBAC frontend integration for the following features:
-<<<<<<< HEAD
   - Creating a Case
-=======
-
->>>>>>> 3d34645 (Added documentation for Carbon List)
   - Assigning an user to a Case
   - Claiming a Case
   - Adding a Case Note
