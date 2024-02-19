@@ -33,4 +33,5 @@ The CarbonListComponent supports rendering actions in its header. To enable this
    ```
 
 This will create a list with toolbar actions:
+
 ![list-with-toolbar-actions.png](./img/list-with-toolbar-actions.png)

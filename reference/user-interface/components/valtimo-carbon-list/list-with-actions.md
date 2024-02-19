@@ -22,9 +22,10 @@ export class SampleComponent {
      key: 'description',
      label: 'sample.translation.description',
    },
-   {
+ ];
+  public actionItems: ActionItem[] =
    // The callbacks will always receive as a parameter the item in the row
-   actions: [
+   [
      {
        label: 'sample.action',
        callback: this.action.bind(this),
@@ -36,14 +37,6 @@ export class SampleComponent {
        type: 'danger',
      },
    ],
-   // ViewType ACTION let's us know this is a context menu column
-   viewType: ViewType.ACTION,
-   // We set up the label as empty because we don't want any header text for the context menu
-   label: '',
-   // Key is set up as empty because the context menu is not dependant on any item property
-   key: '',
- },
- ];
  ...
 
  public action(item: any): void {
@@ -62,4 +55,5 @@ export class SampleComponent {
 ```
 
 This will create a list with a context menu:
+
 ![list-with-actions.png](./img/list-with-actions.png)

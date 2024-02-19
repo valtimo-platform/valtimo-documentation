@@ -40,4 +40,5 @@ The CarbonListComponent supports both backend and frontend search. For the front
    ```
 
 This will create a list with search enabled:
+
 ![list-with-search.png](./img/list-with-search.png)

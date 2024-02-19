@@ -58,6 +58,22 @@ The following features were added:
   Now you can set this feature toggle to show BPMN start event names as title of start forms instead of the standard 
   `Start - ${process-name}` format.
 
+* **Import document definition**
+
+  Now you can import an exported document definition.
+
+* **Carbon List improvements**
+
+  A few updates have been added to the CarbonList:
+
+    - Moving arrows can now be added via a flag
+    - Context menu actions are now configurable through an *@Input* field
+    - Column headers can now be hidden
+    - Rows don't have a pointer cursor unless they are clickable
+    - Pagination can be hidden now
+
+  For more details on the list see [Valtimo Carbon List](/reference/user-interface/components/valtimo-carbon-list/valtimo-carbon-list.md)
+
 ## Bugfixes
 
 The following bugs were fixed:

@@ -57,4 +57,5 @@ The CarbonListComponent supports a multi-select feature. To enable this the foll
    ```
 
 This will create a list with multi-select enabled:
+
 ![list-with-multi-select.png](./img/list-with-multi-select.png)

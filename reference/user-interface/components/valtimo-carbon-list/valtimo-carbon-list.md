@@ -10,6 +10,7 @@ There are a few options for defining lists, besides the Simple List defined belo
 - [Searchable List](searchable-list.md)
 - [List with multi-select](list-with-multi-select.md)
 - [List with toolbar actions](list-with-toolbar-actions.md)
+- [List with hidden headers](list-with-hidden-header.md)
 
 ## Setting up a simple list
 
@@ -146,12 +147,15 @@ This will create a custom no results message:
 | Property               | Type                     | Required | Default                   | Description                                                                                                                                                                    |
 | ---------------------- | ------------------------ | -------- | ------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | `items`                | `Array<any>`             | yes      | []                        | The data displayed in the list.                                                                                                                                                |
-| `fields`               | `Array<ColumnConfig>`    | yes      | []                        | The object that defines the header and displayed fields of the items. The ColumnConfig interface is defined in the '@avaltimo/components' library                              |
+| `fields`               | `Array<ColumnConfig>`    | yes      | []                        | The object that defines the header and displayed fields of the items. The ColumnConfig interface is defined in the '@valtimo/components' library                               |
+| `actionItems`          | `Array<ActionItem>`      | no       | []                        | The object that defines Context Menu items. The ActionItem interface is deifned in the '@valtimo/components' library                                                           |
 | `loading`              | `boolean`                | no       | false                     | Flag that defines wether or not the list displays a loading state.                                                                                                             |
 | `header`               | `boolean`                | no       | false                     | Flag that defines wether or not the list displays a header.                                                                                                                    |
+| `hideColumnHeader`     | `boolean`                | no       | false                     | Flag that hides or shows the column headers.                                                                                                                                   |
 | `isSearchable`         | `boolean`                | no       | false                     | Flag that defines wether or not the list is searchable. Without any (search) event listener, the search is done in the FE by default.                                          |
 | `initialSort`          | `SortState`              | no       | undefined                 | Object that defines if there is an initial sorting applied to the list. The SortState is an interface defined in the '@valtimo/config' library.                                |
-| `pagination`           | `Pagination`             | no       | undefined                 | The object that defines BE supported pagination. The Pagination interface is defined in the `@valtimo/components` library.                                                     |
+| `movingRowsEnabled`    | `boolean`                | no       | false                     | Flag that defines wether or not arrows to move rows are displayed.                                                                                                             |
+| `pagination`           | `Pagination \| false`    | no       | undefined                 | The object that defines BE supported pagination. The Pagination interface is defined in the `@valtimo/components` library.                                                     |
 | `paginatorConfig`      | `CarbonPaginatorConfig`  | no       | DEFAULT_PAGINATOR_CONFIG  | The object that defines the options for pagination size and if a page input is displayed. The CarbonPaginatorConfig interface is defined in the `@valtimo/components` library. |
 | `paginationIdentifier` | `string`                 | no       | undefined                 | An identifier for storing pagination size in localStorage.                                                                                                                     |
 | `tableTranslations`    | `CarbonListTranslations` | no       | DEFAULT_LIST_TRANSLATIONS | The object that defines translations for the multi-select bar and the pagination. The CarbonListTranslations interface is defined in the `@valtimo/components` library.        |
@@ -160,10 +164,11 @@ This will create a custom no results message:
 
 ## Outputs
 
-| Property            | Type                      | Description                                                                                             |
-| ------------------- | ------------------------- | ------------------------------------------------------------------------------------------------------- |
-| `rowClicked`        | `EventEmitter<any>`       | Emits the item corresponded to the clicked row.                                                         |
-| `paginationClicked` | `EventEmitter<number>`    | Emits the current page selected.                                                                        |
-| `paginationSet`     | `EventEmitter<number>`    | Emits the page size of the list.                                                                        |
-| `search`            | `EventEmitter<string>`    | Emits the search string. If this event listener is added, then the search should be provided by the BE. |
-| `sortChanged`       | `EventEmitter<SortState>` | Emits the new SortState. The SortState interface is defined in `@valtimo/config`                        |
+| Property            | Type                         | Description                                                                                             |
+| ------------------- | ---------------------------- | ------------------------------------------------------------------------------------------------------- |
+| `rowClicked`        | `EventEmitter<any>`          | Emits the item corresponded to the clicked row.                                                         |
+| `paginationClicked` | `EventEmitter<number>`       | Emits the current page selected.                                                                        |
+| `paginationSet`     | `EventEmitter<number>`       | Emits the page size of the list.                                                                        |
+| `search`            | `EventEmitter<string>`       | Emits the search string. If this event listener is added, then the search should be provided by the BE. |
+| `sortChanged`       | `EventEmitter<SortState>`    | Emits the new SortState. The SortState interface is defined in `@valtimo/config`                        |
+| `moveRow`           | `EventEmitter<MoveRowEvent>` | Emits the MoveRowEvent. The MoveRowEvent interface is defined in `@valtimo/components`                  |

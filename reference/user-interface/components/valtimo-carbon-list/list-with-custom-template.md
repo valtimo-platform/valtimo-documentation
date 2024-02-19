@@ -65,4 +65,5 @@ Through the `fields` input, you can set up column with custom template, followin
    ```
 
 This will create a list with a context menu:
+
 ![list-with-custom.png](./img/list-with-custom.png)

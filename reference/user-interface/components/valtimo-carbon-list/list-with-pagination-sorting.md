@@ -78,4 +78,5 @@ The CarbonListComponent supports backend pagination and sorting. In order to mak
    ```
 
 This will create a list with pagination and sorting:
+
 ![list-with-pagination-sorting.png](./img/list-with-pagination-sorting.png)
