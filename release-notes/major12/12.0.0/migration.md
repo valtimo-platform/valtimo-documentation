@@ -145,6 +145,19 @@ This page describes how to update Valtimo from the previous version to the curre
   usages in processes and code should be updated to use `DocumentDelegateService.getDocument(DelegateExecution)`
   instead.
 
+* **Value resolvers**
+
+  Scope: back-end
+
+    1. **Step 1: Find classes**
+       Locate all Kotlin classes that extend the `: ValueResolverFactory` interface in the implementation code.
+
+    2. **Step 2: Locate functions**
+       In the classes found, locate all function with name `handleValues(...)`
+
+    3. **Step 3: Replace parameter**
+       Change the type of parameter `values` from: `Map<String, Any>` to also support null values: `Map<String, Any?>`.
+
 * **Breaking change 2/Deprecation 2**
 
   Scope: back-end/front-end

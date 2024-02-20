@@ -18,6 +18,13 @@ The following features were added:
   The assignees of a user task are now saved in the database by their user ID. When implementations use keycloak, the
   assignee column from the task table in the databases is automatically migrated from email to user ID.
 
+* **Value resolver null values**
+
+  Value resolver now supports resolving and handling `null` values. This change can break existing value resolver
+  implementations.
+
+  Migration instructions related to this change can be found [here](migration).
+
 * **Plugin actions on all activity types**
 
   Support for plugin action on all activity types has been added.
