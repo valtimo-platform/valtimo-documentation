@@ -6,12 +6,13 @@ The following features were added:
 
 * **Inline edit document definition**
 
-  Document definition can now be editted inline to create a new version.
+  Document definition can now be edited inline to create a new version.
 
 * **Pending changes modal extension**
 
-  Pending changes modal has been extended to accept custom modals.
-  More details about the PendindChangesComponent can be found [here](/using-valtimo/pending-changes/pending-changes.md)
+  The pending changes modal has been extended to accept custom modals. An example of this use would be a pending changes modal for an 'Edit mode' function, where you might want to have three buttons(e.g. *Keep editing*, *Save*, *Discard*) instead of the out of the box two.
+
+  More details about the PendingChangesComponent can be found [here](/using-valtimo/pending-changes/pending-changes.md)
 
 
 ## Bugfixes
