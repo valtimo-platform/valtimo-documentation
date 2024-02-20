@@ -7,7 +7,7 @@ The following features were added:
 * **Form flow management**
 
   An administrator can now see, create and edit form flows from a front-end admin page. For more information on form
-  flows, [refer to this page](/using-valtimo/form-flow/create-form-flow-definition.md).
+  flows, refer to [this page](/using-valtimo/form-flow/create-form-flow-definition.md).
 
 * **New feature2**
 
