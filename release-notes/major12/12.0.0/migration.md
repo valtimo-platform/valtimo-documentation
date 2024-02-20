@@ -19,10 +19,10 @@ This page describes how to update Valtimo from the previous version to the curre
 
   Scope: back-end
 
-    1. **Step1**
+    1. **Step 1: Find filed**
 
        Locate all files in the backend libraries matching: `/resources/config/<filepath>/<filename>.permission.json`
-    2. **Step2**
+    2. **Step 2: Locate permissions**
        Locate all permissions for `CamundaTask` that use the `assignee` field. For example:
        ```json
        {
@@ -39,7 +39,7 @@ This page describes how to update Valtimo from the previous version to the curre
        }
        ```
 
-    3. **Step3**
+    3. **Step 3: Update permissions**
        Change `${currentUserEmail}` to `${currentUserId}`.
 
        If the `value` field contains an actual email, then the email must be changed to a user ID.
@@ -48,11 +48,11 @@ This page describes how to update Valtimo from the previous version to the curre
 
   Scope: back-end
 
-    1. **Step1**
+    1. **Step 1: Find access control**
 
        Go to the 'Admin' menu item and then to 'Access control'. Then for every role, do the steps below.
 
-    2. **Step2**
+    2. **Step 2: Locate permissions**
        Locate all permissions for `CamundaTask` that use the `assignee` field. For example:
        ```json
        {
@@ -69,10 +69,31 @@ This page describes how to update Valtimo from the previous version to the curre
        }
        ```
 
-    3. **Step3**
+    3. **Step 3: Update permissions**
        Change `${currentUserEmail}` to `${currentUserId}`
 
        If the `value` field contains an actual email, then the email must be changed to a user ID.
+
+* **Plugin action activity types**
+
+  Scope: back-end
+
+    1. **Step 1: Locate plugin actions**
+       Locate all `@PluginAction` annotations in the implementation code.
+
+    2. **Step 2: Update activity type**
+       Change parameter `activityTypes` to use the new type `com.ritense.processlink.domain.ActivityTypeWithEventName`.
+       For example:
+       ```kotlin
+       @PluginAction(
+           key = "send-email",
+           title = "Send email",
+           description = "Send an email with <example-product>.",
+           activityTypes = [ActivityTypeWithEventName.SERVICE_TASK_START]
+       )
+       fun sendEmail(execution: DelegateExecution, emailProperties: EmailProperties) {
+           ...
+       ```
 
 * **Removed form links module**
 
