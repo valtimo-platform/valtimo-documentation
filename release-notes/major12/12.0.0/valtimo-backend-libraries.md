@@ -22,6 +22,19 @@ The following features were added:
 
   Support for plugin action on all activity types has been added.
 
+* **Replacement for header based pagination**
+  
+  Several endpoints that use URLs in the HTTP headers to paginate results have a new version with endpoints that return
+  the pagination information in the response body. The following endpoints are impacted by this change:
+
+| Old endpoint | New endpoint |
+| --- | --- |
+| `/api/v1/choice-fields` | `/api/v2/choice-fields` |
+| `/api/v1/choice-field-values` | `/api/v2/choice-field-values` |
+| `/api/v1/choice-field-values/{choice_field_name}/values` | `/api/v2/choice-field-values/{choice_field_name}/values` |
+| `/api/v1/process/{processDefinitionName}/search` | `/api/v2/process/{processDefinitionName}/search` |
+| `/api/v1/task` | `/api/v2/task` |
+
 ## Bugfixes
 
 The following bugs were fixed:
