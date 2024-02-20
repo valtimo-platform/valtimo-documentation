@@ -18,6 +18,10 @@ The following features were added:
   The assignees of a user task are now saved in the database by their user ID. When implementations use keycloak, the
   assignee column from the task table in the databases is automatically migrated from email to user ID.
 
+* **Plugin actions on all activity types**
+
+  Support for plugin action on all activity types has been added.
+
 * **Replacement for header based pagination**
   
   Several endpoints that use URLs in the HTTP headers to paginate results have a new version with endpoints that return
@@ -30,7 +34,6 @@ The following features were added:
 | `/api/v1/choice-field-values/{choice_field_name}/values` | `/api/v2/choice-field-values/{choice_field_name}/values` |
 | `/api/v1/process/{processDefinitionName}/search` | `/api/v2/process/{processDefinitionName}/search` |
 | `/api/v1/task` | `/api/v2/task` |
-
 
 ## Bugfixes
 
@@ -106,6 +109,10 @@ Instructions on how to migrate to this version of Valtimo can be found [here](mi
 ## Deprecations
 
 The following was deprecated:
+
+* **Connectors**
+
+  The connector framework, including all connectors, have been deprecated.
 
 * **Audit module methods**
 
