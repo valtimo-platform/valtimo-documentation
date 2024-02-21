@@ -1,8 +1,13 @@
-# Frontend libraries x.x.x
+# Frontend libraries 12.0.0
 
 ## New Features
 
 The following features were added:
+
+* **Form flow management**
+
+  An administrator can now see, create and edit form flows from a front-end admin page. For more information on form
+  flows, refer to [this page](/using-valtimo/form-flow/create-form-flow-definition.md).
 
 * **Inline edit document definition**
 
