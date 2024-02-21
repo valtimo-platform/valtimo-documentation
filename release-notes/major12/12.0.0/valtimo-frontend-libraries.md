@@ -10,7 +10,7 @@ The following features were added:
 
 * **Pending changes modal extension**
 
-  The pending changes modal has been extended to accept custom modals. An example of this use would be a pending changes modal for an 'Edit mode' function, where you might want to have three buttons(e.g. *Keep editing*, *Save*, *Discard*) instead of the out of the box two.
+  The pending changes modal has been extended to accept custom modals. An example of this use would be a pending changes modal for an 'Edit mode' function, where you might want to have three buttons (e.g. *Keep editing*, *Save*, *Discard*) instead of the two buttons that are offered out of the box.
 
   More details about the PendingChangesComponent can be found [here](/using-valtimo/pending-changes/pending-changes.md)
 
