@@ -83,7 +83,7 @@ admin interface. Creating the file itself is identical, but the path is not impo
 
 ### Uploading a document definition
 
-Another alternative to creating a document definition in the project is to upload  a document definition via the
+Another alternative to creating a document definition in the project is to upload a document definition via the
 admin interface. Creating the file itself is identical, but the path is not important as it will be uploaded to Valtimo.
 
 * Go to the Admin menu
