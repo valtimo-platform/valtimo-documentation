@@ -14,6 +14,13 @@ The following features were added:
 
   More details about the PendingChangesComponent can be found [here](/using-valtimo/pending-changes/pending-changes.md)
 
+* **Creating document definitions via the admin interface**
+
+  A document definition can now be created via the admin interface. This is an alternative to creating a document
+  definition in the project, which enables the user to create a document definition without needing to create a file in
+  the project.
+
+  More details about creating document definitions can be found [here](/using-valtimo/document/create-document-definition.md)
 
 ## Bugfixes
 
