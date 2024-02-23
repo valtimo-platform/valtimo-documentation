@@ -158,6 +158,10 @@ This page describes how to update Valtimo from the previous version to the curre
     3. **Step 3: Replace parameter**
        Change the type of parameter `values` from: `Map<String, Any>` to also support null values: `Map<String, Any?>`.
 
+* **KvKProvider and BsnProvider**
+  The new implementations of `KvKProvider` and `BsnProvider` (`ZaakKvkProvider` and `ZaakBsnProvider`) no longer depend on the `openzaak` module.
+  Please make sure you have configured at least one Zaken API Plugin to make these providers work.
+
 * **Breaking change 2/Deprecation 2**
 
   Scope: back-end/front-end

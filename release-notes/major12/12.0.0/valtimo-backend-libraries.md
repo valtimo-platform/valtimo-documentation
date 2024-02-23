@@ -156,6 +156,10 @@ The following was deprecated:
 
   The `AuditSearchService` class has been deprecated as it was not used for anything.
 
+* **OpenZaak module**
+  The `openzaak` modules has been deprecated and the `OpenZaakPlugin` has been moved to the new `openzaak-plugin-authentication` module.
+  The packages are still the same to keep it backwards-compatible without configuration migrations.
+
 Instructions on how to migrate to this version of Valtimo can be found [here](migration.md).
 
 * **OpenZaak module**
