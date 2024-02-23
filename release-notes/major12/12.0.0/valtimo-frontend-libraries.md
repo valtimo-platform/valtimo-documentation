@@ -27,6 +27,10 @@ The following features were added:
 
   More details about creating document definitions can be found [here](/using-valtimo/document/create-document-definition.md)
 
+* **Zaken-api plugin action end Hersteltermijn**
+
+  A Zaken-API plugin action has been added for ending a recovery period
+
 ## Bugfixes
 
 The following bugs were fixed:
