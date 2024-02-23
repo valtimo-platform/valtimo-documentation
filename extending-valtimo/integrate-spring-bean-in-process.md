@@ -3,10 +3,10 @@
 It is possible to use custom code in your BPMN processes by referencing a [Spring bean](https://docs.spring.io/spring-framework/docs/current/reference/html/core.html)
 that contains the code you want to run. Any spring bean can be used in expressions by using the bean name.
  
-```java
+```kotlin
 @Component
-public class ExampleService {
-    public void helloWorld() {
+class ExampleService {
+    fun helloWorld() {
         // code goes here
     }
 }

@@ -7,7 +7,7 @@ on the type of step, the step can be handled in a different way. The way a form 
 differ from a payment, for example.
 
 For information on how to link a form flow definition to a task, see 
-[here](../form-link/configure-task.md).
+[here](../process-link/create-process-link.md#creating-a-form-flow-process-link).
 
 ## Definitions
 

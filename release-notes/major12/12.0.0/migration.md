@@ -19,10 +19,10 @@ This page describes how to update Valtimo from the previous version to the curre
 
   Scope: back-end
 
-    1. **Step1**
+    1. **Step 1: Find filed**
 
        Locate all files in the backend libraries matching: `/resources/config/<filepath>/<filename>.permission.json`
-    2. **Step2**
+    2. **Step 2: Locate permissions**
        Locate all permissions for `CamundaTask` that use the `assignee` field. For example:
        ```json
        {
@@ -39,7 +39,7 @@ This page describes how to update Valtimo from the previous version to the curre
        }
        ```
 
-    3. **Step3**
+    3. **Step 3: Update permissions**
        Change `${currentUserEmail}` to `${currentUserId}`.
 
        If the `value` field contains an actual email, then the email must be changed to a user ID.
@@ -48,11 +48,11 @@ This page describes how to update Valtimo from the previous version to the curre
 
   Scope: back-end
 
-    1. **Step1**
+    1. **Step 1: Find access control**
 
        Go to the 'Admin' menu item and then to 'Access control'. Then for every role, do the steps below.
 
-    2. **Step2**
+    2. **Step 2: Locate permissions**
        Locate all permissions for `CamundaTask` that use the `assignee` field. For example:
        ```json
        {
@@ -69,10 +69,94 @@ This page describes how to update Valtimo from the previous version to the curre
        }
        ```
 
-    3. **Step3**
+    3. **Step 3: Update permissions**
        Change `${currentUserEmail}` to `${currentUserId}`
 
        If the `value` field contains an actual email, then the email must be changed to a user ID.
+
+* **Plugin action activity types**
+
+  Scope: back-end
+
+    1. **Step 1: Locate plugin actions**
+       Locate all `@PluginAction` annotations in the implementation code.
+
+    2. **Step 2: Update activity type**
+       Change parameter `activityTypes` to use the new type `com.ritense.processlink.domain.ActivityTypeWithEventName`.
+       For example:
+       ```kotlin
+       @PluginAction(
+           key = "send-email",
+           title = "Send email",
+           description = "Send an email with <example-product>.",
+           activityTypes = [ActivityTypeWithEventName.SERVICE_TASK_START]
+       )
+       fun sendEmail(execution: DelegateExecution, emailProperties: EmailProperties) {
+           ...
+       ```
+
+* **Removed form links module**
+
+  Scope: back-end
+
+  The `form-link` module was removed in favor of using the `process-link` module. The following changes should be made:
+
+    1. **Migrate existing form links**
+
+       Existing form link configurations should be migrated to process links. You can find a script to simplify this
+       task [here](/using-valtimo/process-link/script/migrate-formlinks.sh).
+    2. **Remove form link configuration files (optional)**
+
+       Existing form link configuration files should be removed. This is optional as the files will just get ignored.
+    3. **Remove existing tables (optional)**
+
+       Existing form link configurations should be removed. This is optional as the tables technically do not have to
+       be removed. Below is a changelog that removes the tables.
+       
+       ```xml
+       <?xml version="1.1" encoding="UTF-8" standalone="no"?>
+       <databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                          xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.6.xsd">
+           <changeSet author="Ritense" id="1">
+               <dropAllForeignKeyConstraints baseTableName="process_form_association"/>
+               <dropAllForeignKeyConstraints baseTableName="process_form_association_v2"/>
+           </changeSet>
+    
+           <changeSet author="Ritense" id="2">
+               <dropTable tableName="process_form_association"/>
+               <dropTable tableName="process_form_association_v2"/>
+           </changeSet>
+       </databaseChangeLog>
+       ```
+
+* **Removed DocumentVariableDelegate class**
+  
+  Scope: back-end
+  
+  The `DocumentVariableDelegate` is replaced by the `DocumentDelegateService` class. As such, usages in processes and
+  code should be updated to use `DocumentDelegateService` instead.
+
+* **Deprecated code**
+
+  Scope: back-end
+
+  `CamundaProcessJsonSchemaDocumentService.getDocument(DelegateExecution execution)` has been deprecated. As such,
+  usages in processes and code should be updated to use `DocumentDelegateService.getDocument(DelegateExecution)`
+  instead.
+
+* **Value resolvers**
+
+  Scope: back-end
+
+    1. **Step 1: Find classes**
+       Locate all Kotlin classes that extend the `: ValueResolverFactory` interface in the implementation code.
+
+    2. **Step 2: Locate functions**
+       In the classes found, locate all function with name `handleValues(...)`
+
+    3. **Step 3: Replace parameter**
+       Change the type of parameter `values` from: `Map<String, Any>` to also support null values: `Map<String, Any?>`.
 
 * **Breaking change 2/Deprecation 2**
 

@@ -5,6 +5,8 @@
 This module contains utilities that are useful when creating tests for Valtimo.
 
 ### Backend
+The samples below assume the [valtimo-dependency-versions](valtimo-dependency-versions.md) module is used.
+If not, please specify the artifact version as well.
 
 #### Maven dependency:
 ```xml
@@ -12,15 +14,14 @@ This module contains utilities that are useful when creating tests for Valtimo.
     <dependency>
         <groupId>com.ritense.valtimo</groupId>
         <artifactId>test-utils-common</artifactId>
-        <version>${valtimo_version}</version>
         <scope>test</scope>
     </dependency>
 </dependencies>
 ```
 
 #### Gradle dependency:
-```groovy
+```kotlin
 dependencies {
-  testImplementation "com.ritense.valtimo:test-utils-common:${valtimo_version}"
+  testImplementation "com.ritense.valtimo:test-utils-common")
 }
 ```

@@ -1,4 +1,5 @@
 # OpenZaak
+> **_NOTE:_** This module has been deprecated.
 
 ## Dependencies
 
@@ -10,6 +11,8 @@ The following can be added to your project, depending on whether Maven or Gradle
 > The OpenZaakPlugin can now be found in the [openzaak-plugin-authentication](openzaak-plugin-authentication.md) module.
 
 ### Backend
+The samples below assume the [valtimo-dependency-versions](../core/valtimo-dependency-versions.md) module is used.
+If not, please specify the artifact version as well.
 
 #### Maven dependency:
 ```xml
@@ -17,15 +20,14 @@ The following can be added to your project, depending on whether Maven or Gradle
     <dependency>
         <groupId>com.ritense.valtimo</groupId>
         <artifactId>openzaak</artifactId>
-        <version>${valtimo_version}</version>
     </dependency>
 </dependencies>
 ```
 
 #### Gradle dependency:
-```groovy
+```kotlin
 dependencies {
-  implementation "com.ritense.valtimo:openzaak:${valtimo_version}"
+  implementation("com.ritense.valtimo:openzaak")
 }
 ```
 
@@ -44,27 +46,24 @@ For this, the following needs to be added to your project:
     <dependency>
         <groupId>com.ritense.valtimo</groupId>
         <artifactId>documenten-api</artifactId>
-        <version>${valtimo_version}</version>
     </dependency>
     <dependency>
         <groupId>com.ritense.valtimo</groupId>
         <artifactId>zaken-api</artifactId>
-        <version>${valtimo_version}</version>
     </dependency>
     <dependency>
         <groupId>com.ritense.valtimo</groupId>
         <artifactId>catalogi-api</artifactId>
-        <version>${valtimo_version}</version>
     </dependency>
 </dependencies>
 ```
 
 #### Gradle dependency:
-```groovy
+```kotlin
 dependencies {
-  implementation "com.ritense.valtimo:documenten-api:$valtimoVersion"
-  implementation "com.ritense.valtimo:zaken-api:$valtimoVersion"
-  implementation "com.ritense.valtimo:catalogi-api:$valtimoVersion"
+  implementation("com.ritense.valtimo:documenten-api")
+  implementation("com.ritense.valtimo:zaken-api")
+  implementation("com.ritense.valtimo:catalogi-api")
 }
 ```
 

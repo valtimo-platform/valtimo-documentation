@@ -8,6 +8,8 @@ this pattern, the `outbox` module needs to be added as a dependency. The followi
 depending on whether Maven or Gradle is used:
 
 ### Backend
+The samples below assume the [valtimo-dependency-versions](valtimo-dependency-versions.md) module is used.
+If not, please specify the artifact version as well.
 
 #### Maven dependency:
 
@@ -24,9 +26,9 @@ depending on whether Maven or Gradle is used:
 
 #### Gradle dependency:
 
-```groovy
+```kotlin
 dependencies {
-    implementation "com.ritense.valtimo:outbox:${valtimo_version}"
+    implementation("com.ritense.valtimo:outbox")
 }
 ```
 

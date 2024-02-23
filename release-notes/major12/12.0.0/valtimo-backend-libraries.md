@@ -1,4 +1,4 @@
-# Backend libraries x.x.x
+# Backend libraries 12.0.0
 
 ## New Features
 
@@ -19,6 +19,38 @@ The following features were added:
   assignee column from the task table in the databases is automatically migrated from email to user ID.
 
 * **New endpoint to retrieve Zaaktypen**
+  A new endpoint has been added to the zaken-api module to retrieve zaaktypen: `/api/management/v1/zgw/zaaktype`.
+  This replaces the `/api/v1/openzaak/zaaktype` endpoint from the openzaak module, which is now deprecated.
+  The new endpoint requires at least one Zaken API Plugin to be configured.
+
+* **Moved OpenZaak plugin to new `openzaak-plugin-authentication` module**
+  Since the `openzaak` modules has been deprecated, the `OpenZaakPlugin` has been moved to the new `openzaak-plugin-authentication` module.
+  The packages are still the same to keep it backwards-compatible without configuration migrations.
+
+* **Value resolver null values**
+
+  Value resolver now supports resolving and handling `null` values. This change can break existing value resolver
+  implementations.
+
+  Migration instructions related to this change can be found [here](migration).
+
+* **Plugin actions on all activity types**
+
+  Support for plugin action on all activity types has been added.
+
+* **Replacement for header based pagination**
+  
+  Several endpoints that use URLs in the HTTP headers to paginate results have a new version with endpoints that return
+  the pagination information in the response body. The following endpoints are impacted by this change:
+
+| Old endpoint | New endpoint |
+| --- | --- |
+| `/api/v1/choice-fields` | `/api/v2/choice-fields` |
+| `/api/v1/choice-field-values` | `/api/v2/choice-field-values` |
+| `/api/v1/choice-field-values/{choice_field_name}/values` | `/api/v2/choice-field-values/{choice_field_name}/values` |
+| `/api/v1/process/{processDefinitionName}/search` | `/api/v2/process/{processDefinitionName}/search` |
+| `/api/v1/task` | `/api/v2/task` |
+* **New endpoint to retrieve Zaaktypen**
   A new endpoint has been added to the zaken-api module to retrieve zaaktypen: `/api/management/v1/zgw/zaaktype`. 
   This replaces the `/api/v1/openzaak/zaaktype` endpoint from the openzaak module, which is now deprecated.
   The new endpoint requires at least one Zaken API Plugin to be configured.
@@ -36,9 +68,9 @@ The following bugs were fixed:
   The plugin action property would throw an error when the plugin action property was set to a process variable that
   contained a list.
 
-* **Bug2**
+* **Plugin auto deployment fails on nullable property**
 
-  Description of what the issue was.
+  If the plugin configuration file contained a 'null' value for a plugin property, an error was thrown.
 
 ## Breaking changes
 
@@ -56,9 +88,50 @@ The following breaking changes were introduced:
   This functionality has been replaced by [valtimo-dependency-versions](../../../getting-started/modules/core/valtimo-dependency-versions.md).
 
 * **Moved KvKProvider and BsnProvider**
-  The `KvKProvider` and `BsnProvider` and implementations (`ZaakKvKProvider` and `ZaakBsnProvider`)have been moved to the `zaken-api` module. 
+  The `KvKProvider` and `BsnProvider` and implementations (`ZaakKvKProvider` and `ZaakBsnProvider`)have been moved to the `zaken-api` module.
   The [objects-api module](/getting-started/modules/zgw/objects-api.md) has been changed to use the relocated interfaces.
   Please be aware that the new implementations require at least one Zaken API Plugin to be configured.
+
+* **Removed deprecated code**
+  The `form-link` module, which was deprecated in 10.6.0, has been removed. Process links should be used instead.
+  Additionally, `CamundaProcessJsonSchemaDocumentService.getDocument(DelegateExecution execution)` has been removed.
+  This method is replaced by `DocumentDelegateService.getDocument(DelegateExecution execution`.
+
+* **ResourceService implementation is now optional**
+  Valtimo can now start without providing any implementation of the `ResourceService`.
+  When no implementation is provided, the following features will not work:
+  - The `camundaSmartDocumentGenerator` and `smartDocumentGenerator` beans will not be available. The plugin should work as normal.
+  - The `documentRelatedFileSubmittedEventListenerImpl` bean will not be available.
+  - `JsonSchemaDocumentService.assignResource` will throw an error when invoked.
+  - The `FormIoFormFileResource` bean will not be available.
+
+* **`OpenZaakUrlProvider` has been replaced
+  The `OpenZaakUrlProvider` class and bean (`openZaakUrlProvider`) have been removed. 
+  These have been replaced by:
+  - `ZaakUrlProvider`: implemented by `DefaultZaakUrlProvider` in the zaken-api module.
+  - `ZaaktypeUrlProvider`: implemented by `DefaultZaaktypeUrlProvider` in the zaken-api module.
+
+* **`ZaakUrlProvider.getZaak(documentId: UUID): String` has been removed.
+  This method is replaced by `ZaakUrlProvider.getZaakUrl(documentId: UUID): URI`.
+
+* **Removed dependencies from [`valtimo-gzac-dependencies`](/getting-started/modules/zgw/valtimo-gzac-dependencies.md)**
+
+  The following modules have been removed from [`valtimo-gzac-dependencies`](/getting-started/modules/zgw/valtimo-gzac-dependencies.md):
+  - [`com.ritense.valtimo:besluit`](/getting-started/modules/zgw/besluit.md)
+  - [`com.ritense.valtimo:contactmoment`](/getting-started/modules/zgw/contactmoment.md)
+  - [`com.ritense.valtimo:klant`](/getting-started/modules/zgw/klant.md)
+  - [`com.ritense.valtimo:objects-api`](/getting-started/modules/zgw/objects-api.md)
+  - [`com.ritense.valtimo:openzaak-resource`](/getting-started/modules/zgw/openzaak-resource.md)
+  - [`com.ritense.valtimo:openzaak`](/getting-started/modules/zgw/openzaak.md)
+  
+  These modules are still defined in the `valtimo-dependency-versions`. Please add them to your project manually if needed.
+
+* **OpenZaak module has been deprecated**
+  Its functionality has been moved or copied to the following modules:
+  - [Catalogi API](/getting-started/modules/zgw/catalogi-api.md)
+  - [Documenten API](/getting-started/modules/zgw/documenten-api.md)
+  - [OpenZaak Plugin Authentication](/getting-started/modules/zgw/openzaak-plugin-authentication.md)
+  - [Zaken API](/getting-started/modules/zgw/zaken-api.md)
 
 Instructions on how to migrate to this version of Valtimo can be found [here](migration.md).
 
@@ -66,15 +139,28 @@ Instructions on how to migrate to this version of Valtimo can be found [here](mi
 
 The following was deprecated:
 
-* **Deprecation1**
+* **Connectors**
 
-  X was deprecated and is replaced with Y.
+  The connector framework, including all connectors, have been deprecated.
 
-* **Deprecation2**
+* **Audit module methods**
 
-  X was deprecated and is replaced with Y.
+  Several methods have been deprecated as they were not used for anything. No alternatives are offered.
+  These are:
+  * `AuditRecordRepository.findAuditRecordByProperty(String key, Object value, Pageable pageable)`
+  * `AuditService.findByEventAndOccurredBetween(Class<? extends AuditEvent> event, LocalDateTime from, LocalDateTime until, Pageable pageable)`
+  * `AuditService.findByProperty(String key, Object value, Pageable pageable)`
+  * `AuditService.findByEventTypeAndProperty(Class<? extends AuditEvent> event, String key, Object value)`
+
+* **Audit module classes**
+
+  The `AuditSearchService` class has been deprecated as it was not used for anything.
 
 Instructions on how to migrate to this version of Valtimo can be found [here](migration.md).
+
+* **OpenZaak module**
+  The OpenZaak module has been deprecated. The deprecated methods and classes have been annotated with instructions on how to replace them.
+  The general guideline here is to use the available (Plugin) functionality from the ZWG modules as replacement.
 
 ## Known issues
 
