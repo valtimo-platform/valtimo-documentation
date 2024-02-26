@@ -3,7 +3,7 @@
 The Public Task Plugin exposes a User Task outside of the Valtimo user environment. It generates an HTML, an assignee candidate receives a URL and is able to submit the task within the HTML. 
 From there Valtimo will pick up the submission and complete the task.
 
-The Public Task Plugin is not a standard part of Valtimo. It is available in the Plugins Repo. More information can be found [here](https://docs.valtimo.nl/readme/modules/plugin-introduction#plugins-repo).
+The Public Task Plugin is not a standard part of Valtimo. It is available in the Plugins Repo. More information can be found [here](/introduction/modules/plugin-introduction.md#plugins-repo).
 
 ## Configure the plugin
 
