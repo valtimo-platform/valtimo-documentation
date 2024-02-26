@@ -52,3 +52,7 @@ An example of the process: ![example create url process](img/create-url-process.
 6. The second endpoint is called by the form which will contain the submission of the form and will complete the task with said submission. 
 
 Note: examples of the processes can be found in the repo of the plugin. This is only an option for implementation.
+
+### Audit
+
+When a public task is completed, this will be logged as a **Public Task**
