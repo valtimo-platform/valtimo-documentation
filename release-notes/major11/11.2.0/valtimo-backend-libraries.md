@@ -74,6 +74,10 @@ The following features were added:
 
   Valtimo now uses a Spring managed ObjectMapper to map from JSON to classes and vice versa.
 
+* **Verzoak data mapping to a process variable**
+
+  `VerzoekPlugins` now provides the ability to map the verzoek data directly to a process variable by adding a `pv` prefix to the chosen `target` on a specified copy strategy.
+
 ## Bugfixes
 
 The following bugs were fixed:
