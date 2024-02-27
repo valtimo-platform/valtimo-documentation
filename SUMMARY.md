@@ -196,6 +196,8 @@
       * [Valtimo frontend libraries](release-notes/major11/11.0.0/valtimo-frontend-libraries.md)
       * [Migration](release-notes/major11/11.0.0/migration.md)
   * 10.x.x
+    * 10.8.3
+      * [Valtimo backend libraries](release-notes/major10/10.8.3/valtimo-backend-libraries.md)
     * 10.8.0
       * [Valtimo backend libraries](release-notes/major10/10.8.0/valtimo-backend-libraries.md)
       * [Valtimo frontend libraries](release-notes/major10/10.8.0/valtimo-frontend-libraries.md)
