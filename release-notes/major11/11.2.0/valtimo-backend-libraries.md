@@ -99,6 +99,10 @@ The following bugs were fixed:
 
 ## Breaking changes
 
+  No breaking changes.
+
+## Deprecations
+
 The following was deprecated:
 
 * **Mapper classes**
@@ -111,10 +115,6 @@ The following was deprecated:
   - `com.ritense.formlink.domain.impl.formassociation.Mapper`
 
   These classes should be replaced by the new `com.ritense.valtimo.contract.json.MapperSingleton`.
-
-## Deprecations
-
-No deprecations.
 
 ## Known issues
 
