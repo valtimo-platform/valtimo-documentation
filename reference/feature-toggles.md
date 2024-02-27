@@ -70,10 +70,3 @@ with a `boolean` value.
 
   If enabled, the Valtimo version information in the right sidebar will only be visible for admins and will be hidden
   for any other users.
-
-* **`enableTabManagement`**
-
-  If enabled, tabs will be configured for each case type in the back-end. For more information on this option, visit
-  [this page ](/using-valtimo/case/case-tabs.md). If disabled, the tabs for each case type will be the same, and will be
-  configured from the `AppModule`. For information on this option, visit [this page](/extending-valtimo/tabs/customizing-case-tabs.md).
-
