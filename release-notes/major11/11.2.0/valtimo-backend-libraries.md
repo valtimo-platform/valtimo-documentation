@@ -99,7 +99,7 @@ The following bugs were fixed:
 
 ## Breaking changes
 
-  No breaking changes.
+No breaking changes.
 
 ## Deprecations
 
