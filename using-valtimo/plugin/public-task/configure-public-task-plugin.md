@@ -34,7 +34,8 @@ When creating a process link the following properties have to be entered:
 - **AssigneeCandidateContactData**: It is up to the implementation by what means the URL is communicated. The contact data of the user needs to be a process variable. The variable name needs to be set here. Starting with pv:
 - **TimeToLive**: This is the amount of days that the Public Task remains available after initialization.
 
-an example process link configuration:
+an example process link configuration: 
+
 ![example process link configuration](img/create-public-task-process-link.png)
 
 ### Implementing the plugin
@@ -42,10 +43,16 @@ The plugin is designed to be able to be added to an existing user task. Because 
 
 1. Add a **Task listener** with a **Create: Expression**. In the expression, add the following function call: **${publicTaskService.startNotifyAssigneeCandidateProcess(task)}**. 
    
-An example of the process: ![example public task process](img/public-task-process.png)
+An example of the process: 
+
+![example public task process](img/public-task-process.png)
+ 
 2. This will correlate a message to start a new subprocess. Add this subprocess to the implementation.
    
-An example of the process: ![example create url process](img/create-url-process.png)
+An example of the process: 
+
+![example create url process](img/create-url-process.png)
+
 3. Link the Process Link to the **Create Public Task URL task**
 4. Implement a notification function to send the URL to the Assignee candidate
 5. Part of the plugin code is a controller with two endpoints. The first endpoint will be called by the created URL and will send a HTML back with the form that is linked to the usertask
