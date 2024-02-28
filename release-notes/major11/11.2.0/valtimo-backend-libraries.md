@@ -103,7 +103,18 @@ No breaking changes.
 
 ## Deprecations
 
-No deprecations.
+The following was deprecated:
+
+* **Mapper classes**
+
+  Multiple classes related to the Jackson ObjecMapper have been deprecated:
+  - `com.ritense.valtimo.contract.json.Mapper`
+  - `com.ritense.document.domain.impl.Mapper`
+  - `com.ritense.openzaak.service.impl.Mapper`
+  - `com.ritense.form.domain.Mapper`
+  - `com.ritense.formlink.domain.impl.formassociation.Mapper`
+
+  These classes should be replaced by the new `com.ritense.valtimo.contract.json.MapperSingleton`.
 
 ## Known issues
 
