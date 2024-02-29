@@ -42,6 +42,10 @@ The following features were added:
 | `/api/v1/process/{processDefinitionName}/search` | `/api/v2/process/{processDefinitionName}/search` |
 | `/api/v1/task` | `/api/v2/task` |
 
+* **Automatically set 'Uiterlijke einddatum afdoening' in Zaken-api**
+
+  The field 'Uiterlijke einddatum afdoening' is now set automatically in the Zaken-api when creating a case in Valtimo.
+
 ## Bugfixes
 
 The following bugs were fixed:
