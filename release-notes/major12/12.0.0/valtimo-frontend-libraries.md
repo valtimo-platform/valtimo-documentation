@@ -31,6 +31,13 @@ The following features were added:
 
   A Zaken-API plugin action has been added for ending a recovery period
 
+* **New Zaak type link endpoint**
+  The document Zaaktype link configuration now uses the `/api/management/v1/zgw/zaaktype` endpoint.
+  This new endpoint requires a zaken-api plugin to be configured.
+
+* **Document object type selection is now conditional**
+  When connecting a zaak to the document, the document object type selection is now only shown when using the OPEN_ZAAK upload-provider.
+
 ## Bugfixes
 
 The following bugs were fixed:
