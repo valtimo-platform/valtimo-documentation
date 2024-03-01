@@ -21,4 +21,3 @@ This sections contains information on how plugins can be created, configured and
 * [Zaken API Plugin](zaken-api/configure-zaken-api-plugin.md)
 * [Exact Plugin](exact/configure-exact-plugin.md)
 * [Besluiten Plugin](besluiten-api/configure-besluiten-api-plugin.md)
-* [SMTP Mail Plugin](smtp-mail/configure-smtp-mail-plugin.md)
