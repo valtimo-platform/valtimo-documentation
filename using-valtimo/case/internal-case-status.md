@@ -16,9 +16,58 @@ A status can be added by clicking on the [Add status] button on the screen. A fo
 
 - Name: used as a label in the case summary and list
 - Key: the technical identifier of that status
-- Color: used for the label/tags of a status
+- Color: used for the label/tags of a status. The following colors are available:
+  - Red (`RED`)
+  - Magenta (`MAGENTA`)
+  - Purple (`PURPLE`)
+  - Blue (`BLUE`)
+  - Teal (`TEAL`)
+  - Green (`GREEN`)
+  - Cyan (`CYAN`)
+  - Gray (`GRAY`)
+  - Cool gray (`COOLGRAY`)
+  - Warm gray (`WARMGRAY`)
+  - High contrast (`HIGHCONTRAST`)
+  - Outline (`OUTLINE`)
 - Visible: If enabled, the status is included in the case search filter by default. When disabled, the user has to manually enable it in the filter so see any
   results with that status.
+
+### Autodeployment
+Status configurations can be autodeployed by creating json files in the `classpath*:config/` folder. The name of the file has to end with `.internal-case-status.json`
+You can find an example of the JSON below:
+
+`example.internal-case-status`:
+```json
+{
+  "changesetId": "example.internal-case-status.1709304109619",
+  "internalCaseStatuses": [
+    {
+      "key": "started",
+      "caseDefinitionName": "example",
+      "title": "Started",
+      "visibleInCaseListByDefault": true,
+      "color": "GREEN"
+    },
+    {
+      "key": "in-progress",
+      "caseDefinitionName": "example",
+      "title": "In progress",
+      "visibleInCaseListByDefault": true,
+      "color": "CYAN"
+    },
+    {
+      "key": "completed",
+      "caseDefinitionName": "example",
+      "title": "Completed",
+      "visibleInCaseListByDefault": false,
+      "color": "GRAY"
+    }
+  ]
+}
+```
+
+### Import and export
+The configuration is also included when importing or exporting a case. It uses the same format as the [autodeployment](#autodeployment).
 
 ### Ordering
 
