@@ -31,6 +31,9 @@ The following features were added:
 
   A Zaken-API plugin action has been added for both starting and ending a recovery period.
 
+  More information about the plugin actions can be
+  found [here](/using-valtimo/plugin/zaken-api/configure-zaken-api-plugin.md#start-recovery-period).
+
 ## Bugfixes
 
 The following bugs were fixed:
