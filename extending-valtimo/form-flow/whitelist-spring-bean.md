@@ -12,18 +12,19 @@ the `@FormFlowBean` annotation.
 
 1. Ensure a bean for the class that should be whitelisted is provided.
 
-   ```java
+   ```kotlin
    @Bean
-   public SomethingService somethingService() {
-      return new somethingService();
+   
+   fun somethingService(): SomethingService{
+      return SomethingService()
    }
    ```
 
 2. At the top of the class, add the `@FormFlowBean` annotation.
 
-   ```java
+   ```kotlin
    @FormFlowBean
-   public class SomethingService {
+   class SomethingService {
       ...
    }
    ```

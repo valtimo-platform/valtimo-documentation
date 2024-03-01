@@ -10,6 +10,8 @@ This page requires you to have knowledge of JSON schema.
 
 ## Definition
 
+### Via the project
+
 To create a document definition, the following steps are necessary:
 
 * Create a document definition file (ending with `.schema.json`) under the following path: 
@@ -63,9 +65,25 @@ To create a document definition, the following steps are necessary:
   }
   ```
 
+### Via the admin interface
+
+As an alternative to creating a document definition in the project, a document definition can also be created via the
+admin interface. Creating the file itself is identical, but the path is not important as it will be uploaded to Valtimo.
+
+* Go to the Admin menu.
+* Go to the Cases menu.
+* Press create.
+* Enter the title, and optionally edit the name.
+* Save the document definition. This takes you to the document definition overview.
+* Press edit.
+* Edit the document definition as per the JSON schema standard.
+* Press save.
+
+![Creating a document definition](img/create-document-definition.png)
+
 ### Uploading a document definition
 
-As an alternative to creating a document definition in the project, a document definition can also be uploaded via the
+Another alternative to creating a document definition in the project is to upload a document definition via the
 admin interface. Creating the file itself is identical, but the path is not important as it will be uploaded to Valtimo.
 
 * Go to the Admin menu

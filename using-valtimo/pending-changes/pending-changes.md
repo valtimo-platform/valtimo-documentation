@@ -96,7 +96,7 @@ export class ExampleComponent extends PendingChangesComponent {
 
 ## Custom handlers when closing the PendingChanges modal
 
-In case custom handlers need to be added when selecting either *Confirm* or *Cancel*, the PendingChangesComponent has two *protected* methods that can be overwritten for that purpose.
+In case custom handlers need to be added when selecting either _Confirm_ or _Cancel_, the PendingChangesComponent has two _protected_ methods that can be overwritten for that purpose.
 
 #### **`pending-changes.component.ts`**
 
@@ -140,6 +140,69 @@ export class ExampleComponent extends PendingChangesComponent {
     // overwrite onCancelRedirect method
     protected onCancelRedirect(): void {
       //custom logic for canceling of navigation
+    }
+    ...
+}
+```
+
+## Configuring a custom pending changes modal
+
+In case a different modal needs to be displayed instead of the default PendingChanges confirmation, this can be achieved through the following property and by making use of the following methods.
+
+#### **`pending-changes.component.ts`**
+
+```typescript
+...
+  protected customModal: any = null;
+
+  protected onCustomCancel(): void {
+    this._activeModal = null;
+    this.deactivateSubject.next(false);
+    this.onCancelRedirect();
+  }
+
+  protected onCustomConfirm(): void {
+    this._activeModal = null;
+    this.deactivateSubject.next(true);
+    this.onConfirmRedirect();
+  }
+...
+```
+
+In order to set the custom modal, your component needs to be implemented like this:
+
+#### **`example.component.ts`**
+
+```typescript
+...
+// import AfterViewInit and ViewChild to load your custom modal
+import { AfterViewInit, ViewChild } from '@angular/core';
+// import PendingChangesComponent from @valtimo
+import { PendingChangesComponent } from '@valtimo/components';
+
+...
+// Make the component targetable by the PendingChanges guard
+export class ExampleComponent extends PendingChangesComponent implements AfterViewInit {
+    ...
+    // CustomModalComponent is the modal you'd like to display instead of the default pending-changes modal
+    @ViewChild(CustomModalComponent) modalComponent;
+    ...
+    // assign your custom modal
+    public ngAfterViewInit(): void {
+      // customModal field is protected from the PendingChangesComponent
+      this.customModal = this.modalComponent
+    }
+    ...
+    // method in your component that is called when redirecting is confirmed
+    public onConfirmClick(): void {
+      // method from the PendingChangesComponent in order to let the guard know that the redirect can happen
+      this.onCustomConfirm();
+    }
+
+    // method in your component that is called when redirecting is canceled
+    public onCancelClick(): void {
+      // method from the PendingChangesComponent in order to let the guard know that the redirect is not allowed
+      this.onCustomCancel();
     }
     ...
 }

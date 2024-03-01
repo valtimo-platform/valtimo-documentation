@@ -97,12 +97,6 @@ For information on how to create form flow definitions, see
 Form flow Valtimo is the glue between Valtimo and form flow. It adds the required dependencies to use the form flow
 module in a Valtimo application.
 
-### Form link
-
-Form link manages the link between a task or start event in a process and the form by which they can be completed.
-Configuring this can be done both by configuration file and through the REST API. Form linked this way also need
-to be submitted to the submission endpoint in this module.
-
 ### Importer
 
 The importer module provides import functionality for Valtimo. By default, Valtimo provides a way to import case
@@ -277,10 +271,15 @@ API standard for storage of and access to object types, without having to create
 provided that allows for connecting to applications that provide an Objecttypen API.
 
 ### OpenZaak
+> **_NOTE:_** This module has been deprecated
 
 [OpenZaak](https://openzaak.org/) is an application that implements APIs for the exchange of information concerning
 cases using the Dutch government API standards for ZGW (Zaakgericht Werken). This module provides a plugin that provides
 authentication for other ZGW plugins.
+
+## OpenZaak Plugin Authentication
+[OpenZaak Plugin Authentication](../../getting-started/modules/zgw/openzaak-plugin-authentication.md) 
+contains the OpenZaakPlugin which can be used for authentication in several ZGW plugins.
 
 ### OpenZaak resource
 

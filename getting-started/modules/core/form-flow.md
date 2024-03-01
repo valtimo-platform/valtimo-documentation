@@ -23,8 +23,8 @@ If not, please specify the artifact version as well.
 ```
 
 #### Gradle dependency:
-```groovy
+```kotlin
 dependencies {
-  implementation "com.ritense.valtimo:form-flow"
+  implementation("com.ritense.valtimo:form-flow"
 }
 ```
