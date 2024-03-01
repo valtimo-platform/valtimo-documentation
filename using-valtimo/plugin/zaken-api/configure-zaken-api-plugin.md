@@ -94,7 +94,6 @@ After starting the recovery period, the due date becomes: `zaak.originalDueDate 
 
 - **Maximum duration in days.** The maximum duration of the recovery period in days.
 
-
 ### End recovery period
 
 The **End recovery period** will end a recovery period for the linked zaak in the zaken API. The original due
@@ -104,4 +103,3 @@ The zaak is no longer suspended.
 
 After ending the recovery period, the due date
 becomes: `(zaak.originalDueDate + maximumDuration) - (actualDuration - maximumDuration)`
-
