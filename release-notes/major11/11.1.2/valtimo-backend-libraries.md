@@ -7,7 +7,7 @@
 
 * **Provided ZonedLocalDateTimeDeserializer**
   Valtimo Core now ships a custom deserializer for datetime values with zone offset: `ZonedLocalDateTimeDeserializer`.
-  Instructions on how to apply this deserializer can be found [here](zoned-localdatetime-deserializer.md).
+  Instructions on how to apply this deserializer can be found [here](/reference/modules/core/zoned-localdatetime-deserializer.md).
 
 ## Bugfixes
 
