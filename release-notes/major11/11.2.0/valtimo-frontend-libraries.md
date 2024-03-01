@@ -125,6 +125,10 @@ The following bugs were fixed:
 
   The *Add note* button is now clickable even when resizing the window to a smaller size.
 
+* **Carbon components overlays**
+
+  Carbon components backdrops now don't overlap anymore.
+
 ## Breaking changes
 
 No breaking changes.
