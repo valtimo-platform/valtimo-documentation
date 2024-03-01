@@ -6,6 +6,10 @@
 In order to use OpenZaak, the OpenZaak module needs to be added as a dependency.
 The following can be added to your project, depending on whether Maven or Gradle is used:
 
+> **_NOTE:_** The OpenZaak module has been deprecated.
+> 
+> The OpenZaakPlugin can now be found in the [openzaak-plugin-authentication](openzaak-plugin-authentication.md) module.
+
 ### Backend
 The samples below assume the [valtimo-dependency-versions](../core/valtimo-dependency-versions.md) module is used.
 If not, please specify the artifact version as well.

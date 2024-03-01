@@ -4,6 +4,12 @@
 
 The following features were added:
 
+
+* **Translation management**
+
+  An administrator can now configure and override translations from a front-end admin page. For more information on how
+  to configure and use this, [refer to this page](/using-valtimo/localization/configuring-localization.md).
+
 * **Form flow management**
 
   An administrator can now see, create and edit form flows from a front-end admin page. For more information on form
@@ -33,6 +39,17 @@ The following features were added:
 
   More information about the plugin actions can be
   found [here](/using-valtimo/plugin/zaken-api/configure-zaken-api-plugin.md#start-recovery-period).
+
+* **New Zaak type link endpoint**
+  The document Zaaktype link configuration now uses the `/api/management/v1/zgw/zaaktype` endpoint.
+  This new endpoint requires a zaken-api plugin to be configured.
+
+* **Document object type selection is now conditional**
+  When connecting a zaak to the document, the document object type selection is now only shown when using the OPEN_ZAAK upload-provider.
+
+* **Configurable colors for internal case statuses**
+  When configuring an internal case status, you are provided with a fixed list of colors. This colors are in accordance to the Carbon Design System
+  and will help differentiate between different satuses you might create.
 
 ## Bugfixes
 
