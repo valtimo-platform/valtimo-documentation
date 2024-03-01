@@ -125,6 +125,10 @@ The following bugs were fixed:
 
   The *Add note* button is now clickable even when resizing the window to a smaller size.
 
+* **FormIO calendar widget**
+
+  The FormIO datepicker now opens every time.
+
 ## Breaking changes
 
 No breaking changes.
