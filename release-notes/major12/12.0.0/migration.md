@@ -145,6 +145,44 @@ This page describes how to update Valtimo from the previous version to the curre
   usages in processes and code should be updated to use `DocumentDelegateService.getDocument(DelegateExecution)`
   instead.
 
+ **Zaaktype link moved**
+
+  Scope: back-end
+  
+  The Zaaktype link code has been moved from the `openzaak` module to the `zaken-api` module. This should only affect
+  implementations that use Zaaktype links in custom code. Below is a list of the most important classes that have been moved.
+  This list might not be exhaustive.
+
+  | Old class                                                                    | New class                                                         |
+  |------------------------------------------------------------------------------|-------------------------------------------------------------------|
+  | `com.ritense.openzaak.service.ZaakTypeLinkService`                           | `com.ritense.zakenapi.service.ZaakTypeLinkService`                |
+  | `com.ritense.openzaak.service.impl.ZaakTypeLinkService`                      | `com.ritense.zakenapi.service.DefaultZaakTypeLinkService`         |
+  | `com.ritense.openzaak.listener.DocumentCreatedListener`                      | `com.ritense.zakenapi.service.ZakenApiEventListener`              |
+  | `com.ritense.openzaak.domain.request.CreateZaakTypeLinkRequest`              | `com.ritense.zakenapi.web.rest.request.CreateZaakTypeLinkRequest` |
+  | `com.ritense.openzaak.domain.mapping.impl.ZaakTypeLink`                      | `com.ritense.zakenapi.domain.ZaakTypeLink`                        |
+  | `com.ritense.openzaak.domain.mapping.impl.ZaakTypeLinkId`                    | `com.ritense.zakenapi.domain.ZaakTypeLinkId`                      |
+  | `com.ritense.openzaak.web.rest.ZaakTypeLinkResource`                         | `com.ritense.zakenapi.web.rest.ZaakTypeLinkResource`              |
+  | `com.ritense.openzaak.web.rest.impl.ZaakTypeLinkResource`                    | `com.ritense.zakenapi.web.rest.DefaultZaakTypeLinkResource`       |
+  | `com.ritense.openzaak.service.result.ZaakTypeLinkResult`                     | No replacement needed                                             |
+  | `com.ritense.openzaak.service.impl.result.CreateZaakTypeLinkResultFailed`    | No replacement needed                                             |
+  | `com.ritense.openzaak.service.impl.result.CreateZaaktypeLinkResultSucceeded` | No replacement needed                                             |
+  | `com.ritense.openzaak.domain.mapping.ServiceTaskHandler`                     | Use plugin process link instead                                   |
+  | `com.ritense.openzaak.domain.mapping.impl.ServiceTaskHandler`                | Use plugin process link instead                                   |
+  | `com.ritense.openzaak.domain.mapping.impl.ServiceTaskHandlers`               | Use plugin process link instead                                   |
+  | `com.ritense.openzaak.domain.mapping.impl.InformatieObjectTypeLink`          | No replacement needed                                             |
+  | `com.ritense.openzaak.domain.mapping.impl.InformatieObjectTypeLinkId`        | No replacement needed                                             |
+  | `com.ritense.openzaak.domain.event.EigenschappenSetEvent`                    | No replacement needed                                             |
+  | `com.ritense.openzaak.domain.event.ResultaatSetEvent`                        | No replacement needed                                             |
+  | `com.ritense.openzaak.domain.event.StatusSetEvent`                           | No replacement needed                                             |
+  | `com.ritense.openzaak.domain.event.ZaakCreatedEvent`                         | No replacement needed                                             |
+
+  The endpoints to manage the Zaaktype link have also been replaced:
+  
+  | Old endpoint                                            | New endpoint                                                        |
+  |---------------------------------------------------------|---------------------------------------------------------------------|
+  | POST `/api/v1/openzaak/link`                            | POST `/api/management/v1/zaak-type-link`                            |
+  | DELETE `/api/v1/openzaak/link/{documentDefinitionName}` | DELETE `/api/management/v1/zaak-type-link/{documentDefinitionName}` |
+
 * **Value resolvers**
 
   Scope: back-end
