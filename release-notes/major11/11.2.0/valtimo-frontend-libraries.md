@@ -53,6 +53,11 @@ The following features were added:
 
   Now a process can be connected to a specific version of a Case Definition.
 
+* **Configure Content Security Policy (CSP) from environment**
+
+  In order to make the client more secure, the option has been added to configure CSP headers from the environment file.
+  Please refer to [this page](/reference/content-security-policy.md) for information on how to configure your CSP.
+
 * **Added feature toggle `useStartEventNameAsStartFormTitle`**
 
   Now you can set this feature toggle to show BPMN start event names as title of start forms instead of the standard 
@@ -109,6 +114,12 @@ The following bugs were fixed:
 * **Slow loading of notes**
 
   The loading of the case notes could take a long time depending on the access control settings. This has been solved.
+
+* **Form.IO calendar component**
+
+  When having two or more calendar components in a Form.IO form, and having a language other than English selected in
+  the application, only one calendar component could be expanded. Now calendar components correctly take into account
+  the currently selected locale.
 
 * **Add note button not clickable on small windows**
 
