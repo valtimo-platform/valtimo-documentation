@@ -125,6 +125,10 @@ The following bugs were fixed:
 
   The *Add note* button is now clickable even when resizing the window to a smaller size.
 
+* **Empty widget datasource**
+
+  The widget datasource dropdown is now populated with data.
+
 ## Breaking changes
 
 No breaking changes.
