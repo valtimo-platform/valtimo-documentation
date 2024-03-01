@@ -48,9 +48,9 @@ The following features were added:
 
 The following bugs were fixed:
 
-* **Bug1**
+* **Carbon components overlays**
 
-  Description of what the issue was.
+  Carbon components backdrops now don't overlap anymore.
 
 * **Bug2**
 
