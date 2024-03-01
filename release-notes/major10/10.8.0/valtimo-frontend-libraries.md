@@ -30,6 +30,10 @@ The following bugs were fixed:
 
   Sometimes when a task was opened, it showed the wrong assignee.
 
+* **FormIO calendar widget**
+
+  The FormIO datepicker now opens every time.
+
 ## Breaking changes
 
 No breaking changes.
