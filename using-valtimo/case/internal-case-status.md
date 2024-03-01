@@ -33,7 +33,7 @@ A status can be added by clicking on the [Add status] button on the screen. A fo
   results with that status.
 
 ### Autodeployment
-Status configurations can be autodeployed by creating json files in the `classpath*:config/` folder. The name of the file has to end with `.internal-case-status.json`
+Status configurations can be autodeployed by creating json files in the `classpath*:config/` folder. The name of the file has to end with `.internal-case-status.json`.
 You can find an example of the JSON below:
 
 `example.internal-case-status`:
