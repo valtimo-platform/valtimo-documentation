@@ -18,6 +18,12 @@ The following features were added:
   The assignees of a user task are now saved in the database by their user ID. When implementations use keycloak, the
   assignee column from the task table in the databases is automatically migrated from email to user ID.
 
+
+* **Localization module**
+
+  A new module `localization` has been added, which provides endpoints for user configurable translations. For more
+  information on how to use these translations in the front-end, [refer to this page](/using-valtimo/localization/configuring-localization.md).
+
 * **New endpoint to retrieve Zaaktypen**
   A new endpoint has been added to the zaken-api module to retrieve zaaktypen: `/api/management/v1/zgw/zaaktype`.
   This replaces the `/api/v1/openzaak/zaaktype` endpoint from the openzaak module, which is now deprecated.

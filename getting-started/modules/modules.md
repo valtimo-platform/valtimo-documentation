@@ -7,6 +7,7 @@
   * [Form](core/form.md)
   * [Form flow](core/form-flow.md)
   * [Milestones](core/milestones.md)
+  * [Localization](core/localization.md)
   * [Plugins](core/plugin.md)
   * [Outbox](core/outbox.md)
   * [Process document](core/process-document.md)

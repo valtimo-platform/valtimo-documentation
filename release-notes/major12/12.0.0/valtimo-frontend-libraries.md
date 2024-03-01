@@ -4,6 +4,12 @@
 
 The following features were added:
 
+
+* **Translation management**
+
+  An administrator can now configure and override translations from a front-end admin page. For more information on how
+  to configure and use this, [refer to this page](/using-valtimo/localization/configuring-localization.md).
+
 * **Form flow management**
 
   An administrator can now see, create and edit form flows from a front-end admin page. For more information on form
