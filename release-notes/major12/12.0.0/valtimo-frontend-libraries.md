@@ -44,6 +44,10 @@ The following features were added:
 * **Document object type selection is now conditional**
   When connecting a zaak to the document, the document object type selection is now only shown when using the OPEN_ZAAK upload-provider.
 
+* **Configurable colors for internal case statuses**
+  When configuring an internal case status, you are provided with a fixed list of colors. This colors are in accordance to the Carbon Design System
+  and will help differentiate between different satuses you might create.
+
 ## Bugfixes
 
 The following bugs were fixed:
