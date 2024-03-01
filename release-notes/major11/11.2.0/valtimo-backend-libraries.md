@@ -70,6 +70,10 @@ The following features were added:
 
   If no due date is given in the *Create portaal taak* action, the due date of the user task is used instead.
 
+* **Spring bean for JSON mapper**
+
+  Valtimo now uses a Spring managed ObjectMapper to map from JSON to classes and vice versa.
+
 ## Bugfixes
 
 The following bugs were fixed:
@@ -95,36 +99,23 @@ The following bugs were fixed:
 
 ## Breaking changes
 
-The following breaking changes were introduced:
-
-* **Breaking change1**
-
-* **Breaking change2**
-
-Instructions on how to migrate to this version of Valtimo can be found [here](migration.md).
+No breaking changes.
 
 ## Deprecations
 
 The following was deprecated:
 
-* **Deprecation1**
+* **Mapper classes**
 
-  X was deprecated and is replaced with Y.
+  Multiple classes related to the Jackson ObjecMapper have been deprecated:
+  - `com.ritense.valtimo.contract.json.Mapper`
+  - `com.ritense.document.domain.impl.Mapper`
+  - `com.ritense.openzaak.service.impl.Mapper`
+  - `com.ritense.form.domain.Mapper`
+  - `com.ritense.formlink.domain.impl.formassociation.Mapper`
 
-* **Deprecation2**
-
-  X was deprecated and is replaced with Y.
-
-Instructions on how to migrate to this version of Valtimo can be found [here](migration.md).
+  These classes should be replaced by the new `com.ritense.valtimo.contract.json.MapperSingleton`.
 
 ## Known issues
 
-This version has the following known issues:
-
-* **Issue1**
-  * Discovered in version x.x.x
-  * Describe what can be done to work around the issue
-
-* **Issue2**
-  * Discovered in version x.x.x
-  * Describe what can be done to work around the issue
+No known issues.

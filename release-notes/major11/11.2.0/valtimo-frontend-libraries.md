@@ -58,6 +58,26 @@ The following features were added:
   In order to make the client more secure, the option has been added to configure CSP headers from the environment file.
   Please refer to [this page](/reference/content-security-policy.md) for information on how to configure your CSP.
 
+* **Added feature toggle `useStartEventNameAsStartFormTitle`**
+
+  Now you can set this feature toggle to show BPMN start event names as title of start forms instead of the standard 
+  `Start - ${process-name}` format.
+
+* **Import document definition**
+
+  Now you can import an exported document definition.
+
+* **Carbon List improvements**
+
+  A few updates have been added to the CarbonList:
+
+    - Moving arrows can now be added via a flag
+    - Context menu actions are now configurable through an *@Input* field
+    - Column headers can now be hidden
+    - Rows don't have a pointer cursor unless they are clickable
+    - Pagination can be hidden now
+
+  For more details on the list see [Valtimo Carbon List](/reference/user-interface/components/valtimo-carbon-list/valtimo-carbon-list.md)
 
 ## Bugfixes
 
@@ -107,35 +127,12 @@ The following bugs were fixed:
 
 ## Breaking changes
 
-The following breaking changes were introduced:
-
-* **Breaking change1**
-
-* **Breaking change2**
-
-Instructions on how to migrate to this version of Valtimo can be found [here](migration.md).
+No breaking changes.
 
 ## Deprecations
 
-The following was deprecated:
-
-* **Deprecation1**
-
-  X was deprecated and is replaced with Y.
-* **Deprecation2**
-
-  X was deprecated and is replaced with Y.
-
-Instructions on how to migrate to this version of Valtimo can be found [here](migration.md).
+No deprecations.
 
 ## Known issues
 
-This version has the following known issues:
-
-* **Issue1**
-    * Discovered in version x.x.x
-    * Describe what can be done to work around the issue
-
-* **Issue2**
-    * Discovered in version x.x.x
-    * Describe what can be done to work around the issue
+No known issues.
