@@ -170,6 +170,8 @@
     * [Authorization](reference/modules/authorization.md)
     * [Dashboard](reference/modules/dashboard.md)
     * [Case](reference/modules/case.md)
+    * Core
+      * [ZonedLocalDateTimeDeserializer](reference/modules/core/zoned-localdatetime-deserializer.md)
     * [Document](reference/modules/document.md)
     * [Form](reference/modules/form.md)
     * [Form flow](reference/modules/form-flow.md)
@@ -187,6 +189,9 @@
 * Release notes
   * [Release notes](release-notes/release-notes.md)
   * 11.x.x
+    * 11.1.2
+      * [Valtimo backend libraries](release-notes/major11/11.1.2/valtimo-backend-libraries.md)
+      * [Valtimo frontend libraries](release-notes/major11/11.1.2/valtimo-frontend-libraries.md)
     * 11.1.1
       * [Valtimo backend libraries](release-notes/major11/11.1.1/valtimo-backend-libraries.md)
       * [Valtimo frontend libraries](release-notes/major11/11.1.1/valtimo-frontend-libraries.md)
