@@ -1,9 +1,5 @@
 # Tabs
 
-{% hint style="warning" %}
-**Warning:** From Valtimo 11.1, there is a new preferred way to configure case tabs. For more information, please refer to the v11.1 documentation.
-{% endhint %}
-
 ## Deprecated case tab
 Valtimo uses tabs to group information into separate web pages.
 
