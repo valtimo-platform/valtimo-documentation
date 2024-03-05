@@ -57,17 +57,23 @@ The following features were added:
 | `/api/v1/process/{processDefinitionName}/search` | `/api/v2/process/{processDefinitionName}/search` |
 | `/api/v1/task` | `/api/v2/task` |
 * **New endpoint to retrieve Zaaktypen**
+
   A new endpoint has been added to the zaken-api module to retrieve zaaktypen: `/api/management/v1/zgw/zaaktype`. 
   This replaces the `/api/v1/openzaak/zaaktype` endpoint from the openzaak module, which is now deprecated.
   The new endpoint requires at least one Zaken API Plugin to be configured.
 
 * **Moved OpenZaak plugin to new `openzaak-plugin-authentication` module**
+
   Since the `openzaak` modules has been deprecated, the `OpenZaakPlugin` has been moved to the new `openzaak-plugin-authentication` module.
   The packages are still the same to keep it backwards-compatible without configuration migrations.
 
 * **Automatically set 'Uiterlijke einddatum afdoening' in Zaken-api**
 
   The field 'Uiterlijke einddatum afdoening' is now set automatically in the Zaken-api when creating a case in Valtimo.
+
+* **Internal statuses are now available to cases**
+
+  Cases can be filtered on statuses set to the case via the process. More information on this can be found [here](/using-valtimo/case/internal-case-status.md)
 
 ## Bugfixes
 
