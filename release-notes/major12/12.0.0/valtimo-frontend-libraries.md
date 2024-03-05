@@ -4,7 +4,6 @@
 
 The following features were added:
 
-
 * **Translation management**
 
   An administrator can now configure and override translations from a front-end admin page. For more information on how
@@ -47,6 +46,10 @@ The following features were added:
 * **Configurable colors for internal case statuses**
   When configuring an internal case status, you are provided with a fixed list of colors. This colors are in accordance to the Carbon Design System
   and will help differentiate between different satuses you might create.
+
+* **form-link to process-link**
+  The library `@valtimo/form-link` has been renamed to `@valtimo/process-link`. For information on how to migrate, refer
+  to [this page](migration.md).
 
 ## Bugfixes
 
