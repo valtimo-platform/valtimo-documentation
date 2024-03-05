@@ -113,6 +113,17 @@ Resource type: `com.ritense.valtimo.camunda.domain.CamundaIdentityLink`
 #### Supported actions
 No actions are supported for this type.
 
+### Case tab
+Resource type: `com.ritense.case.domain.CaseTab`
+
+#### Supported actions
+| Action         | key           | Description                    |
+|----------------|:--------------|:-------------------------------|
+| **View**       | `view`        | Allows viewing tabs of a case. |
+
+#### Supported relations
+No relations are supported for this type.
+
 ## Supported conditions
 The following conditions can be used with their respective structures:
 

@@ -1,7 +1,7 @@
 # Tabs
 
 {% hint style="warning" %}
-**Warning:** From Valtimo 11.1, there is a new preferred way to configure case tabs. For more information, please refer to the v11.1 documentation.
+**Warning:** There is a new preferred way to configure case tabs. [Link](/using-valtimo/case/case-tabs.md).
 {% endhint %}
 
 ## Deprecated case tab
