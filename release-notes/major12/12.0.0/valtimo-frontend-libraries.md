@@ -33,9 +33,12 @@ The following features were added:
 
   More details about creating document definitions can be found [here](/using-valtimo/document/create-document-definition.md)
 
-* **Zaken-api plugin action end Hersteltermijn**
+* **Zaken-api plugin action start and end Hersteltermijn**
 
-  A Zaken-API plugin action has been added for ending a recovery period
+  A Zaken-API plugin action has been added for both starting and ending a recovery period.
+
+  More information about the plugin actions can be
+  found [here](/using-valtimo/plugin/zaken-api/configure-zaken-api-plugin.md#start-recovery-period).
 
 * **New Zaak type link endpoint**
   The document Zaaktype link configuration now uses the `/api/management/v1/zgw/zaaktype` endpoint.

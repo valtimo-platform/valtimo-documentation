@@ -67,6 +67,10 @@ The following features were added:
   Since the `openzaak` modules has been deprecated, the `OpenZaakPlugin` has been moved to the new `openzaak-plugin-authentication` module.
   The packages are still the same to keep it backwards-compatible without configuration migrations.
 
+* **Automatically set 'Uiterlijke einddatum afdoening' in Zaken-api**
+
+  The field 'Uiterlijke einddatum afdoening' is now set automatically in the Zaken-api when creating a case in Valtimo.
+
 * **Internal statuses are now available to cases**
 
   Cases can be filtered on statuses set to the case via the process. More information on this can be found [here](/using-valtimo/case/internal-case-status.md)
