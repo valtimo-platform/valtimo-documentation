@@ -13,6 +13,15 @@ The following prefixes are supported by default:
 - `doc` (Document)
 - `pv` (Process variable)
 
+<sup>Available since 11.1.0</sup>
+Value resolvers can also be used to handle submitted form values using the custom property `targetKey`. If the custom
+property `targetKey` is added, it will store submitted values to the reference provided in the `targetKey`:
+
+![Configuring the targetKey property in a form](img/custom_target_key_property.png)
+
+If a `sourceKey` is provided, it will store submitted values using the reference provided in the `sourceKey`. Unless
+there is a `targetKey` provided. Then the `targetKey` takes priority.
+
 ## Case data
 
 By default, when creating fields in a form the data will be retrieved from and stored in the case. The property of the
