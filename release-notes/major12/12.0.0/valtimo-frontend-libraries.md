@@ -51,6 +51,11 @@ The following features were added:
   The library `@valtimo/form-link` has been renamed to `@valtimo/process-link`. For information on how to migrate, refer
   to [this page](migration.md).
 
+* **Override Form.io options**
+
+  Options used by Form.io in the renderer can now be modified by using the following key in your environment file:
+  `formioOptions`. Refer to [this page](/reference/environment.md) for more information.
+
 ## Bugfixes
 
 The following bugs were fixed:
