@@ -83,3 +83,32 @@ When creating a process link the following properties have to be entered:
 - **Other natural person identification.** (Optional) The unique number issued by the municipality for another natural
   person.
 - **Administration number person.** (Optional) The administration number of the person, as referred to in the BRP Act.
+
+### Create zaakeigenschap
+
+The **Create zaakeigenschap** action creates a zaakeigenschap in the zaken API.
+When creating a process link the following properties can be entered:
+
+- **Case definition.** The case definition that is linked to a zaken API plugin configuration.
+- **Eigenschap.** The eigenschap as configured in the catalogi API.
+- **Property URL.** Alternatively, a URL can be entered that references to an eigenschap in the catalogi API.
+- **Eigenschap value.** The value that the zaakeigenschap should get when the process-link action is executed.
+
+### Update zaakeigenschap
+
+The **Update zaakeigenschap** action updates a zaakeigenschap in the zaken API.
+When creating a process link the following properties can be entered:
+
+- **Case definition.** The case definition that is linked to a zaken API plugin configuration.
+- **Eigenschap.** The eigenschap as configured in the catalogi API.
+- **Property URL.** Alternatively, a URL can be entered that references to an eigenschap in the catalogi API.
+- **Eigenschap value.** The value that the zaakeigenschap should get when the process-link action is executed.
+
+### Delete zaakeigenschap
+
+The **Delete zaakeigenschap** action deletes a zaakeigenschap in the zaken API. When creating a process link the
+following properties can be entered:
+
+- **Case definition.** The case definition that is linked to a zaken API plugin configuration.
+- **Eigenschap.** The eigenschap as configured in the catalogi API.
+- **Property URL.** Alternatively, a URL can be entered that references to an eigenschap in the catalogi API.
