@@ -73,11 +73,6 @@ The following features were added:
 * **Spring bean for JSON mapper**
 
   Valtimo now uses a Spring managed ObjectMapper to map from JSON to classes and vice versa.
-
-* **Verzoek data mapping to a process variable**
-
-  The Verzoek plugin now provides the ability to map the verzoek data directly to a process variable by adding a `pv` prefix to the chosen `target` on a specified copy strategy.
-
 ## Bugfixes
 
 The following bugs were fixed:
