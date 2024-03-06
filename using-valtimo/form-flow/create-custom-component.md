@@ -8,6 +8,69 @@ as well. To submit the data for the step, and go to the next step a `POST` call 
 `/api/v1/form-flow/{formFlowId}/step/{stepInstanceId}` endpoint. By providing a JSON body for this request, submission 
 data can be stored for use in form flow. 
 
+## Creating a custom component
+
+A custom form flow component must conform to the interface `FormFlowCustomComponent`, exported from `@valtimo/process-link`
+(`@valtimo/form-link` before 12.0).
+
+Please refer to the example below of a basic custom form flow component.
+
+#### **`some-custom.component.ts`**
+```typescript
+import {Component, EventEmitter, Input, Output} from '@angular/core';
+import {ChangeEvent, FormFlowCustomComponent} from '@valtimo/process-link';
+import {FormioSubmission} from '@valtimo/components';
+
+@Component({
+    standalone: true,
+    selector: 'app-some-custom-component',
+    templateUrl: './some-custom.component.html',
+})
+export class SomeCustomComponent implements FormFlowCustomComponent {
+    @Input() formFlowInstanceId!: string;
+    @Input() componentId!: string;
+    @Input() disabled!: boolean;
+
+    @Output() changeEvent = new EventEmitter<ChangeEvent>();
+    @Output() submitEvent = new EventEmitter<FormioSubmission>();
+
+    public onChange(): void {
+        this.changeEvent.emit({
+            data: {},
+        });
+    }
+
+    public onSubmit(): void {
+        this.submitEvent.emit({
+            data: {
+                submit: true,
+            },
+            metadata: {},
+            state: '',
+        });
+    }
+
+    public onBack(): void {
+        this.submitEvent.emit({
+            data: {
+                back: true,
+            },
+            metadata: {},
+            state: '',
+        });
+    }
+}
+```
+
+#### **`some-custom.component.html`**
+```angular2html
+<button (click)="onChange()">change</button>
+
+<button (click)="onSubmit()">submit</button>
+
+<button (click)="onBack()">back</button>
+```
+
 ## Registering a custom component
 
 The component needs to be registered in the angular application so that the form flow framework can use it. Registering
