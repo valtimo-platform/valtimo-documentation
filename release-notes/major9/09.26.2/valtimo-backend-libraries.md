@@ -14,8 +14,10 @@ The following bugs were fixed:
 
 ## Breaking changes
 
-No breaking changes. 
+* **Swagger has been replaced by OpenAPI**
+  The `/v2/api-docs` endpoint is no longer available and has been replaced by `/v3/api-docs` 
 
+Instructions on how to migrate to this version of Valtimo can be found [here](migration.md).
 ## Deprecations
 
 No new deprecations.

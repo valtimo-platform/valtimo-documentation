@@ -203,6 +203,10 @@
       * [Valtimo frontend libraries](release-notes/major11/11.0.0/valtimo-frontend-libraries.md)
       * [Migration](release-notes/major11/11.0.0/migration.md)
   * 10.x.x
+    * 10.8.3
+      * [Valtimo backend libraries](release-notes/major10/10.8.3/valtimo-backend-libraries.md)
+    * 10.8.2
+      * [Valtimo frontend libraries](release-notes/major10/10.8.2/valtimo-frontend-libraries.md)
     * 10.8.0
       * [Valtimo backend libraries](release-notes/major10/10.8.0/valtimo-backend-libraries.md)
       * [Valtimo frontend libraries](release-notes/major10/10.8.0/valtimo-frontend-libraries.md)
@@ -246,6 +250,7 @@
   * 9.x.x
     * 9.26.2/5.15.1
       * [Valtimo backend libraries (9.26.2)](release-notes/major9/09.26.2/valtimo-backend-libraries.md)
+      * [Migration](release-notes/major9/09.26.2/migration.md)
     * 9.26.1/5.15.1
       * [Valtimo backend libraries (9.26.1)](release-notes/major9/09.26.1/valtimo-backend-libraries.md)
       * [Valtimo frontend libraries (5.15.1)](release-notes/major9/09.26.1/valtimo-frontend-libraries.md)

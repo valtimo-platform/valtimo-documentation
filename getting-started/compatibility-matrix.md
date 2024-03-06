@@ -21,6 +21,7 @@ Starting from major 10, `valtimo-backend-libraries` and `valtimo-frontend-librar
 
 | Valtimo backend libraries | Valtimo frontend libraries | Java | Kotlin | Spring Boot | Node | Camunda |
 |---------------------------|----------------------------|------|--------|-------------|------|---------|
+| 10.8.3                    | 10.8.3                     | 17   | 1.8.20 | 2.7.11      | 14   | 7.19.0  |
 | 10.8.0                    | 10.8.0                     | 17   | 1.8.20 | 2.7.11      | 14   | 7.19.0  |
 | 10.7.0                    | 10.7.0                     | 17   | 1.8.20 | 2.7.11      | 14   | 7.19.0  |
 | 10.6.0                    | 10.6.0                     | 17   | 1.8.20 | 2.7.11      | 14   | 7.19.0  |

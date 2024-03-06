@@ -423,3 +423,9 @@ This page describes how to update Valtimo from the previous version to the curre
 
       Every Verzoek plugin configuration has a field called `objectManagementId`. This field should be moved out of
       the `properties` field and into every `verzoekProperties` field.
+
+* **Configure access control roles and permissions**
+
+  Scope: back-end
+
+  Roles and permissions need to be configured as described [here](/using-valtimo/access-control/access-control.md).
