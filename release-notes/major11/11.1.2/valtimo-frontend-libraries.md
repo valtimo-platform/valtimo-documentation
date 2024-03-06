@@ -10,6 +10,9 @@ The following bugs were fixed:
 
 * Custom boolean values don't show correctly in the CarbonList
 
+* Output events of custom FormFlow components as described on [this page](/using-valtimo/form-flow/create-custom-component.md)
+  were fixed.
+
 ## Breaking changes
 
 No breaking changes.
