@@ -112,3 +112,23 @@ following properties can be entered:
 - **Case definition.** The case definition that is linked to a zaken API plugin configuration.
 - **Eigenschap.** The eigenschap as configured in the catalogi API.
 - **Property URL.** Alternatively, a URL can be entered that references to an eigenschap in the catalogi API.
+
+### Start recovery period
+
+The **Start recovery period** will start a recovery period for the linked zaak in the zaken API. If a zaak has a due
+date (Uiterlijke einddatum afdoening) set, the due date will be extended with the configured maximum duration of the
+recovery period. The zaak will also be suspended.
+
+After starting the recovery period, the due date becomes: `zaak.originalDueDate + maximumDuration`
+
+- **Maximum duration in days.** The maximum duration of the recovery period in days.
+
+### End recovery period
+
+The **End recovery period** will end a recovery period for the linked zaak in the zaken API. The original due
+date (Uiterlijke einddatum afdoening) of the zaak will be extended by the actual duration of the recovery period. This
+is achieved by _subtracting_ the difference between the actual duration and the maximum duration of the recovery period.
+The zaak is no longer suspended.
+
+After ending the recovery period, the due date
+becomes: `(zaak.originalDueDate + maximumDuration) - (actualDuration - maximumDuration)`
