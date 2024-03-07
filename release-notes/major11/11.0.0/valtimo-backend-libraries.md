@@ -11,6 +11,8 @@ The following features were added:
   * [Introduction](/introduction/modules/modules.md#authorization)
   * [Getting started](/getting-started/modules/core/authorization.md)
   * [Using Valtimo](/using-valtimo/access-control/access-control.md)
+  
+  In order to use Valtimo, permissions and roles must be defined as described [here](/using-valtimo/access-control/access-control.md).
 
 * **New service ObjectManagementFacade, for access to ObjectenAPI and ObjecttypenAPI**
 
@@ -138,6 +140,10 @@ The following breaking changes were introduced:
 * **Return type changed for CamundaTaskService.findTaskById()** 
 
   `org.camunda.bpm.engine.task.Task` -> `com.ritense.valtimo.camunda.domain.CamundaTask`
+
+* **Updated Spring Boot**
+
+  Spring Boot has been updated to version 2.7.18
 
 Instructions on how to migrate to this version of Valtimo can be found [here](migration.md).
 
