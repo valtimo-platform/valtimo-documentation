@@ -10,3 +10,4 @@ developers who want to extend features in Valtimo and need to know what is avail
 * [User interface](./user-interface/user-interface.md)
 * [Feature toggles](feature-toggles.md)
 * [Troubleshoot](troubleshoot.md)
+* [Environment](environment.md)

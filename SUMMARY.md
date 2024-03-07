@@ -193,6 +193,7 @@
   * [Supported databases](reference/supported-databases.md)
   * [Process beans](reference/process-beans.md)
   * [Troubleshoot](reference/troubleshoot.md)
+  * [Environment](reference/environment.md)
 * Release notes
   * [Release notes](release-notes/release-notes.md)
   * 12.x.x

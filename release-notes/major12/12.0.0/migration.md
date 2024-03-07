@@ -200,6 +200,41 @@ This page describes how to update Valtimo from the previous version to the curre
   The new implementations of `KvKProvider` and `BsnProvider` (`ZaakKvkProvider` and `ZaakBsnProvider`) no longer depend on the `openzaak` module.
   Please make sure you have configured at least one Zaken API Plugin to make these providers work.
 
+* **Angular and dependendcy upgrades**
+
+  Scope: front-end
+    1. **Step 1: Node and NPM upgrade**
+       Valtimo front-end libraries 12 requires Node 18. Run the following commands in your terminal (with [NVM](https://github.com/nvm-sh/nvm) installed):
+       `nvm install 18` and `nvm use 18`.
+
+    2. **Step 2: Angular upgrade**
+        Valtimo front-end libraries 12 uses Angular 17. Commit all pending changes in your project and run the following
+        command from your root directory:
+        `ng update @angular/core@17 @angular/cli@17 --force` and commit all changes after the upgrade.
+
+    3. **Step 3: @valtimo/form-link to @valtimo/process-link**
+       The `form-link` library has been renamed to `process-link`. Change `@valtimo/form-link` to `@valtimo/process-link`
+       in your `package.json` file. Also, replace all imports in your from `@valtimo/form-link` to
+       `@valtimo/process-link`.
+
+    4. **Step 4: Upgrade valtimo dependencies**
+        Change the version number of all `@valtimo/**` dependencies in your root `package.json` to the Valtimo 12 version
+        you would like to use.
+
+    5. **Step 5: Equalize project dependencies with Valtimo dependencies**
+       In order to start your implementation, all dependency version numbers should be equal to the ones used in the
+        <!--- To do: replace below link to final 12.0 package.json --->
+       libraries project. This can be done manually by navigating to the [libraries package.json](https://raw.githubusercontent.com/valtimo-platform/valtimo-frontend-libraries/development/12.0.0/package.json)
+        and copying over the version numbers.
+        It can also be automatically by running the following command from the terminal when in the root of your
+        implementation (where `package.json` is located). When prompted to install dependencies, answer yes.
+          <!--- To do: replace below link to final 12.0 script --->
+        `npx make-dir-cli tmp && npx node-wget https://raw.githubusercontent.com/valtimo-platform/valtimo-frontend-libraries/feature/100450-upgrade-angular-and-other-deps/scripts/equalize-deps.cjs -d tmp/equalize-deps.cjs && node tmp/equalize-deps.cjs`
+
+  6. **Step 6: Install dependencies and build project**
+        After completing the previous steps, run `npm i` in the root of your project to install all dependencies, and
+        verify after that your project builds.
+
 * **Breaking change 2/Deprecation 2**
 
   Scope: back-end/front-end

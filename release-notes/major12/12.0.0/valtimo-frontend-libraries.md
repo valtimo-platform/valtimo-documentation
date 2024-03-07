@@ -4,7 +4,6 @@
 
 The following features were added:
 
-
 * **Translation management**
 
   An administrator can now configure and override translations from a front-end admin page. For more information on how
@@ -55,6 +54,16 @@ The following features were added:
   A Zaken-API plugin action has been added for creating, updating and for deleting a zaakeigenschap. More information
   about the plugin actions can be
   found [here](/using-valtimo/plugin/zaken-api/configure-zaken-api-plugin.md#create-zaakeigenschap).
+
+* **form-link to process-link**
+  The library `@valtimo/form-link` has been renamed to `@valtimo/process-link`. For information on how to migrate, refer
+  to [this page](migration.md).
+
+* **Override Form.io options**
+
+  Options used by Form.io in the renderer can now be modified by using the following key in your environment file:
+  `formioOptions`. Refer to [this page](/reference/environment.md) for more information.
+
 
 ## Bugfixes
 
