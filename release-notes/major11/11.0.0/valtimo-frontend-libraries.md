@@ -58,6 +58,14 @@ The following features were added:
 
   Added _documentId_ to the request body of the S3 Resource(this is not used by the default Valtimo backend)
 
+* **Disable submenu items**
+
+  Added *restriction* based on user roles to the submenu items to be able to disable them. An implementation can now specify required roles in submenu items by adding *roles* attribute to menu item children.
+
+* **Abstract _refreshDocument$**
+
+  Moved *_refreshDocument$* from DossierDetailComponent to DossierService and added its corresponding methods for correct behaviour. An implementation can now use the refresh method on DossierService to refresh the document on the case detail page from implementation code.
+
 - **Task form loading text**
 
   When a task is opened, it will first show a loading text while the form is loading.
@@ -73,6 +81,11 @@ The following features were added:
 
   Fixed an issue where sequence numbers were not showing on the case list when an environment case list configuration
   is used.
+
+* **Fixed broken Carbon select box**
+
+  After navigating away from the form admin detail page, Carbon components using overlays did not work anymore
+  throughout the application. This issue has been fixed.
 
 ## Breaking changes
 
@@ -98,4 +111,13 @@ No new deprecations.
 
 ## Known issues
 
-No new known issues.
+* **Two types of process link can't be saved**
+  * Discovered in version 11.0.0
+  * The 'generate document' (SmartDocuments plugin) and the 'create Portaaltaak' (Portaaltaak plugin) plugin actions can't be configured due to a broken multi-input field.
+    This has been fixed in Valtimo 11.1.
+* **Loading icon visible after completing the process**
+  * Discovered in version 11.0.0
+  * On the case detail page, a loading icon is visible when the tasks are being retrieved from the backend. When the process has ended, the loading icon persists.
+* **Incomplete export of permissions for a specific role**
+  * Discovered in version 11.0.0
+  * Download the export from the access control list page instead.
