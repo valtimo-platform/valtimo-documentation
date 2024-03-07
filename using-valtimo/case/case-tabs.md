@@ -101,7 +101,7 @@ This can occur for one of two reasons:
 
 Case tabs can be auto-deployed from a JSON file at startup. This is useful to keep the case tab configuration identical
 across multiple environments. Case tabs are auto-deployed by scanning files on the classpath that end
-in `.case-tab.json`.
+in `.case-tabs.json`.
 
 ### Changesets
 
