@@ -190,8 +190,11 @@ This page describes how to update Valtimo from the previous version to the curre
        }
      }
      ````
+  4. **Adding dependencies**
 
-  3. **Changing typescript config**
+      - `@valtimo/access-control`, should be added to your implementation as it is a required dependency.
+
+  5. **Changing typescript config**
 
       - In `tsconfig.json` in the root of your implementation, change `module` to `es2020` and also change `es****` in
         the `lib` array to `es2020`.
@@ -444,3 +447,9 @@ This page describes how to update Valtimo from the previous version to the curre
 
       Every Verzoek plugin configuration has a field called `objectManagementId`. This field should be moved out of
       the `properties` field and into every `verzoekProperties` field.
+
+* **Configure access control roles and permissions**
+
+  Scope: back-end
+
+  Roles and permissions need to be configured as described [here](/using-valtimo/access-control/access-control.md).
