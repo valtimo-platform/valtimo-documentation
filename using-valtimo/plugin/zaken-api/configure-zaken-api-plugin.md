@@ -111,7 +111,7 @@ following properties can be entered:
 
 - **Case definition.** The case definition that is linked to a zaken API plugin configuration.
 - **Eigenschap.** The eigenschap as configured in the catalogi API.
-- **Property URL.** Alternatively, a URL can be entered that references to an eigenschap in the catalogi API.
+- **Property URL.** A URL can be entered that references to an eigenschap in the catalogi API. This is an alternative to providing an eigenschap.
 
 ### Start recovery period
 
