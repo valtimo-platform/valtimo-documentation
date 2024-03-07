@@ -13,7 +13,7 @@ The following bugs were fixed:
 * Output events of custom FormFlow components as described on [this page](/using-valtimo/form-flow/create-custom-component.md)
   were fixed.
 
-* Breadcrumbs are updated properly when using the pending changes modal.
+* Breadcrumbs work correctly in conjunction with the pending changes modal.
 
 ## Breaking changes
 
