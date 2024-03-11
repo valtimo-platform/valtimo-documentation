@@ -84,6 +84,35 @@ When creating a process link the following properties have to be entered:
   person.
 - **Administration number person.** (Optional) The administration number of the person, as referred to in the BRP Act.
 
+### Create zaakeigenschap
+
+The **Create zaakeigenschap** action creates a zaakeigenschap in the zaken API.
+When creating a process link the following properties can be entered:
+
+- **Case definition.** The case definition that is linked to a zaken API plugin configuration.
+- **Eigenschap.** The eigenschap as configured in the catalogi API.
+- **Property URL.** Alternatively, a URL can be entered that references to an eigenschap in the catalogi API.
+- **Eigenschap value.** The value that the zaakeigenschap should get when the process-link action is executed.
+
+### Update zaakeigenschap
+
+The **Update zaakeigenschap** action updates a zaakeigenschap in the zaken API.
+When creating a process link the following properties can be entered:
+
+- **Case definition.** The case definition that is linked to a zaken API plugin configuration.
+- **Eigenschap.** The eigenschap as configured in the catalogi API.
+- **Property URL.** A URL can be entered that references to an eigenschap in the catalogi API. This is an alternative to providing an eigenschap.
+- **Eigenschap value.** The value that the zaakeigenschap should get when the process-link action is executed.
+
+### Delete zaakeigenschap
+
+The **Delete zaakeigenschap** action deletes a zaakeigenschap in the zaken API. When creating a process link the
+following properties can be entered:
+
+- **Case definition.** The case definition that is linked to a zaken API plugin configuration.
+- **Eigenschap.** The eigenschap as configured in the catalogi API.
+- **Property URL.** A URL can be entered that references to an eigenschap in the catalogi API. This is an alternative to providing an eigenschap.
+
 ### Start recovery period
 
 The **Start recovery period** will start a recovery period for the linked zaak in the zaken API. If a zaak has a due
