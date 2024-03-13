@@ -50,6 +50,11 @@ The following features were added:
   When configuring an internal case status, you are provided with a fixed list of colors. This colors are in accordance to the Carbon Design System
   and will help differentiate between different satuses you might create.
 
+* **Zaken-api plugin action create, update and delete zaakeigenschap**
+  A Zaken-API plugin action has been added for creating, updating and for deleting a zaakeigenschap. More information
+  about the plugin actions can be
+  found [here](/using-valtimo/plugin/zaken-api/configure-zaken-api-plugin.md#create-zaakeigenschap).
+
 * **form-link to process-link**
   The library `@valtimo/form-link` has been renamed to `@valtimo/process-link`. For information on how to migrate, refer
   to [this page](migration.md).
@@ -58,6 +63,7 @@ The following features were added:
 
   Options used by Form.io in the renderer can now be modified by using the following key in your environment file:
   `formioOptions`. Refer to [this page](/reference/environment.md) for more information.
+
 
 ## Bugfixes
 
