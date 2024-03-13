@@ -55,14 +55,20 @@ To configure this plugin the following properties have to be entered:
       further handle the verzoek.
     - **Copy strategy (`copyStrategy`).** This option determines whether the entire verzoek data is included in the Valtimo case, or only
       the defined fields.
-        - **Mapping (`mapping`).** Determines which fields of the verzoek data are copied to the Valtimo case
+        - **Mapping (`mapping`).** Determines which fields of the verzoek data are copied to the Valtimo case or to the process variable.
             - **Source (`source`).** A jsonpointer that points to a property inside the verzoek data that should be copied.
-            - **Target (`target`).** A jsonpointer that points to a property inside the Valtimo case where the verzoek data should
-              be pasted.
+            - **Target (`target`).** 
+              - Starts with a `doc` prefix. A jsonpointer that points to a property inside the Valtimo case where the verzoek data should
+                be pasted.
+              - Starts with a `pv` prefix. A process variable where the verzoek data should be saved.
 
-An example plugin configuration:
+An example of plugin configuration with `doc:` prefix:
 
-![example plugin configuration](img/configure-plugin.png)
+![example plugin configuration](img/configure-plugin-with-doc-prefix.png)
+
+An example of plugin configuration with `pv:` prefix:
+
+![example plugin configuration](img/configure-plugin-with-pv-prefix.png)
 
 ## Configuring the 'Create Zaakdossier' process
 
