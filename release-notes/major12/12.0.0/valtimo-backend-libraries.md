@@ -18,7 +18,6 @@ The following features were added:
   The assignees of a user task are now saved in the database by their user ID. When implementations use keycloak, the
   assignee column from the task table in the databases is automatically migrated from email to user ID.
 
-
 * **Localization module**
 
   A new module `localization` has been added, which provides endpoints for user configurable translations. For more
@@ -56,6 +55,7 @@ The following features were added:
 | `/api/v1/choice-field-values/{choice_field_name}/values` | `/api/v2/choice-field-values/{choice_field_name}/values` |
 | `/api/v1/process/{processDefinitionName}/search` | `/api/v2/process/{processDefinitionName}/search` |
 | `/api/v1/task` | `/api/v2/task` |
+
 * **New endpoint to retrieve Zaaktypen**
 
   A new endpoint has been added to the zaken-api module to retrieve zaaktypen: `/api/management/v1/zgw/zaaktype`. 
@@ -74,6 +74,11 @@ The following features were added:
 * **Internal statuses are now available to cases**
 
   Cases can be filtered on statuses set to the case via the process. More information on this can be found [here](/using-valtimo/case/internal-case-status.md)
+
+* **The RabbitMQ outbox publisher now support exchange targets**
+
+  Exchange targets can now be used with the outbox publisher for RabbitMQ by using the `valtimo.outbox.publisher.rabbitmq.exchange` property.
+  More information on this can be found [here](/getting-started/modules/core/outbox-rabbitmq.md)
 
 ## Bugfixes
 
