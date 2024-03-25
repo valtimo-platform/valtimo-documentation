@@ -53,3 +53,6 @@ valtimo:
         routing-key: valtimo-audit # Optional. Defaults `spring.rabbitmq.template.routing-key`.
         delivery-timeout: "PT0.5S" # ISO 8601 duration format
 ```
+
+Using an exchange can be useful when you want more refined control over what targets (queues or topics) will receive the message. 
+It is also possible to setup multiple targets via the RabbitMQ configuration.
