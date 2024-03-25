@@ -49,6 +49,7 @@ valtimo:
   outbox:
     publisher:
       rabbitmq:
-        routingKey: valtimo-audit # change to queue name or routing key
+        exchange: valtimo-events # Optional. Defaults to `spring.rabbitmq.template.exchange`.
+        routing-key: valtimo-audit # Optional. Defaults `spring.rabbitmq.template.routing-key`.
         delivery-timeout: "PT0.5S" # ISO 8601 duration format
 ```
