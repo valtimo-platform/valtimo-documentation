@@ -1,4 +1,5 @@
 # Haalcentraal BRP
+> **_NOTE:_** This module has been deprecated. Will be replaced by new plugins in the future.
 
 ## Dependencies
 

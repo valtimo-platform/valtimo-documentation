@@ -1,4 +1,5 @@
 # Besluit
+> **_NOTE:_** This module has been deprecated. Please use the [Besluiten API module](besluiten-api.md) instead.
 
 ## Dependencies
 

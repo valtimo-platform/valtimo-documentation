@@ -156,6 +156,14 @@ The following breaking changes were introduced:
 
 Instructions on how to migrate to this version of Valtimo can be found [here](migration.md).
 
+* **Outdated modules have been deprecated**
+  - [Besluit](/getting-started/modules/zgw/besluit.md): replaced by [Besluiten API](/getting-started/modules/zgw/besluiten-api.md) plugin/module
+  - [Contactmoment](/getting-started/modules/zgw/contactmoment.md): will be replaced by new plugins in the future
+  - External-event: partly replaced by the outbox module. Portal-related functionality has not been replaced.
+  - [Haalcentraal BRP](/getting-started/modules/zgw/haalcentraal-brp.md): will be replaced by new plugins in the future
+  - [Klant](/getting-started/modules/zgw/klant.md): will be replaced by new plugins in the future
+  - [Openzaak resource](/getting-started/modules/zgw/openzaak-resource.md): replaced by the [Documenten API](/getting-started/modules/zgw/documenten-api.md) plugin 
+
 ## Deprecations
 
 The following was deprecated:
