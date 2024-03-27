@@ -64,6 +64,23 @@ The following features were added:
   Options used by Form.io in the renderer can now be modified by using the following key in your environment file:
   `formioOptions`. Refer to [this page](/reference/environment.md) for more information.
 
+* **Verzoek plugin JSON mapping**
+
+  The verzoek plugin can now be configured so that the entire verzoek data can be copied to a target location. For
+  information on how to configure the verzoek plugin, refer
+  to [this page](/using-valtimo/plugin/verzoek/configure-verzoek-plugin.md).
+
+* **Show readable process errors**
+
+  When a user models and deploys an erroneous BPMN process, the user will now get a readable error message so that
+  he/she know what wrong.
+
+* **Documenten API plugin version**
+
+  The Documenten API plugin can now be configured with the version of the Documenten API that is used. This version is
+  also show on all Case definition management pages that use the Documenten API plugin. For
+  information on how to configure the verzoek plugin, refer
+  to [this page](/using-valtimo/plugin/documenten-api/configure-documenten-api-plugin.md)
 
 ## Bugfixes
 

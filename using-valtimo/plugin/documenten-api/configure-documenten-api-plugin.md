@@ -13,6 +13,7 @@ Instructions on how to add the Documenten API dependency can be found
 [here](/getting-started/modules/zgw/documenten-api.md).
 
 To configure this plugin the following properties have to be entered:
+- **Configuration ID (`id`).** The plugin will be saved under this ID. The ID must be in the format of a UUID.
 - **Documenten API URL (`url`).** Contains the complete base URL of the Documenten API to connect to. This 
 generally includes the path `/api/v1/`.
 - **Organisation RSIN (`bronorganisatie`).** Contains the RSIN of the organisation. The RSIN number (Rechtspersonen en 
@@ -21,7 +22,7 @@ This will be used when storing document to indicate who is responsible for creat
 - **Authentication plugin configuration (`authenticationPluginConfiguration`).** Reference to another plugin configuration that will be used to add 
 authentication to any request performed on the Documenten API. If no option is available in this field a plugin has to 
 be configured that is able to authenticate for the specific application that hosts the Documenten API. (e.g. OpenZaak)
-
+- **Documenten API version (`apiVersion`).** Contains the API version of the Documenten API that is used.
 An example plugin configuration:
 ![example plugin configuration](img/configure-plugin.png)
 

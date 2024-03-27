@@ -56,7 +56,8 @@ To configure this plugin the following properties have to be entered:
     - **Copy strategy (`copyStrategy`).** This option determines whether the entire verzoek data is included in the Valtimo case, or only
       the defined fields.
         - **Mapping (`mapping`).** Determines which fields of the verzoek data are copied to the Valtimo case or to the process variable.
-            - **Source (`source`).** A jsonpointer that points to a property inside the verzoek data that should be copied.
+            - **Source (`source`).** A jsonpointer that points to a property inside the verzoek data that should be
+              copied. When this field is left empty, the entire source JSON will be copied to the target location.
             - **Target (`target`).** 
               - Starts with a `doc` prefix. A jsonpointer that points to a property inside the Valtimo case where the verzoek data should
                 be pasted.
