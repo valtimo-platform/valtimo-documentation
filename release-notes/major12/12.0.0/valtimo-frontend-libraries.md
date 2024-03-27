@@ -78,7 +78,7 @@ The following features were added:
 * **Documenten API plugin version**
 
   The Documenten API plugin can now be configured with the version of the Documenten API that is used. This version is
-  also show on all Case definition management pages that use the Documenten API plugin. For
+  also shown on all Case definition management pages that use the Documenten API plugin. For more
   information on how to configure the verzoek plugin, refer
   to [this page](/using-valtimo/plugin/documenten-api/configure-documenten-api-plugin.md)
 
