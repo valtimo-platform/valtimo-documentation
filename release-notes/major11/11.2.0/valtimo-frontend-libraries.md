@@ -38,6 +38,47 @@ The following features were added:
 
   The version of the process is now visible on the 'Progress' tab of a case.
 
+* **Updates to the Carbon look and feel**
+
+  The following components have been updated to the Carbon library:
+    - Case Definition Search Fields tab
+    - Case Definition List tab
+    - Plugin list
+
+* **Processes Tab**
+
+  The Connected Processes list has been moved and migrated to the ValtimoCarbonList from the Configuration tab and has been added to a new *Processes* of its own.
+
+* **Connected processes to a Document Definition Version**
+
+  Now a process can be connected to a specific version of a Case Definition.
+
+* **Configure Content Security Policy (CSP) from environment**
+
+  In order to make the client more secure, the option has been added to configure CSP headers from the environment file.
+  Please refer to [this page](/reference/content-security-policy.md) for information on how to configure your CSP.
+
+* **Added feature toggle `useStartEventNameAsStartFormTitle`**
+
+  Now you can set this feature toggle to show BPMN start event names as title of start forms instead of the standard 
+  `Start - ${process-name}` format.
+
+* **Import document definition**
+
+  Now you can import an exported document definition.
+
+* **Carbon List improvements**
+
+  A few updates have been added to the CarbonList:
+
+    - Moving arrows can now be added via a flag
+    - Context menu actions are now configurable through an *@Input* field
+    - Column headers can now be hidden
+    - Rows don't have a pointer cursor unless they are clickable
+    - Pagination can be hidden now
+
+  For more details on the list see [Valtimo Carbon List](/reference/user-interface/components/valtimo-carbon-list/valtimo-carbon-list.md)
+
 ## Bugfixes
 
 The following bugs were fixed:
@@ -70,37 +111,32 @@ The following bugs were fixed:
   All HTTP request sent from the client now include a `X-Timezone-Offset` header, which contains the user's timezone
   offset (compared to UTC). The back-end libraries now use this offset to return the correct results when searching cases by date.
 
+* **Slow loading of notes**
+
+  The loading of the case notes could take a long time depending on the access control settings. This has been solved.
+
+* **Form.IO calendar component**
+
+  When having two or more calendar components in a Form.IO form, and having a language other than English selected in
+  the application, only one calendar component could be expanded. Now calendar components correctly take into account
+  the currently selected locale.
+
+* **Add note button not clickable on small windows**
+
+  The *Add note* button is now clickable even when resizing the window to a smaller size.
+
+* **Carbon components overlays**
+
+  Carbon components backdrops now don't overlap anymore.
+
 ## Breaking changes
 
-The following breaking changes were introduced:
-
-* **Breaking change1**
-
-* **Breaking change2**
-
-Instructions on how to migrate to this version of Valtimo can be found [here](migration.md).
+No breaking changes.
 
 ## Deprecations
 
-The following was deprecated:
-
-* **Deprecation1**
-
-  X was deprecated and is replaced with Y.
-* **Deprecation2**
-
-  X was deprecated and is replaced with Y.
-
-Instructions on how to migrate to this version of Valtimo can be found [here](migration.md).
+No deprecations.
 
 ## Known issues
 
-This version has the following known issues:
-
-* **Issue1**
-    * Discovered in version x.x.x
-    * Describe what can be done to work around the issue
-
-* **Issue2**
-    * Discovered in version x.x.x
-    * Describe what can be done to work around the issue
+No known issues.

@@ -10,4 +10,7 @@ developers who want to extend features in Valtimo and need to know what is avail
 * [User interface](./user-interface/user-interface.md)
 * [Feature toggles](feature-toggles.md)
 * [Troubleshoot](troubleshoot.md)
+* [Content Security Policy (CSP)](content-security-policy.md)
+* [Supported databases](supported-databases.md)
+* [Process beans](process-beans.md)
 * [Environment](environment.md)
