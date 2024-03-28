@@ -66,18 +66,17 @@ The following features were added:
 
 * **Verzoek plugin JSON mapping**
 
-  The verzoek plugin can now be configured so that the entire verzoek data can be copied to a target location. For
+  The verzoek plugin can now be configured so that the entire verzoek data is copied to a target location. For
   information on how to configure the verzoek plugin, refer
   to [this page](/using-valtimo/plugin/verzoek/configure-verzoek-plugin.md).
 
 * **Show readable process errors**
 
-  When a user models and deploys an erroneous BPMN process, the user will now get a readable error message so that
-  he/she know what wrong.
+  When a user models and deploys an erroneous BPMN process, the user will now get a readable and useful error message.
 
 * **Documenten API plugin version**
 
-  The Documenten API plugin can now be configured with the version of the Documenten API that is used. This version is
+  To determine the available features of the Documenten API, the plugin can now be configured with the version of the Documenten API that is used. This version is
   also shown on all Case definition management pages that use the Documenten API plugin. For more
   information on how to configure the verzoek plugin, refer
   to [this page](/using-valtimo/plugin/documenten-api/configure-documenten-api-plugin.md)
