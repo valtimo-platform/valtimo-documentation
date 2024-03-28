@@ -96,7 +96,7 @@ The following bugs were fixed:
 * **Process not linked after deploying a new case definition**
 
   When a new version of the case definition was deployed, the new case definition would sometimes no longer be linked to
-  any process definitions. Even though the link existed in previous versions.
+  any of the process definitions that were linked in previous versions.
 
 ## Breaking changes
 
