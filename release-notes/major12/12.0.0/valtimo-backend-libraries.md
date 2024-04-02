@@ -93,6 +93,10 @@ The following bugs were fixed:
 
   If the plugin configuration file contained a 'null' value for a plugin property, an error was thrown.
 
+* **Access control `in` operator fails on list**
+
+  When a list was provided for the `in` operator (e.g. `["1","2"]`), the permission could not be imported.
+
 ## Breaking changes
 
 The following breaking changes were introduced:
