@@ -80,6 +80,12 @@ The following features were added:
   Exchange targets can now be used with the outbox publisher for RabbitMQ by using the `valtimo.outbox.publisher.rabbitmq.exchange` property.
   More information on this can be found [here](/getting-started/modules/core/outbox-rabbitmq.md)
 
+* **`Executable` flag is automatically set upon process deployment**
+  
+  When deploying processes via the `/api/v1/process/definition/deployment` endpoint or by import, the `executable` flag is automatically set to true.
+  The result is that deployment will no longer fail silently on this misconfiguration. 
+  This behaviour is not applied to auto-deployment via classpath.
+
 ## Bugfixes
 
 The following bugs were fixed:
