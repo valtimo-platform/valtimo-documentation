@@ -102,6 +102,11 @@ The following breaking changes were introduced:
   The ChoicefieldModule has been removed. Also the ChoiceFieldService and a few models have been moved to the *@valtimo/components* library.
   Instructions on how to migrate to this version of Valtimo can be found [here](migration.md).
 
+* **OpenZaakModule**
+
+  The OpenZaakModule has been removed. EmailExtensionComponent has been removed altogether. The OpenZaakTypeLinkExtension has been moved to *@valtimo/plugin*
+  under the ZakenApiPluginModule. Instructions on how to migrate to this version of Valtimo can be found [here](migration.md).
+
 * **Breaking change2**
 
 Instructions on how to migrate to this version of Valtimo can be found [here](migration.md).

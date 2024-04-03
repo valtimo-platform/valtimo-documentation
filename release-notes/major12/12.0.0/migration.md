@@ -259,4 +259,20 @@ This page describes how to update Valtimo from the previous version to the curre
   4. **Remove ChoicefieldModule**
 
     Remove any instances of ChoicefieldModule as it no longer exists. Services and models contained in that module are now a part of *@valtimo/components*.
+
+* **OpenZaakModule**
+
+  Scope: front-end
+
+  1. **ValtimoEmailExtension**
+
+    Remove any instance of the *valtimo-email-extension* that may be in use.
+
+  2. **Change import path of OpenZaakTypeLinkExtension and openZaakExtensionInitializer**
+
+    These entities can now be found in the *@valtimo/plugin* library. Adjust any import paths to use this instead of *@valtimo/open-zaak*.
+
+  3. **Remove OpenZaakModule**
+
+    Remove any instances of OpenZaakModule.
   
