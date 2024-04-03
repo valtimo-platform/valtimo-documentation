@@ -125,11 +125,7 @@ The following was deprecated:
 
 * **ConnectorManagementModule**
 
-  Connector-management has been deprecated and has been replaced by plugins.
-
-* **OpenZaak**
-
-  Open-zaak has been deprecated and the functionality still in use has already been moved to different modules.
+  Connector-management has been deprecated and replaced by plugins.
 
 Instructions on how to migrate to this version of Valtimo can be found [here](migration.md).
 
