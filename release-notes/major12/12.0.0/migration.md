@@ -235,13 +235,44 @@ This page describes how to update Valtimo from the previous version to the curre
         After completing the previous steps, run `npm i` in the root of your project to install all dependencies, and
         verify after that your project builds.
 
-* **Breaking change 2/Deprecation 2**
+* **ChoiceFieldsModule**
 
-  Scope: back-end/front-end
+  Scope: front-end
 
-  1. **Step1**
+  1. **Change the import path of ChoiceFieldService**
 
-      Description
-  2. **Step2**
+      The ChoiceFieldsService has now been moved into the *@valtimo/components* library. Adjust any import paths to use this instead of *@valtimo/choice-field* or *@valtimo/choicefield*.
 
-      Description
+  2. **Change import path of ChoiceField and ChoiceFieldValue**
+
+      These models can now be found in the *@valtimo/components* library. Adjust any import paths to use this instead of *@valtimo/choice-field* or *@valtimo/choicefield*.
+  
+  3. **Adjust method names**
+
+      A few methods from the former *@valtimo/choicefield* library now have their names changes:
+
+      * getChoiceFieldValuesPageByName -> queryValuesPage
+      * getChoiceFieldValueById -> getValue
+      * getChoiceFieldsPage -> queryPage
+      * getChoiceFields -> query
+
+  4. **Remove ChoicefieldModule**
+
+    Remove any instances of ChoicefieldModule as it no longer exists. Services and models contained in that module are now a part of *@valtimo/components*.
+
+* **OpenZaakModule**
+
+  Scope: front-end
+
+  1. **ValtimoEmailExtension**
+
+    Remove any instance of the *valtimo-email-extension* that may be in use.
+
+  2. **Change import path of OpenZaakTypeLinkExtension and openZaakExtensionInitializer**
+
+    These entities can now be found in the *@valtimo/plugin* library. Adjust any import paths to use this instead of *@valtimo/open-zaak*.
+
+  3. **Remove OpenZaakModule**
+
+    Remove any instances of OpenZaakModule.
+  

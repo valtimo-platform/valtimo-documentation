@@ -97,7 +97,15 @@ The following bugs were fixed:
 
 The following breaking changes were introduced:
 
-* **Breaking change1**
+* **ChoiceFieldModule**
+
+  The ChoicefieldModule has been removed. Also the ChoiceFieldService and a few models have been moved to the *@valtimo/components* library.
+  Instructions on how to migrate to this version of Valtimo can be found [here](migration.md).
+
+* **OpenZaakModule**
+
+  The OpenZaakModule has been removed. EmailExtensionComponent has been removed altogether. The OpenZaakTypeLinkExtension has been moved to *@valtimo/plugin*
+  under the ZakenApiPluginModule. Instructions on how to migrate to this version of Valtimo can be found [here](migration.md).
 
 * **Breaking change2**
 
@@ -107,12 +115,17 @@ Instructions on how to migrate to this version of Valtimo can be found [here](mi
 
 The following was deprecated:
 
-* **Deprecation1**
+* **ContactMomentModule**
 
-  X was deprecated and is replaced with Y.
-* **Deprecation2**
+  Contact-moment has been deprecated and will be replaced with plugins in the future.
 
-  X was deprecated and is replaced with Y.
+* **CustomerModule**
+
+  Customer has been deprecated and will be replaced with plugins in the future.
+
+* **ConnectorManagementModule**
+
+  Connector-management has been deprecated and replaced by plugins.
 
 Instructions on how to migrate to this version of Valtimo can be found [here](migration.md).
 
