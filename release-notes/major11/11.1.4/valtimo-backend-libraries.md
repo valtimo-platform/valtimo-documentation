@@ -1,4 +1,4 @@
-# Backend libraries 11.1.2
+# Backend libraries 11.1.4
 
 ## New Features
 
@@ -11,7 +11,14 @@
 
 ## Bugfixes
 
-No bugfixes.
+* **Going back in form flows**
+  In some specific cases, historic form flow steps would not be cleaned up. This caused error messages when going back to a previous step.
+
+* **Retrieving choicefield values**
+  Retrieving choicefield values would throw an error because they were not serializable.
+
+* **Access control permission mapping from task to case**
+  Evaluating access control permissions that includes a relation from a CamundaTask to a JsonSchemaDocument would fail and lead to an error.
 
 ## Breaking changes
 

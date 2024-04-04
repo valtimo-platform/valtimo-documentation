@@ -1,4 +1,4 @@
-# Frontend libraries 11.1.2
+# Frontend libraries 11.1.4
 
 ## New Features
 
@@ -20,6 +20,8 @@ The following bugs were fixed:
 
 * `valtimo-form-io` now renders after the current JWT token is saved in locale storage, so that `token` can be used
  in calculated value fields.
+
+* HTML values were escaped before showing them in a form.io input field.
 
 ## Breaking changes
 
