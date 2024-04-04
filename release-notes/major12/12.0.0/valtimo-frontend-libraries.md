@@ -108,7 +108,12 @@ The following breaking changes were introduced:
   The OpenZaakModule has been removed. EmailExtensionComponent has been removed altogether. The OpenZaakTypeLinkExtension has been moved to *@valtimo/plugin*
   under the ZakenApiPluginModule. Instructions on how to migrate to this version of Valtimo can be found [here](migration.md).
 
-* **Breaking change2**
+* **Changes to feature toggle**
+  - `enableTabManagement` is now enabled (`true`) by default.
+  - `caseListColumn` is now enabled (`true`) by default.
+  - `enableObjectManagement` is now enabled (`true`) by default.
+  - `caseSearchFields` has been removed as it was not used.
+  - `disableFormFlow` has been removed. Form flow is always enabled from now on.
 
 Instructions on how to migrate to this version of Valtimo can be found [here](migration.md).
 

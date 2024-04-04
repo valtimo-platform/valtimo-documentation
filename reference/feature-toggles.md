@@ -16,12 +16,6 @@ with a `boolean` value.
   By default, the application title is shown in the browser tab as a prefix e.g. 'Valtimo - Processes'.
   With this featureToggle it is possible to change this to 'Processes - Valtimo'.
 
-* **`disableFormFlow`**
-
-  By default, it is assumed the `form-flow` module is configured in the backend, and thus a form flow option is
-  available on the Process links admin page. If this module is not configured, use this toggle to disable the option on
-  the Process links page.
-
 * **`showUserNameInTopBar`**
 
   If enabled, the full name of the user currently logged in is shown in the top bar next to the user menu button.
@@ -31,10 +25,6 @@ with a `boolean` value.
   If enabled, it is possible to edit DMN tables from the ui from the admin page. This feature is experimental, please
   refer to [the release notes](../release-notes/major9/09.20.0/valtimo-frontend-libraries.md) for known issues.
 
-* **`caseSearchFields`**
-
-  If enabled, a non-functional demo version of case search fields will replace the search sidebar on the case list page.
-
 * **`disableCaseCount`**
 
   If set to `true`, showing the number of open cases in the menu is disabled.
@@ -42,6 +32,7 @@ with a `boolean` value.
 * **`caseListColumn`**
 
   If enabled, the column list tab will be shown on the case management page.
+  Enabled by default when not configured.
 
 * **`showPlantATreeButton`**
 
@@ -63,7 +54,8 @@ with a `boolean` value.
 
 * **`enableObjectManagement`**
 
-  If enabled, a new menuitem 'objects' will appear in the left sidebar menu. This menu item can have one or more submenu
+  If enabled, a new menuitem 'objects' will appear in the left sidebar menu. Enabled by default when not configured. 
+  This menu item can have one or more submenu
   items depending on the configuration. For more information [here](/getting-started/modules/zgw/object-management.md)
 
 * **`hideValtimoVersionsForNonAdmins`**
@@ -73,7 +65,8 @@ with a `boolean` value.
 
 * **`enableTabManagement`**
 
-  If enabled, tabs will be configured for each case type in the back-end. For more information on this option, visit
+  If enabled, tabs will be configured for each case type in the back-end. Enabled by default when not configured.
+  For more information on this option, visit
   [this page ](/using-valtimo/case/case-tabs.md). If disabled, the tabs for each case type will be the same, and will be
   configured from the `AppModule`. For information on this option, visit [this page](/extending-valtimo/tabs/customizing-case-tabs.md).
 
