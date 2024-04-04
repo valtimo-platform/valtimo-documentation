@@ -85,9 +85,10 @@ The following features were added:
 
 The following bugs were fixed:
 
-* **Bug1**
+* **Not all case definitions are visible in the menu**
 
-  Description of what the issue was.
+  The left sidebar did not show all case definitions when there were more than 10. Now the left sidebar will show all
+  case definitions.
 
 * **Bug2**
 
