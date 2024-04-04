@@ -112,7 +112,7 @@ The following breaking changes were introduced:
   - `enableTabManagement` is now enabled (`true`) by default.
   - `caseListColumn` is now enabled (`true`) by default.
   - `enableObjectManagement` is now enabled (`true`) by default.
-  - `caseSearchFields` has been removed as it was not used.
+  - `caseSearchFields` has been removed. Case search fields are always enabled from now on.
   - `disableFormFlow` has been removed. Form flow is always enabled from now on.
 
 Instructions on how to migrate to this version of Valtimo can be found [here](migration.md).
