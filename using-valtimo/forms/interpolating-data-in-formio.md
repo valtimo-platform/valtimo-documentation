@@ -61,7 +61,7 @@ This would result in the following text being displayed in the form when using t
 When using the `{ expression }` syntax, the data is not escaped. This means that the data is interpreted as HTML as 
 shown below.
 
-![Example of interpolated data](example-interpolated-data.png)
+![Example of interpolated data](img/example-interpolated-data.png)
 
 It is recommended to always use the `{{ expression }}` syntax to prevent any issues with the data being displayed, 
 unless it is intended to use HTML in the form and the data is trusted.
