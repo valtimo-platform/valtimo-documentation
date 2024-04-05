@@ -99,6 +99,7 @@
     * [Case search](using-valtimo/document/case-search.md)
   * [Forms](using-valtimo/forms/forms.md)
     * [Creating FormIO forms in Valtimo](using-valtimo/forms/creating-forms-in-valtimo.md)
+    * [Interpolating data in Form.io](using-valtimo/forms/interpolating-data-in-formio.md)
     * [Configuring an Objecten API object form](using-valtimo/forms/configure-object-form.md)
   * [Form flow](using-valtimo/form-flow/form-flow.md)
     * [Creating a form flow definition](using-valtimo/form-flow/create-form-flow-definition.md)
@@ -189,6 +190,9 @@
 * Release notes
   * [Release notes](release-notes/release-notes.md)
   * 11.x.x
+    * 11.1.4
+      * [Valtimo backend libraries](release-notes/major11/11.1.4/valtimo-backend-libraries.md)
+      * [Valtimo frontend libraries](release-notes/major11/11.1.4/valtimo-frontend-libraries.md)
     * 11.1.2
       * [Valtimo backend libraries](release-notes/major11/11.1.2/valtimo-backend-libraries.md)
       * [Valtimo frontend libraries](release-notes/major11/11.1.2/valtimo-frontend-libraries.md)
