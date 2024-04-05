@@ -27,12 +27,6 @@ The following features were added:
   Several outbox events have been added for auditing purposes. For an overview of the available events, refer to
   [this page](/reference/modules/outbox.md)
 
-* **Access control for creating process instances**
-  Two new access control resources have been added, these are `CamundaExecution` and `CamundaProcessDefinition`. The
-  former has one action that can be used to allow users to create process instances, which is the `create` action.
-  These resources can be used to restrict creation of certain process instances to a subset of roles. Information on
-  how to use this can be found [here](/using-valtimo/access-control/configuring-permissions.md#create-process-instance-permissions).
-
 * **Outbox message publisher for RabbitMQ**
 
   A RabbitMQ (AMQP 0.9.1) message publisher has been in the `outbox-rabbitmq` module. More information can be found [here](/getting-started/modules/core/outbox-rabbitmq.md). 
