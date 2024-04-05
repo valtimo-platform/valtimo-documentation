@@ -86,6 +86,12 @@ The following features were added:
   The result is that deployment will no longer fail silently on this misconfiguration. 
   This behaviour is not applied to auto-deployment via classpath.
 
+* **Task list columns can be exported and imported**
+  Columns configured for the task list can now be exported and imported via the case administration.
+
+* **ZGW Document list columns can be exported and imported**
+  Columns configured for the ZGW document list can now be exported and imported via the case administration.
+
 ## Bugfixes
 
 The following bugs were fixed:
