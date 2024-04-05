@@ -56,12 +56,12 @@ For example if a user were to enter the following text in a form fields.
 
 This would result in the following text being displayed in the form when using the `{{ expression }}` syntax
 
-TODO: EXAMPLE ESCAPED DATA GOES HERE
+![Example of escaped data](img/example-escaped-data.png)
 
 When using the `{ expression }` syntax, the data is not escaped. This means that the data is interpreted as HTML as 
 shown below.
 
-TODO: EXAMPLE INTERPRETED DATA GOES HERE
+![Example of interpolated data](example-interpolated-data.png)
 
 It is recommended to always use the `{{ expression }}` syntax to prevent any issues with the data being displayed, 
 unless it is intended to use HTML in the form and the data is trusted.
