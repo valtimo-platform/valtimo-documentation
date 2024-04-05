@@ -21,6 +21,8 @@ The following bugs were fixed:
 
 * The token of the logged-in user is now set in local storage under the key `formioToken` before forms are rendered.
 
+* HTML values are now only escaped once in a form.io input field. For more information on how to interpolate data in Form.io forms, see [Interpolating data in Form.io](/using-valtimo/forms/interpolating-data-in-formio.md).
+
 ## Breaking changes
 
 No breaking changes.
