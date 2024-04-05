@@ -105,6 +105,11 @@ The following bugs were fixed:
 
   If the plugin configuration file contained a 'null' value for a plugin property, an error was thrown.
 
+* **Process not linked after deploying a new case definition**
+
+  When a new version of the case definition was deployed, the new case definition would sometimes no longer be linked to
+  any of the process definitions that were linked in previous versions.
+
 ## Breaking changes
 
 The following breaking changes were introduced:
