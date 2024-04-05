@@ -200,7 +200,7 @@ This page describes how to update Valtimo from the previous version to the curre
   The new implementations of `KvKProvider` and `BsnProvider` (`ZaakKvkProvider` and `ZaakBsnProvider`) no longer depend on the `openzaak` module.
   Please make sure you have configured at least one Zaken API Plugin to make these providers work.
 
-* **Angular and dependendcy upgrades**
+* **Angular and dependency upgrades**
 
   Scope: front-end
     1. **Step 1: Node and NPM upgrade**
@@ -275,4 +275,30 @@ This page describes how to update Valtimo from the previous version to the curre
   3. **Remove OpenZaakModule**
 
     Remove any instances of OpenZaakModule.
+
+* **Task management**
+
+  Scope: front-end
+
+   1. **Add dependency**
+
+  Add the dependency `@valtimo/task-management` to your implementation. Make sure to run a fresh `npm install` after.
+
+   2. **Import library**
+
+  In `app.module.ts`, add the following line to the top of the file with the imports:
+  `import {TaskManagementModule} from '@valtimo/task-management';`
+
+    3. **Add task management module to imports**
+
+  Add the previously imported `TaskManagementModule` to the `imports` array of your `AppModule`.
+
+   4. **Add menu entry**
+
+    Add the following line under the admin section in the menu configuration in the `environment` file of your
+    implementation:
+    `{link: ['/task-management'], title: 'Tasks', sequence: {UNIQUE_SEQUENCE_NUMBER}},`
+    Replace `UNIQUE_SEQUENCE_NUMBER` with a unique sequence number, and make sure the sequence numbers of other menu
+    items on the admin layer remain unique.
+  
   

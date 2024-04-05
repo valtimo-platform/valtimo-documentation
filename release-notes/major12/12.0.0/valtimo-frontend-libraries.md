@@ -81,6 +81,15 @@ The following features were added:
   information on how to configure the verzoek plugin, refer
   to [this page](/using-valtimo/plugin/documenten-api/configure-documenten-api-plugin.md)
 
+* **Configurable task list columns**
+
+  A new library has been added - `@valtimo/task-management`. It provides a page where list columns can be configured for
+  tasks of a certain case type. Please follow the migration notes (section 'Task management') on [this page](migration.md).
+
+* **Rename upload process**
+
+  The auto-deployed upload process `Upload Document` has been renamed to `Documenten API upload document`.
+
 ## Bugfixes
 
 The following bugs were fixed:
@@ -89,10 +98,6 @@ The following bugs were fixed:
 
   The left sidebar did not show all case definitions when there were more than 10. Now the left sidebar will show all
   case definitions.
-
-* **Bug2**
-
-  Description of what the issue was.
 
 ## Breaking changes
 
@@ -108,9 +113,6 @@ The following breaking changes were introduced:
   The OpenZaakModule has been removed. EmailExtensionComponent has been removed altogether. The OpenZaakTypeLinkExtension has been moved to *@valtimo/plugin*
   under the ZakenApiPluginModule. Instructions on how to migrate to this version of Valtimo can be found [here](migration.md).
 
-* **Breaking change2**
-
-Instructions on how to migrate to this version of Valtimo can be found [here](migration.md).
 
 ## Deprecations
 
