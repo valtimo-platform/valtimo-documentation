@@ -80,6 +80,18 @@ The following features were added:
   Exchange targets can now be used with the outbox publisher for RabbitMQ by using the `valtimo.outbox.publisher.rabbitmq.exchange` property.
   More information on this can be found [here](/getting-started/modules/core/outbox-rabbitmq.md)
 
+* **`Executable` flag is automatically set upon process deployment**
+  
+  When deploying processes via the `/api/v1/process/definition/deployment` endpoint or by import, the `executable` flag is automatically set to true.
+  The result is that deployment will no longer fail silently on this misconfiguration. 
+  This behaviour is not applied to auto-deployment via classpath.
+
+* **Task list columns can be exported and imported**
+  Columns configured for the task list can now be exported and imported via the case administration.
+
+* **ZGW Document list columns can be exported and imported**
+  Columns configured for the ZGW document list can now be exported and imported via the case administration.
+
 ## Bugfixes
 
 The following bugs were fixed:
@@ -96,6 +108,11 @@ The following bugs were fixed:
 * **Access control `in` operator fails on list**
 
   When a list was provided for the `in` operator (e.g. `["1","2"]`), the permission could not be imported.
+
+* **Process not linked after deploying a new case definition**
+
+  When a new version of the case definition was deployed, the new case definition would sometimes no longer be linked to
+  any of the process definitions that were linked in previous versions.
 
 ## Breaking changes
 
@@ -159,6 +176,14 @@ The following breaking changes were introduced:
   - [Zaken API](/getting-started/modules/zgw/zaken-api.md)
 
 Instructions on how to migrate to this version of Valtimo can be found [here](migration.md).
+
+* **Outdated modules have been deprecated**
+  - [Besluit](/getting-started/modules/zgw/besluit.md): replaced by [Besluiten API](/getting-started/modules/zgw/besluiten-api.md) plugin/module
+  - [Contactmoment](/getting-started/modules/zgw/contactmoment.md): will be replaced by new plugins in the future
+  - External-event: partly replaced by the outbox module. Portal-related functionality has not been replaced.
+  - [Haalcentraal BRP](/getting-started/modules/zgw/haalcentraal-brp.md): will be replaced by new plugins in the future
+  - [Klant](/getting-started/modules/zgw/klant.md): will be replaced by new plugins in the future
+  - [Openzaak resource](/getting-started/modules/zgw/openzaak-resource.md): replaced by the [Documenten API](/getting-started/modules/zgw/documenten-api.md) plugin 
 
 ## Deprecations
 

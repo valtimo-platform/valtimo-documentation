@@ -1,4 +1,5 @@
 # OpenZaak Resource
+> **_NOTE:_** This module has been deprecated. Please use the [Documenten API module](documenten-api.md) instead.
 
 ## Dependencies
 

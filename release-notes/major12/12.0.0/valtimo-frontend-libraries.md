@@ -81,25 +81,44 @@ The following features were added:
   information on how to configure the verzoek plugin, refer
   to [this page](/using-valtimo/plugin/documenten-api/configure-documenten-api-plugin.md)
 
+* **Configurable task list columns**
+
+  A new library has been added - `@valtimo/task-management`. It provides a page where list columns can be configured for
+  tasks of a certain case type. Please follow the migration notes (section 'Task management') on [this page](migration.md).
+
+* **Rename upload process**
+
+  The auto-deployed upload process `Upload Document` has been renamed to `Documenten API upload document`.
+
 ## Bugfixes
 
 The following bugs were fixed:
 
-* **Bug1**
+* **Not all case definitions are visible in the menu**
 
-  Description of what the issue was.
-
-* **Bug2**
-
-  Description of what the issue was.
+  The left sidebar did not show all case definitions when there were more than 10. Now the left sidebar will show all
+  case definitions.
 
 ## Breaking changes
 
 The following breaking changes were introduced:
 
-* **Breaking change1**
+* **ChoiceFieldModule**
 
-* **Breaking change2**
+  The ChoicefieldModule has been removed. Also the ChoiceFieldService and a few models have been moved to the *@valtimo/components* library.
+  Instructions on how to migrate to this version of Valtimo can be found [here](migration.md).
+
+* **OpenZaakModule**
+
+  The OpenZaakModule has been removed. EmailExtensionComponent has been removed altogether. The OpenZaakTypeLinkExtension has been moved to *@valtimo/plugin*
+  under the ZakenApiPluginModule. Instructions on how to migrate to this version of Valtimo can be found [here](migration.md).
+
+* **Changes to feature toggle**
+  - `enableTabManagement` is now enabled (`true`) by default.
+  - `caseListColumn` is now enabled (`true`) by default.
+  - `enableObjectManagement` is now enabled (`true`) by default.
+  - `caseSearchFields` has been removed. Case search fields are always enabled from now on.
+  - `disableFormFlow` has been removed. Form flow is always enabled from now on.
 
 Instructions on how to migrate to this version of Valtimo can be found [here](migration.md).
 
@@ -107,12 +126,17 @@ Instructions on how to migrate to this version of Valtimo can be found [here](mi
 
 The following was deprecated:
 
-* **Deprecation1**
+* **ContactMomentModule**
 
-  X was deprecated and is replaced with Y.
-* **Deprecation2**
+  Contact-moment has been deprecated and will be replaced with plugins in the future.
 
-  X was deprecated and is replaced with Y.
+* **CustomerModule**
+
+  Customer has been deprecated and will be replaced with plugins in the future.
+
+* **ConnectorManagementModule**
+
+  Connector-management has been deprecated and replaced by plugins.
 
 Instructions on how to migrate to this version of Valtimo can be found [here](migration.md).
 

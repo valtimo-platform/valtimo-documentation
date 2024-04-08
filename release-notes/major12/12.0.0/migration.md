@@ -200,7 +200,7 @@ This page describes how to update Valtimo from the previous version to the curre
   The new implementations of `KvKProvider` and `BsnProvider` (`ZaakKvkProvider` and `ZaakBsnProvider`) no longer depend on the `openzaak` module.
   Please make sure you have configured at least one Zaken API Plugin to make these providers work.
 
-* **Angular and dependendcy upgrades**
+* **Angular and dependency upgrades**
 
   Scope: front-end
     1. **Step 1: Node and NPM upgrade**
@@ -235,13 +235,70 @@ This page describes how to update Valtimo from the previous version to the curre
         After completing the previous steps, run `npm i` in the root of your project to install all dependencies, and
         verify after that your project builds.
 
-* **Breaking change 2/Deprecation 2**
+* **ChoiceFieldsModule**
 
-  Scope: back-end/front-end
+  Scope: front-end
 
-  1. **Step1**
+  1. **Change the import path of ChoiceFieldService**
 
-      Description
-  2. **Step2**
+      The ChoiceFieldsService has now been moved into the *@valtimo/components* library. Adjust any import paths to use this instead of *@valtimo/choice-field* or *@valtimo/choicefield*.
 
-      Description
+  2. **Change import path of ChoiceField and ChoiceFieldValue**
+
+      These models can now be found in the *@valtimo/components* library. Adjust any import paths to use this instead of *@valtimo/choice-field* or *@valtimo/choicefield*.
+  
+  3. **Adjust method names**
+
+      A few methods from the former *@valtimo/choicefield* library now have their names changes:
+
+      * getChoiceFieldValuesPageByName -> queryValuesPage
+      * getChoiceFieldValueById -> getValue
+      * getChoiceFieldsPage -> queryPage
+      * getChoiceFields -> query
+
+  4. **Remove ChoicefieldModule**
+
+    Remove any instances of ChoicefieldModule as it no longer exists. Services and models contained in that module are now a part of *@valtimo/components*.
+
+* **OpenZaakModule**
+
+  Scope: front-end
+
+  1. **ValtimoEmailExtension**
+
+    Remove any instance of the *valtimo-email-extension* that may be in use.
+
+  2. **Change import path of OpenZaakTypeLinkExtension and openZaakExtensionInitializer**
+
+    These entities can now be found in the *@valtimo/plugin* library. Adjust any import paths to use this instead of *@valtimo/open-zaak*.
+
+  3. **Remove OpenZaakModule**
+
+    Remove any instances of OpenZaakModule.
+
+* **Task management**
+
+  Scope: front-end
+
+   1. **Add dependency**
+
+  Add the dependency `@valtimo/task-management` to your implementation. Make sure to run a fresh `npm install` after.
+
+   2. **Import library**
+
+  In `app.module.ts`, add the following line to the top of the file with the imports:
+  `import {TaskManagementModule} from '@valtimo/task-management';`
+
+    3. **Add task management module to imports**
+
+  Add the previously imported `TaskManagementModule` to the `imports` array of your `AppModule`.
+
+   4. **Add menu entry**
+
+    Add the following line under the admin section in the menu configuration in the `environment` file of your
+    implementation:
+    `{link: ['/task-management'], title: 'Tasks', sequence: {UNIQUE_SEQUENCE_NUMBER}},`
+    Replace `UNIQUE_SEQUENCE_NUMBER` with a unique sequence number, and make sure the sequence numbers of other menu
+    items on the admin layer remain unique.
+  
+  

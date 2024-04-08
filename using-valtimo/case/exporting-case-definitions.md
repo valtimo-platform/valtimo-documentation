@@ -14,18 +14,20 @@ structure is the same as found in any application that makes use of the auto-dep
 
 ### Included in the export
 
-A lot of configurations and definitions are included in the export. These are:
-- Document definition
-- Search fields
-- List columns
-- Tabs
+The following configurations and definitions are included in the export:
 - Case definition settings
-- Process document associations
-- Process definitions
 - Decision definitions
-- Process links
+- Document definition
 - Form flows
 - Forms (includes case summary if present)
+- List columns
+- Process definitions
+- Process document associations
+- Process links
+- Search fields
+- Tabs
+- Task list columns
+- ZGW Document columns
 
 ### Excluded from the export
 
@@ -36,22 +38,27 @@ Some related configurations are not exported, as they are not case definition sp
 
 ## Import
 
-TO BE FILLED IN
+Importing can be done by navigating to the case definition list page and pressing the Upload button (see image below).
+Follow the wizard and select the exported file (ZIP).
+
+![Uploading an export file](img/import-case.png)
 
 ### Included in the import
 
-A lot of configurations and definitions are included in the import. These are:
-- Document definition
-- Search fields
-- List columns
-- Tabs
+The following configurations and definitions are included in the import:
 - Case definition settings
-- Process document associations
-- Process definitions
 - Decision definitions
-- Process links
+- Document definition
 - Form flows
 - Forms
+- List columns
+- Process definitions
+- Process document associations
+- Process links
+- Search fields
+- Tabs
+- Task list columns
+- ZGW Document columns
 
 ### Excluded from the import
 

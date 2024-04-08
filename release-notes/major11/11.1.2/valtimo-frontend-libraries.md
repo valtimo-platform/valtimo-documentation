@@ -15,6 +15,12 @@ The following bugs were fixed:
 
 * Breadcrumbs work correctly in conjunction with the pending changes modal.
 
+* The configuration form for the ProductAanvragen connector has been fixed.
+
+* `submit` and `change` events now work correctly on [custom FormFlow component](/using-valtimo/form-flow/create-custom-component.md).
+
+* The token of the logged-in user is now set in local storage under the key `formioToken` before forms are rendered.
+
 ## Breaking changes
 
 No breaking changes.
