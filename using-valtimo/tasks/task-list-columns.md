@@ -7,7 +7,7 @@ Task list columns can be configured to change the visible columns in the task li
 Task list columns can be autodeployed by adding json files on the classpath.
 These files should end with `.case-task-list.json` to be eligible for autodeployment.
 
-Every deployment file for represents a changeset. These files are required to contain a changesetId that should be unique
+Every deployment file represents a changeset. These files are required to contain a `changesetId` that should be unique
 over all deployment files that use changesets. When starting up, changesets that have already been executed will be ignored.
 A checksum of the changeset is created when it is executed. Changesets that have already been deployed should not change.
 Changesets that have been changed since a previous time will result in an error and failure to start the application.
