@@ -138,6 +138,8 @@
     * [Creating a process link](using-valtimo/process-link/create-process-link.md)
     * [Editing a process link](using-valtimo/process-link/edit-process-link.md)
     * [Unlinking a process link](using-valtimo/process-link/unlink-process-link.md)
+  * Tasks
+    * [Task list columns](using-valtimo/tasks/task-list-columns.md)
   * [Upload](using-valtimo/upload/upload.md)
     * [Temporary file storage](using-valtimo/upload/temporary-file-storage.md)
     * [Uploading to Documenten API with metadata](using-valtimo/upload/upload-to-documenten-api-with-metadata.md)
