@@ -90,6 +90,12 @@ The following features were added:
 
   The auto-deployed upload process `Upload Document` has been renamed to `Documenten API upload document`.
 
+* **Case migration**
+
+  A new feature has been released to migrate cases from an old version to a new version. This feature is still in beta
+  and should be used with care. For more information on case migration, refer
+  to [this page](/using-valtimo/plugin/documenten-api/configure-documenten-api-plugin.md)
+
 ## Bugfixes
 
 The following bugs were fixed:
