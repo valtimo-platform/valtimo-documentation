@@ -17,6 +17,6 @@ This section is intended for system administrators who need to configure Valtimo
 * [Processes](process/process.md)
 * [Process links](process-link/process-link.md)
 * Tasks
-  * [Task list colums](tasks/task-list-columns.md) 
+  * [Task list columns](tasks/task-list-columns.md) 
 * [Upload](upload/upload.md)
 * [Web](web/web.md)
