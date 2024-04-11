@@ -99,6 +99,10 @@ The following bugs were fixed:
   The left sidebar did not show all case definitions when there were more than 10. Now the left sidebar will show all
   case definitions.
 
+* **Not possible to upload more than one file to the case management**
+
+  Uploading a file to the case management worked the first time, the rest of the uploads after that did not update the correct file. Now it is possible to upload more than one file.
+
 ## Breaking changes
 
 The following breaking changes were introduced:
