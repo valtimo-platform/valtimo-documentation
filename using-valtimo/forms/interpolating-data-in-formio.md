@@ -48,7 +48,7 @@ There are two different syntaxes for interpolating data in Form.io forms:
 - `{{ expression }}` for only interpolation
 
 Because the data that is interpolated in the form can come from the user, it is important to escape the data to prevent
-it from being interpreted as HTML. This can be done by using the `{{ expression }}` syntax. 
+it from being interpreted as HTML. This can be done by using the `{{{ expression }}}` syntax. 
 
 For example if a user were to enter the following text in a form fields.
 
