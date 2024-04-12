@@ -1,4 +1,4 @@
-# Frontend libraries 11.1.4
+# Frontend libraries 11.1.5
 
 ## New Features
 
