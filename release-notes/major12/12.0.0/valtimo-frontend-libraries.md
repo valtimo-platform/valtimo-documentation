@@ -103,6 +103,10 @@ The following bugs were fixed:
 
   Uploading a file to the case management worked the first time, the rest of the uploads after that did not update the correct file. Now it is possible to upload more than one file.
 
+* **Breadcrumbs do not work properly**
+
+  After navigating away from Object page, breadcrumbs did not work properly anymore throughout the application. This issue has been fixed.
+
 ## Breaking changes
 
 The following breaking changes were introduced:
