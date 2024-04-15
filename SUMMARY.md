@@ -190,6 +190,8 @@
 * Release notes
   * [Release notes](release-notes/release-notes.md)
   * 11.x.x
+    * 11.1.5
+      * [Valtimo frontend libraries](release-notes/major11/11.1.5/valtimo-frontend-libraries.md)
     * 11.1.4
       * [Valtimo backend libraries](release-notes/major11/11.1.4/valtimo-backend-libraries.md)
       * [Valtimo frontend libraries](release-notes/major11/11.1.4/valtimo-frontend-libraries.md)
