@@ -39,16 +39,16 @@ changed.
 
 Which results in the following field.
 
-![Exxample of label with interpolated data](img/interpolate-label-example.png)
+![Example of label with interpolated data](img/interpolate-label-example.png)
 
 ## Available syntaxes
 
 There are two different syntaxes for interpolating data in Form.io forms:
-- `{{ expression }}` for interpolation and escaping
-- `{ expression }` for only interpolation
+- `{{{ expression }}}` for interpolation and escaping
+- `{{ expression }}` for only interpolation
 
 Because the data that is interpolated in the form can come from the user, it is important to escape the data to prevent
-it from being interpreted as HTML. This can be done by using the `{{ expression }}` syntax. 
+it from being interpreted as HTML. This can be done by using the `{{{ expression }}}` syntax. 
 
 For example if a user were to enter the following text in a form fields.
 
@@ -58,10 +58,24 @@ This would result in the following text being displayed in the form when using t
 
 ![Example of escaped data](img/example-escaped-data.png)
 
-When using the `{ expression }` syntax, the data is not escaped. This means that the data is interpreted as HTML as 
+When using the `{{ expression }}` syntax, the data is not escaped. This means that the data is interpreted as HTML as 
 shown below.
 
 ![Example of interpolated data](img/example-interpolated-data.png)
 
-It is recommended to always use the `{{ expression }}` syntax to prevent any issues with the data being displayed, 
+It is recommended to always use the `{{{ expression }}}` syntax to prevent any issues with the data being displayed, 
 unless it is intended to use HTML in the form and the data is trusted.
+
+Sometimes it is useful to use html as part of the expression itself. The example below can be used to display a list of
+names in a form. It uses an unordered list for clarity. The actual value is escaped using the `_.escape` function from
+lodash. The way the data need to be escaped can be different depending on the data that is used, and the context in which
+it is displayed. Please always think about the security implications when displaying data in a form.
+
+```html
+<p>
+  Names:
+  <ul>
+    {{ data.names ? ((data.names).map(name => '<li>'+_.escape(name)+'</li>').join('')) : '-' }}
+  </ul>
+</p>
+```
