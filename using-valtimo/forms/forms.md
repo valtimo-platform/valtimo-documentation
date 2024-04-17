@@ -8,3 +8,5 @@ Valtimo uses the [form.io](https://www.form.io/) form builder to create forms th
 This section contains information on how to configure and use form.io in Valtimo.
 
 * [Creating form.io forms in Valtimo](creating-forms-in-valtimo.md)
+* [Interpolating data in Form.io](interpolating-data-in-formio.md)
+* [Configuring an Objecten API object form](configure-object-form.md)
