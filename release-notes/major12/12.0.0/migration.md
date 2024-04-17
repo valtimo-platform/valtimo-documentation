@@ -300,5 +300,50 @@ This page describes how to update Valtimo from the previous version to the curre
     `{link: ['/task-management'], title: 'Tasks', sequence: {UNIQUE_SEQUENCE_NUMBER}},`
     Replace `UNIQUE_SEQUENCE_NUMBER` with a unique sequence number, and make sure the sequence numbers of other menu
     items on the admin layer remain unique.
+
+* **Dark-mode and theme-switching**
+
+  Scope: front-end
+
+  1. **Change stylesheets**
   
-  
+     In order for the themes to be displayed properly, the following change has to be made in the `styles` array in `angular.json`
+     in the root of your implementation:
+     * Change `"dist/valtimo/components/assets/css/carbon-beagle-compatibility.scss"` to `"dist/valtimo/components/assets/css/compatibility.scss"`,
+      and make sure it is initiated **after** `"dist/valtimo/components/assets/css/carbon.scss"`
+
+  2. **Add logo variants**
+
+     Next to `logoSvgBase64` and `logoPngBase64`, there is now also support for dark-mode variants called `darkModeLogoSvgBase64`
+    and `darkModeLogoPngBase64`. In order for the logo's to be displayed properly in both light- and dark-mode, the following
+    changes have to be made:
+     * Add the desired logos in **`logo.ts`**
+          ```ts
+          const LOGO_BASE_64 = 'Base 64 string for the light-mode (default) SVG logo goes here';
+          
+          const DARK_MODE_LOGO_BASE_64 = 'Base 64 string for the dark-mode SVG logo goes here';
+          
+          const LOGO_BASE_64_PNG = 'Base 64 string for the light-mode (default) PNG logo goes here';
+          
+          const DARK_MODE_LOGO_BASE_64_PNG = 'Base 64 string for the dark-mode PNG logo goes here';
+      
+          export {LOGO_BASE_64, DARK_MODE_LOGO_BASE_64, LOGO_BASE_64_PNG, DARK_MODE_LOGO_BASE_64_PNG};
+          ```
+     * Import the logos and assign them in **`environment.ts`**
+        ```ts
+        /* Import the logo's from the logo.ts file */
+        import {
+          DARK_MODE_LOGO_BASE_64,
+          DARK_MODE_LOGO_BASE_64_PNG,
+          LOGO_BASE_64,
+          LOGO_BASE_64_PNG,
+        } from './logo';
+        
+        export const environment: ValtimoConfig = {
+          logoSvgBase64: LOGO_BASE_64,
+          darkModeLogoSvgBase64: DARK_MODE_LOGO_BASE_64,
+          logoPngBase64: LOGO_BASE_64_PNG,
+          darkModeLogoPngBase64: DARK_MODE_LOGO_BASE_64_PNG
+        }
+        ```
+  The logo's should now automatically update when themes are switched. 
