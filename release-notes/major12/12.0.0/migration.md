@@ -260,21 +260,96 @@ This page describes how to update Valtimo from the previous version to the curre
 
     Remove any instances of ChoicefieldModule as it no longer exists. Services and models contained in that module are now a part of *@valtimo/components*.
 
-* **OpenZaakModule**
+* **`@valtimo/open-zaak` removed**
 
   Scope: front-end
 
-  1. **ValtimoEmailExtension**
+  1. **Remove dependency**
 
-    Remove any instance of the *valtimo-email-extension* that may be in use.
+  The library `@valtimo/open-zaak` has been removed. Remove `@valtimo/open-zaak` from your implementation's
+  `package.json`.
 
-  2. **Change import path of OpenZaakTypeLinkExtension and openZaakExtensionInitializer**
+  2. **Remove module import**
 
-    These entities can now be found in the *@valtimo/plugin* library. Adjust any import paths to use this instead of *@valtimo/open-zaak*.
+   Remove the import of `OpenZaakModule` into your `AppModule`.
 
-  3. **Remove OpenZaakModule**
+  3. **Remove extensions**
 
-    Remove any instances of OpenZaakModule.
+  If used, remove `emailExtensionInitializer` and `openZaakExtensionInitializer` from `initializers` in your environment
+  file. The email extension has been permanently removed. The OpenZaak extension's functionality is now included in the
+  new library `@valtimo/zgw` (see below).
+
+* **Connector link extension removed**
+
+  Scope: front-end
+
+  `connectorLinkExtensionInitializer` (exported from `@valtimo/connector-management`) has been removed and its
+  functionality will be captured in other code. If used, remove it from `initializers` in your environment file.
+
+* **Extensions deprecated**
+
+  Scope: front-end
+
+  Extensions (defined under `initializers` in environment files) have been deprecated. Extensions included in the
+  libraries have been removed. If you have any custom extensions, refactor them to not use extension initializer
+  functionality, since extensions will be removed in the next major release.
+
+* **`@valtimo/contact-moment` removed**
+
+  Scope: front-end
+
+  The library `@valtimo/contact-moment` has been removed. Remove it from your implementation's `package.json`. This
+  library included a contact moments case tab: `DossierDetailTabContactMomentsComponent`. This has been moved to
+  `@valtimo/zgw`. The contact moments tab has been removed as a default tab in tab management. If you still want to use
+  it, add `contactmomenten: DossierDetailTabContactMomentsComponent` under `CASE_TAB_TOKEN` in your `AppModule` file and
+  configure it as a custom component tab. For more information, [refer to this page](/using-valtimo/case/case-tabs.md).
+  `DossierDetailTabContactMomentsComponent` should be imported from `@valtimo/zgw`.
+
+* **Zaakobjecten default tab removed**
+
+  Scope: front-end
+
+  The zaakobjecten tab has been removed as a default tab in tab management. The zaakobjecten tab has been moved to
+  `@valtimo/zgw`. If you still want to use it, add `zaakobjecten: DossierDetailTabZaakobjectenComponent` under
+  `CASE_TAB_TOKEN` in your `AppModule` file and configure it as a custom component tab. For more information,
+  [refer to this page](/using-valtimo/case/case-tabs.md). `DossierDetailTabZaakobjectenComponent` should be imported
+  from `@valtimo/zgw`.
+
+* **`@valtimo/customer` removed**
+
+  Scope: front-end
+
+  The library `@valtimo/customer` has been removed, and its functionality has been moved to `@valtimo/zgw`. Remove it
+  from your implementation's `package.json`, and change the import of `CustomerModule` from `@valtimo/customer` to
+  `@valtimo/zgw` in `app.module.ts` if you use this functionality.
+
+* **OpenZaak uploader provider deprecated**
+
+  Scope: front-end
+
+  The OpenZaak upload provider has been deprecated and will be removed in the next major release. This provider is active
+  if `uploadProvider` in your environment file is set to `UploadProvider.OPEN_ZAAK`.
+
+* **Form.io Documenten API uploader component moved**
+
+  Scope: front-end
+
+  The Documenten API form.io upload component has been moved from `@valtimo/dossier` to `@valtimo/zgw`. If this upload
+  component is included in your project, import `ZgwModule` into your `AppModule` in `app.module.ts` and change the
+  import of `registerDocumentenApiFormioUploadComponent` from `@valtimo/dossier` to `@valtimo/zgw`.
+
+* **New library: `@valtimo/zgw`**
+
+  A refactor has been made to move all ZGW functionality previously included in default Valtimo libraries to its own,
+  optional dependency: `@valtimo/zgw`. Please install this dependency into your implementation and import `ZgwModule`
+  (which it exports) into your `AppModule` if you use ZGW functionality. If `ZgwModule` is imported, the following
+  functionality is included:
+ 
+    - Documenten API documents tab. If `uploadProvider` is set to `UploadProvider.DOCUMENTEN_API` in your environment
+      file, and `ZgwModule` is not imported, a not found message will be displayed on the case documents tab.
+    - A new ZGW tab on the case management admin page.
+    - The component to display object tabs based on the `caseObjectTypes` configuration in your environment file. If
+      `ZgwModule` is not imported, and this configuration is present, a not found message will be displayed on the tabs.
 
 * **Task management**
 
