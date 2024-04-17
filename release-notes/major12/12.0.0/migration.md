@@ -351,6 +351,12 @@ This page describes how to update Valtimo from the previous version to the curre
     - The component to display object tabs based on the `caseObjectTypes` configuration in your environment file. If
       `ZgwModule` is not imported, and this configuration is present, a not found message will be displayed on the tabs.
 
+* **Removed: `@valtimo/exact-plugin`**
+
+    The library `@valtimo/exact-plugin` has been removed. All of its code is now exported from `@valtimo/plugin`.
+    Remove `@valtimo/exact-plugin` from your implementation's package.json if it's included, and change imports throughout
+   your implementation from `@valtimo/exact-plugin` to `@valtimo/plugin`.
+
 * **Task management**
 
   Scope: front-end

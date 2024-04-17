@@ -160,6 +160,11 @@ The following breaking changes were introduced:
   - `caseSearchFields` has been removed. Case search fields are always enabled from now on.
   - `disableFormFlow` has been removed. Form flow is always enabled from now on.
 
+* **`@valtimo/exact-plugin`**
+
+  The library `@valtimo/exact-plugin` has been removed. For information
+  on how to migrate, [refer to this page](migration.md).
+
 Instructions on how to migrate to this version of Valtimo can be found [here](migration.md).
 
 ## Deprecations
