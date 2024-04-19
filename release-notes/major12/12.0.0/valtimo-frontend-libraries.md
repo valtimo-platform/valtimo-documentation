@@ -90,6 +90,12 @@ The following features were added:
 
   The auto-deployed upload process `Upload Document` has been renamed to `Documenten API upload document`.
 
+* **Dark-mode and theme-switching added**
+
+  By implementing the Carbon Design System and making use of the correct color tokens, dark-mode has become a possibility. 
+  This feature-toggle is enabled by default. The 3 supported options are Light (default), Dark and System (Changes theme 
+  based on the system theme preference). For more information on theming, refer to [this page](/reference/user-interface/carbon-design-system.md)
+
 ## Bugfixes
 
 The following bugs were fixed:

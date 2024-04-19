@@ -74,3 +74,8 @@ with a `boolean` value.
 
   If enabled, BPMN start event names will be used as title for start forms instead of the standard 
   `Start - ${process-name}` format.
+
+* **`allowUserThemeSwitching`**
+
+  If enabled, a new dropdown will appear in user settings, where the user can switch between themes. This feature 
+  toggle is enabled by default.
