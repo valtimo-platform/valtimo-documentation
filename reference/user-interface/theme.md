@@ -182,6 +182,6 @@ $darkThemeOverwriteVariables: (
 ### Non-Carbon related theme overrides
 
 It might be possible that you want to override certain items based on the theme that is currently active. This can be done
-by using the value `currentTheme$`, imported by `CdsThemeService` from `'../../models'`. This value is either `'G10'` (Light)
+by using the value `currentTheme$`, imported by `CdsThemeService` from `'@valtimo/components'`. This value is either `'G10'` (Light)
 or `'G90'` (dark). The option `'SYSTEM'` is not a theme, but only a toggle for the auto-switching of themes based on the
 preferred system theme, which gets its value from the browsers `(prefers-color-scheme: 'value')`. 
