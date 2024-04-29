@@ -201,7 +201,7 @@
   * 11.x.x
     * 11.2.2
       * [Valtimo frontend libraries](release-notes/major11/11.2.2/valtimo-frontend-libraries.md)
-    * 11.2.2
+    * 11.2.1
       * [Valtimo frontend libraries](release-notes/major11/11.2.1/valtimo-frontend-libraries.md)
     * 11.2.0
       * [Valtimo backend libraries](release-notes/major11/11.2.0/valtimo-backend-libraries.md)
