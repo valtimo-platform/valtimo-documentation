@@ -168,14 +168,14 @@ The following conditions can be used with their respective structures:
 
 #### Operators
 
-| Operator   | Description                                      |
-|:-----------|:-------------------------------------------------|
-| `==`       | Equal to.                                        |
-| `!=`       | Not equal to.                                    |
-| `>`        | Greater than.                                    |
-| `>=`       | Greater than or equal to.                        |
-| `<`        | Smaller than.                                    |
-| `<=`       | Smaller than or equal to.                        |
+| Operator        | Description                                             |
+|:----------------|:--------------------------------------------------------|
+| `==`            | Equal to.                                               |
+| `!=`            | Not equal to.                                           |
+| `>`             | Greater than.                                           |
+| `>=`            | Greater than or equal to.                               |
+| `<`             | Smaller than.                                           |
+| `<=`            | Smaller than or equal to.                               |
 | `list_contains` | Checks if a collection contains the given value.        |
 | `in`            | Checks if a value is contained in the given collection. |
 

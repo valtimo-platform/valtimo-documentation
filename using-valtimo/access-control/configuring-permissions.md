@@ -22,30 +22,30 @@ two permissions are used to define this:
 
 ```json
 [
-    {
-        "resourceType": "com.ritense.document.domain.impl.JsonSchemaDocument",
-        "action": "view_list",
-        "conditions": [
-            {
-                "type": "field",
-                "field": "documentDefinitionId.name",
-                "operator": "==",
-                "value": "example-document-definition"
-            }
-        ]
-    },
-    {
-        "resourceType": "com.ritense.document.domain.impl.JsonSchemaDocument",
-        "action": "view_list",
-        "conditions": [
-            {
-                "type": "field",
-                "field": "assigneeId",
-                "operator": "==",
-                "value": "${currentUserId}"
-            }
-        ]
-    }
+  {
+    "resourceType": "com.ritense.document.domain.impl.JsonSchemaDocument",
+    "action": "view_list",
+    "conditions": [
+      {
+        "type": "field",
+        "field": "documentDefinitionId.name",
+        "operator": "==",
+        "value": "example-document-definition"
+      }
+    ]
+  },
+  {
+    "resourceType": "com.ritense.document.domain.impl.JsonSchemaDocument",
+    "action": "view_list",
+    "conditions": [
+      {
+        "type": "field",
+        "field": "assigneeId",
+        "operator": "==",
+        "value": "${currentUserId}"
+      }
+    ]
+  }
 ]
 ```
 
@@ -91,21 +91,21 @@ document.
 
 ```json
 [
-    {
-        "resourceType": "com.ritense.document.domain.impl.JsonSchemaDocument",
-        "action": "view_list",
-        "roleKey": "ROLE_USER",
-        "conditions": [
-            {
-                "type": "expression",
-                "field": "content.content",
-                "path": "$.flowers",
-                "operator": "list_contains",
-                "value": "rose",
-                "clazz": "java.util.Collection"
-            }
-        ]
-    }
+  {
+    "resourceType": "com.ritense.document.domain.impl.JsonSchemaDocument",
+    "action": "view_list",
+    "roleKey": "ROLE_USER",
+    "conditions": [
+      {
+        "type": "expression",
+        "field": "content.content",
+        "path": "$.flowers",
+        "operator": "list_contains",
+        "value": "rose",
+        "clazz": "java.util.Collection"
+      }
+    ]
+  }
 ]
 ```
 
@@ -117,25 +117,25 @@ defined based on the relation between the two resources,`JsonSchemaDocument` and
 
 ```json
 [
-    {
-        "resourceType": "com.ritense.document.domain.impl.JsonSchemaDocument",
-        "action": "create",
-        "roleKey": "ROLE_USER",
+  {
+    "resourceType": "com.ritense.document.domain.impl.JsonSchemaDocument",
+    "action": "create",
+    "roleKey": "ROLE_USER",
+    "conditions": [
+      {
+        "type": "container",
+        "resourceType": "com.ritense.document.domain.impl.JsonSchemaDocumentDefinition",
         "conditions": [
-            {
-                "type": "container",
-                "resourceType": "com.ritense.document.domain.impl.JsonSchemaDocumentDefinition",
-                "conditions": [
-                    {
-                        "type": "field",
-                        "field": "id.name",
-                        "operator": "==",
-                        "value": "leningen"
-                    }
-                ]
-            }
+          {
+            "type": "field",
+            "field": "id.name",
+            "operator": "==",
+            "value": "leningen"
+          }
         ]
-    }
+      }
+    ]
+  }
 ]
 ```
 
@@ -148,25 +148,25 @@ and `CamundaProcessDefinition`.
 
 ```json
 [
-    {
-        "resourceType": "com.ritense.valtimo.camunda.domain.CamundaExecution",
-        "action": "create",
-        "roleKey": "ROLE_USER",
+  {
+    "resourceType": "com.ritense.valtimo.camunda.domain.CamundaExecution",
+    "action": "create",
+    "roleKey": "ROLE_USER",
+    "conditions": [
+      {
+        "type": "container",
+        "resourceType": "com.ritense.valtimo.camunda.domain.CamundaProcessDefinition",
         "conditions": [
-            {
-                "type": "container",
-                "resourceType": "com.ritense.valtimo.camunda.domain.CamundaProcessDefinition",
-                "conditions": [
-                    {
-                        "type": "field",
-                        "field": "key",
-                        "operator": "==",
-                        "value": "GeneriekProces"
-                    }
-                ]
-            }
+          {
+            "type": "field",
+            "field": "key",
+            "operator": "==",
+            "value": "GeneriekProces"
+          }
         ]
-    }
+      }
+    ]
+  }
 ]
 ```
 
@@ -178,25 +178,25 @@ be done.
 
 ```json
 [
-    {
-        "resourceType": "com.ritense.valtimo.camunda.domain.CamundaTask",
-        "action": "view_list",
-        "roleKey": "ROLE_USER",
+  {
+    "resourceType": "com.ritense.valtimo.camunda.domain.CamundaTask",
+    "action": "view_list",
+    "roleKey": "ROLE_USER",
+    "conditions": [
+      {
+        "type": "container",
+        "resourceType": "com.ritense.valtimo.camunda.domain.CamundaIdentityLink",
         "conditions": [
-            {
-                "type": "container",
-                "resourceType": "com.ritense.valtimo.camunda.domain.CamundaIdentityLink",
-                "conditions": [
-                    {
-                        "type": "field",
-                        "field": "groupId",
-                        "operator": "==",
-                        "value": "ROLE_USER"
-                    }
-                ]
-            }
+          {
+            "type": "field",
+            "field": "groupId",
+            "operator": "==",
+            "value": "ROLE_USER"
+          }
         ]
-    }
+      }
+    ]
+  }
 ]
 ```
 
@@ -207,26 +207,86 @@ that can be done.
 
 ```json
 [
-    {
-        "resourceType": "com.ritense.valtimo.camunda.domain.CamundaTask",
-        "action": "view_list",
-        "roleKey": "ROLE_USER",
+  {
+    "resourceType": "com.ritense.valtimo.camunda.domain.CamundaTask",
+    "action": "view_list",
+    "roleKey": "ROLE_USER",
+    "conditions": [
+      {
+        "type": "container",
+        "resourceType": "com.ritense.document.domain.impl.JsonSchemaDocument",
         "conditions": [
-            {
-                "type": "container",
-                "resourceType": "com.ritense.document.domain.impl.JsonSchemaDocument",
-                "conditions": [
-                    {
-                        "type": "expression",
-                        "field": "content.content",
-                        "path": "$.city",
-                        "operator": "==",
-                        "value": "Amsterdam",
-                        "clazz": "java.lang.String"
-                    }
-                ]
-            }
+          {
+            "type": "expression",
+            "field": "content.content",
+            "path": "$.city",
+            "operator": "==",
+            "value": "Amsterdam",
+            "clazz": "java.lang.String"
+          }
         ]
-    }
+      }
+    ]
+  }
 ]
+```
+
+### Document content value is present in an array of values
+
+```json
+{
+  "resourceType": "com.ritense.document.domain.impl.JsonSchemaDocument",
+  "action": "view",
+  "conditions": [
+    {
+      "type": "expression",
+      "field": "content.content",
+      "path": "$.city",
+      "operator": "in",
+      "value": ["Amsterdam", "Utrecht"],
+      "clazz": "java.lang.String"
+    }
+  ]
+}
+```
+
+### The candidate group of a task is in the list of user roles
+```json
+{
+  "resourceType": "com.ritense.valtimo.camunda.domain.CamundaTask",
+  "action": "view",
+  "conditions": [
+    {
+      "type": "container",
+      "resourceType": "com.ritense.valtimo.camunda.domain.CamundaIdentityLink",
+      "conditions": [
+        {
+          "type": "field",
+          "field": "groupId",
+          "operator": "in",
+          "value": "${currentUserRoles}"
+        }
+      ]
+    }
+  ]
+}
+```
+
+### Document content list value contains a specific value
+
+```json
+{
+  "resourceType": "com.ritense.document.domain.impl.JsonSchemaDocument",
+  "action": "view",
+  "conditions": [
+    {
+      "type": "expression",
+      "field": "content.content",
+      "path": "$.cities",
+      "operator": "list_contains",
+      "value": "Amsterdam",
+      "clazz": "java.lang.String"
+    }
+  ]
+}
 ```

@@ -96,6 +96,12 @@ The following features were added:
   and should be used with care. For more information on case migration, refer
   to [this page](/using-valtimo/plugin/documenten-api/configure-documenten-api-plugin.md)
 
+* **Dark-mode and theme-switching added**
+
+  By implementing the Carbon Design System and making use of the correct color tokens, dark-mode has become a possibility. 
+  This feature-toggle is enabled by default. The 3 supported options are Light (default), Dark and System (Changes theme 
+  based on the system theme preference). For more information on theming, refer to [this page](/reference/user-interface/carbon-design-system.md)
+
 ## Bugfixes
 
 The following bugs were fixed:
@@ -104,6 +110,14 @@ The following bugs were fixed:
 
   The left sidebar did not show all case definitions when there were more than 10. Now the left sidebar will show all
   case definitions.
+
+* **Not possible to upload more than one file to the case management**
+
+  Uploading a file to the case management worked the first time, the rest of the uploads after that did not update the correct file. Now it is possible to upload more than one file.
+
+* **Breadcrumbs do not work properly**
+
+  After navigating away from Object page, breadcrumbs did not work properly anymore throughout the application. This issue has been fixed.
 
 ## Breaking changes
 
