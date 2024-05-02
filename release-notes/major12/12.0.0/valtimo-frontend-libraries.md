@@ -96,7 +96,7 @@ The following features were added:
   This feature-toggle is enabled by default. The 3 supported options are Light (default), Dark and System (Changes theme 
   based on the system theme preference). For more information on theming, refer to [this page](/reference/user-interface/carbon-design-system.md)
 
-* **Added extra empty-state artwork**
+* **Added extra empty-state illustrations**
 
   6 new empty-state illustrations have been added for added clarification of the empty-state. These are:
   * `assets/img/emptystate-empty.svg`
