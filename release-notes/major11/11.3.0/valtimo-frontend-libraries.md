@@ -14,7 +14,7 @@ The following bugs were fixed:
 
 * **Plug-in action configuration can be completed without filling mandatory field**
 
-  `Create Zaakbesluit` plug-in action configuration can be completed without filling mandatory `Starting date` field. It is now fixed.
+  `Create Zaakbesluit` plug-in action configuration can be completed without filling mandatory `Starting date` field.
 
 ## Breaking changes
 
