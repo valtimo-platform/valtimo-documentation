@@ -151,7 +151,7 @@ The following breaking changes were introduced:
 * **`@valtimo/zgw`**
 
   A new library is included in: `@valtimo/zgw`. All optional ZGW functionality has been moved from other libraries into
-  this specialized, optional library. For information on what it includes, and how to migrate, [refer to this page](migration.md). 
+  this optional library. For information on what it includes, and how to migrate, [refer to this page](migration.md). 
 
 * **Changes to feature toggle**
   - `enableTabManagement` is now enabled (`true`) by default.
