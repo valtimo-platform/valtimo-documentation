@@ -114,6 +114,11 @@ The following bugs were fixed:
   When a new version of the case definition was deployed, the new case definition would sometimes no longer be linked to
   any of the process definitions that were linked in previous versions.
 
+* **Imported forms marked as readonly**
+
+  Imported forms were automatically marked read-only, making it impossible to edit them. 
+  The read-only flag is now only applied on auto-deployed forms.
+
 ## Breaking changes
 
 The following breaking changes were introduced:
