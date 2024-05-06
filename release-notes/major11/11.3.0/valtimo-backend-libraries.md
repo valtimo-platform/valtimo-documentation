@@ -14,7 +14,7 @@ The following bugs were fixed:
 
 * **Besluit creation fails because of missing non-mandatory property**
 
-  When `reason for expiry` is not selected while configuring 'Create Zaakbesluit' plugin action in the 'Besluiten API' plug-in, the following error occurs and the besluit creation fails: Cannot force empty String ("") to ` com.ritense.besluitenapi.client.Validation`. It's now fixed.
+  When `reason for expiry` is not selected while configuring 'Create Zaakbesluit' plugin action in the 'Besluiten API' plug-in, the following error occurs and the besluit creation fails: Cannot force empty String ("") to ` com.ritense.besluitenapi.client.Validation`.
 
 ## Breaking changes
 
