@@ -112,6 +112,13 @@ The following features were added:
   * `assets/img/emptystate-not-authorised.svg`
   * `assets/img/emptystate-success.svg`
 
+* **Added compact mode to allow for more usable vertical space**
+
+  By default, the breadcrumbs and page title use a larger amount of vertical screen space.
+  Compact mode has been added to move this information to the top header, next to the logo.
+
+  More information on how to enable and use this can be found [here](/using-valtimo/ui/settings.md#compact-mode) 
+
 ## Bugfixes
 
 The following bugs were fixed:

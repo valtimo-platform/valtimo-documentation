@@ -52,11 +52,17 @@ with a `boolean` value.
   If enabled, the user will be returned to the page they were last on before they were automatically logged out after
   their refresh token expired.
 
+* **`enableCompactModeToggle`**
+
+  If enabled, the user can enable compact mode in the user settings. 
+  When enabled, this will free up vertical space by moving the breadcrumbs and page title to the top header next to the logo.
+  More information can be found [here](/using-valtimo/ui/settings.md#compact-mode)
+
 * **`enableObjectManagement`**
 
   If enabled, a new menuitem 'objects' will appear in the left sidebar menu. Enabled by default when not configured. 
   This menu item can have one or more submenu
-  items depending on the configuration. For more information [here](/getting-started/modules/zgw/object-management.md)
+  items depending on the configuration. More information can be found [here](/getting-started/modules/zgw/object-management.md)
 
 * **`hideValtimoVersionsForNonAdmins`**
 
