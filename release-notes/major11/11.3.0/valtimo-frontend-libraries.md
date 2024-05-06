@@ -4,7 +4,7 @@
 
 The following features were added:
 
-* **Ability to use value resolvers to set date in `Create Zaakbesluit` plug-in action configuration**
+* **Support for value resolvers to set date in `Create Zaakbesluit` plug-in action configuration**
     
     It is now possible to use process variable or document json path to set `Starting date` and `Expiration date` in `Create Zaakbesluit` plug-in action configuration so that each besluit has its own start and expiration date.
 
