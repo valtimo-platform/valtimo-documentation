@@ -117,7 +117,7 @@ The following bugs were fixed:
 * **Imported forms marked as readonly**
 
   Imported forms were automatically marked read-only, making it impossible to edit them. 
-  The read-only flag is not only applied on auto-deployed forms.
+  The read-only flag is now only applied on auto-deployed forms.
 
 ## Breaking changes
 
