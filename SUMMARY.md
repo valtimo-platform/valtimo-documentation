@@ -147,6 +147,8 @@
     * [Uploading to Documenten API with metadata](using-valtimo/upload/upload-to-documenten-api-with-metadata.md)
   * [Web](using-valtimo/web/web.md)
     * [Configure CORS in Valtimo](using-valtimo/web/valtimo-cors.md)
+  * ZGW
+    * [Documents](/using-valtimo/zgw/documents/zgw-documents.md)
 * [Extending Valtimo](extending-valtimo/extending-valtimo.md)
   * [Access control](extending-valtimo/access-control/access-control.md)
     * [Creating a resource](extending-valtimo/access-control/registering-a-resource.md)
