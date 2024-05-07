@@ -9,6 +9,9 @@ The following features were added:
   Document keywords can now be configured on a case. This will allow the user to add keywords when uploading a file using the Documenten API.
   Autodeployment for this configuration is also available.
 
+  Description of the new feature goes here.
+  Also link to the page that explains the feature in greater detail.
+
 * **New feature2**
 
   Description of the new feature goes here.
