@@ -54,8 +54,8 @@ with a `boolean` value.
 
 * **`enableCompactModeToggle`**
 
-  If enabled, the user can enable compact mode in the user settings. 
-  When enabled, this will free up vertical space by moving the breadcrumbs and page title to the top header next to the logo.
+  If enabled, the user can toggle compact mode in the user settings. 
+  When both toggles are enabled, this will free up vertical space by moving the breadcrumbs and page title to the top header next to the logo.
   More information can be found [here](/using-valtimo/ui/settings.md#compact-mode)
 
 * **`enableObjectManagement`**
