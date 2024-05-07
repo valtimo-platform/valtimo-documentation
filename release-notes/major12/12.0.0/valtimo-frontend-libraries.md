@@ -138,10 +138,42 @@ The following breaking changes were introduced:
   The ChoicefieldModule has been removed. Also the ChoiceFieldService and a few models have been moved to the *@valtimo/components* library.
   Instructions on how to migrate to this version of Valtimo can be found [here](migration.md).
 
-* **OpenZaakModule**
+* **`@valtimo/open-zaak `**
 
-  The OpenZaakModule has been removed. EmailExtensionComponent has been removed altogether. The OpenZaakTypeLinkExtension has been moved to *@valtimo/plugin*
-  under the ZakenApiPluginModule. Instructions on how to migrate to this version of Valtimo can be found [here](migration.md).
+  The library `@valtimo/open-zaak` has been removed. EmailExtensionComponent has been removed altogether. The
+  OpenZaakTypeLinkExtension functionality has been moved to `@valtimo/zgw`. Instructions on how to migrate to this
+  version of Valtimo can be found [here](migration.md).
+
+* **Connector link extension**
+
+  `connectorLinkExtensionInitializer` (exported from `@valtimo/connector-management`) has been removed. For information
+  on how to migrate, [refer to this page](migration.md).
+
+
+* **`@valtimo/contact-moment`**
+
+  The library `@valtimo/contact-moment` has been removed. For information
+  on how to migrate, [refer to this page](migration.md).
+
+* **`@valtimo/customer`**
+
+  The library `@valtimo/customer` has been removed. For information
+  on how to migrate, [refer to this page](migration.md).
+
+* **Zaakobjecten tab**
+
+  Zaakobjecten has been removed as a default tab. If you want to use this tab in your implementation, [refer to this page](migration.md)
+  on how to migrate.
+
+* **Form.io Documenten API upload component**
+
+  The Form.io Documenten API upload component has been moved. For information
+  on how to migrate, [refer to this page](migration.md).
+
+* **`@valtimo/zgw`**
+
+  A new library is included in: `@valtimo/zgw`. All optional ZGW functionality has been moved from other libraries into
+  this optional library. For information on what it includes, and how to migrate, [refer to this page](migration.md). 
 
 * **Changes to feature toggle**
   - `enableTabManagement` is now enabled (`true`) by default.
@@ -150,25 +182,28 @@ The following breaking changes were introduced:
   - `caseSearchFields` has been removed. Case search fields are always enabled from now on.
   - `disableFormFlow` has been removed. Form flow is always enabled from now on.
 
+* **`@valtimo/exact-plugin`**
+
+  The library `@valtimo/exact-plugin` has been removed. For information
+  on how to migrate, [refer to this page](migration.md).
+
 Instructions on how to migrate to this version of Valtimo can be found [here](migration.md).
 
 ## Deprecations
 
 The following was deprecated:
 
-* **ContactMomentModule**
-
-  Contact-moment has been deprecated and will be replaced with plugins in the future.
-
-* **CustomerModule**
-
-  Customer has been deprecated and will be replaced with plugins in the future.
-
 * **ConnectorManagementModule**
 
-  Connector-management has been deprecated and replaced by plugins.
+  Connector-management has been deprecated and will be replaced by plugins in the future.
 
-Instructions on how to migrate to this version of Valtimo can be found [here](migration.md).
+* **Extensions**
+
+  Extensions functionality has been deprecated. For more information, [refer to this page](migration.md).
+
+* **Open Zaak uploader provider**
+
+  The Open Zaak upload provider has been deprecated. For more information, [refer to this page](migration.md).
 
 ## Known issues
 
