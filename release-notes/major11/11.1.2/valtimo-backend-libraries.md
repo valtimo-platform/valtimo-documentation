@@ -13,6 +13,9 @@
 
 No bugfixes.
 
+* **Double escaping of HTML values**
+  HTML values were double escaped before showing them in a form.io input field. For more information on how to interpolate data in Form.io forms, see [Interpolating data in Form.io](/using-valtimo/forms/interpolating-data-in-formio.md).
+
 ## Breaking changes
 
 * Code called from within BPMN or DMN models is no longer subject to access control checks. User information about the user
