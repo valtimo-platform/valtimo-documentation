@@ -86,4 +86,3 @@ The following columns are available for configuration:
 - `VERSIE`
 - `VERTROUWELIJKHEIDAANDUIDING`
 
-

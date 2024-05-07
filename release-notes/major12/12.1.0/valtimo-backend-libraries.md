@@ -6,12 +6,12 @@ The following features were added:
 
 * **ZGW document keywords (trefwoorden)**
 
-  Document keywords can now be configured on a case. This will allow the user to add keywords when uploading a file using the Documenten API 
-  Autodeployment for this configuration is also available. More information can be found [here](/using-valtimo/zgw/documents/zgw-documents.md#keywords-trefwoorden)
+  Document keywords can now be configured on a case. This will allow the user to add keywords when uploading a file using the Documenten API.
+  Autodeployment for this configuration is also available. More information can be found [here](/using-valtimo/zgw/documents/zgw-documents.md#keywords-trefwoorden).
 
 * **ZGW document list column autodeployment**
 
-  Document list columns can now be configured via autodeployment. More information can be found [here](/using-valtimo/zgw/documents/zgw-documents.md#autodeployment-1)
+  Document list columns can now be configured via autodeployment. More information can be found [here](/using-valtimo/zgw/documents/zgw-documents.md#autodeployment-1).
 
 * **New feature1**
 
