@@ -6,8 +6,8 @@ The following features were added:
 
 * **ZGW document keywords (trefwoorden)**
 
-  Document keywords can now be configured on a case. This will allow the user to add keywords when uploading a file using the Documenten API 
-  Autodeployment for this configuration is also available
+  Document keywords can now be configured on a case. This will allow the user to add keywords when uploading a file using the Documenten API.
+  Autodeployment for this configuration is also available.
 
 * **New feature2**
 
