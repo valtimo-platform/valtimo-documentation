@@ -13,6 +13,11 @@ The following features were added:
 
   Document list columns can now be configured via autodeployment. More information can be found [here](/using-valtimo/zgw/documents/zgw-documents.md#autodeployment-1)
 
+* **New feature1**
+
+  Description of the new feature goes here.
+  Also link to the page that explains the feature in greater detail.
+
 * **New feature2**
 
   Description of the new feature goes here.
