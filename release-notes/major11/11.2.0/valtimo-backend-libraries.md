@@ -67,7 +67,6 @@ The following features were added:
 * **Spring bean for JSON mapper**
 
   Valtimo now uses a Spring managed ObjectMapper to map from JSON to classes and vice versa.
-
 ## Bugfixes
 
 The following bugs were fixed:
