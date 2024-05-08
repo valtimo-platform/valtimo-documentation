@@ -24,6 +24,10 @@ The following features were added:
 
 The following bugs were fixed:
 
+* **Exporting permissions did not include the `roleKey` property**
+
+  The `roleKey` property was not included when exporting the permissions for a role. Because of this, it could not be imported or be used for auto-deployment.
+
 * **Besluiten API: create Besluit without Vervalreden**
 
   Creating a Besluit with an empty 'vervalreden' was not possible due to a serialization error.
