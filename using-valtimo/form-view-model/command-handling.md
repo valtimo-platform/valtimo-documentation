@@ -7,6 +7,10 @@ In this module, commands are used to handle form submissions. The command handli
 ## Command
 A command is a data class that represents the intention to change the state of the application. It should be a data class that implements the `Command` interface.
 
+It is recommended to use commands to handle form submissions.
+
+It is also possible to specify the return type of a command. In this case it is `Unit`.
+
 Here is an example of a command:
 ```kotlin
 data class ExampleCommand(
