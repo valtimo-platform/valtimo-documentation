@@ -59,3 +59,5 @@ Here is an example of the error message:
 ```
 The following properties are missing in the submission for form (user-task-2): [age]
 ```
+
+More info on the validation can be found here: [Contract validation on ViewModel and Submission](contract-validation.md)
