@@ -5,7 +5,7 @@ In order to capture these errors you can throw a `FormException`.
 
 This exception will be caught and converted into a FormError object which will be returned to the frontend.
 
-`FormException` also has a component property that in case you want the message to be displayed for a specific component.
+`FormException` also has a component property in case you want the message to be displayed for a specific component.
 
 Leaving the component empty will result in a message above the form.
 
