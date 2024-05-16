@@ -145,6 +145,12 @@ This page describes how to update Valtimo from the previous version to the curre
   usages in processes and code should be updated to use `DocumentDelegateService.getDocument(DelegateExecution)`
   instead.
 
+* **PostgreSQL10Dialect is deprecated**
+
+  Scope: back-end
+
+  The class `org.hibernate.dialect.PostgreSQL10Dialect` is deprecated, and should be replaced with `org.hibernate.dialect.PostgreSQLDialect` at the `spring.jpa.database-platform` property.
+
  **Zaaktype link moved**
 
   Scope: back-end

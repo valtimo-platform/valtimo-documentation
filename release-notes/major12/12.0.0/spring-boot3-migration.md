@@ -67,6 +67,6 @@ http.authorizeHttpRequests { requests ->
 ## Other   
 
 - Camunda History TTL is now required by default. Either:
-  - Set the [camunda:historyTimeToLive](https://docs.camunda.org/manual/7.20/reference/bpmn20/custom-extensions/extension-attributes/#historytimetolive) via the modeler or XML.
+  - Set the [camunda:historyTimeToLive](https://docs.camunda.org/manual/7.21/reference/bpmn20/custom-extensions/extension-attributes/#historytimetolive) via the modeler or XML.
   - Set the application property `camunda.bpm.generic-properties.properties.enforceHistoryTimeToLive` to `false` if you don't want to enforce a TTL.
 - Mockito 5 vararg matching [has changed](https://github.com/mockito/mockito/releases/tag/v5.0.0).
