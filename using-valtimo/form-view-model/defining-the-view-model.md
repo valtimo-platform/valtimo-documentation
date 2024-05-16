@@ -67,7 +67,7 @@ class TestViewModelLoader : ViewModelLoader<TestViewModel> {
 ```
 
 ## Contract validation
-On start up a class will validate that the structure of the `ViewModel` matches the submission structure of the form. If not an error message will be printed in the logs. Note that extra properties may be submitted in the form.
+On start up a class will validate that the structure of the `ViewModel` matches the submission structure of the form. If not an error message will be printed in the logs. Note that extra properties may be included in the form.
 
 Here is an example of the error message:
 ```
