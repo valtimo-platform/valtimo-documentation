@@ -28,6 +28,15 @@ This is the JSON representation of the error:
 }
 ```
 
+Form field error rendered above the form field
+
+<img src="img/formfield-validation.png" width="50%" height="50%" />
+
+Form error rendered above the form
+
+<img src="img/form-banner-validation.png" width="50%" height="50%" />
+
+
 During command handling you can also throw a `BusinessException`. This is similar to `FormException` but it will only show on top of the form
 
 ## BusinessException:
