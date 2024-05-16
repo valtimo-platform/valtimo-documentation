@@ -14,3 +14,5 @@ Step 2: Define the view-model structure for your form (see [Defining the view-mo
 Step 3: Define the submission structure for your form (see [Defining the submission structure](defining-the-submission-structure.md))
 
 Step 4: Command handling (see [Command handling](command-handling.md))
+
+Step 5: Error handling (see [Error handling](error-handling.md))
