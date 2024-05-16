@@ -86,8 +86,12 @@ The following features were added:
   The result is that deployment will no longer fail silently on this misconfiguration. 
   This behaviour is not applied to auto-deployment via classpath.
 
-* **Task list columns can be exported and imported**
-  Columns configured for the task list can now be exported and imported via the case administration.
+* **Task list columns**
+  
+  Columns can now be configured for the task list. 
+  Configured columns can also be exported, imported and autodeployed.
+
+  More information can be found [here](/using-valtimo/tasks/task-list-columns.md)
 
 * **ZGW Document list columns can be exported and imported**
   Columns configured for the ZGW document list can now be exported and imported via the case administration.
