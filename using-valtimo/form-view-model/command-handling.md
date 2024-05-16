@@ -41,6 +41,7 @@ class ExampleCommandHandler : CommandHandler<ExampleCommand, Unit> {
 
     override fun execute(command: ExampleCommand) {
         // ... handle the command ie: save to database or call another service
+        throw BusinessException("Something went wrong")
     }
 }
 ```

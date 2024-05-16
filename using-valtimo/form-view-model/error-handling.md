@@ -27,3 +27,13 @@ This is the JSON representation of the error:
   "component": "componentName"
 }
 ```
+
+During command handling you can also throw a `BusinessException`. This is similar to `FormException` but it will only show on top of the form
+
+## BusinessException:
+```kotlin
+class BusinessException(
+    message: String,
+    cause: Throwable? = null
+) : Exception(message, cause)
+```
