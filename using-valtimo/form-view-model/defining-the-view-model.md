@@ -12,7 +12,7 @@ view-model: A data model that serves as a bridge between the form and the BE so 
 
 A view-model is a data class that implements the `ViewModel` interface. The interface has a single method `update()` that is used to update the view-model based on the data that is passed to it.
 
-The `update()` method is triggered when the update endpoint is called.
+The `update()` method is triggered when the update endpoint is called. This endpoint is called automatically when a change is made in the form.
 
 ```kotlin
 data class TestViewModel(

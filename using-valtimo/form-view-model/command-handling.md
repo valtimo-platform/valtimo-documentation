@@ -9,7 +9,7 @@ A command is a data class that represents the intention to change the state of t
 
 It is recommended to use commands to handle form submissions.
 
-It is also possible to specify the return type of a command. In this case it is `Unit`.
+It is also possible to specify the return type of a command. In case you have nothing to return, specify it as `Unit`.
 
 Here is an example of a command:
 ```kotlin
