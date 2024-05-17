@@ -4,26 +4,37 @@
 
 The following features were added:
 
-* **New feature1**
+- **Document list updates**
 
-  Description of the new feature goes here.
-  Also link to the page that expains the feature in greater detail.
+  The list of documents associated with a case is now updated with the Carbon Design update.
 
-* **New feature2**
+- **ZGW tab**
 
-  Description of the new feature goes here.
-  Also link to the page that expains the feature in greater detail.
+  Under the Case management admin tab, there now exists a ZGW tab, whenever supported by the OpenZaak API.
 
+- **Document list column management**
+
+  Fields that are displayed in the document list, under case details, are now configurable. In the admin panel of a case definition, under the ZGW tab,
+  the configuration list can be found. Here the number of columns, the order in which they are displayed and wether or not a default sorting is applied can be edited.
+
+- **Document list filtering and sorting**
+
+  Sorting and filtering has been added to the document list. Not all columns are sortable.
+
+- **Carbon list updates**
+
+  - The Carbon list now supports extra template data. The ColumnConfig interface in the *@valtimo/components* library now contains an *templateData* attribute that can be used.
+  - The Carbon list supports a new display type called tags. More details about tags can be found [here](/reference/user-interface/components/valtimo-carbon-list/valtimo-carbon-list.md)
 
 ## Bugfixes
 
 The following bugs were fixed:
 
-* **Bug1**
+- **Bug1**
 
   Description of what the issue was.
 
-* **Bug2**
+- **Bug2**
 
   Description of what the issue was.
 
@@ -31,9 +42,9 @@ The following bugs were fixed:
 
 The following breaking changes were introduced:
 
-* **Breaking change1**
+- **Breaking change1**
 
-* **Breaking change2**
+- **Breaking change2**
 
 Instructions on how to migrate to this version of Valtimo can be found [here](migration.md).
 
@@ -41,10 +52,11 @@ Instructions on how to migrate to this version of Valtimo can be found [here](mi
 
 The following was deprecated:
 
-* **Deprecation1**
+- **Deprecation1**
 
   X was deprecated and is replaced with Y.
-* **Deprecation2**
+
+- **Deprecation2**
 
   X was deprecated and is replaced with Y.
 
@@ -54,10 +66,11 @@ Instructions on how to migrate to this version of Valtimo can be found [here](mi
 
 This version has the following known issues:
 
-* **Issue1**
-    * Discovered in version x.x.x
-    * Describe what can be done to work around the issue
+- **Issue1**
 
-* **Issue2**
-    * Discovered in version x.x.x
-    * Describe what can be done to work around the issue
+  - Discovered in version x.x.x
+  - Describe what can be done to work around the issue
+
+- **Issue2**
+  - Discovered in version x.x.x
+  - Describe what can be done to work around the issue

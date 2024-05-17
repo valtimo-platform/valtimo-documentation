@@ -11,6 +11,7 @@ There are a few options for defining lists, besides the Simple List defined belo
 - [List with multi-select](list-with-multi-select.md)
 - [List with toolbar actions](list-with-toolbar-actions.md)
 - [List with hidden headers](list-with-hidden-header.md)
+- [List with tags](list-with-tags.md)
 
 ## Setting up a simple list
 
