@@ -124,6 +124,11 @@ The following features were added:
 
   More information on how to enable and use this can be found [here](/using-valtimo/ui/settings.md#compact-mode) 
 
+* **FormIO Sandbox**
+
+  When editing at form, under form management, now a FormIO Sandbox is used. The Sandbox allows for editing forms via the UI as well as through a JSON. The Output tab
+  also showcases how the form displays and what it can output when filling in the form.
+
 ## Bugfixes
 
 The following bugs were fixed:
