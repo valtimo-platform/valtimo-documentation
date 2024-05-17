@@ -86,6 +86,11 @@ The following features were added:
   A new library has been added - `@valtimo/task-management`. It provides a page where list columns can be configured for
   tasks of a certain case type. Please follow the migration notes (section 'Task management') on [this page](migration.md).
 
+* **Filter tasks by case**
+  
+  The user can now filter tasks by selecting the case from a dropdown at the task list view. 
+  The case columns will change according to the configured task list columns per case.
+
 * **Rename upload process**
 
   The auto-deployed upload process `Upload Document` has been renamed to `Documenten API upload document`.
