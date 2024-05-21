@@ -146,6 +146,10 @@ The following bugs were fixed:
 
   After navigating away from Object page, breadcrumbs did not work properly anymore throughout the application. This issue has been fixed.
 
+* **Object title does not load on page switch**
+
+  When switching between different items in the object list menu, the object tile is not displayed properly. Instead of the title, a loading bar that doesn't stop is displayed. This issue has been fixed.
+
 ## Breaking changes
 
 The following breaking changes were introduced:
