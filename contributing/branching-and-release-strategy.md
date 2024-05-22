@@ -16,11 +16,11 @@ released publicly when the next minor version of the product is released.
 Breaking changes for the product are developed in the `next-major` branch. Only changes related to the breaking change
 are made here. Unrelated changes are still committed to `next-minor`.
 
-While in development, `next-minor` is frequently merged into `next-major`.
+While `next-major` is in development, `next-minor` is frequently merged into `next-major`.
 
 Once the breaking changes in `next-major` are finished and tested, `next-major` is merged into `next-minor`. This
 commit is tagged and released. Work then continues in the `next-minor` branch until a new breaking change needs to be
-made, and a new `next-major` branch is created.
+made, and a new `next-major` branch is created from `next-minor`.
 
 ### Back-end libraries
 
@@ -34,7 +34,7 @@ Bugfix branches follow the naming scheme: `bugfix/12345-fix-security`. They are 
 
 ### Front-end libraries
 
-All branches for the front-end libraries are branched from `next-minor` or `next-major` (if this exists).
+All branches for the front-end libraries are branched off `next-minor` or `next-major` (if this exists).
 
 Since the front-end does not have the same security concerns as the back-end libraries, it is recommended to develop new
 features behind feature toggles. During development, the toggle can be enabled on the test environment, while remaining
@@ -52,14 +52,14 @@ needs to be turned off by default.
 Changes in `next-minor` in both `valtimo-frontend-libraries` and `valtimo-backend-libraries` are released as frequently
 as possible, but only when the branches are stable. There is a maximum of 4 weeks between releases.
 
-A release is done by tagging the commit that is to be released. After this, a short-lived release branch is created,
-from which a release candidate is made for internal testing. If this release is satisfactory, a release is made based
-on the release tag.
+A release is done by creating a release branch from the `next-minor` branch. After this, a short-lived release candidate
+is created from this branch for internal testing. If this release is satisfactory, the release branch is tagged,
+and a release is made. Afterward, the release branch is deleted.
 
 ### Bugfixes
 
 If bugs are encountered for unreleased minor or major versions, fixes for these bugs are made in `bugfix/*` branches,
-branched of from `next-minor` and `next-major` respectively.
+branched off from `next-minor` and `next-major` respectively.
 
 If bugs need to be fixed in previous releases, the fixes are done in `next-minor` if it all possible. After the fixes
 are tested and merged, they are cherry-picked into a branch based of the tags of the release(s) in which they need to be
@@ -69,10 +69,10 @@ minor release, in order to avoid maintaining many releases at once.
 An example scenario for a bugfix in a previous release:
 
 `next-minor` is currently headed for release `12.4`. A bug has been encountered in release `12.3`. In this case,
-the fix for this bug is developed in the branch `bugfix/12345-fix-issue`, based of the `next-minor` branch. After
-`bugfix/12345-fix-issue` is merged into `next-minor`, the merge commit is cherry-picked into a branch made from the
+the fix for this bug is developed in the branch `bugfix/12345-fix-issue`, branched off the `next-minor` branch. After
+`bugfix/12345-fix-issue` is merged into `next-minor`, the merge commit is cherry-picked into a branch based on the
 `12.3` release tag. A release is made from this branch with the fix included, and the latest commit of this branch is
-tagged as `12.3.1`. The release is branch is deleted.
+tagged as `12.3.1`. The release branch is subsequently deleted.
 
 With this way of working, bugfixes are always included in the next minor release. If another issue is encountered in
 `12.3.1`, the same process is followed, and a `12.3.2` release is made, based off the `12.3.1` release tag.
