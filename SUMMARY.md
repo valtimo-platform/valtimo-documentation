@@ -150,6 +150,7 @@
   * ZGW
     * [Documents](/using-valtimo/zgw/documents/zgw-documents.md)
 * [Extending Valtimo](extending-valtimo/extending-valtimo.md)
+  * [Branching and release strategy](extending-valtimo/branching-and-release-strategy.md)
   * [Access control](extending-valtimo/access-control/access-control.md)
     * [Creating a resource](extending-valtimo/access-control/registering-a-resource.md)
     * [Creating a relation to another resource](extending-valtimo/access-control/create-relation-between-resources.md)
