@@ -77,6 +77,3 @@ tagged as `12.3.1`. The release branch is subsequently deleted.
 With this way of working, bugfixes are always included in the next minor release. If another issue is encountered in
 `12.3.1`, the same process is followed, and a `12.3.2` release is made, based off the `12.3.1` release tag.
 
-
-
-
