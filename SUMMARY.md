@@ -8,7 +8,6 @@
     * [Documents](introduction/modules/document-introduction.md)
     * [Form flow](introduction/modules/form-flow-introduction.md)
     * [Plugins](introduction/modules/plugin-introduction.md)
-  * [How to contribute](contributing/contributing-to-valtimo)
   * [Style guide for contributing](STYLE-GUIDE.md)
 * [Contributing](contributing/contributing.md)
   * [Branching and release strategy](contributing/branching-and-release-strategy.md)
