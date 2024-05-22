@@ -68,7 +68,7 @@ minor release, in order to avoid maintaining many releases at once.
 
 An example scenario for a bugfix in a previous release:
 
-`next-minor` is currently headed for release 12.4. A bug has been encountered in release 12.3. In this case,
+`next-minor` is currently headed for release `12.4`. A bug has been encountered in release `12.3`. In this case,
 the fix for this bug is developed in the branch `bugfix/12345-fix-issue`, based of the `next-minor` branch. After
 `bugfix/12345-fix-issue` is merged into `next-minor`, the merge commit is cherry-picked into a branch made from the
 `12.3` release tag. A release is made from this branch with the fix included, and the latest commit of this branch is
