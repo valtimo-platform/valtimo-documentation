@@ -9,7 +9,7 @@ development team are welcomed. To make this possible, the below branching and re
 
 Both [valtimo-frontend-libraries](https://github.com/valtimo-platform/valtimo-frontend-libraries) and [valtimo-backend-libraries](https://github.com/valtimo-platform/valtimo-backend-libraries/)
 are mainly developed in one single branch: `next-minor`. As its name implies, all commits made into `next-minor` will be
-released publicly when the next minor version of the product is released.
+included when the next minor version of the product is released.
 
 ### `next-major`
 
@@ -26,11 +26,12 @@ made, and a new `next-major` branch is created from `next-minor`.
 
 Because of security reasons, back-end features are developed in feature branches, branched off from `next-minor`. 
 Feature branches are named `feature/*`. Parts of the feature are developed in branches prefixed with `story/`,
-which include a story number. For example: `story/12345-add-endpoint`. These story branches are merged into
-the feature branch as soon as possible. In addition, `next-minor` is merged frequently into the feature branch.
+which include a story number, if a story is available. For example: `story/add-endpoint` or `story/12345-add-endpoint`.
+These story branches are merged into the feature branch as soon as possible. In addition, `next-minor` is merged
+frequently into the feature branch.
 
-Bugfix branches follow the naming scheme: `bugfix/12345-fix-security`. They are either merged into `next-minor`, 
-`feature/*` or to `next-major` (if this exists). 
+Bugfix branches follow the naming scheme: `bugfix/fix-security` or `bugfix/12345-fix-security`. They are either merged
+into `next-minor`, `feature/*` or to `next-major` (if this exists). 
 
 ### Front-end libraries
 
@@ -42,7 +43,8 @@ disabled in production. When the feature is done, the feature toggle is removed 
 
 In some cases, feature branches like explained above for the back-end libraries, can also be used for the front-end
 libraries. For this reason, branches for parts of a feature behind a feature toggle, are prefixed with `story/`, for
-example: `story/12345-add-button`. The naming scheme `feature/*` is reserved for longer lived feature branches.
+example: `story/add-button` or `story/12345-add-button` (if a story number is available). The naming scheme `feature/*`
+is reserved for longer lived feature branches.
 
 If the use case calls for it, feature toggles can be retained if a feature is finished, for example if the feature
 needs to be turned off by default.
@@ -69,8 +71,8 @@ minor release, in order to avoid maintaining many releases at once.
 An example scenario for a bugfix in a previous release:
 
 `next-minor` is currently headed for release `12.4`. A bug has been encountered in release `12.3`. In this case,
-the fix for this bug is developed in the branch `bugfix/12345-fix-issue`, branched off the `next-minor` branch. After
-`bugfix/12345-fix-issue` is merged into `next-minor`, the merge commit is cherry-picked into a branch based on the
+the fix for this bug is developed in the branch `bugfix/fix-issue`, branched off the `next-minor` branch. After
+`bugfix/fix-issue` is merged into `next-minor`, the merge commit is cherry-picked into a branch based on the
 `12.3` release tag. A release is made from this branch with the fix included, and the latest commit of this branch is
 tagged as `12.3.1`. The release branch is subsequently deleted.
 

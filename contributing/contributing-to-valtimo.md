@@ -24,7 +24,7 @@ already existing feature).
    do not forget to merge it back into that Valtimo release branch as part of the PR, add all
    [team Valtimo developers](https://github.com/orgs/valtimo-platform/teams/valtimo-product-team/members) to this PR
    as reviewers.
-   - Information on what language to use, as well as general guidelines can be found [here](../STYLE-GUIDE.md).
+   - Information on what language to use, as well as general guidelines can be found [here](style-guide).
    - Release notes to in the `release-notes` package.
    - If new pages are added, these should also be added to `SUMMARY.md`. The sidebar shown on GitBook corresponds to
       this structure.
