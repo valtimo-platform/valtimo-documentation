@@ -80,6 +80,12 @@ section and their respective target audience.
 This section is intended for anyone interested in Valtimo. It should contain only general descriptions, and technical
 details should be understandable for everyone.
 
+## Contributing
+
+This section is intended for developers who want to contribute to the Valtimo product through code. It contains
+a description of how the product's release and branching strategy is set up. Moreover, it contains documentation
+related to contributing to the product from a technical perspective.
+
 ## Creating your own Valtimo implementation
 
 This section is intended for people with good technical knowledge, who would like to create their own Valtimo 
