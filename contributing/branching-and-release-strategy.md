@@ -11,16 +11,24 @@ Both [valtimo-frontend-libraries](https://github.com/valtimo-platform/valtimo-fr
 are mainly developed in one single branch: `next-minor`. As its name implies, all commits made into `next-minor` will be
 included when the next minor version of the product is released.
 
+![next-minor scenario](resources/next-minor.png)
+*Using the `next-minor` branch*
+
 ### `next-major`
 
 Breaking changes for the product are developed in the `next-major` branch. Only changes related to the breaking change
 are made here. Unrelated changes are still committed to `next-minor`.
 
-While `next-major` is in development, `next-minor` is frequently merged into `next-major`.
+`next-minor` is frequently merged into `next-major`, in order to avoid future merge conflicts.
 
-Once the breaking changes in `next-major` are finished and tested, `next-major` is merged into `next-minor`. This
-commit is tagged and released. Work then continues in the `next-minor` branch until a new breaking change needs to be
-made, and a new `next-major` branch is created from `next-minor`.
+Once the breaking changes in `next-major` are finished and tested, `next-major` is merged into `next-minor`. The merge
+commit is then tagged and released. The branch `next-major` is not deleted after this merge and release.
+
+Work then continues in the `next-minor` branch until a new breaking change needs to be made, which will again be
+developed in the `next-major` branch.
+
+![next-major scenario](resources/next-major.png)
+*Using the `next-major` branch*
 
 ### Back-end libraries
 
@@ -31,11 +39,14 @@ These story branches are merged into the feature branch as soon as possible. In 
 frequently into the feature branch.
 
 Bugfix branches follow the naming scheme: `bugfix/fix-security` or `bugfix/12345-fix-security`. They are either merged
-into `next-minor`, `feature/*` or to `next-major` (if this exists). 
+into `next-minor`, `feature/*` or to `next-major`. 
+
+![back-end libraries scenario](resources/backend-libraries.png)
+*Working with feature branches on `next-minor` for back-end libraries*
 
 ### Front-end libraries
 
-All branches for the front-end libraries are branched off `next-minor` or `next-major` (if this exists).
+All branches for the front-end libraries are branched off `next-minor` or `next-major`.
 
 Since the front-end does not have the same security concerns as the back-end libraries, it is recommended to develop new
 features behind feature toggles. During development, the toggle can be enabled on the test environment, while remaining
@@ -49,6 +60,10 @@ is reserved for longer lived feature branches.
 If the use case calls for it, feature toggles can be retained if a feature is finished, for example if the feature
 needs to be turned off by default.
 
+
+![front-end libraries scenario](resources/frontend-libraries.png)
+*Working with feature toggles on `next-minor` for front-end libraries*
+
 ## Releasing
 
 Changes in `next-minor` in both `valtimo-frontend-libraries` and `valtimo-backend-libraries` are released as frequently
@@ -57,6 +72,9 @@ as possible, but only when the branches are stable. There is a maximum of 4 week
 A release is done by creating a release branch from the `next-minor` branch. After this, a short-lived release candidate
 is created from this branch for internal testing. If this release is satisfactory, the release branch is tagged,
 and a release is made. Afterward, the release branch is deleted.
+
+![release scenario](resources/releasing.png)
+*Release process from `next-minor` branch*
 
 ### Bugfixes
 
@@ -79,3 +97,5 @@ tagged as `12.3.1`. The release branch is subsequently deleted.
 With this way of working, bugfixes are always included in the next minor release. If another issue is encountered in
 `12.3.1`, the same process is followed, and a `12.3.2` release is made, based off the `12.3.1` release tag.
 
+![bugfixing scenario](resources/bugfixing.png)
+*Fixing a bug in a previous release in `next-minor` branch*
