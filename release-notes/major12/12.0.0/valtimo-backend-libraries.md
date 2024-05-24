@@ -37,7 +37,7 @@ The following features were added:
   Value resolver now supports resolving and handling `null` values. This change can break existing value resolver
   implementations.
 
-  Migration instructions related to this change can be found [here](migration).
+  Migration instructions related to this change can be found [here](migration.md).
 
 * **Plugin actions on all activity types**
 
@@ -93,9 +93,6 @@ The following features were added:
 
   More information can be found [here](/using-valtimo/tasks/task-list-columns.md)
 
-* **ZGW Document list columns can be exported and imported**
-  Columns configured for the ZGW document list can now be exported and imported via the case administration.
-
 ## Bugfixes
 
 The following bugs were fixed:
@@ -132,7 +129,7 @@ The following breaking changes were introduced:
   Valtimo has been upgraded to Spring Boot 3.
   This was needed to keep the product up to date with the latest (transitive) dependencies.
 
-  Migration instructions related to this change can be found [here](spring-boot3-migration).
+  Migration instructions related to this change can be found [here](spring-boot3-migration.md).
 
 * **Valtimo dependencies have changed**
   `valtimo-dependencies` and `valtimo-gzac-depenencies` should no longer be used for `dependencyManagement` or `platform`. 
