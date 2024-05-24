@@ -228,12 +228,4 @@ The following was deprecated:
 
 ## Known issues
 
-This version has the following known issues:
-
-* **Issue1**
-    * Discovered in version x.x.x
-    * Describe what can be done to work around the issue
-
-* **Issue2**
-    * Discovered in version x.x.x
-    * Describe what can be done to work around the issue
+No known issues.
