@@ -25,10 +25,10 @@ The following features were added:
 
   - The Carbon list now supports extra template data. The ColumnConfig interface in the *@valtimo/components* library now contains an *templateData* attribute that can be used.
   - The Carbon list supports a new display type called tags. More details about tags can be found [here](/reference/user-interface/components/valtimo-carbon-list/valtimo-carbon-list.md)
- 
-  - - **Plugin modal updates**
 
-  - The modals for adding and editing a plugin are now updated with the Carbon Design update.
+- **Plugin modal updates**
+
+  The modals for adding and editing a plugin are now updated with the Carbon Design update.
 
 ## Bugfixes
 
