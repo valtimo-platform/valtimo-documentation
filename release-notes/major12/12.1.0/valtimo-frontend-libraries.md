@@ -28,7 +28,7 @@ The following features were added:
 
 - **Plugin modal updates**
 
-  The modals for adding and editing a plugin are now updated with the Carbon Design update.
+  The modals for adding and editing a plugin now use Carbon design.
 
 ## Bugfixes
 
