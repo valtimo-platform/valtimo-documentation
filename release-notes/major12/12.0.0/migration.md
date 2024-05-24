@@ -19,7 +19,7 @@ This page describes how to update Valtimo from the previous version to the curre
 
   Scope: back-end
 
-    1. **Step 1: Find filed**
+    1. **Step 1: Find files**
 
        Locate all files in the backend libraries matching: `/resources/config/<filepath>/<filename>.permission.json`
     2. **Step 2: Locate permissions**
@@ -230,12 +230,12 @@ This page describes how to update Valtimo from the previous version to the curre
     5. **Step 5: Equalize project dependencies with Valtimo dependencies**
        In order to start your implementation, all dependency version numbers should be equal to the ones used in the
         <!--- To do: replace below link to final 12.0 package.json --->
-       libraries project. This can be done manually by navigating to the [libraries package.json](https://raw.githubusercontent.com/valtimo-platform/valtimo-frontend-libraries/development/12.0.0/package.json)
+       libraries project. This can be done manually by navigating to the [libraries package.json](https://raw.githubusercontent.com/valtimo-platform/valtimo-frontend-libraries/rc/12.0.0/package.json)
         and copying over the version numbers.
         It can also be automatically by running the following command from the terminal when in the root of your
         implementation (where `package.json` is located). When prompted to install dependencies, answer yes.
           <!--- To do: replace below link to final 12.0 script --->
-        `npx make-dir-cli tmp && npx node-wget https://raw.githubusercontent.com/valtimo-platform/valtimo-frontend-libraries/development/12.0.0/scripts/equalize-deps.cjs -d tmp/equalize-deps.cjs && node tmp/equalize-deps.cjs`
+        `npx make-dir-cli tmp && npx node-wget https://raw.githubusercontent.com/valtimo-platform/valtimo-frontend-libraries/rc/12.0.0/scripts/equalize-deps.cjs -d tmp/equalize-deps.cjs && node tmp/equalize-deps.cjs`
 
   6. **Step 6: Install dependencies and build project**
         After completing the previous steps, run `npm i` in the root of your project to install all dependencies, and
