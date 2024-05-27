@@ -8,5 +8,12 @@ dependencies {
 }
 ```
 
+Enable the feature toggle in your project's environment.ts file:
+```typescript
+featureToggles: {
+    enableFormViewModel: true
+}
+```
+
 Enable the feature for a form via the process-link menu
 ![enable toggle](img/enable-toggle.png)
