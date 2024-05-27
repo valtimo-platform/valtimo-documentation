@@ -45,3 +45,17 @@ class ExampleCommandHandler : CommandHandler<ExampleCommand, Unit> {
     }
 }
 ```
+
+## Decorator
+
+Each command handler can be wrapped with a decorator. This allows you to add additional functionality to the command handler.
+Default decorators are provided these are useful for logging and error handling.
+- LogDecorator logs the command details.
+```kotlin
+   logger.trace { "Command details '$command'" }
+```
+- ExecutionTimeDecorator logs the execution time of the command handler.
+```kotlin
+    logger.trace { "Timed '${command.javaClass.simpleName}' execution time = '$totalTime' in milliseconds" }
+```
+
