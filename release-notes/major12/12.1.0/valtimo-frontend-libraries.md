@@ -32,6 +32,11 @@ The following features were added:
   Valtimo. More information can be
   found [here](/using-valtimo/plugin/documenten-api/configure-documenten-api-plugin.md#documenten-api-version).
 
+- **Plugin modal updates**
+
+  The modals for adding and editing a plugin now use Carbon design.
+
+
 ## Bugfixes
 
 The following bugs were fixed:
