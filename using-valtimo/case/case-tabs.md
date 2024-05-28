@@ -33,6 +33,12 @@ Form.io tabs are tabs that show a single Form.io form as the tab content. Any Fo
 with valtimo can be chosen. This is purely meant to display information, as there is no way to submit the information
 even if a submit button has been added to the form definition.
 
+### Widget tabs
+Widget tabs are tabs that show data by using widgets. 
+These widgets can be configured to show specific data as fields, tables and more.
+
+For more information, visit [this page](case-widgets-tab)
+
 ### Custom tabs
 
 When you want tab with functionality that is not covered by the other tab types you can create a custom Angular
