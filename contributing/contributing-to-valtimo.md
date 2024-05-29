@@ -2,12 +2,11 @@
 
 ## Adding a feature or bugfix to Valtimo
 
-1. Create an issue in the [Valtimo issues repository](https://github.com/valtimo-platform/valtimo-issues) to discuss your contribution. This is to reduce the work that is required, as it can both reduce the chances of feedback and allows for the Valtimo team to provide some pointers on how to proceed.
-2. Implement the feature/bugfix and create a PR to the development branch. No reviewers are necessary.
-   * Instructions on how to run Valtimo locally is split into Valtimo core and GZAC for `backend-libraries`, which can be
-   found [here](https://github.com/valtimo-platform/valtimo-backend-libraries/blob/main/app/valtimo-core/README.md) and [here](https://github.com/valtimo-platform/valtimo-backend-libraries/blob/main/app/gzac/README.md) respectively. For instructions on how to run the `frontend-libraries`, see [here](https://github.com/valtimo-platform/valtimo-frontend-libraries/blob/development/README.md).
+1. Create an issue in the [Valtimo](https://github.com/valtimo-platform/valtimo-issues) or [GZAC](https://github.com/generiekzaakafhandelcomponent/gzac-issues) issues repository. 
+2. Implement the feature/bugfix in the library repository/repositories and [create a pull request (PR)](#creating-a-pull-request). No reviewers are necessary.
+   * Instructions on how to run Valtimo locally can be found in the README.md of the library repositories.
 3. Write release notes and documentation for the feature. See below for instructions on how to do this.
-4. Merge the branch after getting an approval from the Valtimo team.
+4. Merge the PR after getting an approval from the Valtimo team.
 
 ## Adding documentation to Valtimo
 
@@ -16,25 +15,26 @@ to a particular change in the product that will be included in an upcoming relea
 documentation that is not related to an upcoming release (e.g. fixing spelling errors, or documenting part of an
 already existing feature).
 
-## Writing documentation related to an upcoming release
+* The source of the Valtimo documentation is [this repository](https://github.com/valtimo-platform/valtimo-documentation).
+* Information on what language to use, as well as general guidelines can be found [here](style-guide).
+* If new pages are added, these should also be added to `SUMMARY.md`. The sidebar shown on the Valtimo documentation corresponds to
+  this structure.
 
-1. Write documentation/release notes. These should be written as a PR for
-   [this repository](https://github.com/valtimo-platform/valtimo-documentation). There should already be a
-   branch for the upcoming Valtimo release (e.g. `feature/release-notes-9.17.0`). Make a branch from that branch, and
-   do not forget to merge it back into that Valtimo release branch as part of the PR, add all
-   [team Valtimo developers](https://github.com/orgs/valtimo-platform/teams/valtimo-product-team/members) to this PR
-   as reviewers.
-   - Information on what language to use, as well as general guidelines can be found [here](style-guide).
-   - Release notes to in the `release-notes` package.
-   - If new pages are added, these should also be added to `SUMMARY.md`. The sidebar shown on GitBook corresponds to
-      this structure.
-2. Merge the branch after getting an approval from the Valtimo team.
+### Writing documentation related to an upcoming release
 
-## Writing documentation unrelated to an upcoming release
+1. Write documentation/release notes and [create a pull request (PR)](#creating-a-pull-request).
+   * Use the same base- and target branch as the changes in the library: 
+     * `next-minor` for non-breaking changes
+     * `next-major` for breaking changes.
+2. Merge the PR after getting an approval from the Valtimo team.
+
+### Writing documentation unrelated to an upcoming release
 
 1. In case of a new page, discuss the documentation you want to write with someone from the Valtimo team.
-2. Write documentation. This should be written as a PR for
-   [this repository](https://github.com/valtimo-platform/valtimo-documentation). Make a branch from the `main` branch,
-   add all [team Valtimo developers](https://github.com/orgs/valtimo-platform/teams/valtimo-product-team/members) to
-   this PR as reviewers.
-3. Merge the branch after getting an approval from the Valtimo team.
+2. Write documentation and [create a pull request (PR)](#creating-a-pull-request).
+   * Use `next-minor` as base- and target branch.
+3. Merge the PR after getting an approval from the Valtimo team.
+
+## Creating a pull request
+For both changes to the library and the documentation, it is required to fork the repository to implement the changes and create the PR.
+More information can be found [here](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request).
