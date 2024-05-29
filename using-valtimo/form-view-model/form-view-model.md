@@ -1,6 +1,6 @@
 # Form view model
 
-The Form View Model offers an alternative approach to handling forms in user tasks, especially useful for complex forms typically found in large custom projects. This module provides control over pre-filling, intermediate updates, and submissions.
+The Form View Model offers an alternative approach to handling forms for starting a process and user tasks, especially useful for complex forms typically found in large custom projects. This module provides control over pre-filling, onchange updates, and submissions.
 
 Submission handling covers 2 scenarios:
 - When a form is submitted within a `user task`, the task is automatically completed.
@@ -10,7 +10,6 @@ Submission handling covers 2 scenarios:
 > In short any form of persistence is the responsibility of the developer except for Camunda task completion / Process instance start, this is provided out of the box.
 
 This step-by-step guide will explain the module and demonstrate its implementation.
-
 
 - Step 1: Enabling the module in your project (see [Enabling the module](enabling-the-module.md))
 
