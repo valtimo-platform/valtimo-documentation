@@ -34,9 +34,10 @@ The following features were added:
 
 The following bugs were fixed:
 
-- **Bug1**
+- **New user tasks don't always appear**
 
-  Description of what the issue was.
+  When starting a case or when completing a user task, the next user task will now be shown on the summary page without
+  the need of a hard refresh.
 
 - **Bug2**
 
