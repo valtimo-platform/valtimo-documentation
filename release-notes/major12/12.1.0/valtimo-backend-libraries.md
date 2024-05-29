@@ -13,10 +13,9 @@ The following features were added:
 
   Document list columns can now be configured via autodeployment. More information can be found [here](/using-valtimo/zgw/documents/zgw-documents.md#autodeployment-1).
 
-* **New feature1**
+* **Verified form flow submission**
 
-  Description of the new feature goes here.
-  Also link to the page that explains the feature in greater detail.
+  The submission data is now verified when submitting a form that is part of a form flow.
 
 * **New feature2**
 
