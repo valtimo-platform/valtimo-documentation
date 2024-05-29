@@ -10,9 +10,9 @@ view-model: A data model that serves as a bridge between the form and the BE so 
 
 ## How to define a view-model
 
-A view-model is a data class that implements the `ViewModel` interface. The interface has a single method `update(task: CamundaTask)` that is used to update the view-model based on the data that is passed to it.
+A view-model is a data class that implements the `ViewModel` interface. The interface has a single method `update(task: CamundaTask?)` that is used to update the view-model based on the data that is passed to it.
 
-The `update()` method is triggered when the update endpoint is called. This endpoint is called automatically when a change is made in the form.
+The `update(task: CamundaTask?)` method is triggered when the update endpoint is called. This endpoint is called automatically when a change is made in the form.
 
 ```kotlin
 data class TestViewModel(
@@ -22,7 +22,8 @@ data class TestViewModel(
     val age: Int,
     var adultPermissionRequired: Boolean = false
 ) : ViewModel {
-    override fun update(task: CamundaTask): ViewModel {
+
+    override fun update(task: CamundaTask?): ViewModel {
         if (this.age!! < 18) {
             this.adultPermissionRequired = true
         }
@@ -38,7 +39,7 @@ After you define a `ViewModel` you also need to define a loader.
 
 A `ViewModelLoader` is a class that is used to load the view-model.
 
-The `load()` method is used to load the view-model the `task: CamundaTask` is passed on to retrieve process variables additionally.
+The `load(task: CamundaTask?)` method is used to load the view-model the `task: CamundaTask` is passed on to when a form is user task related.
 
 The `supports()` method is used to find the correct loader for the given form.
 
@@ -50,7 +51,7 @@ The `ViewModelLoader` also needs to be registered as a bean in the Spring contex
 ```kotlin
 @Component
 class TestViewModelLoader : ViewModelLoader<TestViewModel> {
-    override fun load(task: CamundaTask): TestViewModel {
+    override fun load(task: CamundaTask?): TestViewModel {
         return TestViewModel(
             firstName = "",
             lastName = "",

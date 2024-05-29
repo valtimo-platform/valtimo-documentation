@@ -33,7 +33,9 @@ The `handle()` method is used to handle the submission data. You can handle this
 
 The submission handler also needs to be registered as a bean in the Spring context.
 
-Here is an example of a submission handler:
+Here is an example of a submission handler implementation:
+
+NOTE: The handler is used for start-form and user-task forms.
 ```kotlin
 @Component
 class TestSubmissionHandler : FormViewModelSubmissionHandler<TestSubmission> {
@@ -42,7 +44,7 @@ class TestSubmissionHandler : FormViewModelSubmissionHandler<TestSubmission> {
         return formName == "test"
     }
 
-    override fun <T> handle(submission: T, task: CamundaTask) {
+    override fun <T> handle(submission: T, task: CamundaTask?, businessKey: String) {
         submission as TestSubmission
         val exampleCommand = ExampleCommand(
             age = submission.age
