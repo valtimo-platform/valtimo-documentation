@@ -3,7 +3,7 @@
 On start up the module will validate that the structure of the `ViewModel` matches the FormDefinition structure of the form. 
 This is also done for the submission structure of the form. If not an error message will be printed in the logs.
 
-NOTE: The View Model is used for start-form and user-task forms scenarios. When CamundaTask is not null the form is a user-task form, otherwise it is a start-form.
+> The View Model is used for start-form and user-task forms scenarios. When CamundaTask is not null the form is a user-task form, otherwise it is a start-form.
 
 ## ViewModel example:
 ```kotlin

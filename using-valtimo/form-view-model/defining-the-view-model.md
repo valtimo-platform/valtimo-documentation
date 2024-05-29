@@ -39,7 +39,7 @@ After you define a `ViewModel` you also need to define a loader.
 
 A `ViewModelLoader` is a class that is used to load the view-model.
 
-The `load(task: CamundaTask?)` method is used to load the view-model the `task: CamundaTask` is passed on to when a form is user task related.
+The `load(task: CamundaTask?)` method is used to load the view model. When the form is related to a user task, the task: CamundaTask is passed to this method.
 
 The `supports()` method is used to find the correct loader for the given form.
 
