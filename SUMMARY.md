@@ -10,7 +10,7 @@
     * [Plugins](introduction/modules/plugin-introduction.md)
 * [Contributing](contributing/contributing.md)
   * [Contributing to Valtimo](contributing/contributing-to-valtimo.md)
-  * [Style guide for contributing](contributing/style-guide)
+  * [Style guide for contributing](contributing/style-guide-for-contributing.md)
   * [Branching and release strategy](contributing/branching-and-release-strategy.md)
 * [Getting started](getting-started/getting-started.md)
   * [First dive into Valtimo](getting-started/first-dive/first-dive.md)
@@ -21,7 +21,7 @@
     * [Valtimo List](getting-started/components/valtimo-list/valtimo-list.md)
   * [Configure database](getting-started/configure-database.md)
   * [Modules](getting-started/modules/modules.md)
-    * Core
+    * [Core](getting-started/modules/core/README.md)
       * [Audit](getting-started/modules/core/audit.md)
       * [Authorization](getting-started/modules/core/authorization.md)
       * [Camunda](getting-started/modules/core/camunda-webapps.md)
@@ -55,7 +55,7 @@
       * [Valtimo dependency versions](getting-started/modules/core/valtimo-dependency-versions.md)
       * [Web](getting-started/modules/core/web/web.md)
         * [CORS](getting-started/modules/core/web/valtimo-cors.md)
-    * ZGW
+    * [ZGW](getting-started/modules/zgw/README.md)
       * [Besluit](getting-started/modules/zgw/besluit.md)
       * [Besluiten API](getting-started/modules/zgw/besluiten-api.md)
       * [Catalogi API](getting-started/modules/zgw/catalogi-api.md)
@@ -142,15 +142,15 @@
     * [Creating a process link](using-valtimo/process-link/create-process-link.md)
     * [Editing a process link](using-valtimo/process-link/edit-process-link.md)
     * [Unlinking a process link](using-valtimo/process-link/unlink-process-link.md)
-  * Tasks
+  * [Tasks](using-valtimo/tasks/README.md)
     * [Task list columns](using-valtimo/tasks/task-list-columns.md)
   * [Upload](using-valtimo/upload/upload.md)
     * [Temporary file storage](using-valtimo/upload/temporary-file-storage.md)
     * [Uploading to Documenten API with metadata](using-valtimo/upload/upload-to-documenten-api-with-metadata.md)
   * [Web](using-valtimo/web/web.md)
     * [Configure CORS in Valtimo](using-valtimo/web/valtimo-cors.md)
-  * ZGW
-    * [Documents](/using-valtimo/zgw/documents/zgw-documents.md)
+  * [ZGW](using-valtimo/zgw/README.md)
+    * [Documents](using-valtimo/zgw/documents/zgw-documents.md)
 * [Extending Valtimo](extending-valtimo/extending-valtimo.md)
   * [Access control](extending-valtimo/access-control/access-control.md)
     * [Creating a resource](extending-valtimo/access-control/registering-a-resource.md)
@@ -172,7 +172,7 @@
   * [Creating a custom outbox message publisher](extending-valtimo/outbox/create-custom-message-publisher.md)
   * [Plugins](extending-valtimo/plugin/plugins.md)
     * [Custom plugin definitions](extending-valtimo/plugin/custom-plugin-definition.md)
-  * Process
+  * [Process](extending-valtimo/process/README.md)
     * [Whitelisting Spring beans for Camunda](extending-valtimo/process/whitelist-spring-bean.md)
   * [Tabs](extending-valtimo/tabs/tabs.md)
     * [Customizing case details tabs](extending-valtimo/tabs/customizing-case-tabs.md)
@@ -188,7 +188,7 @@
     * [Outbox](reference/modules/outbox.md)
     * [Dashboard](reference/modules/dashboard.md)
     * [Case](reference/modules/case.md)
-    * Core
+    * [Core](reference/modules/core/README.md)
       * [ZonedLocalDateTimeDeserializer](reference/modules/core/zoned-localdatetime-deserializer.md)
     * [Document](reference/modules/document.md)
     * [Form](reference/modules/form.md)
@@ -214,128 +214,128 @@
   * [Content Security Policy (CSP)](reference/content-security-policy.md)
   * [Troubleshoot](reference/troubleshoot.md)
   * [Environment](reference/environment.md)
-* Release notes
+* [Release notes](release-notes/README.md)
   * [Release notes](release-notes/release-notes.md)
-  * 12.x.x
-    * 12.0.0
+  * [12.x.x](release-notes/12.x.x/README.md)
+    * [12.0.0](release-notes/12.x.x/12.0.0/README.md)
       * [Valtimo backend libraries](release-notes/major12/12.0.0/valtimo-backend-libraries.md)
       * [Valtimo frontend libraries](release-notes/major12/12.0.0/valtimo-frontend-libraries.md)
       * [Migration](release-notes/major12/12.0.0/migration.md)
         * [Spring Boot 3](release-notes/major12/12.0.0/spring-boot3-migration.md)
-    * 12.1.0
+    * [12.1.0](release-notes/12.x.x/12.1.0/README.md)
       * [Valtimo backend libraries](release-notes/major12/12.1.0/valtimo-backend-libraries.md)
       * [Valtimo frontend libraries](release-notes/major12/12.1.0/valtimo-frontend-libraries.md)
       * [Migration](release-notes/major12/12.1.0/migration.md)
-  * 11.x.x
-    * 11.3.0
+  * [11.x.x](release-notes/11.x.x/README.md)
+    * [11.3.0](release-notes/11.x.x/11.3.0/README.md)
       * [Valtimo backend libraries](release-notes/major11/11.3.0/valtimo-backend-libraries.md)
       * [Valtimo frontend libraries](release-notes/major11/11.3.0/valtimo-frontend-libraries.md)
-    * 11.2.0 (RC)
+    * [11.2.0 (RC)](release-notes/11.x.x/11.2.0-rc/README.md)
       * [Valtimo backend libraries](release-notes/major11/11.2.0/valtimo-backend-libraries.md)
       * [Valtimo frontend libraries](release-notes/major11/11.2.0/valtimo-frontend-libraries.md)
-    * 11.1.5
+    * [11.1.5](release-notes/11.x.x/11.1.5/README.md)
       * [Valtimo frontend libraries](release-notes/major11/11.1.5/valtimo-frontend-libraries.md)
-    * 11.1.4
-      * [Valtimo backend libraries](release-notes/major11/11.1.4/valtimo-backend-libraries.md)
-      * [Valtimo frontend libraries](release-notes/major11/11.1.4/valtimo-frontend-libraries.md)
-    * 11.1.1
+    * [11.1.4](release-notes/11.x.x/11.1.4/README.md)
+      * [Valtimo backend libraries](release-notes/11.x.x/11.1.4/valtimo-backend-libraries.md)
+      * [Valtimo frontend libraries](release-notes/11.x.x/11.1.4/valtimo-frontend-libraries.md)
+    * [11.1.1](release-notes/11.x.x/11.1.1/README.md)
       * [Valtimo backend libraries](release-notes/major11/11.1.1/valtimo-backend-libraries.md)
       * [Valtimo frontend libraries](release-notes/major11/11.1.1/valtimo-frontend-libraries.md)
-    * 11.1.0
+    * [11.1.0](release-notes/11.x.x/11.1.0/README.md)
       * [Valtimo backend libraries](release-notes/major11/11.1.0/valtimo-backend-libraries.md)
       * [Valtimo frontend libraries](release-notes/major11/11.1.0/valtimo-frontend-libraries.md)
-    * 11.0.0
+    * [11.0.0](release-notes/11.x.x/11.0.0/README.md)
       * [Valtimo backend libraries](release-notes/major11/11.0.0/valtimo-backend-libraries.md)
       * [Valtimo frontend libraries](release-notes/major11/11.0.0/valtimo-frontend-libraries.md)
       * [Migration](release-notes/major11/11.0.0/migration.md)
-  * 10.x.x
-    * 10.8.3
+  * [10.x.x](release-notes/10.x.x/README.md)
+    * [10.8.3](release-notes/10.x.x/10.8.3/README.md)
       * [Valtimo backend libraries](release-notes/major10/10.8.3/valtimo-backend-libraries.md)
-    * 10.8.2
+    * [10.8.2](release-notes/10.x.x/10.8.2/README.md)
       * [Valtimo frontend libraries](release-notes/major10/10.8.2/valtimo-frontend-libraries.md)
-    * 10.8.0
+    * [10.8.0](release-notes/10.x.x/10.8.0/README.md)
       * [Valtimo backend libraries](release-notes/major10/10.8.0/valtimo-backend-libraries.md)
       * [Valtimo frontend libraries](release-notes/major10/10.8.0/valtimo-frontend-libraries.md)
-    * 10.7.0
+    * [10.7.0](release-notes/10.x.x/10.7.0/README.md)
       * [Valtimo backend libraries](release-notes/major10/10.7.0/valtimo-backend-libraries.md)
       * [Valtimo frontend libraries](release-notes/major10/10.7.0/valtimo-frontend-libraries.md)
-    * 10.6.0
+    * [10.6.0](release-notes/10.x.x/10.6.0/README.md)
       * [Valtimo backend libraries](release-notes/major10/10.6.0/valtimo-backend-libraries.md)
       * [Valtimo frontend libraries](release-notes/major10/10.6.0/valtimo-frontend-libraries.md)
       * [Migration](release-notes/major10/10.6.0/migration.md)
-    * 10.5.3
+    * [10.5.3](release-notes/10.x.x/10.5.3/README.md)
       * [Valtimo backend libraries](release-notes/major10/10.5.3/valtimo-backend-libraries.md)
-    * 10.5.2
+    * [10.5.2](release-notes/10.x.x/10.5.2/README.md)
       * [Valtimo backend libraries](release-notes/major10/10.5.2/valtimo-backend-libraries.md)
-    * 10.5.1
+    * [10.5.1](release-notes/10.x.x/10.5.1/README.md)
       * [Valtimo backend libraries](release-notes/major10/10.5.1/valtimo-backend-libraries.md)
       * [Valtimo frontend libraries](release-notes/major10/10.5.1/valtimo-frontend-libraries.md)
-    * 10.5.0
+    * [10.5.0](release-notes/10.x.x/10.5.0/README.md)
       * [Valtimo backend libraries](release-notes/major10/10.5.0/valtimo-backend-libraries.md)
       * [Valtimo frontend libraries](release-notes/major10/10.5.0/valtimo-frontend-libraries.md)
       * [Migration](release-notes/major10/10.5.0/migration.md)
-    * 10.4.0
+    * [10.4.0](release-notes/10.x.x/10.4.0/README.md)
       * [Valtimo backend libraries](release-notes/major10/10.4.0/valtimo-backend-libraries.md)
       * [Valtimo frontend libraries](release-notes/major10/10.4.0/valtimo-frontend-libraries.md)
-    * 10.3.0
+    * [10.3.0](release-notes/10.x.x/10.3.0/README.md)
       * [Valtimo backend libraries](release-notes/major10/10.3.0/valtimo-backend-libraries.md)
       * [Valtimo frontend libraries](release-notes/major10/10.3.0/valtimo-frontend-libraries.md)
-    * 10.2.0
+    * [10.2.0](release-notes/10.x.x/10.2.0/README.md)
       * [Valtimo backend libraries](release-notes/major10/10.2.0/valtimo-backend-libraries.md)
       * [Valtimo frontend libraries](release-notes/major10/10.2.0/valtimo-frontend-libraries.md)
-    * 10.1.0
+    * [10.1.0](release-notes/10.x.x/10.1.0/README.md)
       * [Valtimo backend libraries](release-notes/major10/10.1.0/valtimo-backend-libraries.md)
       * [Valtimo frontend libraries](release-notes/major10/10.1.0/valtimo-frontend-libraries.md)
       * [Migration](release-notes/major10/10.1.0/migration.md)
-    * 10.0.1
+    * [10.0.1](release-notes/10.x.x/10.0.1/README.md)
       * [Valtimo frontend libraries](release-notes/major10/10.0.1/valtimo-frontend-libraries.md)
-    * 10.0.0
+    * [10.0.0](release-notes/10.x.x/10.0.0/README.md)
       * [Valtimo backend libraries](release-notes/major10/10.0.0/valtimo-backend-libraries.md)
       * [Valtimo frontend libraries](release-notes/major10/10.0.0/valtimo-frontend-libraries.md)
       * [Migration](release-notes/major10/10.0.0/migration.md)
-  * 9.x.x
-    * 9.26.2/5.15.1
+  * [9.x.x](release-notes/9.x.x/README.md)
+    * [9.26.2/5.15.1](release-notes/9.x.x/9.26.2-5.15.1/README.md)
       * [Valtimo backend libraries (9.26.2)](release-notes/major9/09.26.2/valtimo-backend-libraries.md)
       * [Migration](release-notes/major9/09.26.2/migration.md)
-    * 9.26.1/5.15.1
+    * [9.26.1/5.15.1](release-notes/9.x.x/9.26.1-5.15.1/README.md)
       * [Valtimo backend libraries (9.26.1)](release-notes/major9/09.26.1/valtimo-backend-libraries.md)
       * [Valtimo frontend libraries (5.15.1)](release-notes/major9/09.26.1/valtimo-frontend-libraries.md)
-    * 9.26.0/5.15.0
+    * [9.26.0/5.15.0](release-notes/9.x.x/9.26.0-5.15.0/README.md)
       * [Valtimo backend libraries (9.26.0)](release-notes/major9/09.26.0/valtimo-backend-libraries.md)
       * [Valtimo frontend libraries (5.15.0)](release-notes/major9/09.26.0/valtimo-frontend-libraries.md)
       * [Migration](release-notes/major9/09.26.0/migration.md)
-    * 9.25.0/5.14.0
+    * [9.25.0/5.14.0](release-notes/9.x.x/9.25.0-5.14.0/README.md)
       * [Valtimo backend libraries (9.25.0)](release-notes/major9/09.25.0/valtimo-backend-libraries.md)
       * [Valtimo frontend libraries (5.14.0)](release-notes/major9/09.25.0/valtimo-frontend-libraries.md)
-    * 9.24.0/5.13.0
+    * [9.24.0/5.13.0](release-notes/9.x.x/9.24.0-5.13.0/README.md)
       * [Valtimo backend libraries (9.24.0)](release-notes/major9/09.24.0/valtimo-backend-libraries.md)
       * [Valtimo frontend libraries (5.13.0)](release-notes/major9/09.24.0/valtimo-frontend-libraries.md)
-    * 9.23.0/5.12.0
+    * [9.23.0/5.12.0](release-notes/9.x.x/9.23.0-5.12.0/README.md)
       * [Valtimo backend libraries (9.23.0)](release-notes/major9/09.23.0/valtimo-backend-libraries.md)
       * [Valtimo frontend libraries (5.12.0)](release-notes/major9/09.23.0/valtimo-frontend-libraries.md)
-    * 9.22.0/5.11.0
+    * [9.22.0/5.11.0](release-notes/9.x.x/9.22.0-5.11.0/README.md)
       * [Valtimo backend libraries (9.22.0)](release-notes/major9/09.22.0/valtimo-backend-libraries.md)
       * [Valtimo frontend libraries (5.11.0)](release-notes/major9/09.22.0/valtimo-frontend-libraries.md)
       * [Migration](release-notes/major9/09.22.0/migration.md)
-    * 9.21.0/5.10.0
+    * [9.21.0/5.10.0](release-notes/9.x.x/9.21.0-5.10.0/README.md)
       * [Valtimo backend libraries (9.21.0)](release-notes/major9/09.21.0/valtimo-backend-libraries.md)
       * [Valtimo frontend libraries (5.10.0)](release-notes/major9/09.21.0/valtimo-frontend-libraries.md)
       * [Migration](release-notes/major9/09.21.0/migration.md)
-    * 9.20.0/5.9.1
+    * [9.20.0/5.9.1](release-notes/9.x.x/9.20.0-5.9.1/README.md)
       * [Valtimo backend libraries (9.20.0)](release-notes/major9/09.20.0/valtimo-backend-libraries.md)
       * [Valtimo frontend libraries (5.9.1)](release-notes/major9/09.20.0/valtimo-frontend-libraries.md)
       * [Migration](release-notes/major9/09.20.0/migration.md)
-    * 9.19.0/5.8.0
+    * [9.19.0/5.8.0](release-notes/9.x.x/9.19.0-5.8.0/README.md)
       * [Valtimo backend libraries (9.19.0)](release-notes/major9/09.19.0/valtimo-backend-libraries.md)
       * [Valtimo frontend libraries (5.8.0)](release-notes/major9/09.19.0/valtimo-frontend-libraries.md)
       * [Migration](release-notes/major9/09.19.0/migration.md)
-    * 9.18.0/5.6.0
+    * [9.18.0/5.6.0](release-notes/9.x.x/9.18.0-5.6.0/README.md)
       * [Valtimo backend libraries (9.18.0)](release-notes/major9/09.18.0/valtimo-backend-libraries.md)
       * [Valtimo frontend libraries (5.6.0)](release-notes/major9/09.18.0/valtimo-frontend-libraries.md)
       * [Migration](release-notes/major9/09.18.0/migration.md)
-    * 9.17.0/5.5.0
+    * [9.17.0/5.5.0](release-notes/9.x.x/9.17.0-5.5.0/README.md)
       * [Valtimo backend libraries (9.17.0)](release-notes/major9/09.17.0/valtimo-backend-libraries.md)
       * [Valtimo frontend libraries (5.5.0)](release-notes/major9/09.17.0/valtimo-frontend-libraries.md)
-    * 9.16.0/5.4.0
+    * [9.16.0/5.4.0](release-notes/9.x.x/9.16.0-5.4.0/README.md)
       * [Valtimo backend libraries (9.16.0)](release-notes/major9/09.16.0/valtimo-backend-libraries.md)
       * [Valtimo frontend libraries (5.4.0)](release-notes/major9/09.16.0/valtimo-frontend-libraries.md)
