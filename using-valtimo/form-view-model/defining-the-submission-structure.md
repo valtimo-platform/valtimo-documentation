@@ -35,7 +35,7 @@ The submission handler also needs to be registered as a bean in the Spring conte
 
 Here is an example of a submission handler implementation:
 
-NOTE: The handler is used for start-form and user-task forms.
+NOTE: The handler is used for start-form and user-task forms scenarios. When CamundaTask is not null the form is a user-task form, otherwise it is a start-form.
 ```kotlin
 @Component
 class TestSubmissionHandler : FormViewModelSubmissionHandler<TestSubmission> {
