@@ -31,6 +31,13 @@ export class SampleComponent {
        callback: this.action.bind(this),
        type: 'normal',
      },
+      {
+       label: 'sample.action',
+       callback: this.action.bind(this),
+       // disabledCallback is an optional field that can be added if certain actions are not always available
+       disabledCallback: this.disable.bind(this),
+       type: 'normal',
+     },
      {
        label: 'sample.dangerAction',
        callback: this.dangerAction.bind(this),
@@ -42,6 +49,12 @@ export class SampleComponent {
  public action(item: any): void {
   ...
   // Code for action to do on the item
+  ...
+ }
+
+ public disabledCallback(item: any): boolean {
+  ...
+  // Code to check if action item should be disabled
   ...
  }
 
@@ -57,3 +70,8 @@ export class SampleComponent {
 This will create a list with a context menu:
 
 ![list-with-actions.png](./img/list-with-actions.png)
+
+
+Example of actions menu with a disabled item:
+
+![disabled-menu-item.png](./img//disabled-menu-item.png)
