@@ -1,6 +1,6 @@
 # Case widgets tab
 A case widgets tab provides the user with an overview of data that is related to the case by using standard or custom components.
-These tabs can be configured by an administrator or developer, were widgets can be added and configured to show fields in a specific way.
+These tabs can be configured by an administrator or developer, where widgets can be added and configured to show fields in a specific way.
 
 Multiple tabs can be configured to support several user roles in their daily work. Visibility of tabs and widgets can be controlled via the authorization layer.
 
@@ -17,7 +17,7 @@ over all deployment files that use changesets. When starting up, changesets that
 A checksum of the changeset is created when it is executed. Changesets that have already been deployed should not change.
 Changesets that have been changed since a previous time will result in an error and failure to start the application.
 
-All changesets can be executed again, even when the content has changed, by setting the `valtimo.changelog.case-widget-tab.clear-tables` property to `true`.
+All changesets can be executed again, even when the content has changed, by setting the `valtimo.changelog.case-widget-tab.clear-tables` property to `true`. This also deletes all existing case tab widgets.
 By default, this setting is disabled.
 
 **my-case.case-task-list.json**:
