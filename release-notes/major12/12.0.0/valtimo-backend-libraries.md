@@ -7,7 +7,7 @@ The following features were added:
 * **valtimo-dependency-versions module**
 
   A new `valtimo-dependency-versions` module has been created, 
-  which at the same time removes the version control from `valtimo-dependencies` and `valtimo-gzac-depenencies`.
+  which at the same time removes the version control from `valtimo-dependencies` and `valtimo-gzac-dependencies`.
 
   This module specifies versions for dependencies of Valtimo.
 
@@ -132,7 +132,7 @@ The following breaking changes were introduced:
   Migration instructions related to this change can be found [here](spring-boot3-migration.md).
 
 * **Valtimo dependencies have changed**
-  `valtimo-dependencies` and `valtimo-gzac-depenencies` should no longer be used for `dependencyManagement` or `platform`. 
+  `valtimo-dependencies` and `valtimo-gzac-dependencies` should no longer be used for `dependencyManagement` or `platform`. 
   This functionality has been replaced by [valtimo-dependency-versions](../../../getting-started/modules/core/valtimo-dependency-versions.md).
 
 * **Moved KvKProvider and BsnProvider**

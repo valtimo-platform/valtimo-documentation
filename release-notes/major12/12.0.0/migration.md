@@ -12,7 +12,7 @@ This page describes how to update Valtimo from the previous version to the curre
 
   Scope: back-end
 
-  1. `valtimo-dependencies` and `valtimo-gzac-depenencies` should no longer be used for `dependencyManagement` or `platform`.
+  1. `valtimo-dependencies` and `valtimo-gzac-dependencies` should no longer be used for `dependencyManagement` or `platform`.
   This functionality has been replaced by [valtimo-dependency-versions](../../../getting-started/modules/core/valtimo-dependency-versions.md).
   2. If present, remove the dependency to `org.hibernate:hibernate-envers` 
   3. If present, upgrade dependency `org.hibernate:hibernate-core` to `6.0.2.Final` or higher.
@@ -224,7 +224,7 @@ This page describes how to update Valtimo from the previous version to the curre
     3. **Step 3: @valtimo/form-link to @valtimo/process-link**
        The `form-link` library has been renamed to `process-link`. 
        1. Change `@valtimo/form-link` to `@valtimo/process-link` in your `package.json` file. 
-       2. Replace all imports in your from `@valtimo/form-link` to `@valtimo/process-link`.
+       2. Replace all imports in your `AppModule` from `@valtimo/form-link` to `@valtimo/process-link`.
        3. Change the `FormLinkModule` to `ProcessLinkModule` in your `AppModule`.
 
     4. **Step 4: Upgrade valtimo dependencies**
