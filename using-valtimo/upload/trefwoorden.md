@@ -6,9 +6,9 @@ when there are a lot of them.
 
 ## Prerequisites
 
-Trefwoorden can only be used when the Documenten API is used. The Documenten API needs to be configured and the 
-Documenten API plugin needs to be installed. It is only possible to use trefwoorden when using the 1.4 spec of the 
-Documenten API.
+- Trefwoorden can only be used when the Documenten API is used. 
+- The Documenten API needs to be configured and the Documenten API plugin needs to be installed. 
+- It is only possible to use trefwoorden when using the 1.4 spec or a later version of the Documenten API.
 
 ## Adding trefwoorden to a file
 

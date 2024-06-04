@@ -15,6 +15,7 @@ The access to the following resources is limited by Valtimo access control.
 | **[Task](#task)**                               | `com.ritense.valtimo.camunda.domain.CamundaTask`                       | Core     |
 | **[Task identity link](#task-identity-link)**   | `com.ritense.valtimo.camunda.domain.CamundaIdentityLink`               | Core     |
 | **[Case tab](#case-tab)**                       | `com.ritense.case.domain.CaseTab`                                      | CaseTab  |
+| **[Case Widget](#case-widget)**                 | `com.ritense.case_.domain.tab.CaseWidgetTabWidget`                     | CaseTab  |
 
 ### Document
 Resource type: `com.ritense.document.domain.impl.JsonSchemaDocument`
