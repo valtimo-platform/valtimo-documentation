@@ -147,6 +147,7 @@
   * [Upload](using-valtimo/upload/upload.md)
     * [Temporary file storage](using-valtimo/upload/temporary-file-storage.md)
     * [Uploading to Documenten API with metadata](using-valtimo/upload/upload-to-documenten-api-with-metadata.md)
+    * [Trefwoorden for uploaded files](using-valtimo/upload/trefwoorden.md)
   * [Web](using-valtimo/web/web.md)
     * [Configure CORS in Valtimo](using-valtimo/web/valtimo-cors.md)
   * ZGW
