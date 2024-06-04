@@ -37,7 +37,8 @@ The following bugs were fixed:
 - **New user tasks don't always appear**
 
   When starting a case or when completing a user task, the next user task will now be shown on the summary page without
-  the need of a hard refresh.
+  the need of a hard refresh. There is now a 7.5 seconds long window in which new user tasks are retrieved. If any
+  user tasks is created after the 7.5 seconds, it will not be shown on the summary page.
 
 - **Bug2**
 
