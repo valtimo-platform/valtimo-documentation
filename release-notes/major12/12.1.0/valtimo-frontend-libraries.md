@@ -37,6 +37,10 @@ The following features were added:
 
   The modals for adding and editing a plugin now use Carbon design.
 
+- **Document metadata modal updates**
+
+  The modal for uploading document metadata now uses Carbon design. In addition, an option to edit document metadata has been added. Both modals now support the use of tags.
+
 
 ## Bugfixes
 
