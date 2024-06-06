@@ -7,11 +7,11 @@ onchange updates, and submissions.
 Submission handling covers 2 scenarios:
 
 - When a form is submitted for a `user task`
+> **NOTE**: Developers should complete the task and modify the case in the handler.
 - When a form is submitted for a `start form`
+> **NOTE** Developers should start the process and create the case in the handler.
 
-> This module does not create or update cases. Developers are responsible for managing case creation and updates
-> themselves. Commands are recommended for this purpose.
-> In short any form of persistence is the responsibility of the developer.
+> This module does not create or update cases. Developers are responsible for managing case creation and updates themselves. It is recommended to use commands for this purpose. In short, any form of persistence is the responsibility of the developer.
 >
 > To support the developer in this process **default** command/handlers are provided.
 > ``` kotlin
