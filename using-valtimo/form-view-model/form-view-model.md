@@ -1,18 +1,41 @@
 # Form view model
 
-Form view model is a way to alternatively handle forms in user tasks.
+The Form View Model offers an alternative approach to handling forms for starting a process and user tasks, especially
+useful for complex forms typically found in large custom projects. This module provides control over pre-filling,
+onchange updates, and submissions.
 
-This module is meant to facilitate complex forms mainly seen in large custom projects.
-This module allows control of pre-filling, intermediate updates and submissions.
+Submission handling covers 2 scenarios:
 
-This step-by-step guide will explain the module while showing you how to implement it.
+- When a form is submitted for a `user task`
+> **NOTE**: Developers should complete the task and modify the case in the handler.
+- When a form is submitted for a `start form`
+> **NOTE** Developers should start the process and create the case in the handler.
 
-Step 1: Enabling the module in your project (see [Enabling the module](enabling-the-module.md))
+> This module does not create or update cases. Developers are responsible for managing case creation and updates themselves. It is recommended to use commands for this purpose. In short, any form of persistence is the responsibility of the developer.
+>
+> To support the developer in this process **default** command/handlers are provided.
+> ``` kotlin
+> val startProcessCommand = StartProcessCommand(
+>     caseInstanceId = document.id().id,
+>     processDefinitionKey = "myProcessDefinitionKey",
+>     businessKey = "myBusinessKey"
+> )
+> dispatchCommand(startProcessCommand)
+> 
+> val completeTaskCommand = CompleteTaskCommand(taskId = task.id())
+> 
+> dispatchCommand(completeTaskCommand)
+> ```
 
-Step 2: Define the view-model structure for your form (see [Defining the view-model](defining-the-view-model.md))
+This step-by-step guide will explain the module and demonstrate its implementation.
 
-Step 3: Define the submission structure for your form (see [Defining the submission structure](defining-the-submission-structure.md))
+- Step 1: Enabling the module in your project (see [Enabling the module](enabling-the-module.md))
 
-Step 4: Command handling (see [Command handling](command-handling.md))
+- Step 2: Define the view-model structure for your form (see [Defining the view-model](defining-the-view-model.md))
 
-Step 5: Error handling (see [Error handling](error-handling.md))
+- Step 3: Define the submission structure for your form (
+  see [Defining the submission structure](defining-the-submission-structure.md))
+
+- Step 4: Command handling (see [Command handling](../command-handling/command-handling.md))
+
+- Step 5: Error handling (see [Error handling](error-handling.md))

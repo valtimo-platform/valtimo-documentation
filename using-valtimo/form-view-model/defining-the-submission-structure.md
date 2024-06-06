@@ -24,25 +24,31 @@ data class TestSubmission(
 ) : Submission
 ```
 
-## Submission handler
-The submission handler is a class that is used to handle the submission data. It should implement the `FormViewModelSubmissionHandler` interface.
+## Submission handlers
+
+There are two types of submission handlers: `FormViewModelStartSubmissionHandler` and `FormViewModelUserTaskSubmissionHandler`.
+
+Each submission handler is a interface that is used to handle the submission data. 
 
 The `supports()` method is used to find the correct handler for the given form.
 
-The `handle()` method is used to handle the submission data. You can handle this data any way you want, but we highly recommend using commands.
+The `handle(...)` method is used to handle the submission data. 
+
+> You can handle this data any way you want, but we highly recommend using commands (see [Command handling](../command-handling/command-handling.md)).
 
 The submission handler also needs to be registered as a bean in the Spring context.
 
-Here is an example of a submission handler:
+Here is an example implementation of a submission handler for a user task:
+
 ```kotlin
 @Component
-class TestSubmissionHandler : FormViewModelSubmissionHandler<TestSubmission> {
+class TestSubmissionHandler : FormViewModelUserTaskSubmissionHandler<TestSubmission> {
 
     override fun supports(formName: String): Boolean {
         return formName == "test"
     }
 
-    override fun <T> handle(submission: T, task: CamundaTask) {
+    override fun <T> handle(submission: T, task: CamundaTask, businessKey: String) {
         submission as TestSubmission
         val exampleCommand = ExampleCommand(
             age = submission.age
@@ -57,7 +63,7 @@ On start-up a class will validate that the structure of the `Submission` matches
 
 Here is an example of the error message:
 ```
-The following properties are missing in the submission for form (user-task-2): [age]
+The following properties are missing in the user task submission for form (user-task-2): [age]
 ```
 
 More info on the validation can be found here: [Contract validation on ViewModel and Submission](contract-validation.md)

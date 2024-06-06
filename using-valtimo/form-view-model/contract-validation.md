@@ -3,6 +3,8 @@
 On start up the module will validate that the structure of the `ViewModel` matches the FormDefinition structure of the form. 
 This is also done for the submission structure of the form. If not an error message will be printed in the logs.
 
+> The View Model is used for start-form and user-task forms scenarios. When CamundaTask is not null the form is a user-task form, otherwise it is a start-form.
+
 ## ViewModel example:
 ```kotlin
 data class Address(
@@ -18,8 +20,8 @@ data class Person(
     val age: Int,
     var personalAddress: Address? = null
 ) : ViewModel {
-    override fun update(): ViewModel {
-        ...
+    override fun update(submission: T, task: CamundaTask?, businessKey: String): ViewModel {
+        // code to update the ViewModel
         return this
     }
 }
