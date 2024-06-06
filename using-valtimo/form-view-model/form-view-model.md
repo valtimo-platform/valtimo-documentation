@@ -6,8 +6,8 @@ onchange updates, and submissions.
 
 Submission handling covers 2 scenarios:
 
-- When a form is submitted within a `user task`, the task is automatically completed.
-- When a form is submitted within a `start form`, the process instance is initiated.
+- When a form is submitted for a `user task`
+- When a form is submitted for a `start form`
 
 > This module does not create or update cases. Developers are responsible for managing case creation and updates
 > themselves. Commands are recommended for this purpose.
