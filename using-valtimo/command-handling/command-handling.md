@@ -4,6 +4,14 @@ A command is used to change the state of an application. Commands allow you to e
 
 In this module, commands are used to handle form submissions. The command handling process is divided into two parts: the command itself and the command handler.
 
+Add the following dependency to your project's `build.gradle` file:
+
+```gradle
+dependencies {
+    implementation 'com.valtimo:command-handling:12.1.0'
+}
+```
+
 ## Command
 A command is a data class that represents the intention to change the state of the application. It should be a data class that implements the `Command` interface.
 
