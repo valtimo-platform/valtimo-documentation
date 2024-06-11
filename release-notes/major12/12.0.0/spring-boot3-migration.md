@@ -63,6 +63,8 @@ http.authorizeHttpRequests { requests ->
   - Removal of `spring.jpa.hibernate.naming.implicit-strategy`. No replacement needed.
   - Removal of `spring.jpa.hibernate.use-new-id-generator-mappings`. No replacement needed.
 - `AuditRecordRepository.findByEventAndDocumentId(List<Class<? extends AuditEvent>> eventTypes, UUID documentId, Pageable pageable);` changed to `AuditRecordRepository.findByEventAndDocumentId(List<String> eventTypes, UUID documentId, Pageable pageable);`
+- If exists, change dependency `com.fasterxml.jackson.datatype:jackson-datatype-hibernate5` to `com.fasterxml.jackson.datatype:jackson-datatype-hibernate6`
+- If exists, change dependency `org.liquibase.ext:liquibase-hibernate5` to `org.liquibase.ext:liquibase-hibernate6`
 
 ## Other   
 
