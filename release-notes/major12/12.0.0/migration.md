@@ -235,7 +235,7 @@ This page describes how to update Valtimo from the previous version to the curre
         After completing the previous steps, run `npm i` in the root of your project to install all dependencies, and
         verify after that your project builds.
 
-* **Choice fields**
+* **ChoiceFieldsModule**
 
   Scope: front-end
 
@@ -258,8 +258,7 @@ This page describes how to update Valtimo from the previous version to the curre
 
   4. **Remove ChoicefieldModule**
 
-      * Remove any instances of Choice**f**ieldModule as it no longer exists. Services and models contained in that module are now a part of *@valtimo/components*.
-      * Do not remove the Choice**F**ieldModule, with the uppercase F. This module still exists
+    Remove any instances of ChoicefieldModule as it no longer exists. Services and models contained in that module are now a part of *@valtimo/components*.
 
 * **`@valtimo/open-zaak` removed**
 
