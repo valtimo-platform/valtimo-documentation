@@ -14,9 +14,6 @@ dependencies {
 
 ## Command
 A command is a data class that represents the intention to change the state of the application. It should be a data class that implements the `Command` interface.
-
-It is recommended to use commands to handle form submissions.
-
 It is also possible to specify the return type of a command. In case you have nothing to return, specify it as `Unit`.
 
 Here is an example of a command:
@@ -66,4 +63,3 @@ Default decorators are provided these are useful for logging and error handling.
 ```kotlin
     logger.trace { "Timed '${command.javaClass.simpleName}' execution time = '$totalTime' in milliseconds" }
 ```
-
