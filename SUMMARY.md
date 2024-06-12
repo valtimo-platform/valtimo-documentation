@@ -112,6 +112,7 @@
     * [Creating FormIO forms in Valtimo](using-valtimo/forms/creating-forms-in-valtimo.md)
     * [Interpolating data in Form.io](using-valtimo/forms/interpolating-data-in-formio.md)
     * [Configuring an Objecten API object form](using-valtimo/forms/configure-object-form.md)
+    * [Intermediate submission](using-valtimo/forms/intermediate-submission.md)
   * [Form flow](using-valtimo/form-flow/form-flow.md)
     * [Creating a form flow definition](using-valtimo/form-flow/create-form-flow-definition.md)
     * [Creating a custom form flow component](using-valtimo/form-flow/create-custom-component.md)
