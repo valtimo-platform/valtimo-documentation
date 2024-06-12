@@ -16,7 +16,6 @@ This page describes how to update Valtimo from the previous version to the curre
   This functionality has been replaced by [valtimo-dependency-versions](../../../getting-started/modules/core/valtimo-dependency-versions.md).
   2. If present, remove the dependency to `org.hibernate:hibernate-envers` 
   3. If present, upgrade dependency `org.hibernate:hibernate-core` to `6.0.2.Final` or higher.
-  4. If present, upgrade dependency `com.ritense.valtimo:valtimo-testcontainers` to `0.0.2-SNAPSHOT` or higher.
 
 * **Access control files**
 
