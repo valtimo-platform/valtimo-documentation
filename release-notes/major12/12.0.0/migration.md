@@ -12,8 +12,10 @@ This page describes how to update Valtimo from the previous version to the curre
 
   Scope: back-end
 
-  `valtimo-dependencies` and `valtimo-gzac-depenencies` should no longer be used for `dependencyManagement` or `platform`.
+  1. `valtimo-dependencies` and `valtimo-gzac-dependencies` should no longer be used for `dependencyManagement` or `platform`.
   This functionality has been replaced by [valtimo-dependency-versions](../../../getting-started/modules/core/valtimo-dependency-versions.md).
+  2. If present, remove the dependency to `org.hibernate:hibernate-envers` 
+  3. If present, upgrade dependency `org.hibernate:hibernate-core` to `6.0.2.Final` or higher.
 
 * **Access control files**
 
@@ -219,9 +221,10 @@ This page describes how to update Valtimo from the previous version to the curre
         `ng update @angular/core@17 @angular/cli@17 --force` and commit all changes after the upgrade.
 
     3. **Step 3: @valtimo/form-link to @valtimo/process-link**
-       The `form-link` library has been renamed to `process-link`. Change `@valtimo/form-link` to `@valtimo/process-link`
-       in your `package.json` file. Also, replace all imports in your from `@valtimo/form-link` to
-       `@valtimo/process-link`.
+       The `form-link` library has been renamed to `process-link`. 
+       1. Change `@valtimo/form-link` to `@valtimo/process-link` in your `package.json` file. 
+       2. Replace all imports in your `AppModule` from `@valtimo/form-link` to `@valtimo/process-link`.
+       3. Change the `FormLinkModule` to `ProcessLinkModule` in your `AppModule`.
 
     4. **Step 4: Upgrade valtimo dependencies**
         Change the version number of all `@valtimo/**` dependencies in your root `package.json` to the Valtimo 12 version
@@ -241,7 +244,7 @@ This page describes how to update Valtimo from the previous version to the curre
         After completing the previous steps, run `npm i` in the root of your project to install all dependencies, and
         verify after that your project builds.
 
-* **ChoiceFieldsModule**
+* **Choice fields**
 
   Scope: front-end
 
@@ -264,7 +267,8 @@ This page describes how to update Valtimo from the previous version to the curre
 
   4. **Remove ChoicefieldModule**
 
-    Remove any instances of ChoicefieldModule as it no longer exists. Services and models contained in that module are now a part of *@valtimo/components*.
+      * Remove any instances of Choice**f**ieldModule as it no longer exists. Services and models contained in that module are now a part of *@valtimo/components*.
+      * Do not remove the Choice**F**ieldModule, with the uppercase F. This module still exists
 
 * **`@valtimo/open-zaak` removed**
 
@@ -277,7 +281,7 @@ This page describes how to update Valtimo from the previous version to the curre
 
   2. **Remove module import**
 
-   Remove the import of `OpenZaakModule` into your `AppModule`.
+   Remove the import of `OpenZaakModule` from your `AppModule`.
 
   3. **Remove extensions**
 
@@ -363,6 +367,11 @@ This page describes how to update Valtimo from the previous version to the curre
     Remove `@valtimo/exact-plugin` from your implementation's package.json if it's included, and change imports throughout
    your implementation from `@valtimo/exact-plugin` to `@valtimo/plugin`.
 
+* **Removed: `@valtimo/view-configurator`**
+
+  1. If present, remove library `@valtimo/view-configurator` from the `package.json`.
+  2. If present, remove the module `ViewConfiguratorModule` from your `AppModule`.
+
 * **Task management**
 
   Scope: front-end
@@ -388,6 +397,13 @@ This page describes how to update Valtimo from the previous version to the curre
     Replace `UNIQUE_SEQUENCE_NUMBER` with a unique sequence number, and make sure the sequence numbers of other menu
     items on the admin layer remain unique.
 
+* **Feature toggles**
+
+  Scope: front-end
+
+    1. If present, remove the feature toggle `caseSearchFields` from all your `environment.*.ts`
+    2. If **not** present, set the feature toggle `enableObjectManagement` to `false` in all your `environment.*.ts`
+
 * **Dark-mode and theme-switching**
 
   Scope: front-end
@@ -396,8 +412,9 @@ This page describes how to update Valtimo from the previous version to the curre
   
      In order for the themes to be displayed properly, the following change has to be made in the `styles` array in `angular.json`
      in the root of your implementation:
-     * Change `"dist/valtimo/components/assets/css/carbon-beagle-compatibility.scss"` to `"dist/valtimo/components/assets/css/compatibility.scss"`,
-      and make sure it is initiated **after** `"dist/valtimo/components/assets/css/carbon.scss"`
+     1. If present, change `"dist/valtimo/components/assets/css/carbon-beagle-compatibility.scss"` to `"dist/valtimo/components/assets/css/compatibility.scss"`.
+     2. If present, change `"node_modules/@valtimo/components/assets/css/carbon-beagle-compatibility.scss"` to `"node_modules/@valtimo/components/assets/css/compatibility.scss"`.
+     3. Make sure they both are initiated **after** `".../valtimo/components/assets/css/carbon.scss"`
 
   2. **Add logo variants**
 
