@@ -136,16 +136,19 @@ This page describes how to update Valtimo from the previous version to the curre
   
   Scope: back-end
   
-  The `DocumentVariableDelegate` is replaced by the `DocumentDelegateService` class. As such, usages in processes and
-  code should be updated to use `DocumentDelegateService` instead.
+  The `DocumentVariableDelegate` is replaced by the `DocumentDelegateService` class. 
+    1. Find all locations where `DocumentVariableDelegate` is used in BPMN processes and DMN decision tables.
+    2. Replace `DocumentVariableDelegate` with the new `DocumentDelegateService`.
+    3. Migrate all running processes to the most recent version.
 
 * **Deprecated code**
 
   Scope: back-end
 
-  `CamundaProcessJsonSchemaDocumentService.getDocument(DelegateExecution execution)` has been deprecated. As such,
-  usages in processes and code should be updated to use `DocumentDelegateService.getDocument(DelegateExecution)`
-  instead.
+  `CamundaProcessJsonSchemaDocumentService.getDocument(DelegateExecution execution)` has been deprecated and removed.
+    1. Find all locations where `CamundaProcessJsonSchemaDocumentService` is used in BPMN processes and DMN decision tables.
+    2. Replace `CamundaProcessJsonSchemaDocumentService` with the new `DocumentDelegateService`.
+    3. Migrate all running processes to the most recent version.
 
 * **PostgreSQL10Dialect is deprecated**
 
