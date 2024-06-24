@@ -213,13 +213,13 @@ This page describes how to update Valtimo from the previous version to the curre
 
 * **Zgw case configuration**
 
-  The configuration to connect a ZGW zaak type to a case, has changed from using th connector framework to use the new
+  The configuration to connect a ZGW zaak type to a case, has changed from using the connector framework to use the new
   plugin framework. If there was previously a zaak type connected to the case, the following steps are needed:
 
     1. Go to Admin > Case > Configuration
     2. Configure the 'Connected zaak type'
 
-  The configuration to synchronize the case to an object in the Objecten API, has changed from using th connector framework to use the new
+  The configuration to synchronize the case to an object in the Objecten API, has changed from using the connector framework to use the new
   plugin framework. If there was previously a case synchronisation configured, the following steps are needed:
 
     1. Go to Admin > Case > Configuration
