@@ -211,6 +211,20 @@ This page describes how to update Valtimo from the previous version to the curre
   The new implementations of `KvKProvider` and `BsnProvider` (`ZaakKvkProvider` and `ZaakBsnProvider`) no longer depend on the `openzaak` module.
   Please make sure you have configured at least one Zaken API Plugin to make these providers work.
 
+* **Zgw case configuration**
+
+  The configuration to connect a ZGW zaak type to a case, has changed from using the connector framework to use the new
+  plugin framework. If there was previously a zaak type connected to the case, the following steps are needed:
+
+    1. Go to Admin > Case > Configuration
+    2. Configure the 'Connected zaak type'
+
+  The configuration to synchronize the case to an object in the Objecten API, has changed from using the connector framework to use the new
+  plugin framework. If there was previously a case synchronisation configured, the following steps are needed:
+
+    1. Go to Admin > Case > Configuration
+    2. Configure the 'Case detail synchronisation'
+
 * **Angular and dependency upgrades**
 
   Scope: front-end
@@ -363,6 +377,10 @@ This page describes how to update Valtimo from the previous version to the curre
     - A new ZGW tab on the case management admin page.
     - The component to display object tabs based on the `caseObjectTypes` configuration in your environment file. If
       `ZgwModule` is not imported, and this configuration is present, a not found message will be displayed on the tabs.
+    - Functionality on the case admin configuration tab to:
+      - Link an upload process to a case definition
+      - Configuration for case detail synchronisation
+      - Configuration for connection a zaak type to a case definition
 
 * **Removed: `@valtimo/exact-plugin`**
 
