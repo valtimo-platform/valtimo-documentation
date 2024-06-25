@@ -377,6 +377,10 @@ This page describes how to update Valtimo from the previous version to the curre
     - A new ZGW tab on the case management admin page.
     - The component to display object tabs based on the `caseObjectTypes` configuration in your environment file. If
       `ZgwModule` is not imported, and this configuration is present, a not found message will be displayed on the tabs.
+    - Functionality on the case admin configuration tab to:
+      - Link an upload process to a case definition
+      - Configuration for case detail synchronisation
+      - Configuration for connection a zaak type to a case definition
 
 * **Removed: `@valtimo/exact-plugin`**
 
