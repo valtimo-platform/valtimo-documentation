@@ -176,6 +176,12 @@ fun setAssignee(execution: DelegateExecution, userEmail: String?)
 Assigns a person to a document.
 
 ```kotlin
+fun setInternalStatus(execution: DelegateExecution, statusKey: String?)
+```
+
+Sets the internal status of a document based on the status key.
+
+```kotlin
 fun unassign(execution: DelegateExecution)
 ```
 
