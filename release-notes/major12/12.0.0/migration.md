@@ -208,9 +208,28 @@ This page describes how to update Valtimo from the previous version to the curre
        Change the type of parameter `values` from: `Map<String, Any>` to also support null values: `Map<String, Any?>`.
 
 * **KvKProvider and BsnProvider**
+
+  Scope: back-end
+
   The new implementations of `KvKProvider` and `BsnProvider` (`ZaakKvkProvider` and `ZaakBsnProvider`) no longer depend on the `openzaak` module.
   Please make sure you have configured at least one Zaken API Plugin to make these providers work.
 
+* **Camunda webapps**
+
+  Scope: back-end
+
+  Camunda webapps are now by default not accessible. Access can be configured with a property that allows whitelisted
+  hosts:
+
+```yaml
+valtimo:
+    security:
+        whitelist:
+            hosts:
+                - localhost
+                - 123.123.123.123
+                - my.office.com
+```
 * **Zgw case configuration**
 
   The configuration to connect a ZGW zaak type to a case, has changed from using the connector framework to use the new

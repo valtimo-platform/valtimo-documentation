@@ -40,8 +40,6 @@ http.authorizeHttpRequests { requests ->
 - `AuthorizedUrl.acccess(..)` no longer supports expressions as an argument.
   - `WhitelistIpRequest` has been replaced by `WhitelistIpRequestMatcher`. An example can be found in `CamundaCockpitHttpSecurityConfigurer`.
       
-- Cockpit is now whitelist-secured again. Support for CIDRs added to support a range of addresses.
-  - A list of hosts can be set at `valtimo.security.whitelist.hosts`.
 - Removed `AuthenticationSecurityConfigurer`. No replacement other than implementing a `SecurityFilterChain` directly.
 - OpenAPI endpoint `/v3/api-docs` is now only available to `ROLE_DEVELOPER`.
 
