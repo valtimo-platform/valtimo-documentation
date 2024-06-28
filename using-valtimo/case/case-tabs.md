@@ -18,7 +18,7 @@ information on this feature toggle, visit [this page](/reference/feature-toggles
 
 ## Different types of case tabs
 
-Valtimo supports the following 3 different types of case tab.
+Valtimo supports the following 4 different types of case tab.
 
 ### Standard tabs
 
@@ -32,6 +32,11 @@ The standard tabs that are available are listed on the [reference page](/referen
 Form.io tabs are tabs that show a single Form.io form as the tab content. Any Form.io form that has been registered
 with valtimo can be chosen. This is purely meant to display information, as there is no way to submit the information
 even if a submit button has been added to the form definition.
+
+### Widget tabs
+
+Widget tabs each contain a configuration of different case widgets. For more information, [refer to this page.](case-widgets/case-widgets.md).
+
 
 ### Custom tabs
 
@@ -86,7 +91,9 @@ The case tab menu is found under the admin menu. Admin privileges are required t
 
    ![Example of configuring a tab](img/tab-config-modal.png)
 
-7. Click the button 'Add tab'
+7. Optionally choose whether the task list will show on the tab you are configuring.
+
+8. Click the button 'Add tab'
 
 If there are no tabs to be configured for one specific type, then the button in the Step 5 modal will be disabled.
 
@@ -132,7 +139,8 @@ that are available can be found on the [reference page](/reference/modules/case.
           "name": "Summary",
           "key": "summary",
           "type": "standard",
-          "contentKey": "summary"
+          "contentKey": "summary",
+           "showTasks": true
         },
         {
           "name": "Progress",
@@ -144,7 +152,8 @@ that are available can be found on the [reference page](/reference/modules/case.
           "name": "Zaak objects",
           "key": "zaakobjecten",
           "type": "standard",
-          "contentKey": "zaakobjecten"
+          "contentKey": "zaakobjecten",
+           "showTasks": false
         }
       ]
     }
