@@ -12,14 +12,16 @@ This page describes how to update Valtimo from the previous version to the curre
 
   Scope: back-end
 
-  `valtimo-dependencies` and `valtimo-gzac-depenencies` should no longer be used for `dependencyManagement` or `platform`.
+  1. `valtimo-dependencies` and `valtimo-gzac-dependencies` should no longer be used for `dependencyManagement` or `platform`.
   This functionality has been replaced by [valtimo-dependency-versions](../../../getting-started/modules/core/valtimo-dependency-versions.md).
+  2. If present, remove the dependency to `org.hibernate:hibernate-envers` 
+  3. If present, upgrade dependency `org.hibernate:hibernate-core` to `6.0.2.Final` or higher.
 
 * **Access control files**
 
   Scope: back-end
 
-    1. **Step 1: Find filed**
+    1. **Step 1: Find files**
 
        Locate all files in the backend libraries matching: `/resources/config/<filepath>/<filename>.permission.json`
     2. **Step 2: Locate permissions**
@@ -134,16 +136,25 @@ This page describes how to update Valtimo from the previous version to the curre
   
   Scope: back-end
   
-  The `DocumentVariableDelegate` is replaced by the `DocumentDelegateService` class. As such, usages in processes and
-  code should be updated to use `DocumentDelegateService` instead.
+  The `DocumentVariableDelegate` is replaced by the `DocumentDelegateService` class. 
+    1. Find all locations where `DocumentVariableDelegate` is used in BPMN processes and DMN decision tables.
+    2. Replace `DocumentVariableDelegate` with the new `DocumentDelegateService`.
+    3. Migrate all running processes to the most recent version.
 
 * **Deprecated code**
 
   Scope: back-end
 
-  `CamundaProcessJsonSchemaDocumentService.getDocument(DelegateExecution execution)` has been deprecated. As such,
-  usages in processes and code should be updated to use `DocumentDelegateService.getDocument(DelegateExecution)`
-  instead.
+  `CamundaProcessJsonSchemaDocumentService.getDocument(DelegateExecution execution)` has been deprecated and removed.
+    1. Find all locations where `CamundaProcessJsonSchemaDocumentService` is used in BPMN processes and DMN decision tables.
+    2. Replace `CamundaProcessJsonSchemaDocumentService` with the new `DocumentDelegateService`.
+    3. Migrate all running processes to the most recent version.
+
+* **PostgreSQL10Dialect is deprecated**
+
+  Scope: back-end
+
+  The class `org.hibernate.dialect.PostgreSQL10Dialect` is deprecated, and should be replaced with `org.hibernate.dialect.PostgreSQLDialect` at the `spring.jpa.database-platform` property.
 
  **Zaaktype link moved**
 
@@ -197,8 +208,41 @@ This page describes how to update Valtimo from the previous version to the curre
        Change the type of parameter `values` from: `Map<String, Any>` to also support null values: `Map<String, Any?>`.
 
 * **KvKProvider and BsnProvider**
+
+  Scope: back-end
+
   The new implementations of `KvKProvider` and `BsnProvider` (`ZaakKvkProvider` and `ZaakBsnProvider`) no longer depend on the `openzaak` module.
   Please make sure you have configured at least one Zaken API Plugin to make these providers work.
+
+* **Camunda webapps**
+
+  Scope: back-end
+
+  Camunda webapps are now by default not accessible. Access can be configured with a property that allows whitelisted
+  hosts:
+
+```yaml
+valtimo:
+    security:
+        whitelist:
+            hosts:
+                - localhost
+                - 123.123.123.123
+                - my.office.com
+```
+* **Zgw case configuration**
+
+  The configuration to connect a ZGW zaak type to a case, has changed from using the connector framework to use the new
+  plugin framework. If there was previously a zaak type connected to the case, the following steps are needed:
+
+    1. Go to Admin > Case > Configuration
+    2. Configure the 'Connected zaak type'
+
+  The configuration to synchronize the case to an object in the Objecten API, has changed from using the connector framework to use the new
+  plugin framework. If there was previously a case synchronisation configured, the following steps are needed:
+
+    1. Go to Admin > Case > Configuration
+    2. Configure the 'Case detail synchronisation'
 
 * **Angular and dependency upgrades**
 
@@ -213,9 +257,10 @@ This page describes how to update Valtimo from the previous version to the curre
         `ng update @angular/core@17 @angular/cli@17 --force` and commit all changes after the upgrade.
 
     3. **Step 3: @valtimo/form-link to @valtimo/process-link**
-       The `form-link` library has been renamed to `process-link`. Change `@valtimo/form-link` to `@valtimo/process-link`
-       in your `package.json` file. Also, replace all imports in your from `@valtimo/form-link` to
-       `@valtimo/process-link`.
+       The `form-link` library has been renamed to `process-link`. 
+       1. Change `@valtimo/form-link` to `@valtimo/process-link` in your `package.json` file. 
+       2. Replace all imports in your `AppModule` from `@valtimo/form-link` to `@valtimo/process-link`.
+       3. Change the `FormLinkModule` to `ProcessLinkModule` in your `AppModule`.
 
     4. **Step 4: Upgrade valtimo dependencies**
         Change the version number of all `@valtimo/**` dependencies in your root `package.json` to the Valtimo 12 version
@@ -224,18 +269,18 @@ This page describes how to update Valtimo from the previous version to the curre
     5. **Step 5: Equalize project dependencies with Valtimo dependencies**
        In order to start your implementation, all dependency version numbers should be equal to the ones used in the
         <!--- To do: replace below link to final 12.0 package.json --->
-       libraries project. This can be done manually by navigating to the [libraries package.json](https://raw.githubusercontent.com/valtimo-platform/valtimo-frontend-libraries/development/12.0.0/package.json)
+       libraries project. This can be done manually by navigating to the [libraries package.json](https://raw.githubusercontent.com/valtimo-platform/valtimo-frontend-libraries/rc/12.0.0/package.json)
         and copying over the version numbers.
         It can also be automatically by running the following command from the terminal when in the root of your
         implementation (where `package.json` is located). When prompted to install dependencies, answer yes.
           <!--- To do: replace below link to final 12.0 script --->
-        `npx make-dir-cli tmp && npx node-wget https://raw.githubusercontent.com/valtimo-platform/valtimo-frontend-libraries/development/12.0.0/scripts/equalize-deps.cjs -d tmp/equalize-deps.cjs && node tmp/equalize-deps.cjs`
+        `npx make-dir-cli tmp && npx node-wget https://raw.githubusercontent.com/valtimo-platform/valtimo-frontend-libraries/release/12.0.0/scripts/equalize-deps.cjs -d tmp/equalize-deps.cjs && node tmp/equalize-deps.cjs`
 
   6. **Step 6: Install dependencies and build project**
         After completing the previous steps, run `npm i` in the root of your project to install all dependencies, and
         verify after that your project builds.
 
-* **ChoiceFieldsModule**
+* **Choice fields**
 
   Scope: front-end
 
@@ -258,7 +303,8 @@ This page describes how to update Valtimo from the previous version to the curre
 
   4. **Remove ChoicefieldModule**
 
-    Remove any instances of ChoicefieldModule as it no longer exists. Services and models contained in that module are now a part of *@valtimo/components*.
+      * Remove any instances of Choice**f**ieldModule as it no longer exists. Services and models contained in that module are now a part of *@valtimo/components*.
+      * Do not remove the Choice**F**ieldModule, with the uppercase F. This module still exists
 
 * **`@valtimo/open-zaak` removed**
 
@@ -271,7 +317,7 @@ This page describes how to update Valtimo from the previous version to the curre
 
   2. **Remove module import**
 
-   Remove the import of `OpenZaakModule` into your `AppModule`.
+   Remove the import of `OpenZaakModule` from your `AppModule`.
 
   3. **Remove extensions**
 
@@ -350,12 +396,21 @@ This page describes how to update Valtimo from the previous version to the curre
     - A new ZGW tab on the case management admin page.
     - The component to display object tabs based on the `caseObjectTypes` configuration in your environment file. If
       `ZgwModule` is not imported, and this configuration is present, a not found message will be displayed on the tabs.
+    - Functionality on the case admin configuration tab to:
+      - Link an upload process to a case definition
+      - Configuration for case detail synchronisation
+      - Configuration for connection a zaak type to a case definition
 
 * **Removed: `@valtimo/exact-plugin`**
 
     The library `@valtimo/exact-plugin` has been removed. All of its code is now exported from `@valtimo/plugin`.
     Remove `@valtimo/exact-plugin` from your implementation's package.json if it's included, and change imports throughout
    your implementation from `@valtimo/exact-plugin` to `@valtimo/plugin`.
+
+* **Removed: `@valtimo/view-configurator`**
+
+  1. If present, remove library `@valtimo/view-configurator` from the `package.json`.
+  2. If present, remove the module `ViewConfiguratorModule` from your `AppModule`.
 
 * **Task management**
 
@@ -382,6 +437,13 @@ This page describes how to update Valtimo from the previous version to the curre
     Replace `UNIQUE_SEQUENCE_NUMBER` with a unique sequence number, and make sure the sequence numbers of other menu
     items on the admin layer remain unique.
 
+* **Feature toggles**
+
+  Scope: front-end
+
+    1. If present, remove the feature toggle `caseSearchFields` from all your `environment.*.ts`
+    2. If **not** present, set the feature toggle `enableObjectManagement` to `false` in all your `environment.*.ts`
+
 * **Dark-mode and theme-switching**
 
   Scope: front-end
@@ -390,8 +452,9 @@ This page describes how to update Valtimo from the previous version to the curre
   
      In order for the themes to be displayed properly, the following change has to be made in the `styles` array in `angular.json`
      in the root of your implementation:
-     * Change `"dist/valtimo/components/assets/css/carbon-beagle-compatibility.scss"` to `"dist/valtimo/components/assets/css/compatibility.scss"`,
-      and make sure it is initiated **after** `"dist/valtimo/components/assets/css/carbon.scss"`
+     1. If present, change `"dist/valtimo/components/assets/css/carbon-beagle-compatibility.scss"` to `"dist/valtimo/components/assets/css/compatibility.scss"`.
+     2. If present, change `"node_modules/@valtimo/components/assets/css/carbon-beagle-compatibility.scss"` to `"node_modules/@valtimo/components/assets/css/compatibility.scss"`.
+     3. Make sure they both are initiated **after** `".../valtimo/components/assets/css/carbon.scss"`
 
   2. **Add logo variants**
 

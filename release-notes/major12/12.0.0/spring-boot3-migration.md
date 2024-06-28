@@ -40,8 +40,6 @@ http.authorizeHttpRequests { requests ->
 - `AuthorizedUrl.acccess(..)` no longer supports expressions as an argument.
   - `WhitelistIpRequest` has been replaced by `WhitelistIpRequestMatcher`. An example can be found in `CamundaCockpitHttpSecurityConfigurer`.
       
-- Cockpit is now whitelist-secured again. Support for CIDRs added to support a range of addresses.
-  - A list of hosts can be set at `valtimo.security.whitelist.hosts`.
 - Removed `AuthenticationSecurityConfigurer`. No replacement other than implementing a `SecurityFilterChain` directly.
 - OpenAPI endpoint `/v3/api-docs` is now only available to `ROLE_DEVELOPER`.
 
@@ -63,10 +61,12 @@ http.authorizeHttpRequests { requests ->
   - Removal of `spring.jpa.hibernate.naming.implicit-strategy`. No replacement needed.
   - Removal of `spring.jpa.hibernate.use-new-id-generator-mappings`. No replacement needed.
 - `AuditRecordRepository.findByEventAndDocumentId(List<Class<? extends AuditEvent>> eventTypes, UUID documentId, Pageable pageable);` changed to `AuditRecordRepository.findByEventAndDocumentId(List<String> eventTypes, UUID documentId, Pageable pageable);`
+- If exists, change dependency `com.fasterxml.jackson.datatype:jackson-datatype-hibernate5` to `com.fasterxml.jackson.datatype:jackson-datatype-hibernate6`
+- If exists, change dependency `org.liquibase.ext:liquibase-hibernate5` to `org.liquibase.ext:liquibase-hibernate6`
 
 ## Other   
 
 - Camunda History TTL is now required by default. Either:
-  - Set the [camunda:historyTimeToLive](https://docs.camunda.org/manual/7.20/reference/bpmn20/custom-extensions/extension-attributes/#historytimetolive) via the modeler or XML.
+  - Set the [camunda:historyTimeToLive](https://docs.camunda.org/manual/7.21/reference/bpmn20/custom-extensions/extension-attributes/#historytimetolive) via the modeler or XML.
   - Set the application property `camunda.bpm.generic-properties.properties.enforceHistoryTimeToLive` to `false` if you don't want to enforce a TTL.
 - Mockito 5 vararg matching [has changed](https://github.com/mockito/mockito/releases/tag/v5.0.0).
