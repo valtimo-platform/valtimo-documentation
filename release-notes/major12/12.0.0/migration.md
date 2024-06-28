@@ -274,7 +274,7 @@ valtimo:
         It can also be automatically by running the following command from the terminal when in the root of your
         implementation (where `package.json` is located). When prompted to install dependencies, answer yes.
           <!--- To do: replace below link to final 12.0 script --->
-        `npx make-dir-cli tmp && npx node-wget https://raw.githubusercontent.com/valtimo-platform/valtimo-frontend-libraries/rc/12.0.0/scripts/equalize-deps.cjs -d tmp/equalize-deps.cjs && node tmp/equalize-deps.cjs`
+        `npx make-dir-cli tmp && npx node-wget https://raw.githubusercontent.com/valtimo-platform/valtimo-frontend-libraries/release/12.0.0/scripts/equalize-deps.cjs -d tmp/equalize-deps.cjs && node tmp/equalize-deps.cjs`
 
   6. **Step 6: Install dependencies and build project**
         After completing the previous steps, run `npm i` in the root of your project to install all dependencies, and
