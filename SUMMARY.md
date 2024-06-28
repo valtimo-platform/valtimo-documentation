@@ -94,6 +94,8 @@
     * [Case tabs](using-valtimo/case/case-tabs.md)
     * [Exporting and importing case definitions](using-valtimo/case/exporting-case-definitions.md)
     * [Internal case status](using-valtimo/case/internal-case-status.md)
+    * [Case widgets](using-valtimo/case/case-widgets/case-widgets.md)
+       * [Creating a case widgets tab](using-valtimo/case/case-widgets/creating-case-widgets-tab.md)
   * [Dashboard](using-valtimo/dashboard/dashboard.md)
     * [Auto deploying dashboards](using-valtimo/dashboard/auto-deploy.md)
     * [Create dashboard](using-valtimo/dashboard/create-dashboard.md)
