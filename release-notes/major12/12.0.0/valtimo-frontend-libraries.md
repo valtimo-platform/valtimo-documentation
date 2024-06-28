@@ -86,6 +86,11 @@ The following features were added:
   A new library has been added - `@valtimo/task-management`. It provides a page where list columns can be configured for
   tasks of a certain case type. Please follow the migration notes (section 'Task management') on [this page](migration.md).
 
+* **Filter tasks by case**
+  
+  The user can now filter tasks by selecting the case from a dropdown at the task list view. 
+  The case columns will change according to the configured task list columns per case.
+
 * **Rename upload process**
 
   The auto-deployed upload process `Upload Document` has been renamed to `Documenten API upload document`.
@@ -112,6 +117,18 @@ The following features were added:
   * `assets/img/emptystate-not-authorised.svg`
   * `assets/img/emptystate-success.svg`
 
+* **Added compact mode to allow for more usable vertical space**
+
+  By default, the breadcrumbs and page title use a larger amount of vertical screen space.
+  Compact mode has been added to move this information to the top header, next to the logo.
+
+  More information on how to enable and use this can be found [here](/using-valtimo/ui/settings.md#compact-mode) 
+
+* **FormIO Sandbox**
+
+  When editing at form, under form management, now a FormIO Sandbox is used. The Sandbox allows for editing forms via the UI as well as through a JSON. The Output tab
+  also showcases how the form displays and what it can output when filling in the form.
+
 ## Bugfixes
 
 The following bugs were fixed:
@@ -128,6 +145,10 @@ The following bugs were fixed:
 * **Breadcrumbs do not work properly**
 
   After navigating away from Object page, breadcrumbs did not work properly anymore throughout the application. This issue has been fixed.
+
+* **Object title does not load on page switch**
+
+  When switching between different items in the object list menu, the object tile is not displayed properly. Instead of the title, a loading bar that doesn't stop is displayed. This issue has been fixed.
 
 ## Breaking changes
 
@@ -207,12 +228,4 @@ The following was deprecated:
 
 ## Known issues
 
-This version has the following known issues:
-
-* **Issue1**
-    * Discovered in version x.x.x
-    * Describe what can be done to work around the issue
-
-* **Issue2**
-    * Discovered in version x.x.x
-    * Describe what can be done to work around the issue
+No known issues.
