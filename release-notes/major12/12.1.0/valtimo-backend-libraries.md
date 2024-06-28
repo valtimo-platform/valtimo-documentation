@@ -26,9 +26,9 @@ The following features were added:
 
 The following bugs were fixed:
 
-* **Bug1**
+* **Confusing error message for view model**
 
-  Description of what the issue was.
+  When a view model references a form that can not be found, an error message is now logged describing the issue
 
 * **Bug2**
 
