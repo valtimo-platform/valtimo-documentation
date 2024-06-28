@@ -143,8 +143,10 @@
     * [Creating a process link](using-valtimo/process-link/create-process-link.md)
     * [Editing a process link](using-valtimo/process-link/edit-process-link.md)
     * [Unlinking a process link](using-valtimo/process-link/unlink-process-link.md)
-  * Tasks
+  * [Tasks](using-valtimo/tasks/tasks.md)
     * [Task list columns](using-valtimo/tasks/task-list-columns.md)
+  * User interface
+    * [Settings](/using-valtimo/ui/settings.md)
   * [Upload](using-valtimo/upload/upload.md)
     * [Temporary file storage](using-valtimo/upload/temporary-file-storage.md)
     * [Uploading to Documenten API with metadata](using-valtimo/upload/upload-to-documenten-api-with-metadata.md)
@@ -236,12 +238,22 @@
       * [Valtimo frontend libraries](release-notes/major12/12.1.0/valtimo-frontend-libraries.md)
       * [Migration](release-notes/major12/12.1.0/migration.md)
   * 11.x.x
+    * 11.3.2
+      * [Valtimo frontend libraries](release-notes/major11/11.3.2/valtimo-frontend-libraries.md)
+    * 11.3.1
+      * [Valtimo frontend libraries](release-notes/major11/11.3.1/valtimo-frontend-libraries.md)
     * 11.3.0
       * [Valtimo backend libraries](release-notes/major11/11.3.0/valtimo-backend-libraries.md)
       * [Valtimo frontend libraries](release-notes/major11/11.3.0/valtimo-frontend-libraries.md)
-    * 11.2.0 (RC)
+    * 11.2.2
+      * [Valtimo frontend libraries](release-notes/major11/11.2.2/valtimo-frontend-libraries.md)
+    * 11.2.1
+      * [Valtimo frontend libraries](release-notes/major11/11.2.1/valtimo-frontend-libraries.md)
+    * 11.2.0
       * [Valtimo backend libraries](release-notes/major11/11.2.0/valtimo-backend-libraries.md)
       * [Valtimo frontend libraries](release-notes/major11/11.2.0/valtimo-frontend-libraries.md)
+    * 11.1.6
+      * [Valtimo frontend libraries](release-notes/major11/11.1.6/valtimo-frontend-libraries.md)
     * 11.1.5
       * [Valtimo frontend libraries](release-notes/major11/11.1.5/valtimo-frontend-libraries.md)
     * 11.1.4
@@ -258,6 +270,8 @@
       * [Valtimo frontend libraries](release-notes/major11/11.0.0/valtimo-frontend-libraries.md)
       * [Migration](release-notes/major11/11.0.0/migration.md)
   * 10.x.x
+    * 10.8.4
+      * [Valtimo frontend libraries](release-notes/major10/10.8.4/valtimo-frontend-libraries.md)
     * 10.8.3
       * [Valtimo backend libraries](release-notes/major10/10.8.3/valtimo-backend-libraries.md)
     * 10.8.2

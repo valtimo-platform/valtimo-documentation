@@ -26,9 +26,19 @@ for more configuration properties.
 
 ### Additional security
 
-The Camunda webapps are available in a separate path (`/camunda/*`) from the other Valtimo APIs (`/api/*`). Since the 
-Camunda webapps are a tool used to manage the internal it may be advisable to control access to this path on an 
-infrastructure level.
+The Camunda webapps are available in a separate path (`/camunda/*`) from the other Valtimo APIs (`/api/*`). These paths
+are by default not accessible and will respond with http status 403. Access to these paths is by can be configured with
+a property that allows whitelisted hosts:
+
+```yaml
+valtimo:
+    security:
+        whitelist:
+            hosts:
+                - localhost
+                - 123.123.123.123
+                - my.office.com
+```
 
 To remove the Camunda webapps from Valtimo altogether the 
 `org.camunda.bpm.springboot:camunda-bpm-spring-boot-starter-webapp:7.14.0` dependency can be excluded. This is a 
