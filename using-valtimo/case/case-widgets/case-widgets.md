@@ -152,6 +152,52 @@ By default, this setting is disabled.
               }
             ]
           }
+        },
+        {
+          "type": "collection",
+          "key": "my-colleciton",
+          "title": "My collection",
+          "width": 2,
+          "highContrast": false,
+          "properties": {
+            "collection": "doc:/kids",
+            "defaultPageSize": 2,
+            "title": {
+              "value": "name"
+            },
+            "fields": [
+              {
+                "key": "dateOfBirth",
+                "title": "Date of birth",
+                "value": "dateOfBirth",
+                "width": "half",
+                "displayProperties": {
+                  "type": "date",
+                  "format": "DD-MM-YYYY"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "type": "custom",
+          "key": "clock",
+          "title": "Clock",
+          "width": 3,
+          "highContrast": false,
+          "properties": {
+            "componentKey": "date-time-case-widget"
+          }
+        },
+        {
+          "type": "formio",
+          "key": "my-form",
+          "title": "My Form",
+          "width": 4,
+          "highContrast": true,
+          "properties": {
+            "formDefinitionName": "my-form-definition-name"
+          }
         }
       ]
     }
