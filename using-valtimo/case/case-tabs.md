@@ -37,7 +37,7 @@ even if a submit button has been added to the form definition.
 Widget tabs are tabs that show data by using widgets. 
 These widgets can be configured to show specific data as fields, tables and more.
 
-For more information, visit [this page](case-widgets-tab)
+For more information, visit [this page](case-widgets/case-widgets.md)
 
 ### Custom tabs
 
