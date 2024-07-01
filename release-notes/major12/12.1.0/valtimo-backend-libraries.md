@@ -21,6 +21,7 @@ The following features were added:
 
   Zaakresultaat information can now be retrieved using the `zaakresultaat` prefix. For example: the `zaakresultaat:omschrijving` expression can be used to prefill a field with the description of the Zaakresultaat in a summary form. More information can be found [here](/reference/modules/value-resolver.md#zgw-value-resolvers).
 
+* **Task search**
 
 ## Bugfixes
 
