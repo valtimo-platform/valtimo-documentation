@@ -18,7 +18,7 @@ information on this feature toggle, visit [this page](/reference/feature-toggles
 
 ## Different types of case tabs
 
-Valtimo supports the following 4 different types of case tab.
+Valtimo supports the following 4 different types of case tabs:
 
 ### Standard tabs
 
@@ -34,9 +34,10 @@ with valtimo can be chosen. This is purely meant to display information, as ther
 even if a submit button has been added to the form definition.
 
 ### Widget tabs
+Widget tabs are tabs that show data by using widgets. 
+These widgets can be configured to show specific data as fields, tables and more.
 
-Widget tabs each contain a configuration of different case widgets. For more information, [refer to this page.](case-widgets/case-widgets.md).
-
+For more information, visit [this page](case-widgets/case-widgets.md)
 
 ### Custom tabs
 
@@ -60,8 +61,8 @@ import {CustomTabComponent} from 'component-path';
     {
       provide: CASE_TAB_TOKEN,
       useValue: {
-        'custom-tab-name': CustomTabComponent,
-      },
+        'custom-tab-name': CustomTabComponent
+      }
     }
 ...
 export class AppModule {
@@ -140,7 +141,7 @@ that are available can be found on the [reference page](/reference/modules/case.
           "key": "summary",
           "type": "standard",
           "contentKey": "summary",
-           "showTasks": true
+          "showTasks": true
         },
         {
           "name": "Progress",
@@ -153,7 +154,7 @@ that are available can be found on the [reference page](/reference/modules/case.
           "key": "zaakobjecten",
           "type": "standard",
           "contentKey": "zaakobjecten",
-           "showTasks": false
+          "showTasks": false
         }
       ]
     }
