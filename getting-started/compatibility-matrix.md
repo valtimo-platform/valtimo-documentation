@@ -39,6 +39,7 @@ Starting from major 10, `valtimo-backend-libraries` and `valtimo-frontend-librar
 
 | valtimo-backend-libraries | valtimo-frontend-libraries | Java | Kotlin | Spring Boot | Node | Angular | Camunda |
 |---------------------------|----------------------------|------|--------|-------------|------|---------|---------|
+| 9.26.2                    | 5.15.2                     | 13   | 1.6.10 | 2.5.12      | 14   | 13      | 7.19.0  |
 | 9.26.1                    | 5.15.1                     | 13   | 1.6.10 | 2.5.12      | 14   | 13      | 7.19.0  |
 | 9.26.0                    | 5.15.0                     | 13   | 1.6.10 | 2.5.12      | 14   | 13      | 7.19.0  |
 | 9.25.0                    | 5.14.0                     | 13   | 1.6.10 | 2.5.12      | 14   | 13      | 7.14.0  |
