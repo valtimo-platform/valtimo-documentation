@@ -207,5 +207,14 @@ By default, this setting is disabled.
 
 ```
 
+### Case Widgets UI configuration
 
+Under the tab details for a widgets tab you can find this overview detailing which widgets are configured so far:
 
+![Widgets list](../img/widget-list.png)
+
+Here the order of the widgets can be change through drag and drop, widgets can be deleted or edited.
+
+The delete is accessible via the overflow menu, while the edit is available both via the overflow menu and by clicking on a widget row.
+
+From this view a new widget can be configured as well. More on configuring a widget through the UI can be found [here](./configuring-widget.md)
