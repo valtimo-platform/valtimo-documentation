@@ -18,7 +18,7 @@ information on this feature toggle, visit [this page](/reference/feature-toggles
 
 ## Different types of case tabs
 
-Valtimo supports the following 3 different types of case tab.
+Valtimo supports the following 4 different types of case tabs:
 
 ### Standard tabs
 
@@ -61,8 +61,8 @@ import {CustomTabComponent} from 'component-path';
     {
       provide: CASE_TAB_TOKEN,
       useValue: {
-        'custom-tab-name': CustomTabComponent,
-      },
+        'custom-tab-name': CustomTabComponent
+      }
     }
 ...
 export class AppModule {
@@ -92,7 +92,9 @@ The case tab menu is found under the admin menu. Admin privileges are required t
 
    ![Example of configuring a tab](img/tab-config-modal.png)
 
-7. Click the button 'Add tab'
+7. Optionally choose whether the task list will show on the tab you are configuring.
+
+8. Click the button 'Add tab'
 
 If there are no tabs to be configured for one specific type, then the button in the Step 5 modal will be disabled.
 
@@ -138,7 +140,8 @@ that are available can be found on the [reference page](/reference/modules/case.
           "name": "Summary",
           "key": "summary",
           "type": "standard",
-          "contentKey": "summary"
+          "contentKey": "summary",
+          "showTasks": true
         },
         {
           "name": "Progress",
@@ -150,7 +153,8 @@ that are available can be found on the [reference page](/reference/modules/case.
           "name": "Zaak objects",
           "key": "zaakobjecten",
           "type": "standard",
-          "contentKey": "zaakobjecten"
+          "contentKey": "zaakobjecten",
+          "showTasks": false
         }
       ]
     }

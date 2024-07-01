@@ -25,18 +25,32 @@ The following features were added:
 
   - The Carbon list now supports extra template data. The ColumnConfig interface in the *@valtimo/components* library now contains an *templateData* attribute that can be used.
   - The Carbon list supports a new display type called tags. More details about tags can be found [here](/reference/user-interface/components/valtimo-carbon-list/valtimo-carbon-list.md)
+  - The Carbon list context menu now supports disabling items. More details about this can be found [here](/reference/user-interface/components/valtimo-carbon-list/list-with-actions.md)
+
+- **Documenten API plugin versions**
+
+  The Documenten API plugin now supports additional versions. Some of the versions now also enable new features inside
+  Valtimo. More information can be
+  found [here](/using-valtimo/plugin/documenten-api/configure-documenten-api-plugin.md#documenten-api-version).
 
 - **Plugin modal updates**
 
   The modals for adding and editing a plugin now use Carbon design.
 
+- **Document metadata modal updates**
+
+  The modal for uploading document metadata now uses Carbon design. In addition, an option to edit document metadata has been added. Both modals now support the use of tags.
+
+
 ## Bugfixes
 
 The following bugs were fixed:
 
-- **Bug1**
+- **New user tasks don't always appear**
 
-  Description of what the issue was.
+  When starting a case or when completing a user task, the next user task will now be shown on the summary page without
+  the need of a hard refresh. There is now a 7.5 seconds long window in which new user tasks are retrieved. If any
+  user tasks is created after the 7.5 seconds, it will not be shown on the summary page.
 
 - **Bug2**
 

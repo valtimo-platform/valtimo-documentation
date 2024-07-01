@@ -12,6 +12,8 @@ code.
 * [Document](document/document.md)
 * [Forms](forms/forms.md)
 * [Form flow](form-flow/form-flow.md)
+* [Form View Model](form-view-model/form-view-model.md)
+* [Command handling](command-handling/command-handling.md)
 * [Modal (external docs)](https://angular.carbondesignsystem.com/?path=/story/components-modal--basic)
 * [Plugins](plugin/plugins.md)
 * [Tabs](tabs/tabs.md)

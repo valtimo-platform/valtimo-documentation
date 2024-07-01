@@ -13,15 +13,13 @@ The following features were added:
 
   Document list columns can now be configured via autodeployment. More information can be found [here](/using-valtimo/zgw/documents/zgw-documents.md#autodeployment-1).
 
-* **New feature1**
+* **Verified form flow submission**
 
-  Description of the new feature goes here.
-  Also link to the page that explains the feature in greater detail.
+  The submission data is now verified when submitting a form that is part of a form flow.
 
-* **New feature2**
+* **Valueresolver for Zaakresultaat**
 
-  Description of the new feature goes here.
-  Also link to the page that explains the feature in greater detail.
+  Zaakresultaat information can now be retrieved using the `zaakresultaat` prefix. For example: the `zaakresultaat:omschrijving` expression can be used to prefill a field with the description of the Zaakresultaat in a summary form. More information can be found [here](/reference/modules/value-resolver.md#zgw-value-resolvers).
 
 
 ## Bugfixes

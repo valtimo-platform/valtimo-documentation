@@ -26,6 +26,25 @@ be configured that is able to authenticate for the specific application that hos
 An example plugin configuration:
 ![example plugin configuration](img/configure-plugin.png)
 
+### Documenten API version
+
+Newer versions of the Documenten API offer more functionality. The version of the Documenten API determines which
+features are available in Valtimo.
+
+| Feature            | Version                    | Feature description                                                                               |
+|--------------------|----------------------------|---------------------------------------------------------------------------------------------------|
+| Trefwoorden        | 1.4.0 and up               | Tags can be added to uploaded documents.                                                          |
+| Filterable columns | 1.4.2-maykin-1.13.0 and up | Makes it possible to search for a specific document based on title and other document properties. |
+| Sortable columns   | 1.4.2-maykin-1.13.0 and up | Some of the columns of the uploaded documents can now be sorted.                                  |
+
+#### Maykin Media
+
+Maykin Media has released their own Documenten API implementation that offers additional experimental functionality.
+Maykin Media's release that first supported the experimental functionality
+is [Open Zaak 1.13.0](https://github.com/open-zaak/open-zaak/tree/stable/1.13.x) which makes use of the Documenten API
+version **1.4.2**. Valtimo can make use of the experimental functionality from Maykin Media when selecting version 
+**1.4.2-maykin-1.13.0** inside the Documenten API plugin.
+
 ## Available actions
 
 The Documenten API plugin supports the following actions that can be configured in process links in order to store 
