@@ -2,7 +2,7 @@
 
 ### There are 4 steps to configuring a widget:
 
-1. Choosing the widget type. Out of the box, we support 5 Widget types: Fields, Custom component, FormIO form, Table, Collection:
+1. Choosing the widget type. Out of the box, 5 widget types are supported:: Fields, Custom component, FormIO form, Table, Collection:
 
    ![Choosing a widget type](../img/widget-types.png)
 

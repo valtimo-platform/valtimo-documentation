@@ -213,7 +213,7 @@ Under the tab details for a widgets tab you can find this overview detailing whi
 
 ![Widgets list](../img/widget-list.png)
 
-Here the order of the widgets can be change through drag and drop, widgets can be deleted or edited.
+Here the order of the widgets can be changed through drag and drop. Widgets can be deleted or edited.
 
 The delete is accessible via the overflow menu, while the edit is available both via the overflow menu and by clicking on a widget row.
 
