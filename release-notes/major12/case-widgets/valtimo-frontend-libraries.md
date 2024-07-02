@@ -4,10 +4,10 @@
 
 The following features were added:
 
-* **New feature1**
+* **Tasks list can now be added to any case tab**
 
-  Description of the new feature goes here.
-  Also link to the page that expains the feature in greater detail.
+  When configuring a case tab, it is now possible to show the task list on that tab. This list was previously only shown on the summary tab.
+  For more information, please see [this page](/using-valtimo/case/case-tabs.md#configuration-using-the-admin-menu)
 
 * **New feature2**
 
@@ -35,7 +35,7 @@ The following breaking changes were introduced:
 
 * **Breaking change2**
 
-Instructions on how to migrate to this version of Valtimo can be found [here](migration.md).
+Instructions on how to migrate to this version of Valtimo can be found [here](../../template/migration.md).
 
 ## Deprecations
 
@@ -48,7 +48,7 @@ The following was deprecated:
 
   X was deprecated and is replaced with Y.
 
-Instructions on how to migrate to this version of Valtimo can be found [here](migration.md).
+Instructions on how to migrate to this version of Valtimo can be found [here](../../template/migration.md).
 
 ## Known issues
 
