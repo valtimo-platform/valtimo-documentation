@@ -9,10 +9,14 @@ The following features were added:
   When configuring a case tab, it is now possible to show the task list on that tab. This list was previously only shown on the summary tab.
   For more information, please see [this page](/using-valtimo/case/case-tabs.md#configuration-using-the-admin-menu)
 
-* **New feature2**
+* **Case Admin widgets tab**
 
-  Description of the new feature goes here.
-  Also link to the page that expains the feature in greater detail.
+  A new tab of type *widgets* is available when configuring your Case. For more information, please see [this page](/using-valtimo/case/case-tabs.md#widget-tabs)
+
+* **Case Widgets**
+
+  Widgets are now available to be shown for cases. After configuring your widgets, they will show under a new tab in your Case details page. For more information
+  on configuring widgets, please see [this page](/using-valtimo/case/case-widgets/case-widgets.md)
 
 
 ## Bugfixes
