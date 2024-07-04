@@ -46,6 +46,7 @@
         * [Outbox RabbitMQ](getting-started/modules/core/outbox-rabbitmq.md)
       * [Process document](getting-started/modules/core/process-document.md)
       * [Resource](getting-started/modules/core/resource.md)
+      * [Script](getting-started/modules/core/script.md)
       * [Temporary resource storage](getting-started/modules/core/temporary-resource-storage.md)
       * [Test utils common](getting-started/modules/core/test-utils-common.md)
       * [Value resolvers](getting-started/modules/core/value-resolver.md)

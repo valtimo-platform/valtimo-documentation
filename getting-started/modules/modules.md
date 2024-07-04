@@ -12,6 +12,7 @@
   * [Outbox](core/outbox.md)
   * [Process document](core/process-document.md)
   * [Resource](core/resource.md)
+  * [Script](core/script.md)
   * [Temporary resource storage](core/temporary-resource-storage.md)
   * [Value resolvers](core/value-resolver.md)
   * [Web](core/web/web.md)
