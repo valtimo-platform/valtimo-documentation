@@ -41,6 +41,10 @@ The following features were added:
 
   The modal for uploading document metadata now uses Carbon design. In addition, an option to edit document metadata has been added. Both modals now support the use of tags.
 
+- **Carbon design updates**
+
+  The tabs on the case detail page now use Carbon inline style tabs. In addition, the spacing in the page header has
+  been adjusted.
 
 ## Bugfixes
 
