@@ -26,4 +26,17 @@ dependencies {
 }
 ```
 
+## Configuration
 
+Contract can be configured to better match the environment. The identifier field used when assigning cases and tasks to
+users can be configured with the property as defined below:
+
+#### **`application.yml`**
+```yaml
+valtimo:
+  oauth:
+    identifier-field: username
+```
+
+There are two possible values here, `username` and `userid`. These settings should only be configured once, when setting
+up Valtimo. Changing this property to something else will also require database changes.

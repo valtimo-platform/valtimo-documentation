@@ -21,6 +21,13 @@ The following features were added:
 
   Zaakresultaat information can now be retrieved using the `zaakresultaat` prefix. For example: the `zaakresultaat:omschrijving` expression can be used to prefill a field with the description of the Zaakresultaat in a summary form. More information can be found [here](/reference/modules/value-resolver.md#zgw-value-resolvers).
 
+* **Toggle for assigning users based on username rather than ID**
+  
+  A new application property was introduced to configure whether username or ID should be used to assign users to tasks
+  or cases. When left unspecified, ID will be used. To help with this, a new value can be defined in permissions, 
+  `${currentUserIdentifier}`. This takes into account what the application property has been set to.
+
+  More information can be found [here](/getting-started/modules/core/contract.md#configuration)
 
 ## Bugfixes
 
