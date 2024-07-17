@@ -14,8 +14,8 @@ The access to the following resources is limited by Valtimo access control.
 | **[Process definition](#process-definition)**   | `com.ritense.valtimo.camunda.domain.CamundaProcessDefinition`          | Core     |
 | **[Task](#task)**                               | `com.ritense.valtimo.camunda.domain.CamundaTask`                       | Core     |
 | **[Task identity link](#task-identity-link)**   | `com.ritense.valtimo.camunda.domain.CamundaIdentityLink`               | Core     |
-| **[Case tab](#case-tab)**                       | `com.ritense.case.domain.CaseTab`                                      | CaseTab  |
-| **[Case Widget](#case-widget)**                 | `com.ritense.case_.domain.tab.CaseWidgetTabWidget`                     | CaseTab  |
+| **[Case tab](#case-tab)**                       | `com.ritense.case.domain.CaseTab`                                      | Case     |
+| **[Case tab widget](#case-tab-widget)**         | `com.ritense.case_.domain.tab.CaseWidgetTabWidget`                     | Case     |
 
 ### Document
 Resource type: `com.ritense.document.domain.impl.JsonSchemaDocument`
@@ -145,6 +145,19 @@ Resource type: `com.ritense.case.domain.CaseTab`
 | Action         | key           | Description                    |
 |----------------|:--------------|:-------------------------------|
 | **View**       | `view`        | Allows viewing tabs of a case. |
+
+#### Supported relations
+| Related resource                                |
+|-------------------------------------------------|
+| **[Document definition](#document-definition)** |
+
+### Case tab widget
+Resource type: `com.ritense.case_.domain.tab.CaseWidgetTabWidget`
+
+#### Supported actions
+| Action         | key           | Description                           |
+|----------------|:--------------|:--------------------------------------|
+| **View**       | `view`        | Allows viewing widgets on a case tab. |
 
 #### Supported relations
 No relations are supported for this type.
