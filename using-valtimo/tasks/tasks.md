@@ -56,3 +56,45 @@ The documentation on case search fields can be found [here](/using-valtimo/docum
 For task list filters the following path prefixes are available:
 - `doc:`
 - `case:`
+
+### Autodeployment
+Task search fields can be autodeployed by creating json files on the classpath following this pattern: `classpath*:**/*.task-search-field.json`. 
+The name of the file does not matter, but it is advised to keep it in line with the object title.
+
+You can find an example of the JSON below:
+
+**my-case.task-search-field.json**:
+```json
+{
+  "changesetId": "my-case.TaskListSearchColumns.1721390529320",
+  "collection": [
+    {
+      "ownerId": "my-case",
+      "searchFields": [
+        {
+          "key": "caseAssignee",
+          "title": "Case assignee",
+          "path": "case:assigneeFullName",
+          "dataType": "TEXT",
+          "fieldType": "SINGLE",
+          "matchType": "LIKE"
+        },
+        {
+          "key": "createdBy",
+          "title": "Case created by",
+          "path": "case:createdBy",
+          "dataType": "TEXT",
+          "fieldType": "SINGLE",
+          "matchType": "LIKE"
+        }
+      ]
+    }
+  ]
+}
+```
+
+More information on the available fields and values can be found [here](/extending-valtimo/document/configuring-search-fields.md).
+
+### Import and export
+Task search fields are included in the case import- and export functionality. 
+Instructions can be found [here](/using-valtimo/case/exporting-case-definitions.md)
