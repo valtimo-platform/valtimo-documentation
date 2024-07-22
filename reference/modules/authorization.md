@@ -213,8 +213,9 @@ The following conditions can be used with their respective structures:
 | `conditions`   | The conditions that should apply to the specified resource type. | See [supported conditions](#supported-conditions).     |
 
 ### Special values for the value field
-| Value                 | Description                                     |
-|:----------------------|:------------------------------------------------|
-| `${currentUserId}`    | The identifier assigned to the current user.    |
-| `${currentUserEmail}` | The email address the current user has.         |
-| `${currentUserRoles}` | The list of roles the current user has.         |
+| Value                      | Description                                     |
+|:---------------------------|:------------------------------------------------|
+| `${currentUserId}`         | The identifier assigned to the current user.    |
+| `${currentUserEmail}`      | The email address the current user has.         |
+| `${currentUserRoles}`      | The list of roles the current user has.         |
+| `${currentUserIdentifier}` | The configured identifier assigned to the user. |
