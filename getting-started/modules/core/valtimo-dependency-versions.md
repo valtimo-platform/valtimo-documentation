@@ -43,7 +43,7 @@ For the full list, please take a look at the POM file of this module.
 
 dependencyManagement {
   imports {
-    mavenBom("com.ritense.valtimo:valtimo-dependencies"))
+    mavenBom("com.ritense.valtimo:valtimo-dependency-versions"))
   }
 }
 ```
