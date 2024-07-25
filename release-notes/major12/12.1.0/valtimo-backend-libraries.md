@@ -23,6 +23,14 @@ The following features were added:
 
 * **Task search**
 
+* **Toggle for assigning users based on username rather than ID**
+  
+  A new application property was introduced to configure whether username or ID should be used to assign users to tasks
+  or cases. When left unspecified, ID will be used. To help with this, a new value can be defined in permissions, 
+  `${currentUserIdentifier}`. This takes into account what the application property has been set to.
+
+  More information can be found [here](/getting-started/modules/core/contract.md#configuration)
+
 ## Bugfixes
 
 The following bugs were fixed:
