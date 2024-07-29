@@ -33,9 +33,10 @@ The following features were added:
 
 The following bugs were fixed:
 
-* **Bug1**
+* **Error when no recipients are present when sending an email**
 
-  Description of what the issue was.
+  When an email is sent by Valtimo, and there are no recipients due to none of the recipients being whitelisted, an
+  error would incorrectly occur.
 
 * **Bug2**
 
