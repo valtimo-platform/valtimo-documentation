@@ -50,10 +50,6 @@ The following features were added:
 
   A new feature was added to user-tasks. Users can now save their progress on a form and continue later. You can enable the feature with this feature toggle `enableIntermediateSave` in your environment.ts file.
 
-- **FormViewModel**
-
-  A new feature was added to the frontend libraries, `FormViewModel`. More information can be found [here](/extending-valtimo/form-view-model/form-view-model.md).
-
 ## Bugfixes
 
 The following bugs were fixed:
