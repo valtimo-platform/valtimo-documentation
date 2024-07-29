@@ -1,4 +1,4 @@
-# Frontend libraries x.x.x
+# Frontend libraries 12.2.0
 
 ## New Features
 

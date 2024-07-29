@@ -1,4 +1,4 @@
-# Backend libraries x.x.x
+# Backend libraries 12.2.0
 
 ## New Features
 
