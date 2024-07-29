@@ -21,6 +21,10 @@ The following features were added:
 
   Zaakresultaat information can now be retrieved using the `zaakresultaat` prefix. For example: the `zaakresultaat:omschrijving` expression can be used to prefill a field with the description of the Zaakresultaat in a summary form. More information can be found [here](/reference/modules/value-resolver.md#zgw-value-resolvers).
 
+* **FormViewModel**
+
+  A new module was added to the backend libraries, `FormViewModel`. More information can be found [here](/extending-valtimo/form-view-model/form-view-model.md).
+
 * **Toggle for assigning users based on username rather than ID**
   
   A new application property was introduced to configure whether username or ID should be used to assign users to tasks
