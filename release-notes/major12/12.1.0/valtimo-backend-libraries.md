@@ -29,50 +29,22 @@ The following features were added:
 
   More information can be found [here](/getting-started/modules/core/contract.md#configuration)
 
+* **Access control on dashboards**
+
+  The dashboard feature now supports access control. Permissions can be configured to view dashboards, e.g. based on the dashboard key. More information can be found [here](/reference/modules/authorization.md).
+
 ## Bugfixes
 
-The following bugs were fixed:
-
-* **Bug1**
-
-  Description of what the issue was.
-
-* **Bug2**
-
-  Description of what the issue was.
+No bugfixes.
 
 ## Breaking changes
 
-The following breaking changes were introduced:
-
-* **Breaking change1**
-
-* **Breaking change2**
-
-Instructions on how to migrate to this version of Valtimo can be found [here](migration.md).
+No breaking changes.
 
 ## Deprecations
 
-The following was deprecated:
-
-* **Deprecation1**
-
-  X was deprecated and is replaced with Y.
-
-* **Deprecation2**
-
-  X was deprecated and is replaced with Y.
-
-Instructions on how to migrate to this version of Valtimo can be found [here](migration.md).
+No deprecations.
 
 ## Known issues
 
-This version has the following known issues:
-
-* **Issue1**
-  * Discovered in version x.x.x
-  * Describe what can be done to work around the issue
-
-* **Issue2**
-  * Discovered in version x.x.x
-  * Describe what can be done to work around the issue
+No known issues.
