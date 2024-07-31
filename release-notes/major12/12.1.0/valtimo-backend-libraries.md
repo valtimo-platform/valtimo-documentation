@@ -33,6 +33,10 @@ The following features were added:
 
   More information can be found [here](/getting-started/modules/core/contract.md#configuration)
 
+* **Access control on dashboards**
+
+  The dashboard feature now supports access control. Permissions can be configured to view dashboards, e.g. based on the dashboard key. More information can be found [here](/reference/modules/authorization.md).
+
 ## Bugfixes
 
 The following bug was fixed:
