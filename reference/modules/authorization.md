@@ -3,19 +3,33 @@
 ## Available resources
 The access to the following resources is limited by Valtimo access control.
 
-| Resource name                                   | Resource type                                                          | Module   |
-|-------------------------------------------------|:-----------------------------------------------------------------------|:---------|
-| **[Document](#document)**                       | `com.ritense.document.domain.impl.JsonSchemaDocument`                  | Document |
-| **[Document definition](#document-definition)** | `com.ritense.document.domain.impl.JsonSchemaDocumentDefinition`        | Document |
-| **[Document snapshot](#document-snapshot)**     | `com.ritense.document.domain.impl.snapshot.JsonSchemaDocumentSnapshot` | Document |
-| **[Search field](#search-field)**               | `com.ritense.document.domain.impl.searchfield.SearchField`             | Document |
-| **[Note](#note)**                               | `com.ritense.note.domain.Note`                                         | Notes    |
-| **[Execution](#execution)**                     | `com.ritense.valtimo.camunda.domain.CamundaExecution`                  | Core     |
-| **[Process definition](#process-definition)**   | `com.ritense.valtimo.camunda.domain.CamundaProcessDefinition`          | Core     |
-| **[Task](#task)**                               | `com.ritense.valtimo.camunda.domain.CamundaTask`                       | Core     |
-| **[Task identity link](#task-identity-link)**   | `com.ritense.valtimo.camunda.domain.CamundaIdentityLink`               | Core     |
-| **[Case tab](#case-tab)**                       | `com.ritense.case.domain.CaseTab`                                      | CaseTab  |
-| **[Case Widget](#case-widget)**                 | `com.ritense.case_.domain.tab.CaseWidgetTabWidget`                     | CaseTab  |
+| Resource name                                   | Resource type                                                          | Module    |
+|-------------------------------------------------|:-----------------------------------------------------------------------|:----------|
+| **[Dashboard](#dashboard)**                     | `com.ritense.dashboard.domain.Dashboard`                               | Dashboard |
+| **[Document](#document)**                       | `com.ritense.document.domain.impl.JsonSchemaDocument`                  | Document  |
+| **[Document definition](#document-definition)** | `com.ritense.document.domain.impl.JsonSchemaDocumentDefinition`        | Document  |
+| **[Document snapshot](#document-snapshot)**     | `com.ritense.document.domain.impl.snapshot.JsonSchemaDocumentSnapshot` | Document  |
+| **[Search field](#search-field)**               | `com.ritense.document.domain.impl.searchfield.SearchField`             | Document  |
+| **[Note](#note)**                               | `com.ritense.note.domain.Note`                                         | Notes     |
+| **[Execution](#execution)**                     | `com.ritense.valtimo.camunda.domain.CamundaExecution`                  | Core      |
+| **[Process definition](#process-definition)**   | `com.ritense.valtimo.camunda.domain.CamundaProcessDefinition`          | Core      |
+| **[Task](#task)**                               | `com.ritense.valtimo.camunda.domain.CamundaTask`                       | Core      |
+| **[Task identity link](#task-identity-link)**   | `com.ritense.valtimo.camunda.domain.CamundaIdentityLink`               | Core      |
+| **[Case tab](#case-tab)**                       | `com.ritense.case.domain.CaseTab`                                      | CaseTab   |
+| **[Case Widget](#case-widget)**                 | `com.ritense.case_.domain.tab.CaseWidgetTabWidget`                     | CaseTab   |
+
+### Dashboard
+Resource type: `com.ritense.dashboard.domain.Dashboard`
+
+#### Supported actions
+| Action         | key           | Description                            |
+|----------------|:--------------|:---------------------------------------|
+| **View**       | `view`        | Allows retrieving a single dashboard.  |
+| **View list**  | `view_list`   | Allows retrieving lists of dashboards. |
+
+#### Supported relations
+
+No relations are supported for this type.
 
 ### Document
 Resource type: `com.ritense.document.domain.impl.JsonSchemaDocument`
@@ -51,7 +65,7 @@ Resource type: `com.ritense.document.domain.impl.JsonSchemaDocumentDefinition`
 
 #### Supported relations
 
-No relations are supported for this type
+No relations are supported for this type.
 
 ### Document snapshot
 Resource type: `com.ritense.document.domain.impl.snapshot.JsonSchemaDocumentSnapshot`

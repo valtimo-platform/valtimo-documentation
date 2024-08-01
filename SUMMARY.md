@@ -236,7 +236,6 @@
     * 12.1.0
       * [Valtimo backend libraries](release-notes/major12/12.1.0/valtimo-backend-libraries.md)
       * [Valtimo frontend libraries](release-notes/major12/12.1.0/valtimo-frontend-libraries.md)
-      * [Migration](release-notes/major12/12.1.0/migration.md)
     * 12.2.0
       * [Valtimo backend libraries](release-notes/major12/12.2.0/valtimo-backend-libraries.md)
       * [Valtimo frontend libraries](release-notes/major12/12.2.0/valtimo-frontend-libraries.md)
