@@ -25,6 +25,10 @@ The following features were added:
 
   A new module was added to the backend libraries, `FormViewModel`. More information can be found [here](/extending-valtimo/form-view-model/form-view-model.md).
 
+* **Task search**
+
+  Tasks on the task list can now be filtered on task-data or case-data. Task search fields are configurable per case-type by the administrator. More information can be found [here](/using-valtimo/tasks/tasks.md).
+
 * **Toggle for assigning users based on username rather than ID**
   
   A new application property was introduced to configure whether username or ID should be used to assign users to tasks
