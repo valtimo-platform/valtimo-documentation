@@ -50,6 +50,11 @@ The following features were added:
 
   A new feature was added to user-tasks. Users can now save their progress on a form and continue later. You can enable the feature with this feature toggle `enableIntermediateSave` in your environment.ts file.
 
+- **Additional dashboard display types, data sources and functionality**
+
+  Three new display types and two new data sources are supported. In addition, data time expression are supported. For
+  more information, refer to [this page](/reference/modules/dashboard.md)
+
 ## Bugfixes
 
 The following bugs were fixed:

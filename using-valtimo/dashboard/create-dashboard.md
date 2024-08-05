@@ -35,6 +35,5 @@ After creating a dashboard, widgets can be added to the dashboard.
 
 ### Adding widget: Case count
 
-Valtimo 10.7, there is one supported widget, with datasource 'Case count' and display type 'Big number'. 
-This widget can be created by following the instructions above. More information on how to fill in
-the form, can be found [here](/reference/modules/dashboard.md#case-count)
+This widget can be created by following the instructions above. For more information on configuring other data sources
+and display types, [refer to this page](/reference/modules/dashboard.md#case-count)
