@@ -46,6 +46,10 @@ The following features were added:
   The tabs on the case detail page now use Carbon inline style tabs. In addition, the spacing in the page header has
   been adjusted.
 
+- **Intermediate save**
+
+  A new feature was added to user-tasks. Users can now save their progress on a form and continue later. You can enable the feature with this feature toggle `enableIntermediateSave` in your environment.ts file.
+
 ## Bugfixes
 
 The following bugs were fixed:
@@ -56,43 +60,15 @@ The following bugs were fixed:
   the need of a hard refresh. There is now a 7.5 seconds long window in which new user tasks are retrieved. If any
   user tasks is created after the 7.5 seconds, it will not be shown on the summary page.
 
-- **Bug2**
-
-  Description of what the issue was.
 
 ## Breaking changes
 
-The following breaking changes were introduced:
-
-- **Breaking change1**
-
-- **Breaking change2**
-
-Instructions on how to migrate to this version of Valtimo can be found [here](migration.md).
+No breaking changes.
 
 ## Deprecations
 
-The following was deprecated:
-
-- **Deprecation1**
-
-  X was deprecated and is replaced with Y.
-
-- **Deprecation2**
-
-  X was deprecated and is replaced with Y.
-
-Instructions on how to migrate to this version of Valtimo can be found [here](migration.md).
+No deprecations.
 
 ## Known issues
 
-This version has the following known issues:
-
-- **Issue1**
-
-  - Discovered in version x.x.x
-  - Describe what can be done to work around the issue
-
-- **Issue2**
-  - Discovered in version x.x.x
-  - Describe what can be done to work around the issue
+No known issues.
