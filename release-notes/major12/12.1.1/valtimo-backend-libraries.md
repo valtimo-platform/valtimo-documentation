@@ -12,7 +12,12 @@ The following features were added:
 
 ## Bugfixes
 
-No bugfixes.
+The following bug was fixed:
+
+* **Assigned tasks not visible on the 'my tasks' tab**
+
+  With the introduction of the username/userid as assignee toggle, assigned tasks were not visible on the 'my tasks' tab.
+  This bug only occured when the toggle was set to username.
 
 ## Breaking changes
 
