@@ -233,9 +233,13 @@
       * [Valtimo frontend libraries](release-notes/major12/12.0.0/valtimo-frontend-libraries.md)
       * [Migration](release-notes/major12/12.0.0/migration.md)
         * [Spring Boot 3](release-notes/major12/12.0.0/spring-boot3-migration.md)
+    * 12.0.1
+      * [Valtimo backend libraries](release-notes/major12/12.0.1/valtimo-backend-libraries.md)
     * 12.1.0
       * [Valtimo backend libraries](release-notes/major12/12.1.0/valtimo-backend-libraries.md)
       * [Valtimo frontend libraries](release-notes/major12/12.1.0/valtimo-frontend-libraries.md)
+    * 12.1.1
+      * [Valtimo backend libraries](release-notes/major12/12.1.1/valtimo-backend-libraries.md)
   * 11.x.x
     * 11.3.2
       * [Valtimo frontend libraries](release-notes/major11/11.3.2/valtimo-frontend-libraries.md)
