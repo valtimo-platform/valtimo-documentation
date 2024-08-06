@@ -98,7 +98,7 @@ Displays multiple counts in a donut chart.
 |---------------------------|:----------------------------------------------------------------------------------------------------------|
 | `title`                   | Required. The title of the widget, shown at the top of the widget.                                        |
 | `subtitle`                | The text shown below the title.                                                                           |
-| `label`                   | The label that is displayed in the center of the donut. | |
+| `label`                   | The label that is displayed in the center of the donut.  |
 
 ### Meter chart
 
