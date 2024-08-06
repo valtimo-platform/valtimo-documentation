@@ -28,7 +28,7 @@ Returns the number of cases of a specific type that match the criteria have been
 |-----------------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `queryPath`     | The path of the variable that the condition uses to filter the count.                                                                                                                                                                                                 |
 | `queryOperator` | The operator that the condition uses to filter the count. Available values are `!=`, `==`, `>`, `>=`, `<` and `<=`.                                                                                                                                                   |
-| `queryValue`    | The value which the queryPath variable is checked against. As of version 12.1, date time expressions can be used. For example: `${localDateTimeNow.minusWeeks(2)}`. This is useful for, for example, retrieving the amount of cases created in the past two weeks.    |
+| `queryValue`    | The value which the queryPath variable is checked against. As of version 12.1, date time expressions can be used. For example: `${localDateTimeNow.minusWeeks(2)}`. This is used to retrieve the amount of cases created in the past two weeks.    |
 
 ### Multiple case counts
 
