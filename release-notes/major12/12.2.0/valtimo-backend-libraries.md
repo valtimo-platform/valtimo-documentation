@@ -8,6 +8,21 @@ The following features were added:
 
   Objects can now be updated using the `updateObject` method in the `ObjectManagementFacade`.
 
+* **Introduced a new database table**
+  
+  The table `resource_storage_metadata` creates a link between the (form io) file id and the (documenten api) 
+  document id and download url
+
+* **The system proces `Documenten API upload document` has a new system task**
+  
+  The new system task will publish a `ResourceStorageMetadataAvailableEvent`. The parameters in this event are used to
+  store in the new `resource_storage_metadata` database table
+
+* **New api for Temporary Resource Storage**
+
+  The `GET /v1/resource-storage/{resourceStorageFieldId}/metadata/{metadataKey}` will return a metadata value
+  for the provided (form io) field id) and the metadata key. 
+  There currently are two allowed metadataKeys: `downloadUrl` and `documentId`
 
 ## Bugfixes
 
