@@ -133,4 +133,4 @@ Displays a count and a total count in a gauge.
 |---------------------------|:-----------------------------------------------------------------------------------------|
 | `title`                   | Required. The title of the widget, shown at the top of the widget.                       |
 | `subtitle`                | The text shown below the title.                                                          |
-| `label`                   | The label specifies the type of item under the gauge. In the screenshot this is 'zaken'. | |
+| `label`                   | The label specifies the type of item under the gauge. In the screenshot this is 'zaken'. |
