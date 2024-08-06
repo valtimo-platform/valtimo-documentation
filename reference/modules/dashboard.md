@@ -56,7 +56,7 @@ Front-end module: `CaseGroupByDataSourceModule`
 | `documentDefinition` | Required. The key of the document definition for which cases need to be counted.                                                                                                                          
 | `path`               | Required. The path of which the values need to be grouped. For example `case:createdBy`.                                                                                                                  
 | `queryConditions`    | Optional. An array of conditions that the case needs to match in order to be included in the counts. Each item in the array is a query condition object described in the table under `case-count`.        |
-| `enum`               | Optional. An object which defines how items retrieved by the group by need to be displayed. This can be used to show technical values in a user-friendly way. For example `{"isRequired": "Is required"}` |
+| `enum`               | Optional. An object which defines how items retrieved by the group by need to be displayed. This can be used to show technical values in a user-friendly way. For example `{"isRequired": "Is required"}`. |
 
 ## Display types
 
