@@ -6,7 +6,7 @@ To use ZGW documents, the [documenten-api](/getting-started/modules/zgw/document
 Instructions on how to use and configure the plugin(s) can be found [here](/using-valtimo/plugin/documenten-api/configure-documenten-api-plugin.md)
 
 ## Configuring the document list
-The admin can configure some aspect to the document list.
+The admin can configure some aspects to the document list.
 
 ### Keywords (trefwoorden)
 Keywords can be added to documents when uploading. This helps in categorizing the documents. 
@@ -40,4 +40,49 @@ The contents should follow the structure in the example below:
 }
 ```
 
+### List columns
+List columns can be configured to change what data is shown in the document list view. 
+
+#### Autodeployment
+List column configuration can also be loaded via autodeployment.
+To do so, create a json file in the application classpath which conforms to the following pattern: `*.zgw-document-list-column.json`
+
+The contents should follow the structure in the example below:
+
+**my-zaak.zgw-document-list-column.json**
+```json
+{
+  "changesetId": "my-zaak.zgw-document-list-columns-v1",
+  "case-definitions": [
+    {
+      "key": "my-zaak",
+      "columns": [
+        "AUTEUR",
+        "STATUS",
+        "FORMAAT",
+        "TAAL",
+        "VERSIE",
+        "BESTANDSNAAM"
+      ]
+    }
+  ]
+}
+```
+
+The following columns are available for configuration:
+- `AUTEUR`
+- `BESCHRIJVING`
+- `BESTANDSNAAM`
+- `BESTANDSOMVANG`
+- `BRONORGANISATIE`
+- `CREATIEDATUM`
+- `FORMAAT`
+- `IDENTIFICATIE`
+- `INFORMATIEOBJECTTYPE`
+- `LOCKED`
+- `STATUS`
+- `TAAL`
+- `TITEL`
+- `VERSIE`
+- `VERTROUWELIJKHEIDAANDUIDING`
 

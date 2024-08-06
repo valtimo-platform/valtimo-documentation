@@ -10,5 +10,5 @@ intended for everyone who wants to know what Valtimo is without requiring a tech
 * [Overview](introduction/overview.md)
 * [Architectural overview](introduction/architectural-overview.md)
 * [Modules](introduction/modules/modules.md)
-* [How to contribute](CONTRIBUTING.md)
-* [Style guide for contributing](STYLE-GUIDE.md)
+* [How to contribute](contributing/contributing-to-valtimo)
+* [Style guide for contributing](contributing/style-guide)

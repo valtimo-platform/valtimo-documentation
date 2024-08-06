@@ -8,8 +8,10 @@
     * [Documents](introduction/modules/document-introduction.md)
     * [Form flow](introduction/modules/form-flow-introduction.md)
     * [Plugins](introduction/modules/plugin-introduction.md)
-  * [How to contribute](CONTRIBUTING.md)
-  * [Style guide for contributing](STYLE-GUIDE.md)
+* [Contributing](contributing/contributing.md)
+  * [Contributing to Valtimo](contributing/contributing-to-valtimo.md)
+  * [Style guide for contributing](contributing/style-guide)
+  * [Branching and release strategy](contributing/branching-and-release-strategy.md)
 * [Getting started](getting-started/getting-started.md)
   * [First dive into Valtimo](getting-started/first-dive/first-dive.md)
     * [Start as Docker containers](getting-started/first-dive/start-as-docker-containers/start-as-docker-containers.md)
@@ -110,6 +112,7 @@
     * [Creating FormIO forms in Valtimo](using-valtimo/forms/creating-forms-in-valtimo.md)
     * [Interpolating data in Form.io](using-valtimo/forms/interpolating-data-in-formio.md)
     * [Configuring an Objecten API object form](using-valtimo/forms/configure-object-form.md)
+    * [Intermediate submission](using-valtimo/forms/intermediate-submission.md)
   * [Form flow](using-valtimo/form-flow/form-flow.md)
     * [Creating a form flow definition](using-valtimo/form-flow/create-form-flow-definition.md)
     * [Creating a custom form flow component](using-valtimo/form-flow/create-custom-component.md)
@@ -140,8 +143,10 @@
     * [Creating a process link](using-valtimo/process-link/create-process-link.md)
     * [Editing a process link](using-valtimo/process-link/edit-process-link.md)
     * [Unlinking a process link](using-valtimo/process-link/unlink-process-link.md)
-  * Tasks
+  * [Tasks](using-valtimo/tasks/tasks.md)
     * [Task list columns](using-valtimo/tasks/task-list-columns.md)
+  * User interface
+    * [Settings](/using-valtimo/ui/settings.md)
   * [Upload](using-valtimo/upload/upload.md)
     * [Temporary file storage](using-valtimo/upload/temporary-file-storage.md)
     * [Uploading to Documenten API with metadata](using-valtimo/upload/upload-to-documenten-api-with-metadata.md)
@@ -155,6 +160,7 @@
     * [Creating a resource](extending-valtimo/access-control/registering-a-resource.md)
     * [Creating a relation to another resource](extending-valtimo/access-control/create-relation-between-resources.md)
     * [Running custom code without access control](extending-valtimo/access-control/run-without-access-control.md)
+  * [Command handling](extending-valtimo/command-handling/command-handling.md)
   * [Dashboard](extending-valtimo/dashboard/dashboard.md)
     * [Creating custom data sources](extending-valtimo/dashboard/custom-data-source.md)
     * [Creating custom display types](extending-valtimo/dashboard/custom-display-type.md)
@@ -166,6 +172,12 @@
     * [Creating a form field data resolver](extending-valtimo/forms/creating-form-field-data-resolver.md)
   * [Form flow](extending-valtimo/form-flow/form-flow.md)
     * [Whitelisting Spring beans for Form flow](extending-valtimo/form-flow/whitelist-spring-bean.md)
+  * [Form View Model](extending-valtimo/form-view-model/form-view-model.md)
+    * [Contract validation](extending-valtimo/form-view-model/contract-validation.md)
+    * [Defining the submission structure](extending-valtimo/form-view-model/defining-the-submission-stratucture.md)
+    * [Defining the view model](extending-valtimo/form-view-model/defining-the-view-model.md)
+    * [Enabling the module](extending-valtimo/form-view-model/enabling-the-module.md)
+    * [Error handling](extending-valtimo/form-view-model/error-handling.md)
   * [Making Valtimo multi instance ready](extending-valtimo/multi-instance-ready.md)
   * [Modals (external docs)](https://angular.carbondesignsystem.com/?path=/story/components-modal--basic)
   * [Creating a custom outbox message publisher](extending-valtimo/outbox/create-custom-message-publisher.md)
@@ -221,17 +233,34 @@
       * [Valtimo frontend libraries](release-notes/major12/12.0.0/valtimo-frontend-libraries.md)
       * [Migration](release-notes/major12/12.0.0/migration.md)
         * [Spring Boot 3](release-notes/major12/12.0.0/spring-boot3-migration.md)
+    * 12.0.1
+      * [Valtimo backend libraries](release-notes/major12/12.0.1/valtimo-backend-libraries.md)
     * 12.1.0
       * [Valtimo backend libraries](release-notes/major12/12.1.0/valtimo-backend-libraries.md)
       * [Valtimo frontend libraries](release-notes/major12/12.1.0/valtimo-frontend-libraries.md)
-      * [Migration](release-notes/major12/12.1.0/migration.md)
+    * 12.1.1
+      * [Valtimo backend libraries](release-notes/major12/12.1.1/valtimo-backend-libraries.md)
+    * 12.2.0
+      * [Valtimo backend libraries](release-notes/major12/12.2.0/valtimo-backend-libraries.md)
+      * [Valtimo frontend libraries](release-notes/major12/12.2.0/valtimo-frontend-libraries.md)
+      * [Migration](release-notes/major12/12.2.0/migration.md)
   * 11.x.x
+    * 11.3.2
+      * [Valtimo frontend libraries](release-notes/major11/11.3.2/valtimo-frontend-libraries.md)
+    * 11.3.1
+      * [Valtimo frontend libraries](release-notes/major11/11.3.1/valtimo-frontend-libraries.md)
     * 11.3.0
       * [Valtimo backend libraries](release-notes/major11/11.3.0/valtimo-backend-libraries.md)
       * [Valtimo frontend libraries](release-notes/major11/11.3.0/valtimo-frontend-libraries.md)
-    * 11.2.0 (RC)
+    * 11.2.2
+      * [Valtimo frontend libraries](release-notes/major11/11.2.2/valtimo-frontend-libraries.md)
+    * 11.2.1
+      * [Valtimo frontend libraries](release-notes/major11/11.2.1/valtimo-frontend-libraries.md)
+    * 11.2.0
       * [Valtimo backend libraries](release-notes/major11/11.2.0/valtimo-backend-libraries.md)
       * [Valtimo frontend libraries](release-notes/major11/11.2.0/valtimo-frontend-libraries.md)
+    * 11.1.6
+      * [Valtimo frontend libraries](release-notes/major11/11.1.6/valtimo-frontend-libraries.md)
     * 11.1.5
       * [Valtimo frontend libraries](release-notes/major11/11.1.5/valtimo-frontend-libraries.md)
     * 11.1.4
@@ -248,6 +277,8 @@
       * [Valtimo frontend libraries](release-notes/major11/11.0.0/valtimo-frontend-libraries.md)
       * [Migration](release-notes/major11/11.0.0/migration.md)
   * 10.x.x
+    * 10.8.4
+      * [Valtimo frontend libraries](release-notes/major10/10.8.4/valtimo-frontend-libraries.md)
     * 10.8.3
       * [Valtimo backend libraries](release-notes/major10/10.8.3/valtimo-backend-libraries.md)
     * 10.8.2
