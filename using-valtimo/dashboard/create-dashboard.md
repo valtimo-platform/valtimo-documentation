@@ -36,4 +36,4 @@ After creating a dashboard, widgets can be added to the dashboard.
 ### Adding widget: Case count
 
 This widget can be created by following the instructions above. For more information on configuring other data sources
-and display types, [refer to this page](/reference/modules/dashboard.md#case-count)
+and display types, [refer to this page](/reference/modules/dashboard.md#case-count).
