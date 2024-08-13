@@ -31,7 +31,7 @@ The following bugs were fixed:
 
 * **Case tabs not working after clicking on Documenten tab**
 
-  After opening the 'Documenten' tab, any subsequent navigation to a non standard tab would show an error..
+  After opening the 'Documenten' tab, any subsequent navigation to a non standard tab would show an error.
 
 * **Bug2**
 
