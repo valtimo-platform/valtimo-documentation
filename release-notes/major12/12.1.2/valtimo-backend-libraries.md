@@ -24,9 +24,10 @@ The following bugs were fixed:
   The user id was used to reference a user for an intermediate save regardless of the useridentifier setting. 
   This has been corrected.
 
-* **Bug2**
+* **Error when user without assign permission opened a user task**
 
-  Description of what the issue was.
+  An error occurred when a user without assign permission opened a user task. 
+  The application will no longer attempt to retrieve users when this permission is missing.
 
 ## Breaking changes
 
