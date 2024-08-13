@@ -71,4 +71,16 @@ No deprecations.
 
 ## Known issues
 
-No known issues.
+When updating to 12.1, building the application might result in the following error:
+
+```agsl
+6 import moment from 'moment';
+         ~~~~~~
+
+  node_modules/moment/ts3.1-typings/moment.d.ts:784:1
+    784 export = moment;
+        ~~~~~~~~~~~~~~~~
+    This module is declared with 'export =', and can only be used with a default import when using the 'allowSyntheticDefaultImports' flag.
+```
+
+This error can be resolved by setting the `allowSyntheticDefaultImports` property to `true` in the tsconfig.json file.
