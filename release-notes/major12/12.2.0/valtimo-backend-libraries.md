@@ -14,6 +14,11 @@ The following features were added:
   which caused several events and checks to trigger as a side effect.
   This could potentially affect performance. They now use repositories directly.
 
+* **Keycloak supports OAuth 2.0 authentication**
+
+  Valtimo can connect to keycloak using OAuth 2.0 and OpenID Connect.
+  See [this page](/using-valtimo/keycloak-iam/configuring-keycloak.md) for more information.
+
 ## Bugfixes
 
 The following bugs were fixed:
