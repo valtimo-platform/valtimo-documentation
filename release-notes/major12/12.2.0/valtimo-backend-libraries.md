@@ -8,6 +8,11 @@ The following features were added:
 
   Objects can now be updated using the `updateObject` method in the `ObjectManagementFacade`.
 
+* **Implementations of `AuthorizationEntityMapper` now use repositories directly**
+
+  Some AuthorizationEntityMappers used the service layer to retrieve related entities,
+  which caused several events and checks to trigger as a side effect.
+  This could potentially affect performance. They now use repositories directly.
 
 ## Bugfixes
 
