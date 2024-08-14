@@ -4,10 +4,9 @@
 
 The following features were added:
 
-* **New feature1**
+* **Dependency upgrades**
 
-  Description of the new feature goes here.
-  Also link to the page that expains the feature in greater detail.
+  Various dependencies in the libraries have been upgraded for security reasons.
 
 * **New feature2**
 
