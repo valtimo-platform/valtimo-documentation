@@ -42,7 +42,7 @@ The following features were added:
   | Shedlock                              | `5.13.0`        | `5.14.0`        |
   | Netty Codec                           | `4.1.106.Final` | `4.1.112.Final` |
 
-* **Keycloak supports OAuth 2.0 authentication**
+* **Valtimo uses Spring OAuth for authentication with Keycloak**
 
   Valtimo can connect to keycloak using OAuth 2.0 and OpenID Connect.
   See [this page](/using-valtimo/keycloak-iam/configuring-keycloak.md) for more information.
