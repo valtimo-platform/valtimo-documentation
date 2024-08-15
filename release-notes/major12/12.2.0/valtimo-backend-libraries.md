@@ -4,6 +4,10 @@
 
 The following features were added:
 
+* **URL process link module**
+
+  A new module has been added that adds a new process link which instead of opening a task, will open a URL in a new tab
+
 * **Update method for ObjectManagementFacade**
 
   Objects can now be updated using the `updateObject` method in the `ObjectManagementFacade`.
