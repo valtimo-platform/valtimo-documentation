@@ -1,22 +1,19 @@
-# Frontend libraries 12.2.0
+# Frontend libraries x.x.x
 
 ## New Features
 
 The following features were added:
 
-* **Tasks list can now be added to any case tab**
+* **New feature1**
 
-  When configuring a case tab, it is now possible to show the task list on that tab. This list was previously only shown on the summary tab.
-  For more information, please see [this page](/using-valtimo/case/case-tabs.md#configuration-using-the-admin-menu)
+  Description of the new feature goes here.
+  Also link to the page that expains the feature in greater detail.
 
-* **Case Admin widgets tab**
+* **New feature2**
 
-  A new tab of type *widgets* is available when configuring your Case. For more information, please see [this page](/using-valtimo/case/case-tabs.md#widget-tabs)
+  Description of the new feature goes here.
+  Also link to the page that expains the feature in greater detail.
 
-* **Case Widgets**
-
-  Widgets are now available to be shown for cases. After configuring your widgets, they will show under a new tab in your Case details page. For more information
-  on configuring widgets, please see [this page](/using-valtimo/case/case-widgets/case-widgets.md)
 
 ## Bugfixes
 
