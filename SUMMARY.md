@@ -175,7 +175,7 @@
     * [Whitelisting Spring beans for Form flow](extending-valtimo/form-flow/whitelist-spring-bean.md)
   * [Form View Model](extending-valtimo/form-view-model/form-view-model.md)
     * [Contract validation](extending-valtimo/form-view-model/contract-validation.md)
-    * [Defining the submission structure](extending-valtimo/form-view-model/defining-the-submission-stratucture.md)
+    * [Defining the submission structure](extending-valtimo/form-view-model/defining-the-submission-structure.md)
     * [Defining the view model](extending-valtimo/form-view-model/defining-the-view-model.md)
     * [Enabling the module](extending-valtimo/form-view-model/enabling-the-module.md)
     * [Error handling](extending-valtimo/form-view-model/error-handling.md)
@@ -234,10 +234,20 @@
       * [Valtimo frontend libraries](release-notes/major12/12.0.0/valtimo-frontend-libraries.md)
       * [Migration](release-notes/major12/12.0.0/migration.md)
         * [Spring Boot 3](release-notes/major12/12.0.0/spring-boot3-migration.md)
+    * 12.0.1
+      * [Valtimo backend libraries](release-notes/major12/12.0.1/valtimo-backend-libraries.md)
     * 12.1.0
       * [Valtimo backend libraries](release-notes/major12/12.1.0/valtimo-backend-libraries.md)
       * [Valtimo frontend libraries](release-notes/major12/12.1.0/valtimo-frontend-libraries.md)
-      * [Migration](release-notes/major12/12.1.0/migration.md)
+    * 12.1.1
+      * [Valtimo backend libraries](release-notes/major12/12.1.1/valtimo-backend-libraries.md)
+    * 12.1.2
+      * [Valtimo backend libraries](release-notes/major12/12.1.2/valtimo-backend-libraries.md)
+      * [Valtimo frontend libraries](release-notes/major12/12.1.2/valtimo-frontend-libraries.md)
+    * 12.2.0
+      * [Valtimo backend libraries](release-notes/major12/12.2.0/valtimo-backend-libraries.md)
+      * [Valtimo frontend libraries](release-notes/major12/12.2.0/valtimo-frontend-libraries.md)
+      * [Migration](release-notes/major12/12.2.0/migration.md)
   * 11.x.x
     * 11.3.2
       * [Valtimo frontend libraries](release-notes/major11/11.3.2/valtimo-frontend-libraries.md)

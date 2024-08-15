@@ -41,6 +41,19 @@ The following features were added:
 
   The modal for uploading document metadata now uses Carbon design. In addition, an option to edit document metadata has been added. Both modals now support the use of tags.
 
+- **Carbon design updates**
+
+  The tabs on the case detail page now use Carbon inline style tabs. In addition, the spacing in the page header has
+  been adjusted.
+
+- **Intermediate save**
+
+  A new feature was added to user-tasks. Users can now save their progress on a form and continue later. You can enable the feature with this feature toggle `enableIntermediateSave` in your environment.ts file.
+
+- **Additional dashboard display types, data sources and functionality**
+
+  Three new display types and two new data sources are supported. In addition, data time expression are supported. For
+  more information, refer to [this page](/reference/modules/dashboard.md)
 
 ## Bugfixes
 
@@ -52,43 +65,27 @@ The following bugs were fixed:
   the need of a hard refresh. There is now a 7.5 seconds long window in which new user tasks are retrieved. If any
   user tasks is created after the 7.5 seconds, it will not be shown on the summary page.
 
-- **Bug2**
-
-  Description of what the issue was.
 
 ## Breaking changes
 
-The following breaking changes were introduced:
-
-- **Breaking change1**
-
-- **Breaking change2**
-
-Instructions on how to migrate to this version of Valtimo can be found [here](migration.md).
+No breaking changes.
 
 ## Deprecations
 
-The following was deprecated:
-
-- **Deprecation1**
-
-  X was deprecated and is replaced with Y.
-
-- **Deprecation2**
-
-  X was deprecated and is replaced with Y.
-
-Instructions on how to migrate to this version of Valtimo can be found [here](migration.md).
+No deprecations.
 
 ## Known issues
 
-This version has the following known issues:
+When updating to 12.1, building the application might result in the following error:
 
-- **Issue1**
+```agsl
+6 import moment from 'moment';
+         ~~~~~~
 
-  - Discovered in version x.x.x
-  - Describe what can be done to work around the issue
+  node_modules/moment/ts3.1-typings/moment.d.ts:784:1
+    784 export = moment;
+        ~~~~~~~~~~~~~~~~
+    This module is declared with 'export =', and can only be used with a default import when using the 'allowSyntheticDefaultImports' flag.
+```
 
-- **Issue2**
-  - Discovered in version x.x.x
-  - Describe what can be done to work around the issue
+This error can be resolved by setting the `allowSyntheticDefaultImports` property to `true` in the tsconfig.json file.
