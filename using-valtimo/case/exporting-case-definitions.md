@@ -28,6 +28,7 @@ The following configurations and definitions are included in the export:
 - Process definitions
 - Process document associations
 - Process links
+- Task search fields
 - Task list columns
 - ZGW document columns
 - ZGW document trefwoorden
@@ -62,6 +63,7 @@ The following configurations and definitions are included in the import:
 - Process definitions
 - Process document associations
 - Process links
+- Task search fields
 - Task list columns
 - ZGW document columns
 - ZGW document trefwoorden
