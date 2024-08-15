@@ -47,6 +47,12 @@ The following features were added:
   When configuring a case tab, it is now possible to show the task list on that tab. This list was previously only shown on the summary tab.
   For more information, please see [this page](/using-valtimo/case/case-tabs.md#example)
 
+* **Valtimo uses Spring OAuth for authentication with Keycloak**
+
+  Valtimo can connect to keycloak using OAuth 2.0 and OpenID Connect.
+  See [this page](/using-valtimo/keycloak-iam/configuring-keycloak.md) for more information.
+
+
 ## Bugfixes
 
 The following bugs were fixed:
