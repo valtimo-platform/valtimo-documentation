@@ -12,13 +12,6 @@ The following features were added:
   - `management.endpoint.health.show-details` is set to `when_authorized` AND 
     `management.endpoint.health.roles` contains `ROLE_ACTUATOR`
 
-
-* **New feature2**
-
-  Description of the new feature goes here.
-  Also link to the page that explains the feature in greater detail.
-
-
 ## Bugfixes
 
 The following bugs were fixed:
@@ -33,38 +26,21 @@ The following bugs were fixed:
   An error occurred when a user without assign permission opened a user task. 
   The application will no longer attempt to retrieve users when this permission is missing.
 
+* **Filtering Form Flow submissiondata is now configurable**
+  
+  In Valtimo 12.1.0, a filter has been introduced on the submissiondata of a Form Flow step. Any data that is not included in the form.io definition, will be filtered out.
+  To prevent breaking Form Flows that intentionally use data that is not part of the form.io definition, this filter is now configurable.
+  The `valtimo.formFlow.doSubmissionDataFiltering` property can be set to false to disable the filter.
+  
+
 ## Breaking changes
 
-The following breaking changes were introduced:
-
-* **Breaking change1**
-
-* **Breaking change2**
-
-Instructions on how to migrate to this version of Valtimo can be found [here](migration.md).
+No breaking changes.
 
 ## Deprecations
 
-The following was deprecated:
-
-* **Deprecation1**
-
-  X was deprecated and is replaced with Y.
-
-* **Deprecation2**
-
-  X was deprecated and is replaced with Y.
-
-Instructions on how to migrate to this version of Valtimo can be found [here](migration.md).
+No deprecations.
 
 ## Known issues
 
-This version has the following known issues:
-
-* **Issue1**
-  * Discovered in version x.x.x
-  * Describe what can be done to work around the issue
-
-* **Issue2**
-  * Discovered in version x.x.x
-  * Describe what can be done to work around the issue
+No known issues.

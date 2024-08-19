@@ -222,11 +222,13 @@ This page describes how to update Valtimo from the previous version to the curre
   hosts:
 
 ```yaml
+
 valtimo:
     security:
         whitelist:
             hosts:
                 - localhost
+                - 0:0:0:0:0:0:0:1
                 - 123.123.123.123
                 - my.office.com
 ```
