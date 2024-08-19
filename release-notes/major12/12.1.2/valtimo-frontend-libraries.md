@@ -22,6 +22,19 @@ The following bugs were fixed:
 
   After opening the 'Documenten' tab, any subsequent navigation to a non standard tab would show an error.
 
+* **Documenten API metadata modal in Form.io forms**
+
+  The documenten API metadata modal for the Documenten API uploader custom component for Form.io now works properly.
+
+* **Task status text gets wrapped**
+
+  When a user task had a long name, the task list on the case detail page would be wrapped.
+
+* **Case summary form was not using 100% of the available space**
+
+  On the case detail page, the summary form would not fully use the available space.
+
+
 ## Breaking changes
 
 No breaking changes.
