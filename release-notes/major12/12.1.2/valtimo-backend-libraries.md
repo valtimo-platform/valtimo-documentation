@@ -26,6 +26,13 @@ The following bugs were fixed:
   An error occurred when a user without assign permission opened a user task. 
   The application will no longer attempt to retrieve users when this permission is missing.
 
+* **Filtering Form Flow submissiondata is now configurable**
+  
+  In Valtimo 12.1.0, a filter has been introduced on the submissiondata of a Form Flow step. Any data that is not included in the form.io definition, will be filtered out.
+  To prevent breaking Form Flows that intentionally use data that is not part of the form.io definition, this filter is now configurable.
+  The `valtimo.formFlow.doSubmissionDataFiltering` property can be set to false to disable the filter.
+  
+
 ## Breaking changes
 
 No breaking changes.
