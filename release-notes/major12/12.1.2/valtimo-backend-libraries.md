@@ -37,8 +37,6 @@ The following bugs were fixed:
   With the introduction of the username/userid as assignee toggle, assigned tasks were not visible on the 'my tasks' tab of the filtered task list.
   This bug only occured when the toggle was set to username.
 
-  
-
 ## Breaking changes
 
 No breaking changes.
