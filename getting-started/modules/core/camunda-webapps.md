@@ -36,6 +36,7 @@ valtimo:
         whitelist:
             hosts:
                 - localhost
+                - 0:0:0:0:0:0:0:1
                 - 123.123.123.123
                 - my.office.com
 ```
