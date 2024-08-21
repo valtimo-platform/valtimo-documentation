@@ -188,8 +188,50 @@ Each of these properties supports more than one expression, e.g. when a step is 
 from more than one source is retrieved. These expressions are evaluated in order.
 
 Valtimo provides access to certain variables in the SpEL context, e.g. what the current step is. Which properties are
-available can be found [here](/reference/modules/form-flow.md#available-properties-in-spel-context)
+available can be found [here](/reference/modules/form-flow.md#available-properties-in-spel-context).
 
+
+### Examples
+
+The step condition below will only go to the step `loanApprovedStep` when a user has entered an age that is above 21:
+```json
+{
+    "step": "loanApprovedStep",
+    "condition": "${step.submissionData.personalDetails.age >= 21}"
+}
+```
+
+The `onOpen` expression below will call an external `@FormFlowBean` called `someService` to retrieve some data. The `additionalProperties` is a [form flow parameter](/reference/modules/form-flow.md#available-properties-in-spel-context):
+```json
+{
+  "onOpen": [
+    "${someService.retrieveData(additionalProperties)}"
+  ]
+}
+```
+
+The `onComplete` expressions below will change the data submitted by the user. It adds a `fullName` and removes the
+`firstName` and `lastName`:
+```json
+{
+  "onComplete": [
+    "${step.submissionData.person.fullName = step.submissionData.firstName + ' ' + step.submissionData.lastName}",
+    "${step.submissionData.firstName = null}",
+    "${step.submissionData.lastName = null}"
+  ]
+}
+```
+
+The `onOpen` expressions delete any existing submission data of the step, before opening the form flow:
+```json
+{
+  "onOpen": [
+    "${step.submissionData = null}"
+  ]
+}
+```
+
+An example of a complete form flow:
 ```json
 {
     "startStep": "personalDetailsStep",

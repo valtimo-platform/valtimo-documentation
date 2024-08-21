@@ -24,6 +24,12 @@ The following features were added:
   columns, and for selecting the default value for Form.io components inside the form builder. The latter is available
   under a Valtimo tab in configuration modals for each Form.io component.
 
+* **Form flow - Going back without validation**
+
+  Added support for going back to a previous form without the need for required fields to be filled in.
+  See [this page](/using-valtimo/form-flow/create-form-flow-form.md#going-back-to-the-previous-form) for more
+  information.
+
 ## Bugfixes
 
 The following bugs were fixed:
