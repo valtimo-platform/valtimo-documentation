@@ -41,6 +41,11 @@ The following features were added:
 
   The dashboard feature now supports access control. Permissions can be configured to view dashboards, e.g. based on the dashboard key. More information can be found [here](/reference/modules/authorization.md).
 
+- **Additional dashboard data sources and functionality**
+
+  Two new data sources are supported. In addition, data time expression are supported. For more information, refer to
+  [this page](/reference/modules/dashboard.md)
+
 ## Bugfixes
 
 The following bug was fixed:
