@@ -14,6 +14,11 @@ The following features were added:
   Description of the new feature goes here.
   Also link to the page that expains the feature in greater detail.
 
+* **Form flow - Going back without validation**
+
+  Added support for going back to a previous form without the need for required fields to be filled in.
+  See [this page](/using-valtimo/form-flow/create-form-flow-form.md#going-back-to-the-previous-form) for more
+  information.
 
 ## Bugfixes
 
