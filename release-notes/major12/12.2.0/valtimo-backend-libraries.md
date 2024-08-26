@@ -42,6 +42,11 @@ The following features were added:
   | Shedlock                              | `5.13.0`        | `5.14.0`        |
   | Netty Codec                           | `4.1.106.Final` | `4.1.112.Final` |
 
+* **Tasks list can now be added to any case tab**
+
+  When configuring a case tab, it is now possible to show the task list on that tab. This list was previously only shown on the summary tab.
+  For more information, please see [this page](/using-valtimo/case/case-tabs.md#example)
+
 * **Valtimo uses Spring OAuth for authentication with Keycloak**
 
   Valtimo can connect to keycloak using OAuth 2.0 and OpenID Connect.

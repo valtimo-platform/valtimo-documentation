@@ -4,16 +4,16 @@
 
 The following case types are supported by Valtimo.
 
-| Type             | Type key | Description                                                                                                              |
-|------------------|----------|:-------------------------------------------------------------------------------------------------------------------------|
-| **Standard**     | standard | A collection of tabs is available that support different Valtimo features. The tabs that are available are listed below. |
-| **Form.io form** | formio   | Form.io tabs can be configured to show a Form.io form.                                                                   |
-| **Custom**       | custom   | Custom tabs can be configured to show a custom Angular component.                                                        |
-
+| Type                           | Type key | Content key                | Description                                                                                                                                               |
+|--------------------------------|----------|----------------------------|:----------------------------------------------------------------------------------------------------------------------------------------------------------|
+| [**Standard**](#standard-tabs) | standard | See [here](#standard-tabs) | A collection of tabs is available that support different Valtimo features. The tabs that are available are listed below.                                  |
+| **Form.io form**               | formio   | The form name              | Form.io tabs can be configured to show a Form.io form.                                                                                                    |
+| **Widgets**                    | widgets  | `-`                        | Widget tabs can be configured to show data using widgets.                                                                                                 |
+| **Custom**                     | custom   | The name of the component  | Custom tabs can be configured to show a custom Angular component. More information can be found [here](/extending-valtimo/tabs/customizing-case-tabs.md). |
 
 ### Standard tabs
 
-| Type                | Type key        | Description                                                                                                                                                             |
+| Type                | Content key     | Description                                                                                                                                                             |
 |---------------------|-----------------|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **Summary**         | summary         | Shows a single Form.io form with the name: '<case-key>.summary'.                                                                                                        |
 | **Progress**        | progress        | Shows a BPMN model with the progress of the case.                                                                                                                       |
