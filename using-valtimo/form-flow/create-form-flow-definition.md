@@ -252,3 +252,32 @@ By default, SpEL allows access to every Spring bean from inside expressions. For
 this has been changed to a whitelist instead. More information on how to whitelist Spring beans is
 available [here](/extending-valtimo/form-flow/whitelist-spring-bean.md) and more information on SpEL
 can be found [here](https://docs.spring.io/spring-framework/docs/current/reference/html/core.html#expressions).
+
+## Breadcrumbs
+
+If the [feature toggle](/reference/feature-toggles.md) `enableFormFlowBreadCrumbs` is enabled, users will see a new
+breadcrumb trail on top of every form flow. This allows a user to quickly navigate between the different steps of the
+form flow. The breadcrumb trail uses the `title` field of a form flow step. For example:
+
+```json
+{
+  "startStep": "personalDetailsStep",
+  "steps": [
+    {
+      "key": "personalDetailsStep",
+      "title": "1. Personal details",
+      "type": {
+        "name": "form",
+        "properties": {
+          "definition": "personal-details-form"
+        }
+      },
+      "nextSteps": [
+        {
+          "step": "loanDeniedStep"
+        }
+      ]
+    }
+  ]
+}
+```
