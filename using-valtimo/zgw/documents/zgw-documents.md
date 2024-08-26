@@ -78,7 +78,7 @@ The following columns are available for configuration:
 - `CREATIEDATUM`
 - `FORMAAT`
 - `IDENTIFICATIE`
-- `INFORMATIEOBJECTTYPE`
+- `INFORMATIEOBJECTTYPE_OMSCHRIJVING`
 - `LOCKED`
 - `STATUS`
 - `TAAL`
