@@ -257,7 +257,17 @@ can be found [here](https://docs.spring.io/spring-framework/docs/current/referen
 
 If the [feature toggle](/reference/feature-toggles.md) `enableFormFlowBreadCrumbs` is enabled, users will see a new
 breadcrumb trail on top of every form flow. This allows a user to quickly navigate between the different steps of the
-form flow. The breadcrumb trail uses the `title` field of a form flow step. For example:
+form flow. 
+
+Every form flow step has an optional field called `title` which is shown in the example below. This field is used to
+display the title of the step inside the breadcrumb trail. If the title field is left empty, the breadcrumb trail will
+try to fill the title field by looking for existing translations inside the `en.json` or the `nl.json` files, that can
+be found in the frontend code.
+
+The breadcrumb trail uses a simple way to predict which breadcrumbs to display in all future steps. The breadcrumb trail
+takes the first step inside the `nextSteps` field to determine all future steps. In the example below, the breadcrumb
+trail would be: `1. Personal details -> 2. Loan approved` because the `loanApprovedStep` is the first step in the
+`nextSteps` field.
 
 ```json
 {
@@ -273,6 +283,10 @@ form flow. The breadcrumb trail uses the `title` field of a form flow step. For 
         }
       },
       "nextSteps": [
+        {
+          "step": "loanApprovedStep",
+          "condition": "${step.submissionData.personalDetails.age >= 21}"
+        },
         {
           "step": "loanDeniedStep"
         }
