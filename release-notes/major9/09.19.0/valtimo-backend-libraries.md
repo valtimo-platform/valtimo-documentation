@@ -1,32 +1,25 @@
-# Backend libraries 9.19.0
+# Valtimo backend libraries (9.19.0)
 
 ## New Features
 
 The following features were added:
 
-* **Filter out plugin configurations without actions of a service type**
+*   **Filter out plugin configurations without actions of a service type**
 
-  The plugin configuration can now be filtered based on an activityType (i.e. Service Task), that will 
-  ensure that any plugin configuration that is returned has an action for that activityType. 
+    The plugin configuration can now be filtered based on an activityType (i.e. Service Task), that will ensure that any plugin configuration that is returned has an action for that activityType.
 
-  The REST endpoint `GET /api/plugin/configuration` now supports a new request parameter
-  called `activityType` which expects the type of task that was clicked in the process. 
-  Example: `GET /api/plugin/configuration?activityType=bpmn:ServiceTask`.
+    The REST endpoint `GET /api/plugin/configuration` now supports a new request parameter called `activityType` which expects the type of task that was clicked in the process. Example: `GET /api/plugin/configuration?activityType=bpmn:ServiceTask`.
+*   **New form flow `onBack` property**
 
-* **New form flow `onBack` property**
-
-  Form flows already supported the `onOpen` and `onComplete` properties. The `onBack` property has been added that is
-  triggered when navigating to a previous step. Information on how to use these properties in a form flow can be found
-  [here](/using-valtimo/form-flow/create-form-flow-definition.md#expressions).
+    Form flows already supported the `onOpen` and `onComplete` properties. The `onBack` property has been added that is triggered when navigating to a previous step. Information on how to use these properties in a form flow can be found [here](../../../features/form-flow/create-form-flow-definition.md#expressions).
 
 ## Bugfixes
 
 The following bugs were fixed:
 
-* **JdbcProcessFormAssociationRepository insert statement runtime exception**
+*   **JdbcProcessFormAssociationRepository insert statement runtime exception**
 
-  Running on an externally hosted Mysql 8.0.15 instance caused unknown column type exceptions with `useServerPrepStmts`. For more information [see](https://github.com/brettwooldridge/HikariCP/wiki/MySQL-Configuration).
-  To prevent determining the sql column type now the type is specified.
+    Running on an externally hosted Mysql 8.0.15 instance caused unknown column type exceptions with `useServerPrepStmts`. For more information [see](https://github.com/brettwooldridge/HikariCP/wiki/MySQL-Configuration). To prevent determining the sql column type now the type is specified.
 
 ## Breaking changes
 
@@ -44,14 +37,11 @@ No new deprecations.
 
 This version has the following known issues:
 
-* **Multiple existing form associations on process definition**
+*   **Multiple existing form associations on process definition**
 
-  When multiple start forms are associated with a single process definition the user is unable to start a new case of
-  that specific type.
-
-* **Updating process variables from a form.io submission**  
+    When multiple start forms are associated with a single process definition the user is unable to start a new case of that specific type.
+* **Updating process variables from a form.io submission**\
   Only process variables of type `String` and `Array<String>` are currently supported by the pv. form.io prefix. Any other types will be set to a null value.
-
 * **Form flow definition does not read `nextStep` property**
   * Discovered in version 9.19.0
   * Instead of using `nextStep`, `nextSteps` can be used.

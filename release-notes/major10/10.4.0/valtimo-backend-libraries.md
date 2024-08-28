@@ -1,4 +1,4 @@
-# Backend libraries 10.4.0
+# Valtimo backend libraries
 
 ## New Features
 
@@ -12,9 +12,7 @@ No bugfixes.
 
 The following breaking changes were introduced:
 
-* **Moved ZaakInstanceLinkService**
-  In `valtimo-backend-libraries`, the `ZaakInstanceLinkService` class has been moved and is now part of
-  the [Zaken API module](/introduction/modules/modules.md#zaken-api). Implementations that use this class directly should change the package name.
+* **Moved ZaakInstanceLinkService** In `valtimo-backend-libraries`, the `ZaakInstanceLinkService` class has been moved and is now part of the [Zaken API module](../../../fundamentals/architectural-overview/modules.md#zaken-api). Implementations that use this class directly should change the package name.
 
 ## Deprecations
 
