@@ -4,10 +4,11 @@
 
 The following features were added:
 
-* **New feature1**
+* **Form Flow Breadcrumbs**
 
-  Description of the new feature goes here.
-  Also link to the page that expains the feature in greater detail.
+  When the feature toggle is enabled, users will see a new breadcrumb trail on top of every form flow. This allows a
+  user to quickly navigate between the different steps of the form flow.
+  See [this page](/using-valtimo/form-flow/create-form-flow-definition.md#breadcrumbs) for more information.
 
 * **New feature2**
 
