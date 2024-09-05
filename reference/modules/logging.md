@@ -42,25 +42,69 @@ most severe to least severe, with examples of when to use them.
 ### TRACE
 * Parameters of method calls for low level troubleshooting.
 
-## The `@LoggableResource` annotation
+## Providing context to log messages
+
+When logging messages, it is important to know which resources were being interacted with. There are three ways to
+provide context to log messages:
+
+### The `@LoggableResource` annotation
 By default, Valtimo ships with the `@LoggableResource` annotation. This annotation is used
 to provide additional information for any log messages that are created by the application.
-The annotation can be used on any argument of a method, as long as the class is managed
+The annotation can be used on any one argument of a method, as long as the class is managed
 by Spring. The annotation is used as such:
 
 ```kotlin
 @Component
-class SomeSpringManagedClass() {
+class SomeSpringManagedClass(...) {
     fun someMethod(
-        resource: LogResource,
-        @LoggableResource(resourceType = String::class) taskId: String,
+        @LoggableResource(resourceType = Task::class) taskId: String,
     ) {
-        resource.logSomething()
+        // What you want the method to do goes here
     }
 }
 ```
 
 In the example above, `@LoggableResource` defines what resource type the `taskId` belongs
-to. This information is then used to provide additional context in the log message, by
-storing it in this variable.
+to. We specify the `Task` class because that is what the `taskId` refers to.
+This information is then used to provide additional context in the log message, by storing it in this variable.
 
+### The `withLoggingContext()` function
+In situations where the `@LoggableResource` annotation cannot be used, the `withLoggingContext()` function can be used
+instead. Examples of when to use this function include:
+* When the class is not managed by Spring.
+* When the resource is not yet known at the time of the method call.
+
+The `withLoggingContext()` function is used as such:
+
+```kotlin
+class SomeClass(...) {
+    fun someMethod(taskId: String) {
+        withLoggingContext(Task::class.java.canonicalName to taskId) {
+            // What you want the method to do goes here
+        }
+    }
+}
+```
+
+This accomplishes the same as the LoggableResource annotation, but does not depend on Spring. This can of course also be
+used to provide additional context are not necessarily related to resources.
+
+### Directly working with MDC
+
+Rather than using with `@LoggableResource` or `withLoggingContext()`, you can also directly work with the MDC.
+The MDC (Mapped Diagnostic Context) is a map that is used to store additional context information for log messages.
+This is used by `withLoggingContext()` as well, but can be used directly if needed. This is done via the MDC class in
+this manner:
+
+```kotlin
+class SomeClass(...) {
+    fun someMethod(taskId: String) {
+        MDC.put(Task::class.java.canonicalName, taskId)
+        // What you want the method to do goes here
+        MDC.remove(Task::class.java.canonicalName)
+    }
+}
+```
+
+This accomplishes the same as the LoggableResource annotation and the `withLoggingContext` mehod, but does not depend on
+Spring. This can of course also be used to provide additional context are not necessarily related to resources.
