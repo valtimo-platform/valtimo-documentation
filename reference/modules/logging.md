@@ -17,7 +17,7 @@ most severe to least severe, with examples of when to use them.
   * E.g: Importing a case definition, and some configuration already exists in the database.
 
 ### INFO
-*  Interaction with external systems that goes beyond retrieving data.
+*  Mutating data in external systems
   * Sending an email.
   * Setting a status.
 * Significant and noteworthy business events.
@@ -33,7 +33,7 @@ most severe to least severe, with examples of when to use them.
   * Plugin configuration.
 
 ### DEBUG
-* Interaction with external systems to retrieve data.
+* Reading data from external systems
 * For tracking the flow of the application.
   * E.g. checking permissions of a user for a certain resource and action.
 * State changes to resources.
@@ -119,7 +119,6 @@ When an internal class reference is not available inside application code, speci
 @Component
 class SomeSpringManagedClass(...) {
     fun someMethod(
-      // Documenten API: enkelvoudig informatieobject
       @LoggableResource(resourceTypeName = "com.ritense.document.domain.impl.JsonSchemaDocument") documentId: String,
     ) {
         // What you want the method to do goes here
