@@ -46,13 +46,32 @@ Instructions on how to migrate to this version of Valtimo can be found [here](mi
 
 The following was deprecated:
 
-* **Deprecation1**
+* **WebClient is no longer the default HTTP client**
+    
+    We have transitioned from using the WebClient class to RestClient. For more details, see the [overview](https://docs.spring.io/spring-framework/reference/integration/rest-clients.html).
+    
+    The primary reason for this switch is to adopt a simpler client that does not rely on reactive programming concepts. Most calls in Valtimo require synchronous execution, making WebClient less suitable.
+    
+    Constructors in affected classes now use RestClient.Builder instead of WebClient.Builder.
+    
+    The default HTTP client is now Apache Client v5.x.
+    For more details, see [ApacheRequestFactoryCustomizer](https://github.com/valtimo-platform/valtimo-backend-libraries/blob/b0941b2ca161601094203b38ac639f1a809988a8/contract/src/main/kotlin/com/ritense/valtimo/contract/client/ApacheRequestFactoryCustomizer.kt).
+    
+    A new configuration class has been introduced to modify two main timeout settings.
+    For more information, see [ValtimoHttpRestClientConfigurationProperties](https://github.com/valtimo-platform/valtimo-backend-libraries/blob/b0941b2ca161601094203b38ac639f1a809988a8/contract/src/main/kotlin/com/ritense/valtimo/contract/client/ValtimoHttpRestClientConfigurationProperties.kt).
+    
+    Logging with the new Apache client can be configured as follows:
+    ```yaml
+      logging:
+          level:
+              org.apache.http: DEBUG
+    ```
 
-  X was deprecated and is replaced with Y.
+* **Methods inside ClientTools**
 
-* **Deprecation2**
-
-  X was deprecated and is replaced with Y.
+  Use of WebClient is deprecated, this was used before:
+  - fun <T> getTypedPage(responseClass: Class<out T>): ParameterizedTypeReference<Page<T>> {
+  - fun zgwErrorHandler(): ExchangeFilterFunction {
 
 Instructions on how to migrate to this version of Valtimo can be found [here](migration.md).
 
