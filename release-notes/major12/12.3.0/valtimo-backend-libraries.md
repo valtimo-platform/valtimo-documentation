@@ -56,6 +56,7 @@ The following was deprecated:
     
     The default HTTP client is now Apache Client v5.x.
     For more details, see [ApacheRequestFactoryCustomizer](https://github.com/valtimo-platform/valtimo-backend-libraries/blob/b0941b2ca161601094203b38ac639f1a809988a8/contract/src/main/kotlin/com/ritense/valtimo/contract/client/ApacheRequestFactoryCustomizer.kt).
+    See also [Spring docs](https://docs.spring.io/spring-boot/reference/io/rest-client.html#io.rest-client.restclient.customization)
     
     A new configuration class has been introduced to modify two main timeout settings.
     For more information, see [ValtimoHttpRestClientConfigurationProperties](https://github.com/valtimo-platform/valtimo-backend-libraries/blob/b0941b2ca161601094203b38ac639f1a809988a8/contract/src/main/kotlin/com/ritense/valtimo/contract/client/ValtimoHttpRestClientConfigurationProperties.kt).
