@@ -108,3 +108,38 @@ class SomeClass(...) {
 
 This accomplishes the same as the LoggableResource annotation and the `withLoggingContext` mehod, but does not depend on
 Spring. This can of course also be used to provide additional context are not necessarily related to resources.
+
+### Logging when class is not available 
+
+#### Internal class reference not accessible
+
+When an internal class reference is not available inside application code, specify this class reference as a string:
+
+```kotlin
+@Component
+class SomeSpringManagedClass(...) {
+    fun someMethod(
+      // Documenten API: enkelvoudig informatieobject
+      @LoggableResource(resourceTypeName = "com.ritense.document.domain.impl.JsonSchemaDocument") documentId: String,
+    ) {
+        // What you want the method to do goes here
+    }
+}
+```
+
+#### External resource
+
+When an external resource is not available inside application code, refer to a string resource type name, 
+preferable stored in a constants object to make it reusable:
+
+```kotlin
+@Component
+class SomeSpringManagedClass(...) {
+    fun someMethod(
+      // Documenten API: enkelvoudig informatieobject
+      @LoggableResource(resourceTypeName = DOCUMENTEN_API.ENKELVOUDIG_INFORMATIE_OBJECT) documentUrl: String,
+    ) {
+        // What you want the method to do goes here
+    }
+}
+```
