@@ -9,6 +9,19 @@ The following features were added:
   A Form flow SpEL expressions now accepts updating the submission data.
   See [this page](/using-valtimo/form-flow/create-form-flow-definition.md#expressions) for more information.
 
+* **Unauthenticated user can now access Actuator health liveness and readiness endpoints**
+
+  These Actuator health endpoints:
+  - `${management.endpoints.web.base-path}/health/liveness`
+  - `${management.endpoints.web.base-path}/health/readiness`
+
+  can now be accessed by an unauthenticated user in either of the following conditions:
+  - `management.endpoint.health.show-details` is set to `never`
+  - `management.endpoint.health.show-details` is set to `when_authorized` AND
+    `management.endpoint.health.roles` contains `ROLE_ACTUATOR`  
+  
+  This was already implemented for `${management.endpoints.web.base-path}/health` in release 12.1.2
+
 ## Bugfixes
 
 The following bugs were fixed:
