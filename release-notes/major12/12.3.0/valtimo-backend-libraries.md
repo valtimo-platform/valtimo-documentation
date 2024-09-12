@@ -9,6 +9,16 @@ The following features were added:
   A Form flow SpEL expressions now accepts updating the submission data.
   See [this page](/using-valtimo/form-flow/create-form-flow-definition.md#expressions) for more information.
 
+* **Added filtering for zaakinformatieobjecttypes**
+
+  Zaakinformatieobjectypes (document types) are now filtered on three properties:
+  * concept
+    * Only types that are not in concept will be returned
+  * beginGeldigheid
+    * Only types with a beginGeldigheid in the past are returned
+  * eindeGeldigheid
+    * Only types with an empty or future eindeGeldigheid are returned
+
 ## Bugfixes
 
 The following bugs were fixed:
