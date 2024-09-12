@@ -9,6 +9,10 @@ The following features were added:
   A Form flow SpEL expressions now accepts updating the submission data.
   See [this page](/using-valtimo/form-flow/create-form-flow-definition.md#expressions) for more information.
 
+* **URL process link module**
+
+  A new module has been added that adds a new process link which instead of opening a task, will open a URL in a new tab
+
 ## Bugfixes
 
 The following bugs were fixed:
