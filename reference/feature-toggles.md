@@ -58,6 +58,12 @@ with a `boolean` value.
   When both toggles are enabled, this will free up vertical space by moving the breadcrumbs and page title to the top header next to the logo.
   More information can be found [here](/using-valtimo/ui/settings.md#compact-mode)
 
+* **`enableFormFlowBreadCrumbs`**
+
+  If enabled, users will see a new breadcrumb trail on top of every form flow. This allows a
+  user to quickly navigate between the different steps of the form flow.
+  See [this page](/using-valtimo/form-flow/create-form-flow-definition.md#breadcrumbs) for more information.
+
 * **`enableObjectManagement`**
 
   If enabled, a new menuitem 'objects' will appear in the left sidebar menu. Enabled by default when not configured. 
