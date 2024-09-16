@@ -48,14 +48,14 @@ The following was deprecated:
 
 * **WebClient is no longer the default HTTP client**
     
-    We have transitioned from using the WebClient class to RestClient. For more details, see the [overview](https://docs.spring.io/spring-framework/reference/integration/rest-clients.html).
+    Transitioned from using the WebClient class to RestClient. For more details, see the [overview](https://docs.spring.io/spring-framework/reference/integration/rest-clients.html).
     
     The primary reason for this switch is to adopt a simpler client that does not rely on reactive programming concepts. Most calls in Valtimo require synchronous execution, making WebClient less suitable.
     
     Constructors in affected classes now use RestClient.Builder instead of WebClient.Builder.
     
     The default HTTP client is now Apache Client v5.x.
-    For more details, see [ApacheRequestFactoryCustomizer](https://github.com/valtimo-platform/valtimo-backend-libraries/blob/b0941b2ca161601094203b38ac639f1a809988a8/contract/src/main/kotlin/com/ritense/valtimo/contract/client/ApacheRequestFactoryCustomizer.kt).
+    For more details on how to override/adjust this, see [ApacheRequestFactoryCustomizer](https://github.com/valtimo-platform/valtimo-backend-libraries/blob/b0941b2ca161601094203b38ac639f1a809988a8/contract/src/main/kotlin/com/ritense/valtimo/contract/client/ApacheRequestFactoryCustomizer.kt).
     See also [Spring docs](https://docs.spring.io/spring-boot/reference/io/rest-client.html#io.rest-client.restclient.customization)
     
     A new configuration class has been introduced to modify two main timeout settings.
@@ -67,14 +67,18 @@ The following was deprecated:
           level:
               org.apache.http: DEBUG
     ```
+    Additionally, there is a new class for logging requests and responses: LoggingRestClientCustomizer
+*  ```yaml
+      logging:
+          level:
+              com.ritense.valtimo.web.logging.LoggingRestClientCustomizer: DEBUG
+   ```
 
 * **Methods inside ClientTools**
 
   Use of WebClient is deprecated, this was used before:
   - fun <T> getTypedPage(responseClass: Class<out T>): ParameterizedTypeReference<Page<T>> {
   - fun zgwErrorHandler(): ExchangeFilterFunction {
-
-Instructions on how to migrate to this version of Valtimo can be found [here](migration.md).
 
 ## Known issues
 
