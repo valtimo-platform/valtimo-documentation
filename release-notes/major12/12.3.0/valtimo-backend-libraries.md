@@ -46,7 +46,6 @@ The following bugs were fixed:
   When an existing process link for forms was updated to apply to a different form definition, the process link was not
   updated.
 
-
 ## Breaking changes
 
 The following breaking changes were introduced:
