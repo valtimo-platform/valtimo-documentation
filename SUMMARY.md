@@ -229,6 +229,7 @@
   * [Content Security Policy (CSP)](reference/content-security-policy.md)
   * [Troubleshoot](reference/troubleshoot.md)
   * [Environment](reference/environment.md)
+  * [Rest client configuration](reference/rest-client-configuration.md)
 * Release notes
   * [Release notes](release-notes/release-notes.md)
   * 12.x.x
