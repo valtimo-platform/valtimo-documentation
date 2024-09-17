@@ -55,11 +55,11 @@ The following was deprecated:
     Constructors in affected classes now use `RestClient.Builder` instead of `WebClient.Builder`.
     
     The default HTTP client is now Apache Client v5.x.
-    For more details on how to override/adjust this, see [ApacheRequestFactoryCustomizer](https://github.com/valtimo-platform/valtimo-backend-libraries/blob/b0941b2ca161601094203b38ac639f1a809988a8/contract/src/main/kotlin/com/ritense/valtimo/contract/client/ApacheRequestFactoryCustomizer.kt).
+    For more details on how to override/adjust this, see `com.ritense.valtimo.contract.client.ApacheRequestFactoryCustomizer` class.
     See also [Spring documentation](https://docs.spring.io/spring-boot/reference/io/rest-client.html#io.rest-client.restclient.customization)
     
     A new configuration class has been introduced to modify two main timeout settings.
-    For more information, see [ValtimoHttpRestClientConfigurationProperties](https://github.com/valtimo-platform/valtimo-backend-libraries/blob/b0941b2ca161601094203b38ac639f1a809988a8/contract/src/main/kotlin/com/ritense/valtimo/contract/client/ValtimoHttpRestClientConfigurationProperties.kt).
+    For more information, see the `ValtimoHttpRestClientConfigurationProperties` class. Or read the [Rest client configuration](../../../reference/rest-client-configuration.md)
     
     Logging with the new Apache client can be configured as follows:
     ```yaml
