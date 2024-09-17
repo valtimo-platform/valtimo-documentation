@@ -25,13 +25,13 @@ The following features were added:
 
 The following bugs were fixed:
 
-* **Bug1**
+*  **Loss of information in URL when opening tasks for a case**
 
-  Description of what the issue was.
+When opening a task for a case, the URL path would get replaced with `/#`.
 
-* **Bug2**
+* **Configured 'multiple case count' widgets not working**
 
-  Description of what the issue was.
+  Configured 'multiple case count' widgets were unable to find the document definition it was configured for.
 
 ## Breaking changes
 
