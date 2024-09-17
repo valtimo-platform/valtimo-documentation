@@ -31,7 +31,7 @@ The following bugs were fixed:
   If the user makes changes in a previous step, any later step will now either show correct data, or not show any data
   at all.
 
-* **Form flow spamming Submit button**
+* **Form flow Submit button clicked multiple times**
 
   A double click on the Submit button in a form flow will now properly go to the next step and not to any step further
   than that.
@@ -40,6 +40,11 @@ The following bugs were fixed:
 
   When a form is opened the show a Data Grid or Edit Grid, the form will now only fill the fields that should be
   prefilled.
+
+* **Process link not deployed**
+  
+  When an existing process link for forms was updated to apply to a different form definition, the process link was not
+  updated.
 
 
 ## Breaking changes
