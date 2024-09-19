@@ -1,8 +1,6 @@
 # Processes
 
-{% hint style="success" %}
-<mark style="color:green;">**Requirements**</mark>
-
+{% hint style="info" %}
 This page requires:
 
 * A [document definition](document.md)

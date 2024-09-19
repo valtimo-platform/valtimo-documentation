@@ -2,7 +2,7 @@
 
 ## What is a case?
 
-Case Management is a form of  Business Process Automation. A 'Case' is created after an event, often a need from a person, organisation or external system. A case has the goal to fulfil this need, for example to answer the question, to ship the product or handle the complaint. After the result is achieved, the case is closed.
+Case Management is a form of Business Process Automation. A 'Case' is created after an event, often a need from a person, organisation or external system. A case has the goal to fulfil this need, for example to answer the question, to ship the product or handle the complaint. After the result is achieved, the case is closed.
 
 A concrete example is the need for a permit to organize an event. After an application for a permit has been submitted (the trigger is always something that has happened - an event that took place), a case file is created. If everything goes well from the applicant's perspective, this results in 'something': in this case, a permit.
 
@@ -12,7 +12,7 @@ A case is per definition short-lived, whereby the definition of 'short' can be d
 
 To 'teach' Valtimo what it needs to do when it gets a request to execute a business process, models and definitions are used.&#x20;
 
-The definition of a business process is laid down in a _case definition_. Each _case_ is an instance of a _case definition_.  A case definition contains everything the system needs to know to execute the business process from start to end. This entails the proces models, definitions of forms for user tasks, decision tables, the definition of the data to be stored, the definition of access rights and so forth.&#x20;
+The definition of a business process is laid down in a _case definition_. Each _case_ is an instance of a _case definition_. A case definition contains everything the system needs to know to execute the business process from start to end. This entails the proces models, definitions of forms for user tasks, decision tables, the definition of the data to be stored, the definition of access rights and so forth.&#x20;
 
 {% hint style="info" %}
 In the Valtimo admin-menu, and in the day-to-day talk between developers the term 'case' is used for 'case definition'. This can be confusing, since end users use the same term 'case' for the instance of the case. &#x20;
@@ -36,26 +36,6 @@ The design of the datamodel and JSON document definition(s) are an often underes
 
 {% hint style="info" %}
 The document definition is non-relational. Do not try to convert a relational model into a document definition. Design and build a relational model and connect it via a plugin.&#x20;
-{% endhint %}
-
-
-
-<mark style="color:red;">**The following it too technical for this intro. Move to better place I'd suggest.**</mark>&#x20;
-
-A case is the component in Valtimo that is able to store data and/or connect to external data sources in order to gather the needed data to present to the case handlers. Next to storing and gathering data the case can be connected to BPMN processes so that all data that is requested or used during the proces can be stored in and/or retrieved from the case.
-
-{% hint style="info" %}
-<mark style="color:blue;">**Important information**</mark>
-
-* Configurations done in the codebase via an IDE need to be merged in GIT and deployed to the live environment first in order to become effective. Configurations via de UI will immediately be effective after saving them.\
-
-* UI configurations will be overwritten by the codebase when the application is deployed.\
-  Therefore it is important to decide beforehand how to configure Valtimo.\
-  If a configuration change is done via the UI and that configuration file also exists in the codebase, the UI changes will be overwritten by the next deployment.\
-
-* `ROLE_ADMIN` is needed to configure Valtimo via the UI\
-
-* Valtimo 12 or higher is required for UI configuration.
 {% endhint %}
 
 ## Exporting and importing case definitions

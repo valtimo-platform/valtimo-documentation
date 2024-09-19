@@ -48,22 +48,22 @@ The Custom component button gives access to the available custom components with
 {% tab title="Via UI" %}
 The case tab menu is found under the admin menu. Admin privileges are required to configure case tabs.
 
-1. Go to the Admin menu
-2. Go to the 'Cases' menu
-3. Click on the case for which tabs need to be configured
-4. Click on the 'Add tab' button
+* Go to the `Admin` menu
+* Go to the `Cases` menu
+* Click on the case for which tabs need to be configured
+* Click on the **Add tab** button
 
 <figure><img src="https://docs.valtimo.nl/~gitbook/image?url=https%3A%2F%2F3233153254-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252Ft4wirndok2gT4h2DRoVf%252Fuploads%252Fgit-blob-07a2ddeff8dc69f6fb08e7a7577b8829bbb85f5e%252Fadd-tab-button.png%3Falt%3Dmedia&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=1f874fb1&#x26;sv=1" alt=""><figcaption><p>Add tab button</p></figcaption></figure>
 
-5. Select which tab type you want to configure
+* Select which tab type you want to configure
 
 <figure><img src="https://docs.valtimo.nl/~gitbook/image?url=https%3A%2F%2F3233153254-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252Ft4wirndok2gT4h2DRoVf%252Fuploads%252Fgit-blob-1c7789ebc71bf4f800ec54302cf603cc99bdb534%252Ftab-select-modal.png%3Falt%3Dmedia&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=19c94c10&#x26;sv=1" alt=""><figcaption><p>Example of selecting a tab type</p></figcaption></figure>
 
-6. Fill in the form. If no name is set, then the key will be used for translation (in your translation files, add the key under 'dossier.tabs.{YOUR\_TAB\_KEY}')
+* Fill in the form. If no name is set, then the key will be used for translation (in your translation files, add the key under 'dossier.tabs.{YOUR\_TAB\_KEY}')
 
 <figure><img src="https://docs.valtimo.nl/~gitbook/image?url=https%3A%2F%2F3233153254-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252Ft4wirndok2gT4h2DRoVf%252Fuploads%252Fgit-blob-ca5b3e6934163f2d90983e35e429b30d6b12fa3a%252Ftab-config-modal.png%3Falt%3Dmedia&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=82f3d2f5&#x26;sv=1" alt=""><figcaption><p>Example of configuring a tab</p></figcaption></figure>
 
-7. Click the button 'Add tab'
+* Click the **Add tab** button
 
 If there are no tabs to be configured for one specific type, then the button in the Step 5 modal will be disabled.
 

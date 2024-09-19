@@ -2,10 +2,10 @@
 
 A **document definition** is the **blueprint** for the JSON documents that are created when creating **new cases** in Valtimo. It defines the structure of the case and contains validation rules for the data that is stored by the actual JSON documents that are created when executing processes for that case in Valtimo. This page shows how to create a document definition, and how to add validation to properties.&#x20;
 
-{% hint style="success" %}
-<mark style="color:green;">**Requirements**</mark>
+{% hint style="info" %}
+This page requires:
 
-This page requires you to have knowledge of  [JSON schema](https://json-schema.org/).
+* Knowledge of  [JSON schema](https://json-schema.org/)
 {% endhint %}
 
 ## Creating a document definition
@@ -64,6 +64,8 @@ When uploading a JSON schema to create a new case, make sure that the `$id` and 
 {% endtab %}
 
 {% tab title="Via IDE" %}
+#### Place a valid JSON schema in the codebase
+
 To create a document definition, the following steps are necessary:
 
 *   Create a document definition file (ending with `.schema.json`) under the following path: `*/resources/config/document/definition`. The name should correspond with the ID of the document ID. The ID itself should end with `.schema`.
@@ -120,7 +122,7 @@ Same as for creating cases there are three ways of editing document definitions.
 
 * Upload a valid JSON schema with the same ID.
 * Edit the document definition directly via the UI.
-* Edit the document definition the codebase via an IDE.
+* Edit the document definition in the codebase via an IDE.
 
 {% tabs %}
 {% tab title="Via UI" %}
@@ -160,7 +162,9 @@ In edit mode, the UI editor will constantly validate the JSON file structure. Th
 {% endtab %}
 
 {% tab title="Via IDE" %}
+#### Edit the document definition in the codebase
 
+Open the document definition in the IDE and edit the definition as per the JSON schema standard. More information on JSON schema can be found [here](https://json-schema.org/).&#x20;
 {% endtab %}
 {% endtabs %}
 
