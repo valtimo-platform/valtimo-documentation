@@ -9,6 +9,16 @@ The following features were added:
   A Form flow SpEL expressions now accepts updating the submission data.
   See [this page](/using-valtimo/form-flow/create-form-flow-definition.md#expressions) for more information.
 
+* **Added filtering for zaakinformatieobjecttypes**
+
+  Zaakinformatieobjectypes (document types) are now filtered on three properties:
+  * concept
+    * Only types that are not in concept will be returned
+  * beginGeldigheid
+    * Only types with a beginGeldigheid in the past are returned
+  * eindeGeldigheid
+    * Only types with an empty or future eindeGeldigheid are returned
+
 * **URL process link module**
 
   A new module has been added that adds a new process link which instead of opening a task, will open a URL in a new tab
@@ -50,15 +60,39 @@ Instructions on how to migrate to this version of Valtimo can be found [here](mi
 
 The following was deprecated:
 
-* **Deprecation1**
+* **WebClient is no longer the default HTTP client**
+    
+    Transitioned from using the WebClient class to RestClient. For more details, see the [Spring documentation](https://docs.spring.io/spring-framework/reference/integration/rest-clients.html).
+    
+    The primary reason for this switch is to adopt a simpler client that does not rely on reactive programming concepts. Most calls in Valtimo require synchronous execution, making WebClient less suitable.
+    
+    Constructors in affected classes now use `RestClient.Builder` instead of `WebClient.Builder`.
+    
+    The default HTTP client is now Apache Client v5.x.
+    For more details on how to override/adjust this, see `com.ritense.valtimo.contract.client.ApacheRequestFactoryCustomizer` class.
+    See also [Spring documentation](https://docs.spring.io/spring-boot/reference/io/rest-client.html#io.rest-client.restclient.customization)
+    
+    A new configuration class has been introduced to modify two main timeout settings.
+    For more information, see the `ValtimoHttpRestClientConfigurationProperties` class. Or read the [Rest client configuration](../../../reference/rest-client-configuration.md)
+    
+    Logging with the new Apache client can be configured as follows:
+    ```yaml
+      logging:
+          level:
+              org.apache.http: DEBUG
+    ```
+    Additionally, there is a new class for logging requests and responses: LoggingRestClientCustomizer
+*  ```yaml
+      logging:
+          level:
+              com.ritense.valtimo.web.logging.LoggingRestClientCustomizer: DEBUG
+   ```
 
-  X was deprecated and is replaced with Y.
+* **Methods inside ClientTools**
 
-* **Deprecation2**
-
-  X was deprecated and is replaced with Y.
-
-Instructions on how to migrate to this version of Valtimo can be found [here](migration.md).
+  Use of WebClient is deprecated, this was used before:
+  - `fun <T> getTypedPage(responseClass: Class<out T>): ParameterizedTypeReference<Page<T>> {`
+  - `fun zgwErrorHandler(): ExchangeFilterFunction {`
 
 ## Known issues
 
