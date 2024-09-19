@@ -16,6 +16,16 @@ There are three ways of creating new document definitions in Valtimo.
 * Create an empty case via the UI
 * Place a valid JSON schema in the codebase via an IDE
 
+{% hint style="info" %}
+Best practices:
+
+* **Always create a JSON schema.** A JSON schema enforces a certain quality for each document. Experience shows that a JSON schema is necessary for production-grade systems.
+* **Ensure a stable design and minimize changes to the model.** Discuss the impact of changes thoroughly before implementing them. For example, if in a version 2 of the schema an attribute is made mandatory that wasn't required in version 1, the forms that provide this data must be duplicated and adapted to the new Document Definition.
+* **The case detail object must be usable for Formio forms.** Complexities such as arrays within arrays can complicate the form-building process. Tip: do not blindly adopt a JSON schema from a source.
+* **Do not store technical or control information in the JSON document.** Process variables are available for this.&#x20;
+* **Do store** information that is needed in case search and case list pages. Though information from external sources can be displayed in a Case, it cannot be used to search or filter on.&#x20;
+{% endhint %}
+
 {% tabs %}
 {% tab title="Via UI" %}
 #### Upload a valid JSON schema
