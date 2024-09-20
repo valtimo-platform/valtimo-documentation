@@ -19,6 +19,10 @@ The following features were added:
   * eindeGeldigheid
     * Only types with an empty or future eindeGeldigheid are returned
 
+* **URL process link module**
+
+  A new module has been added that adds a new process link which instead of opening a task, will open a URL in a new tab
+
 ## Bugfixes
 
 The following bugs were fixed:
