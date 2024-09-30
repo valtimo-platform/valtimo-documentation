@@ -3,7 +3,8 @@
 ## Adding a feature or bugfix to Valtimo
 
 1. Create an issue in the [Valtimo](https://github.com/valtimo-platform/valtimo-issues) or [GZAC](https://github.com/generiekzaakafhandelcomponent/gzac-issues) issues repository. 
-2. Implement the feature/bugfix in the library repository/repositories and [create a pull request (PR)](#creating-a-pull-request). No reviewers are necessary.
+2. Tag the Product Owner in the Github issue. A member of the product team will be in touch to discuss the issue and the proposed solution.
+3. Implement the feature/bugfix in the library repository/repositories and [create a pull request (PR)](#creating-a-pull-request). No reviewers are necessary.
    * Instructions on how to run Valtimo locally can be found in the README.md of the library repositories.
 3. Write release notes and documentation for the feature. See below for instructions on how to do this.
 4. Merge the PR after getting an approval from the Valtimo team.
