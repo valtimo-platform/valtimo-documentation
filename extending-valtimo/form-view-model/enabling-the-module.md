@@ -8,10 +8,17 @@ dependencies {
 }
 ```
 
-Enable the feature toggle in your project's environment.ts file:
+Enable the feature toggle in your project's environment.ts file and expose the token:
 ```typescript
 featureToggles: {
     enableFormViewModel: true
+}
+```
+
+```typescript
+{
+    provide: FORM_VIEW_MODEL_TOKEN,
+    useValue: {component: FormViewModelComponent}
 }
 ```
 
