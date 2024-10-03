@@ -1,6 +1,8 @@
 # Logging
 
-What is logging and why do I want to use it
+Events are logged in order to be able to track what happened in an application. This is useful for example when
+trying to debug an issue. Valtimo uses Logback as the logging framework. The documentation for this framework can be
+found [here](https://logback.qos.ch/documentation.html).
 
 ## Log levels and when to use them
 
