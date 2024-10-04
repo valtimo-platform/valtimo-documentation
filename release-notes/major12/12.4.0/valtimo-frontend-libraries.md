@@ -4,10 +4,9 @@
 
 The following features were added:
 
-* **New feature1**
+* **Documenten API Plugin Action Upload in bestandsdelen**
 
-  Description of the new feature goes here.
-  Also link to the page that expains the feature in greater detail.
+  Added the option to upload files in parts
 
 * **New feature2**
 
