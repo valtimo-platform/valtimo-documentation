@@ -4,11 +4,18 @@
 
 The following features were added:
 
+
+* **Documenten API Plugin Action Upload in bestandsdelen**
+
+  Added the option to upload files in parts
+  
+
 * **Task Panel**
 
   The user tasks in a case can now be visible via a panel in the Case details page. 
   This feature will enable navigating through the Case tabs while filling in the task information.
   Instructions on how to enable this feature can be found [here](/using-valtimo/tasks/task-panel.md)
+
 
 * **Documents tab pagination**
 

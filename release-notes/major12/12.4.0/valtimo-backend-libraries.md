@@ -9,6 +9,14 @@ The following features were added:
   The default author of audit events is now "System" instead of "Anonymous". Database migration is added to migrate
   older audit events with the author "Anonymous".
 
+* **Documenten API Plugin Action Upload in bestandsdelen**
+  
+  It is now possible to select the plugin action `Save uploaded document in parts`.
+  For it to work properly for larger files an adjustment to application.yml might be required.
+  The following values are default values that need to be adjusted for larger parts
+    * spring.servlet.multipart.max-file-size: 1MB
+    * spring.servlet.multipart.max-request-size: 10MB
+
 
 ## Bugfixes
 
