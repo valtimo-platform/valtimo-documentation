@@ -4,27 +4,35 @@
 
 The following features were added:
 
+
 * **Documenten API Plugin Action Upload in bestandsdelen**
 
   Added the option to upload files in parts
+  
 
-* **New feature2**
+* **Task Panel**
 
-  Description of the new feature goes here.
-  Also link to the page that expains the feature in greater detail.
+  The user tasks in a case can now be visible via a panel in the Case details page. 
+  This feature will enable navigating through the Case tabs while filling in the task information.
+  Instructions on how to enable this feature can be found [here](/using-valtimo/tasks/task-panel.md)
 
+
+* **Documents tab pagination**
+
+  The Documenten API Documents list now supports pagination, when the API itself supports it.
 
 ## Bugfixes
 
 The following bugs were fixed:
 
-* **Bug1**
+* **Bugfix1**
 
-  Description of what the issue was.
+  Description of the bug that was fixed.
 
-* **Bug2**
+* **Bugfix2**
 
-  Description of what the issue was.
+  Description of the bug that was fixed.
+
 
 ## Breaking changes
 
@@ -32,31 +40,33 @@ The following breaking changes were introduced:
 
 * **Breaking change1**
 
+  Instructions on how to migrate to this version of Valtimo can be found [here](migration.md).
+
+
 * **Breaking change2**
 
-Instructions on how to migrate to this version of Valtimo can be found [here](migration.md).
+  Instructions on how to migrate to this version of Valtimo can be found [here](migration.md).
 
 ## Deprecations
 
 The following was deprecated:
 
 * **Deprecation1**
+    
+  Description of the deprecated code
 
-  X was deprecated and is replaced with Y.
 * **Deprecation2**
-
-  X was deprecated and is replaced with Y.
-
-Instructions on how to migrate to this version of Valtimo can be found [here](migration.md).
+    
+  Description of the deprecated code
 
 ## Known issues
 
 This version has the following known issues:
 
 * **Issue1**
-    * Discovered in version x.x.x
-    * Describe what can be done to work around the issue
+  * Discovered in version x.x.x
+  * Describe what can be done to work around the issue
 
 * **Issue2**
-    * Discovered in version x.x.x
-    * Describe what can be done to work around the issue
+  * Discovered in version x.x.x
+  * Describe what can be done to work around the issue
