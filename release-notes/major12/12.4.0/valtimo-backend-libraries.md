@@ -9,6 +9,11 @@ The following features were added:
   The default author of audit events is now "System" instead of "Anonymous". Database migration is added to migrate
   older audit events with the author "Anonymous".
 
+* **Environment variables for process links**
+
+  In process links you can now use environment variables. This will only work within autodeployment.
+
+
 
 ## Bugfixes
 
