@@ -32,7 +32,7 @@ The following features were added:
   In many configuration forms in the application, manual path inputs are used. For example, an admin fills in
   `case:createdOn` for a search field configuration. A component has now been implemented to allow for the selection
   of possible values for these fields using a dropdown. A manual input option is still available in these places by
-  switching a toggle. 
+  switching a toggle.
 
   In this version, this value path selector has been implemented  for configuring task and case search fields, case list
   columns, and for selecting the default value for Form.io components inside the form builder. The latter is available
