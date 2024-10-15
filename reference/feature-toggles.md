@@ -91,3 +91,8 @@ with a `boolean` value.
 
   If enabled, a new dropdown will appear in user settings, where the user can switch between themes. This feature 
   toggle is enabled by default.
+
+* **`enableIntermediateSave`**
+
+  If enabled, user will be able to save their progress on a form and continue later. This feature
+  toggle is enabled by default.

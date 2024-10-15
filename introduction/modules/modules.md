@@ -314,3 +314,7 @@ API.
 The [Zaken (Cases) API](https://vng-realisatie.github.io/gemma-zaken/standaard/zaken/index) is a Dutch government API
 standard for exchanging information around cases and their related data. A plugin is provided that allows for connecting
 to applications that provide a Zaken API.
+
+### URL Process Link
+
+Adds a new process link that opens a URL in a new tab. This allows the user to register data in external systems

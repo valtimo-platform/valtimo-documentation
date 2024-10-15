@@ -20,7 +20,7 @@ data class Person(
     val age: Int,
     var personalAddress: Address? = null
 ) : ViewModel {
-    override fun update(submission: T, task: CamundaTask?, businessKey: String): ViewModel {
+    override fun update(task: CamundaTask?): ViewModel {
         // code to update the ViewModel
         return this
     }
