@@ -14,6 +14,18 @@ The following features were added:
 
   The Documenten API Documents list now supports pagination, when the API itself supports it.
 
+* **Open Zaak plugin supports new properties for creating a zaak**
+
+  The Open Zaak plugin now allows users to configure the following optional properties when creating a zaak
+  - Description
+  - Planned end date
+  - Final delivery data
+
+  De open Zaak plugin ondersteund nu extra optionele parameters bij het aanmaken van een zaak:
+  - Omschrijving
+  - Geplande eind datum
+  - Laatste oplever datum
+
 ## Bugfixes
 
 The following bugs were fixed:

@@ -38,13 +38,6 @@ The following features were added:
   columns, and for selecting the default value for Form.io components inside the form builder. The latter is available
   under a Valtimo tab in configuration modals for each Form.io component.
 
-* **Open Zaak plugin supports new properties for creating a zaak**
-
-  The Open Zaak plugin now allows users to configure the following optional properties when creating a zaak
-  - Description
-  - Planned end date
-  - Final delivery data
-
 ## Bugfixes
 
 The following bugs were fixed:
