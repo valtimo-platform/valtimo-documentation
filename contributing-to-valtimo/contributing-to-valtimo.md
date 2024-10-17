@@ -2,11 +2,13 @@
 
 ## Adding a feature or bugfix to Valtimo
 
-1. Create an issue in the [Valtimo issues repository](https://github.com/valtimo-platform/valtimo-issues) to discuss your contribution. This is to reduce the work that is required, as it can both reduce the chances of feedback and allows for the Valtimo team to provide some pointers on how to proceed.
-2. Implement the feature/bugfix and create a PR to the development branch. No reviewers are necessary.
-   * Instructions on how to run Valtimo locally is split into Valtimo core and GZAC for `backend-libraries`, which can be found [here](https://github.com/valtimo-platform/valtimo-backend-libraries/blob/main/app/valtimo-core/README.md) and [here](https://github.com/valtimo-platform/valtimo-backend-libraries/blob/main/app/gzac/README.md) respectively. For instructions on how to run the `frontend-libraries`, see [here](https://github.com/valtimo-platform/valtimo-frontend-libraries/blob/development/README.md).
-3. Write release notes and documentation for the feature. See below for instructions on how to do this.
-4. Merge the branch after getting an approval from the Valtimo team.
+1. Create an issue in the [Valtimo](https://github.com/valtimo-platform/valtimo-issues) or [GZAC](https://github.com/generiekzaakafhandelcomponent/gzac-issues) issues repository.
+2. Tag the Product Owner in the Github issue. A member of the product team will be in touch to discuss the issue and the proposed solution.
+   * The Github handle of the Product Owner can be found in the README.md of the issue repositories.
+3. Implement the feature/bugfix in the library repository/repositories and [create a pull request (PR)](https://docs.valtimo.nl/contributing/contributing-to-valtimo#creating-a-pull-request). No reviewers are necessary.
+   * Instructions on how to run Valtimo locally can be found in the README.md of the library repositories.
+4. Write release notes and documentation for the feature. See below for instructions on how to do this.
+5. Merge the PR after getting an approval from the Valtimo team.
 
 ## Adding documentation to Valtimo
 

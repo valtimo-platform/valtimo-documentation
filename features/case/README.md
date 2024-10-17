@@ -6,7 +6,7 @@ Case Management is a form of Business Process Automation. A 'Case' is created af
 
 A concrete example is the need for a permit to organize an event. After an application for a permit has been submitted (the trigger is always something that has happened - an event that took place), a case file is created. If everything goes well from the applicant's perspective, this results in 'something': in this case, a permit.
 
-A case is per definition short-lived, whereby the definition of 'short' can be discussed. However: a patient, car or tree are not 'short-lived' and so not a case within the definition of Case Management. To summarise: the case in Valtimo is a business process, with a clear start en wel defined end. &#x20;
+A case is per definition short-lived, whereby the definition of 'short' can be discussed. However: a patient, car or tree are not 'short-lived' and so not a case within the definition of Case Management. To summarize: the case in Valtimo is a business process, with a clearly defined start and end. &#x20;
 
 ### Cases and case definitions
 
