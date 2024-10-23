@@ -4,7 +4,7 @@ ZGW Documents are the documents that are stored using the Documenten API.
 
 ## Plugin configuration
 
-To use ZGW documents, the [documenten-api](../../nog-een-plek-geven/modules/zgw/documenten-api.md) module needs to installed. Instructions on how to use and configure the plugin(s) can be found [here](../plugins/configure-documenten-api-plugin.md)
+To use ZGW documents, the [documenten-api](../../nog-een-plek-geven/modules/zgw/documenten-api.md) module needs to installed. Instructions on how to use and configure the plugin(s) can be found [here](zgw-plugins/configure-documenten-api-plugin.md)
 
 ## Configuring the document list
 

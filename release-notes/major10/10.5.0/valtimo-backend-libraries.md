@@ -18,7 +18,7 @@ The following features were added:
     The name for the Portaaltaak system process, which should run when a portaaltaak has been completed, has been changed to `Process completed Portaaltaak`.
 *   **New plugin action in the Documenten API to download documents**
 
-    This new plugin action downloads a document from the Documenten API and stores it in a temporary file. More information on this plugin action can be found [here](../../../features/plugins/configure-documenten-api-plugin.md#download-document).
+    This new plugin action downloads a document from the Documenten API and stores it in a temporary file. More information on this plugin action can be found [here](../../../features/zgw/zgw-plugins/configure-documenten-api-plugin.md#download-document).
 *   **New API endpoints to retrieve types from the Catalog API**
 
     New API endpoints have been added to retrieve several types from the Catalogi API. The following types can be retrieved:

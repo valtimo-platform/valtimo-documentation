@@ -4,9 +4,9 @@ The Objecten API plugin can be used to store and access data about an Object in 
 
 ## Configure the plugin
 
-A plugin configuration is required before the plugin can be used. A general description on how to configure plugins can be found [here](configure-plugin.md).
+A plugin configuration is required before the plugin can be used. A general description on how to configure plugins can be found [here](../../plugins/configure-plugin.md).
 
-If the Objecten API plugin is not visible in the plugin menu, it is possible the application is missing a dependency. Instructions on how to add the Objecten API dependency can be found [here](../../nog-een-plek-geven/modules/zgw/objecten-api.md).
+If the Objecten API plugin is not visible in the plugin menu, it is possible the application is missing a dependency. Instructions on how to add the Objecten API dependency can be found [here](../../../nog-een-plek-geven/modules/zgw/objecten-api.md).
 
 To configure this plugin the following properties have to be entered:
 
@@ -15,7 +15,7 @@ To configure this plugin the following properties have to be entered:
 
 An example plugin configuration:
 
-![example plugin configuration](../../using-valtimo/plugin/objecten-api/img/configure-plugin.png)
+![example plugin configuration](../../../using-valtimo/plugin/objecten-api/img/configure-plugin.png)
 
 ## Using the plugin
 
@@ -31,7 +31,7 @@ The Objecten API plugin is used with REST endpoints. The following endpoints are
 
 The Objecten API plugin supports the following actions that can be configured in process links in order to manage data that is part of the object.
 
-A general description on how to create process links, can be found [here](../process-link/create-process-link.md).
+A general description on how to create process links, can be found [here](../../process-link/create-process-link.md).
 
 ### Delete object
 

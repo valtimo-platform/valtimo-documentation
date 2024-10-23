@@ -27,24 +27,24 @@ The following features were added:
 
     A Zaken-API plugin action has been added for both starting and ending a recovery period.
 
-    More information about the plugin actions can be found [here](../../../features/plugins/configure-zaken-api-plugin.md#start-recovery-period).
+    More information about the plugin actions can be found [here](../../../features/zgw/zgw-plugins/configure-zaken-api-plugin.md#start-recovery-period).
 * **New Zaak type link endpoint** The document Zaaktype link configuration now uses the `/api/management/v1/zgw/zaaktype` endpoint. This new endpoint requires a zaken-api plugin to be configured.
 * **Document object type selection is now conditional** When connecting a zaak to the document, the document object type selection is now only shown when using the OPEN\_ZAAK upload-provider.
 * **Configurable colors for internal case statuses** When configuring an internal case status, you are provided with a fixed list of colors. This colors are in accordance to the Carbon Design System and will help differentiate between different satuses you might create.
-* **Zaken-api plugin action create, update and delete zaakeigenschap** A Zaken-API plugin action has been added for creating, updating and for deleting a zaakeigenschap. More information about the plugin actions can be found [here](../../../features/plugins/configure-zaken-api-plugin.md#create-zaakeigenschap).
+* **Zaken-api plugin action create, update and delete zaakeigenschap** A Zaken-API plugin action has been added for creating, updating and for deleting a zaakeigenschap. More information about the plugin actions can be found [here](../../../features/zgw/zgw-plugins/configure-zaken-api-plugin.md#create-zaakeigenschap).
 * **form-link to process-link** The library `@valtimo/form-link` has been renamed to `@valtimo/process-link`. For information on how to migrate, refer to [this page](migration.md).
 *   **Override Form.io options**
 
     Options used by Form.io in the renderer can now be modified by using the following key in your environment file: `formioOptions`. Refer to [this page](../../../nog-een-plek-geven/reference/environment.md) for more information.
 *   **Verzoek plugin JSON mapping**
 
-    The verzoek plugin can now be configured so that the entire verzoek data is copied to a target location. For information on how to configure the verzoek plugin, refer to [this page](../../../features/plugins/configure-verzoek-plugin.md).
+    The verzoek plugin can now be configured so that the entire verzoek data is copied to a target location. For information on how to configure the verzoek plugin, refer to [this page](../../../features/zgw/zgw-plugins/configure-verzoek-plugin.md).
 *   **Show readable process errors**
 
     When a user models and deploys an erroneous BPMN process, the user will now get a readable and useful error message.
 *   **Documenten API plugin version**
 
-    To determine the available features of the Documenten API, the plugin can now be configured with the version of the Documenten API that is used. This version is also shown on all Case definition management pages that use the Documenten API plugin. For more information on how to configure the verzoek plugin, refer to [this page](../../../features/plugins/configure-documenten-api-plugin.md)
+    To determine the available features of the Documenten API, the plugin can now be configured with the version of the Documenten API that is used. This version is also shown on all Case definition management pages that use the Documenten API plugin. For more information on how to configure the verzoek plugin, refer to [this page](../../../features/zgw/zgw-plugins/configure-documenten-api-plugin.md)
 *   **Configurable task list columns**
 
     A new library has been added - `@valtimo/task-management`. It provides a page where list columns can be configured for tasks of a certain case type. Please follow the migration notes (section 'Task management') on [this page](migration.md).
@@ -53,7 +53,7 @@ The following features were added:
     The auto-deployed upload process `Upload Document` has been renamed to `Documenten API upload document`.
 *   **Case migration**
 
-    A new feature has been released to migrate cases from an old version to a new version. This feature is still in beta and should be used with care. For more information on case migration, refer to [this page](../../../features/plugins/configure-documenten-api-plugin.md)
+    A new feature has been released to migrate cases from an old version to a new version. This feature is still in beta and should be used with care. For more information on case migration, refer to [this page](../../../features/zgw/zgw-plugins/configure-documenten-api-plugin.md)
 *   **Dark-mode and theme-switching added**
 
     By implementing the Carbon Design System and making use of the correct color tokens, dark-mode has become a possibility. This feature-toggle is enabled by default. The 3 supported options are Light (default), Dark and System (Changes theme based on the system theme preference). For more information on theming, refer to [this page](../../../nog-een-plek-geven/reference/user-interface/carbon-design-system.md)

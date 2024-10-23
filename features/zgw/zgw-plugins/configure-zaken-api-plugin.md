@@ -4,22 +4,22 @@ The Zaken API plugin can be used to store and access data about a Zaak (case) in
 
 ## Configure the plugin
 
-A plugin configuration is required before the plugin can be used. A general description on how to configure plugins can be found [here](configure-plugin.md).
+A plugin configuration is required before the plugin can be used. A general description on how to configure plugins can be found [here](../../plugins/configure-plugin.md).
 
-If the Zaken API plugin is not visible in the plugin menu, it is possible the application is missing a dependency. Instructions on how to add the Zaken API dependency can be found [here](../../nog-een-plek-geven/modules/zgw/documenten-api.md).
+If the Zaken API plugin is not visible in the plugin menu, it is possible the application is missing a dependency. Instructions on how to add the Zaken API dependency can be found [here](../../../nog-een-plek-geven/modules/zgw/documenten-api.md).
 
 To configure this plugin the following properties have to be entered:
 
 * **URL.** Contains the complete base URL of the Zaken API to connect to. This generally includes the path `/api/v1/`.
 * **Authentication plugin configuration.** Reference to another plugin configuration that will be used to add authentication to any request performed on the Zaken API. If no option is available in this field a plugin has to be configured that is able to authenticate for the specific application that hosts the Zaken API. (e.g. OpenZaak)
 
-An example plugin configuration: ![example plugin configuration](../../using-valtimo/plugin/zaken-api/img/configure-plugin.png)
+An example plugin configuration: ![example plugin configuration](../../../using-valtimo/plugin/zaken-api/img/configure-plugin.png)
 
 ## Available actions
 
 The Zaken API plugin supports the following actions that can be configured in process links in order to manage data that is part of the Zaak.
 
-A general description on how to create process links, can be found [here](../process-link/create-process-link.md).
+A general description on how to create process links, can be found [here](../../process-link/create-process-link.md).
 
 ### Link document to zaak
 
@@ -31,7 +31,7 @@ When creating a process link the following properties have to be entered:
 * **Document title.** The title of the document within the context of the zaak that is stored in the 'zaakinformatieobject' record in the Zaken API.
 * **Document description.** The description of the document within the context of the zaak that is stored in the 'zaakinformatieobject' record in the Zaken API.
 
-An example process link configuration: ![Generate document process link](../../using-valtimo/plugin/zaken-api/img/link-document-to-zaak.png)
+An example process link configuration: ![Generate document process link](../../../using-valtimo/plugin/zaken-api/img/link-document-to-zaak.png)
 
 ### Link uploaded document to zaak
 

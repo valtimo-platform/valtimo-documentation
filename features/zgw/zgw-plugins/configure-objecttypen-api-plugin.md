@@ -4,9 +4,9 @@ The Objecttypen API plugin can be used to store and access data about an Object 
 
 ## Configure the plugin
 
-A plugin configuration is required before the plugin can be used. A general description on how to configure plugins can be found [here](configure-plugin.md).
+A plugin configuration is required before the plugin can be used. A general description on how to configure plugins can be found [here](../../plugins/configure-plugin.md).
 
-If the Objecttypen API plugin is not visible in the plugin menu, it is possible the application is missing a dependency. Instructions on how to add the Objecttypen API dependency can be found [here](../../nog-een-plek-geven/modules/zgw/objecttypen-api.md).
+If the Objecttypen API plugin is not visible in the plugin menu, it is possible the application is missing a dependency. Instructions on how to add the Objecttypen API dependency can be found [here](../../../nog-een-plek-geven/modules/zgw/objecttypen-api.md).
 
 To configure this plugin the following properties have to be entered:
 
@@ -15,9 +15,9 @@ To configure this plugin the following properties have to be entered:
 
 An example plugin configuration:
 
-![example plugin configuration](../../using-valtimo/plugin/objecttypen-api/img/configure-plugin-1.png)
+![example plugin configuration](../../../using-valtimo/plugin/objecttypen-api/img/configure-plugin-1.png)
 
-![example plugin configuration](../../using-valtimo/plugin/objecttypen-api/img/configure-plugin-2.png)
+![example plugin configuration](../../../using-valtimo/plugin/objecttypen-api/img/configure-plugin-2.png)
 
 ## Using the plugin
 
