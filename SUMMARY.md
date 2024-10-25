@@ -153,6 +153,7 @@
     * [12.3.1](release-notes/12.x.x/12.3.0/12.3.1.md)
   * [12.4.0](release-notes/12.x.x/12.4.0/README.md)
     * [12.4.1](release-notes/12.x.x/12.4.0/12.4.1.md)
+  * [12.5.0](release-notes/12.x.x/12.5.0.md)
 * [11.x.x](release-notes/11.x.x/README.md)
   * [11.3.0](release-notes/11.x.x/11.3.0/README.md)
     * [Valtimo backend libraries](release-notes/major11/11.3.0/valtimo-backend-libraries.md)

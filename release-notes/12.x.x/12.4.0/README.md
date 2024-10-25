@@ -26,14 +26,6 @@ When selecting a document type (informatieobjecttype), e.g. when uploading a doc
 
 The document list now supports pagination, when the Documenten API supports retrieving paginated results.
 
-#### ZGW - additional Zaken API plugin properties
-
-The Zaken API plugin now supports additional (optional) properties when creating a zaak
-
-* Description
-* Planned end date
-* Final delivery date
-
 #### System audit events
 
 When audit events are initiated by the system, the author is now 'System' instead of 'Anonymous'. Authors of historic events are migrated.
