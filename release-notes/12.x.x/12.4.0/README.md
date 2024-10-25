@@ -10,6 +10,10 @@ This release contains a potentially breaking change. More information can be fou
 
 The user tasks on a case detail page can now be shown in a task panel. Using a task panel, the user can fill in and complete the form while being able to see and navigate through the different case tabs. Administrators can configure whether tasks should be shown in the modal or in the task panel. More information about this feature can be found [here](https://github.com/valtimo-platform/valtimo-documentation/blob/next-minor/using-valtimo/tasks/task-panel.md).
 
+{% hint style="info" %}
+**Note**: to enable the task panel feature, the following feature toggle should be set in the Valtimo frontend configuration: `enableTaskPanel`
+{% endhint %}
+
 #### New process link type: URL
 
 A new way of configuring forms is available: the URL. By configuring a URL process link on a start event or user task, users will be redirected to the configured URL. Using this feature, external forms can be used to start a process or submit a user task.
