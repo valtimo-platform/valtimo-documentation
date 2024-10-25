@@ -1,7 +1,7 @@
 # 12.4.0
 
 {% hint style="warning" %}
-This release contains a potentially breaking change. More information can be found [here](12.4.0.md#webclient-has-been-replaced-by-restclient).
+This release contains a potentially breaking change. More information can be found [here](./#webclient-has-been-replaced-by-restclient).
 {% endhint %}
 
 ## New features
