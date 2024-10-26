@@ -29,7 +29,7 @@
   * [Configuration](features/case/configuration.md)
   * [Processes](features/case/processes.md)
   * [Search fields](features/case/search-fields.md)
-  * [Lists](features/case/lists.md)
+  * [List](features/case/list.md)
   * [Tabs](features/case/tabs.md)
   * [Statuses](features/case/statuses.md)
   * [👩‍💻 For developers](features/case/for-developers/README.md)
