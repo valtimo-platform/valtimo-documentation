@@ -1,6 +1,6 @@
 # List
 
-On the **List** tab of the Case Definition, the columns displayed in the list of cases presented to end users in the Valtimo UI can be configured. When a case type is selected from the **Cases** menu, the list screen opens and displays all cases of that type in a list according to this configuration.
+In the **List** tab of the Case Definition, the columns displayed in the list of cases for end users in the Valtimo UI can be configured. When a case type is selected from the **Cases** menu, the list screen opens and displays all cases of that type in accordance with this configuration.
 
 {% hint style="info" %}
 If no configuration exists for a case, Valtimo defaults to the following list of case metadata:
@@ -12,8 +12,6 @@ If no configuration exists for a case, Valtimo defaults to the following list of
 * Assignee (only if configured)
 * Status (only if configured)
 {% endhint %}
-
-
 
 ## List field types
 
@@ -35,7 +33,7 @@ Overview of available configuration fields and the corresponding field types.
 _This path targets the assigned case handlers full name._\
 \
 **Path:** doc:request.budget\
-_This path targets the case data itself. The doc: prefix directs to the content object of the case document so the same JSON paths that where used in the formIO forms to store the data._
+_This path targets the case data itself. The doc: prefix directs to the content object of the case document so the same JSON paths that where used in the Form.io forms to store the data._
 {% endhint %}
 
 * **Display Type**\
@@ -66,7 +64,38 @@ The first column added to a configuration immediately disables all default metad
 {% endtab %}
 
 {% tab title="Via IDE" %}
+A case list configuration file can be added to the resource folder. These configuration files are automatically deployed when the application starts.\
+\
+List configuration files are only automatically deployed when they are located on this path: `/resource/config/case/list`
 
+The name of the configuration file must match the name of the document definition. This ensures that the list configuration is linked to the correct document definition.
+
+{% hint style="info" %}
+Example\
+\
+If the name of the document definition is **`profile`**, the configuration path and file name must be: **`/resource/config/case/list/profile.json`**
+{% endhint %}
+
+\
+The content of a list configuration file can look like this:
+
+```json
+[
+    {
+        "key": "createdOn",
+        "title": "Created on",
+        "path": "case:createdOn",
+        "displayType": {
+            "type": "date",
+            "displayTypeParameters": {
+                "dateFormat": "yyyy-MM-dd"
+            }
+        },
+        "sortable": false,
+        "defaultSort": "DESC",
+        "order": 0
+    }
+]
+```
 {% endtab %}
 {% endtabs %}
-
