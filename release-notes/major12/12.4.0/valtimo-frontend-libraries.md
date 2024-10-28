@@ -62,7 +62,7 @@ The following was deprecated:
 
 * **Deprecation2**
     
-  Description of the deprecated code
+  Description of the deprecated CODE
 
 ## Known issues
 
