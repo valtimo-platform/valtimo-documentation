@@ -47,6 +47,9 @@ When audit events are initiated by the system, the author is now 'System' instea
 A known issue is that, when a user goes back and forth between Form Flow steps, certain data is lost. This is intended behaviour that only occurs when data in previous steps has been changed, potentially affecting data already submitted in later steps.
 {% endhint %}
 
+* When opening a task on the case detail page, the URL path would get replaced with `/#`, losing information about the current tab
+* The 'multiple case count' widget configuration form stored the document definition incorrectly, preventing widgets from retrieving the data.
+
 ## Extending Valtimo/for developers
 
 #### WebClient has been replaced by RestClient
