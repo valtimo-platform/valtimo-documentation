@@ -1,4 +1,4 @@
-# Document
+# Document definition
 
 A **document definition** is the **blueprint** for the JSON documents that are created when creating **new cases** in Valtimo. It defines the structure of the case and contains validation rules for the data that is stored by the actual JSON documents that are created when executing processes for that case in Valtimo. This page shows how to create a document definition, and how to add validation to properties.&#x20;
 
@@ -126,7 +126,7 @@ To create a document definition, the following steps are necessary:
 {% endtab %}
 {% endtabs %}
 
-## Edit document definition
+## Editing a document definition
 
 Same as for creating cases there are three ways of editing document definitions.
 

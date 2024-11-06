@@ -1,12 +1,13 @@
 # Processes
 
-Processes (BPMN 2.0) are used in Valtimo to gather case information needed for that specific case. At least one process needs to be linked to the case definition in order to be able to start new cases based on that case definition. Next to this a valid form needs to be linked to the "start event" of that process so that this form is displayed when the "Create New Case" button is clicked.
+In order to be able to create new cases based on a case definition a process needs to be connected to the case definition. Valtimo uses processes (BPMN 2.0) to guide a case through an organization and gather case information needed for that specific case.
 
-This case tab only focusses on linking the process to the case. A form does not have to be connected to the process in order to link the process to the case definition.
+This case tab makes it possible to connect any process in that implementation to the case definition.
 
 {% hint style="info" %}
 This page requires:
 
+* A case definition
 * A process definition
 {% endhint %}
 
@@ -52,7 +53,24 @@ These sub-processes are not starting processes for the case and should not appea
 {% endtab %}
 
 {% tab title="Via IDE" %}
+In order to link processes to a case the following steps are necessary:
 
+1. Create a process document link file (ending with `.json`) under the following path: `*/resources/config/process-document-link`. \
+   \
+   The name should correspond with the document definition ID\
+   (e.g. a document definition `example-case.schema.json` with the ID `example-case.schema` requires the process document file to be named `example-case.json`.\
+
+2. Specify the process(es) that should be linked to the document. More than one process can be linked to the same document by adding multiple configurations to the array.
+
+```json
+[
+    {
+        "processDefinitionKey": "example-case",
+        "canInitializeDocument": true,
+        "startableByUser": true
+    }
+]
+```
 {% endtab %}
 {% endtabs %}
 

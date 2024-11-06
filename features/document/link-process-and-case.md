@@ -1,4 +1,4 @@
-# How to link a process to a case
+# 🛑 How to link a process to a case
 
 Before a [process can be started](start-case.md), the process has to be linked to a case first. This page describes how a process can be linked to a case.
 

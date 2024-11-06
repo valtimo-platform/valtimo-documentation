@@ -1,4 +1,4 @@
-# How to start a process for a case
+# 🛑 How to start a process for a case
 
 There are two ways to start a process for a case by using the user interface:
 

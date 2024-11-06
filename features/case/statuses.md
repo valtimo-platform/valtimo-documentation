@@ -1,8 +1,8 @@
 # Statuses
 
-The internal case status is a case property which defines what the current state or status of the case is. The status is called 'internal', because by default it is not related to any status beyond the scope of Valtimo / GZAC (though implementations are not restricted to use it for that purpose).
+The internal case status is a case property which defines what the current state or status of the case is. The status is called 'internal', because by default it is not related to any status beyond the scope of Valtimo or GZAC (though implementations are not restricted to use it for that purpose).
 
-This is a very powerful setting when combining case and process management. Being able to store an internal case status as meta data of the case makes it possible to define an internal case status for case handlers to use. Usually case handlers work with a larger set of case statuses then is presented to the customer or client. This can easily be configured with the case statusses.
+This is a very powerful setting when combining case and process management. Being able to store an internal case status as meta data of the case makes it possible to define an internal case status for case handlers to use. Usually case handlers work with a larger set of case statuses than is presented to the customer or client. This can now easily be configured on this tab.
 
 <figure><img src="../../.gitbook/assets/image (25).png" alt=""><figcaption><p>Example case statuses</p></figcaption></figure>
 

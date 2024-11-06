@@ -13,7 +13,7 @@ Once the case handler option is selected, the second checkbox will appear that c
 {% tab title="Via UI" %}
 <figure><img src="../../.gitbook/assets/image (31).png" alt=""><figcaption><p>Case specific configuration</p></figcaption></figure>
 
-When the case handler option is selected the following changes in the user interface:
+When the case handler option is selected the following change is made in the user interface:
 
 *   **The case list screen is divided in to three tabs**\
 

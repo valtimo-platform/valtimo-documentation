@@ -1,5 +1,9 @@
 # List
 
+To configure the columns of the case list overview the same prefixes can be used as described above for the search fields configuration.
+
+To configure the columns of the case list overview the same prefixes can be used as described for the [search fields](search-fields.md) configuration.
+
 In the **List** tab of the Case Definition, the columns displayed in the list of cases for end users in the Valtimo UI can be configured. When a case type is selected from the **Cases** menu, the list screen opens and displays all cases of that type in accordance with this configuration.
 
 {% hint style="info" %}
