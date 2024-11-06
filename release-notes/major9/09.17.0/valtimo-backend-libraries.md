@@ -13,7 +13,7 @@ The following features were added:
 
     * `form-flow-valtimo`
 
-    Information on how to use Postgres can be found [here](../../../nog-een-plek-geven/configure-database.md).
+    Information on how to use Postgres can be found [here](../../../fundamentals/getting-started/configure-database.md).
 *   **Secret keys in plugins are encypted before storing**
 
     Properties in plugins can now be marked as secret. When configuring the plugin the secrets will be encrypted before being stored.

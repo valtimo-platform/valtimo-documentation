@@ -625,7 +625,7 @@ If translation is to take place inside the component (as opposed to inside the t
 
 ### Plugin module
 
-Finally, after implementing the components and specification, a module has to be defined for the plugin. This module, together with the specification, is then imported in the app module as shown in [on this page](../../../nog-een-plek-geven/modules/core/plugin.md).
+Finally, after implementing the components and specification, a module has to be defined for the plugin. This module, together with the specification, is then imported in the app module as shown in [on this page](../../../fundamentals/getting-started/modules/core/plugin.md).
 
 The sample plugin module would look like this:
 

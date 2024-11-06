@@ -12,14 +12,14 @@ The following features were added:
     Case definitions can now be imported from a ZIP archive, containing all process definitions, forms, form flows, process links and the document definition that make up the case definition. See [this page](https://app.gitbook.com/o/-LQhw1pmbUwI6q8p8Re1/s/bcArISKZtxWk4tKpZb9P/\~/changes/1/features/case) for more information.
 *   **Transactional outbox**
 
-    Valtimo now supports an implementation of the [transactional outbox pattern](https://microservices.io/patterns/data/transactional-outbox.html). See [this page](../../../nog-een-plek-geven/modules/core/outbox/) for more information.
+    Valtimo now supports an implementation of the [transactional outbox pattern](https://microservices.io/patterns/data/transactional-outbox.html). See [this page](../../../fundamentals/getting-started/modules/core/outbox/) for more information.
 *   **Audit CloudEvents**
 
     Several outbox events have been added for auditing purposes. For an overview of the available events, refer to [this page](../../../nog-een-plek-geven/reference/modules/outbox.md)
 * **Access control for creating process instances** Two new access control resources have been added, these are `CamundaExecution` and `CamundaProcessDefinition`. The former has one action that can be used to allow users to create process instances, which is the `create` action. These resources can be used to restrict creation of certain process instances to a subset of roles. Information on how to use this can be found [here](../../../features/access-control/configuring-permissions.md#create-process-instance-permissions).
 *   **Outbox message publisher for RabbitMQ**
 
-    A RabbitMQ (AMQP 0.9.1) message publisher has been in the `outbox-rabbitmq` module. More information can be found [here](../../../nog-een-plek-geven/modules/core/outbox/outbox-rabbitmq.md).
+    A RabbitMQ (AMQP 0.9.1) message publisher has been in the `outbox-rabbitmq` module. More information can be found [here](../../../fundamentals/getting-started/modules/core/outbox/outbox-rabbitmq.md).
 *   **Added option for custom process variable name to download document plugin action in documentAPI**
 
     Added option for custom process variable name to download document plugin action in documentAPI so you have the option to choose a custom process variable name. When left empty the default name is: "resourceId"

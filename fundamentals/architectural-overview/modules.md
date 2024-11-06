@@ -204,7 +204,7 @@ The [Objecttypeb (Object types) API](https://vng.nl/projecten/overige-objecten-r
 
 ## OpenZaak Plugin Authentication
 
-[OpenZaak Plugin Authentication](../../nog-een-plek-geven/modules/zgw/openzaak-plugin-authentication.md) contains the OpenZaakPlugin which can be used for authentication in several ZGW plugins.
+[OpenZaak Plugin Authentication](../getting-started/modules/zgw/openzaak-plugin-authentication.md) contains the OpenZaakPlugin which can be used for authentication in several ZGW plugins.
 
 ### OpenZaak resource
 

@@ -6,7 +6,7 @@ The Catalogi API plugin can be used to access data stored in a ZGW (zaakgericht 
 
 A plugin configuration is required before the plugin can be used. A general description on how to configure plugins can be found [here](../../plugins/configure-plugin.md).
 
-If the Catalogi API plugin is not visible in the plugin menu, it is possible the application is missing a dependency. Instructions on how to add the Catalogi API dependency can be found [here](../../../nog-een-plek-geven/modules/zgw/catalogi-api.md).
+If the Catalogi API plugin is not visible in the plugin menu, it is possible the application is missing a dependency. Instructions on how to add the Catalogi API dependency can be found [here](../../../fundamentals/getting-started/modules/zgw/catalogi-api.md).
 
 To configure this plugin the following properties have to be entered:
 

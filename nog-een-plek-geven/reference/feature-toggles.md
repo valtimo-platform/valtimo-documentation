@@ -37,7 +37,7 @@ In the frontend, feature toggles can be configured under the `featureToggles` ke
     If enabled, the user will be returned to the page they were last on before they were automatically logged out after their refresh token expired.
 *   **`enableObjectManagement`**
 
-    If enabled, a new menuitem 'objects' will appear in the left sidebar menu. Enabled by default when not configured. This menu item can have one or more submenu items depending on the configuration. For more information [here](../modules/zgw/object-management.md)
+    If enabled, a new menuitem 'objects' will appear in the left sidebar menu. Enabled by default when not configured. This menu item can have one or more submenu items depending on the configuration. For more information [here](../../fundamentals/getting-started/modules/zgw/object-management.md)
 *   **`hideValtimoVersionsForNonAdmins`**
 
     If enabled, the Valtimo version information in the right sidebar will only be visible for admins and will be hidden for any other users.

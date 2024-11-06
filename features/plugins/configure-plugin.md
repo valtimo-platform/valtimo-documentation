@@ -6,7 +6,7 @@ Instructions for using the configuration to link an action to a process task can
 
 ## Setup
 
-Before plugins can be configured, both the backend and frontend dependencies are needed. See [here](../../nog-een-plek-geven/modules/core/plugin.md) for instructions on how to do this.
+Before plugins can be configured, both the backend and frontend dependencies are needed. See [here](../../fundamentals/getting-started/modules/core/plugin.md) for instructions on how to do this.
 
 ## Adding plugin configuration
 

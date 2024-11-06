@@ -10,7 +10,7 @@ The following features were added:
 
     This module specifies versions for dependencies of Valtimo.
 
-    More information can be found [here](../../../nog-een-plek-geven/modules/core/valtimo-dependency-versions.md).
+    More information can be found [here](../../../fundamentals/getting-started/modules/core/valtimo-dependency-versions.md).
 *   **User task assignees saved by user ID**
 
     The assignees of a user task are now saved in the database by their user ID. When implementations use keycloak, the assignee column from the task table in the databases is automatically migrated from email to user ID.
@@ -53,7 +53,7 @@ The following features were added:
     Cases can be filtered on statuses set to the case via the process. More information on this can be found [here](https://app.gitbook.com/o/-LQhw1pmbUwI6q8p8Re1/s/bcArISKZtxWk4tKpZb9P/\~/changes/1/features/case/statuses)
 *   **The RabbitMQ outbox publisher now support exchange targets**
 
-    Exchange targets can now be used with the outbox publisher for RabbitMQ by using the `valtimo.outbox.publisher.rabbitmq.exchange` property. More information on this can be found [here](../../../nog-een-plek-geven/modules/core/outbox/outbox-rabbitmq.md)
+    Exchange targets can now be used with the outbox publisher for RabbitMQ by using the `valtimo.outbox.publisher.rabbitmq.exchange` property. More information on this can be found [here](../../../fundamentals/getting-started/modules/core/outbox/outbox-rabbitmq.md)
 *   **`Executable` flag is automatically set upon process deployment**
 
     When deploying processes via the `/api/v1/process/definition/deployment` endpoint or by import, the `executable` flag is automatically set to true. The result is that deployment will no longer fail silently on this misconfiguration. This behaviour is not applied to auto-deployment via classpath.
@@ -89,8 +89,8 @@ The following breaking changes were introduced:
     Valtimo has been upgraded to Spring Boot 3. This was needed to keep the product up to date with the latest (transitive) dependencies.
 
     Migration instructions related to this change can be found [here](spring-boot3-migration/).
-* **Valtimo dependencies have changed** `valtimo-dependencies` and `valtimo-gzac-depenencies` should no longer be used for `dependencyManagement` or `platform`. This functionality has been replaced by [valtimo-dependency-versions](../../../nog-een-plek-geven/modules/core/valtimo-dependency-versions.md).
-* **Moved KvKProvider and BsnProvider** The `KvKProvider` and `BsnProvider` and implementations (`ZaakKvKProvider` and `ZaakBsnProvider`)have been moved to the `zaken-api` module. The [objects-api module](../../../nog-een-plek-geven/modules/zgw/objects-api.md) has been changed to use the relocated interfaces. Please be aware that the new implementations require at least one Zaken API Plugin to be configured.
+* **Valtimo dependencies have changed** `valtimo-dependencies` and `valtimo-gzac-depenencies` should no longer be used for `dependencyManagement` or `platform`. This functionality has been replaced by [valtimo-dependency-versions](../../../fundamentals/getting-started/modules/core/valtimo-dependency-versions.md).
+* **Moved KvKProvider and BsnProvider** The `KvKProvider` and `BsnProvider` and implementations (`ZaakKvKProvider` and `ZaakBsnProvider`)have been moved to the `zaken-api` module. The [objects-api module](../../../fundamentals/getting-started/modules/zgw/objects-api.md) has been changed to use the relocated interfaces. Please be aware that the new implementations require at least one Zaken API Plugin to be configured.
 * **Removed deprecated code** The `form-link` module, which was deprecated in 10.6.0, has been removed. Process links should be used instead. Additionally, `CamundaProcessJsonSchemaDocumentService.getDocument(DelegateExecution execution)` has been removed. This method is replaced by `DocumentDelegateService.getDocument(DelegateExecution execution`.
 * **ResourceService implementation is now optional** Valtimo can now start without providing any implementation of the `ResourceService`. When no implementation is provided, the following features will not work:
   * The `camundaSmartDocumentGenerator` and `smartDocumentGenerator` beans will not be available. The plugin should work as normal.
@@ -101,33 +101,33 @@ The following breaking changes were introduced:
   * `ZaakUrlProvider`: implemented by `DefaultZaakUrlProvider` in the zaken-api module.
   * `ZaaktypeUrlProvider`: implemented by `DefaultZaaktypeUrlProvider` in the zaken-api module.
 * \*\*`ZaakUrlProvider.getZaak(documentId: UUID): String` has been removed. This method is replaced by `ZaakUrlProvider.getZaakUrl(documentId: UUID): URI`.
-*   **Removed dependencies from** [**`valtimo-gzac-dependencies`**](../../../nog-een-plek-geven/modules/zgw/valtimo-gzac-dependencies.md)
+*   **Removed dependencies from** [**`valtimo-gzac-dependencies`**](../../../fundamentals/getting-started/modules/zgw/valtimo-gzac-dependencies.md)
 
-    The following modules have been removed from [`valtimo-gzac-dependencies`](../../../nog-een-plek-geven/modules/zgw/valtimo-gzac-dependencies.md):
+    The following modules have been removed from [`valtimo-gzac-dependencies`](../../../fundamentals/getting-started/modules/zgw/valtimo-gzac-dependencies.md):
 
-    * [`com.ritense.valtimo:besluit`](../../../nog-een-plek-geven/modules/zgw/besluit.md)
-    * [`com.ritense.valtimo:contactmoment`](../../../nog-een-plek-geven/modules/zgw/contactmoment.md)
-    * [`com.ritense.valtimo:klant`](../../../nog-een-plek-geven/modules/zgw/klant.md)
-    * [`com.ritense.valtimo:objects-api`](../../../nog-een-plek-geven/modules/zgw/objects-api.md)
-    * [`com.ritense.valtimo:openzaak-resource`](../../../nog-een-plek-geven/modules/zgw/openzaak-resource.md)
-    * [`com.ritense.valtimo:openzaak`](../../../nog-een-plek-geven/modules/zgw/openzaak.md)
+    * [`com.ritense.valtimo:besluit`](../../../fundamentals/getting-started/modules/zgw/besluit.md)
+    * [`com.ritense.valtimo:contactmoment`](../../../fundamentals/getting-started/modules/zgw/contactmoment.md)
+    * [`com.ritense.valtimo:klant`](../../../fundamentals/getting-started/modules/zgw/klant.md)
+    * [`com.ritense.valtimo:objects-api`](../../../fundamentals/getting-started/modules/zgw/objects-api.md)
+    * [`com.ritense.valtimo:openzaak-resource`](../../../fundamentals/getting-started/modules/zgw/openzaak-resource.md)
+    * [`com.ritense.valtimo:openzaak`](../../../fundamentals/getting-started/modules/zgw/openzaak.md)
 
     These modules are still defined in the `valtimo-dependency-versions`. Please add them to your project manually if needed.
 * **OpenZaak module has been deprecated** Its functionality has been moved or copied to the following modules:
-  * [Catalogi API](../../../nog-een-plek-geven/modules/zgw/catalogi-api.md)
-  * [Documenten API](../../../nog-een-plek-geven/modules/zgw/documenten-api.md)
-  * [OpenZaak Plugin Authentication](../../../nog-een-plek-geven/modules/zgw/openzaak-plugin-authentication.md)
-  * [Zaken API](../../../nog-een-plek-geven/modules/zgw/zaken-api.md)
+  * [Catalogi API](../../../fundamentals/getting-started/modules/zgw/catalogi-api.md)
+  * [Documenten API](../../../fundamentals/getting-started/modules/zgw/documenten-api.md)
+  * [OpenZaak Plugin Authentication](../../../fundamentals/getting-started/modules/zgw/openzaak-plugin-authentication.md)
+  * [Zaken API](../../../fundamentals/getting-started/modules/zgw/zaken-api.md)
 
 Instructions on how to migrate to this version of Valtimo can be found [here](migration.md).
 
 * **Outdated modules have been deprecated**
-  * [Besluit](../../../nog-een-plek-geven/modules/zgw/besluit.md): replaced by [Besluiten API](../../../nog-een-plek-geven/modules/zgw/besluiten-api.md) plugin/module
-  * [Contactmoment](../../../nog-een-plek-geven/modules/zgw/contactmoment.md): will be replaced by new plugins in the future
+  * [Besluit](../../../fundamentals/getting-started/modules/zgw/besluit.md): replaced by [Besluiten API](../../../fundamentals/getting-started/modules/zgw/besluiten-api.md) plugin/module
+  * [Contactmoment](../../../fundamentals/getting-started/modules/zgw/contactmoment.md): will be replaced by new plugins in the future
   * External-event: partly replaced by the outbox module. Portal-related functionality has not been replaced.
-  * [Haalcentraal BRP](../../../nog-een-plek-geven/modules/zgw/haalcentraal-brp.md): will be replaced by new plugins in the future
-  * [Klant](../../../nog-een-plek-geven/modules/zgw/klant.md): will be replaced by new plugins in the future
-  * [Openzaak resource](../../../nog-een-plek-geven/modules/zgw/openzaak-resource.md): replaced by the [Documenten API](../../../nog-een-plek-geven/modules/zgw/documenten-api.md) plugin
+  * [Haalcentraal BRP](../../../fundamentals/getting-started/modules/zgw/haalcentraal-brp.md): will be replaced by new plugins in the future
+  * [Klant](../../../fundamentals/getting-started/modules/zgw/klant.md): will be replaced by new plugins in the future
+  * [Openzaak resource](../../../fundamentals/getting-started/modules/zgw/openzaak-resource.md): replaced by the [Documenten API](../../../fundamentals/getting-started/modules/zgw/documenten-api.md) plugin
 
 ## Deprecations
 

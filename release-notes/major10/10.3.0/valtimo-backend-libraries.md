@@ -9,7 +9,7 @@ The following features were added:
     This plugin makes it possible for Valtimo to communicate and interact with a Portaaltaak specification compliant ZGW component.
 *   **Valtimo dependencies**
 
-    Two new modules have been introduced to help with managing dependencies. These are [Valtimo dependencies](../../../nog-een-plek-geven/modules/core/valtimo-dependencies.md) and [Valtimo GZAC dependencies](../../../nog-een-plek-geven/modules/zgw/valtimo-gzac-dependencies.md). Including these dependencies in a project will automatically include the core modules for that edition of Valtimo, which also improves the experience when upgrading Valtimo to a new version.
+    Two new modules have been introduced to help with managing dependencies. These are [Valtimo dependencies](../../../fundamentals/getting-started/modules/core/valtimo-dependencies.md) and [Valtimo GZAC dependencies](../../../fundamentals/getting-started/modules/zgw/valtimo-gzac-dependencies.md). Including these dependencies in a project will automatically include the core modules for that edition of Valtimo, which also improves the experience when upgrading Valtimo to a new version.
 *   **Process beans**
 
     For documentation on Spring beans, see the Spring documentation [here](https://docs.spring.io/spring-framework/docs/current/reference/html/core.html).

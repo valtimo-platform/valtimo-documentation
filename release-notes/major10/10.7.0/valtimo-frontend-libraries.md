@@ -8,7 +8,7 @@ The following features were added:
 
     The dashboard module has been added to support the new dashboard.
 
-    * Information on how to include this module can be found [here](../../../nog-een-plek-geven/modules/core/dashboard.md).
+    * Information on how to include this module can be found [here](../../../fundamentals/getting-started/modules/core/dashboard.md).
     * Information on how to configure a dashboard can be found [here](../../../features/dashboard/).
     * Information on how to implement custom display types and datasources can be found [here](../../../features/dashboard/dashboard/).
 *   **Added edit note and delete note options on the notes tab**
