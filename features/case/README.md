@@ -26,7 +26,7 @@ When you have a hammer, everything looks like a nail. Make sure to stick to a fo
 
 Information provided by the event leading to the creation of the case is often the first data in the case. For example, a name, address and the complaint in case of a complaint process. During the proces of handeling the case, this data is enriched.&#x20;
 
-A definition of the data is made as part of a case definition. In the standard setup, this is a [document definition in JSON](document-definition.md).&#x20;
+A definition of the data is made as part of a case definition. In the standard setup, this is a [document definition in JSON](document.md).&#x20;
 
 The location of the data can be in- and outside Valtimo. The document is stored in the Valtimo database and forms the basis of a case. Data can also be stored in external systems - and referenced to. The case is conceptual: it is a reference to information - information can but does not have to be stored in the case.&#x20;
 
