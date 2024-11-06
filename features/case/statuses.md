@@ -1,31 +1,33 @@
 # Statuses
 
-The internal case status is a case property which defines what the current state or status of the case is. The status is called 'internal', because by default it is not related to any status beyond the scope of Valtimo or GZAC (though implementations are not restricted to use it for that purpose).
+The _internal case status_ is a case property that indicates the current internal state or status of a case. The term "internal" reflects that, by default, this status is not intended for communication with customers. Instead, it is used solely to track te progress of case handling.
 
-This is a very powerful setting when combining case and process management. Being able to store an internal case status as meta data of the case makes it possible to define an internal case status for case handlers to use. Usually case handlers work with a larger set of case statuses than is presented to the customer or client. This can now easily be configured on this tab.
-
-<figure><img src="../../.gitbook/assets/image (25).png" alt=""><figcaption><p>Example case statuses</p></figcaption></figure>
-
-Once configured an extra search item will be added to the search UI of the case list. The visible by default option can be used the exclude certain statuses from the list by default.
+This setting is particularly effective in environments that integrate case and process management. Storing an internal case status as metadata enables teams to establish specific internal statuses that case handlers can apply and track. Typically, case handlers work with a more extensive set of case statuses than those visible to customers or clients. This approach allows for refined tracking and management of case progression while maintaining a simplified view for external stakeholders.
 
 ## Configuring case statuses
 
 {% tabs %}
 {% tab title="Via UI" %}
-Statuses can be configured in the Case admin screen, at the 'Statuses' tab.
+Click on `Cases` in the `Admin` menu and select the case to configure statuses for.\
+Click on the `Statuses` tab.
 
-<figure><img src="../../.gitbook/assets/image (28).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (28) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Adding a status
 
-A status can be added with the **Add status** button. A modal will be shown where you can set the status name and key, choose a color and decide if the status should be added by default to the case list search.\
-&#x20;![Add internal status](../../using-valtimo/case/img/add-internal-status.png)
+A status can be added with the **Add status** button. A modal will be shown with the configuration options.
 
-**Field explanation**
+<figure><img src="../../.gitbook/assets/image (47).png" alt=""><figcaption></figcaption></figure>
 
-* **Name:** used as a label in the case summary and list, the name is presented in the UI.
-* **Key:** the identifier of the status, this is only shown on configuration pages in the UI.
-* **Color:** used for the label/tags of a status. The following colors are available:
+* **Name**\
+  _Used as a label in the case summary and case list, the name is presented in the UI._
+* **Key**\
+  _The identifier of the status, this must be a unique value within the scope of the case it is added to. A key based on the name is generated automatically but can be overwritten via the pencil button._
+* **Color**\
+  _Statuses are are displayed as a badge in the case details and list screen UI._\
+  _This badge will be displayed in the selected color._\
+  \
+  **List of available status colors:**
   * Red (`RED`)
   * Magenta (`MAGENTA`)
   * Purple (`PURPLE`)
@@ -37,12 +39,22 @@ A status can be added with the **Add status** button. A modal will be shown wher
   * Cool gray (`COOLGRAY`)
   * Warm gray (`WARMGRAY`)
   * High contrast (`HIGHCONTRAST`)&#x20;
-  * Outline (`OUTLINE`)
-* **Visible:** If enabled, the status is included in the case search filter by default. When disabled, the user has to manually enable it in the filter so see any results with that status.
+  * Outline (`OUTLINE`)\
+
+* **Visible**\
+  Indication if cases in that status should be shown on the case list screen by default.
+
+{% hint style="info" %}
+**Statuses are automatically added to the case search filters**
+
+When statuses are configured for a case an additional search filter will be added to default search of the case list screen. This search filter enables to hide cases on the case list by default based on the status of the case.\
+\
+When the visible indicator for a status is set to false then cases that are currently in that status will not be displayed by default on the case list. Via the search filter options on the case list screen these statuses can be enabled to view all cases.
+{% endhint %}
 {% endtab %}
 
 {% tab title="Via IDE" %}
-Status configurations can be autodeployed by creating json files in the `classpath*:config/` folder. The name of the file has to end with `.internal-case-status.json`. You can find an example of the JSON below:
+Status configurations can be autodeployed by creating json files in the `classpath*:config/` folder. The name of the file has to end with `.internal-case-status.json`.&#x20;
 
 `example-case.internal-case-status.json`:
 
@@ -73,36 +85,52 @@ Status configurations can be autodeployed by creating json files in the `classpa
     }
   ]
 }
+
 ```
 {% endtab %}
 {% endtabs %}
 
-### Import and export
-
-The configuration is also included when importing or exporting a case. It uses the same format as the [autodeployment](statuses.md#autodeployment).
-
-### Ordering
+## Ordering and sorting
 
 Statuses can be ordered, which will be used for the following:
 
-* Order of statuses in the admin screen
-* Order of statuses in the filter dropdown
-* Sorting of cases by status
+* Order of statuses in the status configuration screen
+* Order of statuses in the status filter dropdown within the search filters
+
+When a case list column is configured to display the case status, this status column can be further configured to be sortable.
 
 ## Using statuses
 
-Now that the statuses have been configured, not much has changed yet for the user. A filter and a status column is now visible to the user, but it does not add any value yet since no statuses are set to the cases:&#x20;
+When statuses are configured for a case, an additional search filter is automatically applied to the Search Filters UI. This filter enables users to display or hide cases based on their configured status. The **Visible** configuration setting for each status controls whether a particular status is enabled by default in the search filter when the case list page is accessed.
+
+This functionality allows users to customize the visibility of cases in the case list, ensuring that case handlers can focus on the most relevant cases upon initial view.
 
 <figure><img src="../../using-valtimo/case/img/internal-status-case-list.png" alt=""><figcaption></figcaption></figure>
 
-### Setting a status
+### Setting a case status
 
-To make sure statuses are updated during the process, a task expression can be added to any task where you want the status to change: `${documentDelegateService.setInternalStatus(execution, 'new')}`
+To enable the ability to set statuses at certain phases in the process, an expression can be added to any element in the process model where the case status should change. The following expression is available for setting a case status via the documentDelegateService:\
+\
+`${documentDelegateService.setInternalStatus(execution, 'new')}`
+
+Next to setting a status via the process model it is also possible to set the case status via Form.io forms that are connected to user tasks in the process. The Form.io submission data will then submit the new status in stead of the process.\
+\
+In order to change the case status via Form.io the `case:internalStatus` targetKey can be used on a hidden form field to add the status change to the form submission. Due to the `case:` prefix the data is registered as meta data in stead of case data.
+
+
 
 ### Filtering cases
 
-Now that the process sets the correct statuses to the case, it can be used to filter and sort cases:&#x20;
+By adding the required status changes to the process the case list will represent a clear overview of the workload and the progress for that case. By using the Visible setting as described above cases in a certain status can easily be hidden be default. These cases can be made visible via the search UI.\
+\
+Below screenshot shows a case where the _Completed_ status is configured not to be visible by default.\
+This is what the search dropdown looks like when this is set. By enabling _Completed_ the cases are immediately visible. A reload of the case list will fall back to the configured settings and the cases will be hidden again.
 
-<figure><img src="../../using-valtimo/case/img/internal-status-filtering.png" alt=""><figcaption></figcaption></figure>
+![Completed status filtered by default](../../using-valtimo/case/img/internal-status-filtered.png)
 
-![Internal status filtered](../../using-valtimo/case/img/internal-status-filtered.png)
+<figure><img src="../../using-valtimo/case/img/internal-status-filtering.png" alt=""><figcaption><p>Completed status enabled via search UI</p></figcaption></figure>
+
+## Import and export
+
+Case status configuration is included in the Case definition export and import by default.\
+The export structure and format of the case statuses is exactly the same as described in [configuring statuses via IDE](statuses.md#via-ide).\

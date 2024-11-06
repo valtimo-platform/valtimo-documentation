@@ -20,7 +20,7 @@ If there is a need for business logic, JavaScript and DMN can be used.
 
 The typical roles that perform these tasks are the business process engineer or a technical process consultant. These are individuals with a good understanding of web technologies, experience with scripting or limited programming experience, and the ability to tackle complex challenges.
 
-<figure><img src="../../.gitbook/assets/image (26).png" alt=""><figcaption><p>Using the User Interface for building a business process. </p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (26) (1).png" alt=""><figcaption><p>Using the User Interface for building a business process. </p></figcaption></figure>
 
 If there is a need for extending Valtimo, the plugin framework is available. Developers have the option to use this framework to add functionality to the product, often used for integrations with third party systems.&#x20;
 

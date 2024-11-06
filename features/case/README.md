@@ -69,7 +69,7 @@ Most configurations and definitions are included in exports and imports. Some re
 * Click on **More**
 * Click on **Export**
 
-<figure><img src="../../.gitbook/assets/image (14).png" alt=""><figcaption><p>Exporting a case definition</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (14) (1).png" alt=""><figcaption><p>Exporting a case definition</p></figcaption></figure>
 
 Exporting a case definition will result in a ZIP archive containing configurations and definitions that make up the case definition. The structure is the same as found in any application that makes use of the auto-deployment offered by Valtimo.
 
@@ -88,7 +88,7 @@ The same level of attention is required with this export/import option as regula
 * Click on **Upload**, this opens the _Import case definition modal_
 * Follow the steps of the wizard to select the file and start the import
 
-<figure><img src="../../.gitbook/assets/image (15).png" alt=""><figcaption><p>Importing a case definition</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (15) (1).png" alt=""><figcaption><p>Importing a case definition</p></figcaption></figure>
 
 #### Existing case definition
 

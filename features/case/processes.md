@@ -17,7 +17,7 @@ Linking processes to the case definition can be done via the UI or the IDE.
 
 {% tabs %}
 {% tab title="Via UI" %}
-<figure><img src="../../.gitbook/assets/image (32).png" alt=""><figcaption><p>Link a process</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (32) (1).png" alt=""><figcaption><p>Link a process</p></figcaption></figure>
 
 The "Link process" button will open a modal with the option to select any process that exists within the implementation.
 
@@ -25,7 +25,7 @@ The "Link process" button will open a modal with the option to select any proces
 
 <div align="left" data-full-width="false">
 
-<figure><img src="../../.gitbook/assets/image (33).png" alt=""><figcaption><p>Link a process to a case definition</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (33) (1).png" alt=""><figcaption><p>Link a process to a case definition</p></figcaption></figure>
 
 </div>
 

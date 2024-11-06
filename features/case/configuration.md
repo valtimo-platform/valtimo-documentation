@@ -11,14 +11,14 @@ Once the case handler option is selected, the second checkbox will appear that c
 
 {% tabs %}
 {% tab title="Via UI" %}
-<figure><img src="../../.gitbook/assets/image (31).png" alt=""><figcaption><p>Case specific configuration</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (31) (1).png" alt=""><figcaption><p>Case specific configuration</p></figcaption></figure>
 
 When the case handler option is selected the following change is made in the user interface:
 
 *   **The case list screen is divided in to three tabs**\
 
 
-    <figure><img src="../../.gitbook/assets/image (35).png" alt=""><figcaption><p>Case overview with case handler option selected<br></p></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (35) (1).png" alt=""><figcaption><p>Case overview with case handler option selected<br></p></figcaption></figure>
 
     * **All cases**\
       _This overview is the same as for cases that do not have a case handler configured._\
@@ -35,7 +35,7 @@ When the case handler option is selected the following change is made in the use
     When clicked a dropdown menu is displayed with all case handlers that can be assigned to the case. Case handlers can be configured via [Access control](../access-control/) for each case type.\
 
 
-    <figure><img src="../../.gitbook/assets/image (36).png" alt=""><figcaption><p>Select case handler option</p></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (36) (1).png" alt=""><figcaption><p>Select case handler option</p></figcaption></figure>
 
     \
     An additional menu is added to the header of the case making it possible to immediately "claim" the case by the logged in user. The unassign option removes the case handler that is currently assigned to the case. Who is allowed to claim, assign and unassign is all configured via [Access control](../access-control/).\

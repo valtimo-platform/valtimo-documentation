@@ -60,7 +60,7 @@ The chosen title will be validated and based upon the title a read-only case def
 The case definition is created and the case details page is displayed upon completion.\
 A valid empty JSON schema is created with the title and id based on the given title.
 
-<figure><img src="../../.gitbook/assets/image (11).png" alt=""><figcaption><p>Newly created example case</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (11) (1).png" alt=""><figcaption><p>Newly created example case</p></figcaption></figure>
 
 {% hint style="info" %}
 <mark style="color:blue;">**Please note**</mark>
@@ -141,7 +141,7 @@ Same as for creating cases there are three ways of editing document definitions.
 * Go to the `Admin` menu
 * Go to the `Cases` menu
 
-<figure><img src="../../.gitbook/assets/image (12).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (12) (1).png" alt=""><figcaption></figcaption></figure>
 
 Click on the **Upload** button to open the **Import case definition** modal\*[^1]. This modal contains a wizard that will guide users through the import process. The following steps are defined in this wizard.
 
@@ -160,7 +160,7 @@ Click on the **Upload** button to open the **Import case definition** modal\*[^1
 * Edit the document definition as per the JSON schema standard
 * Click on **Save**
 
-<figure><img src="../../.gitbook/assets/image (17).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (17) (1).png" alt=""><figcaption></figcaption></figure>
 
 Visually nothing happens when switching to edit mode. Only the Download and Edit buttons are replaced by a **Cancel** and a **Save** button. The **Save** button is disabled by default until valid changes are made.
 
@@ -168,7 +168,7 @@ Visually nothing happens when switching to edit mode. Only the Download and Edit
 
 In edit mode, the UI editor will constantly validate the JSON file structure. The **Save** button is only available when the JSON structure is valid. Errors in the file structure will be indicated with a red curly line below or near the issue. In large files, errors can easily be found with the minimised tree view on the right side of the editor.&#x20;
 
-<figure><img src="../../.gitbook/assets/image (18).png" alt=""><figcaption><p>JSON structure validation in edit mode</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (18) (1).png" alt=""><figcaption><p>JSON structure validation in edit mode</p></figcaption></figure>
 {% endtab %}
 
 {% tab title="Via IDE" %}
