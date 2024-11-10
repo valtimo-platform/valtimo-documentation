@@ -2,6 +2,10 @@
 
 Valtimo offers the functionality needed to create and add plugins to Valtimo implementations.
 
+## Prerequisites
+
+Plugins are added to a Valtimo implementation. See https://docs.valtimo.nl/getting-started/first-dive/creating-your-own-valtimo-implementation to get started with your own Valtimo implementation.
+
 ## Back-end
 
 ### Creating a plugin definition
@@ -26,12 +30,13 @@ For example:
 
 ```kotlin
 @Plugin(
-    key = "twitter",
-    title = "Twitter Plugin",
-    description = "Tweet and retweet with this new Twitter plugin"
+  key = "sample",
+  title = "Sample Plugin",
+  description = "Sample plugin description",
 )
-class TwitterPlugin {
-    ...
+class SamplePlugin(
+...
+}
 ```
 
 #### Plugin properties
@@ -67,42 +72,54 @@ For example:
 
 ```kotlin
 @PluginAction(
-    key = "post-tweet",
-    title = "Post tweet",
-    description = "Post a tweet on twitter.",
-    activityTypes = [ActivityTypeWithEventName.SERVICE_TASK_START]
+  key = "sample-action",
+  title = "Sample action",
+  description = "Sample plugin action",
+  activityTypes = [ActivityTypeWithEventName.SERVICE_TASK_START],
 )
-fun postTweet(execution: DelegateExecution, postTweetProperties: PostTweetProperties) {
-    ...
+fun samplePrint(
+) {
+  println("HELLO WORLD")
+}
 ```
 
-#### Plugin events
+###  The complete example
 
-A plugin class can have methods that need to be run on plugin creation, update or deletion. This can be achieved with the `@PluginEvent` annotation.
-These methods will then be invoked during the corresponding event of a Plugin Configuration lifecycle.
-
-For example, `startListener()` will be executed when a Plugin Configuration is being created:
+In order to have an example with constructor parameters, let's also assume there is a SampleClient that is used by the plugin.
+The SampleClient is a regular Spring Bean. Based on the previous steps, the complete example now looks like this:
 
 ```kotlin
-@PluginEvent(invokedOn = [EventType.CREATE])
-fun startListener() {
-    ...
+@Plugin(
+    key = "sample",
+    title = "Sample Plugin",
+    description = "Sample plugin description",
+)
+class SamplePlugin(
+    val sampleClient: SampleClient,
+) {
+
+    @PluginProperty(key = "username", secret = false)
+    lateinit var username: String
+
+    @PluginProperty(key = "url", secret = false)
+    lateinit var url: String
+  
+    @PluginProperty(key = "password", secret = false)
+    lateinit var password: String
+
+    @PluginAction(
+        key = "sample-action",
+        title = "Sample action",
+        description = "Sample plugin action",
+        activityTypes = [ActivityTypeWithEventName.SERVICE_TASK_START],
+    )
+    fun samplePrinter(
+        @PluginActionProperty sampleString: String,
+    ) { 
+        println("User: $username - Response: ${sampleClient.getSomething(username, sampleString)}" )
+    }
+}
 ```
-
-Available event types: `CREATE`, `UPDATE` and `DELETE`.
-It is possible to run a method on all three of these events by specifying so in the `invokedOn` argument of the annotation e.g. `@PluginEvent(invokedOn = [EventType.CREATE, EventType.DELETE])`.
-A `PluginEventInvocationException` with references to the plugin and any underlying exceptions will be thrown should a method ran as part of an event fail.
-
-**NB! Limitations**  
-* If the annotation contains duplicate event types, then the method will still only be invoked once per event type per annotation.  
-```kotlin
-@PluginEvent(invokedOn = [EventType.CREATE, EventType.DELETE, EventType.CREATE])
-fun willRunOnceOnCreateAndDelete() {
-    ...
-```
-
-* Only methods without arguments are supported.
-* Annotated methods are resolved in alphabetical order.
 
 ### Creating a plugin factory
 
@@ -115,84 +132,23 @@ For example:
 
 ```kotlin
 @Component
-class TwitterPluginFactory(
-    pluginService: PluginService,
-    private val twitterClient: TwitterClient
-) : PluginFactory<TwitterPlugin>(pluginService) {
-
-    override fun create(): TwitterPlugin {
-        return TwitterPlugin(twitterClient)
-    }
-}
-```
-
-### Plugin categories
-Plugin categories denote a commonality between plugins. They can be applied to interfaces, so any plugin
-implementing this will belong to that category. When a plugin implements more than one interface with a category, it
-belongs to multiple categories. This can be used by the backend to create plugins that rely on other plugins to be
-configured, and can be used by the frontend to search for plugins in a specific category.
-
-A plugin implementing an interface annotated with `@PluginCategory` can be autowired into a `@PluginProperty` of
-the same type on a different plugin.
-
-The example below explains the implementation of a tweet supplier for a Twitter plugin, which can then be used to send
-out actual tweets.
-
-First, the interface is defined that includes the required functionality. `@PluginCategory` with a key is added so that
-can be used to find configurations of that type in the frontend:
-```kotlin
-@PluginCategory(key = "tweet-supplier")
-interface TweetSupplier {
-    fun supplyMessage() : String
-}
-```
-
-At least one implementation of the plugin is required. In this case, the `PropertyTweetSupplier` implements the
-interface `TweetSupplier` and supports all required functionality. When searching for configurations for category
-`tweet-supplier`, all stored `PropertyTweetSupplier` configurations are found.
-```kotlin
-@Plugin(
-  key = "property-tweet-supplier",
-  title = "Property tweet supplier",
-  description = "Get a message from a property"
-)
-class PropertyTweetSupplier: TweetSupplier {
-    @PluginProperty(key = "message", secret = false)
-    private lateinit var message: String
-    
-    fun supplyMessage(): String {
-       return message
-    }
-}
-```
-
-When creating a configuration of the `TwitterPlugin`, the frontend should get and show a list of all available
-configuration of type `tweet-supplier`. The ID of the chosen configuration will be part of the properties submitted for
-the creation of the `TwitterPlugin` configuration. The `@PluginProperty` can reference the interface type corresponding
-to the category. The plugin will then be automatically injected with the corresponding configuration when using the
-`TwitterPlugin`. 
-```kotlin
-@Plugin(
-    key = "twitter",
-    title = "Twitter Plugin",
-    description = "Tweet and retweet with this new Twitter plugin"
-)
-class TwitterPlugin {
-  @PluginProperty(key = "tweetSupplierConfigurationId", secret = false)
-  private lateinit var tweetSupplier: TweetSupplier
-
-  @PluginAction(
-    key = "post-tweet",
-    title = "Post tweet",
-    description = "Post a tweet on twitter.",
-    activityTypes = [ActivityTypeWithEventName.SERVICE_TASK_START]
-  )
-  fun postTweet(execution: DelegateExecution, postTweetProperties: PostTweetProperties) {
-      val message = tweetSupplier.supplyTweet()
-        ...
+class SamplePluginFactory(
+  pluginService: PluginService,
+  val sampleClient: SampleClient,
+) : PluginFactory<SamplePlugin>(pluginService) {
+  override fun create(): SamplePlugin {
+    return SamplePlugin(sampleClient)
   }
 }
 ```
+
+
+### Optional additional steps
+The backend part of the Sample plugin is now ready. Some topics have not yet been mentioned. These are optional and can be found at the bottom of this page.  
+[@PluginEvent](#plugin-events)  
+[@PluginCategory](#plugin-categories)
+
+
 
 ## Frontend
 
@@ -212,59 +168,47 @@ import {SAMPLE_PLUGIN_LOGO_BASE64} from './assets';
 import {SampleActionConfigurationComponent} from './components/sample-action-configuration/sample-action-configuration.component';
 
 const samplePluginSpecification: PluginSpecification = {
-    /* 
-    The plugin definition key of the plugin. 
-    This needs to be the same as the id received from the back-end
+  /*
+  The plugin definition key of the plugin.
+  This needs to be the same as the id received from the backend
+  See the key property of the @Plugin annotation in the backend 
+   */
+  pluginId: 'sample',
+  /*
+  A component of the interface PluginConfigurationComponent, used to configure the plugin itself.
+   */
+  pluginConfigurationComponent: SamplePluginConfigurationComponent,
+  // Points to a Base64 encoded string, which contains the logo of the plugin.
+  pluginLogoBase64: SAMPLE_PLUGIN_LOGO_BASE64,
+  functionConfigurationComponents: {
+    /*
+     For each plugin action id received from the backend, a component is provided of the interface FunctionConfigurationComponent. 
+     These are used to configure each plugin action.
      */
-    pluginId: 'sampleplugin',
-    /* 
-    A component of the interface PluginConfigurationComponent, used to configure the plugin itself.
-     */
-    pluginConfigurationComponent: SamplePluginConfigurationComponent,
-    // Points to a Base64 encoded string, which contains the logo of the plugin. 
-    pluginLogoBase64: SAMPLE_PLUGIN_LOGO_BASE64,
-    functionConfigurationComponents: {
-        /*
-         For each plugin action id received from the back-end, a component is provided of the interface FunctionConfigurationComponent. 
-         These are used to configure each plugin action.
-         */
-        'sample-action': SampleActionConfigurationComponent,
+    'sample-action': SampleActionConfigurationComponent,
+  },
+  /*
+  For each language key an implementation supports, translation keys with a translation are provided below.
+  These can then be used in configuration components using the pluginTranslate pipe or the PluginTranslationService.
+  At a minumum, the keys 'title' and 'description' need to be defined.
+  Each function key also requires a translation key. In this case, the key 'sample-action' is added.
+   */
+  pluginTranslations: {
+    nl: {
+      title: 'Sample',
+      description: 'Sample',
+      url: 'URL',
+      username: 'gebruikersnaam',
+      password: 'wachtwoord'
     },
-    /* 
-    For each language key an implementation supports, translation keys with a translation are provided below. 
-    These can then be used in configuration components using the pluginTranslate pipe or the PluginTranslationService.
-    At a minumum, the keys 'title' and 'description' need to be defined.
-    Each function key also requires a translation key. In this case, the key 'sample-action' is added.
-     */
-    pluginTranslations: {
-        nl: {
-            title: 'Voorbeeld-plug-in',
-            description: 'Een uitstekende plug-in om mee te beginnen.',
-            'sample-action': 'Voorbeeldactie',
-            configurationTitle: 'Configuratienaam',
-            url: 'URL',
-            message: 'Bericht',
-            ...
-        },
-        en: {
-            title: 'Sample plugin',
-            description: 'A great plugin to get started with.',
-            'sample-action': 'Sample action',
-            configurationTitle: 'Configuration name',
-            url: 'URL',
-            message: 'Message',
-            ...
-        },
-        de: {
-            title: 'Beispiel-Plugin',
-            description: 'Ein tolles Plugin für den Einstieg.',
-            'sample-action': 'Beispielaktion',
-            configurationTitle: 'Konfigurationsname',
-            url: 'URL',
-            message: 'Nachricht',
-            ...
-        },
-    },
+    en: {
+      title: 'Sample',
+      description: 'Sample"',
+      url: 'URL',
+      username: 'username',
+      password: 'password'
+    }
+  }
 };
 
 export {samplePluginSpecification};
@@ -289,72 +233,9 @@ const SAMPLE_PLUGIN_LOGO_BASE64 =
 export {SAMPLE_PLUGIN_LOGO_BASE64};
 ```
 
-### Plugin configuration component
-
-As shown in the [plugin specification section](#plugin-specification), plugin configuration components need to
-conform to the interface `PluginConfigurationComponent`. Below the interface is shown, with a comment for each required
-property.
-
-#### **`plugin.ts`**
-```typescript
-import {Observable} from 'rxjs';
-import {EventEmitter} from '@angular/core';
-
-/* 
-The required data outputted from the component.
-In each case, a configuration title must be provided by the configuration component.
-The rest of the properties must conform to the properties expected by the back-end.
-*/
-interface PluginConfigurationData {
-    configurationTitle: string;
-    [key: string]: any;
-}
-
-/*
-The generic interface for a configuration component.
-All of these properties must be implemented by the plugin configuration component,
-since this interface is extended below.
-*/
-interface ConfigurationComponent {
-    /*
-    An observable the component must subscribe to.
-    If this observable is triggered, the component must check if its configuration data is valid,
-    and if so, emit this data on the configuration EventEmitter from the interface below.
-     */
-    save$: Observable<void>;
-    /* 
-    A boolean observable which the component must subscribe to. 
-    If true, all input in the component must be disabled.
-     */
-    disabled$: Observable<boolean>;
-    // The plugin definition key provided to the component. For the sample plugin, this would be 'sampleplugin'
-    pluginId: string;
-    /*
-    When the values of the inputs in the configuration component change,
-    the configuration component must continuously check whether the configuration data (all inputs combined) is valid.
-    This EventEmitter outputs a boolean. So if the data is valid, output 'true', if invalid, output 'false'.
-     */
-    valid: EventEmitter<boolean>;
-}
-
-interface PluginConfigurationComponent extends ConfigurationComponent {
-    /* 
-    An observable input which includes configuration data if the plugin had already been saved previously,
-    and is now being modified. Subscribe to this observable to prefill the input fields in the component.
-     */
-    prefillConfiguration$?: Observable<PluginConfigurationData>;
-    /*
-    As mentioned before, if the observable of the 'save$' input property is triggered, 
-    check if the configuration data is valid. If so, output this data through this EventEmitter. 
-     */
-    configuration: EventEmitter<PluginConfigurationData>;
-}
-
-```
-
 ### Typing the plugin configuration data
 
-As mentioned, the plugin configuration component listens to prefill data of the interface `PluginConfigurationData`,
+The plugin configuration component listens to prefill data of the interface `PluginConfigurationData`,
 and outputs configuration data of this same interface. It is advised to extend this interface and further specify what
 data the plugin requires. For the sample plugin, this would be:
 
@@ -466,6 +347,7 @@ The corresponding template file looks like this:
         [disabled]="obs.disabled"
         [required]="true"
     >
+    </v-input>
     <v-input
         name="url"
         [title]="'url' | pluginTranslate: pluginId | async"
@@ -574,6 +456,7 @@ export class SampleActionConfigurationComponent
         [disabled]="obs.disabled"
         [required]="true"
     >
+    </v-input>
 </v-form>
 ```
 
@@ -596,7 +479,7 @@ The main app.module.ts needs to be updated as well. The @NgModule needs to have 
     {
       provide: PLUGINS_TOKEN,
       useValue: [
-        SamplePluginSpecification
+        samplePluginSpecification
       ],
     },
   ],
@@ -661,8 +544,8 @@ The sample plugin module would look like this:
 ```typescript
 import {NgModule} from '@angular/core';
 import {CommonModule} from '@angular/common';
-import {PluginTranslatePipeModule} from '../../pipes';
-import {FormModule, InputModule} from '@valtimo/user-interface';
+import {PluginTranslatePipeModule} from '@valtimo/plugin';
+import {FormModule, InputModule} from '@valtimo/components';
 import {SamplePluginConfigurationComponent} from './components/sample-plugin-configuration/sample-plugin-configuration.component';
 import {SampleActionConfigurationComponent} from './components/sample-action-configuration/sample-action-configuration.component';
 
@@ -675,6 +558,106 @@ export class SamplePluginModule {}
 ```
 
 
+## Optional backend annotations
+
+For the plugin backend example above, not all annotations have been used. 
+In this section you find information for the annotations @PluginEvent and @PluginCategory. 
+
+### Plugin events
+
+A plugin class can have methods that need to be run on plugin creation, update or deletion. This can be achieved with the `@PluginEvent` annotation.
+These methods will then be invoked during the corresponding event of a Plugin Configuration lifecycle.
+
+For example, `startListener()` will be executed when a Plugin Configuration is being created:
+
+```kotlin
+@PluginEvent(invokedOn = [EventType.CREATE])
+fun startListener() {
+    ...
+```
+
+Available event types: `CREATE`, `UPDATE` and `DELETE`.
+It is possible to run a method on all three of these events by specifying so in the `invokedOn` argument of the annotation e.g. `@PluginEvent(invokedOn = [EventType.CREATE, EventType.DELETE])`.
+A `PluginEventInvocationException` with references to the plugin and any underlying exceptions will be thrown should a method ran as part of an event fail.
+
+**NB! Limitations**
+* If the annotation contains duplicate event types, then the method will still only be invoked once per event type per annotation.
+```kotlin
+@PluginEvent(invokedOn = [EventType.CREATE, EventType.DELETE, EventType.CREATE])
+fun willRunOnceOnCreateAndDelete() {
+    ...
+```
+
+* Only methods without arguments are supported.
+* Annotated methods are resolved in alphabetical order.
+
+
+### Plugin categories
+Plugin categories denote a commonality between plugins. They can be applied to interfaces, so any plugin
+implementing this will belong to that category. When a plugin implements more than one interface with a category, it
+belongs to multiple categories. This can be used by the backend to create plugins that rely on other plugins to be
+configured, and can be used by the frontend to search for plugins in a specific category.
+
+A plugin implementing an interface annotated with `@PluginCategory` can be autowired into a `@PluginProperty` of
+the same type on a different plugin.
+
+The example below explains the implementation of a sample supplier for the Sample plugin.
+
+First, the interface is defined that includes the required functionality. `@PluginCategory` with a key is added so that
+can be used to find configurations of that type in the frontend:
+```kotlin
+@PluginCategory(key = "sample-supplier")
+interface SampleSupplier {
+    fun supplyMessage() : String
+}
+```
+
+At least one implementation of the plugin is required. In this case, the `PropertySampleSupplier` implements the
+interface `SampleSupplier` and supports all required functionality. When searching for configurations for category
+`sample-supplier`, all stored `PropertySampleSupplier` configurations are found.
+```kotlin
+@Plugin(
+  key = "example-sample-supplier",
+  title = "Poperty sample supplier",
+  description = "Property description"
+)
+class PropertySampleSupplier: SampleSupplier {
+    @PluginProperty(key = "message", secret = false)
+    private lateinit var message: String
+    
+    fun supplyMessage(): String {
+       return message
+    }
+}
+```
+
+When creating a configuration of the `SamplePlugin`, the frontend should get and show a list of all available
+configuration of type `sample-supplier`. The ID of the chosen configuration will be part of the properties submitted for
+the creation of the `SamplePlugin` configuration. The `@PluginProperty` can reference the interface type corresponding
+to the category. The plugin will then be automatically injected with the corresponding configuration when using the
+`SamplePlugin`.
+```kotlin
+@Plugin(
+    key = "sample",
+    title = "Sample Plugin",
+    description = "Sample plugin description"
+)
+class SamplePlugin {
+  @PluginProperty(key = "sampleSupplierConfigurationId", secret = false)
+  private lateinit var sampleSupplier: SampleSupplier
+
+  @PluginAction(
+    key = "post-sample",
+    title = "Post sample",
+    description = "Post a sample",
+    activityTypes = [ActivityTypeWithEventName.SERVICE_TASK_START]
+  )
+  fun postSample(execution: DelegateExecution, postSampleProperties: PostSampleProperties) {
+      val message = sampleSupplier.supplySample()
+        ...
+  }
+}
+```
 
 
 
