@@ -66,4 +66,15 @@ A known issue is that, when a user goes back and forth between Form Flow steps, 
 
 #### Updating the Form Flow submission data
 
-Using SpEL expressions, Form Flow submission data can now be changed. More information can be found [here](https://github.com/valtimo-platform/valtimo-documentation/blob/next-minor/using-valtimo/form-flow/create-form-flow-definition.md#expressions).\
+Using SpEL expressions, Form Flow submission data can now be changed. More information can be found [here](https://github.com/valtimo-platform/valtimo-documentation/blob/next-minor/using-valtimo/form-flow/create-form-flow-definition.md#expressions).
+
+Carbon Form.io styling
+
+* Styling form.io elements throughout the application to match the Carbon design system is now optionally included.
+*   To enable this, add&#x20;
+
+    ```
+    "node_modules/@valtimo/components/assets/css/formio-carbon.scss"
+    ```
+
+    to the styles array in your implementation's angular.json
