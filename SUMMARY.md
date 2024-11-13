@@ -139,6 +139,8 @@
   * [Configuring Keycloak](features/keycloak/configuring-keycloak.md)
 * [🌍 Localization](features/localization/README.md)
   * [Configuring localization](features/localization/configuring-localization.md)
+* [Logging](features/logging/README.md)
+  * [👩‍💻 For developers](features/logging/for-developers.md)
 * [✉️ Outbox](features/outbox/README.md)
   * [Developer features](features/outbox/developer-features/README.md)
     * [Creating a custom outbox message publisher](features/outbox/developer-features/create-custom-message-publisher.md)
