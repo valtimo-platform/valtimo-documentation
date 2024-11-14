@@ -12,11 +12,7 @@ Document data can be presented in the UI as a case by preloading the data into m
 
 This section contains information on how to configure and use Documents in Valtimo.
 
-* [Creating a document definition](create-document-definition.md)
-* [How to link a process to a case](link-process-and-case.md)
-* [How to start a process for a case](start-case.md)
 * [Custom case list columns](../case/for-developers/custom-case-list-columns.md)
 * [Custom case headers](../case/for-developers/custom-case-headers.md)
 * [Assigning a user to a document](assigning-a-user.md)
-* [Configuring search fields](configuring-search-fields.md)
-* [Auto-deploying search fields](case-search.md)
+

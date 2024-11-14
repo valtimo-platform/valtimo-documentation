@@ -46,7 +46,7 @@ The following features were added:
     This plugin makes it possible for valtimo to manage tasks in the Objecten API.
 *   **Added dropdown list to case search**
 
-    It is now possible to use a multiselect dropdown or a single select dropdown when searching to cases. This can be configured in the admin menu. More information [here](../../../features/document/configuring-search-fields.md).
+    It is now possible to use a multiselect dropdown or a single select dropdown when searching to cases. This can be configured in the admin menu. More information [here](broken-reference).
 
 ## Bugfixes
 

@@ -22,7 +22,7 @@ The following features were added:
 
     A document definition can now be created via the admin interface. This is an alternative to creating a document definition in the project, which enables the user to create a document definition without needing to create a file in the project.
 
-    More details about creating document definitions can be found [here](../../../features/document/create-document-definition.md)
+    More details about creating document definitions can be found [here](broken-reference)
 *   **Zaken-api plugin action start and end Hersteltermijn**
 
     A Zaken-API plugin action has been added for both starting and ending a recovery period.
