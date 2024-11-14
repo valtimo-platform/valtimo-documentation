@@ -78,7 +78,7 @@ When uploading a JSON schema to create a new case, make sure that the `$id` and 
 
 To create a document definition, the following steps are necessary:
 
-*   Create a document definition file (ending with `.schema.json`) under the following path: `*/resources/config/document/definition`. The name should correspond with the ID of the document ID. The ID itself should end with `.schema`.
+*   Create a document definition file (ending with `.schema.json`) under the following path: **/src/main/resources/config/document/definition**. The name should correspond with the ID of the document ID. The ID itself should end with `.schema`.
 
     **`person.schema.json`**
 
@@ -92,6 +92,9 @@ To create a document definition, the following steps are necessary:
       }
     }
     ```
+
+
+
 *   Properties as well as validation rules can be added to the definition as per the JSON schema standard as seen [here](https://json-schema.org/understanding-json-schema/index.html). Below is an example of what this definition could look like.
 
     ```json
@@ -174,7 +177,12 @@ In edit mode, the UI editor will constantly validate the JSON file structure. Th
 {% tab title="Via IDE" %}
 #### Edit the document definition in the codebase
 
-Open the document definition in the IDE and edit the definition as per the JSON schema standard. More information on JSON schema can be found [here](https://json-schema.org/).&#x20;
+Open the document definition in the IDE and edit the definition as per the JSON schema standard. More information on JSON schema can be found [here](https://json-schema.org/).\
+\
+The location of the document definitions in the Valtimo Java/Kotlin backend:\
+**/src/main/resources/config/document/definition**\
+\
+Changes will only be available in the application once the changes have been deployed via the CI/CD pipeline.
 {% endtab %}
 {% endtabs %}
 

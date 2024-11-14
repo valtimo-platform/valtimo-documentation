@@ -35,4 +35,4 @@ ${documentDelegate.unassign(execution)}
 
 ## Related
 
-[Assigning a user](../assigning-a-user.md)
+[Assigning a user](assigning-a-user.md)

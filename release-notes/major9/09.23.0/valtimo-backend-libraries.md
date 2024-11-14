@@ -29,7 +29,7 @@ The following features were added:
 
     For more information on using this feature see [this page](../../../features/document/assigning-a-user.md).
 
-    Information about the endpoints can be found [here](../../../features/document/document/assigning-and-unassigning-a-user.md).
+    Information about the endpoints can be found [here](../../../features/document/assigning-and-unassigning-a-user.md).
 
 ## Bugfixes
 

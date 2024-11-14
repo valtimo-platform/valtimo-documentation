@@ -52,7 +52,7 @@ The **Add tab** button opens the _Add new tab in \<case>_ modal, beginning with 
 *   Select which tab type you want to configure.\
 
 
-    <figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption><p>Case tab types</p></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption><p>Case tab types</p></figcaption></figure>
 
 ### Standard tab
 

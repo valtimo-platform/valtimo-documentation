@@ -18,7 +18,7 @@ The following features were added:
     * Editing a Case Note
     * Deleting a Case Note
 
-    For more information on how to use access control in the front-end, refer to [this page](../../../features/access-control/frontend-access-control.md).
+    For more information on how to use access control in the front-end, refer to [this page](../../../features/access-control/for-developers/frontend-access-control.md).
 *   **Migration of old design components**
 
     The library `@valtimo/user-interface` has been removed. All of its components have been moved to `@valtimo/components`. In order order to migrate, please refer to the [migration guide](migration.md). The design of the form components previously included in `@valtimo/user-interface` has been migrated to the Carbon design system.
