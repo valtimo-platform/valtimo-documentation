@@ -30,6 +30,6 @@ for file in "${missingFiles[@]}"; do
     firstLine=$(head -n 1 $file)
     trim1=${firstLine#*\#}
     trim2=${trim1#* }
-    echo '['$trim2']('$reference')'
+    echo '* ['$trim2']('$reference')'
   fi
 done

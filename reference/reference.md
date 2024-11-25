@@ -14,3 +14,4 @@ developers who want to extend features in Valtimo and need to know what is avail
 * [Supported databases](supported-databases.md)
 * [Process beans](process-beans.md)
 * [Environment](environment.md)
+* [Rest client configuration](rest-client-configuration.md)
