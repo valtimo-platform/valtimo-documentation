@@ -6,15 +6,15 @@ Task list columns can be configured to change the visible columns in the task li
 
 The following properties can be shown in the task list:
 
-* Properties from the document, with the 'doc:' prefix. E.g.: `doc:first-name`
-* Properties from the task, with the 'task:' prefix. The following properties are available:
+* Properties from the document, with the '`doc:`' prefix. E.g.: `doc:first-name`
+* Properties from the task, with the '`task:`' prefix. The following properties are available:
   * `createTime`
   * `name`
   * `assignee`
   * `dueDate`
 
 {% hint style="info" %}
-Starting Valtimo 12.6.0, the 'variable' property can be used in the task list. Using the variable property, process variables that exist in the process instance of the task can be shown. A variable property can be configured using the `task.variable.firstName` notation.
+Starting Valtimo 12.6.0, the 'variable' property can be used in the task list. Using the variable property, process variables that exist in the process instance of the task can be shown. A variable property can be configured using the `task:variable.firstName` notation.
 {% endhint %}
 
 ## Configuring task list columns
