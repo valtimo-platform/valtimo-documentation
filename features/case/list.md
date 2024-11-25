@@ -1,7 +1,5 @@
 # List
 
-To configure the columns of the case list overview the same prefixes can be used as described above for the search fields configuration.
-
 To configure the columns of the case list overview the same prefixes can be used as described for the [search fields](search-fields.md) configuration.
 
 In the **List** tab of the Case Definition, the columns displayed in the list of cases for end users in the Valtimo UI can be configured. When a case type is selected from the **Cases** menu, the list screen opens and displays all cases of that type in accordance with this configuration.
@@ -34,10 +32,10 @@ Overview of available configuration fields and the corresponding field types.
 **Prefix examples**\
 \
 **Path:** case:assigneeFullname\
-_This path targets the assigned case handlers full name._\
+&#xNAN;_&#x54;his path targets the assigned case handlers full name._\
 \
 **Path:** doc:request.budget\
-_This path targets the case data itself. The doc: prefix directs to the content object of the case document so the same JSON paths that where used in the Form.io forms to store the data._
+&#xNAN;_&#x54;his path targets the case data itself. The doc: prefix directs to the content object of the case document so the same JSON paths that where used in the Form.io forms to store the data._
 {% endhint %}
 
 * **Display Type**\
