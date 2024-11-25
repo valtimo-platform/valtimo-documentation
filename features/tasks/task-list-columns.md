@@ -21,7 +21,7 @@ Starting Valtimo 12.6.0, the 'variable' property can be used in the task list. U
 
 {% tabs %}
 {% tab title="Via UI" %}
-
+To be documented.
 {% endtab %}
 
 {% tab title="Via IDE" %}
