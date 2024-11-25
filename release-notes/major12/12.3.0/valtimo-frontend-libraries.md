@@ -10,11 +10,6 @@ The following features were added:
   user to quickly navigate between the different steps of the form flow.
   See [this page](/using-valtimo/form-flow/create-form-flow-definition.md#breadcrumbs) for more information.
 
-* **New feature2**
-
-  Description of the new feature goes here.
-  Also link to the page that expains the feature in greater detail.
-
 * **Form flow - Going back without validation**
 
   Added support for going back to a previous form without the need for required fields to be filled in.
@@ -35,35 +30,12 @@ When opening a task for a case, the URL path would get replaced with `/#`.
 
 ## Breaking changes
 
-The following breaking changes were introduced:
-
-* **Breaking change1**
-
-* **Breaking change2**
-
-Instructions on how to migrate to this version of Valtimo can be found [here](migration.md).
+No breaking changes.
 
 ## Deprecations
 
-The following was deprecated:
-
-* **Deprecation1**
-
-  X was deprecated and is replaced with Y.
-* **Deprecation2**
-
-  X was deprecated and is replaced with Y.
-
-Instructions on how to migrate to this version of Valtimo can be found [here](migration.md).
+No deprecations.
 
 ## Known issues
 
-This version has the following known issues:
-
-* **Issue1**
-    * Discovered in version x.x.x
-    * Describe what can be done to work around the issue
-
-* **Issue2**
-    * Discovered in version x.x.x
-    * Describe what can be done to work around the issue
+No known issues.

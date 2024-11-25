@@ -52,13 +52,7 @@ The following bugs were fixed:
 
 ## Breaking changes
 
-The following breaking changes were introduced:
-
-* **Breaking change1**
-
-* **Breaking change2**
-
-Instructions on how to migrate to this version of Valtimo can be found [here](migration.md).
+No breaking changes.
 
 ## Deprecations
 
@@ -107,7 +101,3 @@ This version has the following known issues:
   When a user goes back to the form of a previous step. Makes changes. Then goes to the next step again, the form might
   miss some of the data that the user did enter before going back. This has been done intentionally and only happens
   when new data submitted in a previous steps can affect existing data in later steps.
-
-* **Issue2**
-  * Discovered in version x.x.x
-  * Describe what can be done to work around the issue
