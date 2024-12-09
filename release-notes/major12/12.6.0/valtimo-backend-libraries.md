@@ -16,7 +16,7 @@ The following bugs were fixed:
 
 * **Bug1**
 
-  Description of what the issue was.
+  Creation of Besluit fails when there are multiple Besluittypes with the same description (omschrijving) and linked to the same Zaaktype.
 
 * **Bug2**
 
