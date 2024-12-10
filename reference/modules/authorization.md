@@ -21,6 +21,10 @@ The access to the following resources is limited by Valtimo access control.
 ### Dashboard
 Resource type: `com.ritense.dashboard.domain.Dashboard`
 
+{% hint style="info" %}
+**Note:** To prevent breaking changes, this permission is only applied when the application property `valtimo.authorization.dashboard.enabled` is set to `true`.
+{% endhint %}
+
 #### Supported actions
 | Action         | key           | Description                            |
 |----------------|:--------------|:---------------------------------------|

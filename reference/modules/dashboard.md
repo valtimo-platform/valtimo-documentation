@@ -5,6 +5,10 @@ The data sources and display types listed below are the ones that come included 
 Each data source and display types used must be imported in the `AppModule` of your front-end implementation if you want
 to use them. They are exported from `'@valtimo/dashboard'`.
 
+{% hint style="info" %}
+**Note:** Permissions on dashboards are only applied when the application property `valtimo.authorization.dashboard.enabled` is set to `true`.
+{% endhint %}
+
 ## Data sources
 
 ### Case count
