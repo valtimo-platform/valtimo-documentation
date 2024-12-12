@@ -13,9 +13,9 @@ The following features were added:
 
 The following bugs were fixed:
 
-* **Bug1**
+* **FVM not updating**
 
-  Description of what the issue was.
+  A bug that prevented form view models from updating has been fixed
 
 * **Bug2**
 
