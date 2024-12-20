@@ -11,13 +11,13 @@ This page requires:
 A table widget can be used when arrays (lists) are stored in the case data structure and need to be presented as such in the case UI. The following fields need to be configured for a table widget.
 
 * **Widget title**\
-  _The widget title is presented in the UI at the top-left corner of the widget and should describe the content for that widget._
+  &#xNAN;_&#x54;he widget title is presented in the UI at the top-left corner of the widget and should describe the content for that widget._
 * **Rows per page**\
-  _If the content exceeds the number of rows pagination will be added in the UI._
+  &#xNAN;_&#x49;f the content exceeds the number of rows pagination will be added in the UI._
 * **Path to table data**\
-  _The exact path in the JSON document that contains the array with data._
+  &#xNAN;_&#x54;he exact path in the JSON document that contains the array with data._
 * **Table columns**\
-  _Columns need to be based on the available fields within the array data._\
+  &#xNAN;_&#x43;olumns need to be based on the available fields within the array data._\
 
 
 ### Configure table columns
@@ -25,11 +25,11 @@ A table widget can be used when arrays (lists) are stored in the case data struc
 For each column in the table the following configurations needs to be done.
 
 * **Title**\
-  _The title will be displayed as the label of the field in the widget._
+  &#xNAN;_&#x54;he title will be displayed as the label of the field in the widget._
 * **Value**\
-  _The value itself will not actually be configured, the path targeting the value in the JSON document is configured. The value is passed through by the widget._
+  &#xNAN;_&#x54;he value itself will not actually be configured, the path targeting the value in the JSON document is configured. The value is passed through by the widget._
 * **Display type**\
-  _Select the way the data is presented in the UI._\
+  &#xNAN;_&#x53;elect the way the data is presented in the UI._\
   _Please find the available display types below._
 
 {% hint style="info" %}

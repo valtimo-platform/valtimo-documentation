@@ -19,7 +19,7 @@ The following features were added:
     Eg.: `image/*,application/pdf,.psd`
 *   **New documents tab for Documenten API uploads**
 
-    If `uploadProvider` is set to `UploadProvider.DOCUMENTEN_API` in the environment, a new documents tab is shown. This tab only allows one file upload at a time. On selecting a file, a modal opens with a form to input metadata for the Documenten API. For more information on how to configure Documenten API uploads, refer to [this page](../../../features/upload/upload-to-documenten-api-with-metadata.md).
+    If `uploadProvider` is set to `UploadProvider.DOCUMENTEN_API` in the environment, a new documents tab is shown. This tab only allows one file upload at a time. On selecting a file, a modal opens with a form to input metadata for the Documenten API. For more information on how to configure Documenten API uploads, refer to [this page](../../../features/zgw/zgw-documents/upload-to-documenten-api-with-metadata.md).
 *   **Link upload process to a case on case management page**
 
     If `uploadProvider` is set to `UploadProvider.DOCUMENTEN_API` in the environment, the upload process that is used for uploading files can be set on the admin page of a case definition.

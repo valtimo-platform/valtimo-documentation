@@ -71,7 +71,7 @@ Configure access to view custom Case Tabs.
 ```
 
 **Configurable actions:**\
-_"view"_
+&#xNAN;_"view"_
 
 ### **Case Note**
 
@@ -86,7 +86,7 @@ Configure access to view custom Case Notes.
 ```
 
 **Configurable actions:**\
-_"create", "delete, "modify",  "view-list"_
+&#xNAN;_"create", "delete, "modify",  "view-list"_
 
 
 
@@ -103,7 +103,7 @@ Configure access to the JSON document that is created for each Case.
 ```
 
 **Configurable actions:**\
-_"assign", "assignable", "create", "claim", "delete, "modify",  "view", "view-list"_
+&#xNAN;_"assign", "assignable", "create", "claim", "delete, "modify",  "view", "view-list"_
 
 
 
@@ -120,7 +120,7 @@ Configure access to the JSON document snapshots that are created for a Case.
 ```
 
 **Configurable actions:**\
-_"view", "view-list"_
+&#xNAN;_"view", "view-list"_
 
 
 
@@ -137,7 +137,7 @@ Configure access to the document definition (JSON Schema) of a Case.
 ```
 
 **Configurable actions:**\
-_"assign", "assignable", "create", "claim", "delete, "modify", "view", "view-list"_
+&#xNAN;_"assign", "assignable", "create", "claim", "delete, "modify", "view", "view-list"_
 
 
 
@@ -154,7 +154,7 @@ Configure access to the configured search fields for a Case.
 ```
 
 **Configurable actions:**\
-_"view-list"_
+&#xNAN;_"view-list"_
 
 
 
@@ -171,7 +171,7 @@ Configure access to be able to start and execute processes.
 ```
 
 **Configurable actions:**\
-_"create"_
+&#xNAN;_"create"_
 
 
 
@@ -188,5 +188,5 @@ Configure access to be able to work with process user tasks.
 ```
 
 **Configurable actions:**\
-_"assign", "assignable", "create", "claim", "view", "view-list"_
+&#xNAN;_"assign", "assignable", "create", "claim", "view", "view-list"_
 

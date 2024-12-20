@@ -17,7 +17,7 @@ The following features were added:
 
     Added a new setting on the case management page to indicate that a case type can have an assignee.
 
-    More information on this case setting can be found [here](../../../features/document/assigning-a-user.md#how-to-configure-cases-to-be-assignable).
+    More information on this case setting can be found [here](broken-reference).
 *   **Number of open cases now shown in menu**
 
     The number of open/unassigned cases is now shown in the Valtimo menu. When the number of open cases changes, the number in the menu is automatically updated without reloading the page.

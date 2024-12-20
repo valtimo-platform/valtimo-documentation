@@ -2,10 +2,8 @@
 
 The following section describes the various modules that are applicable for Valtimo:
 
-* Core
-  * [ZonedLocalDateTimeDeserializer](core/zoned-localdatetime-deserializer.md)
 * [Authorization](authorization.md)
-* [Outbox](outbox.md)
+* [Outbox](broken-reference)
 * [Dashboard](dashboard.md)
 * [Documents](document.md)
 * [Form](form.md)

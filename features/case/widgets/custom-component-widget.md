@@ -15,8 +15,8 @@ Adding a custom component widget to a page is easily done.\
 Click the `Add widget` button
 
 * **Widget title**\
-  _The widget title is presented in the UI at the top-left corner of the widget and should describe the content for that widget._
+  &#xNAN;_&#x54;he widget title is presented in the UI at the top-left corner of the widget and should describe the content for that widget._
 * **Angular component**\
-  _Registered Angular components in the front-end implementation of Valtimo will be listed in a dropdown menu. This component defines the widget content._
+  &#xNAN;_&#x52;egistered Angular components in the front-end implementation of Valtimo will be listed in a dropdown menu. This component defines the widget content._
 
 <figure><img src="../../../.gitbook/assets/image (30).png" alt=""><figcaption></figcaption></figure>

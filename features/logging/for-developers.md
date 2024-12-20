@@ -1,4 +1,12 @@
-# 👩‍💻 For developers
+---
+icon: laptop-code
+---
+
+# For developers
+
+{% hint style="info" %}
+The for developers section within each feature gives more tech heavy information of configuring, extending or altering Valtimo via the codebase.
+{% endhint %}
 
 In the backend- and the frontend codebase configurations can be done in order to enable storage, cleanup and retention and enabling the menu item for viewing the logs.
 

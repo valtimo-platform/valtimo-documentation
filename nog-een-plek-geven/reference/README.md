@@ -6,8 +6,7 @@ This section is intended for people who need to know what options are available 
 
 * [Modules](modules/)
 * [User interface](user-interface/)
-* [Feature toggles](feature-toggles.md)
-* [Troubleshoot](../../support-and-resources/troubleshoot.md)
+* [Feature toggles](../../running-valtimo/application-configuration/feature-toggles.md)
 * [Content Security Policy (CSP)](../../running-valtimo/application-configuration/content-security-policy.md)
 * [Supported databases](supported-databases.md)
 * [Process beans](process-beans.md)

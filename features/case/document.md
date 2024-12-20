@@ -43,7 +43,7 @@ In Valtimo 12 the case configuration upload has been improved by adding all the 
 
 #### Create an empty case
 
-{% hint style="info" %}
+{% hint style="success" %}
 Available since Valtimo 12
 {% endhint %}
 
@@ -150,7 +150,7 @@ Click on the **Upload** button to open the **Import case definition** modal\*[^1
 
 1. Informative step regarding plugins.
 2. Select the edited document definition from your system\
-   _When the file is succesfully uploaded a warning is displayed that current configurations for that case can be overwritten by this upload._
+   &#xNAN;_&#x57;hen the file is succesfully uploaded a warning is displayed that current configurations for that case can be overwritten by this upload._
 3. Start the upload\
    The file will be validated and if it passes all checks the document definition is updated.
 
@@ -180,7 +180,7 @@ In edit mode, the UI editor will constantly validate the JSON file structure. Th
 Open the document definition in the IDE and edit the definition as per the JSON schema standard. More information on JSON schema can be found [here](https://json-schema.org/).\
 \
 The location of the document definitions in the Valtimo Java/Kotlin backend:\
-**/src/main/resources/config/document/definition**\
+&#xNAN;**/src/main/resources/config/document/definition**\
 \
 Changes will only be available in the application once the changes have been deployed via the CI/CD pipeline.
 {% endtab %}

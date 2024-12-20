@@ -5,20 +5,20 @@ To create a fields widget the following configurations need to be done.
 ## Configure widget
 
 * **Widget title**\
-  _The widget title is presented in the UI at the top-left corner of the widget and should describe the content for that widget._
+  &#xNAN;_&#x54;he widget title is presented in the UI at the top-left corner of the widget and should describe the content for that widget._
 * **Configure widget fields**\
-  _Each field can be configured to display case data in a certain way._
+  &#xNAN;_&#x45;ach field can be configured to display case data in a certain way._
 
 ### Configure widget fields
 
 For each field that is added to the widget the following configuration is required in order to display the data correctly in the UI.
 
 * **Field title**\
-  _This is presented as the label of the field_
+  &#xNAN;_&#x54;his is presented as the label of the field_
 * **Field value**\
-  _Add the exact path to the data in the JSON document._
+  &#xNAN;_&#x41;dd the exact path to the data in the JSON document._
 * **Display type**\
-  _Select the way the data is presented in the UI._\
+  &#xNAN;_&#x53;elect the way the data is presented in the UI._\
   _Please find the available display types below._
 
 ### Display types

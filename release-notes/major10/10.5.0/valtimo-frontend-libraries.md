@@ -18,10 +18,10 @@ The following features were added:
     Since the Documenten API only returns dates for files (not specific times) the Documenten API tab component has been adjusted to only display dates.
 *   **Sort files on documents tab on case detail page by date**
 
-    A feature toggle has been added to enable sorting files related to a case on the documents tab of the case detail page by date in descending order. In order to use this, use the `sortFilesByDate` feature toggle. For more information, refer to [this page](../../../nog-een-plek-geven/reference/feature-toggles.md).
+    A feature toggle has been added to enable sorting files related to a case on the documents tab of the case detail page by date in descending order. In order to use this, use the `sortFilesByDate` feature toggle. For more information, refer to [this page](../../../running-valtimo/application-configuration/feature-toggles.md).
 *   **Return to same page after token expiration**
 
-    After a user's refresh token expires, the user is logged out automatically. A feature has been added to redirect the user to the page they were on before they were automatically logged out, after they login again. To enable this feature, enable the feature toggle `returnToLastUrlAfterTokenExpiration`. For more information, refer to [this page](../../../nog-een-plek-geven/reference/feature-toggles.md).
+    After a user's refresh token expires, the user is logged out automatically. A feature has been added to redirect the user to the page they were on before they were automatically logged out, after they login again. To enable this feature, enable the feature toggle `returnToLastUrlAfterTokenExpiration`. For more information, refer to [this page](../../../running-valtimo/application-configuration/feature-toggles.md).
 *   **Configuration component for the 'Delete object' plugin action**
 
     The action 'Delete object' for the Objecten API plugin is now supported in the front-end through a configuration component.

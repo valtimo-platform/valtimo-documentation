@@ -9,7 +9,7 @@ The following features were added:
     A new test class is made available to quickly check if all REST API endpoints apply some form of security using the new `SecuritySmokeIntegrationTest`. More information [here](../../../running-valtimo/application-configuration/security-testing.md).
 *   **Automatic User Task assignment to Case Handler**
 
-    It is now possible to have user tasks automatically assigned to a case handler. Refer [to this page](../../../features/document/automatic-task-assignment.md) to learn more about this feature.
+    It is now possible to have user tasks automatically assigned to a case handler. Refer [to this page](broken-reference) to learn more about this feature.
 *   **Additional status on TaakObject**
 
     An additional status option `GESLOTEN` has been added to the [TaakStatus](https://github.com/valtimo-platform/valtimo-backend-libraries/blob/main/zgw/portaaltaak/src/main/kotlin/com/ritense/portaaltaak/TaakObject.kt#L49) enum of a TaakObject.
@@ -20,7 +20,7 @@ The following features were added:
     * Information on how to include this module can be found [here](../../../fundamentals/getting-started/modules/core/dashboard.md).
     * Information on how to configure a dashboard can be found [here](../../../features/dashboard/).
     * Information on how to implement custom display types and datasources can be found [here](../../../features/dashboard/dashboard/).
-* **Whitelisting by mime-type of files uploaded to temporary file storage** The types of files uploaded to the temporary file storage can now be restricted by whitelisting allowed mime-types. More information on this feature can be found [here](../../../features/upload/temporary-file-storage.md#whitelisting-file-types-for-uploads)
+* **Whitelisting by mime-type of files uploaded to temporary file storage** The types of files uploaded to the temporary file storage can now be restricted by whitelisting allowed mime-types. More information on this feature can be found [here](../../../running-valtimo/application-configuration/temporary-file-storage.md#whitelisting-file-types-for-uploads)
 *   **Spring Actuator health check for Camunda incidents**
 
     A Spring Actuator health check has been added to monitor the number of Camunda incidents. If any incidents exist, the health indicator will be `UNKNOWN`. When no incidents exist, the indicator will be `UP`. More information about the Spring Actuator health endpoint can be found [here](https://docs.spring.io/spring-boot/docs/current/reference/html/actuator.html#actuator.endpoints.health).

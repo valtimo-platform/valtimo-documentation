@@ -88,6 +88,6 @@ Instructions are available in the README files of above mentioned repositories.&
 \
 Below pages contain additional information for engineers and developers for making choices in database type, available modules and an overview of tested versions in a compatibility matrix.
 
-* [Configure database](configure-database.md)
+* [Configuring the database](configure-database.md)
 * [Modules](modules/)
 * [Compatibility matrix](compatibility-matrix.md)

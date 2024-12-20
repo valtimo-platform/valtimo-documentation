@@ -6,7 +6,7 @@ The following features were added:
 
 *   **Experimental editing of DMN tables in ui**
 
-    The list of decision tables on the admin page `Decision tables` now only shows the latest versions of each DMN table. If the user attempts to open an incompatible DMN table of version 1.1, it is automatically migrated to 1.3 and opened. If the user uploads a DMN table, the overview list of decision tables is now refreshed after uploading. If the feature toggle `experimentalDmnEditing` is enabled in the environment, the user is now redirected to a DMN editor, where it is possible to switch between versions, edit a version, and deploy a new version. Please refer to [this page](../../../nog-een-plek-geven/reference/feature-toggles.md) for more information on how to enable feature toggles.
+    The list of decision tables on the admin page `Decision tables` now only shows the latest versions of each DMN table. If the user attempts to open an incompatible DMN table of version 1.1, it is automatically migrated to 1.3 and opened. If the user uploads a DMN table, the overview list of decision tables is now refreshed after uploading. If the feature toggle `experimentalDmnEditing` is enabled in the environment, the user is now redirected to a DMN editor, where it is possible to switch between versions, edit a version, and deploy a new version. Please refer to [this page](../../../running-valtimo/application-configuration/feature-toggles.md) for more information on how to enable feature toggles.
 
     This feature is experimental, please refer to the known issues before considering to enable it. To make this work, add the following to the `scripts` array in your `angular.json` file: `"node_modules/dmn-js/dist/dmn-modeler.development.js"`.
 *   **Unlink process links**

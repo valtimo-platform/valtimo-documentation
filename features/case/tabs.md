@@ -2,45 +2,14 @@
 
 Each case in Valtimo can be configured with a specific set of case tabs. Valtimo includes a standard set of tabs preconfigured for each case, which can be customized to meet specific case requirements. Standard tabs can be removed from the tab configuration, but they can also be easily re-created through the user interface (UI). In addition to the standard tabs, custom tabs can be added to the case tab configuration to provide further customization.
 
-## Case tab types
-
-Valtimo supports the following types of case tabs.
-
-<table><thead><tr><th width="138">Type</th><th width="130">Type key</th><th>Description</th></tr></thead><tbody><tr><td><strong>Standard</strong></td><td>standard</td><td>A collection of tabs is available to support various Valtimo features. These tabs include options for displaying a summary form, viewing an audit log, and displaying the current state of the BPMN process. The available tabs are listed below.</td></tr><tr><td><strong>Form.io</strong></td><td>formio</td><td>Form.io tabs can be configured to display a Form.io form as the tab content. These tabs are intended solely for information display, as there is no functionality to submit data from these tabs, even if a submit button is included in the form definition.</td></tr><tr><td><strong>Custom</strong></td><td>custom</td><td>Custom tabs can be configured to show a custom Angular component.</td></tr><tr><td><strong>Widgets</strong></td><td>widgets</td><td>Case data, external source data, tables, collections and custom angular components can be presented on a case widget page. Each widget on a case widget tab can be configured separately.</td></tr></tbody></table>
-
-## Standard case tabs
-
-The following tabs are created by default for each new case in Valtimo. These case tabs are standard across all Valtimo editions; however, additional standard tabs may be available depending on the specific edition.
-
-### Valtimo standard tabs
-
-* **Summary**\
-  _Displays case specific data from the case JSON document or external data sources._\
-  _This page links to a specific Form.io form with the name **\<caseDefinitionKey>.summary**_
-* **Progress**\
-  _Shows the current state of any active process and the history of all processes that have been executed while handling the case._
-* **Audit**\
-  _Shows a log of all performed case actions. Information on who did what and when was that action done is logged and displayed on this tab._
-* **Documents**\
-  _Displays all files that where generated or uploaded while handling the case._
-* **Notes**\
-  _Allows case handlers to leave case specific comments for internal use._
-
-### GZAC edition additional tabs
-
-* **Contact moments**\
-  _Shows all contact moments in the case that are registered in the_ [_contactmomenten API_](https://vng-realisatie.github.io/gemma-zaken/standaard/contactmomenten/index)_._
-* **Case objects**\
-  _Lists all JSON objects that are linked to the "Zaak" that is connected to the case._\
-  _A "Zaak" can be created in "OpenZaak" and linked to the GZAC case._\
-  _Objects connected to this "Zaak" are displayed on this tab._
-
 ## Configuring case tabs
 
 {% tabs %}
 {% tab title="Via UI" %}
-* Go to `Cases` in the `Admin` menu.
-* Click on the case you want to configure and click on the `Tabs` tab.
+* Go to the `Admin` menu
+* Go to the `Cases` menu and select the case you want to configure
+* Select the `Tabs` tab
+* Click on **Add tab**
 
 The standard Valtimo case tabs for each new case are listed below. Standard tabs can be deleted as needed, as they can be easily re-added using the **Add tab** button.
 
@@ -61,7 +30,7 @@ The standard tab option is only available if all standard tabs have not yet been
 <figure><img src="../../.gitbook/assets/image (3).png" alt=""><figcaption><p>Selectable standard case tabs</p></figcaption></figure>
 
 **Tab name (optional)**\
-_Configured name that will be used to identify the Case tab in the UI._
+&#xNAN;_&#x43;onfigured name that will be used to identify the Case tab in the UI._
 
 {% hint style="info" %}
 This field is not mandatory and if left blank a translation of the key will be shown if configured. Each tab name follows this logic:
@@ -72,15 +41,15 @@ This field is not mandatory and if left blank a translation of the key will be s
 {% endhint %}
 
 **Key**\
-_This is the identifier of the tab and needs to be unique within a case definition._\
+&#xNAN;_&#x54;his is the identifier of the tab and needs to be unique within a case definition._\
 _Possible translations need to be configured with this key._
 
 **Choose standard content**\
-_A list of available standard tabs is presented in a dropdown menu._\
+&#xNAN;_&#x41; list of available standard tabs is presented in a dropdown menu._\
 _Already configured tabs are filtered from this list._
 
 **Task list visible on tab**\
-_When set the task list will be displayed on the right side of the tab in the UI._\
+&#xNAN;_&#x57;hen set the task list will be displayed on the right side of the tab in the UI._\
 
 
 ### Form.io component
@@ -160,6 +129,39 @@ In this example a tab is created with type `standard`. Different tab types can b
 ## Disabling case tabs
 
 Case tabs are enabled by default since Valtimo 12. This feature can be disabled with a feature toggle in the front-end implementation. Set the `enableTabManagement` feature toggle to `false` to disable the ability to add tabs next to the Valtimo standard case tabs.\
-For more information on available feature toggles, visit [this page](../../nog-een-plek-geven/reference/feature-toggles.md).
+For more information on available feature toggles, visit [this page](../../running-valtimo/application-configuration/feature-toggles.md).
 {% endtab %}
 {% endtabs %}
+
+## Case tab types
+
+Valtimo supports the following types of case tabs.
+
+<table><thead><tr><th width="138">Type</th><th width="130">Type key</th><th>Description</th></tr></thead><tbody><tr><td><strong>Standard</strong></td><td>standard</td><td>A collection of tabs is available to support various Valtimo features. These tabs include options for displaying a summary form, viewing an audit log, and displaying the current state of the BPMN process. The available tabs are listed below.</td></tr><tr><td><strong>Form.io</strong></td><td>formio</td><td>Form.io tabs can be configured to display a Form.io form as the tab content. These tabs are intended solely for information display, as there is no functionality to submit data from these tabs, even if a submit button is included in the form definition.</td></tr><tr><td><strong>Custom</strong></td><td>custom</td><td>Custom tabs can be configured to show a custom Angular component.</td></tr><tr><td><strong>Widgets</strong></td><td>widgets</td><td>Case data, external source data, tables, collections and custom angular components can be presented on a case widget page. Each widget on a case widget tab can be configured separately.</td></tr></tbody></table>
+
+## Standard case tabs
+
+The following tabs are created by default for each new case in Valtimo. These case tabs are standard across all Valtimo editions; however, additional standard tabs may be available depending on the specific edition.
+
+### Valtimo standard tabs
+
+* **Summary**\
+  &#xNAN;_&#x44;isplays case specific data from the case JSON document or external data sources._\
+  _This page links to a specific Form.io form with the name **\<caseDefinitionKey>.summary**_
+* **Progress**\
+  &#xNAN;_&#x53;hows the current state of any active process and the history of all processes that have been executed while handling the case._
+* **Audit**\
+  &#xNAN;_&#x53;hows a log of all performed case actions. Information on who did what and when was that action done is logged and displayed on this tab._
+* **Documents**\
+  &#xNAN;_&#x44;isplays all files that where generated or uploaded while handling the case._
+* **Notes**\
+  &#xNAN;_&#x41;llows case handlers to leave case specific comments for internal use._
+
+### GZAC edition additional tabs
+
+* **Contact moments**\
+  &#xNAN;_&#x53;hows all contact moments in the case that are registered in the_ [_contactmomenten API_](https://vng-realisatie.github.io/gemma-zaken/standaard/contactmomenten/index)_._
+* **Case objects**\
+  &#xNAN;_&#x4C;ists all JSON objects that are linked to the "Zaak" that is connected to the case._\
+  _A "Zaak" can be created in "OpenZaak" and linked to the GZAC case._\
+  _Objects connected to this "Zaak" are displayed on this tab._

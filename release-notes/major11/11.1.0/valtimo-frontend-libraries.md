@@ -14,11 +14,9 @@ The following features were added:
 *   **Added PendingChanges guard and modal to prevent losing unsaved changes**
 
     Implemented a mechanism for checking wether or not any changes have been made to the current page. If any navigation occurs on these pages, a modal will pop up asking for confirmation in case any unsaved changes exist.
-
-    Instructions on how to set this up can be found [here](../../../features/user-interface/pending-changes.md).
 *   **Case tabs**
 
-    Custom case tabs can now be managed from within the application. This can be used after enabling the [feature toggle](../../../nog-een-plek-geven/reference/feature-toggles.md) `enableTabManagement`.
+    Custom case tabs can now be managed from within the application. This can be used after enabling the [feature toggle](../../../running-valtimo/application-configuration/feature-toggles.md) `enableTabManagement`.
 
     Instructions on how to set this up can be found [here](../../../features/case/for-developers/case-tabs.md).
 

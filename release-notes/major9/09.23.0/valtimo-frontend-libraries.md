@@ -50,7 +50,7 @@ The following features were added:
 
     Search functionality for the case list will be replaced by configurable fields in future versions of Valtimo. A demo version of the front-end for these new search fields is included in this release. This feature is not yet functional.
 
-    For testing purposes, this feature can be enabled through the `caseSearchFields` feature toggle. For more information, refer to [this page](../../../nog-een-plek-geven/reference/feature-toggles.md).
+    For testing purposes, this feature can be enabled through the `caseSearchFields` feature toggle. For more information, refer to [this page](../../../running-valtimo/application-configuration/feature-toggles.md).
 
 ## Bugfixes
 

@@ -8,8 +8,9 @@ This setting is particularly effective in environments that integrate case and p
 
 {% tabs %}
 {% tab title="Via UI" %}
-Click on `Cases` in the `Admin` menu and select the case to configure statuses for.\
-Click on the `Statuses` tab.
+* Go to the `Admin` menu
+* Go to the `Cases` menu and select the case to configure statuses for
+* Select the `Statuses` tab
 
 <figure><img src="../../.gitbook/assets/image (28) (1).png" alt=""><figcaption></figcaption></figure>
 
@@ -20,11 +21,11 @@ A status can be added with the **Add status** button. A modal will be shown with
 <figure><img src="../../.gitbook/assets/image (47).png" alt=""><figcaption></figcaption></figure>
 
 * **Name**\
-  _Used as a label in the case summary and case list, the name is presented in the UI._
+  &#xNAN;_&#x55;sed as a label in the case summary and case list, the name is presented in the UI._
 * **Key**\
-  _The identifier of the status, this must be a unique value within the scope of the case it is added to. A key based on the name is generated automatically but can be overwritten via the pencil button._
+  &#xNAN;_&#x54;he identifier of the status, this must be a unique value within the scope of the case it is added to. A key based on the name is generated automatically but can be overwritten via the pencil button._
 * **Color**\
-  _Statuses are are displayed as a badge in the case details and list screen UI._\
+  &#xNAN;_&#x53;tatuses are are displayed as a badge in the case details and list screen UI._\
   _This badge will be displayed in the selected color._\
   \
   **List of available status colors:**
@@ -116,8 +117,6 @@ To enable the ability to set statuses at certain phases in the process, an expre
 Next to setting a status via the process model it is also possible to set the case status via Form.io forms that are connected to user tasks in the process. The Form.io submission data will then submit the new status in stead of the process.\
 \
 In order to change the case status via Form.io the `case:internalStatus` targetKey can be used on a hidden form field to add the status change to the form submission. Due to the `case:` prefix the data is registered as meta data in stead of case data.
-
-
 
 ### Filtering cases
 

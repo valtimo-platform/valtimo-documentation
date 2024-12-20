@@ -17,7 +17,7 @@ The following features were added:
 
     The pending changes modal has been extended to accept custom modals. An example of this use would be a pending changes modal for an 'Edit mode' function, where you might want to have three buttons (e.g. _Keep editing_, _Save_, _Discard_) instead of the two buttons that are offered out of the box.
 
-    More details about the PendingChangesComponent can be found [here](../../../features/user-interface/pending-changes.md)
+    More details about the PendingChangesComponent can be found [here](broken-reference)
 *   **Creating document definitions via the admin interface**
 
     A document definition can now be created via the admin interface. This is an alternative to creating a document definition in the project, which enables the user to create a document definition without needing to create a file in the project.

@@ -8,7 +8,7 @@ The following features were added:
 
     If the `caseSearchFields` feature toggle is enabled, a 'Search Fields' tab is shown on the Case details page (i.e. Admin -> Cases -> Leningen). On this tab, a 'Download search field configuration' button is now shown, which downloads the search field configuration for the current document type as a JSON file.
 
-    For more information on how to enable the `caseSearchFields` feature toggle, refer to [this page](../../../nog-een-plek-geven/reference/feature-toggles.md).
+    For more information on how to enable the `caseSearchFields` feature toggle, refer to [this page](../../../running-valtimo/application-configuration/feature-toggles.md).
 *   **Added new actions to case search field configuration**
 
     Creating, updating, deleting, and reordering search field rows for a document definition are now available actions.

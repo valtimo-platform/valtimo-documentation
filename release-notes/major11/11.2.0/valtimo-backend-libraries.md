@@ -6,16 +6,16 @@ The following features were added:
 
 *   **Export case definitions**
 
-    Case definitions can now be exported as an archive, containing all process definitions, forms, form flows, process links and the document definition that make up the case definition. See [this page](https://app.gitbook.com/o/-LQhw1pmbUwI6q8p8Re1/s/bcArISKZtxWk4tKpZb9P/\~/changes/1/features/case) for more information.
+    Case definitions can now be exported as an archive, containing all process definitions, forms, form flows, process links and the document definition that make up the case definition. See [this page](https://app.gitbook.com/o/-LQhw1pmbUwI6q8p8Re1/s/bcArISKZtxWk4tKpZb9P/~/changes/1/features/case) for more information.
 *   **Import case definitions**
 
-    Case definitions can now be imported from a ZIP archive, containing all process definitions, forms, form flows, process links and the document definition that make up the case definition. See [this page](https://app.gitbook.com/o/-LQhw1pmbUwI6q8p8Re1/s/bcArISKZtxWk4tKpZb9P/\~/changes/1/features/case) for more information.
+    Case definitions can now be imported from a ZIP archive, containing all process definitions, forms, form flows, process links and the document definition that make up the case definition. See [this page](https://app.gitbook.com/o/-LQhw1pmbUwI6q8p8Re1/s/bcArISKZtxWk4tKpZb9P/~/changes/1/features/case) for more information.
 *   **Transactional outbox**
 
     Valtimo now supports an implementation of the [transactional outbox pattern](https://microservices.io/patterns/data/transactional-outbox.html). See [this page](../../../fundamentals/getting-started/modules/core/outbox/) for more information.
 *   **Audit CloudEvents**
 
-    Several outbox events have been added for auditing purposes. For an overview of the available events, refer to [this page](../../../nog-een-plek-geven/reference/modules/outbox.md)
+    Several outbox events have been added for auditing purposes. For an overview of the available events, refer to [this page](broken-reference)
 * **Access control for creating process instances** Two new access control resources have been added, these are `CamundaExecution` and `CamundaProcessDefinition`. The former has one action that can be used to allow users to create process instances, which is the `create` action. These resources can be used to restrict creation of certain process instances to a subset of roles. Information on how to use this can be found [here](../../../features/access-control/configuring-permissions.md#create-process-instance-permissions).
 *   **Outbox message publisher for RabbitMQ**
 

@@ -27,9 +27,9 @@ The following features were added:
 
     It is now possible to assign and unassign a user to a case.
 
-    For more information on using this feature see [this page](../../../features/document/assigning-a-user.md).
+    For more information on using this feature see [this page](broken-reference).
 
-    Information about the endpoints can be found [here](../../../features/document/assigning-and-unassigning-a-user.md).
+    Information about the endpoints can be found [here](broken-reference).
 
 ## Bugfixes
 
