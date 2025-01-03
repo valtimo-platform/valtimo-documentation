@@ -116,7 +116,6 @@
     * [Creating custom display types](features/dashboard/dashboard/custom-display-type.md)
     * [Widget translations](features/dashboard/dashboard/widget-translations.md)
     * [Creating a custom dashboard](features/dashboard/dashboard/creating-a-custom-dashboard.md)
-* [📃 Documents](features/document.md)
 * [📋 Forms](features/forms/README.md)
   * [Creating FormIO forms in Valtimo](features/forms/creating-forms-in-valtimo.md)
   * [Interpolating data in Form.io](features/forms/interpolating-data-in-formio.md)
