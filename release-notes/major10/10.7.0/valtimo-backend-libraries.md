@@ -19,7 +19,7 @@ The following features were added:
 
     * Information on how to include this module can be found [here](../../../fundamentals/getting-started/modules/core/dashboard.md).
     * Information on how to configure a dashboard can be found [here](../../../features/dashboard/).
-    * Information on how to implement custom display types and datasources can be found [here](../../../features/dashboard/dashboard/).
+    * Information on how to implement custom display types and datasources can be found [here](../../../features/dashboard/dashboard-1/).
 * **Whitelisting by mime-type of files uploaded to temporary file storage** The types of files uploaded to the temporary file storage can now be restricted by whitelisting allowed mime-types. More information on this feature can be found [here](../../../running-valtimo/application-configuration/temporary-file-storage.md#whitelisting-file-types-for-uploads)
 *   **Spring Actuator health check for Camunda incidents**
 

@@ -7,8 +7,8 @@ This page requires:
 {% endhint %}
 
 \
-Conditions can be used to further specify the policy on an element in Valtimo.\
-When a condition is used in the policy it will match the conditions against the element it is trying to access. If the element matches the conditions it will be loaded, if a condition fails it will not be loaded.\
+Conditions can be used to further specify the policy on an element in Valtimo. When a condition is used in the policy it will match the conditions against the element it is trying to access. If the element matches the conditions it will be loaded, if a condition fails it will not be loaded.
+
 Best explained with below use case:\
 \
 **Use case:**\

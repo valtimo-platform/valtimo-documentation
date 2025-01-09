@@ -10,7 +10,7 @@ The following features were added:
 
     * Information on how to include this module can be found [here](../../../fundamentals/getting-started/modules/core/dashboard.md).
     * Information on how to configure a dashboard can be found [here](../../../features/dashboard/).
-    * Information on how to implement custom display types and datasources can be found [here](../../../features/dashboard/dashboard/).
+    * Information on how to implement custom display types and datasources can be found [here](../../../features/dashboard/dashboard-1/).
 *   **Added edit note and delete note options on the notes tab**
 
     Added the functionality to edit and delete a note in an order. It can only be edited if the text field is not empty.

@@ -4,8 +4,8 @@ icon: file-chart-column
 
 # Logging
 
-{% hint style="info" %}
-Logging is available from Valtimo 12.5.0.
+{% hint style="success" %}
+Available since Valtimo 12.5.0.
 {% endhint %}
 
 ## Introduction

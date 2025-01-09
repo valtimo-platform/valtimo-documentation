@@ -1,10 +1,15 @@
-# Forms
+---
+icon: laptop-code
+---
 
-Valtimo uses the [form.io](https://www.form.io/) form builder to create forms that can be used for multiple purposes, such as:
-- Task forms
-- Process start forms
-- Case detail view
+# For developers
 
-This section contains instructions and examples on how to extend functionality regarding forms.
+{% hint style="info" %}
+The for developers section within each feature gives more tech heavy information of configuring, extending or altering Valtimo via the codebase.
+{% endhint %}
 
-* [Creating a form field data resolver](creating-form-field-data-resolver.md)
+## Developer documentation
+
+{% content-ref url="creating-form-field-data-resolver.md" %}
+[creating-form-field-data-resolver.md](creating-form-field-data-resolver.md)
+{% endcontent-ref %}

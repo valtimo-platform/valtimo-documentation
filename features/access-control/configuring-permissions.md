@@ -3,12 +3,10 @@
 {% hint style="info" %}
 This page requires:
 
-* Knowledge of  [JSON](https://www.json.org/?\_target=blank)
+* Knowledge of  [JSON](https://www.json.org/?_target=blank)
 {% endhint %}
 
-In a new implementation of Valtimo there are no permissions configured by default.\
-`ROLE_ADMIN` always has access to the admin menu in order to allow primary setup.\
-Access Control permissions can be configured by defining PERMISSIONS for each ROLE.\
+In a new implementation of Valtimo no permissions are configured by default. `ROLE_ADMIN` always has access to the admin menu in order to allow primary setup. Access Control permissions can be configured by defining PERMISSIONS for each ROLE.\
 \
 There are three ways of configuring Permissions in Valtimo.
 

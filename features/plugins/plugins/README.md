@@ -1,7 +1,15 @@
-# Plugins
+---
+icon: laptop-code
+---
 
-Plugins are used by Valtimo to extend functionality and to make connections to external systems.
+# For developers
 
-This section contains instructions and examples on how to extend functionality regarding plugins.
+{% hint style="info" %}
+The for developers section within each feature gives more tech heavy information of configuring, extending or altering Valtimo via the codebase.
+{% endhint %}
 
-- [Custom plugin definitions](custom-plugin-definition.md)
+## Developer documentation
+
+{% content-ref url="custom-plugin-definition.md" %}
+[custom-plugin-definition.md](custom-plugin-definition.md)
+{% endcontent-ref %}

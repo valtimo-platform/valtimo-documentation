@@ -54,7 +54,7 @@ All changesets can be executed again, even when the content has changed, by sett
 
 You can find an example of the JSON below.
 
-In this example a widget is created with display type `number` and data source `case-count`. Different display types and data sources can be used to customize the layout of the dashboard. The types that are available can be found on the [reference page](../../nog-een-plek-geven/reference/modules/dashboard.md).
+In this example a widget is created with display type `number` and data source `case-count`. Different display types and data sources can be used to customize the layout of the dashboard. The types that are available can be found on the [reference page](dashboard.md).
 
 ```json
 {
@@ -96,5 +96,21 @@ In this example a widget is created with display type `number` and data source `
   ]
 }
 ```
+{% endtab %}
+{% endtabs %}
+
+## Adding widgets
+
+After creating a dashboard, widgets can be added to the dashboard.
+
+{% tabs %}
+{% tab title="Via UI" %}
+* Go to the `Admin` menu
+* Go to the `Dashboard` menu
+* Click the dashboard that needs to be configured
+* Click on **Add new widget**
+* Fill in the form
+
+![admin-widget-configuration.png](../../using-valtimo/dashboard/img/admin-widget-configuration.png) ![add-new-widget.png](../../using-valtimo/dashboard/img/add-new-widget.png)
 {% endtab %}
 {% endtabs %}

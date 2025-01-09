@@ -4,7 +4,7 @@ The following section describes the various modules that are applicable for Valt
 
 * [Authorization](authorization.md)
 * [Outbox](broken-reference)
-* [Dashboard](dashboard.md)
+* [Dashboard](../../../features/dashboard/dashboard.md)
 * [Documents](document.md)
 * [Form](form.md)
 * [Form flow](form-flow.md)
