@@ -37,9 +37,9 @@ Best practices:
 
 It's possible to upload valid JSON schemas to create new cases since Valtimo 5. During the upload the JSON schema structure is validated and the uniqueness of the case ID is checked. If no validation errors occur, the JSON schema is uploaded and the case definition is created.
 
-In Valtimo 12 the case configuration upload has been improved by adding all the newly available case configurations to the upload functionality. More detailed information on this functionality can be found [here](./#exporting-and-importing-case-definitions).
+In Valtimo 12 the case configuration upload has been improved by adding all the newly available case configurations to the upload functionality. More detailed information on this functionality can be found [here](../#exporting-and-importing-case-definitions).
 
-![Uploading a document definition](../../using-valtimo/document/img/upload-document-definition.png)
+![Uploading a document definition](../../../using-valtimo/document/img/upload-document-definition.png)
 
 #### Create an empty case
 
@@ -53,14 +53,14 @@ Available since Valtimo 12
 * Enter the title, and optionally edit the name
 * Click on **Save**, this takes you to the document definition overview
 
-![Creating a document definition](../../using-valtimo/document/img/create-document-definition.png)
+![Creating a document definition](../../../using-valtimo/document/img/create-document-definition.png)
 
 The chosen title will be validated and based upon the title a read-only case definition name will be generated. This is to create a unique identifier for that case definition without spaces or special characters. Click the **Save** button to create the case with the chosen title.\
 \
 The case definition is created and the case details page is displayed upon completion.\
 A valid empty JSON schema is created with the title and id based on the given title.
 
-<figure><img src="../../.gitbook/assets/image (11) (1).png" alt=""><figcaption><p>Newly created example case</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (11) (1).png" alt=""><figcaption><p>Newly created example case</p></figcaption></figure>
 
 {% hint style="info" %}
 <mark style="color:blue;">**Please note**</mark>
@@ -144,7 +144,7 @@ Same as for creating cases there are three ways of editing document definitions.
 * Go to the `Admin` menu
 * Go to the `Cases` menu
 
-<figure><img src="../../.gitbook/assets/image (12) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (12) (1).png" alt=""><figcaption></figcaption></figure>
 
 Click on the **Upload** button to open the **Import case definition** modal\*[^1]. This modal contains a wizard that will guide users through the import process. The following steps are defined in this wizard.
 
@@ -163,7 +163,7 @@ Click on the **Upload** button to open the **Import case definition** modal\*[^1
 * Edit the document definition as per the JSON schema standard
 * Click on **Save**
 
-<figure><img src="../../.gitbook/assets/image (17) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (17) (1).png" alt=""><figcaption></figcaption></figure>
 
 Visually nothing happens when switching to edit mode. Only the Download and Edit buttons are replaced by a **Cancel** and a **Save** button. The **Save** button is disabled by default until valid changes are made.
 
@@ -171,7 +171,7 @@ Visually nothing happens when switching to edit mode. Only the Download and Edit
 
 In edit mode, the UI editor will constantly validate the JSON file structure. The **Save** button is only available when the JSON structure is valid. Errors in the file structure will be indicated with a red curly line below or near the issue. In large files, errors can easily be found with the minimised tree view on the right side of the editor.&#x20;
 
-<figure><img src="../../.gitbook/assets/image (18) (1).png" alt=""><figcaption><p>JSON structure validation in edit mode</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (18) (1).png" alt=""><figcaption><p>JSON structure validation in edit mode</p></figcaption></figure>
 {% endtab %}
 
 {% tab title="Via IDE" %}

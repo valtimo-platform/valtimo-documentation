@@ -10,7 +10,7 @@ Widget configuration is part of tab configuration for a case definition.
 * Go to the `Cases` menu and select the case to configure widgets for
 * Select the `Tabs` tab
 
-The list of configured tabs for a case is displayed within the case settings. To configure widgets, select an existing tab with its type set to Widgets, or add a new widget-type tab to the configuration by clicking the **Add tab** button as documented [here](../tabs.md). Upon selection, the widget configuration for the chosen tab will open, displaying a list of widgets created for that tab.
+The list of configured tabs for a case is displayed within the case settings. To configure widgets, select an existing tab with its type set to Widgets, or add a new widget-type tab to the configuration by clicking the **Add tab** button as documented [here](../tabs/). Upon selection, the widget configuration for the chosen tab will open, displaying a list of widgets created for that tab.
 
 <figure><img src="../../../.gitbook/assets/image (11).png" alt=""><figcaption><p>Widget configuration UI</p></figcaption></figure>
 

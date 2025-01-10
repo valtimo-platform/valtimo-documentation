@@ -13,7 +13,7 @@ Each case in Valtimo can be configured with a specific set of case tabs. Valtimo
 
 The standard Valtimo case tabs for each new case are listed below. Standard tabs can be deleted as needed, as they can be easily re-added using the **Add tab** button.
 
-<figure><img src="../../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
 
 The **Add tab** button opens the _Add new tab in \<case>_ modal, beginning with the configuration step to select the tab type. In this modal, **standard tabs** are available and next to this a **Form.io**, **Custom** or **Widget component** can be configured as a case tab.
 
@@ -21,13 +21,13 @@ The **Add tab** button opens the _Add new tab in \<case>_ modal, beginning with 
 *   Select which tab type you want to configure.\
 
 
-    <figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption><p>Case tab types</p></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (2).png" alt=""><figcaption><p>Case tab types</p></figcaption></figure>
 
 ### Standard tab
 
 The standard tab option is only available if all standard tabs have not yet been added to the case. When all standard tabs are already included in a case definition, this option will appear grayed out. In the modal to configure a standard tab, a dropdown menu displays the available standard tabs for selection and configuration.
 
-<figure><img src="../../.gitbook/assets/image (3).png" alt=""><figcaption><p>Selectable standard case tabs</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3).png" alt=""><figcaption><p>Selectable standard case tabs</p></figcaption></figure>
 
 **Tab name (optional)**\
 &#xNAN;_&#x43;onfigured name that will be used to identify the Case tab in the UI._
@@ -75,9 +75,9 @@ Tab configuration is still available by clicking the 3-dotted (kebab) menu on th
 
 Below a screenshot of the widget configuration UI for a newly created widgets tab. This page opens when a widget type tab is clicked on the tab configuration page.
 
-For widget configuration, check [this page](widgets/).
+For widget configuration, check [this page](../widgets/).
 
-<figure><img src="../../.gitbook/assets/image (8).png" alt=""><figcaption><p>Widget configuration UI</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (8).png" alt=""><figcaption><p>Widget configuration UI</p></figcaption></figure>
 {% endtab %}
 
 {% tab title="Via IDE" %}
@@ -129,7 +129,7 @@ In this example a tab is created with type `standard`. Different tab types can b
 ## Disabling case tabs
 
 Case tabs are enabled by default since Valtimo 12. This feature can be disabled with a feature toggle in the front-end implementation. Set the `enableTabManagement` feature toggle to `false` to disable the ability to add tabs next to the Valtimo standard case tabs.\
-For more information on available feature toggles, visit [this page](../../running-valtimo/application-configuration/feature-toggles.md).
+For more information on available feature toggles, visit [this page](../../../running-valtimo/application-configuration/feature-toggles.md).
 {% endtab %}
 {% endtabs %}
 

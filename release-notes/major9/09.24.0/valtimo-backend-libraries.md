@@ -8,12 +8,12 @@ The following features were added:
 
     It is now possible to create, read, update and delete search fields for a document definition.
 
-    For more information on using this feature see [this page](../../../features/case/search-fields.md).
+    For more information on using this feature see [this page](../../../features/case/search-fields/).
 
     Information about these endpoints can be found [here](../../../features/case/for-developers/configuring-search-fields.md).
 *   **Search fields configuration deployment from resources**
 
-    All search fields configurations placed in the resource folder are automatically deployed. More information can be found [here](../../../features/case/search-fields.md).
+    All search fields configurations placed in the resource folder are automatically deployed. More information can be found [here](../../../features/case/search-fields/).
 *   **New Exact Plugin**
 
     A new plugin to setup a connection with Exact. See [here](../../../features/plugins/configure-exact-plugin.md) for documentation.

@@ -58,135 +58,18 @@ Below the full list of elements within Valtimo that can and need to be configure
 Per element a list of configurable actions is documented and an example of the configuration is added. \
 The available actions per element define what can be configured for that element.
 
-### **Case Tab**
-
-Configure access to view custom Case Tabs.
-
-```json
-{
-    "resourceType": "com.ritense.case.domain.CaseTab",
-    "action": "view",
-    "conditions": []
-}
-```
-
-**Configurable actions:**\
-&#xNAN;_"view"_
-
-### **Case Note**
-
-Configure access to view custom Case Notes.
-
-```json
-{
-    "resourceType": "com.ritense.note.domain.Note",
-    "action": "view",
-    "conditions": []
-}
-```
-
-**Configurable actions:**\
-&#xNAN;_"create", "delete, "modify",  "view-list"_
-
-
-
-### **Case Document**
-
-Configure access to the JSON document that is created for each Case.
-
-```json
-{
-    "resourceType": "com.ritense.document.domain.impl.JsonSchemaDocument",
-    "action": "view",
-    "conditions": []
-}
-```
-
-**Configurable actions:**\
-&#xNAN;_"assign", "assignable", "create", "claim", "delete, "modify",  "view", "view-list"_
-
-
-
-### **Case Document Snapshot**
-
-Configure access to the JSON document snapshots that are created for a Case.
-
-```json
-{
-    "resourceType": "com.ritense.document.domain.impl.snapshot.JsonSchemaDocumentSnapshot",
-    "action": "view",
-    "conditions": []
-}
-```
-
-**Configurable actions:**\
-&#xNAN;_"view", "view-list"_
-
-
-
-### Case Document Definition
-
-Configure access to the document definition (JSON Schema) of a Case.
-
-```json
-{
-    "resourceType": "com.ritense.document.domain.impl.JsonSchemaDocumentDefinition",
-    "action": "view",
-    "conditions": []
-}
-```
-
-**Configurable actions:**\
-&#xNAN;_"assign", "assignable", "create", "claim", "delete, "modify", "view", "view-list"_
-
-
-
-### Case Search Fields
-
-Configure access to the configured search fields for a Case.
-
-```json
-{
-    "resourceType": "com.ritense.document.domain.impl.searchfield.SearchField",
-    "action": "view_list",
-    "conditions": []
-}
-```
-
-**Configurable actions:**\
-&#xNAN;_"view-list"_
-
-
-
-### Process Execution&#x20;
-
-Configure access to be able to start and execute processes.
-
-```json
-{
-    "resourceType": "com.ritense.valtimo.camunda.domain.CamundaExecution",
-    "action": "create",
-    "conditions": []
-}
-```
-
-**Configurable actions:**\
-&#xNAN;_"create"_
-
-
-
-### Process Tasks&#x20;
-
-Configure access to be able to work with process user tasks.
-
-```json
-{
-    "resourceType": "com.ritense.valtimo.camunda.domain.CamundaTask",
-    "action": "create",
-    "conditions": []
-}
-```
-
-**Configurable actions:**\
-&#xNAN;_"assign", "assignable", "create", "claim", "view", "view-list"_
+* Cases
+  * [Document](../case/document-definition/access-control.md)
+  * [Document definition](../case/document-definition/access-control.md)
+  * [Notes](../case/notes/access-control.md)
+  * [Search fields](../case/search-fields/access-control.md)
+  * [Tabs](../case/tabs/access-control.md)
+  * [Widget](../case/widgets/access-control.md)
+* [Dashboard](../dashboard/access-control.md)
+* Process
+  * [Execution](../process/access-control.md)
+  * [Definition](../process/access-control.md)
+* Task
+  * [Tasks](../tasks/access-control.md)
+  * [Identity links](../tasks/access-control.md)
 

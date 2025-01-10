@@ -8,19 +8,19 @@ For each case a set of search fields can be configured. These fields will be dis
 {% tab title="Via UI" %}
 An administrator is able to add, change, remove, reorder and download a file with all search fields. To see all the configured search fields go the menu `Admin > Cases` and select a specific case. Then click on the tab named `Search fields`.
 
-<figure><img src="../../.gitbook/assets/image (41).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (41).png" alt=""><figcaption></figcaption></figure>
 
 ### **Available actions**
 
 **Create**\
 Because each case holds its own set of data, search fields can be configured per case. A button to create a new search field is available at the top of the displayed search field list. A modal for filling in the data will be presented when clicking on this button. It is necessary to fill in all the required data to enable the `submit` button. The key field is specific identification data, so if the key is not unique, you will not be able to save the search field.
 
-<figure><img src="../../.gitbook/assets/image (44).png" alt=""><figcaption><p>Modal to configure search field</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (44).png" alt=""><figcaption><p>Modal to configure search field</p></figcaption></figure>
 
 **Edit**\
 When clicking on an entry in the list of `search fields`, a modal opens with the fields pre-filled with the selected item's data. It is possible to edit all the fields, except for the key. When clicking `submit`, the field data is automatically updated in the list.
 
-<figure><img src="../../.gitbook/assets/image (42).png" alt=""><figcaption><p>Modal to configure search field - prefilled</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (42).png" alt=""><figcaption><p>Modal to configure search field - prefilled</p></figcaption></figure>
 
 **Reorder**\
 At the far right next to the 3 dotted menu there are two arrow buttons for reordering the data. The line will be moved in the corresponding direction by clicking the up or down arrow button. When there is no possibility of moving the line, the reorder buttons will be disabled.
@@ -32,7 +32,7 @@ At the far right of each search field in the list there is a menu under 3 dots. 
 A download icon is available next to the Add search field button at the top of the list.\
 A JSON formatted file with all the information in the list will be downloaded.
 
-<figure><img src="../../.gitbook/assets/image (45).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (45).png" alt=""><figcaption></figcaption></figure>
 {% endtab %}
 
 {% tab title="Via IDE" %}
@@ -71,11 +71,11 @@ Configured search fields can be found on the list page of every case type. So in
 
 The Search fields are located right above the case list columns.
 
-<figure><img src="../../.gitbook/assets/image (39).png" alt=""><figcaption><p>Case list screen - Search collapsed</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (39).png" alt=""><figcaption><p>Case list screen - Search collapsed</p></figcaption></figure>
 
 Click on the search bar to expand the view showing all the configured search fields.
 
-<figure><img src="../../.gitbook/assets/image (40).png" alt=""><figcaption><p>Case list screen - Search expanded</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (40).png" alt=""><figcaption><p>Case list screen - Search expanded</p></figcaption></figure>
 
 ## Search field types
 
