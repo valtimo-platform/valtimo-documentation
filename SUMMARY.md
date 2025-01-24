@@ -82,6 +82,7 @@
   * [Configuring roles](features/access-control/configuring-roles.md)
   * [Configuring permissions](features/access-control/configuring-permissions.md)
   * [Configuring conditions](features/access-control/configuring-conditions.md)
+  * [Configuring context conditions](features/access-control/configuring-context-conditions.md)
   * [For developers](features/access-control/for-developers/README.md)
     * [Front-end access control](features/access-control/for-developers/frontend-access-control.md)
     * [Creating a resource](features/access-control/for-developers/registering-a-resource.md)
