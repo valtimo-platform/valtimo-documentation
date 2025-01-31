@@ -330,6 +330,12 @@
     * [Valtimo backend libraries (9.16.0)](release-notes/major9/09.16.0/valtimo-backend-libraries.md)
     * [Valtimo frontend libraries (5.4.0)](release-notes/major9/09.16.0/valtimo-frontend-libraries.md)
 
+## Customizing Valtimo
+
+* [Front-end customization](customizing-valtimo/front-end-customization/README.md)
+  * [Customizing Carbon theme](customizing-valtimo/front-end-customization/customizing-carbon-theme.md)
+  * [Custom logo](customizing-valtimo/front-end-customization/custom-logo.md)
+
 ## Nog een plek geven
 
 * [References](nog-een-plek-geven/reference/README.md)
