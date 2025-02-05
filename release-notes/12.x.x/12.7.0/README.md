@@ -6,9 +6,9 @@
 
 &#x20;A new data source has been added to the dashboard widgets: the number of tasks can now be displayed as a 'big number' or in a gauge. With the [personal dashboard filters](https://docs.valtimo.nl/release-notes/12.x.x/12.6.0#personal-dashboards) introduced in version 12.6, widgets can also display the number of tasks assigned specifically to the logged-in user.&#x20;
 
-<figure><img src="../../.gitbook/assets/Screenshot 2025-01-22 at 07.53.03.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Screenshot 2025-01-22 at 07.53.03.png" alt=""><figcaption></figcaption></figure>
 
-<div align="left"><figure><img src="../../.gitbook/assets/Screenshot 2025-01-22 at 07.53.21.png" alt="" width="273"><figcaption></figcaption></figure></div>
+<div align="left"><figure><img src="../../../.gitbook/assets/Screenshot 2025-01-22 at 07.53.21.png" alt="" width="273"><figcaption></figcaption></figure></div>
 
 #### Start supporting process on a case widget
 
@@ -47,6 +47,7 @@ Using the `object` prefix, properties from the root of the Verzoek object can no
 ## Bugfixes
 
 * A process link type (e.g. form, form flow or plugin) could not be changed using autodeployment files.&#x20;
+* A user with `view_list` permissions for a task, but without `view` permissions would get an error on the case detail page.
 
 
 

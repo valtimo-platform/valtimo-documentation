@@ -6,7 +6,7 @@
 
 Dashboard widgets now support filtering data based on the logged-in user, allowing for a more personalized dashboard. This functionality enables widgets to be configured to display user-specific data, such as the number of cases assigned to the logged-in user.
 
-<figure><img src="../../.gitbook/assets/Screenshot 2025-01-02 at 11.46.08.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Screenshot 2025-01-02 at 11.46.08.png" alt=""><figcaption></figcaption></figure>
 
 For detailed instructions on configuring dashboard widgets, refer to the documentation [here](https://docs.valtimo.nl/features/dashboard/widgets).
 
@@ -30,7 +30,7 @@ Additionally, text fields now support multi-line display, eliminating the need f
 
 Individual cases can now be deleted directly from the case detail page. To delete a case, the user must have a permission that includes the "delete" action on the resource `com.ritense.document.domain.impl.JsonSchemaDocument`.
 
-<figure><img src="../../.gitbook/assets/Screenshot 2025-01-02 at 11.33.13.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Screenshot 2025-01-02 at 11.33.13.png" alt=""><figcaption></figcaption></figure>
 
 For audit purposes, when a case is deleted, a cloud event of type `com.ritense.valtimo.document.deleted` is added to the outbox (if the outbox functionality is enabled).
 
@@ -46,9 +46,9 @@ Tasks on the case detail page now support the addition of one or more subtitles.
 
 Task subtitles can be configured on the process-links page, where the user task is linked to a form or form flow:
 
-<figure><img src="../../.gitbook/assets/Screenshot 2025-01-02 at 11.57.34.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Screenshot 2025-01-02 at 11.57.34.png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/Screenshot 2025-01-02 at 11.57.00.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Screenshot 2025-01-02 at 11.57.00.png" alt=""><figcaption></figcaption></figure>
 
 #### Keycloak user cache
 
@@ -58,7 +58,7 @@ When processing access control permissions, multiple requests to Keycloak may be
 
 When a user attempts to access a case detail page without the necessary permissions, an error page is now displayed instead of showing notifications with error messages.
 
-<figure><img src="../../.gitbook/assets/Screenshot 2025-01-02 at 16.21.22.png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Screenshot 2025-01-02 at 16.21.22.png" alt="" width="375"><figcaption></figcaption></figure>
 
 #### Access control for supporting processes based on case data
 
@@ -86,7 +86,7 @@ If all metadata fields are configured as hidden, the metadata modal will not be 
 
 Documenten API metadata fields can be configured on the case management page under the 'ZGW -> Document upload fields' tab:
 
-<img src="../../.gitbook/assets/Screenshot 2025-01-02 at 16.46.40.png" alt="" data-size="original">
+<img src="../../../.gitbook/assets/Screenshot 2025-01-02 at 16.46.40.png" alt="" data-size="original">
 
 #### Linking Zaakdetails object to the Zaak
 
