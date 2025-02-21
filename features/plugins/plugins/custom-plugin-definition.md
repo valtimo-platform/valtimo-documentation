@@ -109,9 +109,9 @@ class SamplePlugin(
         activityTypes = [ActivityTypeWithEventName.SERVICE_TASK_START],
     )
     fun samplePrinter(
-        @PluginActionProperty sampleString: String,
+        @PluginActionProperty message: String,
     ) { 
-        println("User: $username - Response: ${sampleClient.getSomething(username, sampleString)}" )
+        println("User: $username - Response: ${sampleClient.getSomething(username, message)}" )
     }
 }
 ```
