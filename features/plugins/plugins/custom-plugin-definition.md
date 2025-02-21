@@ -93,14 +93,8 @@ class SamplePlugin(
     val sampleClient: SampleClient,
 ) {
 
-    @PluginProperty(key = "username", secret = false)
-    lateinit var username: String
-
     @PluginProperty(key = "url", secret = false)
     lateinit var url: String
-  
-    @PluginProperty(key = "password", secret = false)
-    lateinit var password: String
 
     @PluginAction(
         key = "sample-action",
@@ -137,8 +131,8 @@ class SamplePluginFactory(
 #### Optional additional steps <a href="#optional-additional-steps" id="optional-additional-steps"></a>
 
 The backend part of the Sample plugin is now ready. Some topics have not yet been mentioned. These are optional and can be found at the bottom of this page.\
-[@PluginEvent](http://localhost:63342/markdownPreview/1293749961/markdown-preview-index-21792070.html?_ijt=n9kdrp1k62f48n1dgpvc4iritc#plugin-events)\
-[@PluginCategory](http://localhost:63342/markdownPreview/1293749961/markdown-preview-index-21792070.html?_ijt=n9kdrp1k62f48n1dgpvc4iritc#plugin-categories)
+@PluginEvent\
+@PluginCategory
 
 ### Frontend <a href="#frontend" id="frontend"></a>
 
@@ -501,7 +495,7 @@ If translation is to take place inside the component (as opposed to inside the t
 
 #### Plugin module <a href="#plugin-module" id="plugin-module"></a>
 
-Finally, after implementing the components and specification, a module has to be defined for the plugin. This module, together with the specification, is then imported in the app module as shown in [on this page](file:///Users/erik/Projects/erik/valtimo-documentation/getting-started/modules/core/plugin.md).
+Finally, after implementing the components and specification, a module has to be defined for the plugin. This module, together with the specification, is then imported in the app module.
 
 The sample plugin module would look like this:
 
