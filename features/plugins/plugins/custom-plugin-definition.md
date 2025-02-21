@@ -473,23 +473,7 @@ The main app.module.ts needs to be updated as well. The @NgModule needs to have 
 })
 ```
 
-#### Adding plugin as a menu option <a href="#adding-plugin-as-a-menu-option" id="adding-plugin-as-a-menu-option"></a>
 
-The main menu.ts needs to be updated as well:
-
-**`menu.ts`**
-
-```typescript
-export const menuItems = [
-  {
-    roles: [ROLE_ADMIN], title: 'Admin', iconClass: 'icon mdi mdi-tune', sequence: 6, children: [
-            ...
-      {link: ['/plugins'], title: 'Plugins', sequence: 7},
-            ...
-    ]
-  }
-];
-```
 
 #### Plugin translations <a href="#plugin-translations" id="plugin-translations"></a>
 
