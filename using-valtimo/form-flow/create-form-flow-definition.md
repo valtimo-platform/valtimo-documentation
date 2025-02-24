@@ -297,7 +297,7 @@ can be found [here](https://docs.spring.io/spring-framework/docs/current/referen
 
 ## Breadcrumbs
 
-If the [feature toggle](/reference/feature-toggles.md) `enableFormFlowBreadCrumbs` is enabled, users will see a new
+If the [feature toggle](/reference/feature-toggles.md) `enableFormFlowBreadcrumbs` is enabled, users will see a new
 breadcrumb trail on top of every form flow. This allows a user to quickly navigate between the different steps of the
 form flow. 
 
