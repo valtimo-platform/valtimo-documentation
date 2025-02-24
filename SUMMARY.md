@@ -343,6 +343,8 @@
 * [Front-end customization](customizing-valtimo/front-end-customization/README.md)
   * [Customizing Carbon theme](customizing-valtimo/front-end-customization/customizing-carbon-theme.md)
   * [Custom logo](customizing-valtimo/front-end-customization/custom-logo.md)
+  * [Custom components](customizing-valtimo/front-end-customization/custom-components/README.md)
+    * [Custom case management tab](customizing-valtimo/front-end-customization/custom-components/custom-case-management-tab.md)
 
 ## Nog een plek geven
 
