@@ -1,59 +1,65 @@
 # Configuring Keycloak
 
-Keycloak is the default authentication provider for Valtimo. It is used to authenticate users, and Valtimo can 
-retrieve information about users and roles from Keycloak.
+Keycloak is the default authentication provider for Valtimo. It is used to authenticate users, and Valtimo can retrieve information about users and roles from Keycloak.
 
 ## Properties for connecting to Keycloak
 
-In order for Valtimo to connect to Keycloak, certain properties are necessary. There are two different location in
-which these properties can be placed.
+In order for Valtimo to connect to Keycloak, certain properties are necessary. There are two different location in which these properties can be placed.
 
 The properties can be placed in the `application.yml`:
 
 ```yaml
-keycloak:
-  realm: valtimo
-  auth-server-url: https://keycloak.example.com/auth
-  resource: valtimo-user-m2m-client
-  credentials:
-    secret: # It's recommended to store this property in an environment variable
+spring:
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          jwk-set-uri: https://keycloak.example.com/auth/realms/valtimo/protocol/openid-connect/certs
+      client:
+        provider:
+          keycloakapi:
+            issuer-uri: https://keycloak.example.com/auth/realms/valtimo
+        registration:
+          keycloakapi:
+            client-id: valtimo-user-m2m-client
+            client-secret: # Configured elsewhere
+            authorization-grant-type: authorization_code
+            scope: openid
 ```
 
 Or as an environment variable:
 
 ```properties
-KEYCLOAK_REALM=valtimo
-KEYCLOAK_AUTH-SERVER-URL=https://keycloak.example.com/auth
-KEYCLOAK_RESOURCE=valtimo-user-m2m-client
-KEYCLOAK_CREDENTIALS_SECRET=0000000-1111-2222-3333-444444444444
+SPRING_SECURITY_OAUTH2_RESOURCESERVER_JWT_JWK-SET-URI=https://keycloak.example.com/auth/realms/valtimo/protocol/openid-connect/certs
+SPRING_SECURITY_OAUTH2_CLIENT_PROVIDER_KEYCLOAKAPI_ISSURE-URI=https://keycloak.example.com/auth/realms/valtimo
+SPRING_SECURITY_OAUTH2_CLIENT_REGISTRATION_KEYCLOAKAPI_CLIENT-ID=valtimo-user-m2m-client
+SPRING_SECURITY_OAUTH2_CLIENT_REGISTRATION_KEYCLOAKAPI_CLIENT-SECRET=0000000-1111-2222-3333-444444444444
 ```
 
-More information about these properties and other optional properties can be
-found [here](https://www.keycloak.org/docs/latest/securing_apps/#_java_adapter_config).
+More information about these properties and other optional properties can be found [here](https://docs.spring.io/spring-security/reference/servlet/oauth2/login/core.html).
 
 ## Client roles
 
-By default, Valtimo uses Keycloak _realm_ roles. But Valtimo can be configured to also use the Keycloak _client_ roles.
-To make use of Keycloak client roles together with the realm roles, the following property is needed:
+By default, Valtimo uses Keycloak _realm_ roles. But Valtimo can be configured to also use the Keycloak _client_ roles. To make use of Keycloak client roles together with the realm roles, the following property is needed:
 
 ```yaml
 valtimo:
-  keycloak:
-    client: valtimo-console
+ spring:
+  security:
+    oauth2:
+      client:
+        provider:
+          keycloakjwt:
+            issuer-uri: https://keycloak.example.com/auth/realms/valtimo
+        registration:
+          keycloakjwt:
+            client-id: valtimo-console
 ```
 
 or
 
 ```properties
-VALTIMO_KEYCLOAK_CLIENT=valtimo-console
+SPRING_SECURITY_OAUTH2_CLIENT_PROVIDER_KEYCLOAKJWT_ISSURE-URI=https://keycloak.example.com/auth/realms/valtimo
+SPRING_SECURITY_OAUTH2_CLIENT_REGISTRATION_KEYCLOAKJWT_CLIENT-ID=valtimo-console
 ```
 
-## Keycloak token authentication
-
-When keycloak is used as authentication provider for Valtimo, the public key from Keycloak needs to be configured 
-in order to validate the JWT tokens. The public key can be provided by configuring the following environment 
-variable:
-
-```properties
-VALTIMO_OAUTH_PUBLIC_KEY=MIIBI/EXAMPLE//PUBLIC+KEY
-```
