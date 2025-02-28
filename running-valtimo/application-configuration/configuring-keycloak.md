@@ -31,7 +31,7 @@ Or as an environment variable:
 
 ```properties
 SPRING_SECURITY_OAUTH2_RESOURCESERVER_JWT_JWK-SET-URI=https://keycloak.example.com/auth/realms/valtimo/protocol/openid-connect/certs
-SPRING_SECURITY_OAUTH2_CLIENT_PROVIDER_KEYCLOAKAPI_ISSURE-URI=https://keycloak.example.com/auth/realms/valtimo
+SPRING_SECURITY_OAUTH2_CLIENT_PROVIDER_KEYCLOAKAPI_ISSUER-URI=https://keycloak.example.com/auth/realms/valtimo
 SPRING_SECURITY_OAUTH2_CLIENT_REGISTRATION_KEYCLOAKAPI_CLIENT-ID=valtimo-user-m2m-client
 SPRING_SECURITY_OAUTH2_CLIENT_REGISTRATION_KEYCLOAKAPI_CLIENT-SECRET=0000000-1111-2222-3333-444444444444
 ```
