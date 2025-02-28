@@ -59,7 +59,7 @@ valtimo:
 or
 
 ```properties
-SPRING_SECURITY_OAUTH2_CLIENT_PROVIDER_KEYCLOAKJWT_ISSURE-URI=https://keycloak.example.com/auth/realms/valtimo
+SPRING_SECURITY_OAUTH2_CLIENT_PROVIDER_KEYCLOAKJWT_ISSUER-URI=https://keycloak.example.com/auth/realms/valtimo
 SPRING_SECURITY_OAUTH2_CLIENT_REGISTRATION_KEYCLOAKJWT_CLIENT-ID=valtimo-console
 ```
 
