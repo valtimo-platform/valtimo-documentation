@@ -12,9 +12,9 @@ Mixing versions is not recommended. Valtimo is always tested according to the ma
 
 ## Major 12
 
-| Valtimo backend libraries | Valtimo frontend libraries | Java | Kotlin | Spring Boot | Node   | Camunda |
-| ------------------------- | -------------------------- | ---- | ------ | ----------- | ------ | ------- |
-| 12.0.0                    | 12.0.0                     | 17   | 1.9.21 | 3.1.7       | 18 LTS | 7.20.0  |
+| Valtimo backend libraries | Valtimo frontend libraries | Java | Kotlin | Spring Boot | Node   | Camunda | Angular                                                                        |
+| ------------------------- | -------------------------- | ---- | ------ | ----------- | ------ | ------- | ------------------------------------------------------------------------------ |
+| 12.0.0                    | 12.0.0                     | 17   | 1.9.21 | 3.1.7       | 18 LTS | 7.20.0  | 17 ([browser support](https://angular.dev/reference/versions#browser-support)) |
 
 ## Major 11
 
