@@ -50,3 +50,10 @@ In the frontend, feature toggles can be configured under the `featureToggles` ke
 *   **`allowUserThemeSwitching`**
 
     If enabled, a new dropdown will appear in user settings, where the user can switch between themes. This feature toggle is enabled by default.
+*   **`enablePbacDocumentenApiDocuments`**
+
+    If enabled, access to the list of uploaded documents now requires permissions. Additionally, the backend requires the following property to be set in `application.yml`:\
+    `valtimo.authorization.zgwDocuments.enabled`
+
+
+

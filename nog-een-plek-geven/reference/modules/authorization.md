@@ -4,7 +4,7 @@
 
 The access to the following resources is limited by Valtimo access control.
 
-<table><thead><tr><th>Resource name</th><th width="346">Resource type</th><th>Module</th></tr></thead><tbody><tr><td><a href="authorization.md#document"><strong>Document</strong></a></td><td><code>com.ritense.document.domain.impl.JsonSchemaDocument</code></td><td>Document</td></tr><tr><td><a href="authorization.md#document-definition"><strong>Document definition</strong></a></td><td><code>com.ritense.document.domain.impl.JsonSchemaDocumentDefinition</code></td><td>Document</td></tr><tr><td><a href="authorization.md#document-snapshot"><strong>Document snapshot</strong></a></td><td><code>com.ritense.document.domain.impl.snapshot.JsonSchemaDocumentSnapshot</code></td><td>Document</td></tr><tr><td><a href="authorization.md#search-field"><strong>Search field</strong></a></td><td><code>com.ritense.document.domain.impl.searchfield.SearchField</code></td><td>Document</td></tr><tr><td><a href="authorization.md#note"><strong>Note</strong></a></td><td><code>com.ritense.note.domain.Note</code></td><td>Notes</td></tr><tr><td><a href="authorization.md#execution"><strong>Execution</strong></a></td><td><code>com.ritense.valtimo.camunda.domain.CamundaExecution</code></td><td>Core</td></tr><tr><td><a href="authorization.md#process-definition"><strong>Process definition</strong></a></td><td><code>com.ritense.valtimo.camunda.domain.CamundaProcessDefinition</code></td><td>Core</td></tr><tr><td><a href="authorization.md#task"><strong>Task</strong></a></td><td><code>com.ritense.valtimo.camunda.domain.CamundaTask</code></td><td>Core</td></tr><tr><td><a href="authorization.md#task-identity-link"><strong>Task identity link</strong></a></td><td><code>com.ritense.valtimo.camunda.domain.CamundaIdentityLink</code></td><td>Core</td></tr><tr><td><a href="authorization.md#case-tab"><strong>Case tab</strong></a></td><td><code>com.ritense.case.domain.CaseTab</code></td><td>CaseTab</td></tr></tbody></table>
+<table><thead><tr><th>Resource name</th><th width="346">Resource type</th><th>Module</th></tr></thead><tbody><tr><td><a href="authorization.md#document"><strong>Document</strong></a></td><td><code>com.ritense.document.domain.impl.JsonSchemaDocument</code></td><td>Document</td></tr><tr><td><a href="authorization.md#document-definition"><strong>Document definition</strong></a></td><td><code>com.ritense.document.domain.impl.JsonSchemaDocumentDefinition</code></td><td>Document</td></tr><tr><td><a href="authorization.md#document-snapshot"><strong>Document snapshot</strong></a></td><td><code>com.ritense.document.domain.impl.snapshot.JsonSchemaDocumentSnapshot</code></td><td>Document</td></tr><tr><td><a href="authorization.md#search-field"><strong>Search field</strong></a></td><td><code>com.ritense.document.domain.impl.searchfield.SearchField</code></td><td>Document</td></tr><tr><td><a href="authorization.md#note"><strong>Note</strong></a></td><td><code>com.ritense.note.domain.Note</code></td><td>Notes</td></tr><tr><td><a href="authorization.md#execution"><strong>Execution</strong></a></td><td><code>com.ritense.valtimo.camunda.domain.CamundaExecution</code></td><td>Core</td></tr><tr><td><a href="authorization.md#process-definition"><strong>Process definition</strong></a></td><td><code>com.ritense.valtimo.camunda.domain.CamundaProcessDefinition</code></td><td>Core</td></tr><tr><td><a href="authorization.md#task"><strong>Task</strong></a></td><td><code>com.ritense.valtimo.camunda.domain.CamundaTask</code></td><td>Core</td></tr><tr><td><a href="authorization.md#task-identity-link"><strong>Task identity link</strong></a></td><td><code>com.ritense.valtimo.camunda.domain.CamundaIdentityLink</code></td><td>Core</td></tr><tr><td><a href="authorization.md#case-tab"><strong>Case tab</strong></a></td><td><code>com.ritense.case.domain.CaseTab</code></td><td>CaseTab</td></tr><tr><td><a href="../../../features/zgw/zgw-documents/"><strong>ZGW Documents</strong></a></td><td><code>com.ritense.resource.authorization.ResourcePermission</code></td><td>Resource</td></tr></tbody></table>
 
 ### Document
 
@@ -145,9 +145,31 @@ Resource type: `com.ritense.valtimo.camunda.domain.CamundaTask`
 | [**Document**](authorization.md#document)                     |
 | [**Task identity link**](authorization.md#task-identity-link) |
 
-### Task identity link
+### Task identity link <a href="#task-identity-link" id="task-identity-link"></a>
 
 Resource type: `com.ritense.valtimo.camunda.domain.CamundaIdentityLink`
+
+**Supported actions**
+
+No actions are supported for this type.
+
+### ZGW Document
+
+Resource type: `com.ritense.resource.authorization.ResourcePermission`
+
+#### Supported actions
+
+| Action        | key         | Description                                 |
+| ------------- | ----------- | ------------------------------------------- |
+| **View**      | `view`      | Allows downloading a document               |
+| **View list** | `view_list` | Allows viewing the list of documents        |
+| **Create**    | `create`    | Allows uploading a document                 |
+| **Modify**    | `modify`    | Allows modifying the metadata of a document |
+| **Delete**    | `delete`    | Allows deleting a document                  |
+
+#### Supported relations
+
+No relations are supported for this type.
 
 #### Supported actions
 
