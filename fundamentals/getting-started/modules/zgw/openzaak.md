@@ -1,20 +1,21 @@
 # OpenZaak
-> **_NOTE:_** This module has been deprecated.
+
+> _**NOTE:**_ This module has been deprecated.
 
 ## Dependencies
 
-In order to use OpenZaak, the OpenZaak module needs to be added as a dependency.
-The following can be added to your project, depending on whether Maven or Gradle is used:
+In order to use OpenZaak, the OpenZaak module needs to be added as a dependency. The following can be added to your project, depending on whether Maven or Gradle is used:
 
-> **_NOTE:_** The OpenZaak module has been deprecated.
-> 
+> _**NOTE:**_ The OpenZaak module has been deprecated.
+>
 > The OpenZaakPlugin can now be found in the [openzaak-plugin-authentication](openzaak-plugin-authentication.md) module.
 
 ### Backend
-The samples below assume the [valtimo-dependency-versions](../core/valtimo-dependency-versions.md) module is used.
-If not, please specify the artifact version as well.
+
+The samples below assume the [valtimo-dependency-versions](../core/valtimo-dependency-versions.md) module is used. If not, please specify the artifact version as well.
 
 #### Maven dependency:
+
 ```xml
 <dependencies>
     <dependency>
@@ -25,6 +26,7 @@ If not, please specify the artifact version as well.
 ```
 
 #### Gradle dependency:
+
 ```kotlin
 dependencies {
   implementation("com.ritense.valtimo:openzaak")
@@ -34,13 +36,15 @@ dependencies {
 ### Using plugins
 
 When a plugin is implemented in your project, the Openzaak module needs three additional dependencies:
-- DocumentenApiAuthentication 
-- ZakenApiAuthentication 
-- CatalogiApiAuthentication
+
+* DocumentenApiAuthentication
+* ZakenApiAuthentication
+* CatalogiApiAuthentication
 
 For this, the following needs to be added to your project:
 
 #### Maven dependency:
+
 ```xml
 <dependencies>
     <dependency>
@@ -59,6 +63,7 @@ For this, the following needs to be added to your project:
 ```
 
 #### Gradle dependency:
+
 ```kotlin
 dependencies {
   implementation("com.ritense.valtimo:documenten-api")
@@ -69,8 +74,7 @@ dependencies {
 
 ### Frontend
 
-A general instruction to add a front-end plugin to the implementation can be
-found [here](../core/plugin.md#adding-a-front-end-plugin-to-the-implementation).
+A general instruction to add a front-end plugin to the implementation can be found [here](../core/plugin.md#adding-a-front-end-plugin-to-the-implementation).
 
 In order to use the OpenZaak plugin in the frontend, the following can be added to your `app.module.ts`:
 

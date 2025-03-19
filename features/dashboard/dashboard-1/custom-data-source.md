@@ -1,5 +1,4 @@
-# Creating custom data sources
-
+# Custom data sources
 
 ## Back-end
 
@@ -7,8 +6,7 @@ The dependency `com.ritense.valtimo:dashboard` is required to develop a data sou
 
 ### Data source specification
 
-Data source specifications can be created using the `@WidgetDataSource` on a method in a Spring bean. Below is an
-example data source:
+Data source specifications can be created using the `@WidgetDataSource` on a method in a Spring bean. Below is an example data source:
 
 ```kotlin
 @Component
@@ -22,17 +20,14 @@ class RandomNumberWidgetDataSource {
 ```
 
 Please keep the following in mind:
-- The new data source should be registered as a Spring bean, for example with an `@Bean` or `@Component` annotation
-- The data source key (in this example `randomNumber`) must be unique and is used the identify the data source. The same key must also be
-used in the front end data source.
-- The function can be named anything.
+
+* The new data source should be registered as a Spring bean, for example with an `@Bean` or `@Component` annotation
+* The data source key (in this example `randomNumber`) must be unique and is used the identify the data source. The same key must also be used in the front end data source.
+* The function can be named anything.
 
 ### Data source properties
-If the datasource requires any configuration this will be passed in through the arguments of the function. All
-properties should be contained in a single object that is used as the argument for this function. The configuration from
-the front-end will be deserialized to this type, so the json structure should match that of the object. If no
-configuration is required the argument can be left out.
-Below is an example of a properties object that can be passed to the data source function.
+
+If the datasource requires any configuration this will be passed in through the arguments of the function. All properties should be contained in a single object that is used as the argument for this function. The configuration from the front-end will be deserialized to this type, so the json structure should match that of the object. If no configuration is required the argument can be left out. Below is an example of a properties object that can be passed to the data source function.
 
 ```kotlin
 data class RandomNumberDataSourceProperties(
@@ -43,10 +38,10 @@ data class RandomNumberDataSourceProperties(
 
 The function return value can be an object that contains anything. But ideally uses one of the following interfaces:
 
-- `HasLabel`
-- `HasNumberValue`
-- `HasNumberValues`
-- `HasTotal`
+* `HasLabel`
+* `HasNumberValue`
+* `HasNumberValues`
+* `HasTotal`
 
 For example:
 
@@ -58,15 +53,14 @@ data class RandomNumberResult(
 
 ## Front-end
 
-To develop a front-end for a data source, the library `@valtimo/dashboard` provides several interfaces which data source
-front-ends must conform to, in order to be used in an implementation.
+To develop a front-end for a data source, the library `@valtimo/dashboard` provides several interfaces which data source front-ends must conform to, in order to be used in an implementation.
 
 ### Data source specification
 
-First, a data source specification conforming to the `DataSourceSpecification` interface needs to be created. Below is an example
-specification with explanations for each property:
+First, a data source specification conforming to the `DataSourceSpecification` interface needs to be created. Below is an example specification with explanations for each property:
 
 #### **`sample-data-source.specification.ts`**
+
 ```typescript
 import {DataSourceSpecification} from '@valtimo/dashboard';
 import {SampleConfigurationComponent} from './components/sample-configuration/sample-configuration.component';
@@ -102,11 +96,10 @@ export {sampleDataSourceSpecification};
 
 ### Plugin configuration component
 
-As shown in the [data source specification section](#data-source-specification), data source configuration components
-need to conform to the interface `DataSourceConfigurationComponent`. Below the interface is shown, with a comment for
-each required property.
+As shown in the [data source specification section](custom-data-source.md#data-source-specification), data source configuration components need to conform to the interface `DataSourceConfigurationComponent`. Below the interface is shown, with a comment for each required property.
 
 #### **`configuration.model.ts`**
+
 ```typescript
 ...
 
@@ -154,10 +147,10 @@ interface DataSourceConfigurationComponent extends ConfigurationComponent {
 
 ### Typing data source configuration data
 
-As mentioned, the data source configuration component accepts prefill data.
-It is advised to further specify what  data the data source requires. For the sample data source, this would be:
+As mentioned, the data source configuration component accepts prefill data. It is advised to further specify what data the data source requires. For the sample data source, this would be:
 
 #### **`sample.model.ts`**
+
 ```typescript
 interface SampleDataSourceConfig {
     documentDefinition: string;
@@ -168,11 +161,10 @@ export {SampleDataSourceConfig};
 
 ### Implementing the data source configuration component
 
-How a configuration component for the sample data source can be implemented is shown below.
-The way this is implemented can differ, as long as the interfaces are conformed to.
-Below is sample code of implementing the component using Carbon components and [reactive forms](https://angular.io/guide/reactive-forms).
+How a configuration component for the sample data source can be implemented is shown below. The way this is implemented can differ, as long as the interfaces are conformed to. Below is sample code of implementing the component using Carbon components and [reactive forms](https://angular.io/guide/reactive-forms).
 
 #### **`sample-data-source-configuration.component.ts`**
+
 ```typescript
 ...
 import {SampleDataSourceConfig} from '../models';
@@ -252,6 +244,7 @@ export class SampleDataSourceConfigurationComponent
 The corresponding template file looks like this:
 
 #### **`sample-data-source-configuration.component.html`**
+
 ```angular2html
 <form [formGroup]="form">
     <cds-label
@@ -268,16 +261,14 @@ The corresponding template file looks like this:
 
 ### Translation
 
-Please refer to [this page](widget-translations.md) on how to implement translations from your specification in
-template or component code.
+Please refer to [this page](widget-translations.md) on how to implement translations from your specification in template or component code.
 
 ### Data source module
 
-Finally, having defined a specification and configuration component, we can construct a module. Keep to the below
-guidelines in constructing your module. When you finally import this module into the `AppModule` of your implementation,
-the data source configuration component should be available in the relevant configuration menus in your front-end.
+Finally, having defined a specification and configuration component, we can construct a module. Keep to the below guidelines in constructing your module. When you finally import this module into the `AppModule` of your implementation, the data source configuration component should be available in the relevant configuration menus in your front-end.
 
 #### **`sample-data-source.module.ts`**
+
 ```typescript
 ...
 import {DATA_SOURCE_TOKEN} from '@valtimo/dashboard';

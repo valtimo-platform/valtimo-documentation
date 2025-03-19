@@ -2,15 +2,14 @@
 
 ## Dependencies
 
-In order to create an implementation using the GZAC edition, the Valtimo GZAC dependencies module can be added as a
-dependency. This includes the most common modules that are used by Valtimo GZAC implementations, including the [Valtimo
-dependencies](../core/valtimo-dependencies.md). The following can be added to your project, depending on whether Maven or Gradle is used:
+In order to create an implementation using the GZAC edition, the Valtimo GZAC dependencies module can be added as a dependency. This includes the most common modules that are used by Valtimo GZAC implementations, including the [Valtimo dependencies](../core/valtimo-dependencies.md). The following can be added to your project, depending on whether Maven or Gradle is used:
 
 ### Backend
-The samples below assume the [valtimo-dependency-versions](../core/valtimo-dependency-versions.md) module is used. 
-If not, please specify the artifact version as well.
+
+The samples below assume the [valtimo-dependency-versions](../core/valtimo-dependency-versions.md) module is used. If not, please specify the artifact version as well.
 
 #### Maven dependency:
+
 ```xml
 <dependencies>
     <dependency>
@@ -22,6 +21,7 @@ If not, please specify the artifact version as well.
 ```
 
 #### Gradle dependency:
+
 ```kotlin
 dependencies {
   implementation("com.ritense.valtimo:valtimo-gzac-dependencies")
@@ -31,6 +31,7 @@ dependencies {
 ### Dependencies
 
 The following modules are added when a dependency on Valtimo GZAC dependencies is added:
+
 * [Valtimo dependencies](../core/valtimo-dependencies.md)
 * [Besluiten API](besluiten-api.md)
 * [Catalogi API](catalogi-api.md)

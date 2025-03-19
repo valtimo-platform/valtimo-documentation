@@ -1,4 +1,6 @@
-# Access control
+# Notes
+
+## Access control
 
 Access to the case notes can be configured through access control. More information about access control can be found [here](https://docs.valtimo.nl/features/access-control).
 
@@ -8,28 +10,38 @@ Access to the case notes can be configured through access control. More informat
 
 ### Examples
 
-#### Permission to view all notes
+<details>
 
-<pre class="language-json"><code class="lang-json">{
+<summary>Permission to view all notes</summary>
+
+<pre class="language-json" data-overflow="wrap"><code class="lang-json">{
 <strong>    "resourceType": "com.ritense.note.domain.Note",
 </strong>    "action": "view_list",
     "conditions": []
 }
 </code></pre>
 
-#### Permission to delete notes created by the logged-in user
+</details>
 
+<details>
+
+<summary>Permission to delete notes created by the logged-in user</summary>
+
+{% code overflow="wrap" %}
 ```json
 {
-   "resourceType":"com.ritense.note.domain.Note",
-   "action":"delete",
-   "conditions":[
+   "resourceType": "com.ritense.note.domain.Note",
+   "action": "delete",
+   "conditions": [
       {
-         "type":"field",
-         "field":"createdByUserId",
-         "operator":"==",
-         "value":"${currentUserIdentifier}"
+         "type": "field",
+         "field": "createdByUserId",
+         "operator": "==",
+         "value": "${currentUserIdentifier}"
       }
    ]
 }
 ```
+{% endcode %}
+
+</details>

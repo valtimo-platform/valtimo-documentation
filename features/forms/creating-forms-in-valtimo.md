@@ -4,11 +4,13 @@ In Valtimo, forms can be prefilled with data from a case or from other external 
 
 ## Value resolvers
 
-Available since 11.0.0
+{% hint style="success" %}
+Available since Valtimo `11.0.0`
+{% endhint %}
 
 Value resolvers can be used to prefill a form with external data by adding the custom property `sourceKey`:
 
-![Configuring the sourceKey property in a form](../../using-valtimo/forms/img/custom\_source\_key\_property.png)
+![Configuring the sourceKey property in a form](../../using-valtimo/forms/img/custom_source_key_property.png)
 
 The following prefixes are supported by default:
 
@@ -17,7 +19,7 @@ The following prefixes are supported by default:
 
 Available since 11.1.0 Value resolvers can also be used to handle submitted form values using the custom property `targetKey`. If the custom property `targetKey` is added, it will store submitted values to the reference provided in the `targetKey`:
 
-![Configuring the targetKey property in a form](../../using-valtimo/forms/img/custom\_target\_key\_property.png)
+![Configuring the targetKey property in a form](../../using-valtimo/forms/img/custom_target_key_property.png)
 
 If a `sourceKey` is provided, it will store submitted values using the reference provided in the `sourceKey`. Unless there is a `targetKey` provided. Then the `targetKey` takes priority.
 
@@ -58,7 +60,7 @@ Document definition:
 
 Field configuration:
 
-![Configuring the property in a form](../../using-valtimo/forms/img/simple\_key\_field.png)
+![Configuring the property in a form](../../using-valtimo/forms/img/simple_key_field.png)
 
 It is also possible to load properties from an object within the document. In the example below the document definition contains an object 'person', that has a 'firstName' property. This property can be accessed by using `person.firstName` as the field property name.
 
@@ -86,7 +88,7 @@ Document definition:
 
 Field configuration:
 
-![Configuring the property in a form](../../using-valtimo/forms/img/nested\_key\_field.png)
+![Configuring the property in a form](../../using-valtimo/forms/img/nested_key_field.png)
 
 ## External data
 
@@ -232,4 +234,6 @@ Where form.io definition is using the following translation properties:
 }
 ```
 
-Which results in: ![Configuring the property in a form](../../using-valtimo/forms/img/form\_io\_translations.png)
+Which results in:&#x20;
+
+<figure><img src="../../using-valtimo/forms/img/form_io_translations.png" alt=""><figcaption></figcaption></figure>

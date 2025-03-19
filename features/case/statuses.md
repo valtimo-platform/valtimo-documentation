@@ -8,13 +8,13 @@ This setting is particularly effective in environments that integrate case and p
 
 {% tabs %}
 {% tab title="Via UI" %}
+### Adding a status
+
 * Go to the `Admin` menu
 * Go to the `Cases` menu and select the case to configure statuses for
 * Select the `Statuses` tab
 
 <figure><img src="../../.gitbook/assets/image (28) (1).png" alt=""><figcaption></figcaption></figure>
-
-### Adding a status
 
 A status can be added with the **Add status** button. A modal will be shown with the configuration options.
 
@@ -131,5 +131,4 @@ This is what the search dropdown looks like when this is set. By enabling _Compl
 
 ## Import and export
 
-Case status configuration is included in the Case definition export and import by default.\
-The export structure and format of the case statuses is exactly the same as described in [configuring statuses via IDE](statuses.md#via-ide).\
+Case status configuration is included in the Case definition export and import by default. The export structure and format of the case statuses is exactly the same as described in [configuring statuses via IDE](statuses.md#via-ide).

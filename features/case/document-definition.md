@@ -28,7 +28,7 @@ Best practices:
 
 {% tabs %}
 {% tab title="Via UI" %}
-#### Upload a valid JSON schema
+### Upload a valid JSON schema
 
 * Go to the `Admin` menu
 * Go to the `Cases` menu
@@ -37,30 +37,30 @@ Best practices:
 
 It's possible to upload valid JSON schemas to create new cases since Valtimo 5. During the upload the JSON schema structure is validated and the uniqueness of the case ID is checked. If no validation errors occur, the JSON schema is uploaded and the case definition is created.
 
-In Valtimo 12 the case configuration upload has been improved by adding all the newly available case configurations to the upload functionality. More detailed information on this functionality can be found [here](../#exporting-and-importing-case-definitions).
+In Valtimo 12 the case configuration upload has been improved by adding all the newly available case configurations to the upload functionality. More detailed information on this functionality can be found [here](./#exporting-and-importing-case-definitions).
 
-![Uploading a document definition](../../../using-valtimo/document/img/upload-document-definition.png)
+![Uploading a document definition](../../using-valtimo/document/img/upload-document-definition.png)
 
-#### Create an empty case
+### Create an empty case
 
 {% hint style="success" %}
-Available since Valtimo 12
+Available since Valtimo `12`
 {% endhint %}
 
 * Go to the `Admin` menu
 * Go to the `Cases` menu
-* Click on C**reate**
+* Click on **Create**
 * Enter the title, and optionally edit the name
 * Click on **Save**, this takes you to the document definition overview
 
-![Creating a document definition](../../../using-valtimo/document/img/create-document-definition.png)
+![Creating a document definition](../../using-valtimo/document/img/create-document-definition.png)
 
 The chosen title will be validated and based upon the title a read-only case definition name will be generated. This is to create a unique identifier for that case definition without spaces or special characters. Click the **Save** button to create the case with the chosen title.\
 \
 The case definition is created and the case details page is displayed upon completion.\
 A valid empty JSON schema is created with the title and id based on the given title.
 
-<figure><img src="../../../.gitbook/assets/image (11) (1).png" alt=""><figcaption><p>Newly created example case</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (11) (1).png" alt=""><figcaption><p>Newly created example case</p></figcaption></figure>
 
 {% hint style="info" %}
 <mark style="color:blue;">**Please note**</mark>
@@ -74,7 +74,7 @@ When uploading a JSON schema to create a new case, make sure that the `$id` and 
 {% endtab %}
 
 {% tab title="Via IDE" %}
-#### Place a valid JSON schema in the codebase
+### Place a valid JSON schema in the codebase
 
 To create a document definition, the following steps are necessary:
 
@@ -139,12 +139,12 @@ Same as for creating cases there are three ways of editing document definitions.
 
 {% tabs %}
 {% tab title="Via UI" %}
-#### Upload a valid JSON schema with the same ID
+### Upload a valid JSON schema with the same ID
 
 * Go to the `Admin` menu
 * Go to the `Cases` menu
 
-<figure><img src="../../../.gitbook/assets/image (12) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (12) (1).png" alt=""><figcaption></figcaption></figure>
 
 Click on the **Upload** button to open the **Import case definition** modal\*[^1]. This modal contains a wizard that will guide users through the import process. The following steps are defined in this wizard.
 
@@ -154,7 +154,7 @@ Click on the **Upload** button to open the **Import case definition** modal\*[^1
 3. Start the upload\
    The file will be validated and if it passes all checks the document definition is updated.
 
-#### Edit the document definition
+### Edit the document definition
 
 * Go to the `Admin` menu
 * Go to the `Cases` menu
@@ -163,7 +163,7 @@ Click on the **Upload** button to open the **Import case definition** modal\*[^1
 * Edit the document definition as per the JSON schema standard
 * Click on **Save**
 
-<figure><img src="../../../.gitbook/assets/image (17) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (17) (1).png" alt=""><figcaption></figcaption></figure>
 
 Visually nothing happens when switching to edit mode. Only the Download and Edit buttons are replaced by a **Cancel** and a **Save** button. The **Save** button is disabled by default until valid changes are made.
 
@@ -171,16 +171,15 @@ Visually nothing happens when switching to edit mode. Only the Download and Edit
 
 In edit mode, the UI editor will constantly validate the JSON file structure. The **Save** button is only available when the JSON structure is valid. Errors in the file structure will be indicated with a red curly line below or near the issue. In large files, errors can easily be found with the minimised tree view on the right side of the editor.&#x20;
 
-<figure><img src="../../../.gitbook/assets/image (18) (1).png" alt=""><figcaption><p>JSON structure validation in edit mode</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (18) (1).png" alt=""><figcaption><p>JSON structure validation in edit mode</p></figcaption></figure>
 {% endtab %}
 
 {% tab title="Via IDE" %}
-#### Edit the document definition in the codebase
+### Edit the document definition in the codebase
 
 Open the document definition in the IDE and edit the definition as per the JSON schema standard. More information on JSON schema can be found [here](https://json-schema.org/).\
 \
-The location of the document definitions in the Valtimo Java/Kotlin backend:\
-&#xNAN;**/src/main/resources/config/document/definition**\
+The location of the document definitions in the Valtimo Java/Kotlin backend: `/src/main/resources/config/document/definition`\
 \
 Changes will only be available in the application once the changes have been deployed via the CI/CD pipeline.
 {% endtab %}
@@ -191,5 +190,74 @@ Changes will only be available in the application once the changes have been dep
 
 Changes to document definitions **have immediate effect on newly created cases** based on this document definition. Changing this file means changing the blueprint that is used to validate each case that is created in Valtimo based on this blueprint. Changes will have impact, so create backups when unsure of the result.
 {% endhint %}
+
+## Access control
+
+Access to document definitions can be configured through access control. More information about access control can be found [here](https://docs.valtimo.nl/features/access-control).
+
+### Resources and actions
+
+<table><thead><tr><th width="357">Resource type</th><th width="111">Action</th><th>Effect</th></tr></thead><tbody><tr><td><code>com.ritense.document.domain.impl.JsonSchemaDocument</code></td><td><code>assign</code></td><td>Allows assigning users to a case document.</td></tr><tr><td></td><td><code>assignable</code></td><td>Allows users to be assigned to a case document.</td></tr><tr><td></td><td><code>create</code></td><td>Allows creating of a case document.</td></tr><tr><td></td><td><code>claim</code></td><td>Allows claiming of a case document.</td></tr><tr><td></td><td><code>delete</code></td><td>Allows deleting of a case document.</td></tr><tr><td></td><td><code>modify</code></td><td>Allows modifying of a case document.</td></tr><tr><td></td><td><code>view</code></td><td>Allows viewing of a case document.</td></tr><tr><td></td><td><code>view_list</code></td><td>Allows viewing of case documents.</td></tr><tr><td><code>com.ritense.document.domain.impl.JsonSchemaDocumentDefinition</code></td><td><code>create</code></td><td>Allows creating of a case document definition.</td></tr><tr><td></td><td><code>delete</code></td><td>Allows deleting of a case document definition.</td></tr><tr><td></td><td><code>modify</code></td><td>Allows modifying of a case document definition.</td></tr><tr><td></td><td><code>view</code></td><td>Allows viewing of a case document definition.</td></tr><tr><td></td><td><code>view_list</code></td><td>Allows viewing of case document definitions.</td></tr></tbody></table>
+
+### Examples
+
+<details>
+
+<summary>Permission to view access to all case document definitions</summary>
+
+<pre class="language-json" data-overflow="wrap" data-full-width="false"><code class="lang-json">{
+<strong>    "resourceType": "com.ritense.document.domain.impl.JsonSchemaDocumentDefinition",
+</strong>    "action": "view",
+    "conditions": []
+}
+</code></pre>
+
+</details>
+
+<details>
+
+<summary>Permission to view access to all documents of one case document definition</summary>
+
+{% code overflow="wrap" %}
+```json
+{
+   "resourceType": "com.ritense.document.domain.impl.JsonSchemaDocument",
+   "action": "view",
+   "conditions": [
+      {
+         "type": "field",
+         "field": "documentDefinitionId.name",
+         "operator": "==",
+         "value": "evenementenvergunning"
+      }
+   ]
+}
+```
+{% endcode %}
+
+</details>
+
+<details>
+
+<summary>Permission to view access to one specific document definition</summary>
+
+{% code overflow="wrap" %}
+```json
+{ 
+   "resourceType": "com.ritense.document.domain.impl.JsonSchemaDocumentDefinition",
+   "action": "view",
+   "conditions": [
+      {
+         "type": "field",
+         "field": "id.name",
+         "operator": "==",
+         "value": "evenementenvergunning"
+      }
+   ]
+}
+```
+{% endcode %}
+
+</details>
 
 [^1]: Modal: _A web page element that displays in front of and deactivates all other page content._

@@ -1,36 +1,29 @@
-# Registering a resource
+# Creating a resource
 
-Access control can be exercised over resources that have been registered. Valtimo registers a few resources out of 
-the box. These are:
-- `com.ritense.document.domain.impl.JsonSchemaDocument`
-- `com.ritense.document.domain.impl.JsonSchemaDocumentDefinition`
-- `com.ritense.document.domain.impl.snapshot.JsonSchemaDocumentSnapshot`
-- `com.ritense.document.domain.impl.searchfield.SearchField`
-- `com.ritense.note.domain.Note`
-- `com.ritense.valtimo.camunda.domain.CamundaTask`
-- `com.ritense.valtimo.camunda.domain.CamundaIdentityLink`
-- `com.ritense.case.domain.CaseTab`
+Access control can be exercised over resources that have been registered. Valtimo registers a few resources out of the box. These are:
 
-The authorization module allows developers to register their own resources, which allows said resources to be used when
-configuring permissions.
+* `com.ritense.document.domain.impl.JsonSchemaDocument`
+* `com.ritense.document.domain.impl.JsonSchemaDocumentDefinition`
+* `com.ritense.document.domain.impl.snapshot.JsonSchemaDocumentSnapshot`
+* `com.ritense.document.domain.impl.searchfield.SearchField`
+* `com.ritense.note.domain.Note`
+* `com.ritense.valtimo.camunda.domain.CamundaTask`
+* `com.ritense.valtimo.camunda.domain.CamundaIdentityLink`
+* `com.ritense.case.domain.CaseTab`
+
+The authorization module allows developers to register their own resources, which allows said resources to be used when configuring permissions.
 
 ## Registering a resource
 
-In order to register a resource for use in access control, there are two interfaces that should be implemented; the
-`AuthorizationSpecification`, and the `AuthorizationSpecificationFactory`.
+In order to register a resource for use in access control, there are two interfaces that should be implemented; the `AuthorizationSpecification`, and the `AuthorizationSpecificationFactory`.
 
 ### Specification
-The `AuthorizationSpecification` is an abstract class built upon the Spring `Specification` interface. Generally, only
-two methods have to be overridden. The `toPredicate` method creates predicates that are used to enhance queries. For
-example, when a user looks at a list of documents, only the documents this user has access to will be shown.
 
-Secondly, the `identifierToEntity` method is used to go from an identifier to the actual entity. This is used when
-checking permissions for an entity directly, e.g. when checking if a user has a specific permission via the 
-`userHasPermission` endpoint.
+The `AuthorizationSpecification` is an abstract class built upon the Spring `Specification` interface. Generally, only two methods have to be overridden. The `toPredicate` method creates predicates that are used to enhance queries. For example, when a user looks at a list of documents, only the documents this user has access to will be shown.
 
-In the example below, the `Audit` resource will be registered for access control. The class extending 
-`AuthorizationSpecification` has to apply to this resource in order for the Authorization module to see it as a
-registered resource.
+Secondly, the `identifierToEntity` method is used to go from an identifier to the actual entity. This is used when checking permissions for an entity directly, e.g. when checking if a user has a specific permission via the `userHasPermission` endpoint.
+
+In the example below, the `Audit` resource will be registered for access control. The class extending `AuthorizationSpecification` has to apply to this resource in order for the Authorization module to see it as a registered resource.
 
 ```kotlin
 class AuditSpecification(
@@ -77,15 +70,9 @@ class AuditSpecification(
 
 ### Specification Factory
 
-In order to determine which specification should be used for which resource, a class
-that implements the `AuthorizationSpecificationFactory` interface should be created. The methods that should be
-implemented are the `create` and `canCreate` methods. As the name implies, the first method creates the 
-`AuthorizationSpecification` for the resource, and the second method is determined to see if the requested resource
-matches the resource this factory is intended to apply to.
+In order to determine which specification should be used for which resource, a class that implements the `AuthorizationSpecificationFactory` interface should be created. The methods that should be implemented are the `create` and `canCreate` methods. As the name implies, the first method creates the `AuthorizationSpecification` for the resource, and the second method is determined to see if the requested resource matches the resource this factory is intended to apply to.
 
-In the example below, the `Audit` resource will be registered for access control. The  class extending
-`AuthorizationSpecificationFactory` has to apply to this resource in order for the Authorization module to see it as a
-registered resource.
+In the example below, the `Audit` resource will be registered for access control. The class extending `AuthorizationSpecificationFactory` has to apply to this resource in order for the Authorization module to see it as a registered resource.
 
 ```kotlin
 class AuditSpecificationFactory(

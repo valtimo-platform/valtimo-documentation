@@ -20,7 +20,3 @@ For the Form.io forms to be properly displayed in both normal and high contrast 
 color: var(--cds-text-primary)
 ```
 {% endhint %}
-
-
-
-####

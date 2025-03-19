@@ -1,15 +1,15 @@
-# Backend libraries 10.0.0
+# Valtimo backend libraries
 
 ## New Features
 
 The following features were added:
 
-* **Dependency upgrades**
+*   **Dependency upgrades**
 
-  The following libraries were upgraded to new versions:
+    The following libraries were upgraded to new versions:
 
 | Dependency              | New version | Old version |
-|:------------------------|:------------|:------------|
+| ----------------------- | ----------- | ----------- |
 | Camunda                 | 7.18        | 7.14        |
 | Camunda Mockito         | 6.18.0      | 6.17.0      |
 | Camunda Platform Assert | 15.0.0      | 1.2         |
@@ -39,12 +39,9 @@ The following features were added:
 | ClassGraph              | 4.8.151     | 4.8.147     |
 | Guava                   | 31.1-jre    | 28.2-jre    |
 
+*   **Support for MySQL 8**
 
-* **Support for MySQL 8**
-
-  Official support for MySQL 8 has been added. If your database server is running on MySQL 5.7, it is recommended to
-  upgrade to MySQL 8. See [here](https://dev.mysql.com/doc/refman/8.0/en/upgrading.html) for instructions on how to
-  upgrade a MySQL installation.
+    Official support for MySQL 8 has been added. If your database server is running on MySQL 5.7, it is recommended to upgrade to MySQL 8. See [here](https://dev.mysql.com/doc/refman/8.0/en/upgrading.html) for instructions on how to upgrade a MySQL installation.
 
 ## Bugfixes
 
@@ -54,33 +51,24 @@ No bugfixes.
 
 The following breaking changes were introduced:
 
-* **Java 17**
+*   **Java 17**
 
-  Valtimo is now compiled on Java 17 and needs to run in a Java 17 environment.
+    Valtimo is now compiled on Java 17 and needs to run in a Java 17 environment.
+*   **View configurator module**
 
-* **View configurator module**
+    The view configurator module that was used by the old AngularJS front-end has been removed.
+*   **Process data object relation**
 
-  The view configurator module that was used by the old AngularJS front-end has been removed.
+    Process data object relations were a way to link a stored object to a running process. When document definitions were introduced, this functionality was made obsolete. Process data object relations have now been removed.
+*   **REST API versioning**
 
-* **Process data object relation**
+    Every REST endpoint exposed by Valtimo now contains a version, e.g. `/api/document` becomes `/api/v1/document`. This makes it easier to support multiple versions in the future in case of breaking changes in the REST API, without waiting for a new major version of Valtimo.
+*   **Removed deprecated code**
 
-  Process data object relations were a way to link a stored object to a running process. When document definitions were
-  introduced, this functionality was made obsolete. Process data object relations have now been removed.
+    A number of deprecated methods and classes have been removed, and as a result some implementations need to make minor changes.
+*   **Removed JWT configuration properties**
 
-* **REST API versioning**
-
-  Every REST endpoint exposed by Valtimo now contains a version, e.g. `/api/document` becomes `/api/v1/document`.
-  This makes it easier to support multiple versions in the future in case of breaking changes in the REST API, without
-  waiting for a new major version of Valtimo.
-
-* **Removed deprecated code**
-
-  A number of deprecated methods and classes have been removed, and as a result some implementations need to make minor
-  changes. 
-
-* **Removed JWT configuration properties**
-
-  The properties `valtimo.jwt.base64encoding` and  `valtimo.jwt.tokenValidityInSecondsForRememberMe` have been removed as they were used in a module that is no longer supported.
+    The properties `valtimo.jwt.base64encoding` and `valtimo.jwt.tokenValidityInSecondsForRememberMe` have been removed as they were used in a module that is no longer supported.
 
 Instructions on how to migrate to this version of Valtimo can be found [here](migration.md).
 

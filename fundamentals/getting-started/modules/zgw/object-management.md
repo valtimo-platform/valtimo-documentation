@@ -7,8 +7,8 @@ Object management makes it possible to manage Objecten API objects inside Valtim
 In order to use Object management, the Object management module needs to be added as a dependency.
 
 ### Backend
-The samples below assume the [valtimo-dependency-versions](../core/valtimo-dependency-versions.md) module is used.
-If not, please specify the artifact version as well.
+
+The samples below assume the [valtimo-dependency-versions](../core/valtimo-dependency-versions.md) module is used. If not, please specify the artifact version as well.
 
 #### Maven dependency:
 
@@ -37,12 +37,11 @@ Two packages are required to make use of Object management.
 
 The object-management package makes it possible to manage objecttypen from the Objecttypen API directly in Valtimo:
 
-```@valtimo/object-management```
+`@valtimo/object-management`
 
-The object package makes it possible to view, create, update and delete objects from the Objecten API directly in
-Valtimo:
+The object package makes it possible to view, create, update and delete objects from the Objecten API directly in Valtimo:
 
-```@valtimo/object```.
+`@valtimo/object`.
 
 Both dependencies contain a module that has to be added to the `app.module.ts`:
 
@@ -56,10 +55,9 @@ imports: [
 
 #### Menu items
 
-Object management is disabled by default. After including the packages, the menu items are not yet visible. Some
-additional steps are required.
+Object management is disabled by default. After including the packages, the menu items are not yet visible. Some additional steps are required.
 
-##### Enable the feature toggle
+**Enable the feature toggle**
 
 ```json
 {
@@ -69,7 +67,7 @@ additional steps are required.
 }
 ```
 
-##### Include object-management to the Valtimo menu
+**Include object-management to the Valtimo menu**
 
 The object routing needs to be added to the menu in the environment file:
 
@@ -85,7 +83,7 @@ The object routing needs to be added to the menu in the environment file:
 }
 ```
 
-##### Include objects to the Valtimo menu
+**Include objects to the Valtimo menu**
 
 The object-management routing needs to be added to the menu in the environment file:
 
@@ -108,5 +106,3 @@ The object-management routing needs to be added to the menu in the environment f
   ]
 }
 ```
-
-

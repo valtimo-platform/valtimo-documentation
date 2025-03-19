@@ -46,7 +46,6 @@ Conditions can also be nested by using a container. This allows you to join anot
 
 ## When is access control applied?
 
-Access control is always applied by default. This means that when a user requests a resource, the access control layer will check if the user has the required permissions to access the resource.\
-To prevent certain actions from being checked by the access control layer, this needs to be explicitly configured. Tasks and listeners executed by BPMN models are not considered being accessed by a user, and therefore do not have access control applied to them.
+Access control is always applied by default. This means that when a user requests a resource, the access control layer will check if the user has the required permissions to access the resource. To prevent certain actions from being checked by the access control layer, this needs to be explicitly configured. Tasks and listeners executed by BPMN models are not considered being accessed by a user, and therefore do not have access control applied to them.
 
 The exception is user tasks. Since a user completes these tasks, access control is applied to them to verify the user is allowed to complete the task.

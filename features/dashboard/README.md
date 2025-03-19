@@ -44,17 +44,17 @@ When creating a dashboard, two fields need to be filled in:
 {% tab title="Via IDE" %}
 Dashboards can be auto-deployed from a json file at startup. This is useful to keep the dashboard configuration identical across multiple environments. Dashboards are auto-deployed by scanning files on the classpath that end in `.dashboard.json`.
 
-### Changesets
+#### Changesets
 
 Every deployment file for represents a changeset. These files are required to contain a changesetId that should be unique over all deployment files that use changesets. When starting up, changesets that have already been executed will be ignored. A checksum of the changeset is created when it is executed. Changesets that have already been deployed should not change. Changesets that have been changed since a previous time will result in an error and failure to start the application.
 
 All changesets can be executed again, even when the content has changed, by setting the `valtimo.changelog.dashboard.clear-tables` property to `true`.
 
-### Example
+#### Example
 
 You can find an example of the JSON below.
 
-In this example a widget is created with display type `number` and data source `case-count`. Different display types and data sources can be used to customize the layout of the dashboard. The types that are available can be found on the [reference page](dashboard.md).
+In this example a widget is created with display type `number` and data source `case-count`. Different [display types](widget-display-types.md) and [data sources](dashboard.md) can be used to customize the layout of the dashboard.&#x20;
 
 ```json
 {
@@ -114,3 +114,70 @@ After creating a dashboard, widgets can be added to the dashboard.
 ![admin-widget-configuration.png](../../using-valtimo/dashboard/img/admin-widget-configuration.png) ![add-new-widget.png](../../using-valtimo/dashboard/img/add-new-widget.png)
 {% endtab %}
 {% endtabs %}
+
+## Access control
+
+Access to dashboards can be configured through access control. More information about access control can be found [here](https://docs.valtimo.nl/features/access-control).
+
+### Resources and actions
+
+<table><thead><tr><th width="357">Resource type</th><th width="111">Action</th><th>Effect</th></tr></thead><tbody><tr><td><code>com.ritense.dashboard.domain.Dashboard</code></td><td><code>view</code></td><td>Allows viewing the data of one dashboard.</td></tr><tr><td></td><td><code>view_list</code></td><td>Allows viewing the dashboard tabs.</td></tr></tbody></table>
+
+### Examples
+
+<details>
+
+<summary>Permission to view all dashboards and data</summary>
+
+<pre class="language-json" data-overflow="wrap"><code class="lang-json">[
+    {
+<strong>        "resourceType": "com.ritense.dashboard.domain.Dashboard",
+</strong>        "action": "view",
+        "conditions": []
+    },
+    {
+        "resourceType": "com.ritense.dashboard.domain.Dashboard",
+        "action": "view_list",
+        "conditions": []
+    }
+]
+</code></pre>
+
+</details>
+
+<details>
+
+<summary>Permission to view the data of one specific dashboard</summary>
+
+{% code overflow="wrap" %}
+```json
+[
+   {
+      "resourceType": "com.ritense.dashboard.domain.Dashboard",
+      "action": "view",
+      "conditions": [
+         {
+            "type": "field",
+            "field": "key",
+            "operator": "==",
+            "value": "management-dashboard"
+         }
+      ]
+   },
+   {
+      "resourceType": "com.ritense.dashboard.domain.Dashboard",
+      "action": "view_list",
+      "conditions": [
+         {
+            "type": "field",
+            "field": "key",
+            "operator": "==",
+            "value": "management-dashboard"
+         }
+      ]
+   }
+]
+```
+{% endcode %}
+
+</details>

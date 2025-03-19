@@ -111,7 +111,7 @@ To unassign, the endpoint `POST /api/document/{documentId}/unassign` can be used
 ## Automatic task assignment
 
 {% hint style="success" %}
-Available since Valtimo 10.7.0
+Available since Valtimo `10.7.0`
 {% endhint %}
 
 It is possible to have user tasks be automatically assigned to a case assignee making the tasks in a case appear under the case assignee's task list.

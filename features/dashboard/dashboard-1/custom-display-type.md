@@ -1,16 +1,15 @@
-# Creating custom display types
+# Custom display types
 
 ## Front-end
 
-To develop a front-end for a display type, the library `@valtimo/dashboard` provides several interfaces which display
-type front-ends must conform to, in order to be used in an implementation.
+To develop a front-end for a display type, the library `@valtimo/dashboard` provides several interfaces which display type front-ends must conform to, in order to be used in an implementation.
 
 ### Display type specification
 
-First, a display type specification conforming to the `DisplayTypeSpecification` interface needs to be created. Below is
-an example specification with explanations for each property:
+First, a display type specification conforming to the `DisplayTypeSpecification` interface needs to be created. Below is an example specification with explanations for each property:
 
 #### **`sample-display-type.specification.ts`**
+
 ```typescript
 import {DisplayTypeSpecification} from '@valtimo/dashboard';
 import {SampleConfigurationComponent} from './components/sample-configuration/sample-configuration.component';
@@ -58,11 +57,10 @@ export {sampleDisplayTypeSpecification};
 
 ### Display type configuration component
 
-As shown in the [display type specification section](#display-type-specification), display type configuration components
-need to conform to the interface `DisplayTypeConfigurationComponent`. Below the interface is shown, with a comment for
-each required property.
+As shown in the [display type specification section](custom-display-type.md#display-type-specification), display type configuration components need to conform to the interface `DisplayTypeConfigurationComponent`. Below the interface is shown, with a comment for each required property.
 
 #### **`configuration.model.ts`**
+
 ```typescript
 ...
 
@@ -110,11 +108,10 @@ interface DisplayTypeConfigurationComponent extends ConfigurationComponent {
 
 ### Typing display type configuration data
 
-As mentioned, the display type configuration component accepts prefill data. This prefill data is equal to the display
-type properties saved in the back-end. Next to this, the display component accepts data. It is advised to also type the
-way in this data is received.
+As mentioned, the display type configuration component accepts prefill data. This prefill data is equal to the display type properties saved in the back-end. Next to this, the display component accepts data. It is advised to also type the way in this data is received.
 
 #### **`sample.model.ts`**
+
 ```typescript
 interface SampleDisplayTypeData {
     size: number;
@@ -129,11 +126,10 @@ export {SampleDisplayTypeData, SampleDisplayTypeProperties};
 
 ### Implementing the display type configuration component
 
-How a configuration component for the sample display type can be implemented is shown below.
-The way this is implemented can differ, as long as the interfaces are conformed to.
-Below is sample code of implementing the component using Carbon components and [reactive forms](https://angular.io/guide/reactive-forms).
+How a configuration component for the sample display type can be implemented is shown below. The way this is implemented can differ, as long as the interfaces are conformed to. Below is sample code of implementing the component using Carbon components and [reactive forms](https://angular.io/guide/reactive-forms).
 
 #### **`sample-display-type-configuration.component.ts`**
+
 ```typescript
 ...
 import {SampleDisplayTypeProperties} from '../models';
@@ -213,6 +209,7 @@ export class SampleDisplayTypeConfigurationComponent
 The corresponding template file looks like this:
 
 #### **`sample-display-type-configuration.component.html`**
+
 ```angular2html
 <form [formGroup]="form">
     <cds-label
@@ -229,12 +226,12 @@ The corresponding template file looks like this:
 
 ### Implementing the display component
 
-Previously, a component was defined which configures the display type. Next, a separate component is defined to display
-the display type + data source configuration on the dashboard. An example of such a display component is shown below.
+Previously, a component was defined which configures the display type. Next, a separate component is defined to display the display type + data source configuration on the dashboard. An example of such a display component is shown below.
 
 An example of the component code:
 
 #### **`sample-display.component.ts`**
+
 ```typescript
 ....
 
@@ -267,6 +264,7 @@ export class SampleDisplayComponent implements DisplayComponent {
 An example of the template code:
 
 #### **`sample-display.component.html`**
+
 ```angular2html
 <div class="sample-display">
     <!-- the title property from the display type properties is accessed in the template -->
@@ -278,17 +276,14 @@ An example of the template code:
 
 ### Translation
 
-Please refer to [this page](widget-translations.md) on how to implement translations from your specification in
-template or component code.
+Please refer to [this page](widget-translations.md) on how to implement translations from your specification in template or component code.
 
 ### Display type module
 
-Finally, having defined a specification, configuration component and display component, we can construct a module. Keep
-to the below guidelines in constructing your module. When you finally import this module into the `AppModule` of your
-implementation, the display type configuration component should be available in the relevant configuration menus in your
-front-end, and the data source + display type configuration is displayed on your dashboard.
+Finally, having defined a specification, configuration component and display component, we can construct a module. Keep to the below guidelines in constructing your module. When you finally import this module into the `AppModule` of your implementation, the display type configuration component should be available in the relevant configuration menus in your front-end, and the data source + display type configuration is displayed on your dashboard.
 
 #### **`sample-display-type.module.ts`**
+
 ```typescript
 ...
 import {DISPLAY_TYPE_TOKEN} from '@valtimo/dashboard';

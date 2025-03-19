@@ -2,12 +2,12 @@
 
 ## Dependencies
 
-In order to support user configurable localization, the localization module needs to be added as a dependency. The
-following can be added to your project, depending on whether Maven or Gradle is used:
+In order to support user configurable localization, the localization module needs to be added as a dependency. The following can be added to your project, depending on whether Maven or Gradle is used:
 
 ### Backend
 
 #### Maven dependency:
+
 ```xml
 <dependencies>
     <dependency>
@@ -19,6 +19,7 @@ following can be added to your project, depending on whether Maven or Gradle is 
 ```
 
 #### Gradle dependency:
+
 ```groovy
 dependencies {
     implementation "com.ritense.valtimo:localization:${valtimo_version}"

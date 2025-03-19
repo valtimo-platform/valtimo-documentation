@@ -10,7 +10,7 @@ Widget configuration is part of tab configuration for a case definition.
 * Go to the `Cases` menu and select the case to configure widgets for
 * Select the `Tabs` tab
 
-The list of configured tabs for a case is displayed within the case settings. To configure widgets, select an existing tab with its type set to Widgets, or add a new widget-type tab to the configuration by clicking the **Add tab** button as documented [here](../tabs/). Upon selection, the widget configuration for the chosen tab will open, displaying a list of widgets created for that tab.
+The list of configured tabs for a case is displayed within the case settings. To configure widgets, select an existing tab with its type set to Widgets, or add a new widget-type tab to the configuration by clicking the **Add tab** button as documented [here](../tabs.md). Upon selection, the widget configuration for the chosen tab will open, displaying a list of widgets created for that tab.
 
 <figure><img src="../../../.gitbook/assets/image (11).png" alt=""><figcaption><p>Widget configuration UI</p></figcaption></figure>
 
@@ -67,3 +67,72 @@ Depending on the widget type, the content is filled in differently. Click a card
 Widgets for a case can also be configured directly through a JSON editor. For process engineers, configuring widgets in JSON may offer greater control and efficiency. In the second tab of the Widget configuration UI, a JSON editor displays the complete widget configuration in JSON format. This editor includes error-checking functionality to ensure the JSON structure is correct.
 
 <figure><img src="../../../.gitbook/assets/image (33).png" alt=""><figcaption></figcaption></figure>
+
+## Access control
+
+Access to the case widgets can be configured through access control. More information about access control can be found [here](https://docs.valtimo.nl/features/access-control).
+
+### Resources and actions
+
+<table><thead><tr><th width="329">Resource type</th><th width="143">Action</th><th>Effect</th></tr></thead><tbody><tr><td><code>com.ritense.case_.domain.tab.CaseWidgetTabWidget</code></td><td><code>view</code></td><td>Allows viewing a case widget</td></tr></tbody></table>
+
+### Examples
+
+<details>
+
+<summary>Permission to view all case widgets</summary>
+
+<pre class="language-json" data-overflow="wrap"><code class="lang-json">{
+<strong>    "resourceType": "com.ritense.case_.domain.tab.CaseWidgetTabWidget",
+</strong>    "action": "view",
+    "conditions": []
+}
+</code></pre>
+
+</details>
+
+<details>
+
+<summary>Permission to view all case widgets of one specific case type</summary>
+
+{% code overflow="wrap" %}
+```json
+{
+   "resourceType": "com.ritense.case_.domain.tab.CaseWidgetTabWidget",
+   "action": "view",
+   "conditions": [
+      {
+         "type": "field",
+         "field": "id.caseWidgetTab.id.caseDefinitionName",
+         "operator": "==",
+         "value": "evenementenvergunning"
+      }
+   ]
+}
+```
+{% endcode %}
+
+</details>
+
+<details>
+
+<summary>Permission to view one specific case widget</summary>
+
+{% code overflow="wrap" %}
+```json
+{
+   "resourceType": "com.ritense.case_.domain.tab.CaseWidgetTabWidget",
+   "action": "view",
+   "conditions": [
+      {
+         "type": "field",
+         "field": "key",
+         "operator": "==",
+         "value": "personal-data"
+      }
+   ]
+}
+```
+{% endcode %}
+
+</details>

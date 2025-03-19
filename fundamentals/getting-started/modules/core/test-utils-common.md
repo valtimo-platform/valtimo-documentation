@@ -5,10 +5,11 @@
 This module contains utilities that are useful when creating tests for Valtimo.
 
 ### Backend
-The samples below assume the [valtimo-dependency-versions](valtimo-dependency-versions.md) module is used.
-If not, please specify the artifact version as well.
+
+The samples below assume the [valtimo-dependency-versions](valtimo-dependency-versions.md) module is used. If not, please specify the artifact version as well.
 
 #### Maven dependency:
+
 ```xml
 <dependencies>
     <dependency>
@@ -20,6 +21,7 @@ If not, please specify the artifact version as well.
 ```
 
 #### Gradle dependency:
+
 ```kotlin
 dependencies {
   testImplementation "com.ritense.valtimo:test-utils-common")

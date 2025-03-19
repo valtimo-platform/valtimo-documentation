@@ -44,8 +44,7 @@ Select this checkbox for processes that support a case during a specific period 
 
 Leave both checkboxes empty when a sub-process needs to be added to the case definition. In larger process models it's often helpful to move parts of the process to a sub process that can be activated via a so-called "Call activity" element in the main process.
 
-These sub-processes are not starting processes for the case and should not appear in the Case actions menu under the Start button in the case details UI. It is important to link these sub-processes to the Case definition in order to automatically store the data that is fetched by these processes in the JSON document of that case.\
-&#x20;
+These sub-processes are not starting processes for the case and should not appear in the Case actions menu under the Start button in the case details UI. It is important to link these sub-processes to the Case definition in order to automatically store the data that is fetched by these processes in the JSON document of that case.
 {% endtab %}
 
 {% tab title="Via IDE" %}
@@ -69,4 +68,3 @@ In order to link processes to a case the following steps are necessary:
 ```
 {% endtab %}
 {% endtabs %}
-

@@ -1,4 +1,4 @@
-# Configure database
+# Configuring the database
 
 Valtimo supports MySQL and PostgreSQL, and can be configured to make use of either one of these.
 
@@ -11,8 +11,7 @@ valtimo:
     database: postgres # or mysql
 ```
 
-In addition, make sure the camunda database type does not conflict with the setting above. This setting is optional,
-and if not present, the value provided for `valtimo.database` will be used.
+In addition, make sure the camunda database type does not conflict with the setting above. This setting is optional, and if not present, the value provided for `valtimo.database` will be used.
 
 ```yaml
 camunda:

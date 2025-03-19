@@ -2,11 +2,10 @@
 
 ## Widget translate pipe
 
-The template code shown uses the `widgetTranslate` pipe to show translations from the specifications.
-To use this, first import `WidgetTranslatePipeModule` from `@valtimo/dashboard` and add it to the `imports` array of
-a module. Now, the `widgetTranslate` pipe can be used in templates. It uses the following syntax for data sources:
+The template code shown uses the `widgetTranslate` pipe to show translations from the specifications. To use this, first import `WidgetTranslatePipeModule` from `@valtimo/dashboard` and add it to the `imports` array of a module. Now, the `widgetTranslate` pipe can be used in templates. It uses the following syntax for data sources:
 
 #### **`sample-translation-pipe.component.html`**
+
 ```angular2html
 <span>
     {{ 'translationKey' | widgetTranslate: dataSourceKey | async" }}
@@ -16,6 +15,7 @@ a module. Now, the `widgetTranslate` pipe can be used in templates. It uses the 
 And for display types:
 
 #### **`sample-translation-pipe.component.html`**
+
 ```angular2html
 <span>
     {{ 'translationKey' | widgetTranslate: displayTypeKey | async" }}
@@ -30,7 +30,4 @@ The pipe returns an observable, so do not forget to add `| async` at the end.
 
 #### Widget translation service
 
-If translation is to take place inside the component (as opposed to inside the template using the pipe),
-the `WidgetTranslationService` may be used, which is exported by `@valtimo/dashboard`. It supports a `translate` method,
-which  returns an observable containing the translation, and an `instant` method, which returns a string containing the
-translation.
+If translation is to take place inside the component (as opposed to inside the template using the pipe), the `WidgetTranslationService` may be used, which is exported by `@valtimo/dashboard`. It supports a `translate` method, which returns an observable containing the translation, and an `instant` method, which returns a string containing the translation.

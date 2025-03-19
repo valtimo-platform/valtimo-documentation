@@ -1,21 +1,18 @@
 # Content Security Policy (CSP)
 
-Content Security Policy (CSP) is a layer of security to combat Cross-Site Scripting (XSS). For more information on CSP,
-please refer to [this page](https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP).
+Content Security Policy (CSP) is a layer of security to combat Cross-Site Scripting (XSS). For more information on CSP, please refer to [this page](https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP).
 
-Valtimo offers strongly typed CSP configuration through its environment files. In order to add this to your
-implementation, install version `11.2.0` or higher of the front-end libraries.
+Valtimo offers strongly typed CSP configuration through its environment files. In order to add this to your implementation, install version `11.2.0` or higher of the front-end libraries.
 
 ## Defining your policy
 
-It is advised to create a new folder in your implementation: `src/environments/csp`. In this folder, you will create a
-file defining a CSP policy for each environment your implementation is deployed to.
+It is advised to create a new folder in your implementation: `src/environments/csp`. In this folder, you will create a file defining a CSP policy for each environment your implementation is deployed to.
 
 For a CSP for our development environment, we might define the following:
 
 #### **`src/environments/csp/csp.dev.ts`**
 
-````typescript
+```typescript
 // types imported from the 'csp-header' package, which is included in Valtimo FE libs 11.2.0 and up
 import {CSPHeaderParams, DATA, SELF, UNSAFE_EVAL, UNSAFE_INLINE} from 'csp-header';
 // optional import of utilities to manipulate URL strings
@@ -60,17 +57,15 @@ export const cspHeaderParamsDev: CSPHeaderParams = {
         ],
     },
 };
-````
+```
 
 ## Including your policy
 
-After defining your policy in a separate file, import it in the environment file in which you want to use it. Next, add
-it under the key `csp`. After deploying your application, CSP headers should be added to the document head before app
-initialization.
+After defining your policy in a separate file, import it in the environment file in which you want to use it. Next, add it under the key `csp`. After deploying your application, CSP headers should be added to the document head before app initialization.
 
 #### **`src/environments/environment.ts`**
 
-````typescript
+```typescript
 ...
 import {cspHeaderParamsDev} from './csp';
 
@@ -78,10 +73,8 @@ export const environment: ValtimoConfig = {
     ...
     csp: cspHeaderParamsDev
 }
-````
+```
 
 ## Extending your policy
 
-The optional property `csp` in your environment file must refer to an object of type `CSPHeaderParams`, which is exported
-by the library `csp-header`. This library has many features which you can optionally use to add further flexibility to
-your CSP policy. Please refer to its [NPM page](https://www.npmjs.com/package/csp-header) to see what is possible.
+The optional property `csp` in your environment file must refer to an object of type `CSPHeaderParams`, which is exported by the library `csp-header`. This library has many features which you can optionally use to add further flexibility to your CSP policy. Please refer to its [NPM page](https://www.npmjs.com/package/csp-header) to see what is possible.

@@ -1,9 +1,8 @@
-# Object Management
+# Object management
 
 ## Autodeployment
 
-Object management configurations can be autodeployed by creating json files in the `classpath*:config/objectmanagement/`
-folder. The name of the file does not matter, but it is advised to keep it in line with the object title.
+Object management configurations can be autodeployed by creating json files in the `classpath*:config/objectmanagement/` folder. The name of the file does not matter, but it is advised to keep it in line with the object title.
 
 You can find an example of the JSON below:
 
@@ -20,4 +19,4 @@ You can find an example of the JSON below:
 }
 ```
 
-`formDefinitionView` and `formDefinitionEdit` specify the names of the forms to use for respectively viewing or editing the object. It is case-insensitive. 
+`formDefinitionView` and `formDefinitionEdit` specify the names of the forms to use for respectively viewing or editing the object. It is case-insensitive.

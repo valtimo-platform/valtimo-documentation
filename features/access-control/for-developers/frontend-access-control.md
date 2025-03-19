@@ -1,18 +1,14 @@
-# Applying access control in front-end
+# Front-end access control
 
-For each element of the user interface which is shown/hidden or enabled/disabled in the front-end based on an access
-control policy, a separate call is defined. These calls are subsequently bundled by the `PermissionService`, which is
-exported from `@valtimo/access-control`.
+For each element of the user interface which is shown/hidden or enabled/disabled in the front-end based on an access control policy, a separate call is defined. These calls are subsequently bundled by the `PermissionService`, which is exported from `@valtimo/access-control`.
 
 ## Defining permissions
 
-For a part of your user interface, for example a page, it is best to define all the permissions it needs to request in
-one file. In this file, define each permission to be requested separately, conforming to the interface
-`PermissionRequest`:
-
+For a part of your user interface, for example a page, it is best to define all the permissions it needs to request in one file. In this file, define each permission to be requested separately, conforming to the interface `PermissionRequest`:
 
 #### **`sample.permissions.ts`**
-````typescript
+
+```typescript
 import {PermissionRequest} from '@valtimo/access-control';
 
 // Enums are defined for use in the below permissions. This is to avoid duplication, and is optional.
@@ -36,16 +32,15 @@ const CAN_ASSIGN_CASE_PERMISSION: PermissionRequest = {
 };
 
 export {CAN_CLAIM_CASE_PERMISSION, CAN_ASSIGN_CASE_PERMISSION}
-````
+```
 
 ## Using permissions
 
-Permissions defined in the above example, are imported into your component code and transferred to the
-`PermissionService`, which returns an `Observable` emitting a `boolean` value for the respective permission:
+Permissions defined in the above example, are imported into your component code and transferred to the `PermissionService`, which returns an `Observable` emitting a `boolean` value for the respective permission:
 
 #### **`sample.component.ts`**
 
-````typescript
+```typescript
 ...
 // import PermissionService
 import {PermissionService} from '@valtimo/access-control';
@@ -89,13 +84,13 @@ export class SampleComponent {
     ) {
     }
 }
-````
+```
 
-With each permission defined as an `Observable` emitting a `boolean` value, with its own component property, they may now
-be used in the template code of your component. To do this efficiently, it is recommended to use `async` pipes:
+With each permission defined as an `Observable` emitting a `boolean` value, with its own component property, they may now be used in the template code of your component. To do this efficiently, it is recommended to use `async` pipes:
 
 #### **`sample.component.html`**
-````angular2html
+
+```angular2html
 <div class="container">
     <!--    The claim button is shown when a case can be claimed-->
     <button *ngIf="canClaimCase$ | async" (click)="claim()">
@@ -107,4 +102,4 @@ be used in the template code of your component. To do this efficiently, it is re
         Assign case
     </button>
 </div>
-````
+```
