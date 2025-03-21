@@ -8,7 +8,7 @@ Access to the documents that were uploaded to the case, can be configured throug
 
 ### Examples
 
-#### Permission to view all notes
+#### Permission to view all documents
 
 <pre class="language-json"><code class="lang-json">{
 <strong>    "resourceType": "com.ritense.resource.authorization.ResourcePermission",
