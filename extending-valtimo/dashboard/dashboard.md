@@ -7,3 +7,4 @@ This section contains instructions and examples on how to extend functionality r
 - [Custom data sources](custom-data-source.md)
 - [Custom display types](custom-display-type.md)
 - [Widget translations](widget-translations.md)
+- [Configuring access control](access-control.md)
