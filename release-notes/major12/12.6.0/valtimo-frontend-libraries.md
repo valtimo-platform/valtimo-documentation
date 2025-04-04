@@ -13,9 +13,7 @@ The following features were added:
 
 The following bugs were fixed:
 
-* **Bug1**
-
-  Description of what the issue was.
+* **Fixed bug where dropdown were unusable in form view model**
 
 * **Bug2**
 
