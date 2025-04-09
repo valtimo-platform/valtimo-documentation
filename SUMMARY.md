@@ -333,10 +333,9 @@
 
 ## Contributing to Valtimo
 
-* [Contributing to Valtimo](contributing-to-valtimo/contributing-to-valtimo.md)
-* [Docs style guide for contributing](contributing-to-valtimo/style-guide-for-contributing.md)
+* [Valtimo/GZAC](contributing-to-valtimo/contributing-to-valtimo.md)
+* [Documentation](contributing-to-valtimo/style-guide-for-contributing.md)
 * [Branching and release strategy](contributing-to-valtimo/branching-and-release-strategy.md)
-* [Extend the core or build a plugin](contributing-to-valtimo/extend-the-core-or-build-a-plugin.md)
 
 ## Nog een plek geven
 

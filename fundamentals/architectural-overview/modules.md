@@ -118,7 +118,7 @@ The `outbox-rabbitmq` module adds support for publishing `outbox` messages to Ra
 
 Plugins are extensions on the Valtimo platform. These are often connections to external services, such as transactional email and document generation. Plugins can be configured without writing code, and actions can be attached to BPMN activities.
 
-Some plugins are provided by the platform, but developers can create their own plugins as well. A more in-depth description can be found [here](https://app.gitbook.com/o/-LQhw1pmbUwI6q8p8Re1/s/bcArISKZtxWk4tKpZb9P/\~/changes/1/features/plugins/plugins/custom-plugin-definition).
+Some plugins are provided by the platform, but developers can create their own plugins as well. A more in-depth description can be found [here](https://app.gitbook.com/s/bcArISKZtxWk4tKpZb9P/features/plugins/plugins/custom-plugin-definition).
 
 ### Process document
 
