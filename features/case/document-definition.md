@@ -1,11 +1,11 @@
 # Document definition
 
-A **document definition** is the **blueprint** for the JSON documents that are created when creating **new cases** in Valtimo. It defines the structure of the case and contains validation rules for the data that is stored by the actual JSON documents that are created when executing processes for that case in Valtimo. This page shows how to create a document definition, and how to add validation to properties.
+A **document definition** is the **blueprint** for the JSON documents that are created when creating **new cases** in Valtimo. It defines the structure of the case and contains validation rules for the data that is stored by the actual JSON documents that are created when executing processes for that case in Valtimo. This page shows how to create a document definition, and how to add validation to properties.&#x20;
 
 {% hint style="info" %}
 This page requires:
 
-* Knowledge of [JSON schema](https://json-schema.org/)
+* Knowledge of  [JSON schema](https://json-schema.org/)
 {% endhint %}
 
 ## Creating a document definition
@@ -22,13 +22,13 @@ Best practices:
 * **Always create a JSON schema.** A JSON schema enforces a certain quality for each document. Experience shows that a JSON schema is necessary for production-grade systems.
 * **Ensure a stable design and minimize changes to the model.** Discuss the impact of changes thoroughly before implementing them. For example, if in a version 2 of the schema an attribute is made mandatory that wasn't required in version 1, the forms that provide this data must be duplicated and adapted to the new Document Definition.
 * **The case detail object must be usable for Formio forms.** Complexities such as arrays within arrays can complicate the form-building process. Tip: do not blindly adopt a JSON schema from a source.
-* **Do not store technical or control information in the JSON document.** Process variables are available for this.
-* **Do store** information that is needed in case search and case list pages. Though information from external sources can be displayed in a Case, it cannot be used to search or filter on.
+* **Do not store technical or control information in the JSON document.** Process variables are available for this.&#x20;
+* **Do store** information that is needed in case search and case list pages. Though information from external sources can be displayed in a Case, it cannot be used to search or filter on.&#x20;
 {% endhint %}
 
 {% tabs %}
 {% tab title="Via UI" %}
-#### Upload a valid JSON schema
+### Upload a valid JSON schema
 
 * Go to the `Admin` menu
 * Go to the `Cases` menu
@@ -41,7 +41,7 @@ In Valtimo 12 the case configuration upload has been improved by adding all the 
 
 ![Uploading a document definition](../../using-valtimo/document/img/upload-document-definition.png)
 
-#### Create an empty case
+### Create an empty case
 
 {% hint style="success" %}
 Available since Valtimo `12`
@@ -74,7 +74,7 @@ When uploading a JSON schema to create a new case, make sure that the `$id` and 
 {% endtab %}
 
 {% tab title="Via IDE" %}
-#### Place a valid JSON schema in the codebase
+### Place a valid JSON schema in the codebase
 
 To create a document definition, the following steps are necessary:
 
@@ -92,6 +92,9 @@ To create a document definition, the following steps are necessary:
       }
     }
     ```
+
+
+
 *   Properties as well as validation rules can be added to the definition as per the JSON schema standard as seen [here](https://json-schema.org/understanding-json-schema/index.html). Below is an example of what this definition could look like.
 
     ```json
@@ -136,27 +139,27 @@ Same as for creating cases there are three ways of editing document definitions.
 
 {% tabs %}
 {% tab title="Via UI" %}
-#### Upload a valid JSON schema with the same ID
+### Upload a valid JSON schema with the same ID
 
 * Go to the `Admin` menu
 * Go to the `Cases` menu
 
 <figure><img src="../../.gitbook/assets/image (12) (1).png" alt=""><figcaption></figcaption></figure>
 
-Click on the **Upload** button to open the **Import case definition** modal\*. This modal contains a wizard that will guide users through the import process. The following steps are defined in this wizard.
+Click on the **Upload** button to open the **Import case definition** modal\*[^1]. This modal contains a wizard that will guide users through the import process. The following steps are defined in this wizard.
 
 1. Informative step regarding plugins.
 2. Select the edited document definition from your system\
-   \&#xNAN;_When the file is succesfully uploaded a warning is displayed that current configurations for that case can be overwritten by this upload._
+   &#xNAN;_&#x57;hen the file is succesfully uploaded a warning is displayed that current configurations for that case can be overwritten by this upload._
 3. Start the upload\
    The file will be validated and if it passes all checks the document definition is updated.
 
-#### Edit the document definition
+### Edit the document definition
 
 * Go to the `Admin` menu
 * Go to the `Cases` menu
 * Select the case that you want to edit
-* Click on **Edit**
+* Click on **Edit**&#x20;
 * Edit the document definition as per the JSON schema standard
 * Click on **Save**
 
@@ -164,15 +167,15 @@ Click on the **Upload** button to open the **Import case definition** modal\*. T
 
 Visually nothing happens when switching to edit mode. Only the Download and Edit buttons are replaced by a **Cancel** and a **Save** button. The **Save** button is disabled by default until valid changes are made.
 
-**Constant validation**
+#### Constant validation
 
-In edit mode, the UI editor will constantly validate the JSON file structure. The **Save** button is only available when the JSON structure is valid. Errors in the file structure will be indicated with a red curly line below or near the issue. In large files, errors can easily be found with the minimised tree view on the right side of the editor.
+In edit mode, the UI editor will constantly validate the JSON file structure. The **Save** button is only available when the JSON structure is valid. Errors in the file structure will be indicated with a red curly line below or near the issue. In large files, errors can easily be found with the minimised tree view on the right side of the editor.&#x20;
 
 <figure><img src="../../.gitbook/assets/image (18) (1).png" alt=""><figcaption><p>JSON structure validation in edit mode</p></figcaption></figure>
 {% endtab %}
 
 {% tab title="Via IDE" %}
-#### Edit the document definition in the codebase
+### Edit the document definition in the codebase
 
 Open the document definition in the IDE and edit the definition as per the JSON schema standard. More information on JSON schema can be found [here](https://json-schema.org/).\
 \
@@ -256,3 +259,5 @@ Access to document definitions can be configured through access control. More in
 {% endcode %}
 
 </details>
+
+[^1]: Modal: _A web page element that displays in front of and deactivates all other page content._

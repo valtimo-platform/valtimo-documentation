@@ -97,6 +97,7 @@
   * [Search fields](features/case/search-fields.md)
   * [Statuses](features/case/statuses.md)
   * [Tabs](features/case/tabs.md)
+  * [Tags](features/case/tags.md)
   * [Widgets](features/case/widgets/README.md)
     * [Fields widget](features/case/widgets/fields-widget.md)
     * [Custom component widget](features/case/widgets/custom-component-widget.md)
@@ -198,6 +199,7 @@
     * [12.7.3](release-notes/12.x.x/12.7.0/12.7.3.md)
   * [12.8.0](release-notes/12.x.x/12.8.0.md)
   * [12.9.0](release-notes/12.x.x/12.9.0.md)
+  * [12.10.0](release-notes/12.x.x/12.10.0.md)
 * [11.x.x](release-notes/11.x.x/README.md)
   * [11.3.0](release-notes/11.x.x/11.3.0/README.md)
     * [Valtimo backend libraries](release-notes/major11/11.3.0/valtimo-backend-libraries.md)
@@ -333,9 +335,10 @@
 
 ## Contributing to Valtimo
 
-* [Valtimo/GZAC](contributing-to-valtimo/contributing-to-valtimo.md)
-* [Documentation](contributing-to-valtimo/style-guide-for-contributing.md)
+* [Contributing to Valtimo](contributing-to-valtimo/contributing-to-valtimo.md)
+* [Docs style guide for contributing](contributing-to-valtimo/style-guide-for-contributing.md)
 * [Branching and release strategy](contributing-to-valtimo/branching-and-release-strategy.md)
+* [Extend the core or build a plugin](contributing-to-valtimo/extend-the-core-or-build-a-plugin.md)
 
 ## Nog een plek geven
 

@@ -25,7 +25,7 @@ To be documented.
 {% endtab %}
 
 {% tab title="Via IDE" %}
-#### Autodeployment
+### Autodeployment
 
 Task list columns can be autodeployed by adding json files on the classpath. These files should end with `.case-task-list.json` to be eligible for autodeployment.
 
