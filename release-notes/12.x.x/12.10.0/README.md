@@ -18,7 +18,7 @@ Nested properties submitted via Formio forms using process variables (e.g. `pv.a
 
 Documenten API documents can now be changed. When documents have status 'definitive', a new version of the document is created for metadata changes. The content of the document can't be changed.
 
-Editing document metadata is only allowed when the user has the correct permissions. More information can be found [here](../../features/zgw/zgw-documents/access-control.md).
+Editing document metadata is only allowed when the user has the correct permissions. More information can be found [here](../../../features/zgw/zgw-documents/access-control.md).
 
 #### Retrieve Eigenschappen via Catalogi API plugin
 
