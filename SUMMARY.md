@@ -199,7 +199,7 @@
     * [12.7.3](release-notes/12.x.x/12.7.0/12.7.3.md)
   * [12.8.0](release-notes/12.x.x/12.8.0.md)
   * [12.9.0](release-notes/12.x.x/12.9.0.md)
-  * [12.10.0](release-notes/12.x.x/12.10.0/README.md)
+  * [12.10.0](release-notes/12.x.x/12.10.0.md)
     * [12.10.1](release-notes/12.x.x/12.10.0/12.10.1.md)
     * [12.10.2](release-notes/12.x.x/12.10.0/12.10.2.md)
   * [12.11.0](release-notes/12.x.x/12.11.0.md)
