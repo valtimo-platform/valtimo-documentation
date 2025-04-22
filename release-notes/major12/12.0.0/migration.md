@@ -89,7 +89,7 @@ This page describes how to update Valtimo from the previous version to the curre
 
     1.  **Migrate existing form links**
 
-        Existing form link configurations should be migrated to process links. You can find a script to simplify this task [here](https://github.com/valtimo-platform/valtimo-documentation/blob/story/restructure-docs/using-valtimo/process-link/script/migrate-formlinks.sh).
+        Existing form link configurations should be migrated to process links. You can find a script to simplify this task [here](../../../using-valtimo/process-link/script/migrate-formlinks.sh).
     2.  **Remove form link configuration files (optional)**
 
         Existing form link configuration files should be removed. This is optional as the files will just get ignored.
