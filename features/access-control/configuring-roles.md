@@ -22,7 +22,7 @@ The "Add new role" modal opens and the new role name can be entered. Click creat
 {% endtab %}
 
 {% tab title="Via IDE" %}
-#### Auto-deployment
+### Auto-deployment
 
 PBAC can be configured in the backend using auto-deployment. This is useful when you want to keep permissions identical over multiple environments. The deployment will scan for files on the classpath matching either `**/*.role.json` or `**/*.permission.json` for respectively role- and permission configurations.
 
@@ -30,7 +30,7 @@ Every deployment file for PBAC represents a changeset, much like Liquibase. Thes
 
 The contents of a changeset cannot change as long as the `changesetId` does not. A change to an existing changeset can only be made when the `changesetId` also changes. Changes made to the deployment files of PBAC will result in a full recreation of existing role- or permission configuration.
 
-**Configuring roles**
+#### Configuring roles
 
 The roles should be defined before permissions can be deployed. The file contains only a list of role names next to the mandatory `changesetId`.
 
@@ -77,7 +77,7 @@ Roles can also be deleted, or exported in bulk. These options will only show whe
 
 ![bulk-actions-example](../../using-valtimo/access-control/img/bulk-actions.png)
 
-#### Export
+### Export
 
 Exporting a role not only exports the role itself, but also the configured permissions. This can be used to create or update auto-deployment files.
 
@@ -85,7 +85,7 @@ When exporting roles, there are two options. Either to export all selected roles
 
 ![exporting-roles-example](../../using-valtimo/access-control/img/exporting-roles.png)
 
-#### Delete
+### Delete
 
 Roles can also be deleted. Take caution, as deleting roles will also result in the deletion of related permission. Deleting roles will not delete the role in Keycloak.
 

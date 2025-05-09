@@ -15,21 +15,25 @@ On the case management page, a setting can be changed to indicate that cases of 
 {% tab title="Via UI" %}
 When the case handler option is selected the following changes are visible in the user interface:
 
-*   **The case list screen is divided in to three tabs**\\
+*   **The case list screen is divided in to three tabs**\
+
 
     <figure><img src="../../.gitbook/assets/image (35) (1).png" alt=""><figcaption><p>Case overview with case handler option selected<br></p></figcaption></figure>
 
     * **All cases**\
-      \&#xNAN;_This overview is the same as for cases that do not have a case handler configured._\
-      &#xNAN;_&#x41;ll cases are displayed on this tab._
+      &#xNAN;_&#x54;his overview is the same as for cases that do not have a case handler configured._\
+      _All cases are displayed on this tab._
     * **My cases**\
-      \&#xNAN;_Overview of cases that are assigned to the user that is currently logged in._
+      &#xNAN;_&#x4F;verview of cases that are assigned to the user that is currently logged in._
     * **Unassigned cases**\
-      \&#xNAN;_Overview of cases that are not assigned to a case handler_\\
+      &#xNAN;_&#x4F;verview of cases that are not assigned to a case handler_\
+
 * **An "Assignee" column is automatically added to the case list columns**\
-  This column displays the case handler assigned to each case in the overview. This column is fixed and can't be removed via the case list configuration page.\\
+  This column displays the case handler assigned to each case in the overview. This column is fixed and can't be removed via the case list configuration page.\
+
 * **An option to assign a case handler on the case details page.**\
-  When clicked a dropdown menu is displayed with all case handlers that can be assigned to the case. Case handlers can be configured via [Access control](../access-control/) for each case type.\\
+  When clicked a dropdown menu is displayed with all case handlers that can be assigned to the case. Case handlers can be configured via [Access control](../access-control/) for each case type.\
+
 * **An additional menu in which a case can be claimed.**\
   In this menu the logged in user has the possibility to immediately "claim" the case. Once a case is claimed, the unassign option removes the case handler that is currently assigned to the case. Who is allowed to claim, assign and unassign is all configured via [Access control](../access-control/).
 {% endtab %}
@@ -58,21 +62,21 @@ There are different ways of assigning a user to a case.
 
 {% tabs %}
 {% tab title="Via UI" %}
-#### Assigning a case
+### Assigning a case
 
 On the case details page there is an option to assign a user. When clicked, a dropdown menu opens that displays all case handlers that can be assigned.
 
 <figure><img src="../../.gitbook/assets/image (36) (1).png" alt=""><figcaption><p>Assigning a user</p></figcaption></figure>
 
-#### Claiming a case
+### Claiming a case
 
-When a specific case is opened, it can be claimed with the `Claim` button in the menu on the right side of the case details page.
+When a specific case is opened, it can be claimed with the `Claim` button in the menu on the right side of the case details page.&#x20;
 
 <figure><img src="../../.gitbook/assets/image (37).png" alt=""><figcaption><p>Menu to claim a case or unassign the current assignee</p></figcaption></figure>
 
 Once a case is assigned the `Unassign` button is enabled, making it possible to unassign the case again.
 
-#### User assignment through the process
+### User assignment through the process&#x20;
 
 It is possible to assign a user to the current process by creating a service task and adding the following expression:
 
@@ -114,8 +118,8 @@ It is possible to have user tasks be automatically assigned to a case assignee m
 
 ### Functionality
 
-* This feature causes user tasks (existing and new) to be assigned to the current case assignee if there is one assigned.
-* Upon the (re-)assignment of a case all user tasks from all processes currently using the same business key will have their assignee updated to match the new case assignee.
+* This feature causes user tasks (existing and new) to be assigned to the current case assignee if there is one assigned.&#x20;
+* Upon the (re-)assignment of a case all user tasks from all processes currently using the same business key will have their assignee updated to match the new case assignee.&#x20;
 * Removal of an assignee from the case will also clear the assignee on all assigned user tasks withing all processes using the same business key.
 
 {% tabs %}

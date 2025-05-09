@@ -6,7 +6,7 @@ The following features were added:
 
 *   **Saving process links**
 
-    When the form of a new plugin action is filled in on the new process links screen, it can now be saved through the API. When an activity already has a process link, clicking on it displays this process link, which can then be altered. More information on plugins can be found [here](../../../using-valtimo/plugin/create-process-link.md).
+    When the form of a new plugin action is filled in on the new process links screen, it can now be saved through the API. When an activity already has a process link, clicking on it displays this process link, which can then be altered. More information on plugins can be found [here](https://github.com/valtimo-platform/valtimo-documentation/blob/story/restructure-docs/using-valtimo/plugin/create-process-link.md).
 *   **New field SmartDocuments plugin action 'generate document'**
 
     The SmartDocuments plugin now takes an extra parameter for the 'generate document' action: 'resultingDocumentProcessVariableName'. This plugin stores the generated document locally, and other plugins can be used to send it to another service.

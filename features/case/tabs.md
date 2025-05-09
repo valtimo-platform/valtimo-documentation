@@ -16,12 +16,13 @@ Each case in Valtimo can be configured with a specific set of case tabs. Valtimo
 The **Add tab** button opens the _Add new tab in \<case>_ modal, beginning with the configuration step to select the tab type. In this modal, **standard tabs** are available and next to this a **Form.io**, **Custom** or **Widget component** can be configured as a case tab.
 
 * Click on the **Add tab** button.
-*   Select which tab type you want to configure.\\
+*   Select which tab type you want to configure.\
+
 
     <figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption><p>Case tab types</p></figcaption></figure>
 
 **Tab name (optional)**\
-\&#xNAN;_Configured name that will be used to identify the Case tab in the UI._
+&#xNAN;_&#x43;onfigured name that will be used to identify the Case tab in the UI._
 
 {% hint style="info" %}
 This field is not mandatory and if left blank a translation of the key will be shown if configured. Each tab name follows this logic:
@@ -32,31 +33,32 @@ This field is not mandatory and if left blank a translation of the key will be s
 {% endhint %}
 
 **Key**\
-\&#xNAN;_This is the identifier of the tab and needs to be unique within a case definition._\
-&#xNAN;_&#x50;ossible translations need to be configured with this key._
+&#xNAN;_&#x54;his is the identifier of the tab and needs to be unique within a case definition._\
+_Possible translations need to be configured with this key._
 
 **Choose standard content**\
-\&#xNAN;_A list of available standard tabs is presented in a dropdown menu._\
-&#xNAN;_&#x41;lready configured tabs are filtered from this list._
+&#xNAN;_&#x41; list of available standard tabs is presented in a dropdown menu._\
+_Already configured tabs are filtered from this list._
 
 **Task list visible on tab**\
-\&#xNAN;_When set the task list will be displayed on the right side of the tab in the UI._\\
+&#xNAN;_&#x57;hen set the task list will be displayed on the right side of the tab in the UI._\
+
 {% endtab %}
 
 {% tab title="Via IDE" %}
 Case tabs can be auto-deployed from a JSON file at startup. This is useful to keep the case tab configuration identical across multiple environments. Case tabs are auto-deployed by scanning files on the classpath that end in `.case-tabs.json`.
 
-**Changesets**
+#### Changesets <a href="#changesets" id="changesets"></a>
 
 Every deployment file for represents a changeset. These files are required to contain a changesetId that should be unique over all deployment files that use changesets. When starting up, changesets that have already been executed will be ignored. A checksum of the changeset is created when it is executed. Changesets that have already been deployed should not change. Changesets that have been changed since a previous time will result in an error and failure to start the application.
 
 All changesets can be executed again, even when the content has changed, by setting the `valtimo.changelog.case-tabs.clear-tables` property to `true`.
 
-**Example**
+#### Example <a href="#example" id="example"></a>
 
 You can find an example of the JSON below.
 
-In this example a tab is created with type `standard`. Different tab types can be used to customize the tab.
+In this example a tab is created with type `standard`. Different tab types can be used to customize the tab.&#x20;
 
 ```json
 {
@@ -91,7 +93,7 @@ In this example a tab is created with type `standard`. Different tab types can b
 }
 ```
 
-### Disabling case tabs
+## Disabling case tabs
 
 Case tabs are enabled by default since Valtimo 12. This feature can be disabled with a feature toggle in the front-end implementation. Set the `enableTabManagement` feature toggle to `false` to disable the ability to add tabs next to the Valtimo standard case tabs.\
 For more information on available feature toggles, visit [this page](../../running-valtimo/application-configuration/feature-toggles.md).
@@ -130,7 +132,7 @@ The Custom component button gives access to the available custom components with
 
 ### Widgets component
 
-The widgets component makes it possible to configure a case tab with widgets that can be configured via the UI. Multiple widget types are available to present case data. When a widgets component is selected only the **Tab name**, **Key** and **task list visibility** can be configured for the tab.
+The widgets component makes it possible to configure a case tab with widgets that can be  configured via the UI. Multiple widget types are available to present case data. When a widgets component is selected only the **Tab name**, **Key** and **task list visibility** can be configured for the tab.
 
 {% hint style="info" %}
 When a widgets component tab is added the tab will be listed as a configured tab. Normally when an item in the list is clicked the tab configuration modal opens. A widget type tab however opens the widget configuration when clicked. Tab configuration is still available by clicking the 3-dotted (kebab) menu on the far right of each item in the list and click `Edit`.
