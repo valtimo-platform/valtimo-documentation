@@ -6,7 +6,7 @@ The following features were added:
 
 *   **Custom FormFieldDataResolvers**
 
-    Support was added for creating ExternalFormFieldResolvers that implement a new support(String name) method. Previously, an enum `ExternalFormFieldType` denoted the prefixes that were supported, which prevented implementations from making custom prefixes. Information on how to use form field data resolvers can be found [here](https://github.com/valtimo-platform/valtimo-documentation/blob/story/restructure-docs/using-valtimo/form-link/using-form-field-data-resolvers.md), and information on how to create custom form field data resolvers can be found [here](https://github.com/valtimo-platform/valtimo-documentation/blob/story/restructure-docs/extending-valtimo/form-link/custom-form-field-data-resolver.md).
+    Support was added for creating ExternalFormFieldResolvers that implement a new support(String name) method. Previously, an enum `ExternalFormFieldType` denoted the prefixes that were supported, which prevented implementations from making custom prefixes. Information on how to use form field data resolvers can be found [here](../../../using-valtimo/form-link/using-form-field-data-resolvers.md), and information on how to create custom form field data resolvers can be found [here](../../../extending-valtimo/form-link/custom-form-field-data-resolver.md).
 *   **Plugin categories**
 
     Plugins can now be categorized. This is done by annotating an interface, which plugins can then implement, e.g. `@PluginCategory(key = "category-key-here")`. A plugin that implements more than one interface with a category will belong to both categories.
@@ -60,4 +60,4 @@ This version has the following known issues:
 
     When form associations are created on application startup using the formAssociationService.createFormAssociation() method, these associations are duplicated. Before the bugfix in this release these duplicated associations were added without errors. After the bugfix in this release the application will throw an exception when creating an already existing association, causing the application to crash on startup.
 
-    **Solution.** The correct way to add form associations is by adding [form link files](https://github.com/valtimo-platform/valtimo-documentation/blob/story/restructure-docs/using-valtimo/form-link/configure-task.md). Using of formAssociationService.createFormAssociation() should be replaced with form link files.
+    **Solution.** The correct way to add form associations is by adding [form link files](../../../using-valtimo/form-link/configure-task.md). Using of formAssociationService.createFormAssociation() should be replaced with form link files.

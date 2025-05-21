@@ -1,9 +1,35 @@
-# Docs style guide for contributing
+# Documentation
 
-In order to keep the documentation in this repository consistent and accessible, refer to the style guidelines below before contributing documentation.
+The Valtimo product team aims to deliver new functionality to its users quickly. Contributions from outside the core development team are very much appreciated and welcomed. Part of making a contribution to Valtimo is writing clear and accessible documentation.&#x20;
 
-## Language
+## Writing documentation
 
+There are two different circumstances for which documentation for Valtimo can be written.&#x20;
+
+* Either because it is related to a particular change in the product that will be included in an upcoming release.&#x20;
+* Or to add something that is not related to an upcoming release, e.g. fixing spelling errors or documenting part of an already existing feature.
+
+### Documentation related to an upcoming release <a href="#writing-documentation-related-to-an-upcoming-release" id="writing-documentation-related-to-an-upcoming-release"></a>
+
+1. Write documentation/release notes. These should be written as a PR for [this repository](https://github.com/valtimo-platform/valtimo-documentation/tree/main).&#x20;
+   * Information on what language to use, as well as general guidelines can be found [here](https://github.com/valtimo-platform/valtimo-documentation/blob/story/restructure-docs/contributing/style-guide/README.md).
+   * Release notes to in the `release-notes` package.
+   * If new pages are added, these should also be added to `SUMMARY.md`. The sidebar shown on GitBook corresponds to this structure.
+   * It is required to fork the repository to implement the changes and create the PR.
+2. The Valtimo team will merge the PR after approval.
+
+### Documentation unrelated to an upcoming release <a href="#writing-documentation-unrelated-to-an-upcoming-release" id="writing-documentation-unrelated-to-an-upcoming-release"></a>
+
+1. In case of a new page, discuss the documentation you want to write with someone from the Valtimo team.
+2. Write documentation. This should be written as a PR for [this repository](https://github.com/valtimo-platform/valtimo-documentation). Make a branch from the `main` branch, add all [team Valtimo developers](https://github.com/orgs/valtimo-platform/teams/valtimo-product-team/members) to this PR as reviewers.
+3. Merge the branch after getting an approval from the Valtimo team.
+
+## Style guide
+
+In order to keep the documentation in this repository consistent and accessible, refer to the style guidelines below before contributing to the documentation.
+
+{% tabs %}
+{% tab title="Language" %}
 ### Spelling
 
 All documentation is written in English, using American spelling. Refer to [this page](https://www.oxfordinternationalenglish.com/differences-in-british-and-american-spelling/) for an overview of differences between American and British spelling.
@@ -35,9 +61,9 @@ Instructions are written in the passive voice or in the second person.
 The first time an abbreviation is used on a page, the fully written meaning should be included.
 
 **For example**: it is recommended to use Node Version Manager (NVM)
+{% endtab %}
 
-## General guidelines
-
+{% tab title="General guidelines" %}
 ### Release notes
 
 If possible, a release note should link to the documentation page of the related feature. For each release note, try to give an example of its use case, and only go into technical detail when necessary.
@@ -59,9 +85,9 @@ Adding screenshots is useful when writing instructions. All text contained in th
 ### External references
 
 When including a reference to an external source, a link to the external documentation should be included when possible.
+{% endtab %}
 
-## Target audience
-
-When contributing documentation under a certain section, be mindful of its target audience.&#x20;
-
-###
+{% tab title="Target audience" %}
+When contributing documentation under a certain section, be mindful of its target audience.
+{% endtab %}
+{% endtabs %}

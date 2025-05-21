@@ -23,7 +23,7 @@ The following features were added:
 
     Value resolver now supports resolving and handling `null` values. This change can break existing value resolver implementations.
 
-    Migration instructions related to this change can be found [here](https://github.com/valtimo-platform/valtimo-documentation/blob/story/restructure-docs/release-notes/major12/12.0.0/migration/README.md).
+    Migration instructions related to this change can be found [here](migration/).
 *   **Plugin actions on all activity types**
 
     Support for plugin action on all activity types has been added.
@@ -50,7 +50,7 @@ The following features were added:
     The field 'Uiterlijke einddatum afdoening' is now set automatically in the Zaken-api when creating a case in Valtimo.
 *   **Internal statuses are now available to cases**
 
-    Cases can be filtered on statuses set to the case via the process. More information on this can be found [here](https://app.gitbook.com/o/-LQhw1pmbUwI6q8p8Re1/s/bcArISKZtxWk4tKpZb9P/~/changes/1/features/case/statuses)
+    Cases can be filtered on statuses set to the case via the process. More information on this can be found [here](https://app.gitbook.com/s/bcArISKZtxWk4tKpZb9P/features/case/statuses)
 *   **The RabbitMQ outbox publisher now support exchange targets**
 
     Exchange targets can now be used with the outbox publisher for RabbitMQ by using the `valtimo.outbox.publisher.rabbitmq.exchange` property. More information on this can be found [here](../../../fundamentals/getting-started/modules/core/outbox/outbox-rabbitmq.md)
@@ -88,7 +88,7 @@ The following breaking changes were introduced:
 
     Valtimo has been upgraded to Spring Boot 3. This was needed to keep the product up to date with the latest (transitive) dependencies.
 
-    Migration instructions related to this change can be found [here](https://github.com/valtimo-platform/valtimo-documentation/blob/story/restructure-docs/release-notes/major12/12.0.0/spring-boot3-migration/README.md).
+    Migration instructions related to this change can be found [here](spring-boot3-migration/).
 * **Valtimo dependencies have changed** `valtimo-dependencies` and `valtimo-gzac-depenencies` should no longer be used for `dependencyManagement` or `platform`. This functionality has been replaced by [valtimo-dependency-versions](../../../fundamentals/getting-started/modules/core/valtimo-dependency-versions.md).
 * **Moved KvKProvider and BsnProvider** The `KvKProvider` and `BsnProvider` and implementations (`ZaakKvKProvider` and `ZaakBsnProvider`)have been moved to the `zaken-api` module. The [objects-api module](../../../fundamentals/getting-started/modules/zgw/objects-api.md) has been changed to use the relocated interfaces. Please be aware that the new implementations require at least one Zaken API Plugin to be configured.
 * **Removed deprecated code** The `form-link` module, which was deprecated in 10.6.0, has been removed. Process links should be used instead. Additionally, `CamundaProcessJsonSchemaDocumentService.getDocument(DelegateExecution execution)` has been removed. This method is replaced by `DocumentDelegateService.getDocument(DelegateExecution execution`.
