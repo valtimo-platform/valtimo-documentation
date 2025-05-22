@@ -13,7 +13,7 @@ To configure this plugin the following properties have to be entered:
 * **URL.** Contains the complete base URL of the Besluiten API to connect to. This generally includes the path `/api/v1/`.
 * **Authentication plugin configuration.** Reference to another plugin configuration that will be used to add authentication to any request performed on the Besluiten API. If no option is available in this field a plugin has to be configured that is able to authenticate for the specific application that hosts the Besluiten API.
 
-An example plugin configuration: ![example plugin configuration](../../../using-valtimo/plugin/besluiten-api/img/configure-plugin.png)
+An example plugin configuration: ![example plugin configuration](https://github.com/valtimo-platform/valtimo-documentation/blob/story/restructure-docs/using-valtimo/plugin/besluiten-api/img/configure-plugin.png)
 
 * **URL (`url`)**. Contains the complete base URL of the Besluiten API to connect to. This generally includes the path `/api/v1/`.
 * **RSIN (`rsin`).** Legal entities and partnership number

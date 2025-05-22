@@ -94,12 +94,17 @@ git clone https://github.com/generiekzaakafhandelcomponent/gzac-docker-compose.g
 ```
 {% endcode %}
 
-*   Navigate into the directory:
+* Navigate into the directory:
 
-    cd gzac-docker-compose
-*   Start GZAC:
+```
+cd gzac-docker-compose
+```
 
-    docker compose --profile zgw --profile demo up -d
+* Start GZAC:
+
+```
+docker compose --profile zgw --profile demo up -d
+```
 
 ⏳ The first startup can take 5–10 minutes.
 {% endstep %}
@@ -135,7 +140,7 @@ For users that are already familiar with GIT and Docker Desktop, instructions ar
 {% tab title="Valtimo" %}
 For starting the Valtimo platform, the following repository should be checked out:
 
-* [valtimo-docker-compose](https://github.com/valtimo-platform/valtimo-docker-compose)
+* &#x20;[valtimo-docker-compose](https://github.com/valtimo-platform/valtimo-docker-compose)
 {% endtab %}
 
 {% tab title="GZAC" %}
@@ -145,7 +150,7 @@ For starting the GZAC platform, the following repository should be checked out:
 {% endtab %}
 {% endtabs %}
 
-When starting the Valtimo platform as Docker containers, all supporting services and the two Valtimo services are started up with above Docker Compose files. The containers are designed for evaluation purposes only.\\
+When starting the Valtimo platform as Docker containers, all supporting services and the two Valtimo services are started up with above Docker Compose files. The containers are designed for evaluation purposes only.
 
 ## **Software developers**
 
@@ -153,7 +158,7 @@ Documentation for tech-savvy engineers and developers on which modules are avail
 
 ### Starting your own Valtimo implementation
 
-When starting your own Valtimo implementation, the supporting services are started up with a Docker Compose file. The two Valtimo services are started up from their respective Git repositories using a command line interface (CLI) or integrated development environment (IDE).
+When starting your own Valtimo implementation, the supporting services are started up with a Docker Compose file. The two Valtimo services are started up from their respective Git repositories using a command line interface (CLI) or integrated development environment (IDE).&#x20;
 
 ### Supporting services
 
@@ -189,7 +194,7 @@ For starting a GZAC implementation, the following Github repositories should be 
 * [gzac-backend-template](https://github.com/generiekzaakafhandelcomponent/gzac-backend-template)
 * [gzac-frontend-template](https://github.com/generiekzaakafhandelcomponent/gzac-frontend-template)
 
-Instructions are available in the README files of above mentioned repositories.
+Instructions are available in the README files of above mentioned repositories.&#x20;
 {% endtab %}
 {% endtabs %}
 

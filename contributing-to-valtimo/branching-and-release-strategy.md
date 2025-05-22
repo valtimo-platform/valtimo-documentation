@@ -1,6 +1,6 @@
 # Branching and release strategy
 
-The Valtimo product team aims to deliver new functionality to its users quickly. Contributions from outside the core development team are very much appreciated and welcomed. To make this possible, the below branching and release strategy is used.
+The Valtimo product aims to deliver features to its user quickly. Contributions from outside the core development team are welcomed. To make this possible, the below branching and release strategy is used.
 
 ## Branching
 
