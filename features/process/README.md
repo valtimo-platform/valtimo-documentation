@@ -5,7 +5,7 @@ Valtimo is built on top of Camunda, it uses Camunda to create BPMN processes.
 This section contains information on how to configure and use BPMN processes in Valtimo.
 
 * [System processes](systemprocesses.md)
-* [Correlating messages](https://github.com/valtimo-platform/valtimo-documentation/blob/story/restructure-docs/using-valtimo/process/correlatingmessages.md)
+* [Correlating messages](../../using-valtimo/process/correlatingmessages.md)
 * [Manipulating jobs](job-service.md)
 
 ## Access control

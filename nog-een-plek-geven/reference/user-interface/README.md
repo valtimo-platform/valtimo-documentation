@@ -4,6 +4,6 @@ For the Valtimo user interface, the following topics are further clarified:
 
 * [Design philosophy](design-philosophy.md)
 * [Carbon design system](carbon-design-system.md)
-* [Theme](https://github.com/valtimo-platform/valtimo-documentation/blob/story/restructure-docs/reference/user-interface/theme.md)
+* [Theme](../../../reference/user-interface/theme.md)
 * [Breadcrumbs](breadcrumbs.md)
 * [Valtimo Carbon List](valtimo-carbon-list.md)

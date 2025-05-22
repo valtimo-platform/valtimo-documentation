@@ -20,8 +20,8 @@ Plugins are used by Valtimo to extend functionality and to make connections to e
 This sections contains information on how plugins can be created, configured and used.
 
 * [Configure Plugin](configure-plugin.md)
-* [Creating a process link](https://github.com/valtimo-platform/valtimo-documentation/blob/story/restructure-docs/using-valtimo/plugin/create-process-link.md)
-* [Deleting a process link](https://github.com/valtimo-platform/valtimo-documentation/blob/story/restructure-docs/using-valtimo/plugin/delete-process-link.md)
+* [Creating a process link](../../using-valtimo/plugin/create-process-link.md)
+* [Deleting a process link](../../using-valtimo/plugin/delete-process-link.md)
 
 ***
 

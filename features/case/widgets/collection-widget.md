@@ -11,11 +11,11 @@ This page requires:
 A collection widget can be used when arrays (lists) are stored in the case data structure and need to be presented as such in the case UI. The following fields need to be configured for a collection widget.
 
 * **Widget title**\
-  &#xNAN;_&#x54;he widget title is presented in the UI at the top-left corner of the widget and should describe the content for that widget._
+  \&#xNAN;_The widget title is presented in the UI at the top-left corner of the widget and should describe the content for that widget._
 * **Number of cards per page**\
-  &#xNAN;_&#x49;f the content exceeds the number of rows pagination will be added in the UI._
+  \&#xNAN;_If the content exceeds the number of rows pagination will be added in the UI._
 * **Path to collection data**\
-  &#xNAN;_&#x54;he exact path in the JSON document that contains the array with data._
+  \&#xNAN;_The exact path in the JSON document that contains the array with data._
 * **Card title display type**\
   Same as each text field, the title of the card can also be set to a certain [display type](fields-widget.md#display-types).
 
@@ -24,11 +24,11 @@ A collection widget can be used when arrays (lists) are stored in the case data 
 For each card in the collection the following configurations needs to be done.
 
 * **Card title**\
-  &#xNAN;_&#x54;he title of each card can be set to a value from the array items._\
-  _So the card title is not a label in this case, but a value from a array item._
+  \&#xNAN;_The title of each card can be set to a value from the array items._\
+  &#xNAN;_&#x53;o the card title is not a label in this case, but a value from a array item._
 * **Display type**\
-  &#xNAN;_&#x53;elect the way the card title is presented in the UI._\
-  _Please find the available display types below._
+  \&#xNAN;_Select the way the card title is presented in the UI._\
+  &#xNAN;_&#x50;lease find the available display types below._
 
 ### Configure card fields
 
@@ -36,14 +36,14 @@ A set of fields can be configured that will display the data for each card.\
 The following configuration needs to be done to add a field to a card.
 
 * **Title**\
-  &#xNAN;_&#x57;ill be displayed as the fields label in the UI._
+  \&#xNAN;_Will be displayed as the fields label in the UI._
 * **Value**\
-  _The value itself will not actually be configured, the path targeting the value in the JSON document is configured. The value is passed through by the widget._
+  &#xNAN;_&#x54;he value itself will not actually be configured, the path targeting the value in the JSON document is configured. The value is passed through by the widget._
 * **Display type**\
-  &#xNAN;_&#x53;elect the way the data is presented in the UI._\
-  _Please find the available display types below._
+  \&#xNAN;_Select the way the data is presented in the UI._\
+  &#xNAN;_&#x50;lease find the available display types below._
 * **Field width**\
-  &#xNAN;_&#x46;or each field the choice can be made to use the full width of the card or half._
+  \&#xNAN;_For each field the choice can be made to use the full width of the card or half._
 
 {% hint style="info" %}
 **Display types**\
@@ -55,15 +55,14 @@ Please find the documentation on the different display types there.
 **Collection widget configuration example**
 
 Below example shows the configuration for a collection that displays uploaded files.\
-Each card  in the collection will get it's title and the card fields from the array data.\
+Each card in the collection will get it's title and the card fields from the array data.\
 \
 The card name will be set to the file name.\
 The card fields will show following information:
 
 * Created on
 * Storage bucket
-* Size (in bytes)\
-
+* Size (in bytes)\\
 
 **The path in the JSON document for the array:**\
 `doc:/uploadedFiles`

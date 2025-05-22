@@ -12,13 +12,13 @@ The for developers section within each feature gives more tech heavy information
 
 <summary>Custom outbox message publisher</summary>
 
-### Creating a custom outbox message publisher
+#### Creating a custom outbox message publisher
 
 Valtimo offers the functionality needed to create and add custom outbox message publishers to Valtimo implementations. This is useful when the desired message broker (middleware) is not provided by Valtimo out of the box or by a third party.
 
 Implementing a custom message publisher only requires work in the backend.
 
-#### Dependencies
+**Dependencies**
 
 To create a custom message publisher in your project, the following dependency is needed:
 
@@ -26,7 +26,7 @@ To create a custom message publisher in your project, the following dependency i
     api("com.ritense.valtimo:outbox:$valtimoVersion") 
 ```
 
-#### Considerations
+**Considerations**
 
 The outbox pattern is designed to guarantee reliable (at least once) delivery.
 
@@ -34,7 +34,7 @@ Because of that, it is important to make sure messages are received by the broke
 
 Please refer to the documentation of your message broker and client. If message delivery cannot be guaranteed, consider using a different solution.
 
-### Implementing the MessagePublisher
+#### Implementing the MessagePublisher
 
 The custom message publisher should implement the `com.ritense.outbox.publisher.MessagePublisher` interface from the `outbox` module:
 
@@ -51,7 +51,7 @@ When delivery fails or acknowledgement takes too long, a `MessagePublishingFaile
 
 When delivery is successful (no exceptions are thrown), the outbox message will be deleted from the outbox table automatically.
 
-### Bean configuration
+#### Bean configuration
 
 The custom message publisher should be configured as a Bean in the Spring application.
 

@@ -5,7 +5,7 @@ In a new implementation of Valtimo no permissions are configured by default. `RO
 {% hint style="info" %}
 This page requires:
 
-* Knowledge of  [JSON](https://www.json.org/?_target=blank)
+* Knowledge of [JSON](https://www.json.org/?_target=blank)
 {% endhint %}
 
 There are different ways of configuring Permissions in Valtimo.
@@ -24,7 +24,7 @@ Creating permissions is done for a specific role. Assuming a role is present, cl
 
 The image above shows all the permissions that have been configured for `ROLE_USER`. Here, permissions can be added, edited and removed. Since the list shown here is the full list of permissions for this role, removing a permission from the list and saving it will also result in the removal of that permission in Valtimo.
 
-### Permission structure
+#### Permission structure
 
 There are a lot of elements that can be specified for permissions. As an example, someone with `ROLE_USER` can have access to cases of type `example-document-definition`, or if that someone has been assigned to the case. The following two permissions are used to define this:
 
@@ -65,7 +65,7 @@ Going over each element:
 {% endtab %}
 
 {% tab title="Via IDE" %}
-### Configuring permissions
+#### Configuring permissions
 
 The example below defines 2 permissions:
 
@@ -110,7 +110,7 @@ The example below defines 2 permissions:
 }
 ```
 
-#### Joining entities using a container
+**Joining entities using a container**
 
 The example below shows how container conditions can be used to join other entities. In this case, the permission is defined:
 
