@@ -147,7 +147,7 @@ Click on the **Upload** button to open the **Import case definition** modal\*. T
 
 1. Informative step regarding plugins.
 2. Select the edited document definition from your system\
-   \&#xNAN;_When the file is succesfully uploaded a warning is displayed that current configurations for that case can be overwritten by this upload._
+   &#xNAN;_&#x57;hen the file is successfully uploaded a warning is displayed that current configurations for that case can be overwritten by this upload._
 3. Start the upload\
    The file will be validated and if it passes all checks the document definition is updated.
 
