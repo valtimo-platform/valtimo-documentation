@@ -49,6 +49,7 @@ Example\
 If the name of the document definition is **`profile`**, the configuration path and file name must be: **`/resource/config/case/list/profile.json`**
 {% endhint %}
 
+\
 The content of a list configuration file can look like this:
 
 ```json
@@ -77,11 +78,13 @@ The content of a list configuration file can look like this:
 Overview of available configuration fields and the corresponding field types.
 
 * **Title**\
-  The title is an optional field that appears as the label in the search field case list UI. This field is not mandatory and if left blank a translation of the Key will be shown. If no translation for the Key is set, the Key will be shown.
+  The title is an optional field that appears as the label in the search field case list UI. This field is not mandatory and if left blank a translation of the Key will be shown. If no translation for the Key is set, the Key will be shown.\
+
 * **Key**\
-  This field needs to be unique within this case, submission will be prevented if duplicates are found.
+  This field needs to be unique within this case, submission will be prevented if duplicates are found.\
+
 * **Path**\
-  The path input gives access to the data fields and meta data of the case. These can easily be identified by there prefix. Case data can be targeted by using the `doc:` prefix. Use the `case:` prefix to target the case meta data.
+  The path input gives access to the data fields and meta data of the case. These can easily be identified by there prefix. Case data can be targeted by using the **doc:** prefix. Use the **case:** prefix to target the case meta data.
 
 {% hint style="info" %}
 **Prefix examples**\
@@ -94,6 +97,7 @@ This path targets the case data itself. The `doc:` prefix directs to the content
 {% endhint %}
 
 * **Display Type**\
-  With this setting the behavior of the UI in the list overview can be set. Data can be displayed as normal text, but also as dates, booleans, or tags for example. Try out the types to see what works for each case.
+  With this setting the behavior of the UI in the list overview can be set. Data can be displayed as normal text, but also as dates, booleans, or tags for example. Try out the types to see what works for each case.\
+
 * **Sortable** and **Default Sort**\
   If set the header column will have the sort options available for this column, default sort setting is executed on page enter. A default sort order can be selected when Sortable is checked.

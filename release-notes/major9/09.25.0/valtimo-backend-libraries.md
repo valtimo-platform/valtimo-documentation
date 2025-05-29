@@ -19,7 +19,7 @@ The following features were added:
     The query for retrieving list of case definitions has been improved. Performance increases for this API call have improved significantly when dealing with a lot of case definitions or case definition versions. Calls that took 10 seconds have now been observed to take less than half a second after these improvements.
 *   **Case search field configuration ordering**
 
-    The order of search fields can now be changed with the existing PUT endpoint. The PUT endpoint now accepts a list of search fields from which the order is saved into the database. More information about search fields can be found [here](../../../extending-valtimo/document/search-fields.md).
+    The order of search fields can now be changed with the existing PUT endpoint. The PUT endpoint now accepts a list of search fields from which the order is saved into the database. More information about search fields can be found [here](https://github.com/valtimo-platform/valtimo-documentation/blob/story/restructure-docs/extending-valtimo/document/search-fields.md).
 
 ## Bugfixes
 
