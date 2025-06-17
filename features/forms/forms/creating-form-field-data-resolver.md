@@ -3,7 +3,7 @@
 FormIO forms in Valtimo can be prefilled with data from custom sources.
 
 {% hint style="danger" %}
-Form field data resolvers have been deprecated as of version 11.0.0 and will be removed in the future. Please use [value resolvers](../../value-resolvers/) instead.
+Form field data resolvers have been deprecated as of version `11.0.0` and will be removed in the future. Please use [value resolvers](../creating-forms-in-valtimo.md#value-resolvers) instead.
 {% endhint %}
 
 ## Introduction

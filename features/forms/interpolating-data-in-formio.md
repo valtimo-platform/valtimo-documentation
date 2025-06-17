@@ -1,4 +1,4 @@
-# Interpolating data in Form.io
+# Interpolating data
 
 Data can be included in Form.io forms in multiple ways. One of the more common ways is to interpolate variables in field descriptions and HTML type fields.
 
@@ -47,7 +47,7 @@ For example if a user were to enter the following text in a form fields.
 
 ![Example input with HTML](../../using-valtimo/forms/img/input-with-html.png)
 
-This would result in the following text being displayed in the form when using the `{{ expression }}` syntax
+This would result in the following text being displayed in the form when using the `{{{ expression }}}` syntax
 
 ![Example of escaped data](../../using-valtimo/forms/img/example-escaped-data.png)
 

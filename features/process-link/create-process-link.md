@@ -24,7 +24,7 @@ More information about forms can be found [here](../forms/).
 
 A form-flow process link can be added to user-tasks. When the process reaches the user-task, an instance of the form-flow will be created and be made visible to the user.
 
-More information about form-flows can be found [here](../form-flow/).
+More information about form-flows can be found [here](../forms/form-flow.md).
 
 ### Creating a plugin process link
 

@@ -8,7 +8,7 @@ Each configurable element offers a set of actions that can be adjusted to fit yo
 
 ## Actions configurable with Access control
 
-<table><thead><tr><th width="131">Action</th><th width="423">Function</th><th>Examples</th></tr></thead><tbody><tr><td><strong>Assign</strong></td><td>Gives permission to assign that element to someone</td><td>Case or Task</td></tr><tr><td><strong>Assignable</strong></td><td>Makes users selectable when the element is assigned</td><td>Case or Task</td></tr><tr><td><strong>Create</strong></td><td>Enables users to create that element</td><td>Case or Case note</td></tr><tr><td><strong>Claim</strong></td><td>Enables users to claim the element</td><td>Case or Task</td></tr><tr><td><strong>Delete</strong></td><td>Enables users to delete the element</td><td>Case or Case note</td></tr><tr><td><strong>Modify</strong></td><td>Enables users to modify the elements details</td><td>Case or Case note</td></tr><tr><td><strong>View</strong></td><td>Gives permission to view the elements details</td><td>Case or Task</td></tr><tr><td><strong>View-list</strong></td><td>Gives permission to view the element in a list</td><td>Case, Task, Case note</td></tr></tbody></table>
+<table><thead><tr><th width="131" valign="top">Action</th><th width="423" valign="top">Function</th><th valign="top">Examples</th></tr></thead><tbody><tr><td valign="top"><strong>Assign</strong></td><td valign="top">Gives permission to assign that element to someone</td><td valign="top">Case or Task</td></tr><tr><td valign="top"><strong>Assignable</strong></td><td valign="top">Makes users selectable when the element is assigned</td><td valign="top">Case or Task</td></tr><tr><td valign="top"><strong>Create</strong></td><td valign="top">Enables users to create that element</td><td valign="top">Case or Case note</td></tr><tr><td valign="top"><strong>Claim</strong></td><td valign="top">Enables users to claim the element</td><td valign="top">Case or Task</td></tr><tr><td valign="top"><strong>Delete</strong></td><td valign="top">Enables users to delete the element</td><td valign="top">Case or Case note</td></tr><tr><td valign="top"><strong>Modify</strong></td><td valign="top">Enables users to modify the elements details</td><td valign="top">Case or Case note</td></tr><tr><td valign="top"><strong>View</strong></td><td valign="top">Gives permission to view the elements details</td><td valign="top">Case or Task</td></tr><tr><td valign="top"><strong>View-list</strong></td><td valign="top">Gives permission to view the element in a list</td><td valign="top">Case, Task, Case note</td></tr></tbody></table>
 
 {% hint style="info" %}
 Please note that it is not possible to nest actions in a configuration.\
@@ -23,8 +23,6 @@ For each separate action a configuration needs to be added to Access Control for
     "conditions": []
 }
 ```
-
-
 
 <mark style="color:green;">Correct configuration:</mark>
 
@@ -56,8 +54,8 @@ Below the full list of elements within Valtimo that can and need to be configure
   * [Document definition](../case/document-definition.md#access-control)
   * [Notes](../case/notes.md#access-control)
   * [Search fields](../case/search-fields.md#access-control)
-  * [Tabs](../case/tabs.md#access-control)
-  * [Widgets](../case/widgets/#access-control)
+  * [Tabs](../case/tabs/#access-control)
+  * [Widgets](../case/tabs/widgets.md#access-control)
 * [Dashboard](../dashboard/#access-control)
 * Process
   * [Execution](../process/#access-control)

@@ -1,11 +1,21 @@
-# Creating a form flow definition
+# Form flow
+
+Form flow allows users to create a sequence of forms, similar to a flow chart or form wizard. A form flow definition contains the configuration for each step, what the subsequent steps are, and the conditions under which they can be reached. A form flow can be linked to a task, which consequently allows for more forms for the same task. Form flow supports forwards and backwards movement between steps without completing the task, reducing complexity in a BPMN model.
+
+Form flow offers a way to configure a flow between different Form IO forms inside the same user task.
+
+## Creating a form flow definition
 
 A form flow definition is a JSON document that defines steps and which steps can be reached under what conditions when the current step is completed. Each step can have zero or more actions (e.g. retrieve external data) that trigger when the task is opened or completed. Depending on the type of step, the step can be handled in a different way. The way a form is handled can differ from a payment, for example.
 
 For information on how to link a form flow definition to a task, see [here](../process-link/create-process-link.md#creating-a-form-flow-process-link).
 
-## Definitions
+{% tabs %}
+{% tab title="Via UI" %}
 
+{% endtab %}
+
+{% tab title="Via IDE" %}
 To create form flow definition, the following steps are necessary:
 
 * Create a form flow `.json` file under the following path: `*/resources/config/form-flow/`.
@@ -63,7 +73,7 @@ To create form flow definition, the following steps are necessary:
 }
 ```
 
-* The `personalDetailsStep` is now followed by two other steps. This is only allowed when at least one of the two steps is conditional. The order of next step matters. The first `nextStep` with `condition` that is evaluated to `true` will be the next step. When all the conditions are evaluated to `false` the next step will be the default step; which is the step without condition. If no next step is found, the form flow will end. The expression inside the condition is further explained [here](../../nog-een-plek-geven/reference/modules/form-flow.md#step-types).
+* The `personalDetailsStep` is now followed by two other steps. This is only allowed when at least one of the two steps is conditional. The order of next step matters. The first `nextStep` with `condition` that is evaluated to `true` will be the next step. When all the conditions are evaluated to `false` the next step will be the default step; which is the step without condition. If no next step is found, the form flow will end. The expression inside the condition is further explained [here](broken-reference).
 
 ```json
 {
@@ -96,7 +106,7 @@ To create form flow definition, the following steps are necessary:
 }
 ```
 
-*   Configure the step type. Currently, the only step type supported is `form`, which requires a `definition` property to be set. This refers to the key of the form. For more information on step types, see [here](../../nog-een-plek-geven/reference/modules/form-flow.md#step-types)
+*   Configure the step type. Currently, the only step type supported is `form`, which requires a `definition` property to be set. This refers to the key of the form. For more information on step types, see [here](broken-reference)
 
     Which properties are required to be set depends on the step type.
 
@@ -157,7 +167,7 @@ To create form flow definition, the following steps are necessary:
 
 * Add triggers to steps where necessary (e.g. to store data externally). See below for more information.
 
-## Expressions
+### Expressions
 
 Form flow supports Spring Expression Language (SpEL) expressions to allow for more complex actions when a step is opened or completed. Expressions can be recognized by the surrounding `${ }` characters. The following additional properties are supported for steps:
 
@@ -167,7 +177,7 @@ Form flow supports Spring Expression Language (SpEL) expressions to allow for mo
 
 Each of these properties supports more than one expression, e.g. when a step is opened, external data from more than one source is retrieved. These expressions are evaluated in order.
 
-Valtimo provides access to certain variables in the SpEL context, e.g. what the current step is. Which properties are available can be found [here](../../nog-een-plek-geven/reference/modules/form-flow.md#available-properties-in-spel-context)
+Valtimo provides access to certain variables in the SpEL context, e.g. what the current step is. Which properties are available can be found [here](broken-reference)
 
 ```json
 {
@@ -227,4 +237,42 @@ Valtimo provides access to certain variables in the SpEL context, e.g. what the 
 }
 ```
 
-By default, SpEL allows access to every Spring bean from inside expressions. For security reasons, this has been changed to a whitelist instead. More information on how to whitelist Spring beans is available [here](form-flow/whitelist-spring-bean.md) and more information on SpEL can be found [here](https://docs.spring.io/spring-framework/docs/current/reference/html/core.html#expressions).
+By default, SpEL allows access to every Spring bean from inside expressions. For security reasons, this has been changed to a whitelist instead. More information on how to whitelist Spring beans is available [here](forms/whitelist-spring-bean.md) and more information on SpEL can be found [here](https://docs.spring.io/spring-framework/docs/current/reference/html/core.html#expressions).
+{% endtab %}
+{% endtabs %}
+
+## Step types
+
+The following step types are supported by form flow:
+
+### Form
+
+The `form` step type is used to associate a step with a specific form. The following properties are supported:
+
+```json
+    ...
+      "type": {
+        "name": "form",
+        "properties": {
+          "definition": "String" //The ID of the form
+        }
+      }
+    ...
+```
+
+### Custom component
+
+The `custom-component` step type is used to associate a step with a custom-made front-end component. The following properties are supported:
+
+```json
+    ...
+      "type": {
+        "name": "custom-component",
+        "properties": {
+          "componentId": "String" //The key of the component in the front-end
+        }
+      }
+    ...
+```
+
+More information on custom form flow components can be found [here](forms/create-custom-component.md).

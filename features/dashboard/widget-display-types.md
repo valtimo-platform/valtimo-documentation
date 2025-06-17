@@ -1,6 +1,6 @@
 # Widget display types
 
-The display types listed below are the ones that are included in Valtimo.&#x20;
+The display types listed below are the ones that are included in Valtimo.
 
 Each display type used must be imported in the `AppModule` of your front-end implementation if you want to use them. They are exported from `'@valtimo/dashboard'`.
 
@@ -16,15 +16,7 @@ Displays the data as a single number in text.
 
 ### Properties
 
-| Name                      | Description                                                                                                                                                                                                                        |
-| ------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `title`                   | The title of the widget, shown at the top of the widget.                                                                                                                                                                           |
-| `subtitle`                | The text shown below the title.                                                                                                                                                                                                    |
-| `label`                   | The label that is displayed to the right of the number. Can be used to clarify what the number indicates.                                                                                                                          |
-| `useKPI`                  | Enables the use of thresholds to change the color of the number. When set to `false` the color of the number is black. When set to `true` the color of the number is green unless it is above one or more of the threshold values. |
-| `lowSeverityThreshold`    | Limit above which the color of the number becomes yellow.                                                                                                                                                                          |
-| `mediumSeverityThreshold` | Limit above which the color of the number becomes orange.                                                                                                                                                                          |
-| `highSeverityThreshold`   | Limit above which the color of the number becomes red.                                                                                                                                                                             |
+<table><thead><tr><th valign="top">Name</th><th valign="top">Description</th></tr></thead><tbody><tr><td valign="top"><code>title</code></td><td valign="top">The title of the widget, shown at the top of the widget.</td></tr><tr><td valign="top"><code>subtitle</code></td><td valign="top">The text shown below the title.</td></tr><tr><td valign="top"><code>label</code></td><td valign="top">The label that is displayed to the right of the number. Can be used to clarify what the number indicates.</td></tr><tr><td valign="top"><code>useKPI</code></td><td valign="top">Enables the use of thresholds to change the color of the number. When set to <code>false</code> the color of the number is black. When set to <code>true</code> the color of the number is green unless it is above one or more of the threshold values.</td></tr><tr><td valign="top"><code>lowSeverityThreshold</code></td><td valign="top">Limit above which the color of the number becomes yellow.</td></tr><tr><td valign="top"><code>mediumSeverityThreshold</code></td><td valign="top">Limit above which the color of the number becomes orange.</td></tr><tr><td valign="top"><code>highSeverityThreshold</code></td><td valign="top">Limit above which the color of the number becomes red.</td></tr></tbody></table>
 
 ## Donut chart
 
@@ -38,11 +30,7 @@ Displays multiple counts in a donut chart.
 
 ### **Properties**
 
-| Name       | Description                                                        |
-| ---------- | ------------------------------------------------------------------ |
-| `title`    | Required. The title of the widget, shown at the top of the widget. |
-| `subtitle` | The text shown below the title.                                    |
-| `label`    | The label that is displayed in the center of the donut.            |
+<table><thead><tr><th valign="top">Name</th><th valign="top">Description</th></tr></thead><tbody><tr><td valign="top"><code>title</code></td><td valign="top">Required. The title of the widget, shown at the top of the widget.</td></tr><tr><td valign="top"><code>subtitle</code></td><td valign="top">The text shown below the title.</td></tr><tr><td valign="top"><code>label</code></td><td valign="top">The label that is displayed in the center of the donut.</td></tr></tbody></table>
 
 ## Meter chart <a href="#meter-chart" id="meter-chart"></a>
 
@@ -56,10 +44,7 @@ Displays multiple counts in a horizontal meter chart.
 
 ### **Properties**
 
-| Name       | Description                                                        |
-| ---------- | ------------------------------------------------------------------ |
-| `title`    | Required. The title of the widget, shown at the top of the widget. |
-| `subtitle` | The text shown below the title.                                    |
+<table><thead><tr><th valign="top">Name</th><th valign="top">Description</th></tr></thead><tbody><tr><td valign="top"><code>title</code></td><td valign="top">Required. The title of the widget, shown at the top of the widget.</td></tr><tr><td valign="top"><code>subtitle</code></td><td valign="top">The text shown below the title.</td></tr></tbody></table>
 
 ## Gauge <a href="#gauge" id="gauge"></a>
 
@@ -73,8 +58,4 @@ Displays a count and a total count in a gauge.
 
 ### **Properties**
 
-| Name       | Description                                                                              |
-| ---------- | ---------------------------------------------------------------------------------------- |
-| `title`    | Required. The title of the widget, shown at the top of the widget.                       |
-| `subtitle` | The text shown below the title.                                                          |
-| `label`    | The label specifies the type of item under the gauge. In the screenshot this is 'zaken'. |
+<table><thead><tr><th valign="top">Name</th><th valign="top">Description</th></tr></thead><tbody><tr><td valign="top"><code>title</code></td><td valign="top">Required. The title of the widget, shown at the top of the widget.</td></tr><tr><td valign="top"><code>subtitle</code></td><td valign="top">The text shown below the title.</td></tr><tr><td valign="top"><code>label</code></td><td valign="top">The label specifies the type of item under the gauge. In the screenshot this is 'zaken'.</td></tr></tbody></table>

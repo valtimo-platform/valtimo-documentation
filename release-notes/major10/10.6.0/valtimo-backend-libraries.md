@@ -77,7 +77,7 @@ The following features were added:
 
     `GET /api/v1/user/settings` `PUT /api/v1/user/settings`
 * **Prefilling of start forms for supporting processes** Start forms configured for supporting processes are now prefilled with case data when opened.
-* **Support for form flows to start cases and supporting processes** Form flows can now be used to start a new case or supporting processes for an existing case. More information [here](../../../nog-een-plek-geven/reference/modules/form-flow.md#starting-a-new-case-and-saving-submission-data-to-defined-location)
+* **Support for form flows to start cases and supporting processes** Form flows can now be used to start a new case or supporting processes for an existing case. More information [here](broken-reference)
 
 ## Bugfixes
 

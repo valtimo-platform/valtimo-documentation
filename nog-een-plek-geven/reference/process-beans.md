@@ -191,7 +191,7 @@ Starts a new process and attaches it to the current document.
 
 ## ValueResolverDelegateService
 
-This process bean contains functions for accessing the Valtimo value resolver. More information [here](../../features/value-resolvers/)
+This process bean contains functions for accessing the Valtimo value resolver. More information [here](broken-reference)
 
 ### Resolve value
 
