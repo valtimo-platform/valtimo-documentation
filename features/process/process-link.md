@@ -1,16 +1,29 @@
-# Creating a process link
+# Process links
 
-Process links can be configured manually using the [Admin UI](create-process-link.md#configuration-using-the-admin-menu), or [autodeployment](create-process-link.md#configuration-by-autodeployment)
+Process actions can be attached to Camunda activities through process links. Configured actions will be executed when the process reached the desired activity. This makes it possible to extend the functionality of a process beyond what Camunda offers through BPMN.
 
-## Configuration using the Admin menu
+Currently, the following types of process-links are supported by Valtimo:
 
-The process link menu is found under the admin menu. Admin privileges are required to configure process links.
+* Form
+* Form-flow
+* Plugin
 
-1. Go to the Admin menu
-2. Go to the 'Process links v2 (beta)' menu
-3. Select the activity of the desired process.
-   * Depending on the type of activity, a list of supported process link types might be shown.
-4. Follow the steps
+## Creating process links
+
+There are two ways of creating process links:
+
+* Manually via the UI
+* Using autodeployment via the IDE
+
+{% tabs %}
+{% tab title="Via UI" %}
+To configure process links, admin privileges are required.
+
+* Go to the `Admin` menu
+* Go to the `Process links v2 (beta)` menu
+* Select the activity of the desired process.
+  * Depending on the type of activity, a list of supported process link types might be shown.
+* Follow the steps
 
 ![Select process link type](../../using-valtimo/process-link/img/select-process-link-type.png)
 
@@ -37,16 +50,18 @@ Any text fields for configuring the process link itself support several ways of 
 1. A fixed value. This value will be put directly into the template without alterations. For example `John`
 2. A value retrieved from the case-data. This value should start with `doc:` and should end with the path to the case-data property. For example `doc:/firstname`.
 3. A value retrieved from a process variable. This value should start with `pv:` and should end with the name of the process variable. For example `pv:firstname`.
+{% endtab %}
 
-## Configuration by autodeployment
-
-Available since 10.6.0
+{% tab title="Via IDE" %}
+{% hint style="success" %}
+Available since Valtimo `10.6.0`
+{% endhint %}
 
 Process links can also be configured using autodeployment. These process links will be created at application startup. When a conflicting configuration is found on the target activity, creation is skipped and a warning is logged in the application logs.
 
 Autodeployed process links can be added by creating a json file with the following filename structure: `<process-id>.processlink.json`. This file can be placed anywhere in the resource folder of the application.
 
-This is an example of an autodeployment file for 2 user task for process:
+This is an example of an autodeployment file for  two user task for a process:
 
 ```json
 [
@@ -74,3 +89,30 @@ This is an example of an autodeployment file for 2 user task for process:
    }
 ]
 ```
+{% endtab %}
+{% endtabs %}
+
+## Editing process links
+
+Process links that have been attached to Camunda activities, can also be edited. Admin privileges are required to edit process links.
+
+* Go to the `Admin` menu
+* Go to the `Process links v2 (beta)` menu
+* Select the activity of the desired process.
+* Change the settings using the provided form
+* Save the new configuration by clicking on **Complete**
+
+> Note: It is not possible to change the type of existing process links (form, form-flow or plugin), nor is it possible to change the selected plugin configuration. To do that, please [unlink](process-link.md#unlinking-process-links) the current process link and [create a new one](process-link.md#creating-process-links).
+
+![Edit a process link](../../using-valtimo/process-link/img/edit-process-link.png)
+
+## Unlinking process links
+
+Process links that have been attached to Camunda activities, can also be unlinked (deleted). Admin privileges are required to unlink/delete process links.
+
+* Go to the `Admin` menu
+* Go to the `Process links v2 (beta)` menu
+* Select the activity of the desired process.
+* Click on **Unlink**
+
+![Unlink a process link](../../using-valtimo/process-link/img/edit-process-link.png)

@@ -8,7 +8,7 @@ Form flow offers a way to configure a flow between different Form IO forms insid
 
 A form flow definition is a JSON document that defines steps and which steps can be reached under what conditions when the current step is completed. Each step can have zero or more actions (e.g. retrieve external data) that trigger when the task is opened or completed. Depending on the type of step, the step can be handled in a different way. The way a form is handled can differ from a payment, for example.
 
-For information on how to link a form flow definition to a task, see [here](../process-link/create-process-link.md#creating-a-form-flow-process-link).
+For information on how to link a form flow definition to a task, see [here](broken-reference).
 
 {% tabs %}
 {% tab title="Via UI" %}

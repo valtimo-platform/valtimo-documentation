@@ -31,7 +31,7 @@ The Objecten API plugin is used with REST endpoints. The following endpoints are
 
 The Objecten API plugin supports the following actions that can be configured in process links in order to manage data that is part of the object.
 
-A general description on how to create process links, can be found [here](../../process-link/create-process-link.md).
+A general description on how to create process links, can be found [here](broken-reference).
 
 ### Delete object
 

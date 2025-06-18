@@ -11,7 +11,7 @@ The following features were added:
     This feature is experimental, please refer to the known issues before considering to enable it. To make this work, add the following to the `scripts` array in your `angular.json` file: `"node_modules/dmn-js/dist/dmn-modeler.development.js"`.
 *   **Unlink process links**
 
-    Process links that were saved, can now also be deleted. More information on unlinking process links can be found [here](../../../features/process-link/unlink-process-link.md).
+    Process links that were saved, can now also be deleted. More information on unlinking process links can be found [here](broken-reference).
 *   **Option to configure extra tabs for object type**
 
     Added option to configure and display tabs by zaak object type, so user can see all relevant data in a separate tab.

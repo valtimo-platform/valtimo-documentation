@@ -1,6 +1,6 @@
 # Job service
 
-This service is process bean that provides a way to manipulate jobs within the current process.
+This service is a process bean that provides a way to manipulate jobs within the current process.
 
 ### Changing Timer event date
 

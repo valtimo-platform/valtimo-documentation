@@ -55,7 +55,7 @@ Instead of using the `Process completed Portaaltaak` process it is possible to c
 
 The portaaltaak plugin supports the following actions that can be configured in process links in order to create and complete user tasks through external systems like the NL Portal.
 
-A general description on how to create process links can be found [here](../../process-link/create-process-link.md).
+A general description on how to create process links can be found [here](broken-reference).
 
 ### Create Portaaltaak
 

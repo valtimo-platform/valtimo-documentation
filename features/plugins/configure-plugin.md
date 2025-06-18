@@ -2,7 +2,7 @@
 
 Plugins can be configured in the plugin menu in Valtimo. The plugin menu is found under the admin menu. Admin privileges are required to configure plugins.
 
-Instructions for using the configuration to link an action to a process task can be found [here](../process-link/create-process-link.md).
+Instructions for using the configuration to link an action to a process task can be found [here](../process/process-link.md#creating-a-plugin-process-link).
 
 ## Setup
 
@@ -43,7 +43,7 @@ An example configuration can be found below:
 ]
 ```
 
-The id (UUID) of the plugin should be generated manually. The same id's should be used when referencing configurations at the [plugin processlink autodeployment](../process-link/create-process-link.md#configuration-by-autodeployment).
+The id (UUID) of the plugin should be generated manually. The same id's should be used when referencing configurations at the [plugin processlink autodeployment](broken-reference).
 
 The available properties can be found in the documentation of the plugin.
 

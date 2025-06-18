@@ -23,7 +23,7 @@ An example plugin configuration: ![example plugin configuration](../../../using-
 
 The Besluiten API plugin supports the following actions that can be configured in process links in order to retrieve type data.
 
-A general description on how to create process links can be found [here](../../process-link/create-process-link.md).
+A general description on how to create process links can be found [here](broken-reference).
 
 ### Create besluit
 

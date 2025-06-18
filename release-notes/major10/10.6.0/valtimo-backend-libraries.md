@@ -50,7 +50,7 @@ The following features were added:
     Versions of other dependencies can be found [here](https://github.com/valtimo-platform/valtimo-backend-libraries/blob/10.6.0.RELEASE/gradle.properties).
 *   **Process links configuration autodeployment**
 
-    Process links can now be created by adding a configuration file in Valtimo. This configuration file is automatically used when rebooting Valtimo. This release adds support for the autodeployment of process links of type form, form-flow, and plugin action. More information [here](../../../features/process-link/create-process-link.md#configuration-by-autodeployment)
+    Process links can now be created by adding a configuration file in Valtimo. This configuration file is automatically used when rebooting Valtimo. This release adds support for the autodeployment of process links of type form, form-flow, and plugin action. More information [here](broken-reference)
 
     * **Plugin configuration auto deployment**
 

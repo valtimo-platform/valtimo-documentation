@@ -16,7 +16,7 @@ An example plugin configuration: ![example plugin configuration](../../using-val
 
 SmartDocuments' main function is to generate documents based on a template.
 
-A general description on how to create process links can be found [here](../process-link/create-process-link.md).
+A general description on how to create process links can be found [here](broken-reference).
 
 ### Generate document
 
