@@ -155,6 +155,10 @@ No actions are supported for this type.
 
 ### ZGW Document
 
+{% hint style="success" %}
+Available since Valtimo 12.10.0.
+{% endhint %}
+
 Resource type: `com.ritense.resource.authorization.ResourcePermission`
 
 #### Supported actions
