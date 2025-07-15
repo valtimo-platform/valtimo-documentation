@@ -1,14 +1,15 @@
-# Introduction
+# Welcome to Valtimo
 
-Welcome to the Valtimo documentation! Valtimo is the low-code platform for Business Process Automation built on
-top of Camunda. Our goal is to make implementing case management and workflow easy. This documentation provides everything
-you need to know about Valtimo; if you are a business analyst, administrator or implementation developer.
+Welcome to the Valtimo documentation! Valtimo is the open source low-code platform for Business Process Automation and Case Management. Our goal is to make implementing case management and process automation easy. This documentation provides everything you need to know about Valtimo; if you are a business analyst, administrator or implementation developer.
 
-These introduction pages explain the high level concepts of Valtimo, and what makes up the product. This section is 
-intended for everyone who wants to know what Valtimo is without requiring a technical background.
+Valtimo is open source under [EUPL 1.2](https://commission.europa.eu/content/european-union-public-licence_en) license.&#x20;
 
-* [Overview](introduction/overview.md)
-* [Architectural overview](introduction/architectural-overview.md)
-* [Modules](introduction/modules/modules.md)
-* [How to contribute](CONTRIBUTING.md)
-* [Style guide for contributing](STYLE-GUIDE.md)
+{% hint style="info" %}
+The previous version of the Valtimo documentation can be found [here](https://v1.docs.valtimo.nl). Feedback on this documentation is very welcome, via [Slack](https://valtimo.slack.com) or by creating a [Github issue](https://github.com/valtimo-platform/valtimo-issues/issues).
+{% endhint %}
+
+
+
+### Other sources
+
+<table data-view="cards"><thead><tr><th></th><th></th><th></th><th data-hidden data-card-target data-type="content-ref"></th><th data-hidden data-card-cover data-type="files"></th></tr></thead><tbody><tr><td><strong>Valtimo Academy</strong></td><td>Online courses on how to use Valtimo (in Dutch).</td><td></td><td><a href="https://academy.valtimo.nl/collections">https://academy.valtimo.nl/collections</a></td><td><a href=".gitbook/assets/AcademyDocs.png">AcademyDocs.png</a></td></tr><tr><td><strong>Support</strong></td><td>Need help?</td><td></td><td><a href="https://valtimo.slack.com/">https://valtimo.slack.com/</a></td><td><a href=".gitbook/assets/SupportDocs.png">SupportDocs.png</a></td></tr><tr><td><strong>Process Exchange</strong></td><td>Examples and ready to use building blocks and blue prints.</td><td></td><td><a href="https://exchange.gzac.nl/">https://exchange.gzac.nl/</a></td><td><a href=".gitbook/assets/ExchangeDocs.png">ExchangeDocs.png</a></td></tr></tbody></table>
