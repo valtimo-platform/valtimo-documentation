@@ -162,6 +162,7 @@
     * [Portaaltaak Plugin](features/zgw/zgw-plugins/configure-portaaltaak-plugin.md)
     * [Verzoek Plugin](features/zgw/zgw-plugins/configure-verzoek-plugin.md)
     * [Zaken API plugin](features/zgw/zgw-plugins/configure-zaken-api-plugin.md)
+  * [For developers](features/zgw/for-developers.md)
 
 ## Release notes
 
