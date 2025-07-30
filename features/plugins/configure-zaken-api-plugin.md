@@ -59,11 +59,11 @@ The **Patch zaak** action updates a zaak in the zaken API. When creating a proce
 * **Planned end-date.** The date by which the Zaak is scheduled to be completed.
 * **Final delivery-date.** The last date by which the Zaak must be completed according to law and regulations.
 * **Publication date.** Date on which (the start of) the Zaak is or will be published.
-* **Communication Channel.** The medium through which the reason for initiating a case was received. URL to a communication channel in the VNG Reference List of communication channels.
-* **CommunicationChannel Name.** (Experimental) The name of the medium through which the impetus for starting a Case was received.
-* **PaymentIndication.** Indication of whether the costs associated with handling the case have been paid by the person concerned.
-* **LastPaymentDate.** The date on which the most recent payment was processed for costs associated with handling the case.
-* **CaseGeometry.** Point, line, or (multi-)plane geometry information, in GeoJSON. (Long, Lat order). Exists of a type and a list of coordinates
+* **Communication channel.** The medium through which the reason for initiating a case was received. URL to a communication channel in the VNG Reference List of communication channels.
+* **Communication channel Name.** (Experimental) The name of the medium through which the impetus for starting a Case was received.
+* **Payment indication.** Indication of whether the costs associated with handling the case have been paid by the person concerned.
+* **Last payment date.** The date on which the most recent payment was processed for costs associated with handling the case.
+* **Case geometry.** Point, line, or (multi-)plane geometry information, in GeoJSON. (Long, Lat order). Exists of a type and a list of coordinates
 * **Main Case.** URL reference to the Zaak requested by its initiator, which is dealt with in two or more separate Zaken, of which the present Zaak is one.
 * **Archive action-date.** The date on which the archived Zaak file should be destroyed or transferred to an archive repository.
 * **Start-date retention period.** The date that marks the start of the period by which the Zaak file must be destroyed.
