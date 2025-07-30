@@ -54,7 +54,7 @@ The following features were added:
 
     * **Plugin configuration auto deployment**
 
-    Plugin configurations can now be created by adding a configuration file in Valtimo. More information [here](../../../features/plugins/configure-plugin.md)
+    Plugin configurations can now be created by adding a configuration file in Valtimo. More information [here](broken-reference)
 *   **New REST API endpoints have been added**
 
     A new endpoint has been added to return a prefilled Form IO form that was configured on a start-event of a BPMN:

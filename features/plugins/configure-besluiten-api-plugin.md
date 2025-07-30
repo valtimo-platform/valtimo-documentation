@@ -4,16 +4,16 @@ The Besluiten API plugin is used to store information about besluiten (decisions
 
 ## Configure the plugin
 
-A plugin configuration is required before the plugin can be used. A general description on how to configure plugins can be found [here](../../plugins/configure-plugin.md).
+A plugin configuration is required before the plugin can be used. A general description on how to configure plugins can be found [here](broken-reference).
 
-If the Besluiten API plugin is not visible in the plugin menu, it is possible the application is missing a dependency. Instructions on how to add the Besluiten API dependency can be found [here](../../../fundamentals/getting-started/modules/zgw/besluiten-api.md).
+If the Besluiten API plugin is not visible in the plugin menu, it is possible the application is missing a dependency. Instructions on how to add the Besluiten API dependency can be found [here](../../fundamentals/getting-started/modules/zgw/besluiten-api.md).
 
 To configure this plugin the following properties have to be entered:
 
 * **URL.** Contains the complete base URL of the Besluiten API to connect to. This generally includes the path `/api/v1/`.
 * **Authentication plugin configuration.** Reference to another plugin configuration that will be used to add authentication to any request performed on the Besluiten API. If no option is available in this field a plugin has to be configured that is able to authenticate for the specific application that hosts the Besluiten API.
 
-An example plugin configuration: ![example plugin configuration](../../../using-valtimo/plugin/besluiten-api/img/configure-plugin.png)
+An example plugin configuration: ![example plugin configuration](../../using-valtimo/plugin/besluiten-api/img/configure-plugin.png)
 
 * **URL (`url`)**. Contains the complete base URL of the Besluiten API to connect to. This generally includes the path `/api/v1/`.
 * **RSIN (`rsin`).** Legal entities and partnership number
@@ -42,7 +42,7 @@ When creating a process link the following properties have to be entered:
 * **Response deadline** The date until which a defense against the decision is possible.
 * **Process variable name with besluit URL** The process variable in which the besluit url is stored locally.
 
-An example action configuration: ![Retrieve statustype](../../../using-valtimo/plugin/besluiten-api/img/create-besluit.png)
+An example action configuration: ![Retrieve statustype](../../using-valtimo/plugin/besluiten-api/img/create-besluit.png)
 
 ### Link document to besluit
 
@@ -53,4 +53,4 @@ When creating a process link the following properties have to be entered:
 * **Besluit URL**. URL reference to the besluit
 * **Document URL**. URL reference to the document
 
-An example action configuration: ![Retrieve statustype](../../../using-valtimo/plugin/besluiten-api/img/link-document-to-besluit.png)
+An example action configuration: ![Retrieve statustype](../../using-valtimo/plugin/besluiten-api/img/link-document-to-besluit.png)

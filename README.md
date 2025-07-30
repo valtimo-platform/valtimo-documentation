@@ -2,13 +2,11 @@
 
 Welcome to the Valtimo documentation! Valtimo is the open source low-code platform for Business Process Automation and Case Management. Our goal is to make implementing case management and process automation easy. This documentation provides everything you need to know about Valtimo; if you are a business analyst, administrator or implementation developer.
 
-Valtimo is open source under [EUPL 1.2](https://commission.europa.eu/content/european-union-public-licence_en) license.&#x20;
+Valtimo is open source under [EUPL 1.2](https://commission.europa.eu/content/european-union-public-licence_en) license.
 
 {% hint style="info" %}
-The previous version of the Valtimo documentation can be found [here](https://v1.docs.valtimo.nl). Feedback on this documentation is very welcome, via [Slack](https://valtimo.slack.com) or by creating a [Github issue](https://github.com/valtimo-platform/valtimo-issues/issues).
+The previous version of the Valtimo documentation can be found [here](https://valtimo.gitbook.io/valtimo-documentation/). Feedback on this documentation is very welcome, via [Slack](https://valtimo.slack.com) or by creating a [Github issue](https://github.com/valtimo-platform/valtimo-issues/issues).
 {% endhint %}
-
-
 
 ### Other sources
 

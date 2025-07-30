@@ -4,7 +4,7 @@ The SmartDocuments plugin makes use of [SmartDocuments](https://smartdocuments.c
 
 ## Configure the plugin
 
-A plugin configuration is required before the plugin can be used. A general description on how to configure plugins can be found [here](configure-plugin.md).
+A plugin configuration is required before the plugin can be used. A general description on how to configure plugins can be found [here](broken-reference).
 
 If the SmartDocuments plugin is not visible in the plugin menu, it is possible the application is missing a dependency. Instructions on how to add the SmartDocuments dependency can be found [here](../../fundamentals/getting-started/modules/zgw/smartdocuments.md).
 

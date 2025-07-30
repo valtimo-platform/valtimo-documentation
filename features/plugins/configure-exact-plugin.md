@@ -51,7 +51,7 @@ exact:
 
 ## Configure the plugin
 
-A plugin configuration is required before the plugin can be used. A general description on how to configure plugins can be found [here](configure-plugin.md).
+A plugin configuration is required before the plugin can be used. A general description on how to configure plugins can be found [here](broken-reference).
 
 To configure this plugin the following properties have to be entered:
 
