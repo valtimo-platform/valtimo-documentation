@@ -50,6 +50,24 @@ The **Create zaak** action creates a zaak in the zaken API. When creating a proc
 * **RSIN.** Contains the RSIN of the organisation. The RSIN number (Rechtspersonen en Samenwerkingsverbanden Identificatie Nummer in Dutch) is an identification number for legal entities and partnerships. This will be used when creating the zaak to indicate who is responsible for creating the zaak record in the API.
 * **Zaak type.** The type of the zaak that is created.
 
+### Patch zaak
+
+The **Patch zaak** action updates a zaak in the zaken API. When creating a process link at lease one of the following properties has to be provided:
+
+* **Description.** A short description of the Zaak.
+* **Explanation.** An explanation of the Zaak.
+* **Planned end-date.** The date by which the Zaak is scheduled to be completed.
+* **Final delivery-date.** The last date by which the Zaak must be completed according to law and regulations.
+* **Publication date.** Date on which (the start of) the Zaak is or will be published.
+* **Communication Channel.** The medium through which the reason for initiating a case was received. URL to a communication channel in the VNG Reference List of communication channels.
+* **CommunicationChannel Name.** (Experimental) The name of the medium through which the impetus for starting a Case was received.
+* **PaymentIndication.** Indication of whether the costs associated with handling the case have been paid by the person concerned.
+* **LastPaymentDate.** The date on which the most recent payment was processed for costs associated with handling the case.
+* **CaseGeometry.** Point, line, or (multi-)plane geometry information, in GeoJSON. (Long, Lat order). Exists of a type and a list of coordinates
+* **Main Case.** URL reference to the Zaak requested by its initiator, which is dealt with in two or more separate Zaken, of which the present Zaak is one.
+* **Archive action-date.** The date on which the archived Zaak file should be destroyed or transferred to an archive repository.
+* **Start-date retention period.** The date that marks the start of the period by which the Zaak file must be destroyed.
+
 ### Create zaakrol - natural person
 
 The **Create zaakrol - natural person** action creates a zaakrol in the zaken API. Using this action, a person can be linked to a zaak. When creating a process link the following properties have to be entered:
