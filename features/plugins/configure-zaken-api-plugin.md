@@ -60,7 +60,7 @@ The **Patch zaak** action updates a zaak in the zaken API. When creating a proce
 * **Final delivery-date.** The last date by which the Zaak must be completed according to law and regulations.
 * **Publication date.** Date on which (the start of) the Zaak is or will be published.
 * **Communication channel.** The medium through which the reason for initiating a case was received. URL to a communication channel in the VNG Reference List of communication channels.
-* **Communication channel Name.** (Experimental) The name of the medium through which the impetus for starting a Case was received.
+* **Communication channel name.** (Experimental) The name of the medium through which the impetus for starting a Case was received.
 * **Payment indication.** Indication of whether the costs associated with handling the case have been paid by the person concerned.
 * **Last payment date.** The date on which the most recent payment was processed for costs associated with handling the case.
 * **Case geometry.** Point, line, or (multi-)plane geometry information, in GeoJSON. (Long, Lat order). Exists of a type and a list of coordinates
