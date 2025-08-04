@@ -52,7 +52,7 @@ The **Create zaak** action creates a zaak in the zaken API. When creating a proc
 
 ### Patch zaak
 
-The **Patch zaak** action updates a zaak in the zaken API. When creating a process link at lease one of the following properties has to be provided:
+The **Patch zaak** action updates a zaak in the zaken API. When creating a process link at least one of the following properties has to be provided:
 
 * **Description.** A short description of the Zaak.
 * **Explanation.** An explanation of the Zaak.
