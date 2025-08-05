@@ -64,7 +64,7 @@ The **Create zaakrol - natural person** action creates a zaakrol in the zaken AP
 
 The **Create zaakrol - non-natural person** action creates a zaakrol in the zaken API. Using this action, a non-natural person can be linked to a zaak. When creating a process link the following properties have to be entered:
 
-* **Role type URL.** Every person that is linked to a zaak has a role within that zaak. This property contains a URL to the role of the zaak.
+* **Role type URL.** Every person that is linked to a zaak has a role within that zaak. This property contains a URL to the type of the role within the zaak.
 * **Role explanation.** An explanation of the role that the person has within the zaak.
 * **Initiator BSN.** The BSN (Citizen service number) of the person that should be linked to the zaak.
 * **Other natural person identification.** (Optional) The unique number issued by the municipality for another natural person.
