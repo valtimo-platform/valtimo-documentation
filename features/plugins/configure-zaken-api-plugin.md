@@ -76,7 +76,7 @@ The **Create zaakrol - non-natural person** action creates a zaakrol in the zake
 
 The **Create zaakrol - employee** action creates a zaakrol in the zaken API. Using this action, an employee can be linked to a zaak. When creating a process link the following properties have to be entered:
 
-* **Role type URL.** Every person that is linked to a zaak has a role within that zaak. This property contains a URL to the role of the zaak.
+* **Role type URL.** Every person that is linked to a zaak has a role within that zaak. This property contains a URL to the type of the role within the zaak.
 * **Role explanation.** An explanation of the role that the person has within the zaak.
 * **Identification.** A short unique designation of the employee.
 * **Last name.** The last name as used by the employee in daily life.
