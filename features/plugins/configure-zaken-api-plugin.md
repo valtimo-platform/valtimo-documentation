@@ -89,7 +89,7 @@ The **Create zaakrol - employee** action creates a zaakrol in the zaken API. Usi
 
 The **Create zaakrol - organizational unit** action creates a zaakrol in the zaken API. Using this action, an organizational unit can be linked to a zaak. When creating a process link the following properties have to be entered:
 
-* **Role type URL.** Every person that is linked to a zaak has a role within that zaak. This property contains a URL to the role of the zaak.
+* **Role type URL.** Every person that is linked to a zaak has a role within that zaak. This property contains a URL to the type of the role within the zaak.
 * **Role explanation.** An explanation of the role that the person has within the zaak.
 * **Identification.** A short identification of the organizational unit.
 * **Name.** The actual name of the organizational unit.
