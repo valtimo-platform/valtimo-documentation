@@ -95,7 +95,7 @@ The **Create zaakrol - organizational unit** action creates a zaakrol in the zak
 * **Name.** The actual name of the organizational unit.
 * **Is housed in.** Location where the organizational unit is housed.
 * **Alternative name of the person involved** (Optional) The name of the person involved under which they wish to be addressed in relation to the case.
-* **Authorization indication** (Optional) The type that represents the authorization indication.
+* **Authorization indication.** (Optional) The type that represents the authorization indication.
 
 ### Create zaakrol - branch
 
