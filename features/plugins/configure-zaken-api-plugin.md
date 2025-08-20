@@ -104,7 +104,7 @@ The **Create zaakrol - branch** action creates a zaakrol in the zaken API. Using
 * **Role type URL.** Every person that is linked to a zaak has a role within that zaak. This property contains a URL to the type of the role within the zaak.
 * **Role explanation.** An explanation of the role that the person has within the zaak.
 * **Chamber of Commerce number.** A unique number assigned by the Chamber of Commerce.
-* **Branch number** A short unique designation of the branch.
+* **Branch number.** A short unique designation of the branch.
 
 ### Create zaakeigenschap
 
