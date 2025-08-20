@@ -82,7 +82,7 @@ The **Create zaakrol - employee** action creates a zaakrol in the zaken API. Usi
 * **Last name.** The last name as used by the employee in daily life.
 * **Initial.** The collection of letters formed by the first letter of all forenames in order.
 * **Prefix to last name** (Optional) Part of the genus name that appears in Table 36 (GBA), prefix table, and is separated from the genus name by a space.
-* **Alternative name of the person involved** (Optional) The name of the person involved under which they wish to be addressed in relation to the case.
+* **Alternative name of the person involved.** (Optional) The name of the person involved under which they wish to be addressed in relation to the case.
 * **Authorization indication** (Optional) The type that represents the authorization indication.
 
 ### Create zaakrol - organizational unit
