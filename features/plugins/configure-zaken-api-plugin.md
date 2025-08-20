@@ -70,7 +70,7 @@ The **Create zaakrol - non-natural person** action creates a zaakrol in the zake
 * **Other non-natural person identification.** (Optional) The unique number issued by the municipality for another non-natural person.
 * **Administration number person.** (Optional) The administration number of the person, as referred to in the BRP Act.
 * **Chamber of Commerce number** (Optional) A unique number assigned by the Chamber of Commerce.
-* **Branch number** (Optional) A short unique designation of the branch.
+* **Branch number.** (Optional) A short unique designation of the branch.
 
 ### Create zaakrol - medewerker
 
