@@ -78,6 +78,52 @@ The **Create zaakrol - natural person** action creates a zaakrol in the zaken AP
 * **Other natural person identification.** (Optional) The unique number issued by the municipality for another natural person.
 * **Administration number person.** (Optional) The administration number of the person, as referred to in the BRP Act.
 
+### Create zaakrol - non natural person
+
+The **Create zaakrol - non-natural person** action creates a zaakrol in the zaken API. Using this action, a non-natural person can be linked to a zaak. When creating a process link the following properties have to be entered:
+
+* **Role type URL.** Every person that is linked to a zaak has a role within that zaak. This property contains a URL to the type of the role within the zaak.
+* **Role explanation.** An explanation of the role that the person has within the zaak.
+* **Initiator non-natural person identification.** The unique number assigned by a chamber for the registered non-natural person that should be linked to the zaak.
+* **Other non-natural person identification.** (Optional) The unique number issued by the municipality for another non-natural person.
+* **Administration number person.** (Optional) The administration number of the person, as referred to in the BRP Act.
+* **Chamber of Commerce number.** (Optional) A unique number assigned by the Chamber of Commerce.
+* **Branch number.** (Optional) A short unique designation of the branch.
+
+### Create zaakrol - medewerker
+
+The **Create zaakrol - employee** action creates a zaakrol in the zaken API. Using this action, an employee can be linked to a zaak. When creating a process link the following properties have to be entered:
+
+* **Role type URL.** Every person that is linked to a zaak has a role within that zaak. This property contains a URL to the type of the role within the zaak.
+* **Role explanation.** An explanation of the role that the person has within the zaak.
+* **Identification.** A short unique designation of the employee.
+* **Last name.** The last name as used by the employee in daily life.
+* **Initial.** The collection of letters formed by the first letter of all forenames in order.
+* **Prefix to last name** (Optional) Part of the genus name that appears in Table 36 (GBA), prefix table, and is separated from the genus name by a space.
+* **Alternative name of the person involved.** (Optional) The name of the person involved under which they wish to be addressed in relation to the case.
+* **Authorization indication** (Optional) The type that represents the authorization indication.
+
+### Create zaakrol - organizational unit
+
+The **Create zaakrol - organizational unit** action creates a zaakrol in the zaken API. Using this action, an organizational unit can be linked to a zaak. When creating a process link the following properties have to be entered:
+
+* **Role type URL.** Every person that is linked to a zaak has a role within that zaak. This property contains a URL to the type of the role within the zaak.
+* **Role explanation.** An explanation of the role that the person has within the zaak.
+* **Identification.** A short identification of the organizational unit.
+* **Name.** The actual name of the organizational unit.
+* **Is housed in.** Location where the organizational unit is housed.
+* **Alternative name of the person involved** (Optional) The name of the person involved under which they wish to be addressed in relation to the case.
+* **Authorization indication.** (Optional) The type that represents the authorization indication.
+
+### Create zaakrol - branch
+
+The **Create zaakrol - branch** action creates a zaakrol in the zaken API. Using this action, a branch can be linked to a zaak. When creating a process link the following properties have to be entered:
+
+* **Role type URL.** Every person that is linked to a zaak has a role within that zaak. This property contains a URL to the type of the role within the zaak.
+* **Role explanation.** An explanation of the role that the person has within the zaak.
+* **Chamber of Commerce number.** A unique number assigned by the Chamber of Commerce.
+* **Branch number.** A short unique designation of the branch.
+
 ### Create zaakeigenschap
 
 The **Create zaakeigenschap** action creates a zaakeigenschap in the zaken API. When creating a process link the following properties can be entered:
