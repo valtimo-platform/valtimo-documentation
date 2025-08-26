@@ -11,4 +11,3 @@ The for developers section within each feature gives more tech heavy information
 {% content-ref url="subject-for-devs.md" %}
 [subject-for-devs.md](subject-for-devs.md)
 {% endcontent-ref %}
-

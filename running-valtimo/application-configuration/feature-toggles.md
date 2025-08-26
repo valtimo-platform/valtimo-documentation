@@ -16,7 +16,7 @@ In the frontend, feature toggles can be configured under the `featureToggles` ke
     If enabled, the full name of the user currently logged in is shown in the top bar next to the user menu button.
 *   **`experimentalDmnEditing`**
 
-    If enabled, it is possible to edit DMN tables from the ui from the admin page. This feature is experimental, please refer to [the release notes](../../release-notes/major9/09.20.0/valtimo-frontend-libraries.md) for known issues.
+    If enabled, it is possible to edit DMN tables from the ui from the admin page. This feature is experimental, please refer to [the release notes](../../release-notes/9.x.x/9.20.0-5.9.1/valtimo-frontend-libraries.md) for known issues.
 *   **`disableCaseCount`**
 
     If set to `true`, showing the number of open cases in the menu is disabled.
@@ -43,7 +43,7 @@ In the frontend, feature toggles can be configured under the `featureToggles` ke
     If enabled, the Valtimo version information in the right sidebar will only be visible for admins and will be hidden for any other users.
 *   **`enableTabManagement`**
 
-    If enabled, tabs will be configured for each case type in the back-end. Enabled by default when not configured. For more information on this option, visit [this page ](../../features/case/for-developers/case-tabs.md). If disabled, the tabs for each case type will be the same, and will be configured from the `AppModule`. For information on this option, visit [this page](broken-reference).
+    If enabled, tabs will be configured for each case type in the back-end. Enabled by default when not configured. For more information on this option, visit [this page ](../../features/case/for-developers/case-tabs.md). If disabled, the tabs for each case type will be the same, and will be configured from the `AppModule`. For information on this option, visit [this page](https://github.com/valtimo-platform/valtimo-documentation/blob/main/running-valtimo/application-configuration/broken-reference/README.md).
 *   **`useStartEventNameAsStartFormTitle`**
 
     If enabled, BPMN start event names will be used as title for start forms instead of the standard `Start - ${process-name}` format.
@@ -54,6 +54,3 @@ In the frontend, feature toggles can be configured under the `featureToggles` ke
 
     If enabled, access to the list of uploaded documents now requires permissions. Additionally, the backend requires the following property to be set in `application.yml`:\
     `valtimo.authorization.zgwDocuments.enabled`
-
-
-

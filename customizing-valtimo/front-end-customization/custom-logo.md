@@ -1,6 +1,6 @@
 # Custom logo
 
-A custom logo, displayed at the top left of the application, is configurable through the angular environment file. PNG and SVG logo's for light and dark mode are supported. First, [convert your image to Base64](https://base64.guru/converter/encode/image), and define them in a separate file, like in the below example. Please note that the string must _not_ include a header like `data:image/png;base64,i`.&#x20;
+A custom logo, displayed at the top left of the application, is configurable through the angular environment file. PNG and SVG logo's for light and dark mode are supported. First, [convert your image to Base64](https://base64.guru/converter/encode/image), and define them in a separate file, like in the below example. Please note that the string must _not_ include a header like `data:image/png;base64,i`.
 
 ```typescript
 const LOGO_BASE_64 =

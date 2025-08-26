@@ -8,9 +8,9 @@ The Valtimo product team aims to deliver new functionality to its users quickly.
 
 Both [valtimo-frontend-libraries](https://github.com/valtimo-platform/valtimo-frontend-libraries) and [valtimo-backend-libraries](https://github.com/valtimo-platform/valtimo-backend-libraries/) are mainly developed in one single branch: `next-minor`. As its name implies, all commits made into `next-minor` will be included when the next minor version of the product is released.
 
-| ![next-minor scenario](../contributing/resources/next-minor.png) |
-| ---------------------------------------------------------------- |
-| _Using the `next-minor` branch_                                  |
+| ![next-minor scenario](../.gitbook/assets/next-minor.png) |
+| --------------------------------------------------------- |
+| _Using the `next-minor` branch_                           |
 
 ### `next-major`
 
@@ -22,9 +22,9 @@ Once the breaking changes in `next-major` are finished and tested, `next-major` 
 
 Work then continues in the `next-minor` branch until a new breaking change needs to be made, which will again be developed in the `next-major` branch.
 
-| ![next-major scenario](../contributing/resources/next-major.png) |
-| ---------------------------------------------------------------- |
-| _Using the `next-major` branch_                                  |
+| ![next-major scenario](../.gitbook/assets/next-major.png) |
+| --------------------------------------------------------- |
+| _Using the `next-major` branch_                           |
 
 ### Back-end libraries
 
@@ -32,9 +32,9 @@ Because of security reasons, back-end features are developed in feature branches
 
 Bugfix branches follow the naming scheme: `bugfix/fix-security` or `bugfix/12345-fix-security`. They are either merged into `next-minor`, `feature/*` or to `next-major`.
 
-| ![back-end libraries scenario](../contributing/resources/backend-libraries.png) |
-| ------------------------------------------------------------------------------- |
-| _Working with feature branches on `next-minor` for back-end libraries_          |
+| ![back-end libraries scenario](../.gitbook/assets/backend-libraries.png) |
+| ------------------------------------------------------------------------ |
+| _Working with feature branches on `next-minor` for back-end libraries_   |
 
 ### Front-end libraries
 
@@ -46,9 +46,9 @@ In some cases, feature branches like explained above for the back-end libraries,
 
 If the use case calls for it, feature toggles can be retained if a feature is finished, for example if the feature needs to be turned off by default.
 
-| ![front-end libraries scenario](../contributing/resources/frontend-libraries.png) |
-| --------------------------------------------------------------------------------- |
-| _Working with feature toggles on `next-minor` for front-end libraries_            |
+| ![front-end libraries scenario](../.gitbook/assets/frontend-libraries.png) |
+| -------------------------------------------------------------------------- |
+| _Working with feature toggles on `next-minor` for front-end libraries_     |
 
 ## Releasing
 
@@ -56,9 +56,9 @@ Changes in `next-minor` in both `valtimo-frontend-libraries` and `valtimo-backen
 
 A release is done by creating a release branch from the `next-minor` branch. After this, a short-lived release candidate is created from this branch for internal testing. If this release is satisfactory, the release branch is tagged, and a release is made. Afterward, the release branch is deleted.
 
-| ![release scenario](../contributing/resources/releasing.png) |
-| ------------------------------------------------------------ |
-| _Release process from `next-minor` branch_                   |
+| ![release scenario](../.gitbook/assets/releasing.png) |
+| ----------------------------------------------------- |
+| _Release process from `next-minor` branch_            |
 
 ### Bugfixes
 
@@ -72,6 +72,6 @@ An example scenario for a bugfix in a previous release:
 
 With this way of working, bugfixes are always included in the next minor release. If another issue is encountered in `12.3.1`, the same process is followed, and a `12.3.2` release is made, based off the `12.3.1` release tag.
 
-| ![bugfixing scenario](../contributing/resources/bugfixing.png) |
-| -------------------------------------------------------------- |
-| _Fixing a bug in a previous release in `next-minor` branch_    |
+| ![bugfixing scenario](../.gitbook/assets/bugfixing.png)     |
+| ----------------------------------------------------------- |
+| _Fixing a bug in a previous release in `next-minor` branch_ |

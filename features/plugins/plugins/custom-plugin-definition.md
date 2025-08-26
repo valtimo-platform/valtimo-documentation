@@ -467,8 +467,6 @@ The main app.module.ts needs to be updated as well. The @NgModule needs to have 
 })
 ```
 
-
-
 #### Plugin translations <a href="#plugin-translations" id="plugin-translations"></a>
 
 **Plugin translate pipe**

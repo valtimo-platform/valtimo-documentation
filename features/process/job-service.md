@@ -1,6 +1,6 @@
 # Job service
 
-This service is a process bean that provides a way to manipulate jobs within the current process.
+This service is process bean that provides a way to manipulate jobs within the current process.
 
 ### Changing Timer event date
 
@@ -18,8 +18,8 @@ addOffsetInMillisToTimerDueDateByActivityId(1000,"timer-id",execution)
 
 In this example a timer exists with the given id "timer-test"
 
-![timer](../../using-valtimo/process/img/timer.png)
+![timer](../../.gitbook/assets/timer.png)
 
 Somewhere else in the process a sub-process exists with a service task where the job service is called in an expression with a negative number in order to move forward a job in time as show below
 
-![job-service-example](../../using-valtimo/process/img/job-service-example.png)
+![job-service-example](../../.gitbook/assets/job-service-example.png)

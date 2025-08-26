@@ -56,4 +56,4 @@ export class SampleComponent {
 
 This will create a list with a context menu:
 
-![list-with-actions.png](../../../reference/user-interface/components/valtimo-carbon-list/img/list-with-actions.png)
+![list-with-actions.png](../../../.gitbook/assets/list-with-actions.png)

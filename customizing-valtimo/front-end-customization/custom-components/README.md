@@ -8,7 +8,7 @@ description: >-
 
 [Custom case tab](../../../features/case/for-developers/case-tabs.md)
 
-[Custom form flow component](../../../features/forms/forms/create-custom-component.md)
+[Custom form flow component](../../../features/case/forms/forms/create-custom-component.md)
 
 [Custom case widget](../../../features/case/for-developers/register-angular-component.md)
 

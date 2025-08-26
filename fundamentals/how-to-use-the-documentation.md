@@ -7,16 +7,13 @@ Instructions are available for configuration via the User Interface (**UI**) or 
 Within each feature the following subjects are documented:
 
 * **Required knowledge indication**\
-  &#xNAN;_&#x49;f applicable the knowledge pre-requisites for that feature are listed_\
-
+  \&#xNAN;_If applicable the knowledge pre-requisites for that feature are listed_\\
 * **Feature description and explanation**\
-  &#xNAN;_&#x57;hat is the primary function of the feature, what does it do._\
-
+  \&#xNAN;_What is the primary function of the feature, what does it do._\\
 * **Feature configuration via UI and IDE**\
-  &#xNAN;_&#x44;ocumentation on how to configure the feature._\
-
+  \&#xNAN;_Documentation on how to configure the feature._\\
 * **For developers**\
-  &#xNAN;_&#x54;echnical documentation for the feature written primarily for software developers. These pages can help when altering a feature to your own needs or if you would like to extend certain features._
+  \&#xNAN;_Technical documentation for the feature written primarily for software developers. These pages can help when altering a feature to your own needs or if you would like to extend certain features._
 
 {% hint style="info" %}
 The "**For developers**" section in each feature always has the knowledge pre-requisite on software development. More detailed technical feature information on the Java/Kotlin and Angular code is given in these sections.

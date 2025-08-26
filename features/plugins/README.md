@@ -13,28 +13,72 @@ Plugins consist of several parts; the definition itself, dictating both the prop
 * **Plugin event.** A plugin might have methods that need to be run when the Plugin is created, updated or deleted. For example, a plugin needs approval from an external service for its instantiation.
 * **Plugin action property.** An action can have several properties that can be configured differently, depending on the process instance or process definition. For example, a Twitter plugin action which posts a tweet would include both the user and the message.
 
-In order to use an existing plugin, a plugin configuration needs to be added. This can be found [here](configure-plugin.md).
+Plugins can be configured in the plugin menu in Valtimo. The plugin menu is found under the admin menu. Admin privileges are required to configure plugins.
 
-Plugins are used by Valtimo to extend functionality and to make connections to external systems.
+Instructions for using the configuration to link an action to a process task can be found [here](../process/process-link.md#creating-a-plugin-process-link).
 
-This sections contains information on how plugins can be created, configured and used.
+### ZGW plugins
 
-* [Configure Plugin](configure-plugin.md)
-* [Creating a process link](../../using-valtimo/plugin/create-process-link.md)
-* [Deleting a process link](../../using-valtimo/plugin/delete-process-link.md)
+For the GZAC edition additional plugins are available: the ZGW or Zaakgericht werken plugins. These support integration with implementations of the following API standards: Zaken, Documenten, Catalogi and Objecten. Additional plugins are included for integration with the most commons implementation, e.g. Open Zaak.
 
-***
+The available ZGW plugins are:
 
-* [Catalogi API plugin](../zgw/zgw-plugins/configure-catalogi-api-plugin.md)
-* [SmartDocuments plugin](configure-smartdocuments-plugin.md)
-* [Documenten API plugin](../zgw/zgw-plugins/configure-documenten-api-plugin.md)
-* [Object Token Auhentication Plugin](../zgw/zgw-plugins/configure-object-token-authentication-plugin.md)
-* [Objecten API Plugin](../zgw/zgw-plugins/configure-objecten-api-plugin.md)
-* [Objecttypen API Plugin](../zgw/zgw-plugins/configure-objecttypen-api-plugin.md)
-* [Openzaak Plugin](../zgw/zgw-plugins/configure-openzaak-plugin.md)
-* [Portaaltaak Plugin](../zgw/zgw-plugins/configure-portaaltaak-plugin.md)
-* [SmartDocuments Plugin](configure-smartdocuments-plugin.md)
-* [Verzoek Plugin](../zgw/zgw-plugins/configure-verzoek-plugin.md)
-* [Zaken API Plugin](../zgw/zgw-plugins/configure-zaken-api-plugin.md)
-* [Exact Plugin](configure-exact-plugin.md)
-* [Besluiten Plugin](../zgw/zgw-plugins/configure-besluiten-api-plugin.md)
+* Besluiten plugin
+* Catalogi API plugin
+* Documenten API plugin
+* Object Token Authentication plugin
+* Objecten API plugin
+* Objecttypen API plugin
+* Open Zaak plugin
+* Portaaltaak plugin
+* Verzoek plugin
+* Zaken API plugin
+
+## Configuring plugins
+
+{% hint style="info" %}
+Before plugins can be configured, both the backend and frontend dependencies are needed. See [here](../../fundamentals/getting-started/modules/core/plugin.md) for instructions on how to do this.
+{% endhint %}
+
+{% tabs %}
+{% tab title="Via UI" %}
+* Go to the `Admin` menu
+* Go to the `Plugin` menu
+* Click on **Configure plugin**
+* Select the plugin definition
+* Configure the plugin
+
+![Configuring a plugin](../../.gitbook/assets/configure-plugin.png)
+{% endtab %}
+
+{% tab title="Via IDE" %}
+Plugin configurations can also be deployed when starting the application.
+
+This can be done by creating one or more files anywhere on the classpath (resource folder) matching the following pattern: `*.pluginconfig.json`
+
+An example configuration can be found below:
+
+```json
+[
+  {
+    "id": "e6525773-1863-4e92-92a1-9ed79508a819",
+    "title": "Example plugin configuration",
+    "pluginDefinitionKey": "example",
+    "properties": {
+      "someProperty": "value",
+      "someSecret": "${SOME_VALUE}"
+    }
+  },
+  {
+    ...
+  }
+]
+```
+
+The id (UUID) of the plugin should be generated manually. The same id's should be used when referencing configurations at the [plugin processlink autodeployment](broken-reference).
+
+The available properties can be found in the documentation of the plugin.
+
+Values within the `properties` attribute can be resolved by using the `${SOME_VALUE}` syntax. The `SOME_VALUE` is then retrieved from an environment variable. If no environment variable with that name is found, the variable is retrieved from a Java system property.
+{% endtab %}
+{% endtabs %}

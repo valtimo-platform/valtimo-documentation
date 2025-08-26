@@ -1,4 +1,4 @@
-# Document definition
+# Document
 
 A **document definition** is the **blueprint** for the JSON documents that are created when creating **new cases** in Valtimo. It defines the structure of the case and contains validation rules for the data that is stored by the actual JSON documents that are created when executing processes for that case in Valtimo. This page shows how to create a document definition, and how to add validation to properties.
 
@@ -39,7 +39,7 @@ It's possible to upload valid JSON schemas to create new cases since Valtimo 5. 
 
 In Valtimo 12 the case configuration upload has been improved by adding all the newly available case configurations to the upload functionality. More detailed information on this functionality can be found [here](./#exporting-and-importing-case-definitions).
 
-![Uploading a document definition](../../using-valtimo/document/img/upload-document-definition.png)
+![Uploading a document definition](../../.gitbook/assets/upload-document-definition.png)
 
 #### Create an empty case
 
@@ -53,7 +53,7 @@ Available since Valtimo `12`
 * Enter the title, and optionally edit the name
 * Click on **Save**, this takes you to the document definition overview
 
-![Creating a document definition](../../using-valtimo/document/img/create-document-definition.png)
+![Creating a document definition](../../.gitbook/assets/create-document-definition.png)
 
 The chosen title will be validated and based upon the title a read-only case definition name will be generated. This is to create a unique identifier for that case definition without spaces or special characters. Click the **Save** button to create the case with the chosen title.\
 \
@@ -78,10 +78,9 @@ When uploading a JSON schema to create a new case, make sure that the `$id` and 
 
 To create a document definition, the following steps are necessary:
 
-*   Create a document definition file (ending with `.schema.json`) under the following path: **/src/main/resources/config/document/definition**. The name should correspond with the ID of the document ID. The ID itself should end with `.schema`.
+*   Create a document definition file (ending with `.schema.document-definition.json`) under the following path: `*/resources/config/case/{case-definition-key}/{version-tag}/document/definition/`. The name should correspond with the ID of the document ID. The ID itself should end with `.schema`.
 
-    **`person.schema.json`**
-
+    {% code title="person.schema.document-definition.json" %}
     ```json
     {
       "$id": "person.schema",
@@ -92,8 +91,10 @@ To create a document definition, the following steps are necessary:
       }
     }
     ```
+    {% endcode %}
 *   Properties as well as validation rules can be added to the definition as per the JSON schema standard as seen [here](https://json-schema.org/understanding-json-schema/index.html). Below is an example of what this definition could look like.
 
+    {% code title="person.schema.document-definition.json" %}
     ```json
     {
       "$id": "person.schema",
@@ -123,6 +124,7 @@ To create a document definition, the following steps are necessary:
       }
     }
     ```
+    {% endcode %}
 {% endtab %}
 {% endtabs %}
 
@@ -176,7 +178,7 @@ In edit mode, the UI editor will constantly validate the JSON file structure. Th
 
 Open the document definition in the IDE and edit the definition as per the JSON schema standard. More information on JSON schema can be found [here](https://json-schema.org/).\
 \
-The location of the document definitions in the Valtimo Java/Kotlin backend: `/src/main/resources/config/document/definition`\
+The location of the document definitions in the Valtimo Java/Kotlin backend: `*/resources/config/case/*/*/document/definition`\
 \
 Changes will only be available in the application once the changes have been deployed via the CI/CD pipeline.
 {% endtab %}

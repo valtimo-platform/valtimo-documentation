@@ -1,4 +1,4 @@
-# Creating a custom dashboard
+# Custom dashboards
 
 Valtimo provides the possibility to introduce your own dashboard and add functionality to your project.\
 The following example will provide details on how you can introduce your own custom dashboard.
@@ -72,4 +72,4 @@ In order for your component to be used by the application you must import and de
 })
 ```
 
-![Custom Dashboard](../../../extending-valtimo/img/custom-dashboard-example.png)
+![Custom Dashboard](../../../.gitbook/assets/custom-dashboard-example.png)

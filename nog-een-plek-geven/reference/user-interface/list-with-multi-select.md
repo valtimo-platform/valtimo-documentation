@@ -56,4 +56,4 @@ The CarbonListComponent supports a multi-select feature. To enable this the foll
 
 This will create a list with multi-select enabled:
 
-![list-with-multi-select.png](../../../reference/user-interface/components/valtimo-carbon-list/img/list-with-multi-select.png)
+![list-with-multi-select.png](../../../.gitbook/assets/list-with-multi-select.png)

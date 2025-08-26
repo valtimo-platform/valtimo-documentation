@@ -2,7 +2,7 @@
 icon: file-chart-column
 ---
 
-# Logging
+# Logs
 
 {% hint style="success" %}
 Available since Valtimo 12.5.0.
@@ -26,9 +26,8 @@ When clicking on one of the loglines, the details are shown. This includes the f
 
 ## Filtering logs
 
-The list supports filtering the loglines, based on message, log level, timestamp and additional properties.&#x20;
+The list supports filtering the loglines, based on message, log level, timestamp and additional properties.
 
 <figure><img src="../../.gitbook/assets/image (51).png" alt=""><figcaption></figcaption></figure>
 
 Log entries are cleared after a certain period to prevent the database from filling up. By default, this period is set to 21 days.
-

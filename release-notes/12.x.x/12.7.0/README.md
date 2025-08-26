@@ -4,7 +4,7 @@
 
 #### Task data on dashboard
 
-&#x20;A new data source has been added to the dashboard widgets: the number of tasks can now be displayed as a 'big number' or in a gauge. With the [personal dashboard filters](https://docs.valtimo.nl/release-notes/12.x.x/12.6.0#personal-dashboards) introduced in version 12.6, widgets can also display the number of tasks assigned specifically to the logged-in user.&#x20;
+A new data source has been added to the dashboard widgets: the number of tasks can now be displayed as a 'big number' or in a gauge. With the [personal dashboard filters](https://docs.valtimo.nl/release-notes/12.x.x/12.6.0#personal-dashboards) introduced in version 12.6, widgets can also display the number of tasks assigned specifically to the logged-in user.
 
 <figure><img src="../../../.gitbook/assets/Screenshot 2025-01-22 at 07.53.03.png" alt=""><figcaption></figcaption></figure>
 
@@ -30,7 +30,7 @@ Both case widgets and dashboard widgets can now be duplicated. This enhancement 
 
 <summary>GZAC edition</summary>
 
-#### Value path selector in Verzoek, Portaaltaak and SmartDocuments
+**Value path selector in Verzoek, Portaaltaak and SmartDocuments**
 
 To make plugin configuration easier, the value path selector has been added to the following plugins:
 
@@ -38,7 +38,7 @@ To make plugin configuration easier, the value path selector has been added to t
 * Portaaltaak
 * SmartDocuments
 
-#### Verzoek mapping now accepts "object" prefix
+**Verzoek mapping now accepts "object" prefix**
 
 Using the `object` prefix, properties from the root of the Verzoek object can now be configured in the Verzoek type mapping. Example: `object:type` resolves to the objecttype URL.
 
@@ -46,18 +46,5 @@ Using the `object` prefix, properties from the root of the Verzoek object can no
 
 ## Bugfixes
 
-* A process link type (e.g. form, form flow or plugin) could not be changed using autodeployment files.&#x20;
+* A process link type (e.g. form, form flow or plugin) could not be changed using autodeployment files.
 * A user with `view_list` permissions for a task, but without `view` permissions would get an error on the case detail page.
-
-
-
-
-
-
-
-
-
-
-
-
-

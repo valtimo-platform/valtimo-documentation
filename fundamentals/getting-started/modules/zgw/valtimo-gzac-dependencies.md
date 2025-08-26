@@ -36,7 +36,7 @@ The following modules are added when a dependency on Valtimo GZAC dependencies i
 * [Besluiten API](besluiten-api.md)
 * [Catalogi API](catalogi-api.md)
 * [Documenten API](documenten-api.md)
-* [Haalcentraal BRP](haalcentraal-brp.md)
+* [Haalcentraal BRP](broken-reference)
 * [Notificaties API](notificaties-api.md)
 * [Notificaties API authentication](notificaties-api-authentication.md)
 * [Object management](object-management.md)

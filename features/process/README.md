@@ -1,11 +1,11 @@
-# ⭕ Process
+# ⭕ Processes
 
-Valtimo is built on top of Camunda, it uses Camunda to create BPMN processes.
+Valtimo is built on top of Operaton, it uses Operaton to create BPMN processes.
 
 This section contains information on how to configure and use BPMN processes in Valtimo.
 
 * [System processes](systemprocesses.md)
-* [Correlating messages](../../using-valtimo/process/correlatingmessages.md)
+* [Correlating messages](https://github.com/valtimo-platform/valtimo-documentation/blob/main/using-valtimo/process/correlatingmessages.md)
 * [Manipulating jobs](job-service.md)
 
 ## Access control
@@ -14,7 +14,7 @@ Access to the processes can be configured through access control. More informati
 
 ### Resources and actions
 
-<table><thead><tr><th width="329">Resource type</th><th width="143">Action</th><th>Effect</th></tr></thead><tbody><tr><td><code>com.ritense.valtimo.camunda.domain.CamundaExecution</code></td><td><code>create</code></td><td>Allows creating an execution for a process definition.</td></tr><tr><td><code>com.ritense.valtimo.camunda.domain.CamundaProcessDefinition</code></td><td>-</td><td>-</td></tr></tbody></table>
+<table><thead><tr><th width="329">Resource type</th><th width="143">Action</th><th>Effect</th></tr></thead><tbody><tr><td><code>com.ritense.valtimo.operaton.domain.OperatonExecution</code></td><td><code>create</code></td><td>Allows creating an execution for a process definition.</td></tr><tr><td><code>com.ritense.valtimo.operaton.domain.OperatonProcessDefinition</code></td><td>-</td><td>-</td></tr></tbody></table>
 
 Process definitions have no actions currently. As a result, they can only be used as part of container conditions. See the example [here](./#permission-to-start-a-process-for-one-specific-process-definition) on how to use this.
 
