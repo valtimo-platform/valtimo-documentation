@@ -6,7 +6,7 @@
 
 <summary>GZAC edition</summary>
 
-####
+
 
 </details>
 
@@ -23,22 +23,3 @@
 </details>
 
 ## For developers
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

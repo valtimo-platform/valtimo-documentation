@@ -1,5 +1,9 @@
 # Portaaltaak Plugin
 
+{% hint style="success" %}
+The Portaaltaak plugin is a ZGW plugin and can only be used in the GZAC edition.
+{% endhint %}
+
 The Portaaltaak plugin is used to generate "taak" (task) objects within the Objecten API for a BPMN user task. These tasks can then be completed via external applications, such as the NL Portal. This feature empowers Valtimo to assign certain tasks to other systems that are more adept at performing these specific tasks. Furthermore, it enables users who lack access to the Valtimo frontend to access these tasks.
 
 ## How does the plugin work
@@ -25,7 +29,7 @@ To configure this plugin the following properties have to be entered:
 * **Object management configuration (`objectManagementConfigurationId`).** Reference to the object management configuration that can be used to store the taak objects. If no option is available in this field, an object management configuration has to be created first.
 * **Process to complete Portaaltaak (`completeTaakProcess`).** Reference to the process that will be started to handle completion of tasks. This can do additional steps like handling the file attachments. A process task should be configured in this process definition to handle the completion itself. This can be done using the [Complete Portaaltaak](configure-portaaltaak-plugin.md#complete-portaal-taak) plugin action. The process 'Process completed Portaaltaak' that is shipped with Valtimo can be used here. See [this section](configure-portaaltaak-plugin.md#configuring-the-task-completion-process) on how to set up this process.
 
-An example plugin configuration: ![example plugin configuration](../../using-valtimo/plugin/portaaltaak/img/configure-plugin.png)
+An example plugin configuration: ![example plugin configuration](<../../.gitbook/assets/configure-plugin (7).png>)
 
 ## Configuring the task completion process
 
@@ -33,7 +37,7 @@ When a task object is updated and Valtimo receives the notification, a process i
 
 The process that is started needs to be configured in the plugin properties by setting the 'Uploaded documents handler process' property. Valtimo ships with the `Process completed Portaaltaak` process which has two tasks.
 
-![Process completed Portaaltaak](../../using-valtimo/plugin/portaaltaak/img/process-portaal-taak.png)
+![Process completed Portaaltaak](../../.gitbook/assets/process-portaal-taak.png)
 
 These tasks need to be configured with process links before the process can be used. The following actions should be configured:
 
@@ -47,9 +51,9 @@ Instead of using the `Process completed Portaaltaak` process it is possible to c
 * **portaalTaakObjectUrl.** The URL of the taak object.
 * **objectenApiPluginConfigurationId.** The id of the Objecten API plugin configuration that can be used to get or edit the taak object.
 * **verwerkerTaakId.** The id of the task to be completed.
-* **documentUrls.** A list of document URLs of documents stored in the Documenten API. Can be used as Collection in BPMN multi-instance elements to iteratte over the list.
+* **documentUrls.** A list of document URLs of documents stored in the Documenten API. Can be used as Collection in BPMN multi-instance elements to iterate over the list.
 
-![img.png](../../using-valtimo/plugin/portaaltaak/img/document-urls-collection-example.png)
+![img.png](../../.gitbook/assets/document-urls-collection-example.png)
 
 ## Available actions
 
@@ -77,7 +81,7 @@ When creating a process link the following properties have to be entered:
 * **Identification value.** Indicates which user is the recipient of the task. Required when choosing receiver type 'Other'. For example when Identification key 'bsn' is used, the value could be '059861095' to indicate that is the BSN of the user.
 * **Number of days for the task to expire.** The number of days from the creation time until the task expires. This will only be used in the portaaltaak. The BPMN due date needs to be configured separately.
 
-An example process link configuration: ![Create portaaltaak process link](../../using-valtimo/plugin/portaaltaak/img/configure-create-portaal-taak.png)
+An example process link configuration: ![Create portaaltaak process link](../../.gitbook/assets/configure-create-portaal-taak.png)
 
 ### Complete Portaaltaak
 

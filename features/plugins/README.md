@@ -48,7 +48,7 @@ Before plugins can be configured, both the backend and frontend dependencies are
 * Select the plugin definition
 * Configure the plugin
 
-![Configuring a plugin](../../using-valtimo/plugin/img/configure-plugin.png)
+![Configuring a plugin](../../.gitbook/assets/configure-plugin.png)
 {% endtab %}
 
 {% tab title="Via IDE" %}
@@ -75,7 +75,7 @@ An example configuration can be found below:
 ]
 ```
 
-The id (UUID) of the plugin should be generated manually. The same id's should be used when referencing configurations at the [plugin processlink autodeployment](../process/process-link.md#creating-a-plugin-process-link).
+The id (UUID) of the plugin should be generated manually. The same id's should be used when referencing configurations at the [plugin processlink autodeployment](broken-reference).
 
 The available properties can be found in the documentation of the plugin.
 

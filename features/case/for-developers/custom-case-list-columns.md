@@ -8,7 +8,7 @@ Each case list comes with a set of four default columns: 'Reference number', 'Cr
 
 By default, the case list columns look like this:
 
-![Default case detail list](../../../using-valtimo/document/img/default-case-detail-list.png)
+![Default case detail list](../../../.gitbook/assets/default-case-detail-list.png)
 
 ## Default columns
 

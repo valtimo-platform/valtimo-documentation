@@ -52,14 +52,14 @@ Below the full list of elements within Valtimo that can and need to be configure
 * Cases
   * [Document](../case/document-definition.md#access-control)
   * [Document definition](../case/document-definition.md#access-control)
-  * [Notes](../case/notes.md#access-control)
-  * [Search fields](../case/search-fields.md#access-control)
-  * [Tabs](../case/tabs/#access-control)
-  * [Widgets](../case/tabs/widgets.md#access-control)
+  * [Notes](broken-reference)
+  * [Search fields](../case/case-list/search-fields.md#access-control)
+  * [Tabs](../case/case-detail/tabs/#access-control)
+  * [Widgets](../case/case-detail/tabs/widgets.md#access-control)
 * [Dashboard](../dashboard/#access-control)
 * Process
   * [Execution](../process/#access-control)
   * [Definition](../process/#access-control)
 * Task
-  * [Tasks](../tasks/#access-control)
-  * [Identity links](../tasks/#access-control)
+  * [Tasks](../case/tasks/#access-control)
+  * [Identity links](../case/tasks/#access-control)

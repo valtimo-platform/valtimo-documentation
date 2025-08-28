@@ -1,5 +1,9 @@
 # Objecten API Plugin
 
+{% hint style="success" %}
+The Objecten API plugin is a ZGW plugin and can only be used in the GZAC edition.
+{% endhint %}
+
 The Objecten API plugin can be used to store and access data about an Object in an application that supports the Objecten API standard created and used by the Dutch government.
 
 ## Configure the plugin
@@ -15,7 +19,7 @@ To configure this plugin the following properties have to be entered:
 
 An example plugin configuration:
 
-![example plugin configuration](../../using-valtimo/plugin/objecten-api/img/configure-plugin.png)
+![example plugin configuration](<../../.gitbook/assets/configure-plugin (6).png>)
 
 ## Using the plugin
 

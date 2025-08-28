@@ -1,5 +1,9 @@
 # Object Token Auhentication Plugin
 
+{% hint style="success" %}
+The Object Token Authentication plugin is a ZGW plugin and can only be used in the GZAC edition.
+{% endhint %}
+
 The Object Token Authentication plugin is used to provide authentication for ZGW (Zaakgericht Werken) plugins that connect to APIs which use a token as authentication. Currently, the plugins that this plugin can provide authentication for are the following:
 
 * [Objecten API](configure-objecten-api-plugin.md)
@@ -19,4 +23,6 @@ To configure this plugin the following properties have to be entered:
 
 * **Token (`token`).** The token is configured in the Objects administration page 'api authorizations'. The token should have permissions to object(types) registered to it.
 
-An example plugin configuration: ![example plugin configuration](../../using-valtimo/plugin/object-token-authentication/img/configure-plugin.png)
+An example plugin configuration:&#x20;
+
+<figure><img src="../../.gitbook/assets/configure-plugin (4).png" alt=""><figcaption></figcaption></figure>

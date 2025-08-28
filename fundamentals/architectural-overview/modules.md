@@ -2,7 +2,7 @@
 
 ## Core
 
-![Core modules](../../introduction/modules/img/module-dependencies-core.svg)
+![Core modules](../../.gitbook/assets/module-dependencies-core.svg)
 
 ### Audit
 
@@ -144,7 +144,7 @@ Web offers web related configuration, such as integration with [OpenAPI](https:/
 
 ## ZGW (Zaakgericht Werken)
 
-![ZGW](../../introduction/modules/img/module-dependencies-zgw.svg)
+![ZGW](../../.gitbook/assets/module-dependencies-zgw.svg)
 
 ### Besluit (deprecated)
 
@@ -204,7 +204,7 @@ The [Objecttypeb (Object types) API](https://vng.nl/projecten/overige-objecten-r
 
 ## OpenZaak Plugin Authentication
 
-[OpenZaak Plugin Authentication](../getting-started/modules/zgw/openzaak-plugin-authentication.md) contains the OpenZaakPlugin which can be used for authentication in several ZGW plugins.
+[OpenZaak Plugin Authentication](broken-reference) contains the OpenZaakPlugin which can be used for authentication in several ZGW plugins.
 
 ### OpenZaak resource
 

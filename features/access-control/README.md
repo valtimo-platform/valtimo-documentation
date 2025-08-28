@@ -6,7 +6,7 @@ In PBAC, access rules are defined based on various attributes such as user ident
 
 {% hint style="info" %}
 **Who and what?**\
-In the area of _Access and Authentication,_ it is about defining who is allowed to do what.  PBAC is about what somebody is allowed to do under certain conditions.&#x20;
+In the area of _Access and Authentication,_ it is about defining who is allowed to do what. PBAC is about what somebody is allowed to do under certain conditions.
 {% endhint %}
 
 ## Authentication
@@ -22,7 +22,7 @@ Keycloak enables authentication by providing the option to create "Roles" that c
 Roles created in Keycloak also need to be configured in Access Control in order to create a link between the Keycloak roles and the configuration in Access Control. When logged in to Valtimo the assigned roles for a user are read from the [JWT token](https://jwt.io/introduction) together with the corresponding Access Control configurations for these roles. For that reason, it is important that the roles configured in Access Control exactly mirror the created roles in Keycloak.
 
 {% hint style="info" %}
-There is no security risk when a role that is available in Keycloak is not configured in Access Control. By default a Valtimo user will have no access. Only by configuring permissions for  the Role in Access Control the appropriate access can be gained.
+There is no security risk when a role that is available in Keycloak is not configured in Access Control. By default a Valtimo user will have no access. Only by configuring permissions for the Role in Access Control the appropriate access can be gained.
 {% endhint %}
 
 ## Permissions

@@ -48,12 +48,13 @@ These sub-processes are not starting processes for the case and should not appea
 {% tab title="Via IDE" %}
 In order to link processes to a case the following steps are necessary:
 
-1. Create a process document link file (ending with `.json`) under the following path: `*/resources/config/process-document-link`.\
+1. Create a process document link file (ending with `.json`) under the following path: `*/resources/config/case/{case-definition-key}/{version-tag}/process-document-link/`.\
    \
    The name should correspond with the document definition ID\
-   (e.g. a document definition `example-case.schema.json` with the ID `example-case.schema` requires the process document file to be named `example-case.json`.\\
+   (e.g. a document definition `example-case.schema.document-definition.json` with the ID `example-case.schema` requires the process document file to be named `example-case.process-document-link.json`.
 2. Specify the process(es) that should be linked to the document. More than one process can be linked to the same document by adding multiple configurations to the array.
 
+{% code title="example-case.process-document-link.json" %}
 ```json
 [
     {
@@ -63,5 +64,6 @@ In order to link processes to a case the following steps are necessary:
     }
 ]
 ```
+{% endcode %}
 {% endtab %}
 {% endtabs %}

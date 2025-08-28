@@ -20,7 +20,7 @@ There are different ways of configuring Permissions in Valtimo.
 {% tab title="Via UI" %}
 Creating permissions is done for a specific role. Assuming a role is present, clicking on that role in the `Access control` interface will allow permissions to be configured.
 
-![configuring-permissions-example](../../using-valtimo/access-control/img/configuring-permissions.png)
+![configuring-permissions-example](../../.gitbook/assets/configuring-permissions.png)
 
 The image above shows all the permissions that have been configured for `ROLE_USER`. Here, permissions can be added, edited and removed. Since the list shown here is the full list of permissions for this role, removing a permission from the list and saving it will also result in the removal of that permission in Valtimo.
 
@@ -161,7 +161,7 @@ The example below shows how container conditions can be used to join other entit
 {% tab title="Via UI" %}
 When exporting permissions from the permission configuration page, be sure to save the configurations first if any edits have been made. Exporting will add a few more fields that are not necessary when configuring permissions via the UI, but are necessary when doing auto-deployment.
 
-![exporting-permissions-example](../../using-valtimo/access-control/img/exporting-permissions.png)
+![exporting-permissions-example](../../.gitbook/assets/exporting-permissions.png)
 {% endtab %}
 {% endtabs %}
 
@@ -171,6 +171,6 @@ When exporting permissions from the permission configuration page, be sure to sa
 {% tab title="Via UI" %}
 Deleting permissions will also delete the accompanying role. Deleting roles will not delete the role in Keycloak.
 
-![deleting-permissions-example](../../using-valtimo/access-control/img/deleting-permissions.png)
+![deleting-permissions-example](../../.gitbook/assets/deleting-permissions.png)
 {% endtab %}
 {% endtabs %}

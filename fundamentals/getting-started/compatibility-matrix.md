@@ -10,6 +10,12 @@ Follow the instructions [on this page](https://update.angular.io/) for upgrading
 Mixing versions is not recommended. Valtimo is always tested according to the matrix. Hotfixes are supported on all versions.
 {% endhint %}
 
+## Major 13
+
+| Valtimo backend libraries | Valtimo frontend libraries | Java | Kotlin | Spring Boot | Node   | Operaton     | Angular                                                                        |
+| ------------------------- | -------------------------- | ---- | ------ | ----------- | ------ | ------------ | ------------------------------------------------------------------------------ |
+| 13.0.0                    | 13.0.0                     | 21   | 2.1.20 | 3.4.5       | 20 LTS | 1.0.0-beta-4 | 19 ([browser support](https://angular.dev/reference/versions#browser-support)) |
+
 ## Major 12
 
 | Valtimo backend libraries | Valtimo frontend libraries | Java | Kotlin | Spring Boot | Node   | Camunda | Angular                                                                        |

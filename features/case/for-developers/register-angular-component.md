@@ -1,7 +1,6 @@
 # Register Angular component
 
-By registering custom Angular components in the Valtimo front-end implementation these components can be used withing case widgets. The output of the component will be displayed as the content of a widget.\
-
+By registering custom Angular components in the Valtimo front-end implementation these components can be used withing case widgets. The output of the component will be displayed as the content of a widget.\\
 
 ## Register component
 

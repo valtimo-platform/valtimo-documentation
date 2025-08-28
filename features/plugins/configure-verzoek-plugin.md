@@ -1,5 +1,9 @@
 # Verzoek Plugin
 
+{% hint style="success" %}
+The Verzoek plugin is a ZGW plugin and can only be used in the GZAC edition.
+{% endhint %}
+
 The Verzoek plugin (formerly known as Productaanvraag) is used to create a Valtimo case with GZAC zaak. The verzoek plugin is triggered by a notification from the Notificaties API. Once the notification is received, the Verzoek plugin will use BPMN process to create a Valtimo case with a GZAC zaak.
 
 ## How does the plugin work
@@ -43,11 +47,11 @@ To configure this plugin the following properties have to be entered:
 
 An example of plugin configuration with `doc:` prefix:
 
-![example plugin configuration](../../using-valtimo/plugin/verzoek/img/configure-plugin-with-doc-prefix.png)
+![example plugin configuration](../../.gitbook/assets/configure-plugin-with-doc-prefix.png)
 
 An example of plugin configuration with `pv:` prefix:
 
-![example plugin configuration](../../using-valtimo/plugin/verzoek/img/configure-plugin-with-pv-prefix.png)
+![example plugin configuration](../../.gitbook/assets/configure-plugin-with-pv-prefix.png)
 
 ## Configuring the 'Create Zaakdossier' process
 
@@ -55,7 +59,7 @@ When a verzoek object is created and Valtimo receives the notification, a proces
 
 The process that is started needs to be configured in the plugin properties by setting the 'Process' property. Valtimo is shipped with the `Create Zaakdossier` process which has six tasks.
 
-![Create Zaakdossier](../../using-valtimo/plugin/verzoek/img/create-zaakdossier-process.png)
+![Create Zaakdossier](../../.gitbook/assets/create-zaakdossier-process.png)
 
 The Create Zaakdossier process is started with a few process variables that can be used inside the process links. These variables are:
 
@@ -87,15 +91,15 @@ The 'Create Zaakdossier' process has several tasks with default configurations:
 
 * Map betrokkene type - a task that uses a DMN table to determine what the zaak initiator type.
 
-![betrokkene-type-mapping-dmn-table.png](../../using-valtimo/plugin/verzoek/img/betrokkene-type-mapping-dmn-table.png)
+![betrokkene-type-mapping-dmn-table.png](../../.gitbook/assets/betrokkene-type-mapping-dmn-table.png)
 
 * Link Document to zaak - This task links all the documents from the verzoek to the zaak.
 
-![img.png](../../using-valtimo/plugin/verzoek/img/document-urls-collection-example.png)
+![img.png](<../../.gitbook/assets/document-urls-collection-example (1).png>)
 
 * Start handling process - This task starts a follow-up process that further handles the verzoek.
 
-![start-handeling-process-configuration.png](../../using-valtimo/plugin/verzoek/img/start-handeling-process-configuration.png)
+![start-handeling-process-configuration.png](../../.gitbook/assets/start-handeling-process-configuration.png)
 
 ### Custom process
 

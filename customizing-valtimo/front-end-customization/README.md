@@ -10,11 +10,11 @@ description: >-
 
 ### Beagle
 
-At the start of the development of the [front-end libraries](https://github.com/valtimo-platform/valtimo-frontend-libraries), the user interface was constructed using [Beagle](https://foxythemes.net/preview/products/beagle/index.html), which is a custom theme based on [Bootstrap 4](https://getbootstrap.com/docs/4.0).  For backwards compatibility, Beagle and Bootstrap are still included in the front-end libraries, but will not be upgraded in the future.
+At the start of the development of the [front-end libraries](https://github.com/valtimo-platform/valtimo-frontend-libraries), the user interface was constructed using [Beagle](https://foxythemes.net/preview/products/beagle/index.html), which is a custom theme based on [Bootstrap 4](https://getbootstrap.com/docs/4.0). For backwards compatibility, Beagle and Bootstrap are still included in the front-end libraries, but will not be upgraded in the future.
 
 ### Carbon
 
-At a later stage, the use of the [Carbon Design System](https://carbondesignsystem.com/) was introduced. All current front-end development in the product is done through the [Angular implementation](https://angular.carbondesignsystem.com/?path=/story/components-welcome--to-carbon-angular) of this design system. Using these components, the effort needed to develop a professional, accessible front-end is greatly reduced.&#x20;
+At a later stage, the use of the [Carbon Design System](https://carbondesignsystem.com/) was introduced. All current front-end development in the product is done through the [Angular implementation](https://angular.carbondesignsystem.com/?path=/story/components-welcome--to-carbon-angular) of this design system. Using these components, the effort needed to develop a professional, accessible front-end is greatly reduced.
 
 ### Beagle/Carbon Compatibility
 
@@ -26,9 +26,9 @@ By default, various stylesheets need to be included in the `styles` array in the
 
 ### Form.io
 
-[Form.io](https://form.io/) is used throughout the application. By default, its components use Bootstrap 4 classes for styling. Out-of-the-box, Valtimo applies some styling to Form.io.&#x20;
+[Form.io](https://form.io/) is used throughout the application. By default, its components use Bootstrap 4 classes for styling. Out-of-the-box, Valtimo applies some styling to Form.io.
 
-Since [Valtimo 12.4.1](https://docs.valtimo.nl/release-notes/12.x.x/12.4.0/12.4.1), a Carbon Form.io theme has been included. Going forward, this is the officially supported Form.io look and feel. This theme can be applied by including `node_modules/@valtimo/components/assets/css/formio-carbon.scss` in the `styles`array of `angular.json.`&#x20;
+Since [Valtimo 12.4.1](https://docs.valtimo.nl/release-notes/12.x.x/12.4.0/12.4.1), a Carbon Form.io theme has been included. Going forward, this is the officially supported Form.io look and feel. This theme can be applied by including `node_modules/@valtimo/components/assets/css/formio-carbon.scss` in the `styles`array of `angular.json.`
 
 ## Customization
 
@@ -42,4 +42,4 @@ The logo, displayed at the top left of the application, can be customized. More 
 
 ### Additional customization
 
-Further customisation of Valtimo's look and feel is possible by overriding styles using global CSS code. Please be advised that this kind of customization is not officially supported, and it's possible any custom CSS will break in future versions, both through updates to Valtimo or to its dependencies (notably the Carbon Design System).&#x20;
+Further customisation of Valtimo's look and feel is possible by overriding styles using global CSS code. Please be advised that this kind of customization is not officially supported, and it's possible any custom CSS will break in future versions, both through updates to Valtimo or to its dependencies (notably the Carbon Design System).

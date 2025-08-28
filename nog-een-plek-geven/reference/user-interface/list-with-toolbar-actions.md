@@ -33,4 +33,4 @@ The CarbonListComponent supports rendering actions in its header. To enable this
 
 This will create a list with toolbar actions:
 
-![list-with-toolbar-actions.png](../../../reference/user-interface/components/valtimo-carbon-list/img/list-with-toolbar-actions.png)
+![list-with-toolbar-actions.png](../../../.gitbook/assets/list-with-toolbar-actions.png)

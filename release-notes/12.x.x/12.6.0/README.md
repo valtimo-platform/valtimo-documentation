@@ -12,7 +12,7 @@ For detailed instructions on configuring dashboard widgets, refer to the documen
 
 #### Clickable dashboard widgets
 
-Dashboards now support widgets that include click functionality. Within the widget configuration, a redirection path can be specified. When users click on the widget, they will be redirected to the configured path.&#x20;
+Dashboards now support widgets that include click functionality. Within the widget configuration, a redirection path can be specified. When users click on the widget, they will be redirected to the configured path.
 
 For example, a widget displaying the number of cases matching specific criteria can be configured to redirect users to the case list page with the same filter applied.
 
@@ -74,7 +74,7 @@ In the original Form.io component, the thousand separator and decimal separator 
 
 <summary>GZAC edition</summary>
 
-#### Configurable Documenten API metadata
+**Configurable Documenten API metadata**
 
 When uploading a file to the Documenten API, several metadata fields have to be filled in. Per case type, these metadata fields can now be configured to:
 
@@ -88,7 +88,7 @@ Documenten API metadata fields can be configured on the case management page und
 
 <img src="../../../.gitbook/assets/Screenshot 2025-01-02 at 16.46.40.png" alt="" data-size="original">
 
-#### Linking Zaakdetails object to the Zaak
+**Linking Zaakdetails object to the Zaak**
 
 GZAC supports syncing the document data (or Zaakdetails) to an object in the Objecten API. When creating or updating the Zaakdetails object, the object is now linked to the Zaak.
 
@@ -99,7 +99,7 @@ GZAC supports syncing the document data (or Zaakdetails) to an object in the Obj
 * Previously, no permission check was performed when starting a supporting process for a case. Now, users must have the "create" permission for the resource `com.ritense.valtimo.camunda.domain.CamundaExecution` to initiate a supporting process.
 * Additionally, no permission check was conducted before retrieving the pre-filled start form for a supporting process. Users must now have the "view" permission for the resource `com.ritense.document.domain.impl.JsonSchemaDocument` to access the pre-filled start form.
 * When the browser back-button was used on the case detail page, the user was redirected incorrectly.
-* In some scenario's, task forms would be pre-filled incorrectly.&#x20;
+* In some scenario's, task forms would be pre-filled incorrectly.
 * Form flow step definitions were duplicated during autodeployment.
 * Retrieving the task list would fail when a task assignee had been removed from Keycloak.
 * Correlating Camunda messages with variables using the CorrelationService now works correctly.
@@ -139,20 +139,3 @@ Two new dashboard Angular modules have been added:
 * DisplayWidgetTypesModule includes all widget-type specific modules
 
 Including these modules in the `app.module.ts` file eliminates the need to import individual modules manually and ensures that any new modules added in the future are automatically included.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
