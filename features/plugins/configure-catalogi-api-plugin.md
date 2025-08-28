@@ -21,6 +21,17 @@ The Catalogi API plugin supports the following actions that can be configured in
 
 A general description on how to create process links can be found [here](broken-reference).
 
+### Retrieve resultaattypen
+
+This action retrieves the statustypen collection containing the name and URL of the statustype and will assign it to a process variable.
+
+When creating a process link the following properties have to be entered:
+
+* **Process variable name**. This is the name of the process variable which value will be set to the found statustypen collection.
+* **Zaaktype URL** (optional). This is the URL of the zaaktype for which the statustypen should be retrieved.
+
+[//]: # (An example action configuration: ![Retrieve statustype]&#40;../../using-valtimo/plugin/catalogi-api/img/retrieve-statustypen.png&#41;)
+
 ### Retrieve statustype
 
 This action retrieves the statustype URL using the statustype description, and will assign it to a process variable.
@@ -33,6 +44,17 @@ When creating a process link the following properties have to be entered:
 * **Process variable name**. This is the name of the process variable which value will be set to the found statustype URL.
 
 An example action configuration: ![Retrieve statustype](../../using-valtimo/plugin/catalogi-api/img/retrieve-statustype.png)
+
+### Retrieve resultaattypen
+
+This action retrieves the resultaattypen collection containing the name and URL of the resultaattype and will assign it to a process variable.
+
+When creating a process link the following properties have to be entered:
+
+* **Process variable name**. This is the name of the process variable which value will be set to the found resultaattypen collection.
+* **Zaaktype URL** (optional). This is the URL of the zaaktype for which the resultaattypen should be retrieved.
+
+[//]: # (An example action configuration: ![Retrieve statustype]&#40;../../using-valtimo/plugin/catalogi-api/img/retrieve-resultaattypen.png&#41;)
 
 ### Retrieve resultaattype
 
