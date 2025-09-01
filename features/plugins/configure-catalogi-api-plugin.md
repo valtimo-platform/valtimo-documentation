@@ -53,7 +53,7 @@ An example action configuration:&#x20;
 
 ### Retrieve resultaattypen
 
-This action retrieves the resultaattypen collection containing the name and URL of the resultaattype and will assign it to a process variable.
+This action retrieves a list of resultaattypen (containing the name and URL of each resultaattype) and will assign it to a process variable.
 
 When creating a process link the following properties have to be entered:
 
