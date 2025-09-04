@@ -4,16 +4,16 @@ The Zaken API plugin can be used to store and access data about a Zaak (case) in
 
 ## Configure the plugin
 
-A plugin configuration is required before the plugin can be used. A general description on how to configure plugins can be found [here](../../plugins/configure-plugin.md).
+A plugin configuration is required before the plugin can be used. A general description on how to configure plugins can be found [here](broken-reference).
 
-If the Zaken API plugin is not visible in the plugin menu, it is possible the application is missing a dependency. Instructions on how to add the Zaken API dependency can be found [here](../../../fundamentals/getting-started/modules/zgw/documenten-api.md).
+If the Zaken API plugin is not visible in the plugin menu, it is possible the application is missing a dependency. Instructions on how to add the Zaken API dependency can be found [here](../../fundamentals/getting-started/modules/zgw/documenten-api.md).
 
 To configure this plugin the following properties have to be entered:
 
 * **URL.** Contains the complete base URL of the Zaken API to connect to. This generally includes the path `/api/v1/`.
 * **Authentication plugin configuration.** Reference to another plugin configuration that will be used to add authentication to any request performed on the Zaken API. If no option is available in this field a plugin has to be configured that is able to authenticate for the specific application that hosts the Zaken API. (e.g. OpenZaak)
 
-An example plugin configuration: ![example plugin configuration](../../../using-valtimo/plugin/zaken-api/img/configure-plugin.png)
+An example plugin configuration: ![example plugin configuration](../../using-valtimo/plugin/zaken-api/img/configure-plugin.png)
 
 ## Available actions
 
@@ -31,7 +31,7 @@ When creating a process link the following properties have to be entered:
 * **Document title.** The title of the document within the context of the zaak that is stored in the 'zaakinformatieobject' record in the Zaken API.
 * **Document description.** The description of the document within the context of the zaak that is stored in the 'zaakinformatieobject' record in the Zaken API.
 
-An example process link configuration: ![Generate document process link](../../../using-valtimo/plugin/zaken-api/img/link-document-to-zaak.png)
+An example process link configuration: ![Generate document process link](../../using-valtimo/plugin/zaken-api/img/link-document-to-zaak.png)
 
 ### Link uploaded document to zaak
 
@@ -50,6 +50,24 @@ The **Create zaak** action creates a zaak in the zaken API. When creating a proc
 * **RSIN.** Contains the RSIN of the organisation. The RSIN number (Rechtspersonen en Samenwerkingsverbanden Identificatie Nummer in Dutch) is an identification number for legal entities and partnerships. This will be used when creating the zaak to indicate who is responsible for creating the zaak record in the API.
 * **Zaak type.** The type of the zaak that is created.
 
+### Patch zaak
+
+The **Patch zaak** action updates a zaak in the zaken API. When creating a process link at least one of the following properties has to be provided:
+
+* **Description.** A short description of the Zaak.
+* **Explanation.** An explanation of the Zaak.
+* **Planned end-date.** The date by which the Zaak is scheduled to be completed.
+* **Final delivery-date.** The last date by which the Zaak must be completed according to law and regulations.
+* **Publication date.** Date on which (the start of) the Zaak is or will be published.
+* **Communication channel.** The medium through which the reason for initiating a case was received. URL to a communication channel in the VNG Reference List of communication channels.
+* **Communication channel name.** (Experimental) The name of the medium through which the impetus for starting a Case was received.
+* **Payment indication.** Indication of whether the costs associated with handling the case have been paid by the person concerned.
+* **Last payment date.** The date on which the most recent payment was processed for costs associated with handling the case.
+* **Case geometry.** Point, line, or (multi-)plane geometry information, in GeoJSON. (Long, Lat order). Exists of a type and a list of coordinates
+* **Main Case.** URL reference to the Zaak requested by its initiator, which is dealt with in two or more separate Zaken, of which the present Zaak is one.
+* **Archive action-date.** The date on which the archived Zaak file should be destroyed or transferred to an archive repository.
+* **Start-date retention period.** The date that marks the start of the period by which the Zaak file must be destroyed.
+
 ### Create zaakrol - natural person
 
 The **Create zaakrol - natural person** action creates a zaakrol in the zaken API. Using this action, a person can be linked to a zaak. When creating a process link the following properties have to be entered:
@@ -59,6 +77,52 @@ The **Create zaakrol - natural person** action creates a zaakrol in the zaken AP
 * **Initiator BSN.** The BSN (Citizen service number) of the person that should be linked to the zaak.
 * **Other natural person identification.** (Optional) The unique number issued by the municipality for another natural person.
 * **Administration number person.** (Optional) The administration number of the person, as referred to in the BRP Act.
+
+### Create zaakrol - non natural person
+
+The **Create zaakrol - non-natural person** action creates a zaakrol in the zaken API. Using this action, a non-natural person can be linked to a zaak. When creating a process link the following properties have to be entered:
+
+* **Role type URL.** Every person that is linked to a zaak has a role within that zaak. This property contains a URL to the type of the role within the zaak.
+* **Role explanation.** An explanation of the role that the person has within the zaak.
+* **Initiator non-natural person identification.** The unique number assigned by a chamber for the registered non-natural person that should be linked to the zaak.
+* **Other non-natural person identification.** (Optional) The unique number issued by the municipality for another non-natural person.
+* **Administration number person.** (Optional) The administration number of the person, as referred to in the BRP Act.
+* **Chamber of Commerce number.** (Optional) A unique number assigned by the Chamber of Commerce.
+* **Branch number.** (Optional) A short unique designation of the branch.
+
+### Create zaakrol - medewerker
+
+The **Create zaakrol - employee** action creates a zaakrol in the zaken API. Using this action, an employee can be linked to a zaak. When creating a process link the following properties have to be entered:
+
+* **Role type URL.** Every person that is linked to a zaak has a role within that zaak. This property contains a URL to the type of the role within the zaak.
+* **Role explanation.** An explanation of the role that the person has within the zaak.
+* **Identification.** A short unique designation of the employee.
+* **Last name.** The last name as used by the employee in daily life.
+* **Initial.** The collection of letters formed by the first letter of all forenames in order.
+* **Prefix to last name** (Optional) Part of the genus name that appears in Table 36 (GBA), prefix table, and is separated from the genus name by a space.
+* **Alternative name of the person involved.** (Optional) The name of the person involved under which they wish to be addressed in relation to the case.
+* **Authorization indication** (Optional) The type that represents the authorization indication.
+
+### Create zaakrol - organizational unit
+
+The **Create zaakrol - organizational unit** action creates a zaakrol in the zaken API. Using this action, an organizational unit can be linked to a zaak. When creating a process link the following properties have to be entered:
+
+* **Role type URL.** Every person that is linked to a zaak has a role within that zaak. This property contains a URL to the type of the role within the zaak.
+* **Role explanation.** An explanation of the role that the person has within the zaak.
+* **Identification.** A short identification of the organizational unit.
+* **Name.** The actual name of the organizational unit.
+* **Is housed in.** Location where the organizational unit is housed.
+* **Alternative name of the person involved** (Optional) The name of the person involved under which they wish to be addressed in relation to the case.
+* **Authorization indication.** (Optional) The type that represents the authorization indication.
+
+### Create zaakrol - branch
+
+The **Create zaakrol - branch** action creates a zaakrol in the zaken API. Using this action, a branch can be linked to a zaak. When creating a process link the following properties have to be entered:
+
+* **Role type URL.** Every person that is linked to a zaak has a role within that zaak. This property contains a URL to the type of the role within the zaak.
+* **Role explanation.** An explanation of the role that the person has within the zaak.
+* **Chamber of Commerce number.** A unique number assigned by the Chamber of Commerce.
+* **Branch number.** A short unique designation of the branch.
 
 ### Create zaakeigenschap
 

@@ -1,12 +1,12 @@
 # Custom plugin definitions
 
-## Creating custom plugin definitions <a href="#creating-custom-plugin-definitions" id="creating-custom-plugin-definitions"></a>
-
 Valtimo offers the functionality needed to create and add plugins to Valtimo implementations.
 
+{% hint style="info" %}
 ### Prerequisites <a href="#prerequisites" id="prerequisites"></a>
 
 Plugins are added to a Valtimo implementation. See [https://docs.valtimo.nl/getting-started/first-dive/creating-your-own-valtimo-implementation](https://docs.valtimo.nl/getting-started/first-dive/creating-your-own-valtimo-implementation) to get started with your own Valtimo implementation.
+{% endhint %}
 
 ### Back-end <a href="#back-end" id="back-end"></a>
 
@@ -466,8 +466,6 @@ The main app.module.ts needs to be updated as well. The @NgModule needs to have 
   bootstrap: [AppComponent]
 })
 ```
-
-
 
 #### Plugin translations <a href="#plugin-translations" id="plugin-translations"></a>
 

@@ -30,7 +30,7 @@ The following features were added:
 
     New actions have been added to the Documenten API and Zaken API plugins: **Link uploaded document to zaak** and **Save uploaded document** respectively. After these plugin actions have been selected, the user does not have to input any configuration data.
 
-    For more information on these new plugin actions refer to [this page](../../../features/zgw/zgw-plugins/configure-documenten-api-plugin.md) for the Documenten API and [this page](../../../features/zgw/zgw-plugins/configure-zaken-api-plugin.md) for the Zaken API.
+    For more information on these new plugin actions refer to [this page](../../../features/plugins/configure-documenten-api-plugin.md) for the Documenten API and [this page](../../../features/plugins/configure-zaken-api-plugin.md) for the Zaken API.
 *   **Set file extensions that open directly in the browser**
 
     You can now add a new environment property `supportedDocumentFileTypesToViewInBrowser` to declare which files are opened in the browser. All the files that are not included will not open in the browser but instead will be directly downloaded.
