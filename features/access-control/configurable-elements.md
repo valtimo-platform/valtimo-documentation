@@ -49,7 +49,7 @@ For each separate action a configuration needs to be added to Access Control for
 
 Below the full list of elements within Valtimo that can and need to be configured in Access Control. Per element a list of configurable actions is documented and an example of the configuration is added. The available actions per element define what can be configured for that element.
 
-* Cases
+* [Cases](../case/README.md#access-control)
   * [Document](../case/document-definition.md#access-control)
   * [Document definition](../case/document-definition.md#access-control)
   * [Notes](broken-reference)

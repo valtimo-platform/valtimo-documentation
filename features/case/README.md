@@ -292,3 +292,30 @@ Most configurations and definitions are included in exports and imports. Some re
 | Tabs                                      |                                 |
 | Task list columns                         |                                 |
 | ZGW Document columns                      |                                 |
+
+## Access control
+
+Access to the case definitions can be configured through access control. More information about access control can be found [here](https://docs.valtimo.nl/features/access-control).
+
+### Resources and actions
+
+<table><thead><tr><th width="329">Resource type</th><th width="143">Action</th><th>Effect</th></tr></thead><tbody><tr><td><code>com.ritense.case_.domain.definition.CaseDefinition</code></td><td><code>view</code></td><td>Allows viewing of a case definition.</td></tr><tr><td></td><td><code>view_list</code></td><td>Allows viewing of case definitions.</td></tr></tbody></table>
+
+### Examples
+
+<details>
+
+<summary>Permission to view case definitions</summary>
+
+{% code overflow="wrap" %}
+```json
+{
+    "resourceType": "com.ritense.case_.domain.definition.CaseDefinition",
+    "action": "view_list",
+    "roleKey": "ROLE_ADMIN",
+    "conditions": []
+}
+```
+{% endcode %}
+
+</details>
