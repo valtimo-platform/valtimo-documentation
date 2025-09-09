@@ -216,18 +216,3 @@ Handles a value for a specified target. The example below shows how a process-va
 ```spel
 ${valueResolverDelegateService.handleValue(execution, 'doc:person.firstName', execution.getVariable('firstName'))}
 ```
-
-### Process Service
-
-Terminate all running processes that are associated with a specific case. This can be achieved by configuring a BPMN
-ServiceTask expression:
-
-```bpmn
-${processService.deleteAllProcessInstancesForThisDocument(execution, "Test deletion process")}
-```
-
-#### Details
-
-- The expression stops all active process instances related to the current case/document.
-- A _reason_ can be provided as a parameter (in the example above: "Test deletion process").
-- Once invoked, all processes for the case are stopped immediately.
