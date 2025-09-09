@@ -54,3 +54,11 @@ In minor releases of Valtimo 12, access control was introduced for three feature
 
 In Valtimo 13, these feature toggles have been removed, and access control is now **enabled by default** for all features. As a result, additional access control permissions may need to be configured when upgrading to Valtimo 13 to ensure full access to all functionality.
 
+## Bugfixes 
+
+* A warning message was incorrectly shown after submitting a start form. The warning appeared before the form loaded, after submission, and also when starting a supporting process or launching a process from a case widget.
+
+* In forms using the documenten-api-file upload component, submission sometimes failed when the uploader was the only required field. Uploading a file could also incorrectly enable the submit button even when other required fields were not completed.
+
+* In the form definitions table, the readonly column sometimes displayed English instead of Dutch translations.
+
