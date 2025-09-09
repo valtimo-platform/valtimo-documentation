@@ -8,30 +8,50 @@ For each case a set of search fields can be configured. These fields will be dis
 {% tab title="Via UI" %}
 An administrator is able to add, change, remove, reorder and download a file with all search fields.
 
-* Go to the `Admin` menu
-* Go to the `Cases` menu and select the case to configure search fields for
-* Select the `Case list` tab
-* Select the `Search fields` tab
+- Go to the `Admin` menu
+- Go to the `Cases` menu and select the case to configure search fields for
+- Select the `Case list` tab
+- Select the `Search fields` tab
 
 <figure><img src="../../../.gitbook/assets/case-list.png" alt=""><figcaption></figcaption></figure>
 
+Search fields can also be configured via a JSON editor:
+
+{% tabs %}
+{% tab title="Via JSON editor" %}
+
+- Go to the `Admin` menu
+- Go to the `Cases` menu
+- Select the `Case list` tab
+- Select the `Search fields` tab
+- Click on **The code icon**
+- Click on **Edit**
+- Configure a new search field, delete a search field or edit an existing search field
+- Click **Save**
+
+<figure><img src="../../../.gitbook/assets/case-list-search-fields-json-editor.png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../../../.gitbook/assets/case-list-search-fields-json-editor-active.png" alt=""><figcaption></figcaption></figure>
+
+This allows for faster editing of search fields or exchanging different search field configurations throughout different environments.
+
 ### **Available actions**
 
-* **Create**\
+- **Create**\
   Because each case holds its own set of data, search fields can be configured per case. A button to create a new search field is available at the top of the displayed search field list. A modal for filling in the data will be presented when clicking on this button. It is necessary to fill in all the required data to enable the `submit` button. The key field is specific identification data, so if the key is not unique, you will not be able to save the search field.
 
 <figure><img src="../../../.gitbook/assets/add-search-field.png" alt=""><figcaption><p>Modal to configure search field</p></figcaption></figure>
 
-* **Edit**\
+- **Edit**\
   When clicking on an entry in the list of `search fields`, a modal opens with the fields pre-filled with the selected item's data. It is possible to edit all the fields, except for the key. When clicking `submit`, the field data is automatically updated in the list.
 
 <figure><img src="../../../.gitbook/assets/edit-search-field.png" alt=""><figcaption><p>Modal to configure search field - prefilled</p></figcaption></figure>
 
-* **Reorder**\
+- **Reorder**\
   At the far right next to the 3 dotted menu there are two arrow buttons for reordering the data. The line will be moved in the corresponding direction by clicking the up or down arrow button. When there is no possibility of moving the line, the reorder buttons will be disabled.
-* **Delete**\
+- **Delete**\
   At the far right of each search field in the list there is a menu under 3 dots. This menu contains the delete option. When deleting a confirmation is shown with the information that this action can't be undone.
-* **Download**\
+- **Download**\
   A download icon is available next to the Add search field button at the top of the list. A JSON formatted file with all the information in the list will be downloaded.
 
 <figure><img src="../../../.gitbook/assets/image (45).png" alt=""><figcaption></figcaption></figure>
@@ -49,6 +69,7 @@ The name of the configuration file must match have the extension `.case-search-f
 The content of the configuration file can look like this:&#x20;
 
 {% code title="*/resources/config/case/example-case/1.0.0/case/search-field/example-case.case-search-field.json" %}
+
 ```json
 {
   "searchFields": [
@@ -63,6 +84,7 @@ The content of the configuration file can look like this:&#x20;
   ]
 }
 ```
+
 {% endcode %}
 {% endtab %}
 {% endtabs %}
@@ -79,7 +101,7 @@ The **Title** field is not mandatory and if left blank a translation of the key 
 1. Show the title if available
 2. Get the translation for the key if available
 3. Display the key
-{% endhint %}
+   {% endhint %}
 
 {% hint style="info" %}
 **Example configuration for `doc:` and `case:` prefixes**\\
@@ -135,20 +157,22 @@ Access to the search fields can be configured through access control. More infor
 <summary>Permission to view all search fields of one specific case type</summary>
 
 {% code overflow="wrap" %}
+
 ```json
 {
-   "resourceType": "com.ritense.document.domain.impl.searchfield.SearchField",
-   "action": "view_list",
-   "conditions": [
-      {
-         "type": "field",
-         "field": "id.document_definition_name",
-         "operator": "==",
-         "value": "evenementenvergunning"
-      }
-   ]
+  "resourceType": "com.ritense.document.domain.impl.searchfield.SearchField",
+  "action": "view_list",
+  "conditions": [
+    {
+      "type": "field",
+      "field": "id.document_definition_name",
+      "operator": "==",
+      "value": "evenementenvergunning"
+    }
+  ]
 }
 ```
+
 {% endcode %}
 
 </details>
@@ -158,20 +182,22 @@ Access to the search fields can be configured through access control. More infor
 <summary>Permission to view one specific search field</summary>
 
 {% code overflow="wrap" %}
+
 ```json
 {
-   "resourceType": "com.ritense.document.domain.impl.searchfield.SearchField",
-   "action": "view_list",
-   "conditions": [
-      {
-         "type": "field",
-         "field": "key",
-         "operator": "==",
-         "value": "first-name"
-      }
-   ]
+  "resourceType": "com.ritense.document.domain.impl.searchfield.SearchField",
+  "action": "view_list",
+  "conditions": [
+    {
+      "type": "field",
+      "field": "key",
+      "operator": "==",
+      "value": "first-name"
+    }
+  ]
 }
 ```
+
 {% endcode %}
 
 </details>
