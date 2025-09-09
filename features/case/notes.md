@@ -37,7 +37,7 @@ Access to the case notes can be configured through access control. More informat
          "type": "field",
          "field": "createdByUserId",
          "operator": "==",
-         "value": "${currentUserIdentifier}"
+         "value": "${currentUsername}"
       }
    ]
 }
