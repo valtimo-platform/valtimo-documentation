@@ -115,6 +115,25 @@ After creating a dashboard, widgets can be added to the dashboard.
 {% endtab %}
 {% endtabs %}
 
+Widgets can also be configured via a JSON editor:
+
+{% widgets %}
+{% widgets title="Via JSON editor" %}
+
+- Go to the `Admin` menu
+- Go to the `Dashboards` menu
+- Select a dashboard
+- Click on **The code icon**
+- Click on **Edit**
+- Configure a new widget, delete a widget or edit an existing widget
+- Click **Save**
+
+<figure><img src="../../.gitbook/assets/admin-widget-configuration-json-editor.png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../../.gitbook/assets/admin-widget-configuration-json-editor-active.png" alt=""><figcaption></figcaption></figure>
+
+This allows for faster editing of widgets or exchanging different dashboard widgets configurations throughout different environments.
+
 ## Access control
 
 Access to dashboards can be configured through access control. More information about access control can be found [here](https://docs.valtimo.nl/features/access-control).

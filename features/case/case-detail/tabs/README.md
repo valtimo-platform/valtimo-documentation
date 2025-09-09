@@ -251,7 +251,7 @@ Access to the case tabs and case notes can be configured through access control.
          "type": "field",
          "field": "createdByUserId",
          "operator": "==",
-         "value": "${currentUserIdentifier}"
+         "value": "${currentUsername}"
       }
    ]
 }
