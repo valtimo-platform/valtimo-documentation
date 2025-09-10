@@ -62,7 +62,7 @@ These things should be kept in mind when creating the frontend components for se
 
 **Plugin action**
 
-A plugin class can have methods that are marked as actions through the `@PluginAction` annotation. These methods can then be used in a process definition through the use of [process links](file:///Users/erik/Projects/erik/valtimo-documentation/using-valtimo/plugin/create-process-link.md). A single action can be linked to a task, and will run when that task is reached.
+A plugin class can have methods that are marked as actions through the `@PluginAction` annotation. These methods can then be used in a process definition through the use of [process links](../../process/process-link.md#creating-a-plugin-process-link). A single action can be linked to a task, and will run when that task is reached.
 
 For example:
 
