@@ -35,25 +35,28 @@ In the frontend, feature toggles can be configured under the `featureToggles` ke
 *   **`returnToLastUrlAfterTokenExpiration`**
 
     If enabled, the user will be returned to the page they were last on before they were automatically logged out after their refresh token expired.
+* **`enableCompactModeToggle`** \
+  If enabled, the user can toggle compact mode in the user settings. When both toggles are enabled, this will free up vertical space by moving the breadcrumbs and page title to the top header next to the logo.&#x20;
+* **`enableFormFlowBreadCrumbs`** \
+  If enabled, users will see a new breadcrumb trail on top of every form flow. This allows a user to quickly navigate between the different steps of the form flow. See [this page](../../features/forms/form-flow.md#bread-crumbs) for more information.
 *   **`enableObjectManagement`**
 
-    If enabled, a new menuitem 'objects' will appear in the left sidebar menu. Enabled by default when not configured. This menu item can have one or more submenu items depending on the configuration. For more information [here](../../fundamentals/getting-started/modules/zgw/object-management.md)
+    If enabled, a new menu item 'objects' will appear in the left sidebar menu. Enabled by default when not configured. This menu item can have one or more submenu items depending on the configuration. For more information [here](../../fundamentals/getting-started/modules/zgw/object-management.md)
 *   **`hideValtimoVersionsForNonAdmins`**
 
     If enabled, the Valtimo version information in the right sidebar will only be visible for admins and will be hidden for any other users.
 *   **`enableTabManagement`**
 
-    If enabled, tabs will be configured for each case type in the back-end. Enabled by default when not configured. For more information on this option, visit [this page ](../../features/case/for-developers/case-tabs.md). If disabled, the tabs for each case type will be the same, and will be configured from the `AppModule`. For information on this option, visit [this page](broken-reference).
+    If enabled, tabs will be configured for each case type in the back-end. Enabled by default when not configured. For more information on this option, visit [this page ](../../features/case/for-developers/case-tabs.md). If disabled, the tabs for each case type will be the same, and will be configured from the `AppModule`. For information on this option, visit [this page](broken-reference/).
 *   **`useStartEventNameAsStartFormTitle`**
 
     If enabled, BPMN start event names will be used as title for start forms instead of the standard `Start - ${process-name}` format.
 *   **`allowUserThemeSwitching`**
 
     If enabled, a new dropdown will appear in user settings, where the user can switch between themes. This feature toggle is enabled by default.
+* **`enableIntermediateSave`** \
+  If enabled, user will be able to save their progress on a form and continue later. This feature toggle is enabled by default.
 *   **`enablePbacDocumentenApiDocuments`**
 
     If enabled, access to the list of uploaded documents now requires permissions. Additionally, the backend requires the following property to be set in `application.yml`:\
     `valtimo.authorization.zgwDocuments.enabled`
-
-
-

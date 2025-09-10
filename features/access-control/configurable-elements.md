@@ -61,5 +61,5 @@ Below the full list of elements within Valtimo that can and need to be configure
   * [Execution](../process/#access-control)
   * [Definition](../process/#access-control)
 * Task
-  * [Tasks](../tasks/#access-control)
-  * [Identity links](../tasks/#access-control)
+  * [Tasks](../tasks.md#access-control)
+  * [Identity links](../tasks.md#access-control)
