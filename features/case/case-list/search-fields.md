@@ -109,7 +109,7 @@ Click on the search bar to expand the view showing all the configured search fie
 
 ## Access control
 
-Access to the search fields can be configured through access control. More information about access control can be found [here](https://docs.valtimo.nl/features/access-control).
+Access to the search fields can be configured through access control. More information about access control can be found [here](../../access-control/).
 
 ### Resources and actions
 
