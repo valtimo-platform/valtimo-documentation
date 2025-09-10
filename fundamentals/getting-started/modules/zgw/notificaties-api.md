@@ -27,6 +27,14 @@ dependencies {
 }
 ```
 
+#### Disabling subscriptions:
+
+In order to prevent new subscriptions from being created in the Notificaties API, the following property can be set:
+
+```yaml
+valtimo.zgw.register-abonnementen: true
+```
+
 ### Frontend
 
 A general instruction to add a front-end plugin to the implementation can be found [here](../core/plugin.md#adding-a-front-end-plugin-to-the-implementation).
