@@ -151,6 +151,7 @@
   * [Correlating messages](features/process/correlation-service.md)
   * [Job service](features/process/job-service.md)
   * [Process links](features/process/process-link.md)
+  * [Job Retry cycles](features/process/retry-cycle.md)
   * [For developers](features/process/process/README.md)
     * [Integrating spring beans in a process](features/process/process/integrate-spring-bean-in-process.md)
     * [Whitelisting Spring beans for Operaton](features/process/process/whitelist-spring-bean.md)
