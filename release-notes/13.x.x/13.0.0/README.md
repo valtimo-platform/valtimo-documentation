@@ -76,3 +76,7 @@ In minor releases of Valtimo 12, access control was introduced for three feature
 
 In Valtimo 13, these feature toggles have been removed, and access control is now **enabled by default** for all features. As a result, additional access control permissions may need to be configured when upgrading to Valtimo 13 to ensure full access to all functionality.
 
+## Bugfixes
+
+* Fixed an issue where a warning message was incorrectly displayed when starting a form.
+
