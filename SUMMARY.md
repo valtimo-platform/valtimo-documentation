@@ -159,6 +159,7 @@
 
 * [Release notes](release-notes/release-notes.md)
 * [13.x.x](release-notes/13.x.x/README.md)
+  * [13.1.2](release-notes/13.x.x/13.1.2.md)
   * [13.0.0](release-notes/13.x.x/13.0.0/README.md)
     * [Front-end migration](release-notes/13.x.x/13.0.0/front-end-migration.md)
     * [Back-end migration](release-notes/13.x.x/13.0.0/back-end-migration.md)
