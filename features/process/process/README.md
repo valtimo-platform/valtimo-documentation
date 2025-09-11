@@ -14,6 +14,10 @@ The for developers section within each feature gives more tech heavy information
 [integrate-spring-bean-in-process.md](integrate-spring-bean-in-process.md)
 {% endcontent-ref %}
 
+{% content-ref url="whitelist-scripting-classes.md" %}
+[whitelist-scripting-classes.md](whitelist-scripting-classes.md)
+{% endcontent-ref %}
+
 {% content-ref url="whitelist-spring-bean.md" %}
 [whitelist-spring-bean.md](whitelist-spring-bean.md)
 {% endcontent-ref %}
