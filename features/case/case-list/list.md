@@ -60,6 +60,25 @@ The content of a list configuration file can look like this:
 {% endtab %}
 {% endtabs %}
 
+Case list columns can also be configured via a JSON editor:
+
+{% tabs %}
+{% tab title="Via JSON editor" %}
+* Go to the `Admin` menu
+* Go to the `Cases` menu
+* Select the `Case list` tab
+* Select the `Columns` tab
+* Click on **The code icon**
+* Click on **Edit**
+* Configure a new column, delete a column or edit an existing column
+* Click **Save**
+
+<figure><img src="../../../.gitbook/assets/case-list-columns-json-editor.png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../../../.gitbook/assets/case-list-columns-json-editor-active.png" alt=""><figcaption></figcaption></figure>
+
+This allows for faster editing of columns or exchanging different column configurations throughout different environments.
+
 ## List field types
 
 Overview of available configuration fields and the corresponding field types.
