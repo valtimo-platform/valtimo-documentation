@@ -78,5 +78,5 @@ In Valtimo 13, these feature toggles have been removed, and access control is no
 
 ## Bugfixes
 
-* Fixed an issue where a warning message was incorrectly displayed when starting a form.
+*  Fixed issue when "No form linked" warning displays after submitting a start form.
 
