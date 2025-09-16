@@ -6,7 +6,7 @@
 
 In the Task modal opened from the Task list, a folder details icon is now displayed. Selecting this icon opens the associated case in a new tab.
 
-#### Value path selector is
+#### Value path selector
 
 The case definition dropdown has been removed to simplify the configuration of document definition names. The value path selector behavior now adapts to the context:
 
