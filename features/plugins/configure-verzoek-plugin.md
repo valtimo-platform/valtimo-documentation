@@ -1,5 +1,9 @@
 # Verzoek Plugin
 
+{% hint style="success" %}
+The Verzoek plugin is a ZGW plugin and can only be used in the GZAC edition.
+{% endhint %}
+
 The Verzoek plugin (formerly known as Productaanvraag) is used to create a Valtimo case with GZAC zaak. The verzoek plugin is triggered by a notification from the Notificaties API. Once the notification is received, the Verzoek plugin will use BPMN process to create a Valtimo case with a GZAC zaak.
 
 ## How does the plugin work
@@ -18,7 +22,7 @@ The lifecycle of a verzoek is as follows:
 
 ## Configure the plugin
 
-A plugin configuration is required before the plugin can be used. A general description on how to configure plugins can be found [here](broken-reference).
+A plugin configuration is required before the plugin can be used. A general description on how to configure plugins can be found [here](./#configuring-plugins).
 
 If the Verzoek plugin is not visible in the plugin menu, it is possible the application is missing a dependency. Instructions on how to add the Verzoek Plugin dependency can be found [here](../../fundamentals/getting-started/modules/zgw/verzoek.md).
 
@@ -87,15 +91,15 @@ The 'Create Zaakdossier' process has several tasks with default configurations:
 
 * Map betrokkene type - a task that uses a DMN table to determine what the zaak initiator type.
 
-![betrokkene-type-mapping-dmn-table.png](../../using-valtimo/plugin/verzoek/img/betrokkene-type-mapping-dmn-table.png)
+![](../../using-valtimo/plugin/verzoek/img/betrokkene-type-mapping-dmn-table.png)
 
 * Link Document to zaak - This task links all the documents from the verzoek to the zaak.
 
-![img.png](../../using-valtimo/plugin/verzoek/img/document-urls-collection-example.png)
+![](../../using-valtimo/plugin/verzoek/img/document-urls-collection-example.png)
 
 * Start handling process - This task starts a follow-up process that further handles the verzoek.
 
-![start-handeling-process-configuration.png](../../using-valtimo/plugin/verzoek/img/start-handeling-process-configuration.png)
+![](../../using-valtimo/plugin/verzoek/img/start-handeling-process-configuration.png)
 
 ### Custom process
 

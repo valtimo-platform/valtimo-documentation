@@ -5,7 +5,7 @@ Valtimo offers the functionality needed to create and add plugins to Valtimo imp
 {% hint style="info" %}
 ### Prerequisites <a href="#prerequisites" id="prerequisites"></a>
 
-Plugins are added to a Valtimo implementation. See [https://docs.valtimo.nl/getting-started/first-dive/creating-your-own-valtimo-implementation](https://docs.valtimo.nl/getting-started/first-dive/creating-your-own-valtimo-implementation) to get started with your own Valtimo implementation.
+Plugins are added to a Valtimo implementation. See [this page](../../../fundamentals/getting-started/#starting-your-own-valtimo-implementation) to get started with your own Valtimo implementation.
 {% endhint %}
 
 ### Back-end <a href="#back-end" id="back-end"></a>

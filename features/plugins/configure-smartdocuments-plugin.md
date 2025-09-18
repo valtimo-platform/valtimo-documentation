@@ -4,19 +4,21 @@ The SmartDocuments plugin makes use of [SmartDocuments](https://smartdocuments.c
 
 ## Configure the plugin
 
-A plugin configuration is required before the plugin can be used. A general description on how to configure plugins can be found [here](broken-reference).
+A plugin configuration is required before the plugin can be used. A general description on how to configure plugins can be found [here](./#configuring-plugins).
 
 If the SmartDocuments plugin is not visible in the plugin menu, it is possible the application is missing a dependency. Instructions on how to add the SmartDocuments dependency can be found [here](../../fundamentals/getting-started/modules/zgw/smartdocuments.md).
 
 The **SmartDocuments URL** (`url`), **Username** (`username`) and **Password** (`password`) should all be retrieved from the SmartDocuments application.
 
-An example plugin configuration: ![example plugin configuration](../../using-valtimo/plugin/smartdocuments/img/configure-plugin.png)
+An example plugin configuration:&#x20;
+
+<figure><img src="../../using-valtimo/plugin/smartdocuments/img/configure-plugin.png" alt=""><figcaption></figcaption></figure>
 
 ## Available actions
 
 SmartDocuments' main function is to generate documents based on a template.
 
-A general description on how to create process links can be found [here](broken-reference).
+A general description on how to create process links can be found [here](../process/process-link.md#creating-a-plugin-process-link).
 
 ### Generate document
 
@@ -34,4 +36,6 @@ A document is generated with data taken from the 'Template data'. The value on t
 
 After filling in all fields, the process-link can be saved. From now on, every time the service task is executed, a document is generated. Remember that the generated document is not visible anywhere yet. A logical next step is to handle the generated document. For example, the next service task can add the generated document to the case.
 
-An example process link configuration: ![Generate document process link](../../using-valtimo/plugin/smartdocuments/img/generate-document-process-link.png)
+An example process link configuration:&#x20;
+
+<figure><img src="../../using-valtimo/plugin/smartdocuments/img/generate-document-process-link.png" alt=""><figcaption></figcaption></figure>

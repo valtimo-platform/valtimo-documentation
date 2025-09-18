@@ -1,10 +1,14 @@
 # Objecttypen API Plugin
 
+{% hint style="success" %}
+The Objecttypen API plugin is a ZGW plugin and can only be used in the GZAC edition.
+{% endhint %}
+
 The Objecttypen API plugin can be used to store and access data about an Object in an application that supports the Objecttypen API standard created and used by the Dutch government.
 
 ## Configure the plugin
 
-A plugin configuration is required before the plugin can be used. A general description on how to configure plugins can be found [here](broken-reference).
+A plugin configuration is required before the plugin can be used. A general description on how to configure plugins can be found [here](./#configuring-plugins).
 
 If the Objecttypen API plugin is not visible in the plugin menu, it is possible the application is missing a dependency. Instructions on how to add the Objecttypen API dependency can be found [here](../../fundamentals/getting-started/modules/zgw/objecttypen-api.md).
 

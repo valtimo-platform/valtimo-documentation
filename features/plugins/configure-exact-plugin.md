@@ -51,7 +51,7 @@ exact:
 
 ## Configure the plugin
 
-A plugin configuration is required before the plugin can be used. A general description on how to configure plugins can be found [here](broken-reference).
+A plugin configuration is required before the plugin can be used. A general description on how to configure plugins can be found [here](./#configuring-plugins).
 
 To configure this plugin the following properties have to be entered:
 
@@ -60,7 +60,7 @@ To configure this plugin the following properties have to be entered:
 
 To be able to save the configuration an access token and refresh token should be retrieved first. This can be done with the help of the 'Give authorization' button. This allows the user to login to exact and give permission. This will open a new window to Exact where you can give your permission, if successful the button to save the configuration should turn green.
 
-![img.png](../../using-valtimo/plugin/exact/img/configuration-screen.png)
+![](../../using-valtimo/plugin/exact/img/configuration-screen.png)
 
 ## Actions
 
@@ -74,13 +74,13 @@ There are two ways in which you can send these requests, a static one or via a J
 
 If you fill in the `service class` input field, you must have a Java Bean with that name that implements on of the following interfaces `ExactGetRequest`, `ExactPostRequest` or `ExactPutRequest`. This interface is requested instead to supply the `uri` and `content` of the request.
 
-![img.png](../../using-valtimo/plugin/exact/img/actions-screen.png)
+![](../../using-valtimo/plugin/exact/img/actions-screen.png)
 
 ### Example of a static request
 
 In this example, a fixed call to the endpoint `/api/v1/current/Me` endpoint is made and stored in the process under the variable name `exactGetResult` as a `JsonNode` type.
 
-![img.png](../../using-valtimo/plugin/exact/img/static-get-request.png)
+![](../../using-valtimo/plugin/exact/img/static-get-request.png)
 
 ### Example of a service class request
 
@@ -100,4 +100,4 @@ class GetDivision : ExactGetRequest {
 }
 ```
 
-![img.png](../../using-valtimo/plugin/exact/img/service-class-get-request.png)
+![](../../using-valtimo/plugin/exact/img/service-class-get-request.png)

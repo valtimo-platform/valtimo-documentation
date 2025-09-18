@@ -81,7 +81,7 @@ The **Title** field is not mandatory and if left blank a translation of the key 
 {% endhint %}
 
 {% hint style="info" %}
-**Example configuration for `doc:` and `case:` prefixes**\\
+**Example configuration for `doc:` and `case:` prefixes**
 
 **Path:** `case:assigneeFullname`\
 This path targets the assigned case handler's full name and will search that field when used in the UI.\

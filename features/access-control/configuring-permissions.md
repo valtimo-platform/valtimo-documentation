@@ -65,8 +65,6 @@ Going over each element:
 {% endtab %}
 
 {% tab title="Via IDE" %}
-#### Configuring permissions
-
 The example below defines 2 permissions:
 
 * A user with `ROLE_ADMIN` can `VIEW` any document

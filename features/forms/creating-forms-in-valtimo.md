@@ -22,11 +22,10 @@ Valtimo contains additional value resolvers for ZGW services:
 
 * `zaak` (Zaken API)
 * `zaakstatus` (Zaken API & Catalogi API)
+* `zaakresultaat` (Zaken API)
 * `zaakobject` (Zaken API)
 
-<table><thead><tr><th valign="top">Data</th><th valign="top">Description</th><th valign="top">Prefix</th><th valign="top">Postfix</th><th valign="top">Example</th></tr></thead><tbody><tr><td valign="top"><strong>Zaken API zaak</strong></td><td valign="top">Resolves values from the Zaken API zaak response</td><td valign="top"><code>zaak:</code></td><td valign="top">Name of the field from the <a href="https://redocly.github.io/redoc/?url=https://raw.githubusercontent.com/VNG-Realisatie/zaken-api/master/src/openapi.yaml#tag/zaken/operation/zaak_create">zaak response</a></td><td valign="top">zaak:identificatie</td></tr><tr><td valign="top"><strong>Zaken API zaakstatus</strong></td><td valign="top">Resolves values from the Zaken API zaakstatus response</td><td valign="top"><code>zaakstatus:</code></td><td valign="top">Name of the field from the <a href="https://redocly.github.io/redoc/?url=https://raw.githubusercontent.com/VNG-Realisatie/catalogi-api/master/src/openapi.yaml#tag/statustypen/operation/statustype_retrieve">zaak statustypen response</a></td><td valign="top">zaakstatus:omschrijvingGeneriek</td></tr><tr><td valign="top"><strong>Zaken API zaakobject</strong></td><td valign="top">Resolves values form the Zaken API zaakobject</td><td valign="top"><code>zaakobject:</code></td><td valign="top">The object type and a reference to a property</td><td valign="top">zaakobject:profile:/person/firstName</td></tr></tbody></table>
-
-More information can be found [here](broken-reference)
+<table><thead><tr><th valign="top">Data</th><th valign="top">Description</th><th valign="top">Prefix</th><th valign="top">Postfix</th><th valign="top">Example</th></tr></thead><tbody><tr><td valign="top"><strong>Zaken API zaak</strong></td><td valign="top">Resolves values from the Zaken API zaak response</td><td valign="top"><code>zaak:</code></td><td valign="top">Name of the field from the <a href="https://redocly.github.io/redoc/?url=https://raw.githubusercontent.com/VNG-Realisatie/zaken-api/master/src/openapi.yaml#tag/zaken/operation/zaak_create">zaak response</a></td><td valign="top">zaak:identificatie</td></tr><tr><td valign="top"><strong>Zaken API zaakstatus</strong></td><td valign="top">Resolves values from the Zaken API zaakstatus response</td><td valign="top"><code>zaakstatus:</code></td><td valign="top">Name of the field from the <a href="https://redocly.github.io/redoc/?url=https://raw.githubusercontent.com/VNG-Realisatie/catalogi-api/master/src/openapi.yaml#tag/statustypen/operation/statustype_retrieve">zaak statustypen response</a></td><td valign="top">zaakstatus:omschrijvingGeneriek</td></tr><tr><td valign="top"><strong>Zaken API zaakresultaat</strong></td><td valign="top">Resolves values from the Zaken API zaakresultaat response</td><td valign="top"><code>zaakresultaat:</code></td><td valign="top">Name of the field from the <a href="https://redocly.github.io/redoc/?url=https://raw.githubusercontent.com/VNG-Realisatie/catalogi-api/master/src/openapi.yaml#tag/resultaattypen/operation/resultaattype_retrieve">zaak resultaattypen response</a></td><td valign="top">zaakresultaat:omschrijving</td></tr><tr><td valign="top"><strong>Zaken API zaakobject</strong></td><td valign="top">Resolves values form the Zaken API zaakobject</td><td valign="top"><code>zaakobject:</code></td><td valign="top">The object type and a reference to a property</td><td valign="top">zaakobject:profile:/person/firstName</td></tr></tbody></table>
 
 ### Custom properties
 
@@ -222,7 +221,7 @@ In some cases there is other data related to the case, but not part of the docum
 
 Even though technically a `FormFieldDataResolver` is not used, the prefix `pv` is available to access the process variables in functionally the same way. For example, the expression `pv:age` would try to get the 'age' variable from the process variables.
 
-A list of `FormFieldDataResolvers` that are available on the [forms reference page](broken-reference).
+A list of `FormFieldDataResolvers` is available [here](creating-forms-in-valtimo.md#external-data-types).
 
 A description on how to create a new `FormFieldDataResolver` is available on the [creating form data resolver page](forms/creating-form-field-data-resolver.md)
 
