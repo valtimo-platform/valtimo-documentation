@@ -34,5 +34,5 @@ Note: more classes can be whitelisted by using the following Spring property:
 valtimo:
   camunda:
     scripting:
-      allowedClasses: "java.util.UUID","java.net.URI"
+      allowedClasses: java.util.UUID, java.net.URI
 ```
