@@ -8,7 +8,7 @@ The Zaken API plugin can be used to store and access data about a Zaak (case) in
 
 ## Configure the plugin
 
-A plugin configuration is required before the plugin can be used. A general description on how to configure plugins can be found [here](broken-reference).
+A plugin configuration is required before the plugin can be used. A general description on how to configure plugins can be found [here](./#configuring-plugins).
 
 If the Zaken API plugin is not visible in the plugin menu, it is possible the application is missing a dependency. Instructions on how to add the Zaken API dependency can be found [here](../../fundamentals/getting-started/modules/zgw/documenten-api.md).
 
@@ -25,7 +25,7 @@ An example plugin configuration:&#x20;
 
 The Zaken API plugin supports the following actions that can be configured in process links in order to manage data that is part of the Zaak.
 
-A general description on how to create process links, can be found [here](broken-reference).
+A general description on how to create process links, can be found [here](../process/process-link.md#creating-a-plugin-process-link).
 
 ### Link document to zaak
 
