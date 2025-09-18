@@ -154,6 +154,7 @@
   * [For developers](features/process/process/README.md)
     * [Integrating spring beans in a process](features/process/process/integrate-spring-bean-in-process.md)
     * [Whitelisting Spring beans for Operaton](features/process/process/whitelist-spring-bean.md)
+    * [Whitelisting scripting classes for Operaton](features/process/process/whitelist-scripting-classes.md)
 
 ## Release notes
 
