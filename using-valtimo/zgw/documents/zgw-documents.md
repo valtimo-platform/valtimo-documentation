@@ -49,7 +49,7 @@ To do so, create a json file in the application classpath which conforms to the 
 
 The contents should follow the structure in the example below:
 
-**my-zaak.zgw-document-trefwoorden.json**
+**my-zaak.zgw-document-list-column.json**
 ```json
 {
   "changesetId": "my-zaak.zgw-document-list-columns-v1",
@@ -78,7 +78,7 @@ The following columns are available for configuration:
 - `CREATIEDATUM`
 - `FORMAAT`
 - `IDENTIFICATIE`
-- `INFORMATIEOBJECTTYPE`
+- `INFORMATIEOBJECTTYPE_OMSCHRIJVING`
 - `LOCKED`
 - `STATUS`
 - `TAAL`

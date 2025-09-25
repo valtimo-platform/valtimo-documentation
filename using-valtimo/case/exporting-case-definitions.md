@@ -16,18 +16,22 @@ structure is the same as found in any application that makes use of the auto-dep
 
 The following configurations and definitions are included in the export:
 - Case definition settings
+- Case search fields
 - Decision definitions
 - Document definition
-- Form flows
-- Forms (includes case summary if present)
-- List columns
+- Form flow definitions
+- Form definitions (includes case summary if present)
+- Internal case statuses
+- Case list columns
+- Case tabs
+- Case tab widgets
 - Process definitions
 - Process document associations
 - Process links
-- Search fields
-- Tabs
+- Task search fields
 - Task list columns
-- ZGW Document columns
+- ZGW document columns
+- ZGW document trefwoorden
 
 ### Excluded from the export
 
@@ -47,18 +51,22 @@ Follow the wizard and select the exported file (ZIP).
 
 The following configurations and definitions are included in the import:
 - Case definition settings
+- Case search fields
 - Decision definitions
 - Document definition
-- Form flows
-- Forms
-- List columns
+- Form flow definitions
+- Form definitions (includes case summary if present)
+- Internal case statuses
+- Case list columns
+- Case tabs
+- Case tab widgets
 - Process definitions
 - Process document associations
 - Process links
-- Search fields
-- Tabs
+- Task search fields
 - Task list columns
-- ZGW Document columns
+- ZGW document columns
+- ZGW document trefwoorden
 
 ### Excluded from the import
 

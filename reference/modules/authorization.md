@@ -5,6 +5,7 @@ The access to the following resources is limited by Valtimo access control.
 
 | Resource name                                   | Resource type                                                          | Module   |
 |-------------------------------------------------|:-----------------------------------------------------------------------|:---------|
+| **[Dashboard](#dashboard)**                     | `com.ritense.dashboard.domain.Dashboard`                               | Dashboard |
 | **[Document](#document)**                       | `com.ritense.document.domain.impl.JsonSchemaDocument`                  | Document |
 | **[Document definition](#document-definition)** | `com.ritense.document.domain.impl.JsonSchemaDocumentDefinition`        | Document |
 | **[Document snapshot](#document-snapshot)**     | `com.ritense.document.domain.impl.snapshot.JsonSchemaDocumentSnapshot` | Document |
@@ -14,8 +15,25 @@ The access to the following resources is limited by Valtimo access control.
 | **[Process definition](#process-definition)**   | `com.ritense.valtimo.camunda.domain.CamundaProcessDefinition`          | Core     |
 | **[Task](#task)**                               | `com.ritense.valtimo.camunda.domain.CamundaTask`                       | Core     |
 | **[Task identity link](#task-identity-link)**   | `com.ritense.valtimo.camunda.domain.CamundaIdentityLink`               | Core     |
-| **[Case tab](#case-tab)**                       | `com.ritense.case.domain.CaseTab`                                      | CaseTab  |
-| **[Case Widget](#case-widget)**                 | `com.ritense.case_.domain.tab.CaseWidgetTabWidget`                     | CaseTab  |
+| **[Case tab](#case-tab)**                       | `com.ritense.case.domain.CaseTab`                                      | Case     |
+| **[Case tab Widget](#case-tab-widget)**         | `com.ritense.case_.domain.tab.CaseWidgetTabWidget`                     | Case     |
+
+### Dashboard
+Resource type: `com.ritense.dashboard.domain.Dashboard`
+
+{% hint style="info" %}
+**Note:** To prevent breaking changes, this permission is only applied when the application property `valtimo.authorization.dashboard.enabled` is set to `true`.
+{% endhint %}
+
+#### Supported actions
+| Action         | key           | Description                            |
+|----------------|:--------------|:---------------------------------------|
+| **View**       | `view`        | Allows retrieving a single dashboard.  |
+| **View list**  | `view_list`   | Allows retrieving lists of dashboards. |
+
+#### Supported relations
+
+No relations are supported for this type.
 
 ### Document
 Resource type: `com.ritense.document.domain.impl.JsonSchemaDocument`
@@ -51,7 +69,7 @@ Resource type: `com.ritense.document.domain.impl.JsonSchemaDocumentDefinition`
 
 #### Supported relations
 
-No relations are supported for this type
+No relations are supported for this type.
 
 ### Document snapshot
 Resource type: `com.ritense.document.domain.impl.snapshot.JsonSchemaDocumentSnapshot`
@@ -147,6 +165,19 @@ Resource type: `com.ritense.case.domain.CaseTab`
 | **View**       | `view`        | Allows viewing tabs of a case. |
 
 #### Supported relations
+| Related resource                                |
+|-------------------------------------------------|
+| **[Document definition](#document-definition)** |
+
+### Case tab widget
+Resource type: `com.ritense.case_.domain.tab.CaseWidgetTabWidget`
+
+#### Supported actions
+| Action         | key           | Description                           |
+|----------------|:--------------|:--------------------------------------|
+| **View**       | `view`        | Allows viewing widgets on a case tab. |
+
+#### Supported relations
 No relations are supported for this type.
 
 ## Supported conditions
@@ -213,8 +244,9 @@ The following conditions can be used with their respective structures:
 | `conditions`   | The conditions that should apply to the specified resource type. | See [supported conditions](#supported-conditions).     |
 
 ### Special values for the value field
-| Value                 | Description                                     |
-|:----------------------|:------------------------------------------------|
-| `${currentUserId}`    | The identifier assigned to the current user.    |
-| `${currentUserEmail}` | The email address the current user has.         |
-| `${currentUserRoles}` | The list of roles the current user has.         |
+| Value                      | Description                                     |
+|:---------------------------|:------------------------------------------------|
+| `${currentUserId}`         | The identifier assigned to the current user.    |
+| `${currentUserEmail}`      | The email address the current user has.         |
+| `${currentUserRoles}`      | The list of roles the current user has.         |
+| `${currentUserIdentifier}` | The configured identifier assigned to the user. |
