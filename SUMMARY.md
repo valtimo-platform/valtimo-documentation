@@ -81,8 +81,6 @@
 * [🗃️ Cases](features/case/README.md)
   * [General](features/case/general.md)
   * [Processes](features/case/processes.md)
-  * [Tasks](features/case/tasks/README.md)
-    * [Task list columns](features/case/tasks/task-list-columns.md)
   * [Decision tables](features/case/decision-tables.md)
   * [Document](features/case/document-definition.md)
   * [Forms](features/case/forms/README.md)
@@ -93,6 +91,9 @@
       * [Custom form flow component](features/case/forms/forms/create-custom-component.md)
       * [Spring beans for Form flow](features/case/forms/forms/whitelist-spring-bean.md)
   * [Form flows](features/case/form-flow.md)
+  * [Tasks](features/case/tasks/README.md)
+    * [Columns](features/case/tasks/task-list-columns.md)
+    * [Search fields](features/case/tasks/search-fields.md)
   * [Case list](features/case/case-list/README.md)
     * [Search fields](features/case/case-list/search-fields.md)
     * [Columns](features/case/case-list/list.md)
@@ -154,11 +155,14 @@
   * [For developers](features/process/process/README.md)
     * [Integrating spring beans in a process](features/process/process/integrate-spring-bean-in-process.md)
     * [Whitelisting Spring beans for Operaton](features/process/process/whitelist-spring-bean.md)
+    * [Whitelisting scripting classes for Operaton](features/process/process/whitelist-scripting-classes.md)
 
 ## Release notes
 
 * [Release notes](release-notes/release-notes.md)
 * [13.x.x](release-notes/13.x.x/README.md)
+  * [13.2.0](release-notes/13.x.x/13.2.0.md)
+  * [13.1.2](release-notes/13.x.x/13.1.2.md)
   * [13.0.0](release-notes/13.x.x/13.0.0/README.md)
     * [Front-end migration](release-notes/13.x.x/13.0.0/front-end-migration.md)
     * [Back-end migration](release-notes/13.x.x/13.0.0/back-end-migration.md)

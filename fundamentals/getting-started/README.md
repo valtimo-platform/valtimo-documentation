@@ -7,7 +7,7 @@ This section contains information on how to create a new Valtimo implementation.
 
 The Valtimo platform consists of multiple services/containers. Depending on the edition (Valtimo or GZAC), a specific set of containers can be used for supporting a quick start-up. For both editions, a Docker Compose repository is available. These repositories include a guide on which Compose file(s) to use and how to use them.
 
-## **Business Process Engineers**
+## Business Process Engineers
 
 Available documentation for users that want to use Valtimo as an "Off the Shelf" application and do not want to be bothered with technical documentation on the setup and configuration of the environment.
 
@@ -150,9 +150,9 @@ For starting the GZAC platform, the following repository should be checked out:
 {% endtab %}
 {% endtabs %}
 
-When starting the Valtimo platform as Docker containers, all supporting services and the two Valtimo services are started up with above Docker Compose files. The containers are designed for evaluation purposes only.\\
+When starting the Valtimo platform as Docker containers, all supporting services and the two Valtimo services are started up with above Docker Compose files. The containers are designed for evaluation purposes only.
 
-## **Software developers**
+## Software developers
 
 Documentation for tech-savvy engineers and developers on which modules are available and what settings at minimum are required to use them. Some knowledge on java build tools such as [Maven](https://maven.apache.org/) or [Gradle](https://gradle.org/) is assumed for these users.
 

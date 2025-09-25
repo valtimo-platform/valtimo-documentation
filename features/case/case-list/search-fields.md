@@ -104,7 +104,7 @@ The **Title** field is not mandatory and if left blank a translation of the key 
    {% endhint %}
 
 {% hint style="info" %}
-**Example configuration for `doc:` and `case:` prefixes**\\
+**Example configuration for `doc:` and `case:` prefixes**
 
 **Path:** `case:assigneeFullname`\
 This path targets the assigned case handler's full name and will search that field when used in the UI.\
@@ -131,7 +131,7 @@ Click on the search bar to expand the view showing all the configured search fie
 
 ## Access control
 
-Access to the search fields can be configured through access control. More information about access control can be found [here](https://docs.valtimo.nl/features/access-control).
+Access to the search fields can be configured through access control. More information about access control can be found [here](../../access-control/).
 
 ### Resources and actions
 

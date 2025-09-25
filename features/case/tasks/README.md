@@ -1,8 +1,17 @@
 # Tasks
 
+Under the Tasks tab, configurations can be done for the view of a task list.&#x20;
+
+<figure><img src="../../../.gitbook/assets/Screenshot 2025-07-23 at 17.18.34.png" alt=""><figcaption></figcaption></figure>
+
+This is further divided into two more tabs:
+
+* Columns
+* Search fields
+
 ## Access control
 
-Access to the processes can be configured through access control. More information about access control can be found [here](https://docs.valtimo.nl/features/access-control).
+Access to the tasks can be configured through access control. More information about access control can be found [here](../../access-control/).
 
 ### Resources and actions
 
