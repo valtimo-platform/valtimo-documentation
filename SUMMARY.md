@@ -136,6 +136,7 @@
   * [Catalogi API plugin](features/plugins/configure-catalogi-api-plugin.md)
   * [Documenten API plugin](features/plugins/configure-documenten-api-plugin.md)
   * [Exact Plugin](features/plugins/configure-exact-plugin.md)
+  * [Object Token Auhentication Plugin](features/plugins/configure-notificaties-api-plugin.md)
   * [Object Token Auhentication Plugin](features/plugins/configure-object-token-authentication-plugin.md)
   * [Objecten API Plugin](features/plugins/configure-objecten-api-plugin.md)
   * [Objecttypen API Plugin](features/plugins/configure-objecttypen-api-plugin.md)
