@@ -136,6 +136,7 @@
   * [Catalogi API plugin](features/plugins/configure-catalogi-api-plugin.md)
   * [Documenten API plugin](features/plugins/configure-documenten-api-plugin.md)
   * [Exact Plugin](features/plugins/configure-exact-plugin.md)
+  * [Object Token Auhentication Plugin](features/plugins/configure-notificaties-api-plugin.md)
   * [Object Token Auhentication Plugin](features/plugins/configure-object-token-authentication-plugin.md)
   * [Objecten API Plugin](features/plugins/configure-objecten-api-plugin.md)
   * [Objecttypen API Plugin](features/plugins/configure-objecttypen-api-plugin.md)
@@ -154,6 +155,7 @@
   * [For developers](features/process/process/README.md)
     * [Integrating spring beans in a process](features/process/process/integrate-spring-bean-in-process.md)
     * [Whitelisting Spring beans for Operaton](features/process/process/whitelist-spring-bean.md)
+    * [Whitelisting scripting classes for Operaton](features/process/process/whitelist-scripting-classes.md)
 
 ## Release notes
 

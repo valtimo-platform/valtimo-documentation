@@ -1,4 +1,4 @@
-# Whitelisting scripting classes for Camunda
+# Whitelisting scripting classes for Operaton
 
 It is possible to use classes in your script tasks by using the script engine. Valtimo restricts the classes that can
 be used to the following by default:
@@ -34,5 +34,5 @@ Note: more classes can be whitelisted by using the following Spring property:
 valtimo:
   camunda:
     scripting:
-      allowedClasses: "java.util.UUID","java.net.URI"
+      allowedClasses: java.util.UUID, java.net.URI
 ```
