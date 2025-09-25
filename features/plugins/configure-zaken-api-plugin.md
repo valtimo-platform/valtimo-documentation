@@ -158,6 +158,35 @@ The **Delete zaakeigenschap** action deletes a zaakeigenschap in the zaken API. 
 * **Eigenschap.** The eigenschap as configured in the catalogi API.
 * **Property URL.** A URL can be entered that references to an eigenschap in the catalogi API. This is an alternative to providing an eigenschap.
 
+### Create zaak object
+
+The **Create zaak object** action adds a [zaakobject](https://vng-realisatie.github.io/gemma-zaken/standaard/zaken/#zaakobject) to a Zaak in the zaken API. When creating a process link the following properties can be entered:
+
+* **Case URL**: URL reference to the ZAAK. When this field is empty, the zaak linked to the process instance will be used.
+* **Object URL**: URL reference to the resource that describes the OBJECT.
+* **Case object type**: URL reference to the ZAAKOBJECTTYPE (in the Catalog API).
+* **Object Type**: Describes the type of OBJECT related to the ZAAK. If there is no suitable type, then the type must be specified under `objectTypeOverige`.
+* **Relationship description**: Description of the relationship between the ZAAK and the OBJECT.
+
+When the **Object Type** is set to `overige`, then the following field can/must be provided:
+
+* **Object type other**: Describes the type of OBJECT when objectType has the value 'overige'.
+* **Object type other URL**: URL reference to the object type resource in an API. This resource must contain the JSON schema definition of the object type.
+* **Object type other Schema**: A valid jq expression. This is combined with the resource from the `url` attribute to read the schema of the object type. Example: `.jsonSchema`.
+* **Object type other Object data**: A valid jq expression. This is combined with the JSON data from the OBJECT url to read the object data and validate the data structure against the schema. Example: `.record.data`.
+
+Beside the above fields there are other fields that depend on the selected 'Object Type'. These fields are under the `objectIdentificatie` property of the Zaakobject in the Zaken API.
+
+Currently, only two of these types are fully worked out in this plugin action. These are `zakelijk_recht` and `overige`. Other types can be used out of the box if they don't require the `objectIdentificatie` property.
+
+If you need a different Object Type and need the fields under `objectIdentificatie`, then there are two options:
+
+- Request these fields to be added to the plugin. (Or do it yourself and deliver the changes via a pull request.)
+- (Backend only) Create a new class that inherits the [`ZaakObjectRequest`](https://github.com/valtimo-platform/valtimo-backend-libraries/blob/next-minor/zgw/zaken-api/src/main/kotlin/com/ritense/zakenapi/domain/zaakobjectrequest/ZaakObjectRequest.kt) interface and add the fields that are needed.
+  - This is only possible if you configure the process link via a configuration file (`*.process-link.json`) in the implementation project.
+
+More information about the zaakobject and its properties can be found in [the specification](https://vng-realisatie.github.io/gemma-zaken/standaard/zaken/redoc-1.5.1#tag/zaakobjecten/operation/zaakobject_create).
+
 ### Start recovery period
 
 The **Start recovery period** will start a recovery period for the linked zaak in the zaken API. If a zaak has a due date (Uiterlijke einddatum afdoening) set, the due date will be extended with the configured maximum duration of the recovery period. The zaak will also be suspended.
