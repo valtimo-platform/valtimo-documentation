@@ -57,6 +57,29 @@ The **Create zaak** action creates a zaak in the zaken API. When creating a proc
 
 * **RSIN.** Contains the RSIN of the organisation. The RSIN number (Rechtspersonen en Samenwerkingsverbanden Identificatie Nummer in Dutch) is an identification number for legal entities and partnerships. This will be used when creating the zaak to indicate who is responsible for creating the zaak record in the API.
 * **Zaak type.** The type of the zaak that is created.
+* **Description** (Optional) A brief description of the zaak.
+* **Planned end date** (Optional) The date by which the zaak is scheduled to be completed.
+* **Final delivery date** (Optional) The last date by which the zaak must be completed according to law and regulations.
+* **Explanation.**  (Optional) An explanation of the zaak.
+* **Communication channel.** (Optional) The medium through which the reason for initiating a zaak was received. URL to a communication channel in the VNG Reference List of communication channels. 
+* **Payment indication.** (Optional) Indication of whether the costs associated with handling the zaak have been paid by the person involved.
+  * Options: 
+    * `nvt` - There are no costs associated with the case to be paid.
+    * `nog_niet` - The costs associated with the case have not (yet) been paid.
+    * `gedeeltelijk` - The costs associated with the case have been partially paid.
+    * `geheel` - The costs associated with the case have been fully paid.
+* **Case geometry.** (Optional) Point, line or (multi-)plane geometry information.
+  * **Type.** The geometry shape/type.
+    * Options: 
+      * `Point`
+      * `MultiPoint`
+      * `LineString`
+      * `MultiLineString`
+      * `Polygon`
+      * `GeometryCollection`
+      * `MultiPolygon`
+  * **Coordinates.** Collection of coordinates/points representing the geometry shape/type.
+* **Main Case.** (Optional) URL reference to the zaak requested by its initiator, which is dealt with in two or more separate zaken, of which the present zaak is one.
 
 ### Create zaakrol - natural person
 
