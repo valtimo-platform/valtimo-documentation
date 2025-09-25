@@ -8,3 +8,4 @@ version but instead adds a new one.
 * Fixed a bug where plugin actions would sometimes not be available from the process link screen.
 * Process links for global processes are now correctly imported again when import files are located in the 
 `config/global/process-link` folder.
+* The application no longer breaks when CASE_MANAGEMENT_TAB_TOKEN is not provided. The token is now injected optionally, ensuring stability even when it is missing.
