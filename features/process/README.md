@@ -5,7 +5,7 @@ Valtimo is built on top of Operaton, it uses Operaton to create BPMN processes.
 This section contains information on how to configure and use BPMN processes in Valtimo.
 
 * [System processes](systemprocesses.md)
-* [Correlating messages](https://github.com/valtimo-platform/valtimo-documentation/blob/main/using-valtimo/process/correlatingmessages.md)
+* [Correlating messages](correlation-service.md)
 * [Manipulating jobs](job-service.md)
 
 ## Access control

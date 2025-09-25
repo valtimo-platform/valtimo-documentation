@@ -22,7 +22,7 @@ The lifecycle of a verzoek is as follows:
 
 ## Configure the plugin
 
-A plugin configuration is required before the plugin can be used. A general description on how to configure plugins can be found [here](broken-reference).
+A plugin configuration is required before the plugin can be used. A general description on how to configure plugins can be found [here](./#configuring-plugins).
 
 If the Verzoek plugin is not visible in the plugin menu, it is possible the application is missing a dependency. Instructions on how to add the Verzoek Plugin dependency can be found [here](../../fundamentals/getting-started/modules/zgw/verzoek.md).
 

@@ -26,6 +26,7 @@ The available ZGW plugins are:
 * Besluiten plugin
 * Catalogi API plugin
 * Documenten API plugin
+* Notificaties API plugin
 * Object Token Authentication plugin
 * Objecten API plugin
 * Objecttypen API plugin
