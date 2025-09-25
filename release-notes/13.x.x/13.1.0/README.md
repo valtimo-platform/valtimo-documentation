@@ -60,3 +60,9 @@ for starting a case, without giving users permissions for starting any supportin
 #### Sorted object types in the main menu
 
 Object types in the main menu when using object management are now sorted alphabetically by name.
+
+## Bugfixes 
+
+* Forms using the documenten-api-file upload component now correctly allow submission when it is the only required field, and no longer enable the submit button when other required fields are incomplete.
+
+* Form definitions table now consistently shows Dutch and German translations in the readonly column instead of sometimes falling back to English.
