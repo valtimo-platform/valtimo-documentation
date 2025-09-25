@@ -192,7 +192,7 @@ Changes to document definitions **have immediate effect on newly created cases**
 
 ## Access control
 
-Access to document definitions can be configured through access control. More information about access control can be found [here](https://docs.valtimo.nl/features/access-control).
+Access to document definitions can be configured through access control. More information about access control can be found [here](../access-control/).
 
 ### Resources and actions
 

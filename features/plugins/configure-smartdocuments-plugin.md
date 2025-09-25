@@ -4,7 +4,7 @@ The SmartDocuments plugin makes use of [SmartDocuments](https://smartdocuments.c
 
 ## Configure the plugin
 
-A plugin configuration is required before the plugin can be used. A general description on how to configure plugins can be found [here](broken-reference).
+A plugin configuration is required before the plugin can be used. A general description on how to configure plugins can be found [here](./#configuring-plugins).
 
 If the SmartDocuments plugin is not visible in the plugin menu, it is possible the application is missing a dependency. Instructions on how to add the SmartDocuments dependency can be found [here](../../fundamentals/getting-started/modules/zgw/smartdocuments.md).
 
@@ -18,7 +18,7 @@ An example plugin configuration:&#x20;
 
 SmartDocuments' main function is to generate documents based on a template.
 
-A general description on how to create process links can be found [here](broken-reference).
+A general description on how to create process links can be found [here](../process/process-link.md#creating-a-plugin-process-link).
 
 ### Generate document
 

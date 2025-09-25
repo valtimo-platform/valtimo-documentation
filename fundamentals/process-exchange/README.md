@@ -14,4 +14,4 @@ At the moment, there are three different types of reusable items:
 
     Here is an [explanation](https://github.com/generiekzaakafhandelcomponent/Basisprocessen) of how to import and customize a basic process (for developers).
 2. **Building Blocks** Building blocks are individual components of a basic process that can be used in another basic process. Examples of building blocks include forms, case definitions, or subprocesses.
-3. **Plug-ins** Plug-ins allow additional functionality to be added to GZAC. GZAC comes with a selection of plug-ins by default. Plug-ins are often used to (generically) establish connections with other systems.
+3. **Plugins** Plugins allow additional functionality to be added to GZAC. GZAC comes with a selection of plug-ins by default. Plug-ins are often used to (generically) establish connections with other systems.

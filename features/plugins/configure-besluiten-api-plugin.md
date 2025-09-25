@@ -17,7 +17,7 @@ To configure this plugin the following properties have to be entered:
 * **URL.** Contains the complete base URL of the Besluiten API to connect to. This generally includes the path `/api/v1/`.
 * **Authentication plugin configuration.** Reference to another plugin configuration that will be used to add authentication to any request performed on the Besluiten API. If no option is available in this field a plugin has to be configured that is able to authenticate for the specific application that hosts the Besluiten API.
 
-An example plugin configuration: <img src="https://github.com/valtimo-platform/valtimo-documentation/blob/main/using-valtimo/plugin/besluiten-api/img/configure-plugin.png" alt="example plugin configuration" data-size="original">
+An example plugin configuration:&#x20;
 
 * **URL (`url`)**. Contains the complete base URL of the Besluiten API to connect to. This generally includes the path `/api/v1/`.
 * **RSIN (`rsin`).** Legal entities and partnership number
@@ -27,7 +27,7 @@ An example plugin configuration: <img src="https://github.com/valtimo-platform/v
 
 The Besluiten API plugin supports the following actions that can be configured in process links in order to retrieve type data.
 
-A general description on how to create process links can be found [here](broken-reference).
+A general description on how to create process links can be found [here](../process/process-link.md#creating-a-plugin-process-link).
 
 ### Create besluit
 
