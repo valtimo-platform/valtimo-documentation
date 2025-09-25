@@ -1,6 +1,6 @@
-# 13.3.0
+# 13.2.1
 
-**BUG FIXES**:
+## Bug fixes
 
 * Process links are now migrated properly on a MySQL database.
 * Process definitions with subprocesses containing call activities will now be migrated properly.
@@ -12,5 +12,7 @@ will no longer be deleted.
 * Version tag is now properly taken into account when creating a case-specific process from a process that is not
   linked to a case definition.
 * Fixed an issue where Keycloak users with duplicate usernames could not be migrated correctly in Valtimo.
+* When migrating process definitions, multiple references to the same definition will no longer result in duplicate
+  process definitions being created.
 * Separator icon for case detail works again.
 * Deleting a global process definition would also delete case definition process definitions if they had the same key.
