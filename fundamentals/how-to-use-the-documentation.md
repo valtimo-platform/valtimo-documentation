@@ -7,14 +7,11 @@ Instructions are available for configuration via the User Interface (**UI**) or 
 Within each feature the following subjects are documented:
 
 * **Required knowledge indication**\
-  &#xNAN;_&#x49;f applicable the knowledge pre-requisites for that feature are listed_\
-
+  &#xNAN;_&#x49;f applicable the knowledge pre-requisites for that feature are listed_
 * **Feature description and explanation**\
-  &#xNAN;_&#x57;hat is the primary function of the feature, what does it do._\
-
+  &#xNAN;_&#x57;hat is the primary function of the feature, what does it do._
 * **Feature configuration via UI and IDE**\
-  &#xNAN;_&#x44;ocumentation on how to configure the feature._\
-
+  &#xNAN;_&#x44;ocumentation on how to configure the feature._
 * **For developers**\
   &#xNAN;_&#x54;echnical documentation for the feature written primarily for software developers. These pages can help when altering a feature to your own needs or if you would like to extend certain features._
 

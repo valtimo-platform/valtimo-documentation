@@ -5,7 +5,7 @@ Valtimo offers the functionality needed to create and add plugins to Valtimo imp
 {% hint style="info" %}
 ### Prerequisites <a href="#prerequisites" id="prerequisites"></a>
 
-Plugins are added to a Valtimo implementation. See [https://docs.valtimo.nl/getting-started/first-dive/creating-your-own-valtimo-implementation](https://docs.valtimo.nl/getting-started/first-dive/creating-your-own-valtimo-implementation) to get started with your own Valtimo implementation.
+Plugins are added to a Valtimo implementation. See [this page](../../../fundamentals/getting-started/#starting-your-own-valtimo-implementation) to get started with your own Valtimo implementation.
 {% endhint %}
 
 ### Back-end <a href="#back-end" id="back-end"></a>
@@ -62,7 +62,7 @@ These things should be kept in mind when creating the frontend components for se
 
 **Plugin action**
 
-A plugin class can have methods that are marked as actions through the `@PluginAction` annotation. These methods can then be used in a process definition through the use of [process links](file:///Users/erik/Projects/erik/valtimo-documentation/using-valtimo/plugin/create-process-link.md). A single action can be linked to a task, and will run when that task is reached.
+A plugin class can have methods that are marked as actions through the `@PluginAction` annotation. These methods can then be used in a process definition through the use of [process links](../../process/process-link.md#creating-a-plugin-process-link). A single action can be linked to a task, and will run when that task is reached.
 
 For example:
 

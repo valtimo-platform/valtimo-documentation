@@ -1,5 +1,9 @@
 # Portaaltaak Plugin
 
+{% hint style="success" %}
+The Portaaltaak plugin is a ZGW plugin and can only be used in the GZAC edition.
+{% endhint %}
+
 The Portaaltaak plugin is used to generate "taak" (task) objects within the Objecten API for a BPMN user task. These tasks can then be completed via external applications, such as the NL Portal. This feature empowers Valtimo to assign certain tasks to other systems that are more adept at performing these specific tasks. Furthermore, it enables users who lack access to the Valtimo frontend to access these tasks.
 
 ## How does the plugin work
@@ -15,7 +19,7 @@ The lifecycle of a portaaltaak is as follows:
 
 ## Configure the plugin
 
-A plugin configuration is required before the plugin can be used. A general description on how to configure plugins can be found [here](broken-reference).
+A plugin configuration is required before the plugin can be used. A general description on how to configure plugins can be found [here](./#configuring-plugins).
 
 If the Portaaltaak plugin is not visible in the plugin menu, it is possible the application is missing a dependency. Instructions on how to add the Portaaltaak Plugin dependency can be found [here](../../fundamentals/getting-started/modules/zgw/portaaltaak.md).
 
@@ -25,7 +29,9 @@ To configure this plugin the following properties have to be entered:
 * **Object management configuration (`objectManagementConfigurationId`).** Reference to the object management configuration that can be used to store the taak objects. If no option is available in this field, an object management configuration has to be created first.
 * **Process to complete Portaaltaak (`completeTaakProcess`).** Reference to the process that will be started to handle completion of tasks. This can do additional steps like handling the file attachments. A process task should be configured in this process definition to handle the completion itself. This can be done using the [Complete Portaaltaak](configure-portaaltaak-plugin.md#complete-portaal-taak) plugin action. The process 'Process completed Portaaltaak' that is shipped with Valtimo can be used here. See [this section](configure-portaaltaak-plugin.md#configuring-the-task-completion-process) on how to set up this process.
 
-An example plugin configuration: ![example plugin configuration](../../using-valtimo/plugin/portaaltaak/img/configure-plugin.png)
+An example plugin configuration:&#x20;
+
+<figure><img src="../../using-valtimo/plugin/portaaltaak/img/configure-plugin.png" alt=""><figcaption></figcaption></figure>
 
 ## Configuring the task completion process
 
@@ -55,7 +61,7 @@ Instead of using the `Process completed Portaaltaak` process it is possible to c
 
 The portaaltaak plugin supports the following actions that can be configured in process links in order to create and complete user tasks through external systems like the NL Portal.
 
-A general description on how to create process links can be found [here](broken-reference).
+A general description on how to create process links can be found [here](../process/process-link.md#creating-a-plugin-process-link).
 
 ### Create Portaaltaak
 
@@ -77,7 +83,9 @@ When creating a process link the following properties have to be entered:
 * **Identification value.** Indicates which user is the recipient of the task. Required when choosing receiver type 'Other'. For example when Identification key 'bsn' is used, the value could be '059861095' to indicate that is the BSN of the user.
 * **Number of days for the task to expire.** The number of days from the creation time until the task expires. This will only be used in the portaaltaak. The BPMN due date needs to be configured separately.
 
-An example process link configuration: ![Create portaaltaak process link](../../using-valtimo/plugin/portaaltaak/img/configure-create-portaal-taak.png)
+An example process link configuration:&#x20;
+
+<figure><img src="../../using-valtimo/plugin/portaaltaak/img/configure-create-portaal-taak.png" alt=""><figcaption></figcaption></figure>
 
 ### Complete Portaaltaak
 

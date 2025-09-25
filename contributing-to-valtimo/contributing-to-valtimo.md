@@ -31,7 +31,7 @@ If you create a generic and reusable plugin, you can submit it for evaluation as
 1. Create an issue in the [Valtimo](https://github.com/valtimo-platform/valtimo-issues) or [GZAC](https://github.com/generiekzaakafhandelcomponent/gzac-issues) issues repository.
 2. Tag the Product Owner in the Github issue. A member of the product team will be in touch to discuss the issue and the proposed solution.
    * The Github handle of the Product Owner can be found in the README.md of the issue repositories.
-3. Implement the feature/bugfix in the library repository/repositories.
+3. Once agreed with the Product Owner, implement the feature/bugfix in the library repository/repositories.
    * Instructions on how to run Valtimo locally can be found in the README.md of the library repositories.
 4. Write release notes and documentation for the feature.
 5. [Create a pull request (PR)](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request). Do not forget to refer to the documentation you have written for this PR. No reviewers are necessary.
