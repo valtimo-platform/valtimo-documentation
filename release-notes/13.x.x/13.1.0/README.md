@@ -13,4 +13,4 @@ List columns and search fields can now be configured via a JSON Editor under the
 
 #### Dashboards widget configuration
 
-Dashboard widget configurationscan now be edited via a JSON Editor under the dashboard details.
+Dashboard widget configurations can now be edited via a JSON Editor under the dashboard details.
