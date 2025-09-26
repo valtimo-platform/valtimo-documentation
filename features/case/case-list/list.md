@@ -62,8 +62,8 @@ The content of a list configuration file can look like this:
 
 Case list columns can also be configured via a JSON editor:
 
-{% tabs %}
-{% tab title="Via JSON editor" %}
+
+
 * Go to the `Admin` menu
 * Go to the `Cases` menu
 * Select the `Case list` tab

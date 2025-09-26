@@ -88,7 +88,7 @@ The **version selector** on the case management page allows users to switch betw
 
 Every version of a case definition can be categorized as either _draft_ or _final_**.**
 
-* A _**draft**_ version represents a case definition configuration in progress. It allows users to modify all case-related configurations before finalization.&#x20;
+* A _**draft**_ version represents a case definition configuration in progress. It allows users to modify all case-related configurations before finalization.
 * A _**final**_ version represents a deployed configuration of a case definition. All data associated with a final version is accessible in view mode only. No modifications are allowed.
 
 {% hint style="info" %}
@@ -98,7 +98,7 @@ Every version of a case definition can be categorized as either _draft_ or _fina
 * **Final versions** are marked with a green tag in the version selector.
 {% endhint %}
 
-#### _Globally active_ tag
+_**Globally active**_**&#x20;tag**
 
 The _Globally active_ tag indicates which version of the case definition is set as the default configuration that is used throughout the system. A version can be set as _Globally active_ on the case management page:
 
@@ -114,7 +114,7 @@ The _Globally active_ tag indicates which version of the case definition is set 
 * This setting does **NOT** affect historical cases that were started from a previous version. It only applies to new cases after the change.
 {% endhint %}
 
-#### _See all versions_ modal
+_**See all versions**_**&#x20;modal**
 
 The version selector will show a maximum of five recent versions in the dropdown menu, and a sixth option, labeled **See all versions**, is provided at the end of the list.
 
@@ -129,16 +129,16 @@ Selecting **See all versions** opens a modal window containing:
 
 <figure><img src="../../.gitbook/assets/Screenshot 2025-06-18 at 13.29.04.png" alt=""><figcaption><p><em>See all versions</em> modal</p></figcaption></figure>
 
-#### Deployment
+**Deployment**
 
 Before a case definition version can actually be used, it needs to be deployed first. This can be done on the case management page, by clicking on the **deployment** button.
 
 <figure><img src="../../.gitbook/assets/Screenshot 2025-06-18 at 16.33.37 (2).png" alt=""><figcaption><p>Case Details page</p></figcaption></figure>
 
-When a draft version is selected, the **deployment** button enables direct actions to either finalize or discard the in-progress configuration.&#x20;
+When a draft version is selected, the **deployment** button enables direct actions to either finalize or discard the in-progress configuration.
 
 * Users can finalize a draft, promoting it to a final version. This locks the contents and makes it available for operational use.
-* Draft versions can be removed permanently if no longer relevant or needed.&#x20;
+* Draft versions can be removed permanently if no longer relevant or needed.
 
 <figure><img src="../../.gitbook/assets/image (13).png" alt=""><figcaption><p>Draft versison Deployment page</p></figcaption></figure>
 
@@ -148,15 +148,15 @@ When a draft version is selected, the **deployment** button enables direct actio
 Deleting a draft version is irreversible and will discard all changes made within that draft version.
 {% endhint %}
 
-When a _**final**_ version is selected, the **deployment** button serves as a reference point for stable configurations.&#x20;
+When a _**final**_ version is selected, the **deployment** button serves as a reference point for stable configurations.
 
 * Users can create a new draft version based on any final version. This enables iteration or future changes without affecting the active version.
 
 <figure><img src="../../.gitbook/assets/image (15).png" alt=""><figcaption><p>Final version Deployment page</p></figcaption></figure>
 
-&#x20;To create a new case definition version from an existing one:
+To create a new case definition version from an existing one:
 
-* Click on **Deployment**&#x20;
+* Click on **Deployment**
 * Click on **Create draft version** and configure a new draft version:
 
 <figure><img src="../../.gitbook/assets/creating-draft-form.png" alt=""><figcaption><p>Create a new version</p></figcaption></figure>
@@ -227,7 +227,7 @@ The exported configuration serves as a portable package that can be used for ver
 **Please note**
 
 * Importing a case definition always results in a _draft_ version, allowing final review and manual finalization before the configuration is used actively.
-* All existing configurations will be overwritten by the configurations in the import.&#x20;
+* All existing configurations will be overwritten by the configurations in the import.
 * Access control and plugin configurations are not part of a case definition import/export and most likely need to be configured first for the newly imported case and process definitions. A full list of configurations and definitions that are included and excluded from imports and exports can be found [here](./#included-excluded-in-imports-exports).
 {% endhint %}
 
@@ -235,25 +235,25 @@ The exported configuration serves as a portable package that can be used for ver
 
 {% stepper %}
 {% step %}
-### Develop and finalize in Test
+#### Develop and finalize in Test
 
 Configure, iterate, and finalize the case definition in the test environment.
 {% endstep %}
 
 {% step %}
-### Export
+#### Export
 
 Once the version is finalized and validated, export it as a `.zip` file.
 {% endstep %}
 
 {% step %}
-### Import to ACC
+#### Import to ACC
 
 Import the package into the acceptance environment for QA or stakeholder review.
 {% endstep %}
 
 {% step %}
-### Import to PROD
+#### Import to PROD
 
 After approval, import the same package into production to make it available for live use.
 {% endstep %}
