@@ -48,6 +48,10 @@ In Valtimo 13, several changes have been made to the **admin interface** to impr
 
 Processes, decision tables, forms, and task list configurations have been moved from separate menu items into tabs under the **Case Management** screen. This change provides a more unified and contextual view of all elements that belong to a specific Case Definition, making it easier for users to manage and navigate case configurations.
 
+#### Minor changes
+
+- Notifications from Toastr have been replaced with Carbon notifications.
+
 #### Breaking change: now using Keycloak username
 
 In Valtimo 12, Valtimo services were configured by default to use the Keycloak user ID.
