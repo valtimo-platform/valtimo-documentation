@@ -60,3 +60,12 @@ In the frontend, feature toggles can be configured under the `featureToggles` ke
 
     If enabled, access to the list of uploaded documents now requires permissions. Additionally, the backend requires the following property to be set in `application.yml`:\
     `valtimo.authorization.zgwDocuments.enabled`
+
+## Backend
+
+In backend, feature toggles can be configured in the `application.yml` file.
+
+*   **`valtimo.includeDocumentContentInResponse`**
+
+    If enabled, returns the content of the document when this is retrieved via the REST endpoint. This should only be
+    used for debug purposes, normally content is retrieved through tabs and their widgets.
