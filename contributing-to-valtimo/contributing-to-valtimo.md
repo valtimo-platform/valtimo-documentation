@@ -28,7 +28,7 @@ If you create a generic and reusable plugin, you can submit it for evaluation as
 
 ## Adding features or bug fixes
 
-1. Create an issue in the [Valtimo](https://github.com/valtimo-platform/valtimo-issues) or [GZAC](https://github.com/generiekzaakafhandelcomponent/gzac-issues) issues repository.
+1. Create an issue in the [GZAC](https://github.com/generiekzaakafhandelcomponent/gzac-issues) issues repository.
 2. Tag the Product Owner in the Github issue. A member of the product team will be in touch to discuss the issue and the proposed solution.
    * The Github handle of the Product Owner can be found in the README.md of the issue repositories.
 3. Once agreed with the Product Owner, implement the feature/bugfix in the library repository/repositories.
