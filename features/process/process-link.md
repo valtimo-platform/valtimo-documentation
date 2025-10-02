@@ -59,9 +59,9 @@ Available since Valtimo `10.6.0`
 
 Process links can also be configured using autodeployment. These process links will be created at application startup. When a conflicting configuration is found on the target activity, creation is skipped and a warning is logged in the application logs.
 
-Autodeployed process links can be added by creating a json file with the following filename structure: `<process-id>.processlink.json`. This file can be placed anywhere in the resource folder of the application.
+Autodeployed process links can be added by creating a json file with the following filename structure: `<process-id>.process-link.json`. This file can be placed anywhere in the resource folder of the application.
 
-This is an example of an autodeployment file for  two user task for a process:
+This is an example of an autodeployment file for two user task for a process:
 
 ```json
 [
@@ -84,11 +84,29 @@ This is an example of an autodeployment file for  two user task for a process:
       "pluginConfigurationId": "7d77d894-6458-4213-8bc0-9a65d523845b",
       "pluginActionDefinitionKey": "delete-object",
       "actionProperties": {
-         "objectUrl": "pv:myObjectUrl"
+         "objectUrl": "pv:myObjectUrl",
+         "someOtherProperty": "${VALTIMO_MY_PROPERTY}"
       }
    }
 ]
 ```
+
+The auto-deployment configuration file supports environment variables such as `${VALTIMO_MY_PROPERTY}`.
+At runtime, these placeholders are replaced with the values of the corresponding environment variables.
+
+**Important:** You must explicitly whitelist which environment variables can be used in these files. Add the following to your
+`application.yml`:
+
+```yaml
+valtimo:
+  imports:
+    whitelistedPaths:
+      - "VALTIMO_.*"
+      - "GZAC_.*"
+```
+
+This ensures that only environment variables matching the given patterns are available in the deployment file.
+
 {% endtab %}
 {% endtabs %}
 
