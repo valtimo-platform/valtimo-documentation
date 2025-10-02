@@ -353,3 +353,28 @@ The migration script does the following:
   * Process links are copied together with the process definitions.
   * Decision definitions are copied to the new case definition if these decisions are used in any of the related process definitions.
 
+## Environment variables
+
+### What Changed
+
+In Valtimo 13, **only whitelisted environment variables** can be used in auto-deployment configuration files. This
+restriction was added for **security reasons**, so sensitive system variables can’t be accessed unintentionally.
+
+Whitelist patterns are configured in application.yml under valtimo.imports.whitelistedPaths:
+
+### Migration Guide
+
+1. Review your auto-deployment configuration files
+    - Identify all environment variables currently in use.
+2. Update the whitelist
+    - Add regex patterns or exact names for all variables you need in the `application.yml` under
+      `valtimo.imports.whitelistedPaths`:
+
+```yaml
+valtimo:
+  imports:
+    whitelistedPaths:
+      - "VALTIMO_.*"
+      - "GZAC_.*"
+```
+
