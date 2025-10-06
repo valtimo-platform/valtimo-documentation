@@ -12,7 +12,41 @@ For information on how to link a form flow definition to a task, see [here](../p
 
 {% tabs %}
 {% tab title="Via UI" %}
-To be documented
+* Go to the `Admin` menu.
+* Got to the `Form flow` menu
+
+Form flows can be added via the **Add new form flow** button. A modal will be shown where the form flow key can be set and the form flow can be created.
+
+<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption><p>Adding a new form flow definition</p></figcaption></figure>
+
+After creating a form flow, the contents of it can be edited. The steps and different step types are described below.&#x20;
+
+<figure><img src="../../.gitbook/assets/Screenshot 2025-10-06 at 10.04.26.png" alt=""><figcaption></figcaption></figure>
+
+Add each individual step to the form flow definition, e.g.:
+
+```
+{
+    "key": "my-form-flow",
+    "startStep": "personalDetailsStep",
+    "steps": [
+        {
+            "key": "personalDetailsStep"
+        },
+        {
+            "key": "loanApprovedStep"
+        },
+        {
+            "key": "loanDeniedStep"
+        },
+        {
+            "key": "summaryStep"
+        }
+    ]
+}
+```
+
+More details can be found in the **Via IDE** tab.
 {% endtab %}
 
 {% tab title="Via IDE" %}
