@@ -1,5 +1,9 @@
 # 13.2.0
 
+{% hint style="info" %}
+## Release date 16-09-2025
+{% endhint %}
+
 ## New Features
 
 * The clickable URL has been added to the widgets.

@@ -1,5 +1,9 @@
 # 13.2.1
 
+{% hint style="info" %}
+## Release date 26-09-2025
+{% endhint %}
+
 ## Bugfixes
 
 * Process links are now migrated correctly when using a MySQL database.
