@@ -1,8 +1,6 @@
----
-description: 26-Sep-25
----
-
 # 13.2.1
+
+## Bugfixes
 
 * Process links are now migrated correctly when using a MySQL database.
 * Process definitions with subprocesses that contain call activities are now migrated properly.
