@@ -166,6 +166,8 @@
 ## Release notes
 
 * [Release notes](release-notes/release-notes.md)
+* [13.x.x](release-notes/13.x.x/README.md)
+  * [13.3.0](release-notes/13.x.x/13.3.0/README.md)
 * [12.x.x](release-notes/12.x.x/README.md)
   * [12.17.0](release-notes/12.x.x/12.17.0/README.md)
     * [12.17.1](release-notes/12.x.x/12.17.0/12.17.1.md)
