@@ -10,7 +10,7 @@
 
 * **Add Case Objects to Case** &#x20;
 
-You can now add case objects directly to an existing Case enhancement through the Zaken API Plugin. This new plugin action makes it simple to link extra information or related items to a case as part of a workflow task. It helps ensure that all relevant details stay organized and easily accessible within the same case.
+A new plugin action has been added to the Zaken API Plugin, allowing users to create a case object directly within a process. This feature can be used whenever someone needs to link an existing  object to a case.
 
 * **Enhanced “Create Case” Plugin Action**&#x20;
 
