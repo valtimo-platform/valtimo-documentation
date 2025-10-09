@@ -121,18 +121,18 @@ The **Delete zaakeigenschap** action deletes a zaakeigenschap in the zaken API. 
 
 The **Create zaak object** action adds a [zaakobject](https://vng-realisatie.github.io/gemma-zaken/standaard/zaken/#zaakobject) to a Zaak in the zaken API. When creating a process link the following properties can be entered:
 
-* **Case URL**: URL reference to the ZAAK. When this field is empty, the zaak linked to the process instance will be used.
-* **Object URL**: URL reference to the resource that describes the OBJECT.
-* **Case object type**: URL reference to the ZAAKOBJECTTYPE (in the Catalog API).
-* **Object Type**: Describes the type of OBJECT related to the ZAAK. If there is no suitable type, then the type must be specified under `objectTypeOverige`.
-* **Relationship description**: Description of the relationship between the ZAAK and the OBJECT.
+* **Case URL**: URL reference to the zaak. When this field is empty, the zaak linked to the process instance will be used.
+* **Object URL**: URL reference to the resource that describes the object.
+* **Case object type**: URL reference to the zaak objecttype (in the Catalog API).
+* **Object Type**: Describes the type of object related to the zaak. If there is no suitable type, then the type must be specified under `objectTypeOverige`.
+* **Relationship description**: Description of the relationship between the zaak and the object.
 
 When the **Object Type** is set to `overige`, then the following field can/must be provided:
 
-* **Object type other**: Describes the type of OBJECT when objectType has the value 'overige'.
+* **Object type other**: Describes the type of object when objectType has the value 'overige'.
 * **Object type other URL**: URL reference to the object type resource in an API. This resource must contain the JSON schema definition of the object type.
-* **Object type other Schema**: A valid jq expression. This is combined with the resource from the `url` attribute to read the schema of the object type. Example: `.jsonSchema`.
-* **Object type other Object data**: A valid jq expression. This is combined with the JSON data from the OBJECT url to read the object data and validate the data structure against the schema. Example: `.record.data`.
+* **Object type other Schema**: A valid [jq expression](https://jqlang.org/). This is combined with the resource from the `url` attribute to read the schema of the object type. Example: `.jsonSchema`.
+* **Object type other Object data**: A valid [jq expression](https://jqlang.org/). This is combined with the JSON data from the object url to read the object data and validate the data structure against the schema. Example: `.record.data`.
 
 Beside the above fields there are other fields that depend on the selected 'Object Type'. These fields are under the `objectIdentificatie` property of the Zaakobject in the Zaken API.
 
