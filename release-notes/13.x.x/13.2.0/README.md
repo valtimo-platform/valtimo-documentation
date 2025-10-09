@@ -17,6 +17,7 @@ a clickable link that will open in a new tab. The text of the link can also be c
   configured for that case type.
 * It is now possible to add a list of actions to each access control permission, making it easier to set up the configuration and keep conditions the same between different permissions.
 * The quick search functionality has been extended to support user-specific preferences. The feature can store frequently used search queries and applied filters, making repeated searches more efficient. In addition, search results are prioritised based on recent activity and the user’s role within the system, ensuring that the most relevant items are shown first.
+* The value path selector now automatically sets the document definition name from the current case.
 
 ## Bugfixes
 
