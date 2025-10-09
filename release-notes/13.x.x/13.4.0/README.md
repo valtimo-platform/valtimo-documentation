@@ -12,3 +12,9 @@ The Divider widget type introduces the ability to organize widgets into multiple
 Optionally, it can display a title, which acts as a header for that widget group.
 
 <figure><img src="../../../.gitbook/assets/widget-divider.png" alt=""><figcaption></figcaption></figure>
+
+* Improved performance of retrieving permissions for a user when having to do a permission check.
+
+## Bugfixes
+
+* When using Dutch translations, a widget without fields would show German translations rather than Dutch.
