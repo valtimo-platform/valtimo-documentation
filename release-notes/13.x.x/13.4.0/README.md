@@ -22,3 +22,4 @@ Optionally, it can display a title, which acts as a header for that widget group
 ## Bugfixes
 
 * When using Dutch translations, a widget without fields would show German translations rather than Dutch.
+* The correct form is now linked to the user task when creating a new case definition draft.
