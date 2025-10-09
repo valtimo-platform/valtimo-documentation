@@ -6,6 +6,10 @@
 
 ## Security improvements
 
+* Cases can now have their content hidden via the `application.yml` by setting the 
+  `valtimo.includeDocumentContentInResponse` property. This is set to true by default, and should be set to false as
+  much as possible to prevent sending data that does not need to be shared.
+
 **Breaking Change**  
 As part of the security improvements, scripting in processes is now restricted by a whitelist.  
 If your application uses custom scripting classes, you may need to whitelist them explicitly.
