@@ -6,3 +6,7 @@
   * Get Resultaattypen. Retrieves a list of resultaattypen and saves these in a process variable.
   * Get statustypen. Retrieves a list of statustypen and saves these in a process variable.
 * Improved performance of retrieving permissions for a user when having to do a permission check.
+
+## Bugfixes
+
+* When using Dutch translations, a widget without fields would show German translations rather than Dutch.
