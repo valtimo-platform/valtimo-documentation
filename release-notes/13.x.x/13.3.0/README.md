@@ -1,3 +1,4 @@
+
 # 13.3.0
 
 
@@ -18,9 +19,10 @@ The “Create Case” plugin action has been improved to allow users to fill in 
 
 ## Bugfixes
 
-* Case documents now loading and opening more quickly.
-* Task statuses are fully visible and easy to read and understand.
-* The issue with the not loading General Information screen is resolved.
+* Case widgets of type FormIO will now correctly finish loading and no longer cause the widget
+  page to be stuck on a loading animation.
+* The document files endpoint in the Documents tab is now called only once, improving performance and preventing duplicate requests when many documents are linked to a case.
+* The task status shown in the case details is now fully visible, ensuring the status text is no longer partially cut off.
 * The issue with getProcessDefinitionKey is fixed.
 * Migration issue _with Request Plugin_ is resolved.
 
