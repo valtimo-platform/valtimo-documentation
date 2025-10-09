@@ -20,6 +20,6 @@
 ## Security improvements
 
 **Breaking Change**
-* Cases can now have their content hidden via the `application.yml` by setting the
+* Cases have their content hidden. This can be changed via the `application.yml` by setting the
   `valtimo.includeDocumentContentInResponse` property. This is set to false by default, and should be kept to false as
   much as possible to prevent sending data that does not need to be shared.
