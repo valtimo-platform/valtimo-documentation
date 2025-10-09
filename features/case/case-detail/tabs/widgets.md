@@ -57,6 +57,17 @@ A widget can either have a "Default" color scheme or it can be "High Contrast" t
 
 Depending on the widget type, the content is filled in differently. Click the widget type below to view the details for configuration.
 {% endstep %}
+
+{% step %}
+#### Choose widget conditions
+
+By default each widget is shown in the UI. However, it is possible to add conditions to a widget that need to be met
+in order for the widget to be shown. This allows for a cleaner widget page as widgets can be hidden that don't apply
+to the current case.
+
+<figure><img src="../../../../.gitbook/assets/configuring-widget-conditions.png" alt=""><figcaption><p>Choosing widget connditions</p></figcaption></figure>
+
+{% endstep %}
 {% endstepper %}
 
 <details>
