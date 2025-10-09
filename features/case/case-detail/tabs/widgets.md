@@ -62,10 +62,10 @@ Depending on the widget type, the content is filled in differently. Click the wi
 #### Choose widget conditions
 
 By default each widget is shown in the UI. However, it is possible to add conditions to a widget that need to be met
-in order for the widget to be shown. This allows for a cleaner widget page as widgets can be hidden that don't apply
+in order for the widget to be shown. This helps keep the widget page clean by hiding widgets that are not relevant
 to the current case.
 
-<figure><img src="../../../../.gitbook/assets/configuring-widget-conditions.png" alt=""><figcaption><p>Choosing widget connditions</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/configuring-widget-conditions.png" alt=""><figcaption><p>Choosing widget conditions</p></figcaption></figure>
 
 {% endstep %}
 {% endstepper %}
