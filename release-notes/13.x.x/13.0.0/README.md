@@ -28,6 +28,8 @@ Key terms introduced in this release include:
 
 This new approach enables safer change management and simplifies the deployment of updated case processes across environments.
 
+When working with Case Definitions, draft versions are fully editable, allowing the creation, removal, or update of any element such as processes, forms, decisions, or configurations. Once a Case Definition is finalized, it becomes read-only, meaning all details remain visible and processes or forms can still be opened, deployed, or exported, but no further modifications can be made. This ensures that finalized versions remain consistent and reliable across acceptance and production environments.
+
 #### Server-Sent Events (SSE)
 
 Valtimo 13 introduces support for **Server-Sent Events (SSE)**, enabling real-time updates in the user interface without requiring a page refresh.
