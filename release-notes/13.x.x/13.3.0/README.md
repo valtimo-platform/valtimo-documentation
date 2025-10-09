@@ -17,6 +17,12 @@ A new plugin action has been added to the Zaken API Plugin, allowing users to cr
 
 The “Create Case” plugin action has been improved to allow users to fill in more case details when creating a new case in Open Zaak. Previously, only the required fields were included when a case was created. With this update, additional (optional) fields can now be completed, making it easier to register cases with all the relevant information right from the start.
 
+* **Conditially display widgets**
+
+Case widgets can now be conditionally displayed based on information in the case. A number of conditions can be configured
+for each case widgets, that the case has to meet in order for the widget to be shown. This allows for a cleaner widget page
+as widgets can be hidden that don't apply to the current case.
+
 ## Bugfixes
 
 * Case widgets of type FormIO will now correctly finish loading and no longer cause the widget
