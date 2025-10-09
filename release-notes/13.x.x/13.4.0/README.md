@@ -11,4 +11,4 @@ A new widget type called Divider has been introduced, enabling grouping of widge
 The Divider widget type introduces the ability to organize widgets into multiple grid sections.
 Optionally, it can display a title, which acts as a header for that widget group.
 
-<figure><img src="../../../.gitbook/assets/widget-divider" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/widget-divider.png" alt=""><figcaption></figcaption></figure>
