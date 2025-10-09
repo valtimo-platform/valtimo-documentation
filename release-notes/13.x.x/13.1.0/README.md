@@ -79,3 +79,5 @@ Object types in the main menu when using object management are now sorted alphab
 * Form definitions table now consistently shows Dutch and German translations in the readonly column instead of sometimes falling back to English.
   
 * Fixed an issue where forms with the “documenten-api-file” component didn't correctly handle required fields, ensuring the Submit button only enables when all required inputs are completed.
+
+* Fixed an issue where the document URL from the Documents API was not available for config-only setups, preventing decision documents from being linked to Decisions.
