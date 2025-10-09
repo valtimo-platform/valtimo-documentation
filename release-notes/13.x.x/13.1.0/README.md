@@ -79,3 +79,6 @@ Object types in the main menu when using object management are now sorted alphab
 * Form definitions table now consistently shows Dutch and German translations in the readonly column instead of sometimes falling back to English.
   
 * Fixed an issue where forms with the “documenten-api-file” component didn't correctly handle required fields, ensuring the Submit button only enables when all required inputs are completed.
+
+* When uploading documents in the document tab of a case, the status field is now prefilled with the value configured in the 
+field configuration.
