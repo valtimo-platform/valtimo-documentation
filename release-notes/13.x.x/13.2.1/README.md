@@ -1,8 +1,10 @@
----
-description: 26-Sep-25
----
-
 # 13.2.1
+
+{% hint style="info" %}
+## Release date 26-09-2025
+{% endhint %}
+
+## Bugfixes
 
 * Process links are now migrated correctly when using a MySQL database.
 * Process definitions with subprocesses that contain call activities are now migrated properly.
