@@ -83,4 +83,5 @@ In Valtimo 13, these feature toggles have been removed, and access control is no
 ## Bugfixes
 
 *  Fixed issue when "No form linked" warning displays after submitting a start form.
+*  Fixed issue when custom components would not display inside a Form View Model.
 
