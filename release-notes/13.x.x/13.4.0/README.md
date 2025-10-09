@@ -9,3 +9,8 @@
 * Quick search items have been added to the case list. Now, when filling in search values, they can be saved under a quick search item. When clicking on the item, the search will automatically be filled in and executed.
 
 * Case list columns can now be hidden to make seeing relevant information easier. When having configured case list columns, it is now possible to select/deselect which columns are visible via a dropdown menu in the list toolbar.
+* Improved performance of retrieving permissions for a user when having to do a permission check.
+
+## Bugfixes
+
+* When using Dutch translations, a widget without fields would show German translations rather than Dutch.
