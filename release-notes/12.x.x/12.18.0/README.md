@@ -1,4 +1,4 @@
-# 12.17.2
+# 12.18.0
 
 {% hint style="info" %}
 ## Release date 09-10-2025
