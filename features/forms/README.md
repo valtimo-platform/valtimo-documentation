@@ -8,7 +8,14 @@ Valtimo uses the [Form.io](https://www.form.io/) form builder to create forms th
 
 ## Translations
 
-To display forms in different languages, we can utilize translations. This involves translating all the labels based on their label property, and using a function `instance.t('translationKey')` to display content from the translation file inside the htmlContent.
+Translations are supported in the form.io definitions. Any translations available [from configured translation resources](../localization/configuring-localization.md)
+in your implementation can be used.
+
+To have something in your form translated, use the following syntax: `translate:translationKey`.
+
+This can be used inside anywhere in the form definition, including inside HTML.
+
+When the form is rendered, the translation will be resolved and displayed.
 
 An example of a translated form.io definition:
 
@@ -21,7 +28,7 @@ An example of a translated form.io definition:
       "type": "htmlelement",
       "input": false,
       "label": "HTML",
-      "content": "<p>{{ instance.t('contentX') }}</p>",
+      "content": "<p>translate:formioTranslations.contentX</p>",
       "tableView": false,
       "refreshOnChange": false
     },
@@ -29,16 +36,16 @@ An example of a translated form.io definition:
       "key": "isApproved",
       "type": "radio",
       "input": true,
-      "label": "configurationApproved",
+      "label": "translate:formioTranslations.configurationApproved",
       "inline": false,
       "values": [
         {
-          "label": "yes",
+          "label": "translate:formioTranslations.yes",
           "value": "true",
           "shortcut": ""
         },
         {
-          "label": "no",
+          "label": "translate:formioTranslations.no",
           "value": "false",
           "shortcut": ""
         }
@@ -52,7 +59,7 @@ An example of a translated form.io definition:
       "key": "comment",
       "type": "textarea",
       "input": true,
-      "label": "comment",
+      "label": "translate:formioTranslations.comment",
       "tableView": true,
       "autoExpand": false
     },
@@ -60,7 +67,7 @@ An example of a translated form.io definition:
       "key": "send",
       "type": "button",
       "input": true,
-      "label": "send",
+      "label": "translate:formioTranslations.send",
       "tableView": false,
       "customClass": "float-right",
       "saveOnEnter": false,
