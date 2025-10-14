@@ -6,11 +6,18 @@
 
 ## New Features
 
-* The clickable URL has been added to the widgets.
+* **Clickable links in case widgets**
+Added a display type URL to the fields type case widget. This allows for case information to be shown in a widget as
+a clickable link that will open in a new tab. The text of the link can also be customized.
 * It is possible to switch from task to case directly now.
-* Added a way of exporting case information. A button is available on the case list screen, next to the create button that allows a user to download all cases that match the current search criteria. In the list column settings columns can be set to exportable. In order for the button to appear, both the new export permission on com.ritense.document.domain.impl.JsonSchemaDocument should be set, and at least 1 exportable column needs to be configured for that case type.
+* Added a way of exporting case information based on the current search results of the case list. Left of the create button, there is an export button
+  that allows a user to download all cases that match the current search criteria. In the list column settings columns
+  can be set to exportable. In order for the button to appear, a new `export` action on
+  `com.ritense.document.domain.impl.JsonSchemaDocument` should be configured as a permission, and at least 1 exportable column needs to be
+  configured for that case type.
 * It is now possible to add a list of actions to each access control permission, making it easier to set up the configuration and keep conditions the same between different permissions.
 * The quick search functionality has been extended to support user-specific preferences. The feature can store frequently used search queries and applied filters, making repeated searches more efficient. In addition, search results are prioritised based on recent activity and the user’s role within the system, ensuring that the most relevant items are shown first.
+* The value path selector now automatically sets the document definition name from the current case.
 
 ## Bugfixes
 

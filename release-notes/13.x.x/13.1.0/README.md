@@ -77,3 +77,10 @@ Object types in the main menu when using object management are now sorted alphab
 * Forms using the documenten-api-file upload component now correctly allow submission when it is the only required field, and no longer enable the submit button when other required fields are incomplete.
 
 * Form definitions table now consistently shows Dutch and German translations in the readonly column instead of sometimes falling back to English.
+  
+* Fixed an issue where forms with the “documenten-api-file” component didn't correctly handle required fields, ensuring the Submit button only enables when all required inputs are completed.
+
+* When uploading documents in the document tab of a case, the status field is now prefilled with the value configured in the 
+field configuration.
+
+* Fixed an issue where the document URL from the Documents API was not available for config-only setups, preventing decision documents from being linked to Decisions.
