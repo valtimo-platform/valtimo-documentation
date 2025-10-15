@@ -72,7 +72,7 @@ This form.io definition uses the following translation keys (defined for English
 ```json
 "bezwaarStartForm": {
     "htmlLabel": "HTML",
-    "startInstruction": "Click Start to submit your objection.",
+    "startInstruction": "Click Start to submit your notice of objection.",
     "firstName": "First name",
     "lastName": "Last name",
     "start": "Start",
