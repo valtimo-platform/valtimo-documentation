@@ -25,3 +25,4 @@ Optionally, it can display a title, which acts as a header for that widget group
 * The correct form is now linked to the user task when creating a new case definition draft.
 * Fixed an issue where the menu under the Start process button in the Documents tab of the case detail was smaller than in the other tabs. The menu size is now consistent across all tabs.
 * When an external start form is configured, it now correctly shows up as an option when creating a new case.
+* Both verzoek plugin configurations that were migrated from version 12.x and newly created configurations now work correctly.
