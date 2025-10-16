@@ -27,3 +27,4 @@ Optionally, it can display a title, which acts as a header for that widget group
 * When an external start form is configured, it now correctly shows up as an option when creating a new case.
 * Both verzoek plugin configurations that were migrated from version 12.x and newly created configurations now work correctly.
 * Fixed a bug where filters and buttons from the analysis page could appear on the dossier page after quickly switching between the two pages.
+* Quick search access control now has parity with other access control checks.
