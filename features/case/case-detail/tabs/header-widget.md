@@ -1,47 +1,60 @@
-# Case header widget
+# Case Header Widget
 
-A case header widget enables the presentation of case data at the top of the case detail page. This information is
-always shown, regardless of which tab is selected on the case detail page.
+A **case header widget** displays important case information at the top of a case detail page.  
+This section remains visible at all times, regardless of which tab is selected.
 
-## Configuring a case header widget
+## Configuring a Case Header Widget
 
-Case header widget configuration is part of the configuration for a case definition.
+The configuration for a case header widget is part of the **case definition** setup.
 
-* Go to the `Admin` menu
-* Go to the `Cases` menu and select the case to configure widgets for
-* Select the `Case details` tab
-* Select the `Header` tab
+### Steps to configure
 
-On this page, a single header widget can be configured. To do so, click the `Add widget` button.
+1. Go to the **`Admin`** menu.
+2. Open the **`Cases`** menu and select the case you want to configure widgets for.
+3. Open the **`Case details`** tab.
+4. Click the **`Header`** tab.
 
-Next, three steps are shown to configure the widget:
-* Choose widget type
-* Choose widget style
-* Choose widget content
+On this page, you can configure **one header widget**.  
+To create it, click the **`Add widget`** button.
 
-No width and conditions steps are available for case header widgets, and only the `Fields` widget type is supported.
+You will then go through three setup steps:
 
-These configuration steps are described in more detail in the [widget configuration documentation](./widgets.md).
+1. **Choose widget type**
+2. **Choose widget style**
+3. **Choose widget content**
 
-<figure><img src="../../../../.gitbook/assets/add-case-header-widget.png" alt=""><figcaption></figcaption></figure>
+> Note: Case header widgets do **not** include width or condition settings.  
+> Only the **`Fields`** widget type is supported.
 
-## Access control
+For a detailed explanation of these steps, see the [widget configuration documentation](./widgets.md).
 
-Access to the case header widgets can be configured through access control. More information about access control can be
-found [here](https://docs.valtimo.nl/features/access-control).
+<figure>
+  <img src="../../../../.gitbook/assets/add-case-header-widget.png" alt="Add case header widget">
+</figure>
 
-### Resources and actions
+---
 
-<table><thead><tr><th width="329" valign="top">Resource type</th><th width="143" valign="top">Action</th><th valign="top">Effect</th></tr></thead><tbody><tr><td valign="top"><code>com.ritense.document.domain.impl.JsonSchemaDocument</code></td><td valign="top"><code>view</code></td><td valign="top">Allows viewing a case header widget on the case detail page</td></tr></tbody></table>
+## Access Control
+
+Access to case header widgets can be managed through **access control settings**.  
+For more details, visit the [Access Control documentation](https://docs.valtimo.nl/features/access-control).
+
+### Resources and Actions
+
+| Resource Type | Action | Effect |
+|----------------|---------|--------|
+| `com.ritense.document.domain.impl.JsonSchemaDocument` | `view` | Allows viewing a case header widget on the case detail page |
+
+---
 
 ## Autodeployment via IDE
 
-A case header widget can be autodeployed via the IDE. More information about autodeployment can be found
-[here](https://docs.valtimo.nl/features/autodeployment).
+Case header widgets can also be **automatically deployed** through your IDE.  
+For more details, see the [Autodeployment documentation](https://docs.valtimo.nl/features/autodeployment).
 
-A case header widget autodeployment file can be added to the `header-widget` folder inside a case definition. 
+To autodeploy a case header widget, add a deployment file to the `header-widget` folder within your case definition.
 
-For example, the following file would autodeploy a case header widget to version 1.01 of the `bezwaar` case definition.
+For example, the following file would automatically deploy a case header widget to version **1.01** of the `bezwaar` case definition:
 
 `config/case/bezwaar/1-0-1/case/header-widget/bezwaar.case-header-widget.json`
 
