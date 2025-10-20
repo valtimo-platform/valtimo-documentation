@@ -1,8 +1,8 @@
 # Object management
 
-## Autodeployment
+## auto-deployment
 
-Object management configurations can be autodeployed by creating json files in the `classpath*:config/objectmanagement/` folder. The name of the file does not matter, but it is advised to keep it in line with the object title.
+Object management configurations can be auto-deployed by creating json files in the `classpath*:config/objectmanagement/` folder. The name of the file does not matter, but it is advised to keep it in line with the object title.
 
 You can find an example of the JSON below:
 

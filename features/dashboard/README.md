@@ -18,7 +18,7 @@ A dashboard contains a set of widgets that display data in a customised way. The
 There are two ways of configuring dashboards:
 
 * Manually via the UI
-* Using autodeployment via the IDE
+* Using auto-deployment via the IDE
 
 {% tabs %}
 {% tab title="Via UI" %}

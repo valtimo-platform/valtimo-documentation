@@ -31,7 +31,7 @@ It is possible to have user tasks be automatically assigned to a case assignee m
 {% endtab %}
 
 {% tab title="Via IDE" %}
-See [here](./#via-ide) for information on how to configure your case definition via the IDE.
+See [here](#assigning-a-case-handler-a-hrefautomatic-task-assignment-idautomatic-task-assignmenta) for information on how to configure your case definition via the IDE.
 {% endtab %}
 {% endtabs %}
 
