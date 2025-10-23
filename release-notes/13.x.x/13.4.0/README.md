@@ -17,6 +17,11 @@
 
 * Improved performance of retrieving permissions for a user when having to do a permission check.
 
+* Case Header Widget  
+  A new Case Header Widget has been introduced, allowing important case information to be displayed prominently at the 
+  top of the case detail page. This section remains visible at all times, regardless of which tab is selected, ensuring 
+  key details are always accessible. [Find the full documentation here](/features/case/case-detail/tabs/header-widget.md)
+
 ## Bugfixes
 
 * When using Dutch translations, a widget without fields would show German translations rather than Dutch.
