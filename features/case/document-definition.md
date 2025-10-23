@@ -10,11 +10,11 @@ This page requires:
 
 ## Creating a document definition
 
-There are three ways of creating new document definitions in Valtimo.
+There are two ways of creating new document definitions in Valtimo.
 
-* Upload a valid JSON schema via the UI
+* Import a case definition, see [here](README.md#import-and-export).
 * Create an empty case via the UI
-* Place a valid JSON schema in the codebase via an IDE
+  * Place a valid JSON schema in the codebase via an IDE
 
 {% hint style="info" %}
 Best practices:
@@ -28,34 +28,22 @@ Best practices:
 
 {% tabs %}
 {% tab title="Via UI" %}
-#### Upload a valid JSON schema
-
-* Go to the `Admin` menu
-* Go to the `Cases` menu
-* Click on **Upload case-definition**
-* Upload the document definition
-
-It's possible to upload valid JSON schemas to create new cases since Valtimo 5. During the upload the JSON schema structure is validated and the uniqueness of the case ID is checked. If no validation errors occur, the JSON schema is uploaded and the case definition is created.
-
-In Valtimo 12 the case configuration upload has been improved by adding all the newly available case configurations to the upload functionality. More detailed information on this functionality can be found [here](./#exporting-and-importing-case-definitions).
-
-![Uploading a document definition](../../.gitbook/assets/upload-document-definition.png)
-
 #### Create an empty case
 
 {% hint style="success" %}
-Available since Valtimo `12`
+Available since Valtimo `13`
 {% endhint %}
 
 * Go to the `Admin` menu
 * Go to the `Cases` menu
 * Click on **Create**
-* Enter the title, and optionally edit the name
-* Click on **Save**, this takes you to the document definition overview
+* Enter the name, version and description, and optionally edit the key
+* Click on **Save**, this takes you to the case definition overview
+* Click on the **Document** tab to see the document definition
 
 ![Creating a document definition](../../.gitbook/assets/create-document-definition.png)
 
-The chosen title will be validated and based upon the title a read-only case definition name will be generated. This is to create a unique identifier for that case definition without spaces or special characters. Click the **Save** button to create the case with the chosen title.\
+The chosen title will be validated and based upon the title a read-only case definition key will be generated. This is to create a unique identifier for that case definition without spaces or special characters. Click the **Save** button to create the case with the chosen title.\
 \
 The case definition is created and the case details page is displayed upon completion.\
 A valid empty JSON schema is created with the title and id based on the given title.
@@ -65,11 +53,11 @@ A valid empty JSON schema is created with the title and id based on the given ti
 {% hint style="info" %}
 <mark style="color:blue;">**Please note**</mark>
 
-The `properties` section is empty. This section contains the data structure for the case. The case JSON schema validation has to be placed here.
+The `properties` section is empty by default. This section contains the data structure for the case. The JSON schema validation has to be placed here.
 
 The option `additionalProperties` is set to `false` by default. This disables the possibility to save other data than configured in the `properties` section of the document definition.
 
-When uploading a JSON schema to create a new case, make sure that the `$id` and `title` fields both have the correct value. These fields are used when a case definition is uploaded and will be displayed in the case list view.
+When uploading a JSON schema, make sure that the `$id` and `title` fields both have the correct value. These fields should match the case definition key.
 {% endhint %}
 {% endtab %}
 
@@ -130,34 +118,19 @@ To create a document definition, the following steps are necessary:
 
 ## Editing a document definition
 
-Same as for creating cases there are three ways of editing document definitions.
+Same as for creating cases there are two ways of editing document definitions.
 
-* Upload a valid JSON schema with the same ID.
 * Edit the document definition directly via the UI.
 * Edit the document definition in the codebase via an IDE.
 
 {% tabs %}
 {% tab title="Via UI" %}
-#### Upload a valid JSON schema with the same ID
-
-* Go to the `Admin` menu
-* Go to the `Cases` menu
-
-<figure><img src="../../.gitbook/assets/image (12) (1).png" alt=""><figcaption></figcaption></figure>
-
-Click on the **Upload** button to open the **Import case definition** modal\*. This modal contains a wizard that will guide users through the import process. The following steps are defined in this wizard.
-
-1. Informative step regarding plugins.
-2. Select the edited document definition from your system\
-   &#xNAN;_&#x57;hen the file is successfully uploaded a warning is displayed that current configurations for that case can be overwritten by this upload._
-3. Start the upload\
-   The file will be validated and if it passes all checks the document definition is updated.
-
 #### Edit the document definition
 
 * Go to the `Admin` menu
 * Go to the `Cases` menu
 * Select the case that you want to edit
+* 
 * Click on **Edit**
 * Edit the document definition as per the JSON schema standard
 * Click on **Save**

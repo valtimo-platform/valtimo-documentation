@@ -92,7 +92,7 @@ Headings are useful for navigation on the page you're viewing. Heading 1 and Hea
 {% endtab %}
 
 {% tab title="Via IDE" %}
-\[description of how to configure feature in the codebase with an autodeployment file]
+\[description of how to configure feature in the codebase with an auto-deployment file]
 {% endtab %}
 {% endtabs %}
 

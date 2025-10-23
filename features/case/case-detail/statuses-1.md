@@ -53,7 +53,7 @@ When the visible indicator for a tag is set to false then cases that do not have
 {% endtab %}
 
 {% tab title="Via IDE" %}
-Status configurations can be autodeployed by creating json files in the `*/resources/config/case/{case-definition-key}/{version-tag}/case/tag/` folder. The name of the file has to end with `.case-tag.json`.
+Status configurations can be auto-deployed by creating json files in the `*/resources/config/case/{case-definition-key}/{version-tag}/case/tag/` folder. The name of the file has to end with `.case-tag.json`.
 
 {% code title="*/resources/config/case/example-case/1.0.0/case/tag/example-case.case-tag.json" %}
 ```json

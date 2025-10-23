@@ -62,9 +62,9 @@ A file should be created on the classpath in the `*/resources/config/case/{case-
 {
     "key": "example",
     "name": "Example Case Definition",
-    "versionTag": "1.0.0-beta"
+    "versionTag": "1.0.0-beta",
     "final": false,
-    "canHaveAssignee": true
+    "canHaveAssignee": true,
     "autoAssignTasks": true
 }
 ```
@@ -178,9 +178,9 @@ A file should be created on the classpath in the `*/resources/config/case/{case-
 {
     "key": "example",
     "name": "Example Case Definition",
-    "versionTag": "1.0.1-beta"
+    "versionTag": "1.0.1-beta",
     "final": false,
-    "canHaveAssignee": true
+    "canHaveAssignee": true,
     "autoAssignTasks": true
 }
 ```
@@ -277,21 +277,27 @@ To ensure consistency and quality across environments, the following restriction
 
 Most configurations and definitions are included in exports and imports. Some related configurations are not imported and exported, as they are not case definition specific.
 
-| Included in the import/export             | Excluded from the import/export |
-| ----------------------------------------- | ------------------------------- |
-| Case definition settings                  | Access control                  |
-| Decision definitions                      | Dashboards                      |
-| Document definition                       | Plugin configurations           |
-| Form flows                                |                                 |
-| Forms (including case summary if present) |                                 |
-| List columns                              |                                 |
-| Process definitions                       |                                 |
-| Process document associations             |                                 |
-| Process links                             |                                 |
-| Search fields                             |                                 |
-| Tabs                                      |                                 |
-| Task list columns                         |                                 |
-| ZGW Document columns                      |                                 |
+| Included in the import/export    | Excluded from the import/export |
+|----------------------------------|---------------------------------|
+| Case definition                  | Access control                  |
+| Case tag                         | Dashboard                       |
+| Internal case status             | Plugin configuration            |
+| Process definition               |                                 |
+| Process link                     |                                 |
+| Process document link            |                                 |
+| Decision definition              |                                 |
+| Form definition                  |                                 |
+| Form flow definition             |                                 |
+| Document definition              |                                 |
+| Case task list column            |                                 |
+| Case task search field           |                                 |
+| Case list                        |                                 |
+| Case tab                         |                                 |
+| Case widget tab                  |                                 |
+| (ZGW) Documenten API upoad field |                                 |
+| (ZGW) Document list column       |                                 |
+| (ZGW) Document trefwoord         |                                 |
+| (ZGW) Zaak type link             |                                 |
 
 ## Access control
 
