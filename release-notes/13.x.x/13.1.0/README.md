@@ -26,6 +26,12 @@ stress as much as possible. This is done by evaluating plugin configurations tha
 as the Portaaltaak plugin and the Verzoek plugin. Lastly, all channels that are subscribed to are combined into a
 single subscription.
 
+#### Form.io translation mechanism
+
+A new way to translate Form.io forms has been introduced. When following the instructions [on this page](../../../features/forms/README.md),
+forms rendered inside the application will be translated automatically, making use of the current application language
+and the translation resources configured in the application.
+
 <details>
 
 <summary>GZAC edition</summary>
