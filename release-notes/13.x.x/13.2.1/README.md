@@ -1,7 +1,7 @@
 # 13.2.1
 
 {% hint style="info" %}
-## Release date 26-09-2025
+### Release date 26-09-2025
 {% endhint %}
 
 ## Bugfixes
@@ -20,6 +20,5 @@
 ## Security improvements
 
 **Breaking Change**
-* Case endpoints no longer return the case content. This can be changed via the `application.yml` by setting the
-  `valtimo.includeDocumentContentInResponse` property. This is set to false by default, and should be kept to false as
-  much as possible to prevent sending data that does not need to be shared.
+
+* Case endpoints no longer return the case content. This can be changed via the `application.yml` by setting the `valtimo.includeDocumentContentInResponse` property. This is set to false by default, and should be kept to false as much as possible to prevent sending data that does not need to be shared.

@@ -27,19 +27,19 @@ To configure process links, admin privileges are required.
 
 ![Select process link type](../../.gitbook/assets/select-process-link-type.png)
 
-### Creating a form process link
+#### Creating a form process link
 
 A form process link can be added to user-tasks. When the process reaches the user-task, a user will be presented with the configured form when opening it.
 
 More information about forms can be found [here](../case/forms/).
 
-### Creating a form-flow process link
+#### Creating a form-flow process link
 
 A form-flow process link can be added to user-tasks. When the process reaches the user-task, an instance of the form-flow will be created and be made visible to the user.
 
 More information about form-flows can be found [here](../case/form-flow.md).
 
-### Creating a plugin process link
+#### Creating a plugin process link
 
 When configuring a plugin process link, a wizard is presented to choose between the available plugin configuration, actions and (optionally) additional settings for that action.
 
@@ -91,11 +91,9 @@ This is an example of an autodeployment file for two user task for a process:
 ]
 ```
 
-The auto-deployment configuration file supports environment variables such as `${VALTIMO_MY_PROPERTY}`.
-At runtime, these placeholders are replaced with the values of the corresponding environment variables.
+The auto-deployment configuration file supports environment variables such as `${VALTIMO_MY_PROPERTY}`. At runtime, these placeholders are replaced with the values of the corresponding environment variables.
 
-**Important:** You must explicitly whitelist which environment variables can be used in these files. Add the following to your
-`application.yml`:
+**Important:** You must explicitly whitelist which environment variables can be used in these files. Add the following to your `application.yml`:
 
 ```yaml
 valtimo:
@@ -106,7 +104,6 @@ valtimo:
 ```
 
 This ensures that only environment variables matching the given patterns are available in the deployment file.
-
 {% endtab %}
 {% endtabs %}
 

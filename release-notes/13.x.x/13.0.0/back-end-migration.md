@@ -6,7 +6,7 @@
 
 These are the changes that were made to the Valtimo libraries that get published:
 
-<table><thead><tr><th width="222">Module</th><th>Change</th></tr></thead><tbody><tr><td><code>besluit</code></td><td>Removed. Use <code>besluiten-api</code> instead.</td></tr><tr><td><code>connector</code></td><td>Removed. Use plugins instead.</td></tr><tr><td><code>contactmoment</code></td><td>Removed.</td></tr><tr><td><code>document</code></td><td>Merged into <code>case</code>. Packages are the same.</td></tr><tr><td><code>external-event</code></td><td>Removed. Partially replaced by <code>portaaltaak</code>, specifically for tasks.</td></tr><tr><td><code>form-flow-valtimo</code></td><td>Merged into <code>form-flow</code>. Packages are the same.</td></tr><tr><td><code>haalcentraal</code></td><td>Removed.</td></tr><tr><td><code>haalcentraal-brp</code></td><td>Removed.</td></tr><tr><td><code>klant</code></td><td>Removed.</td></tr><tr><td><code>objects-api</code></td><td>Removed. Use other ZGW modules instead.</td></tr><tr><td><code>openzaak</code></td><td>Removed. Use other ZGW modules instead.</td></tr><tr><td><code>openzaak-resource</code></td><td>Removed.  Use other ZGW modules instead.</td></tr></tbody></table>
+<table><thead><tr><th width="222">Module</th><th>Change</th></tr></thead><tbody><tr><td><code>besluit</code></td><td>Removed. Use <code>besluiten-api</code> instead.</td></tr><tr><td><code>connector</code></td><td>Removed. Use plugins instead.</td></tr><tr><td><code>contactmoment</code></td><td>Removed.</td></tr><tr><td><code>document</code></td><td>Merged into <code>case</code>. Packages are the same.</td></tr><tr><td><code>external-event</code></td><td>Removed. Partially replaced by <code>portaaltaak</code>, specifically for tasks.</td></tr><tr><td><code>form-flow-valtimo</code></td><td>Merged into <code>form-flow</code>. Packages are the same.</td></tr><tr><td><code>haalcentraal</code></td><td>Removed.</td></tr><tr><td><code>haalcentraal-brp</code></td><td>Removed.</td></tr><tr><td><code>klant</code></td><td>Removed.</td></tr><tr><td><code>objects-api</code></td><td>Removed. Use other ZGW modules instead.</td></tr><tr><td><code>openzaak</code></td><td>Removed. Use other ZGW modules instead.</td></tr><tr><td><code>openzaak-resource</code></td><td>Removed. Use other ZGW modules instead.</td></tr></tbody></table>
 
 #### Used libraries
 
@@ -19,8 +19,6 @@ With the introduction of case definitions, the structure inside your `resources`
 {% tabs %}
 {% tab title="Core Valtimo" %}
 <table><thead><tr><th>Resource type</th><th>Old location</th><th width="186">New location</th><th>Notes</th></tr></thead><tbody><tr><td>BPMN</td><td><code>/**/bpmn/*.bpmn</code></td><td><code>/config/case/*/*/bpmn/*.bpmn</code></td><td>-</td></tr><tr><td>Case definition</td><td>-</td><td><code>/config/case/*/*/case/definition/*.case-definition.json</code></td><td>Replaces case settings. Click <a href="https://app.gitbook.com/o/yIYH93lNsNEOoIWOawxF/s/q5dx9HWFJGshztp4binE/~/changes/12/release-notes/13.x.x/13.0.0/migration#case-definition">here</a> for details.</td></tr><tr><td>Case list column</td><td><code>/config/case/list/*.json</code></td><td><code>/config/case/*/*/case/list/*.case-list.json</code></td><td>-</td></tr><tr><td>Case search field</td><td><code>/config/search/*.json</code></td><td><code>/config/case/*/*/case/search-field/*.schema.case-search-field.json</code></td><td>-</td></tr><tr><td>Case settings</td><td><code>/config/case/definition/*.json</code></td><td>-</td><td>Replaced by case definition.</td></tr><tr><td>Case tab</td><td><code>/config/case-tabs/*.case-tabs.json</code></td><td><code>/config/case/*/*/case/tab/*.case-tab.json</code></td><td>Structure changed, see below.</td></tr><tr><td>Case tag</td><td><code>/config/case-tag/*.json</code></td><td><code>/config/case/*/*/case/tag/*.case-tag.json</code></td><td>Structure changed, see below.</td></tr><tr><td>Case task list</td><td><code>/config/case-task-list/*.case-task-list.json</code></td><td><code>/config/case/*/*/case/task-list/*.case-task-list.json</code></td><td>Structure changed, see below.</td></tr><tr><td>Case widget tab</td><td><code>/config/case-widget-tab/*.case-widget-tab.json</code></td><td><code>/config/case/*/*/case/widget-tab/*.case-widget-tab.json</code></td><td>Structure changed, see below.</td></tr><tr><td>DMN</td><td><code>/**/dmn/*.dmn</code></td><td><code>/config/case/*/*/dmn/*.dmn</code></td><td>-</td></tr><tr><td>Document</td><td><code>resource/config/document/definition/*.schema.json</code></td><td><code>/config/case/*/*/document/definition/*.schema.document-definition.json</code></td><td>-</td></tr><tr><td>Form</td><td><code>/config/form/*.json</code></td><td><code>/config/case/*/*/form/*.form.json</code></td><td>-</td></tr><tr><td>Form flow</td><td><code>/config/form-flow/*.form-flow.json</code></td><td><code>/config/case/*/*/form-flow/*.form-flow.json</code></td><td>-</td></tr><tr><td>Global BPMN</td><td><code>/**/bpmn/*.bpmn</code></td><td><code>/config/global/bpmn/*.bpmn</code></td><td>-</td></tr><tr><td>Global DMN</td><td><code>/**/dmn/*.dmn</code></td><td><code>/config/global/dmn/*.dmn</code></td><td>-</td></tr><tr><td>Internal case status</td><td><code>/config/internal-case-status/*.internal-case-status.json</code></td><td><code>/config/case/*/*/case/internal-status/*.internal-case-status.json</code></td><td>Structure changed, see below.</td></tr><tr><td>Process document link</td><td><code>/config/process-document-link/*.json</code></td><td><code>/config/case/*/*/process-document-link/*.process-document-link.json</code></td><td>-</td></tr><tr><td>Process link</td><td><code>/config/processlink/*.processlink.json</code></td><td><code>/config/case/*/*/process-link/*.process-link.json</code></td><td>-</td></tr><tr><td>Task search field</td><td><code>/config/task-search-fields/*.task-search-field.json</code></td><td><code>/config/case/*/*/task-search-field/*.task-search-field.json</code></td><td>Structure changed, see below.</td></tr></tbody></table>
-
-
 {% endtab %}
 
 {% tab title="ZGW" %}
@@ -76,7 +74,7 @@ Case definitions adhere to the following structure:
 }
 ```
 
-* `key`. The key is the key of your case definition.&#x20;
+* `key`. The key is the key of your case definition.
 * `name`. The name is the name of your case definition.
 * `versionTag`. Version tag in combination with case definition key has to be unique, and as long as a case definition is not yet final it can still be edited, and configurations can be updated as well. The version tag follows semantic versioning, so `1.0.0-something`.
 * `canHaveAssignee`. Determines if users can be assigned to a case.
@@ -114,7 +112,7 @@ Case definition is a newly introduced resource. Some existing functionality now 
 
 #### ZGW Object management permissions
 
-&#x20;Access to objects in the Objecten API is now granted via permissions. Below is the list of resource and action type combinations, as well as when they are used. Do not forget to configure these permissions for your Valtimo implementation.
+Access to objects in the Objecten API is now granted via permissions. Below is the list of resource and action type combinations, as well as when they are used. Do not forget to configure these permissions for your Valtimo implementation.
 
 | Resource                                  | Action      | When to use                                                                                     |
 | ----------------------------------------- | ----------- | ----------------------------------------------------------------------------------------------- |
@@ -206,29 +204,29 @@ Other changes required are impossible to list because they depend on how Camunda
 
 #### Application configuration
 
-References to Camunda properties in the application configuration should be changed. Usually this is done in `applcation.yml`&#x20;
+References to Camunda properties in the application configuration should be changed. Usually this is done in `applcation.yml`
 
 <table><thead><tr><th>Before</th><th>After</th></tr></thead><tbody><tr><td><pre class="language-yaml"><code class="lang-yaml">spring:
     jersey:
         application-path: /api/camunda-rest
-       
 camunda:
-    bpm:
-        history-level: AUDIT
-        history-level-default: AUDIT   
+bpm:
+history-level: AUDIT
+history-level-default: AUDIT
+
 </code></pre></td><td><pre class="language-yaml"><code class="lang-yaml">spring:
-    jersey:
-        application-path: /api/operaton-rest
-       
+jersey:
+application-path: /api/operaton-rest
 operaton:
-    bpm:
-        history-level: AUDIT
-        history-level-default: AUDIT   
+bpm:
+history-level: AUDIT
+history-level-default: AUDIT
+
 </code></pre></td></tr></tbody></table>
 
 #### Camunda packages
 
-Camunda classes that are imported will have new package names. This is fixed by renaming `org.camunda`  to `org.operaton` in imports.
+Camunda classes that are imported will have new package names. This is fixed by renaming `org.camunda` to `org.operaton` in imports.
 
 <table><thead><tr><th>Before</th><th>After</th></tr></thead><tbody><tr><td><pre class="language-java"><code class="lang-java">import org.camunda.bpm.engine.RuntimeService
 </code></pre></td><td><pre class="language-java"><code class="lang-java">import org.operaton.bpm.engine.RuntimeService
@@ -260,7 +258,7 @@ The Camunda webapps have been replaced by the Operaton equivalent. The url on wh
 
 #### Permission changes to user ID
 
-A reference to a user is stored as part of a document (case handler), task (assignee) or note (creator). Because the option to pick what user identifier to use was removed, and username is used by default, this might have an impact on the configured permissions.&#x20;
+A reference to a user is stored as part of a document (case handler), task (assignee) or note (creator). Because the option to pick what user identifier to use was removed, and username is used by default, this might have an impact on the configured permissions.
 
 Lets say you have a permission where only the user who created a note for a case can delete that note. If Valtimo was set to use the user ID before, your permission might look like this.
 
@@ -298,7 +296,7 @@ Note the use of the `${currentUserId}` expression. This will not match the usern
 
 #### Document content
 
-For security reasons, the document content has been removed from endpoints returning documents. For example `GET /api/v1/document/{documentId}` and `POST /api/v1/document-definition/name/search`. We recommend not exposing this information, as that can lead to users accessing case information that they should not have accesss to. Only the required information can be displayed using list columns, form-io, widget or summary tabs. \
+For security reasons, the document content has been removed from endpoints returning documents. For example `GET /api/v1/document/{documentId}` and `POST /api/v1/document-definition/name/search`. We recommend not exposing this information, as that can lead to users accessing case information that they should not have accesss to. Only the required information can be displayed using list columns, form-io, widget or summary tabs.\
 \
 If you still do want to return document content in these endpoints it is possible to turn this back on by enabling the following property.
 
@@ -322,7 +320,7 @@ valtimo:
             enabled: true
 ```
 
-If your project made use of these toggles, these can now be removed. Additionally, permissions should be configured to allow access to these resources.&#x20;
+If your project made use of these toggles, these can now be removed. Additionally, permissions should be configured to allow access to these resources.
 
 ## Database migration script
 
@@ -332,7 +330,7 @@ It is strongly recommend making a database backup before deploying the new versi
 
 #### Case definitions
 
-Because of the introduction of case definitions, all cases should be linked to a case definition. This determines what configuration is used when working with this case. For example, which (version of) forms are used for user tasks, which tabs are displayed the detail page of that case or what supporting processes can be started. The migration script will set up a number of case definitions with the other configuration based on how the application would have behaved up until now.&#x20;
+Because of the introduction of case definitions, all cases should be linked to a case definition. This determines what configuration is used when working with this case. For example, which (version of) forms are used for user tasks, which tabs are displayed the detail page of that case or what supporting processes can be started. The migration script will set up a number of case definitions with the other configuration based on how the application would have behaved up until now.
 
 The migration script does the following:
 
@@ -357,18 +355,16 @@ The migration script does the following:
 
 ### What Changed
 
-In Valtimo 13, **only whitelisted environment variables** can be used in auto-deployment configuration files. This
-restriction was added for **security reasons**, so sensitive system variables can’t be accessed unintentionally.
+In Valtimo 13, **only whitelisted environment variables** can be used in auto-deployment configuration files. This restriction was added for **security reasons**, so sensitive system variables can’t be accessed unintentionally.
 
 Whitelist patterns are configured in application.yml under valtimo.imports.whitelistedPaths:
 
 ### Migration Guide
 
 1. Review your auto-deployment configuration files
-    - Identify all environment variables currently in use.
+   * Identify all environment variables currently in use.
 2. Update the whitelist
-    - Add regex patterns or exact names for all variables you need in the `application.yml` under
-      `valtimo.imports.whitelistedPaths`:
+   * Add regex patterns or exact names for all variables you need in the `application.yml` under `valtimo.imports.whitelistedPaths`:
 
 ```yaml
 valtimo:
@@ -377,4 +373,3 @@ valtimo:
       - "VALTIMO_.*"
       - "GZAC_.*"
 ```
-
