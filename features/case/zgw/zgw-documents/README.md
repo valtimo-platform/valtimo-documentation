@@ -16,7 +16,7 @@ Keywords can be added to documents when uploading. This helps in categorizing th
 
 > NOTE: Deleting keywords will not delete existing documents from the Documenten API, nor will it delete the keyword from existing documents. Deleted keywords will just not be available anymore when uploading a document
 
-#### auto-deployment
+#### Auto-deployment
 
 Keyword configuration can also be loaded via auto-deployment. To do so, create a json file in the application classpath which conforms to the following pattern: `*.zgw-document-trefwoorden.json`
 
@@ -36,7 +36,7 @@ The contents should follow the structure in the example below:
 
 List columns can be configured to change what data is shown in the document list view.
 
-#### auto-deployment
+#### Auto-deployment
 
 List column configuration can also be loaded via auto-deployment. To do so, create a json file in the application classpath which conforms to the following pattern: `*.zgw-document-list-column.json`
 

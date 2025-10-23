@@ -23,7 +23,7 @@ When editing an existing process, the following is shown:
 
 <div align="left" data-full-width="false"><figure><img src="../../.gitbook/assets/image (33) (1).png" alt=""><figcaption><p>Link a process to a case definition</p></figcaption></figure></div>
 
-The checkboxes can be used to identify what type of process is being linked. Some processes are relevant when a new case is started and other processes are only relevant in certain states of the case. Be sure to press Save in order to store the changes.\
+The toggles can be used to identify what type of process is being linked. Some processes are relevant when a new case is started and other processes are only relevant in certain states of the case. Be sure to press Save in order to store the changes.\
 
 
 * [x] **Process creates new case**

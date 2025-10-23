@@ -14,7 +14,7 @@ There are two ways of creating new document definitions in Valtimo.
 
 * Import a case definition, see [here](README.md#import-and-export).
 * Create an empty case via the UI
-* Place a valid JSON schema in the codebase via an IDE
+  * Place a valid JSON schema in the codebase via an IDE
 
 {% hint style="info" %}
 Best practices:
