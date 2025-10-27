@@ -10,3 +10,13 @@ Significant performance improvements when retrieving tasks and cases, smaller pe
 
 This release includes an internal improvement to how Valtimo logs request and response data.  
 When working with JSON-based integrations, log entries are now automatically formatted to be easier to read.
+
+## Enhancements
+
+* **Updated dependencies**
+
+  The following dependencies were updated:
+  * Operaton (`1.0.0-beta-4` &rarr; `1.0.0-rc-1`)
+  * Everit Json Schema (`1.14.5` &rarr; `1.14.6`)
+  * Commons Validator (`1.9.0` &rarr; `1.10.0`)
+  * Guava (`33.4.8-jre` &rarr; `33.5.0-jre`)
