@@ -176,6 +176,7 @@
     * [Front-end migration](release-notes/13.x.x/13.0.0/front-end-migration.md)
     * [Back-end migration](release-notes/13.x.x/13.0.0/back-end-migration.md)
 * [12.x.x](release-notes/12.x.x/README.md)
+  * [12.19.0](release-notes/12.x.x/12.19.0.md)
   * [12.18.0](release-notes/12.x.x/12.18.0.md)
   * [12.17.0](release-notes/12.x.x/12.17.0/README.md)
     * [12.17.1](release-notes/12.x.x/12.17.0/12.17.1.md)
