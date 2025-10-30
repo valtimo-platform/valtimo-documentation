@@ -26,7 +26,7 @@ An example plugin configuration:&#x20;
 
 <figure><img src="../../.gitbook/assets/configure-plugin-notificaties.png" alt=""><figcaption></figcaption></figure>
 
-After saving the configuration Valtimo automatically ensures the required kanalen exist and that an abonnement with a generated secret is registered against the configured Notificaties API instance. Disabling this behaviour is possible by setting `valtimo.zgw.register-abonnementen=false`.
+After saving the configuration Valtimo automatically ensures the required kanalen exist and that an abonnement with a generated secret is registered against the configured Notificaties API instance. Disabling this behaviour is possible by setting `valtimo.zgw.register-abonnementen=false` in the `application.yml`.
 
 ## Subscriptions
 
@@ -44,7 +44,7 @@ The Notificaties API plugin stores each notification before delivering it to the
 
 1. The Notificaties API posts a notification to `POST /api/v1/notificatiesapi/callback`.
 2. Valtimo saves the payload so it will not be lost and automatically ignores duplicate messages.
-3. A background worker picks up saved notifications, delivers them to the rest of the application, and keeps trying when something temporarily fails.
+3. A background worker picks up saved notifications, delivers them to the rest of the application, and keeps trying the configured number of times when something temporarily fails. 
 4. Administrators can review and retry notifications through the management endpoints, while health checks warn when too many notifications stay in the failed list.
 
 To make the management page visible in the user interface, add the menu entry for failed notifications in `frontend/src/environments/environment.ts`:
@@ -74,7 +74,7 @@ Additionally, a dedicated Spring Boot health indicator named `notificatiesApiInb
 
 ## Spring configuration
 
-All processing properties live under the prefix `valtimo.notificaties-api.processing`. Use the suffixes below to complete the property name (for example, `valtimo.notificaties-api.processing.enabled`). Duration values follow ISO-8601 notation (e.g. `PT5M` for five minutes, `P14D` for fourteen days).
+All processing properties live in the `application.yml` under the prefix `valtimo.notificaties-api.processing`. Use the suffixes below to complete the property name (for example, `valtimo.notificaties-api.processing.enabled`). Duration values follow ISO-8601 notation (e.g. `PT5M` for five minutes, `P14D` for fourteen days).
 
 | Property | Description | Environment variable | Default value |
 | --- | --- | --- | --- |
