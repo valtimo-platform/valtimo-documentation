@@ -11,6 +11,11 @@ Significant performance improvements when retrieving tasks and cases, smaller pe
 This release includes an internal improvement to how Valtimo logs request and response data.  
 When working with JSON-based integrations, log entries are now automatically formatted to be easier to read.
 
+* **Improved Notificaties API logging**
+
+When an abonnement cannot be registered or updated with the Notificaties API, additional information is provided on
+what went wrong.
+
 ## Enhancements
 
 * **Updated dependencies**
