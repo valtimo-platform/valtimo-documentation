@@ -25,3 +25,9 @@ what went wrong.
   * Everit Json Schema (`1.14.5` &rarr; `1.14.6`)
   * Commons Validator (`1.9.0` &rarr; `1.10.0`)
   * Guava (`33.4.8-jre` &rarr; `33.5.0-jre`)
+
+* **Improved Notificaties API processing**
+
+The Notificaties API plugin now safely stores incoming notifications, prevents duplicates, processes them in the background with automatic retries and clean-up, and offers an admin view for failed messages together with a health check that warns when too many remain. 
+
+Make sure to add the admin menu entry described [here](../../../features/plugins/configure-notificaties-api-plugin.md) so users can reach the new overview.
