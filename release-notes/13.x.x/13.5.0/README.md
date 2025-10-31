@@ -26,6 +26,12 @@ what went wrong.
   * Commons Validator (`1.9.0` &rarr; `1.10.0`)
   * Guava (`33.4.8-jre` &rarr; `33.5.0-jre`)
 
+* **Improved Notificaties API processing**
+
+The Notificaties API plugin now safely stores incoming notifications, prevents duplicates, processes them in the background with automatic retries and clean-up, and offers an admin view for failed messages together with a health check that warns when too many remain. 
+
+Make sure to add the admin menu entry described [here](../../../features/plugins/configure-notificaties-api-plugin.md) so users can reach the new overview.
+
 ## Bugfixes
 
 * Process links referencing forms are now always copied properly when creating a new draft version of an existing case definition.
