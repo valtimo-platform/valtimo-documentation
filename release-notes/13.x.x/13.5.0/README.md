@@ -25,3 +25,8 @@ what went wrong.
   * Everit Json Schema (`1.14.5` &rarr; `1.14.6`)
   * Commons Validator (`1.9.0` &rarr; `1.10.0`)
   * Guava (`33.4.8-jre` &rarr; `33.5.0-jre`)
+
+## Bugfixes
+
+* Process links referencing forms are now always copied properly when creating a new draft version of an existing case definition.
+* Case tags and header widgets are now copied when creating a new draft version of an existing case definition.
