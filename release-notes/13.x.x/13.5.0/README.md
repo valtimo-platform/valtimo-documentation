@@ -34,5 +34,5 @@ Make sure to add the admin menu entry described [here](../../../features/plugins
 
 ## Bugfixes
 
-* Process links referencing forms are now always copied properly when creating a new draft version of an existing case definition.
-* Case tags and header widgets are now copied when creating a new draft version of an existing case definition.
+* Process links referencing forms are now always included when creating a new draft version of an existing case definition.
+* Case tags and header widgets are now included when creating a new draft version of an existing case definition.
