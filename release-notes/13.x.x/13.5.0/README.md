@@ -31,3 +31,8 @@ what went wrong.
 The Notificaties API plugin now safely stores incoming notifications, prevents duplicates, processes them in the background with automatic retries and clean-up, and offers an admin view for failed messages together with a health check that warns when too many remain. 
 
 Make sure to add the admin menu entry described [here](../../../features/plugins/configure-notificaties-api-plugin.md) so users can reach the new overview.
+
+## Bugfixes
+
+* Process links referencing forms are now always included when creating a new draft version of an existing case definition.
+* Case tags and header widgets are now included when creating a new draft version of an existing case definition.
