@@ -40,7 +40,7 @@ A status can be added with the **Add status** button. A modal will be shown with
   * Cool gray (`COOLGRAY`)
   * Warm gray (`WARMGRAY`)
   * High contrast (`HIGHCONTRAST`)
-  * Outline (`OUTLINE`)\\
+  * Outline (`OUTLINE`)
 * **Visible**\
   Indication if cases in that status should be shown on the case list screen by default.
 

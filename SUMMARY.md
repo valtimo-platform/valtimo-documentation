@@ -346,7 +346,6 @@
 
 * [References](nog-een-plek-geven/reference/README.md)
   * [Modules](nog-een-plek-geven/reference/modules/README.md)
-    * [Authorization](nog-een-plek-geven/reference/modules/authorization.md)
     * [Document](nog-een-plek-geven/reference/modules/document.md)
     * [Object management](nog-een-plek-geven/reference/modules/object-management.md)
   * [User interface](nog-een-plek-geven/reference/user-interface/README.md)

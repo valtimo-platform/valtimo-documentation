@@ -1,7 +1,7 @@
 # 12.19.0
 
 {% hint style="info" %}
-### Release date 28-10-2025
+#### Release date 28-10-2025
 {% endhint %}
 
 ## New Features
