@@ -41,5 +41,5 @@ Make sure to add the admin menu entry described [here](../../../features/plugins
 * Process links referencing forms are now always included when creating a new draft version of an existing case definition.
 * Case tags and header widgets are now included when creating a new draft version of an existing case definition.
 * When uploading a document, the field containing the document types is now always filled if any document types are available.
-* When creating a new case widget, the conditions of the last open widget is no longer prefilled.
+* When creating a new case widget, the conditions of the previously opened widget is no longer prefilled.
 * The widget title of FormIO and custom widgets are now correctly displayed.
