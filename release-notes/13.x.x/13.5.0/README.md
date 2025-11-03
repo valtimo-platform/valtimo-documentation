@@ -21,10 +21,14 @@ what went wrong.
 * **Updated dependencies**
 
   The following dependencies were updated:
+  * Spring Boot (`3.4.5` &rarr; `3.5.7`)
   * Operaton (`1.0.0-beta-4` &rarr; `1.0.0-rc-1`)
   * Everit Json Schema (`1.14.5` &rarr; `1.14.6`)
   * Commons Validator (`1.9.0` &rarr; `1.10.0`)
+  * Commons Lang 3 (`3.17.0` &rarr; `3.19.0`)
   * Guava (`33.4.8-jre` &rarr; `33.5.0-jre`)
+  * Apache Tika (`3.1.0` &rarr; `3.2.3`)
+  * GraalVM (`24.2.1` &rarr; `25.0.1`)
 
 * **Improved Notificaties API processing**
 
@@ -37,3 +41,5 @@ Make sure to add the admin menu entry described [here](../../../features/plugins
 * Process links referencing forms are now always included when creating a new draft version of an existing case definition.
 * Case tags and header widgets are now included when creating a new draft version of an existing case definition.
 * When uploading a document, the field containing the document types is now always filled if any document types are available.
+* When creating a new case widget, the conditions of the previously opened widget is no longer prefilled.
+* The widget title of FormIO and custom widgets are now correctly displayed.
