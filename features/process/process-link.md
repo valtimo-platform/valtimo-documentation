@@ -13,7 +13,7 @@ Currently, the following types of process-links are supported by Valtimo:
 There are two ways of creating process links:
 
 * Manually via the UI
-* Using autodeployment via the IDE
+* Using auto-deployment via the IDE
 
 {% tabs %}
 {% tab title="Via UI" %}
@@ -57,11 +57,11 @@ Any text fields for configuring the process link itself support several ways of 
 Available since Valtimo `10.6.0`
 {% endhint %}
 
-Process links can also be configured using autodeployment. These process links will be created at application startup. When a conflicting configuration is found on the target activity, creation is skipped and a warning is logged in the application logs.
+Process links can also be configured using auto-deployment. These process links will be created at application startup. When a conflicting configuration is found on the target activity, creation is skipped and a warning is logged in the application logs.
 
-Autodeployed process links can be added by creating a json file with the following filename structure: `<process-id>.process-link.json`. This file can be placed anywhere in the resource folder of the application.
+auto-deployed process links can be added by creating a json file with the following filename structure: `<process-id>.process-link.json`. This file can be placed anywhere in the resource folder of the application.
 
-This is an example of an autodeployment file for two user task for a process:
+This is an example of an auto-deployment file for two user task for a process:
 
 ```json
 [

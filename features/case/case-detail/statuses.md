@@ -55,7 +55,7 @@ When the visible indicator for a status is set to false then cases that are curr
 {% endtab %}
 
 {% tab title="Via IDE" %}
-Status configurations can be autodeployed by creating json files in the `*/resources/config/case/{case-definition-key}/{version-tag}/case/internal-status/` folder. The name of the file has to end with `.internal-case-status.json`.
+Status configurations can be auto-deployed by creating json files in the `*/resources/config/case/{case-definition-key}/{version-tag}/case/internal-status/` folder. The name of the file has to end with `.internal-case-status.json`.
 
 In case `internal-case-status.json` files are different between versions in your auto-deployment files, the statuses of the last version to be deployed will be the ones available.
 

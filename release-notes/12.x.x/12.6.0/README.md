@@ -100,7 +100,7 @@ GZAC supports syncing the document data (or Zaakdetails) to an object in the Obj
 * Additionally, no permission check was conducted before retrieving the pre-filled start form for a supporting process. Users must now have the "view" permission for the resource `com.ritense.document.domain.impl.JsonSchemaDocument` to access the pre-filled start form.
 * When the browser back-button was used on the case detail page, the user was redirected incorrectly.
 * In some scenario's, task forms would be pre-filled incorrectly.
-* Form flow step definitions were duplicated during autodeployment.
+* Form flow step definitions were duplicated during auto-deployment.
 * Retrieving the task list would fail when a task assignee had been removed from Keycloak.
 * Correlating Camunda messages with variables using the CorrelationService now works correctly.
 * The notes tab on the case detail page now supports newlines
@@ -124,8 +124,8 @@ The `/v1/permissions` endpoint now returns 'false' in case of an exception, inst
 
 #### Changeset module supports config changes
 
-The changeset module now supports changes in the structure of autodeployment files. This way, new functionality can be added to existing autodeployment files without having to migrate existing changeset database records.\
-It is possible dashboard autodeployment files that have previously been deployed result in new checksums. As a one-time fix, these checksums should be updated manually in the `valtimo_changelog` table in the database.
+The changeset module now supports changes in the structure of auto-deployment files. This way, new functionality can be added to existing auto-deployment files without having to migrate existing changeset database records.\
+It is possible dashboard auto-deployment files that have previously been deployed result in new checksums. As a one-time fix, these checksums should be updated manually in the `valtimo_changelog` table in the database.
 
 #### Form view model support for Form.io wizard
 

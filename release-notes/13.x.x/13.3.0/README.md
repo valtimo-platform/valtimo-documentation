@@ -32,3 +32,4 @@ as widgets can be hidden that don't apply to the current case.
 * Cases can now be opened when the underlying process has been deleted.
 * Fixed an issue where the Verzoek plugin could not be migrated correctly which caused the
   `VerzoekProperties["caseDefinitionKey"]` to be `NULL`.
+* Verzoek plugin no longer throws error on startup when case-definition has not been imported yet.

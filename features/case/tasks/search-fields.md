@@ -8,7 +8,7 @@ Task filters enable users to search tasks that meet one or more of the configure
 {% tab title="Via UI" %}
 * Go to the `Admin`  menu
 * Go to the `Tasks`  menu
-* Select the case to configure serach fields for
+* Select the case to configure search fields for
 
 {% hint style="info" %}
 The configured task search fields will only be available for the selected case.
@@ -27,38 +27,30 @@ For task list filters the following path prefixes are available:
 {% endtab %}
 
 {% tab title="Via IDE" %}
-Task search fields can be autodeployed by creating json files on the classpath following this pattern: `classpath*:**/*.task-search-field.json`. The name of the file does not matter, but it is advised to keep it in line with the object title.
+Task search fields can be auto-deployed by creating json files on the classpath following this pattern: `classpath*:**/*.task-search-field.json`. The name of the file does not matter, but it is advised to keep it in line with the object title.
 
 You can find an example of the JSON below:
 
 {% code title="my-case.task-search-field.json" %}
 ```json
-{
-  "changesetId": "my-case.TaskListSearchColumns.1721390529320",
-  "collection": [
+[
     {
-      "ownerId": "my-case",
-      "searchFields": [
-        {
-          "key": "caseAssignee",
-          "title": "Case assignee",
-          "path": "case:assigneeFullName",
-          "dataType": "TEXT",
-          "fieldType": "SINGLE",
-          "matchType": "LIKE"
-        },
-        {
-          "key": "createdBy",
-          "title": "Case created by",
-          "path": "case:createdBy",
-          "dataType": "TEXT",
-          "fieldType": "SINGLE",
-          "matchType": "LIKE"
-        }
-      ]
+        "key": "caseAssignee",
+        "title": "Case assignee",
+        "path": "case:assigneeFullName",
+        "dataType": "TEXT",
+        "fieldType": "SINGLE",
+        "matchType": "LIKE"
+    },
+    {
+        "key": "createdBy",
+        "title": "Case created by",
+        "path": "case:createdBy",
+        "dataType": "TEXT",
+        "fieldType": "SINGLE",
+        "matchType": "LIKE"
     }
-  ]
-}
+]
 ```
 {% endcode %}
 

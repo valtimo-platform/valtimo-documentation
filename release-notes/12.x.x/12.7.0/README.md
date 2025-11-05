@@ -46,5 +46,5 @@ Using the `object` prefix, properties from the root of the Verzoek object can no
 
 ## Bugfixes
 
-* A process link type (e.g. form, form flow or plugin) could not be changed using autodeployment files.
+* A process link type (e.g. form, form flow or plugin) could not be changed using auto-deployment files.
 * A user with `view_list` permissions for a task, but without `view` permissions would get an error on the case detail page.

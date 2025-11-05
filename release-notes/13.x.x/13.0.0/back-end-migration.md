@@ -328,7 +328,7 @@ As with other versions of Valtimo, a migration script will automatically run on 
 
 It is strongly recommend making a database backup before deploying the new version.
 
-#### Case definitions
+### Case definitions
 
 Because of the introduction of case definitions, all cases should be linked to a case definition. This determines what configuration is used when working with this case. For example, which (version of) forms are used for user tasks, which tabs are displayed the detail page of that case or what supporting processes can be started. The migration script will set up a number of case definitions with the other configuration based on how the application would have behaved up until now.
 
@@ -350,6 +350,16 @@ The migration script does the following:
   * Form flows. The form flows that are copied are the ones used in process links.
   * Process links are copied together with the process definitions.
   * Decision definitions are copied to the new case definition if these decisions are used in any of the related process definitions.
+
+### Configuration changes
+
+By default, it is not possible to modify draft case definitions in production environments. This can and should be enabled in the `application.yml` under `valtimo.draft.enabled`:
+
+```yaml
+valtimo:
+  draft:
+    enabled: true
+```
 
 ## Environment variables
 
