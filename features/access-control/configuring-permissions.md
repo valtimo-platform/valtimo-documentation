@@ -24,7 +24,7 @@ Creating permissions is done for a specific role. Assuming a role is present, cl
 
 The image above shows all the permissions that have been configured for `ROLE_USER`. Here, permissions can be added, edited and removed. Since the list shown here is the full list of permissions for this role, removing a permission from the list and saving it will also result in the removal of that permission in Valtimo.
 
-#### Permission structure
+**Permission structure**
 
 There are a lot of elements that can be specified for permissions. As an example, someone with `ROLE_USER` can have access to cases of type `example-document-definition`, or if that someone has been assigned to the case. The following two permissions are used to define this:
 
@@ -169,6 +169,6 @@ When exporting permissions from the permission configuration page, be sure to sa
 {% tab title="Via UI" %}
 Deleting permissions will also delete the accompanying role. Deleting roles will not delete the role in Keycloak.
 
-![deleting-permissions-example](../../.gitbook/assets/deleting-permissions.png)
+![deleting-permissions-example](<../../.gitbook/assets/deleting-a-role (1).png>)
 {% endtab %}
 {% endtabs %}

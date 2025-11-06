@@ -133,7 +133,7 @@ Selecting **See all versions** opens a modal window containing:
 
 Before a case definition version can actually be used, it needs to be deployed first. This can be done on the case management page, by clicking on the **deployment** button.
 
-<figure><img src="../../.gitbook/assets/Screenshot 2025-06-18 at 16.33.37 (2).png" alt=""><figcaption><p>Case Details page</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot 2025-06-18 at 16.33.37 (1).png" alt=""><figcaption><p>Case Details page</p></figcaption></figure>
 
 When a draft version is selected, the **deployment** button enables direct actions to either finalize or discard the in-progress configuration.
 
@@ -235,25 +235,25 @@ The exported configuration serves as a portable package that can be used for ver
 
 {% stepper %}
 {% step %}
-#### Develop and finalize in Test
+**Develop and finalize in Test**
 
 Configure, iterate, and finalize the case definition in the test environment.
 {% endstep %}
 
 {% step %}
-#### Export
+**Export**
 
 Once the version is finalized and validated, export it as a `.zip` file.
 {% endstep %}
 
 {% step %}
-#### Import to ACC
+**Import to ACC**
 
 Import the package into the acceptance environment for QA or stakeholder review.
 {% endstep %}
 
 {% step %}
-#### Import to PROD
+**Import to PROD**
 
 After approval, import the same package into production to make it available for live use.
 {% endstep %}
@@ -278,7 +278,7 @@ To ensure consistency and quality across environments, the following restriction
 Most configurations and definitions are included in exports and imports. Some related configurations are not imported and exported, as they are not case definition specific.
 
 | Included in the import/export    | Excluded from the import/export |
-|----------------------------------|---------------------------------|
+| -------------------------------- | ------------------------------- |
 | Case definition                  | Access control                  |
 | Case tag                         | Dashboard                       |
 | Internal case status             | Plugin configuration            |

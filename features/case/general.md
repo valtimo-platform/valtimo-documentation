@@ -31,7 +31,7 @@ It is possible to have user tasks be automatically assigned to a case assignee m
 {% endtab %}
 
 {% tab title="Via IDE" %}
-See [here](#assigning-a-case-handler-a-hrefautomatic-task-assignment-idautomatic-task-assignmenta) for information on how to configure your case definition via the IDE.
+See [here](general.md#assigning-a-case-handler-a-hrefautomatic-task-assignment-idautomatic-task-assignmenta) for information on how to configure your case definition via the IDE.
 {% endtab %}
 {% endtabs %}
 
@@ -70,7 +70,7 @@ See [here](./#via-ide) for information on how to configure your case definition 
 
 It is possible to start a case using a form that was already defined. This can be configured in the 'External start form' component.
 
-<figure><img src="../../.gitbook/assets/Screenshot 2025-06-18 at 15.06.43 (3).png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot 2025-06-18 at 15.06.43 (1).png" alt="" width="375"><figcaption></figcaption></figure>
 
 ## Link Upload Process to Case
 
@@ -86,7 +86,7 @@ Valtimo comes with a system process called 'Upload Document'. This process is me
 
 <figure><img src="https://docs.valtimo.nl/~gitbook/image?url=https%3A%2F%2F290147654-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FG2PoMeT8OSmMoaW7kF6t%252Fuploads%252Fgit-blob-478e8bbfd792b432e4d096c15f58db0a3a43e8ec%252Fdocument-upload.png%3Falt%3Dmedia&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=e20de8ef&#x26;sv=2" alt="" width="375"><figcaption></figcaption></figure>
 
-By default, the Upload Document process does not do anything, so it will not upload anything yet. The process needs to be configured first.&#x20;
+By default, the Upload Document process does not do anything, so it will not upload anything yet. The process needs to be configured first.
 
 Process links can be used to configure the Upload Document process. The first service task called 'Upload document' can be linked to a Documenten API plugin action called 'Save uploaded document'. Look [here](https://docs.valtimo.nl/features/zgw/zgw-plugins/configure-documenten-api-plugin) for more information.
 
@@ -107,5 +107,5 @@ Access to the content and editability of this tab depends on the version of the 
 * Final version:\
   When the case version is final, the tab will be visible but all components are displayed in a read-only state. Additionally, a warning message is shown at the top of the tap with the following message\
   “This case cannot be updated because it is final”.\
-  &#x20;This restriction is implemented to prevent accidental modifications to finalize data.
+  This restriction is implemented to prevent accidental modifications to finalize data.
 * When the user is viewing a draft version of the case, all the components within the tab are fully interactive. Users can make edits of all available actions

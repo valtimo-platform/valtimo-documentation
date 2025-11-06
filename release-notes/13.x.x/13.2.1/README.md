@@ -1,7 +1,7 @@
 # 13.2.1
 
 {% hint style="info" %}
-### Release date 26-09-2025
+#### Release date 26-09-2025
 {% endhint %}
 
 ## Bugfixes
