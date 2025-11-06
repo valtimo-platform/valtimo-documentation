@@ -163,7 +163,7 @@
 * [13.x.x](release-notes/13.x.x/README.md)
   * [13.5.0](release-notes/13.x.x/13.5.0/README.md)
   * [13.4.0](release-notes/13.x.x/13.4.0/README.md)
-    * [13.4.1](release-notes/13.x.x/13.4.1/README.md)
+    * [13.4.1](release-notes/13.x.x/13.4.0/13.4.1.md)
   * [13.3.0](release-notes/13.x.x/13.3.0/README.md)
   * [13.2.0](release-notes/13.x.x/13.2.0/README.md)
     * [13.2.1](release-notes/13.x.x/13.2.1/README.md)

@@ -1,5 +1,9 @@
 # 13.5.0
 
+{% hint style="info" %}
+**Release date 05-November - 2025**
+{% endhint %}
+
 ## New Features
 
 * **Performance improvements**
@@ -15,6 +19,10 @@ When working with JSON-based integrations, log entries are now automatically for
 
 When an abonnement cannot be registered or updated with the Notificaties API, additional information is provided on
 what went wrong.
+
+* **Zaken-API plugin updates**
+
+An action was added to the Zaken-API plugin, allowing to delete a Zaak-role.
 
 ## Enhancements
 
@@ -43,3 +51,6 @@ Make sure to add the admin menu entry described [here](../../../features/plugins
 * When uploading a document, the field containing the document types is now always filled if any document types are available.
 * When creating a new case widget, the conditions of the previously opened widget is no longer prefilled.
 * The widget title of FormIO and custom widgets are now correctly displayed.
+* The issue where after the case version update in Verzoeken plugin was no longer possible to create subscriptions and filters is resolved
+* The layout of the widgets which contain more than 5 fields is improved
+* The issue when the tabs get broken when the user is trying to switch between the tabs with the case open is resolved
