@@ -25,6 +25,10 @@ When an abonnement cannot be registered or updated with the Notificaties API, ad
 
 The OpenZaak-plugin is now updated with the new action allowing to remove the Zaak-role once the role is no longer available
 
+* **Interactive table widget**
+
+The Case widgets now have a new widget type provided out of the box: Interactive table. This allows defining actions such as redirecting to a link on row click or via a button in a table toolbar.
+
 ## Enhancements
 
 
