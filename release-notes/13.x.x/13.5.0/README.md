@@ -15,11 +15,6 @@ Significant performance improvements when retrieving tasks and cases, smaller pe
 This release includes an internal improvement to how Valtimo logs request and response data.  
 When working with JSON-based integrations, log entries are now automatically formatted to be easier to read.
 
-* **Improved Notificaties API logging**
-
-When an abonnement cannot be registered or updated with the Notificaties API, additional information is provided on
-what went wrong.
-
 * **Zaken-API plugin updates**
 
 An action was added to the Zaken-API plugin, allowing to delete a Zaak-role.
@@ -54,3 +49,4 @@ Make sure to add the admin menu entry described [here](../../../features/plugins
 * The issue where after the case version update in Verzoeken plugin was no longer possible to create subscriptions and filters is resolved
 * The layout of the widgets which contain more than 5 fields is improved
 * The issue when the tabs get broken when the user is trying to switch between the tabs with the case open is resolved
+* The OpenNotificaties abonnement is now registered after the application startup, rather than during initialization.
