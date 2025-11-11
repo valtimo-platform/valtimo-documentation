@@ -1,7 +1,7 @@
 # Access control
 
 {% hint style="success" %}
-Available since Valtimo 12.10.0.
+Available since Valtimo `12.10.0`.
 {% endhint %}
 
 Access to the documents that were uploaded to the case, can be configured through access control. More information about access control can be found [here](https://docs.valtimo.nl/features/access-control).
