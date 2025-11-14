@@ -62,3 +62,21 @@ When creating a process link the following properties have to be entered:
 An example action configuration:&#x20;
 
 <figure><img src="../../.gitbook/assets/link-document-to-besluit.png" alt=""><figcaption></figcaption></figure>
+
+
+### Patch besluit
+This action updates specific properties of a besluit in the Besluiten API.
+When creating a process link the following properties can be provided:
+
+* **Besluit URL** URL reference to the besluit.
+* **Decision date** (Optional) Date on which the besluit is decided.
+* **Explanation** (Optional) Explanation to the besluit.
+* **Governing body** (Optional) A body of a legal person established under public law or a person or body with any public authority under whose responsability the decision has been adopted.
+* **Starting date** (Optional) Commencement date of the effective period of the besluit.
+* **Expiration date** (Optional) Date on which the period of operation of the besluit ends.
+* **Reason for expiry** (Optional) The description that indicates on the basis of which the decision has been or will be cancelled.
+* **Publication date** (Optional) Date on which the besluit is published.
+* **Shipment date** (Optional) Date on which the besluit is sent.
+* **Response deadline** (Optional) The date until which a defense against the decision is possible.
+
+Note: at least one of the optional properties has to be provided.
