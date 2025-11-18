@@ -19,9 +19,9 @@ To configure this plugin the following properties have to be entered:
 * **Synchronise Case note as Zaak-notitie to the Zaak.** .
 * **ZaakNotitie subject.** The fixed value which will be used for the 'onderwerp' when a Zaak-notitie is created/updated.
 
-An example plugin configuration:&#x20;
+An example plugin configuration:
 
-<figure><img src="../../.gitbook/assets/configure-plugin (8).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../using-valtimo/plugin/zaken-api/img/configure-plugin.png" alt=""><figcaption></figcaption></figure>
 
 ## Available actions
 
@@ -39,7 +39,7 @@ When creating a process link the following properties have to be entered:
 * **Document title.** The title of the document within the context of the zaak that is stored in the 'zaakinformatieobject' record in the Zaken API.
 * **Document description.** The description of the document within the context of the zaak that is stored in the 'zaakinformatieobject' record in the Zaken API.
 
-An example process link configuration:&#x20;
+An example process link configuration:
 
 <figure><img src="../../.gitbook/assets/link-document-to-zaak.png" alt=""><figcaption></figcaption></figure>
 
@@ -62,17 +62,17 @@ The **Create zaak** action creates a zaak in the zaken API. When creating a proc
 * **Description** (Optional) A brief description of the zaak.
 * **Planned end date** (Optional) The date by which the zaak is scheduled to be completed.
 * **Final delivery date** (Optional) The last date by which the zaak must be completed according to law and regulations.
-* **Explanation.**  (Optional) An explanation of the zaak.
-* **Communication channel.** (Optional) The medium through which the reason for initiating a zaak was received. URL to a communication channel in the VNG Reference List of communication channels. 
+* **Explanation.** (Optional) An explanation of the zaak.
+* **Communication channel.** (Optional) The medium through which the reason for initiating a zaak was received. URL to a communication channel in the VNG Reference List of communication channels.
 * **Payment indication.** (Optional) Indication of whether the costs associated with handling the zaak have been paid by the person involved.
-  * Options: 
+  * Options:
     * `nvt` - There are no costs associated with the case to be paid.
     * `nog_niet` - The costs associated with the case have not (yet) been paid.
     * `gedeeltelijk` - The costs associated with the case have been partially paid.
     * `geheel` - The costs associated with the case have been fully paid.
 * **Case geometry.** (Optional) Point, line or (multi-)plane geometry information.
   * **Type.** The geometry shape/type.
-    * Options: 
+    * Options:
       * `Point`
       * `MultiPoint`
       * `LineString`
@@ -197,9 +197,9 @@ Currently, only two of these types are fully worked out in this plugin action. T
 
 If you need a different Object Type and need the fields under `objectIdentificatie`, then there are two options:
 
-- Request these fields to be added to the plugin. (Or do it yourself and deliver the changes via a pull request.)
-- (Backend only) Create a new class that inherits the [`ZaakObjectRequest`](https://github.com/valtimo-platform/valtimo-backend-libraries/blob/next-minor/zgw/zaken-api/src/main/kotlin/com/ritense/zakenapi/domain/zaakobjectrequest/ZaakObjectRequest.kt) interface and add the fields that are needed.
-  - This is only possible if you configure the process link via a configuration file (`*.process-link.json`) in the implementation project.
+* Request these fields to be added to the plugin. (Or do it yourself and deliver the changes via a pull request.)
+* (Backend only) Create a new class that inherits the [`ZaakObjectRequest`](https://github.com/valtimo-platform/valtimo-backend-libraries/blob/next-minor/zgw/zaken-api/src/main/kotlin/com/ritense/zakenapi/domain/zaakobjectrequest/ZaakObjectRequest.kt) interface and add the fields that are needed.
+  * This is only possible if you configure the process link via a configuration file (`*.process-link.json`) in the implementation project.
 
 More information about the zaakobject and its properties can be found in [the specification](https://vng-realisatie.github.io/gemma-zaken/standaard/zaken/redoc-1.5.1#tag/zaakobjecten/operation/zaakobject_create).
 

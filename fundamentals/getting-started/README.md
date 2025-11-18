@@ -35,11 +35,11 @@ GZAC (Generieke Zaakafhandelcomponent) is the Dutch municipal variant of Valtimo
 
 {% stepper %}
 {% step %}
-### Install Homebrew, Git and Docker Desktop
+#### Install Homebrew, Git and Docker Desktop
 
 {% tabs %}
 {% tab title="MacOS" %}
-#### **Step 1: Install Homebrew**
+**Step 1: Install Homebrew**
 
 * Open Spotlight with Cmd + Space, then open Terminal.
 * Go to https://brew.sh and copy the installation command.
@@ -48,7 +48,7 @@ GZAC (Generieke Zaakafhandelcomponent) is the Dutch municipal variant of Valtimo
 
 👉 Already have Homebrew? You can skip this step.
 
-#### **Step 2: Install Git**
+**Step 2: Install Git**
 
 * Run the following command in Terminal:
 
@@ -56,7 +56,7 @@ GZAC (Generieke Zaakafhandelcomponent) is the Dutch municipal variant of Valtimo
 brew install git
 ```
 
-#### **Step 3: Install Docker Desktop**
+**Step 3: Install Docker Desktop**
 
 * Go to [https://www.docker.com/products/docker-desktop/](https://www.docker.com/products/docker-desktop/)
 * Download the macOS version (Intel or Apple Silicon).
@@ -66,24 +66,24 @@ brew install git
 {% endtab %}
 
 {% tab title="Windows" %}
-#### Step 1: Install Git&#x20;
+**Step 1: Install Git**
 
-* Go to [https://git-scm.com/ ](https://git-scm.com/)
-* Download and install Git for Windows.&#x20;
-* Launch Git Bash from the Start menu after installation.&#x20;
+* Go to [https://git-scm.com/](https://git-scm.com/)
+* Download and install Git for Windows.
+* Launch Git Bash from the Start menu after installation.
 
-#### Step 2: Install Docker Desktop&#x20;
+**Step 2: Install Docker Desktop**
 
-* Visit [https://www.docker.com/products/docker-desktop/](https://www.docker.com/products/docker-desktop/)&#x20;
-* Download and install the Windows version.&#x20;
-* Restart your computer if prompted.&#x20;
-* Open Docker Desktop and wait for the whale icon to appear in the system tray.&#x20;
+* Visit [https://www.docker.com/products/docker-desktop/](https://www.docker.com/products/docker-desktop/)
+* Download and install the Windows version.
+* Restart your computer if prompted.
+* Open Docker Desktop and wait for the whale icon to appear in the system tray.
 {% endtab %}
 {% endtabs %}
 {% endstep %}
 
 {% step %}
-### Start GZAC
+#### Start GZAC
 
 * Open Terminal (macOS) or Git Bash / Windows Terminal (Windows).
 * Clone the GZAC repository:
@@ -110,7 +110,7 @@ docker compose --profile zgw --profile demo up -d
 {% endstep %}
 
 {% step %}
-### Open GZAC in your browser
+#### Open GZAC in your browser
 
 * Open your browser.
 * Visit [http://localhost](http://localhost/)
@@ -122,7 +122,7 @@ docker compose --profile zgw --profile demo up -d
 {% endstep %}
 
 {% step %}
-### Shut down GZAC
+#### Shut down GZAC
 
 * To stop GZAC, return to your terminal and run:
 

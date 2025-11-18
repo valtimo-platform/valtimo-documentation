@@ -8,11 +8,11 @@ This setting is particularly effective in environments that have a large amount 
 
 {% tabs %}
 {% tab title="Via UI" %}
-#### Adding a status
+**Adding a status**
 
 * Go to the `Admin` menu
 * Go to the `Cases` menu and select the case to configure tags for
-* Select the `Case detail`  tab
+* Select the `Case detail` tab
 * Select the `Tags` sub-tab
 
 <figure><img src="../../../.gitbook/assets/case-detail-tags (1).png" alt=""><figcaption></figcaption></figure>
@@ -26,8 +26,7 @@ A tag can be added with the **Add tag** button. A modal will be shown with the c
 * **Key**\
   &#xNAN;_&#x54;he identifier of the tag, this must be a unique value within the scope of the case it is added to. A key based on the name is generated automatically but can be overwritten via the pencil button._
 * **Color**\
-  &#xNAN;_&#x54;ags are are displayed as a badge in the case details and list screen UI._\
-  &#xNAN;_&#x54;his badge will be displayed in the selected color._\
+  &#xNAN;_&#x54;ags are are displayed as a badge in the case details and list screen UI. This badge will be displayed in the selected color._\
   \
   **List of available tag colors:**
   * Red (`RED`)
@@ -41,7 +40,7 @@ A tag can be added with the **Add tag** button. A modal will be shown with the c
   * Cool gray (`COOLGRAY`)
   * Warm gray (`WARMGRAY`)
   * High contrast (`HIGHCONTRAST`)
-  * Outline (`OUTLINE`)\\
+  * Outline (`OUTLINE`)
 
 {% hint style="info" %}
 **Tags are automatically added to the case search filters**
@@ -102,7 +101,7 @@ The tag could also be removed using the same documentDelegateService:
 
 ### Filtering cases
 
-By adding the required tag changes to the process the case list will represent a clear overview of the workload and the progress for that case.  These cases can be made visible via the search UI.\
+By adding the required tag changes to the process the case list will represent a clear overview of the workload and the progress for that case. These cases can be made visible via the search UI.\
 \
 Below are examples of filtering based on multiple or single tags
 

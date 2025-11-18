@@ -18,9 +18,9 @@ To configure this plugin the following properties have to be entered:
 * **Documenten API URL (`url`).** Contains the complete base URL of the Documenten API to connect to. This generally includes the path `/api/v1/`.
 * **Organisation RSIN (`bronorganisatie`).** Contains the RSIN of the organisation. The RSIN number (Rechtspersonen en Samenwerkingsverbanden Identificatie Nummer in Dutch) is an identification number for legal entities and partnerships. This will be used when storing document to indicate who is responsible for creating the Document record in the API.
 * **Authentication plugin configuration (`authenticationPluginConfiguration`).** Reference to another plugin configuration that will be used to add authentication to any request performed on the Documenten API. If no option is available in this field a plugin has to be configured that is able to authenticate for the specific application that hosts the Documenten API. (e.g. OpenZaak)
-*   **Documenten API version (`apiVersion`).** Contains the API version of the Documenten API that is used. An example plugin configuration:&#x20;
+*   **Documenten API version (`apiVersion`).** Contains the API version of the Documenten API that is used. An example plugin configuration:
 
-    <figure><img src="../../.gitbook/assets/configure-plugin (3).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../using-valtimo/plugin/documenten-api/img/configure-plugin.png" alt=""><figcaption></figcaption></figure>
 
 ### Documenten API version
 
@@ -58,7 +58,7 @@ When creating a process link the following properties have to be entered:
 * **Status.** The status of the document. Possible values are `Editing`, `To be confirmed`, `Final` and `Archived` as per the Documenten API standard.
 * **Information object type.** The type of the document. This is the complete URL referring to the document type (or informatieobjecttype) in the Catalogi API. (e.g. https://catalogi-api.example.org/api/v1/informatieobjecttypen/d4acf297-978d-4b2c-a9d3-5efd010ebcb2)
 
-An example process link configuration:&#x20;
+An example process link configuration:
 
 <figure><img src="../../.gitbook/assets/save-document-configuration.png" alt=""><figcaption></figcaption></figure>
 

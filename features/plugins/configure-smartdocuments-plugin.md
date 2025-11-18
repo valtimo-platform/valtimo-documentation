@@ -10,9 +10,9 @@ If the SmartDocuments plugin is not visible in the plugin menu, it is possible t
 
 The **SmartDocuments URL** (`url`), **Username** (`username`) and **Password** (`password`) should all be retrieved from the SmartDocuments application.
 
-An example plugin configuration:&#x20;
+An example plugin configuration:
 
-<figure><img src="../../.gitbook/assets/configure-plugin (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../using-valtimo/plugin/smartdocuments/img/configure-plugin.png" alt=""><figcaption></figcaption></figure>
 
 ## Available actions
 
@@ -36,6 +36,6 @@ A document is generated with data taken from the 'Template data'. The value on t
 
 After filling in all fields, the process-link can be saved. From now on, every time the service task is executed, a document is generated. Remember that the generated document is not visible anywhere yet. A logical next step is to handle the generated document. For example, the next service task can add the generated document to the case.
 
-An example process link configuration:&#x20;
+An example process link configuration:
 
 <figure><img src="../../.gitbook/assets/generate-document-process-link.png" alt=""><figcaption></figcaption></figure>
