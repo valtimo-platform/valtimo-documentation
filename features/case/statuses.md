@@ -24,12 +24,12 @@ A status can be added with the **Add status** button. A modal will be shown with
 <figure><img src="../../.gitbook/assets/image (47).png" alt=""><figcaption></figcaption></figure>
 
 * **Name**\
-  &#xNAN;_&#x55;sed as a label in the case summary and case list, the name is presented in the UI._
+  _&#x55;sed as a label in the case summary and case list, the name is presented in the UI._
 * **Key**\
-  &#xNAN;_&#x54;he identifier of the status, this must be a unique value within the scope of the case it is added to. A key based on the name is generated automatically._
+  _&#x54;he identifier of the status, this must be a unique value within the scope of the case it is added to. A key based on the name is generated automatically._
 * **Color**\
-  &#xNAN;_&#x53;tatuses are are displayed as a badge in the case details and list screen UI._\
-  &#xNAN;_&#x54;his badge will be displayed in the selected color._\
+  _&#x53;tatuses are are displayed as a badge in the case details and list screen UI._\
+  _&#x54;his badge will be displayed in the selected color._\
   \
   **List of available status colors:**
   * Red (`RED`)

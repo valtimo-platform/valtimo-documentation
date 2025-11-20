@@ -18,12 +18,12 @@ When the case handler option is selected the following changes are visible in th
     <figure><img src="../../.gitbook/assets/image (35) (1).png" alt=""><figcaption><p>Case overview with case handler option selected<br></p></figcaption></figure>
 
     * **All cases**\
-      &#xNAN;_&#x54;his overview is the same as for cases that do not have a case handler configured._\
-      &#xNAN;_&#x41;ll cases are displayed on this tab._
+      _&#x54;his overview is the same as for cases that do not have a case handler configured._\
+      _&#x41;ll cases are displayed on this tab._
     * **My cases**\
-      &#xNAN;_&#x4F;verview of cases that are assigned to the user that is currently logged in._
+      _&#x4F;verview of cases that are assigned to the user that is currently logged in._
     * **Unassigned cases**\
-      &#xNAN;_&#x4F;verview of cases that are not assigned to a case handler_\\
+      _&#x4F;verview of cases that are not assigned to a case handler_\\
 * **An "Assignee" column is automatically added to the case list columns**\
   This column displays the case handler assigned to each case in the overview. This column is fixed and can't be removed via the case list configuration page.\\
 * **An option to assign a case handler on the case details page.**\
