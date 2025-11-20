@@ -25,7 +25,7 @@ The following was deprecated:
 
 *   **FormFieldDataResolver `get` method**
 
-    The method `get(String documentDefinitionName, UUID documentId, String... varNames)` was deprecated and\
+    The method `get(String documentDefinitionName, UUID documentId, String... varNames)` was deprecated and
     is replaced with `get(DataResolvingContext dataResolvingContext, String... varNames)`.
 
 Instructions on how to migrate to this version of Valtimo can be found [here](migration.md).
@@ -37,7 +37,7 @@ This version has the following known issues:
 *   **Multiple existing form associations on process definition**
 
     When multiple start forms are associated with a single process definition the user is unable to start a new case of that specific type.
-* **Updating process variables from a form.io submission**\
+* **Updating process variables from a form.io submission**
   Only process variables of type `String`, `Number`, `Boolean` and `Array<String>` are currently supported by the pv. form.io prefix. Any other types will be set to a `null` value.
 * **Form flow definition does not read `nextStep` property**
   * Discovered in version 9.19.0

@@ -23,13 +23,13 @@ In the root directory of your front-end implementation, run the following comman
 
 {% code overflow="wrap" %}
 ```
-curl -L https://github.com/valtimo-platform/valtimo-frontend-libraries/archive/refs/tags/13.0.0.zip \
-  -o valtimo-migration.zip && \
-unzip -q valtimo-migration.zip 'valtimo-frontend-libraries-13.0.0/migration/*' && \
-mv valtimo-frontend-libraries-13.0.0/migration ./migration && \
-rm -rf valtimo-frontend-libraries-13.0.0 valtimo-migration.zip && \
-VALTIMO_DEPS_SOURCE="https://raw.githubusercontent.com/valtimo-platform/valtimo-frontend-libraries/refs/tags/13.0.0/package.json" \
-VALTIMO_VERSION="13.0.0" \
+curl -L https://github.com/valtimo-platform/valtimo-frontend-libraries/archive/refs/tags/13.0.0.zip 
+  -o valtimo-migration.zip && 
+unzip -q valtimo-migration.zip 'valtimo-frontend-libraries-13.0.0/migration/*' && 
+mv valtimo-frontend-libraries-13.0.0/migration ./migration && 
+rm -rf valtimo-frontend-libraries-13.0.0 valtimo-migration.zip && 
+VALTIMO_DEPS_SOURCE="https://raw.githubusercontent.com/valtimo-platform/valtimo-frontend-libraries/refs/tags/13.0.0/package.json" 
+VALTIMO_VERSION="13.0.0" 
 node migration/12-13/migrate.cjs
 ```
 {% endcode %}

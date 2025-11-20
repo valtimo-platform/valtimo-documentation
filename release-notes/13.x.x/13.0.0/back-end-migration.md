@@ -296,8 +296,8 @@ Note the use of the `${currentUserId}` expression. This will not match the usern
 
 #### Document content
 
-For security reasons, the document content has been removed from endpoints returning documents. For example `GET /api/v1/document/{documentId}` and `POST /api/v1/document-definition/name/search`. We recommend not exposing this information, as that can lead to users accessing case information that they should not have accesss to. Only the required information can be displayed using list columns, form-io, widget or summary tabs.\
-\
+For security reasons, the document content has been removed from endpoints returning documents. For example `GET /api/v1/document/{documentId}` and `POST /api/v1/document-definition/name/search`. We recommend not exposing this information, as that can lead to users accessing case information that they should not have accesss to. Only the required information can be displayed using list columns, form-io, widget or summary tabs.
+
 If you still do want to return document content in these endpoints it is possible to turn this back on by enabling the following property.
 
 ```yaml

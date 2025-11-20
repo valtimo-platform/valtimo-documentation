@@ -35,9 +35,9 @@ In the frontend, feature toggles can be configured under the `featureToggles` ke
 *   **`returnToLastUrlAfterTokenExpiration`**
 
     If enabled, the user will be returned to the page they were last on before they were automatically logged out after their refresh token expired.
-* **`enableCompactModeToggle`** \
+* **`enableCompactModeToggle`** 
   If enabled, the user can toggle compact mode in the user settings. When both toggles are enabled, this will free up vertical space by moving the breadcrumbs and page title to the top header next to the logo.&#x20;
-* **`enableFormFlowBreadCrumbs`** \
+* **`enableFormFlowBreadCrumbs`** 
   If enabled, users will see a new breadcrumb trail on top of every form flow. This allows a user to quickly navigate between the different steps of the form flow. See [this page](../../features/case/form-flow.md#bread-crumbs) for more information.
 *   **`enableObjectManagement`**
 
@@ -54,11 +54,11 @@ In the frontend, feature toggles can be configured under the `featureToggles` ke
 *   **`allowUserThemeSwitching`**
 
     If enabled, a new dropdown will appear in user settings, where the user can switch between themes. This feature toggle is enabled by default.
-* **`enableIntermediateSave`** \
+* **`enableIntermediateSave`** 
   If enabled, user will be able to save their progress on a form and continue later. This feature toggle is enabled by default.
 *   **`enablePbacDocumentenApiDocuments`**
 
-    If enabled, access to the list of uploaded documents now requires permissions. Additionally, the backend requires the following property to be set in `application.yml`:\
+    If enabled, access to the list of uploaded documents now requires permissions. Additionally, the backend requires the following property to be set in `application.yml`:
     `valtimo.authorization.zgwDocuments.enabled`
 
 ## Backend

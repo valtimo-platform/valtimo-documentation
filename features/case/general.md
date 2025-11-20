@@ -104,8 +104,8 @@ Plugin action: Link uploaded document to zaak
 
 Access to the content and editability of this tab depends on the version of the case being viewed.
 
-* Final version:\
-  When the case version is final, the tab will be visible but all components are displayed in a read-only state. Additionally, a warning message is shown at the top of the tap with the following message\
-  “This case cannot be updated because it is final”.\
+* Final version:
+  When the case version is final, the tab will be visible but all components are displayed in a read-only state. Additionally, a warning message is shown at the top of the tap with the following message
+  “This case cannot be updated because it is final”.
   This restriction is implemented to prevent accidental modifications to finalize data.
 * When the user is viewing a draft version of the case, all the components within the tab are fully interactive. Users can make edits of all available actions

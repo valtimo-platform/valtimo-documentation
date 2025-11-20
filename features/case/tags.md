@@ -19,17 +19,17 @@ Tags can be added to a case in order to add extra information to a case. Tags ca
 
 A tag can be added with the **Add tag** button. A modal will be shown with the configuration options.
 
-![](../../.gitbook/assets/add-tag-4.png)\
+![](../../.gitbook/assets/add-tag-4.png)
 
 
 
 
-* **Name**\
-  &#xNAN;_&#x55;sed as a label in the case summary and case list, the name is presented in the UI._
-* **Key**\
-  &#xNAN;_&#x54;he identifier of the tag, this must be a unique value within the scope of the case it is added to. A key based on the name is generated automatically but can be overwritten via the pencil button._
-* **Color**\
-  &#xNAN;_&#x54;ags are are displayed as a badge in the case details and list screen UI._\
+* **Name**
+  _&#x55;sed as a label in the case summary and case list, the name is presented in the UI._
+* **Key**
+  _&#x54;he identifier of the tag, this must be a unique value within the scope of the case it is added to. A key based on the name is generated automatically but can be overwritten via the pencil button._
+* **Color**
+  _&#x54;ags are are displayed as a badge in the case details and list screen UI._
   _This badge will be displayed in the selected color._
 
 {% hint style="info" %}
@@ -79,14 +79,14 @@ When tags are configured for a case, an additional search filter is automaticall
 
 ### Setting a case tag
 
-To enable the ability to set tags at certain phases in the process, an expression can be added to any element in the process model where the case tags should set. The following expression is available for setting a case tag via the documentDelegateService:\
-\
+To enable the ability to set tags at certain phases in the process, an expression can be added to any element in the process model where the case tags should set. The following expression is available for setting a case tag via the documentDelegateService:
+
 `${documentDelegateService.addCaseTag(execution, "the-key-of-the-tag")}`&#x20;
 
 ### Removing a case tag
 
-To remove a tag, an expression can be added to any element in the process model where the case tags should be removed. The following expression is available for removing a case tag via the documentDelegateService:\
-\
+To remove a tag, an expression can be added to any element in the process model where the case tags should be removed. The following expression is available for removing a case tag via the documentDelegateService:
+
 `${documentDelegateService.removeCaseTag(execution, "the-key-of-the-tag")}`&#x20;
 
 ## Import and export

@@ -23,16 +23,16 @@ Click **Add widget** to open the create new widget modal that will guide the wid
 
 Five types of widgets are currently supported:
 
-* **Fields**\
-  &#xNAN;_&#x41; set of single data elements in a widget._
-* **Custom component**\
-  &#xNAN;_&#x41;n option to direct to a custom Angular component in de codebase._
-* **Form.io form**\
-  &#xNAN;_&#x54;his type makes is possible to display a Form.io form within a widget. The form is prefilled with case data._
-* **Table**\
-  &#xNAN;_&#x50;resent array case data in a table within a widget._
-* **Collection**\
-  &#xNAN;_&#x50;resent array case data in a collection of cards within a widget._
+* **Fields**
+  _&#x41; set of single data elements in a widget._
+* **Custom component**
+  _&#x41;n option to direct to a custom Angular component in de codebase._
+* **Form.io form**
+  _&#x54;his type makes is possible to display a Form.io form within a widget. The form is prefilled with case data._
+* **Table**
+  _&#x50;resent array case data in a table within a widget._
+* **Collection**
+  _&#x50;resent array case data in a collection of cards within a widget._
 
 <figure><img src="../../../../.gitbook/assets/image (21).png" alt=""><figcaption><p>Choosing widget type</p></figcaption></figure>
 {% endstep %}
@@ -74,19 +74,19 @@ By default each widget is shown in the UI. However, it is possible to add condit
 
 To create a fields widget the following configurations need to be done.
 
-* **Widget title**\
-  &#xNAN;_&#x54;he widget title is presented in the UI at the top-left corner of the widget and should describe the content for that widget._
-* **Configure widget fields**\
-  &#xNAN;_&#x45;ach field can be configured to display case data in a certain way._
+* **Widget title**
+  _&#x54;he widget title is presented in the UI at the top-left corner of the widget and should describe the content for that widget._
+* **Configure widget fields**
+  _&#x45;ach field can be configured to display case data in a certain way._
 
 For each field that is added to the widget the following configuration is required in order to display the data correctly in the UI.
 
-* **Field title**\
-  &#xNAN;_&#x54;his is presented as the label of the field_
-* **Field value**\
-  &#xNAN;_&#x41;dd the exact path to the data in the JSON document._
-* **Display type**\
-  &#xNAN;_&#x53;elect the way the data is presented in the UI. Please find the available display types below._
+* **Field title**
+  _&#x54;his is presented as the label of the field_
+* **Field value**
+  _&#x41;dd the exact path to the data in the JSON document._
+* **Display type**
+  _&#x53;elect the way the data is presented in the UI. Please find the available display types below._
 
 **Display types**
 
@@ -126,7 +126,7 @@ If the formatted value is truncated it will be rounded using the "to-nearest" me
 
 **\*Angular PercentPipe**
 
-Decimal representation options, specified by a string in the following format:\
+Decimal representation options, specified by a string in the following format:
 `{minIntegerDigits}.{minFractionDigits}-{maxFractionDigits}`.
 
 * `minIntegerDigits`: Minimum number of integer digits before the decimal point. Default is `1`.
@@ -139,10 +139,10 @@ The format for the currency indicator. One of the following:
 
 * `code`: Show the code (such as `USD`).
 * `symbol`(default): Show the symbol (such as `$`).
-* `symbol-narrow`: Use the narrow symbol for locales that have two symbols for their currency.\
-  For example, the Canadian dollar CAD has the symbol `CA$` and the symbol-narrow `$`.\
+* `symbol-narrow`: Use the narrow symbol for locales that have two symbols for their currency.
+  For example, the Canadian dollar CAD has the symbol `CA$` and the symbol-narrow `$`.
   If the locale has no narrow symbol, uses the standard symbol for the locale.
-* String: Use the given string value instead of a code or a symbol.\
+* String: Use the given string value instead of a code or a symbol.
   For example, an empty string will suppress the currency & symbol.
 * Boolean (marked deprecated in v5): `true` for symbol and false for `code`.
 
@@ -168,10 +168,10 @@ Once a component is configured in Angular any user is able to configure the comp
 
 Adding a custom component widget to a page is easily done.
 
-* **Widget title**\
-  &#xNAN;_&#x54;he widget title is presented in the UI at the top-left corner of the widget and should describe the content for that widget._
-* **Angular component**\
-  &#xNAN;_&#x52;egistered Angular components in the front-end implementation of Valtimo will be listed in a dropdown menu. This component defines the widget content._
+* **Widget title**
+  _&#x54;he widget title is presented in the UI at the top-left corner of the widget and should describe the content for that widget._
+* **Angular component**
+  _&#x52;egistered Angular components in the front-end implementation of Valtimo will be listed in a dropdown menu. This component defines the widget content._
 
 <figure><img src="../../../../.gitbook/assets/image (30).png" alt=""><figcaption></figcaption></figure>
 
@@ -183,10 +183,10 @@ Adding a custom component widget to a page is easily done.
 
 For the Form.io widget there's only two fields that need to be configured:
 
-* **Widget title**\
-  &#xNAN;_&#x54;he widget title is presented in the UI at the top-left corner of the widget and should describe the content for that widget._
-*   **Form.io form**\
-    &#xNAN;_&#x41; dropdown is available with all Form.io definitions that are available in the implementation_
+* **Widget title**
+  _&#x54;he widget title is presented in the UI at the top-left corner of the widget and should describe the content for that widget._
+*   **Form.io form**
+    _&#x41; dropdown is available with all Form.io definitions that are available in the implementation_
 
     <figure><img src="../../../../.gitbook/assets/image (16).png" alt=""><figcaption></figcaption></figure>
 
@@ -214,25 +214,25 @@ color: var(--cds-text-primary)
 
 A table widget can be used when arrays (lists) are stored in the case data structure and need to be presented as such in the case UI. The following fields need to be configured for a table widget.
 
-* **Widget title**\
-  &#xNAN;_&#x54;he widget title is presented in the UI at the top-left corner of the widget and should describe the content for that widget._
-* **Rows per page**\
-  &#xNAN;_&#x49;f the content exceeds the number of rows pagination will be added in the UI._
-* **Path to table data**\
-  &#xNAN;_&#x54;he exact path in the JSON document that contains the array with data._
-* **Table columns**\
-  &#xNAN;_&#x43;olumns need to be based on the available fields within the array data._
+* **Widget title**
+  _&#x54;he widget title is presented in the UI at the top-left corner of the widget and should describe the content for that widget._
+* **Rows per page**
+  _&#x49;f the content exceeds the number of rows pagination will be added in the UI._
+* **Path to table data**
+  _&#x54;he exact path in the JSON document that contains the array with data._
+* **Table columns**
+  _&#x43;olumns need to be based on the available fields within the array data._
 
 **Configuring table columns**
 
 For each column in the table the following configurations needs to be done.
 
-* **Title**\
-  &#xNAN;_&#x54;he title will be displayed as the label of the field in the widget._
-* **Value**\
-  &#xNAN;_&#x54;he value itself will not actually be configured, the path targeting the value in the JSON document is configured. The value is passed through by the widget._
-* **Display type**\
-  &#xNAN;_&#x53;elect the way the data is presented in the UI. Please find the available display types below._
+* **Title**
+  _&#x54;he title will be displayed as the label of the field in the widget._
+* **Value**
+  _&#x54;he value itself will not actually be configured, the path targeting the value in the JSON document is configured. The value is passed through by the widget._
+* **Display type**
+  _&#x53;elect the way the data is presented in the UI. Please find the available display types below._
 
 {% hint style="info" %}
 The available [display types](widgets.md#fields-widget) are the same as for the fields widget.
@@ -243,28 +243,28 @@ The available [display types](widgets.md#fields-widget) are the same as for the 
 
 Below example shows the configuration for a table that displays uploaded files by there name and creation date.
 
-**The path in the JSON document for the array:**\
+**The path in the JSON document for the array:**
 `doc:/uploadedFiles`
 
-\
+
 **The information from the array that is shown:**
 
-Since the location of the array itself is known it is no longer need to define a full JSON path for the values of the table columns. Only define the data location within the array like so:\
+Since the location of the array itself is known it is no longer need to define a full JSON path for the values of the table columns. Only define the data location within the array like so:
 `data/name`
 
 `data/createdOn`
 
-\
+
 To gather the data the widget code will combine the "Path to table data" field with the value fields from the column configuration. This results in the following JSON paths where x is filled by iterating over the array data.
 
 `doc:/uploadedFiles[x]/data/name`
 
 `doc:/uploadedFiles[x]/data/createdOn`
 
-\
-This configuration is based on below JSON.\
-The uploadedFiles object exists in the root of this JSON document.\
-\
+
+This configuration is based on below JSON.
+The uploadedFiles object exists in the root of this JSON document.
+
 Below the JSON a screenprint of the configuration in the Widget configuration UI.
 {% endhint %}
 
@@ -312,37 +312,37 @@ Below option there is a toggle available named "_First column is the title of th
 
 A collection widget can be used when arrays (lists) are stored in the case data structure and need to be presented as such in the case UI. The following fields need to be configured for a collection widget.
 
-* **Widget title**\
-  &#xNAN;_&#x54;he widget title is presented in the UI at the top-left corner of the widget and should describe the content for that widget._
-* **Number of cards per page**\
-  &#xNAN;_&#x49;f the content exceeds the number of rows pagination will be added in the UI._
-* **Path to collection data**\
-  &#xNAN;_&#x54;he exact path in the JSON document that contains the array with data._
-* **Card title display type**\
+* **Widget title**
+  _&#x54;he widget title is presented in the UI at the top-left corner of the widget and should describe the content for that widget._
+* **Number of cards per page**
+  _&#x49;f the content exceeds the number of rows pagination will be added in the UI._
+* **Path to collection data**
+  _&#x54;he exact path in the JSON document that contains the array with data._
+* **Card title display type**
   Same as each text field, the title of the card can also be set to a certain [display type](widgets.md#fields-widget).
 
 **Configuring cards**
 
 For each card in the collection the following configurations needs to be done.
 
-* **Card title**\
-  &#xNAN;_&#x54;he title of each card can be set to a value from the array items. So the card title is not a label in this case, but a value from a array item._
-* **Display type**\
-  &#xNAN;_&#x53;elect the way the card title is presented in the UI. Please find the available display types below._
+* **Card title**
+  _&#x54;he title of each card can be set to a value from the array items. So the card title is not a label in this case, but a value from a array item._
+* **Display type**
+  _&#x53;elect the way the card title is presented in the UI. Please find the available display types below._
 
 **Configuring card fields**
 
-A set of fields can be configured that will display the data for each card.\
+A set of fields can be configured that will display the data for each card.
 The following configuration needs to be done to add a field to a card.
 
-* **Title**\
-  &#xNAN;_&#x57;ill be displayed as the fields label in the UI._
-* **Value**\
-  &#xNAN;_&#x54;he value itself will not actually be configured, the path targeting the value in the JSON document is configured. The value is passed through by the widget._
-* **Display type**\
-  &#xNAN;_&#x53;elect the way the data is presented in the UI. Please find the available display types below._
-* **Field width**\
-  &#xNAN;_&#x46;or each field the choice can be made to use the full width of the card or half._
+* **Title**
+  _&#x57;ill be displayed as the fields label in the UI._
+* **Value**
+  _&#x54;he value itself will not actually be configured, the path targeting the value in the JSON document is configured. The value is passed through by the widget._
+* **Display type**
+  _&#x53;elect the way the data is presented in the UI. Please find the available display types below._
+* **Field width**
+  _&#x46;or each field the choice can be made to use the full width of the card or half._
 
 {% hint style="info" %}
 The available [display types](widgets.md#fields-widget) are the same as for the fields widget.
@@ -351,27 +351,27 @@ The available [display types](widgets.md#fields-widget) are the same as for the 
 {% hint style="info" %}
 **Collection widget configuration example**
 
-Below example shows the configuration for a collection that displays uploaded files.\
-Each card in the collection will get it's title and the card fields from the array data.\
-\
-The card name will be set to the file name.\
+Below example shows the configuration for a collection that displays uploaded files.
+Each card in the collection will get it's title and the card fields from the array data.
+
+The card name will be set to the file name.
 The card fields will show following information:
 
 * Created on
 * Storage bucket
-* Size (in bytes)\\
+* Size (in bytes)
 
-**The path in the JSON document for the array:**\
+**The path in the JSON document for the array:**
 `doc:/uploadedFiles`
 
-\
+
 **The information from the array that is shown:**
 
-Since the location of the array itself is known it is no longer need to define a full JSON path for the values of the card fields. Only define the data location within the array like so:\
-\
-**Card title:**\
-`data/name`\
-\
+Since the location of the array itself is known it is no longer need to define a full JSON path for the values of the card fields. Only define the data location within the array like so:
+
+**Card title:**
+`data/name`
+
 **Card fields:**
 
 `data/createdOn`
@@ -380,7 +380,7 @@ Since the location of the array itself is known it is no longer need to define a
 
 `data/sizeInBytes`
 
-\
+
 To gather the data the widget code will combine the "Path to collection data" field with the value fields from the card configuration. This results in the following JSON paths where x is filled by iterating over the array data.
 
 `doc:/uploadedFiles[x]/data/name`
@@ -391,10 +391,10 @@ To gather the data the widget code will combine the "Path to collection data" fi
 
 `doc:/uploadedFiles[x]/data/sizeInBytes`
 
-\
-This configuration is based on below JSON.\
-The uploadedFiles object exists in the root of this JSON document.\
-\
+
+This configuration is based on below JSON.
+The uploadedFiles object exists in the root of this JSON document.
+
 Below the JSON a screenprint of the configuration in the Widget configuration UI.
 {% endhint %}
 
@@ -422,8 +422,8 @@ Below the JSON a screenprint of the configuration in the Widget configuration UI
 
 **Presentation in the UI**
 
-See below screenshot for the presentation result of a collection. 6 files where uploaded for this example so 3 pages of each 2 cards are shown in the widget.\
-\
+See below screenshot for the presentation result of a collection. 6 files where uploaded for this example so 3 pages of each 2 cards are shown in the widget.
+
 ![](<../../../../.gitbook/assets/image (27).png>)
 
 </details>

@@ -6,8 +6,8 @@
 
 ## Security improvements
 
-**Breaking Change**\
-As part of the security improvements, scripting in processes is now restricted by a whitelist.\
+**Breaking Change**
+As part of the security improvements, scripting in processes is now restricted by a whitelist.
 If your application uses custom scripting classes, you may need to whitelist them explicitly.
 
 * A security advisory has been published [here](https://github.com/valtimo-platform/valtimo-backend-libraries/security/advisories/GHSA-w48j-pp7j-fj55).

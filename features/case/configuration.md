@@ -13,22 +13,22 @@ On the case management page, a setting can be changed to indicate that cases of 
 
 When the case handler option is selected the following changes are visible in the user interface:
 
-*   **The case list screen is divided in to three tabs**\\
+*   **The case list screen is divided in to three tabs**
 
     <figure><img src="../../.gitbook/assets/image (35) (1).png" alt=""><figcaption><p>Case overview with case handler option selected<br></p></figcaption></figure>
 
-    * **All cases**\
-      &#xNAN;_&#x54;his overview is the same as for cases that do not have a case handler configured._\
-      &#xNAN;_&#x41;ll cases are displayed on this tab._
-    * **My cases**\
-      &#xNAN;_&#x4F;verview of cases that are assigned to the user that is currently logged in._
-    * **Unassigned cases**\
-      &#xNAN;_&#x4F;verview of cases that are not assigned to a case handler_\\
-* **An "Assignee" column is automatically added to the case list columns**\
-  This column displays the case handler assigned to each case in the overview. This column is fixed and can't be removed via the case list configuration page.\\
-* **An option to assign a case handler on the case details page.**\
-  When clicked a dropdown menu is displayed with all case handlers that can be assigned to the case. Case handlers can be configured via [Access control](../access-control/README.md) for each case type.\\
-* **An additional menu in which a case can be claimed.**\
+    * **All cases**
+      _&#x54;his overview is the same as for cases that do not have a case handler configured._
+      _&#x41;ll cases are displayed on this tab._
+    * **My cases**
+      _&#x4F;verview of cases that are assigned to the user that is currently logged in._
+    * **Unassigned cases**
+      _&#x4F;verview of cases that are not assigned to a case handler_
+* **An "Assignee" column is automatically added to the case list columns**
+  This column displays the case handler assigned to each case in the overview. This column is fixed and can't be removed via the case list configuration page.
+* **An option to assign a case handler on the case details page.**
+  When clicked a dropdown menu is displayed with all case handlers that can be assigned to the case. Case handlers can be configured via [Access control](../access-control/README.md) for each case type.
+* **An additional menu in which a case can be claimed.**
   In this menu the logged in user has the possibility to immediately "claim" the case. Once a case is claimed, the unassign option removes the case handler that is currently assigned to the case. Who is allowed to claim, assign and unassign is all configured via [Access control](../access-control/README.md).
 
 Case settings can be configured as shown [here](README.md#creating-a-case-definition)

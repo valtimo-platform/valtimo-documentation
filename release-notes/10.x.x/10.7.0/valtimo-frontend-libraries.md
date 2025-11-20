@@ -16,7 +16,7 @@ The following features were added:
     Added the functionality to edit and delete a note in an order. It can only be edited if the text field is not empty.
 *   **Automatic User Task assignment to Case Handler**
 
-    An additional checkbox has been added to the case assignee section of a case configuration that enables the user to toggle on and off the automatic assignment of user tasks to a case handler if a case has one assigned to it/is claimed by one.\
+    An additional checkbox has been added to the case assignee section of a case configuration that enables the user to toggle on and off the automatic assignment of user tasks to a case handler if a case has one assigned to it/is claimed by one.
     Refer [to this page](https://github.com/valtimo-platform/valtimo-documentation/blob/main/release-notes/major10/10.7.0/broken-reference/README.md) to learn more about this feature.
 *   **Carbon breadcrumbs and page title**
 

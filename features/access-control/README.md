@@ -1,11 +1,11 @@
 # 🔏 Access control
 
-Valtimo uses Policy Based Access Control (PBAC). It's a method of controlling access functions and data based on defined policies. Unlike role-based access control (RBAC), which relies on user roles, PBAC uses detailed policies to determine access rights.\
-\
+Valtimo uses Policy Based Access Control (PBAC). It's a method of controlling access functions and data based on defined policies. Unlike role-based access control (RBAC), which relies on user roles, PBAC uses detailed policies to determine access rights.
+
 In PBAC, access rules are defined based on various attributes such as user identity, resource type, action being performed, and other contextual information. These policies can be very flexible and granular, allowing for precise control over who can access what.
 
 {% hint style="info" %}
-**Who and what?**\
+**Who and what?**
 In the area of _Access and Authentication,_ it is about defining who is allowed to do what. PBAC is about what somebody is allowed to do under certain conditions.
 {% endhint %}
 

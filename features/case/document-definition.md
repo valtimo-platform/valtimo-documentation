@@ -43,9 +43,9 @@ Available since Valtimo `13`
 
 ![Creating a document definition](../../.gitbook/assets/create-document-definition.png)
 
-The chosen title will be validated and based upon the title a read-only case definition key will be generated. This is to create a unique identifier for that case definition without spaces or special characters. Click the **Save** button to create the case with the chosen title.\
-\
-The case definition is created and the case details page is displayed upon completion.\
+The chosen title will be validated and based upon the title a read-only case definition key will be generated. This is to create a unique identifier for that case definition without spaces or special characters. Click the **Save** button to create the case with the chosen title.
+
+The case definition is created and the case details page is displayed upon completion.
 A valid empty JSON schema is created with the title and id based on the given title.
 
 <figure><img src="../../.gitbook/assets/image (11) (1).png" alt=""><figcaption><p>Newly created example case</p></figcaption></figure>
@@ -152,10 +152,10 @@ In edit mode, the UI editor will constantly validate the JSON file structure. Th
 {% tab title="Via IDE" %}
 **Edit the document definition in the codebase**
 
-Open the document definition in the IDE and edit the definition as per the JSON schema standard. More information on JSON schema can be found [here](https://json-schema.org/).\
-\
-The location of the document definitions in the Valtimo Java/Kotlin backend: `*/resources/config/case/*/*/document/definition`\
-\
+Open the document definition in the IDE and edit the definition as per the JSON schema standard. More information on JSON schema can be found [here](https://json-schema.org/).
+
+The location of the document definitions in the Valtimo Java/Kotlin backend: `*/resources/config/case/*/*/document/definition`
+
 Changes will only be available in the application once the changes have been deployed via the CI/CD pipeline.
 {% endtab %}
 {% endtabs %}

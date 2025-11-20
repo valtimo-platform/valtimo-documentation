@@ -124,7 +124,7 @@ The `/v1/permissions` endpoint now returns 'false' in case of an exception, inst
 
 #### Changeset module supports config changes
 
-The changeset module now supports changes in the structure of auto-deployment files. This way, new functionality can be added to existing auto-deployment files without having to migrate existing changeset database records.\
+The changeset module now supports changes in the structure of auto-deployment files. This way, new functionality can be added to existing auto-deployment files without having to migrate existing changeset database records.
 It is possible dashboard auto-deployment files that have previously been deployed result in new checksums. As a one-time fix, these checksums should be updated manually in the `valtimo_changelog` table in the database.
 
 #### Form view model support for Form.io wizard

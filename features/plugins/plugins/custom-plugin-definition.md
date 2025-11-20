@@ -130,8 +130,8 @@ class SamplePluginFactory(
 
 #### Optional additional steps <a href="#optional-additional-steps" id="optional-additional-steps"></a>
 
-The backend part of the Sample plugin is now ready. Some topics have not yet been mentioned. These are optional and can be found at the bottom of this page.\
-@PluginEvent\
+The backend part of the Sample plugin is now ready. Some topics have not yet been mentioned. These are optional and can be found at the bottom of this page.
+@PluginEvent
 @PluginCategory
 
 ### Frontend <a href="#frontend" id="frontend"></a>

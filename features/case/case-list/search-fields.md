@@ -36,21 +36,21 @@ This allows for faster editing of search fields or exchanging different search f
 
 #### **Available actions**
 
-* **Create**\
+* **Create**
   Because each case holds its own set of data, search fields can be configured per case. A button to create a new search field is available at the top of the displayed search field list. A modal for filling in the data will be presented when clicking on this button. It is necessary to fill in all the required data to enable the `submit` button. The key field is specific identification data, so if the key is not unique, you will not be able to save the search field.
 
 <figure><img src="../../../.gitbook/assets/add-search-field.png" alt=""><figcaption><p>Modal to configure search field</p></figcaption></figure>
 
-* **Edit**\
+* **Edit**
   When clicking on an entry in the list of `search fields`, a modal opens with the fields pre-filled with the selected item's data. It is possible to edit all the fields, except for the key. When clicking `submit`, the field data is automatically updated in the list.
 
 <figure><img src="../../../.gitbook/assets/edit-search-field.png" alt=""><figcaption><p>Modal to configure search field - prefilled</p></figcaption></figure>
 
-* **Reorder**\
+* **Reorder**
   At the far right next to the 3 dotted menu there are two arrow buttons for reordering the data. The line will be moved in the corresponding direction by clicking the up or down arrow button. When there is no possibility of moving the line, the reorder buttons will be disabled.
-* **Delete**\
+* **Delete**
   At the far right of each search field in the list there is a menu under 3 dots. This menu contains the delete option. When deleting a confirmation is shown with the information that this action can't be undone.
-* **Download**\
+* **Download**
   A download icon is available next to the Add search field button at the top of the list. A JSON formatted file with all the information in the list will be downloaded.
 
 <figure><img src="../../../.gitbook/assets/image (45).png" alt=""><figcaption></figcaption></figure>
@@ -103,10 +103,10 @@ The **Title** field is not mandatory and if left blank a translation of the key 
 {% hint style="info" %}
 **Example configuration for `doc:` and `case:` prefixes**
 
-**Path:** `case:assigneeFullname`\
-This path targets the assigned case handler's full name and will search that field when used in the UI.\
-\
-**Path:** `doc:request.budget`\
+**Path:** `case:assigneeFullname`
+This path targets the assigned case handler's full name and will search that field when used in the UI.
+
+**Path:** `doc:request.budget`
 This path targets a property in the case data. The `doc:` prefix directs to the content object of the case document so the same JSON paths can be used as where used in the Form.io forms to gather the data.
 {% endhint %}
 

@@ -198,7 +198,7 @@ Instructions are available in the README files of above mentioned repositories.
 {% endtab %}
 {% endtabs %}
 
-\
+
 Below pages contain additional information for engineers and developers for making choices in database type, available modules and an overview of tested versions in a compatibility matrix.
 
 * [Configuring the database](configure-database.md)

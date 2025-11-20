@@ -25,11 +25,11 @@ A column can be added by clicking on the **Add column** button. This will open t
 
 <figure><img src="https://valtimo.gitbook.io/valtimo-documentation/~gitbook/image?url=https%3A%2F%2F181910120-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FG21VIGcgPc1cyGRZY5CR%252Fuploads%252Fgit-blob-a712fd84698a2df44f06dd35179cc4adc6fe57c3%252Fadd-task-list-column.png%3Falt%3Dmedia&#x26;width=300&#x26;dpr=4&#x26;quality=100&#x26;sign=c8605b88&#x26;sv=2" alt=""><figcaption><p>Add task list column</p></figcaption></figure>
 
-* **Title**\
+* **Title**
   If this field is filled in, this title will display as the column header, overriding any available translations.
-* **Key**\
+* **Key**
   A unique key by which the column is identified. If the key is not unique, you will not be able to save the column.
-* **Path**\
+* **Path**
   A path which leads to the property you want to show. For the document's JSON schema, follow this example: `doc:customer.firstName`. For document properties, follow these examples: `case:createdBy`, or `case:sequence`, or `case:assigneeFullName`.
 
 {% hint style="info" %}
@@ -38,11 +38,11 @@ A column can be added by clicking on the **Add column** button. This will open t
 When there are special characters in a property, the property must be enclosed in quotes. For example: case:"loan-accepted".
 {% endhint %}
 
-* **Display type**\
+* **Display type**
   This option decides how the data is eventually displayed in the table.
-* **Sortable**\
+* **Sortable**
   Whether the column will be sortable by the user
-* **Default Sort**\
+* **Default Sort**
   If this field has a value, the table will be sorted by default on this property, in the direction specified. Only one column at a time can have this property. On creating a new column, if another column already has a default sort specified, this input field will be disabled.
 {% endtab %}
 

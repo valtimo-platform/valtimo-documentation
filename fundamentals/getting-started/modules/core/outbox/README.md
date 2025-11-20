@@ -44,7 +44,7 @@ valtimo:
 
 ### Disabling the outbox
 
-It is possible to disable the outbox functionality without having to remove the module. This is useful for environments where you might not want the overhead this module adds.\
+It is possible to disable the outbox functionality without having to remove the module. This is useful for environments where you might not want the overhead this module adds.
 When disabled, a no-operation `OutboxService` implementation bean will be used. This will be the only `outbox` bean available to the application.
 
 The outbox will be disabled by setting the following application property:

@@ -1,7 +1,7 @@
 # Configuring roles
 
-In a new implementation of Valtimo no roles are configured by default. `ROLE_ADMIN` always has access to the admin menu in order to allow primary setup. Access control permissions can be configured by defining PERMISSIONS for each ROLE.\
-\
+In a new implementation of Valtimo no roles are configured by default. `ROLE_ADMIN` always has access to the admin menu in order to allow primary setup. Access control permissions can be configured by defining PERMISSIONS for each ROLE.
+
 There are different ways of configuring roles in Valtimo.
 
 * Upload a valid permissions JSON via the UI
@@ -52,7 +52,7 @@ The roles should be defined before permissions can be deployed. The file contain
 
 {% tabs %}
 {% tab title="Via UI" %}
-Roles can be edited by clicking on that role. This opens the detail page for that role.\
+Roles can be edited by clicking on that role. This opens the detail page for that role.
 Then, by clicking on the three dots next to the `Save` button, the role can be edited by clicking on "Edit metadata".
 
 ![updating-a-role-example](../../.gitbook/assets/updating-a-role.png)

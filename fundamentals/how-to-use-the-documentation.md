@@ -1,19 +1,19 @@
 # 📖 How to use this documentation
 
-Since there are multiple ways to approach case and process implementations in Valtimo we've structured the documentation to support this. The documentation structure is feature based. Documentation is written for each feature explaining the available functionality for that feature and how to configure the feature.\
-\
-Instructions are available for configuration via the User Interface (**UI**) or directly in the source code via an Integrated Development Environment (**IDE**).\
-\
+Since there are multiple ways to approach case and process implementations in Valtimo we've structured the documentation to support this. The documentation structure is feature based. Documentation is written for each feature explaining the available functionality for that feature and how to configure the feature.
+
+Instructions are available for configuration via the User Interface (**UI**) or directly in the source code via an Integrated Development Environment (**IDE**).
+
 Within each feature the following subjects are documented:
 
-* **Required knowledge indication**\
-  &#xNAN;_&#x49;f applicable the knowledge pre-requisites for that feature are listed_
-* **Feature description and explanation**\
-  &#xNAN;_&#x57;hat is the primary function of the feature, what does it do._
-* **Feature configuration via UI and IDE**\
-  &#xNAN;_&#x44;ocumentation on how to configure the feature._
-* **For developers**\
-  &#xNAN;_&#x54;echnical documentation for the feature written primarily for software developers. These pages can help when altering a feature to your own needs or if you would like to extend certain features._
+* **Required knowledge indication**
+  _&#x49;f applicable the knowledge pre-requisites for that feature are listed_
+* **Feature description and explanation**
+  _&#x57;hat is the primary function of the feature, what does it do._
+* **Feature configuration via UI and IDE**
+  _&#x44;ocumentation on how to configure the feature._
+* **For developers**
+  _&#x54;echnical documentation for the feature written primarily for software developers. These pages can help when altering a feature to your own needs or if you would like to extend certain features._
 
 {% hint style="info" %}
 The "**For developers**" section in each feature always has the knowledge pre-requisite on software development. More detailed technical feature information on the Java/Kotlin and Angular code is given in these sections.

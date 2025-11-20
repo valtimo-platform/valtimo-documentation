@@ -4,7 +4,7 @@ Search fields add the ability to filter cases. Each search field adds the abilit
 
 ## Creating search fields
 
-**Endpoint:**\
+**Endpoint:**
 `POST /api/v1/document-search/{documentDefinitionName}/fields`
 
 **Request body:**

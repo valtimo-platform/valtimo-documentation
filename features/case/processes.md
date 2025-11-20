@@ -23,19 +23,19 @@ When editing an existing process, the following is shown:
 
 <div align="left" data-full-width="false"><figure><img src="../../.gitbook/assets/image (33) (1).png" alt=""><figcaption><p>Link a process to a case definition</p></figcaption></figure></div>
 
-The toggles can be used to identify what type of process is being linked. Some processes are relevant when a new case is started and other processes are only relevant in certain states of the case. Be sure to press Save in order to store the changes.\
+The toggles can be used to identify what type of process is being linked. Some processes are relevant when a new case is started and other processes are only relevant in certain states of the case. Be sure to press Save in order to store the changes.
 
 
 * [x] **Process creates new case**
 
 These types of processes generally have the start form configured that is used to create new cases. Connect the process and select the checkbox. At least one process should have this option selected, otherwise the "Create New Case" button will remain disabled.
 
-Multiple start forms can exist for a single case and if this is configured a pre-selection modal will appear presenting available start forms when the "Create New Cas&#x65;**"** button is clicked.\
+Multiple start forms can exist for a single case and if this is configured a pre-selection modal will appear presenting available start forms when the "Create New Cas&#x65;**"** button is clicked.
 
 
 * [x] **Can be started within existing case**
 
-Select this checkbox for processes that support a case during a specific period or state. These processes are available under the "Start" button on any tab of the case details.\
+Select this checkbox for processes that support a case during a specific period or state. These processes are available under the "Start" button on any tab of the case details.
 
 
 * [x] **Do not select anything**
@@ -48,9 +48,9 @@ These sub-processes are not starting processes for the case and should not appea
 {% tab title="Via IDE" %}
 In order to link processes to a case the following steps are necessary:
 
-1. Create a process document link file (ending with `.json`) under the following path: `*/resources/config/case/{case-definition-key}/{version-tag}/process-document-link/`.\
-   \
-   The name should correspond with the document definition ID\
+1. Create a process document link file (ending with `.json`) under the following path: `*/resources/config/case/{case-definition-key}/{version-tag}/process-document-link/`.
+   
+   The name should correspond with the document definition ID
    (e.g. a document definition `example-case.schema.document-definition.json` with the ID `example-case.schema` requires the process document file to be named `example-case.process-document-link.json`.
 2. Specify the process(es) that should be linked to the document. More than one process can be linked to the same document by adding multiple configurations to the array.
 

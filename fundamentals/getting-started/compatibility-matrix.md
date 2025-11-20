@@ -1,12 +1,12 @@
 # Compatibility matrix
 
 {% hint style="info" %}
-**Note**\
+**Note**
 Follow the instructions [on this page](https://update.angular.io/) for upgrading Angular
 {% endhint %}
 
 {% hint style="warning" %}
-**Warning**\
+**Warning**
 Mixing versions is not recommended. Valtimo is always tested according to the matrix. Hotfixes are supported on all versions.
 {% endhint %}
 
