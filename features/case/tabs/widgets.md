@@ -436,6 +436,86 @@ See below screenshot for the presentation result of a collection. 6 files where 
 
 </details>
 
+<details>
+
+<summary>Map widget</summary>
+
+{% hint style="info" %}
+**Knowledge requirements**
+
+A map widget shows a world map with geometry drawn on top of it.
+
+* **Widget title**\
+  \&#xNAN;_The widget title is presented in the UI at the top-left corner of the widget and should describe the content for that widget._
+
+### Configuring layers
+
+For a layer in the map widget, the following configuration needs to be done.
+
+* **Path to GeoJSON data**\
+  &#xNAN;_&#x54;he path targeting the GeoJSON in the JSON document is configured. It is not possible to enter the GeoJSON data directly in this field, only a path to this data._
+
+**Example values of the 'Path to GeoJSON data' for the JSON document below**\
+- `doc:/featureCollection`
+- `doc:/featureCollection/features/0`
+- `doc:/featureCollection/features/1`
+- `doc:/featureCollection/features/2`
+- `doc:/featureCollection/features/0/geometry`
+- `doc:/featureCollection/features/1/geometry`
+- `doc:/featureCollection/features/2/geometry`
+- `doc:/featureCollection/features/0/geometry/coordinates`
+- `doc:/featureCollection/features/1/geometry/coordinates`
+- `doc:/featureCollection/features/2/geometry/coordinates`
+
+**JSON document content:**
+
+```json
+{
+  ...
+  "featureCollection": {
+    "type": "FeatureCollection",
+    "features": [
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [102.0, 0.5]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "LineString",
+          "coordinates": [
+            [102.0, 0.0],
+            [103.0, 1.0],
+            [104.0, 0.0],
+            [105.0, 1.0]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [100.0, 0.0],
+              [101.0, 0.0],
+              [101.0, 1.0],
+              [100.0, 1.0],
+              [100.0, 0.0]
+            ]
+          ]
+        }
+      }
+    ]
+  }
+}
+```
+
+</details>
+
 ## JSON Editor
 
 Widgets for a case can also be configured directly through a JSON editor. For process engineers, configuring widgets in JSON may offer greater control and efficiency. In the second tab of the Widget configuration UI, a JSON editor displays the complete widget configuration in JSON format. This editor includes error-checking functionality to ensure the JSON structure is correct.
