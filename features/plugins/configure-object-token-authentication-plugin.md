@@ -25,4 +25,4 @@ To configure this plugin the following properties have to be entered:
 
 An example plugin configuration:
 
-<figure><img src="../../using-valtimo/plugin/object-token-authentication/img/configure-plugin.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/configure-plugin (7).png" alt=""><figcaption></figcaption></figure>

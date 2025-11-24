@@ -21,7 +21,7 @@ The **Add tab** button opens the _Add new tab in \<case>_ modal, beginning with 
     <figure><img src="../../../../.gitbook/assets/image (2).png" alt=""><figcaption><p>Case tab types</p></figcaption></figure>
 
 **Tab name (optional)**\
-\&#xNAN;_Configured name that will be used to identify the Case tab in the UI._
+\_Configured name that will be used to identify the Case tab in the UI._
 
 {% hint style="info" %}
 This field is not mandatory and if left blank a translation of the key will be shown if configured. Each tab name follows this logic:
@@ -32,13 +32,13 @@ This field is not mandatory and if left blank a translation of the key will be s
 {% endhint %}
 
 **Key**\
-\&#xNAN;_This is the identifier of the tab and needs to be unique within a case definition. Possible translations need to be configured with this key._
+\_This is the identifier of the tab and needs to be unique within a case definition. Possible translations need to be configured with this key._
 
 **Choose standard content**\
-\&#xNAN;_A list of available standard tabs is presented in a dropdown menu. Already configured tabs are filtered from this list._
+\_A list of available standard tabs is presented in a dropdown menu. Already configured tabs are filtered from this list._
 
 **Task list visible on tab**\
-\&#xNAN;_When set the task list will be displayed on the right side of the tab in the UI._
+\_When set the task list will be displayed on the right side of the tab in the UI._
 {% endtab %}
 
 {% tab title="Via IDE" %}

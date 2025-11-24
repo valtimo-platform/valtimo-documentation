@@ -19,7 +19,7 @@ To configure this plugin the following properties have to be entered:
 
 An example plugin configuration:
 
-<figure><img src="../../using-valtimo/plugin/catalogi-api/img/configure-plugin.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/configure-plugin (6).png" alt=""><figcaption></figcaption></figure>
 
 ## Available actions
 
