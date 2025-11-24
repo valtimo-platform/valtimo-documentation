@@ -50,7 +50,7 @@ class MeetingDocumentMapper() : AuthorizationEntityMapper<Meeting, JsonSchemaDoc
 
 ## How to configure conditions for a related resource
 
-In order to configure conditions for a related resource, a mapper needs to exist that can map from the primary resource to the related resource. Some mappers come packaged with Valtimo. Which mappers these are can be found on the [reference page](../../../nog-een-plek-geven/reference/modules/authorization.md).
+In order to configure conditions for a related resource, a mapper needs to exist that can map from the primary resource to the related resource. Some mappers come packaged with Valtimo. Which mappers these are can be found on the [reference page](broken-reference).
 
 When a mapper to another resource exists, a condition of type container can be used to nest conditions on the related resource. This condition has a conditions array that can be used to define conditions that apply to the related resource.
 

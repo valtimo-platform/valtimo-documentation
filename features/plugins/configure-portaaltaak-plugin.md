@@ -53,7 +53,7 @@ Instead of using the `Process completed Portaaltaak` process it is possible to c
 * **verwerkerTaakId.** The id of the task to be completed.
 * **documentUrls.** A list of document URLs of documents stored in the Documenten API. Can be used as Collection in BPMN multi-instance elements to iterate over the list.
 
-![img.png](../../.gitbook/assets/document-urls-collection-example.png)
+![img.png](<../../.gitbook/assets/document-urls-collection-example (1).png>)
 
 ## Available actions
 

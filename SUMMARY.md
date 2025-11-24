@@ -161,6 +161,7 @@
 
 * [Release notes](release-notes/release-notes.md)
 * [13.x.x](release-notes/13.x.x/README.md)
+  * [13.6.0](release-notes/13.x.x/13.6.0/README.md)
   * [13.5.0](release-notes/13.x.x/13.5.0/README.md)
   * [13.4.0](release-notes/13.x.x/13.4.0/README.md)
     * [13.4.1](release-notes/13.x.x/13.4.0/13.4.1.md)
@@ -177,6 +178,7 @@
     * [Front-end migration](release-notes/13.x.x/13.0.0/front-end-migration.md)
     * [Back-end migration](release-notes/13.x.x/13.0.0/back-end-migration.md)
 * [12.x.x](release-notes/12.x.x/README.md)
+  * [12.20.0](release-notes/12.x.x/12.20.0.md)
   * [12.19.0](release-notes/12.x.x/12.19.0.md)
   * [12.18.0](release-notes/12.x.x/12.18.0.md)
   * [12.17.0](release-notes/12.x.x/12.17.0/README.md)
@@ -355,7 +357,6 @@
 
 * [References](nog-een-plek-geven/reference/README.md)
   * [Modules](nog-een-plek-geven/reference/modules/README.md)
-    * [Authorization](nog-een-plek-geven/reference/modules/authorization.md)
     * [Document](nog-een-plek-geven/reference/modules/document.md)
     * [Object management](nog-een-plek-geven/reference/modules/object-management.md)
   * [User interface](nog-een-plek-geven/reference/user-interface/README.md)
