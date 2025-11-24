@@ -100,7 +100,7 @@ The **End recovery period** will end a recovery period for the linked zaak in th
 
 After ending the recovery period, the due date becomes: `(zaak.originalDueDate + maximumDuration) - (actualDuration - maximumDuration)`
 
-### Retrieve case decisions (zaakbesluiten)
+### Retrieve zaakbesluiten
 
 The **Retrieve zaakbesluiten** fetches all case decisions (zaakbesluiten) URLs from the zaak in the zaken API. When creating a process link the following property can be entered:
 * **Result process variable** The name of the process variable in which the case decisions (zaakbesluiten) URLs must be stored.
