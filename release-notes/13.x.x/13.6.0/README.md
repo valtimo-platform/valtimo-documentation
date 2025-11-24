@@ -10,6 +10,12 @@
 
 * A new field has been added to the set-zaakstatus action in the Zaken API plugin that allows setting the date of a zaak-status.
 
+## Enhancements
+
+**Some enhancement**
+
+  Some explanation of enhancement
+
 ## Bugfixes
 
 * Some bugfix
