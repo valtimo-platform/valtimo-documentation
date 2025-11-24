@@ -12,7 +12,7 @@ The **SmartDocuments URL** (`url`), **Username** (`username`) and **Password** (
 
 An example plugin configuration:
 
-<figure><img src="../../using-valtimo/plugin/smartdocuments/img/configure-plugin.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/configure-plugin (3).png" alt=""><figcaption></figcaption></figure>
 
 ## Available actions
 

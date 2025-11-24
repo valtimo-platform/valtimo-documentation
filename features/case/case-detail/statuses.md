@@ -22,12 +22,12 @@ A status can be added with the **Add status** button. A modal will be shown with
 <figure><img src="../../../.gitbook/assets/image (47).png" alt=""><figcaption></figcaption></figure>
 
 * **Name**\
-  \_Used as a label in the case summary and case list, the name is presented in the UI._
+  \_Used as a label in the case summary and case list, the name is presented in the UI.\_
 * **Key**\
-  \_The identifier of the status, this must be a unique value within the scope of the case it is added to. A key based on the name is generated automatically but can be overwritten via the pencil button._
+  \_The identifier of the status, this must be a unique value within the scope of the case it is added to. A key based on the name is generated automatically but can be overwritten via the pencil button.\_
 * **Color**\
-  \_Statuses are are displayed as a badge in the case details and list screen UI._\
-  \_This badge will be displayed in the selected color._\
+  \_Statuses are are displayed as a badge in the case details and list screen UI.\
+  &#xNAN;_\_This badge will be displayed in the selected color._\
   \
   **List of available status colors:**
   * Red (`RED`)

@@ -22,11 +22,11 @@ A tag can be added with the **Add tag** button. A modal will be shown with the c
 <figure><img src="../../../.gitbook/assets/add-tag.png" alt=""><figcaption></figcaption></figure>
 
 * **Name**\
-  _&#x55;sed as a label in the case summary and case list, the name is presented in the UI._
+  &#xNAN;_&#x55;sed as a label in the case summary and case list, the name is presented in the UI._
 * **Key**\
-  _&#x54;he identifier of the tag, this must be a unique value within the scope of the case it is added to. A key based on the name is generated automatically but can be overwritten via the pencil button._
+  &#xNAN;_&#x54;he identifier of the tag, this must be a unique value within the scope of the case it is added to. A key based on the name is generated automatically but can be overwritten via the pencil button._
 * **Color**\
-  _&#x54;ags are are displayed as a badge in the case details and list screen UI. This badge will be displayed in the selected color._\
+  &#xNAN;_&#x54;ags are are displayed as a badge in the case details and list screen UI. This badge will be displayed in the selected color._\
   \
   **List of available tag colors:**
   * Red (`RED`)
