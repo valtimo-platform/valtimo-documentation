@@ -86,4 +86,3 @@ When creating a process link the following properties can be provided:
 * **Response deadline** (Optional) The date until which a defense against the decision is possible.
 
 Note: at least one of the optional properties has to be provided.
-
