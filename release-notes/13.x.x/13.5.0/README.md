@@ -6,32 +6,28 @@
 
 ## New Features
 
-
-
 * **Performance improvements**
 
 Significant performance improvements when retrieving tasks and cases, smaller performance improvements everywhere else.
 
 * **Improved logging for developers**
 
-This release includes an internal improvement to how Valtimo logs request and response data.\
+This release includes an internal improvement to how Valtimo logs request and response data.
 When working with JSON-based integrations, log entries are now automatically formatted to be easier to read.
 
 * **Improved Notificaties API logging**
 
 When an abonnement cannot be registered or updated with the Notificaties API, additional information is provided on what went wrong.
 
-* **OpenZaak-plugin updates**
+* **Zaken-API plugin updates**
 
-The OpenZaak-plugin is now updated with the new action allowing to remove the Zaak-role once the role is no longer available
+An action was added to the Zaken-API plugin, allowing to delete a Zaak-role.
 
 * **Interactive table widget**
 
 The Case widgets now have a new widget type provided out of the box: Interactive table. This allows defining actions such as redirecting to a link on row click or via a button in a table toolbar.
 
 ## Enhancements
-
-
 
 *   **Updated dependencies to improve application security**
 
@@ -45,6 +41,7 @@ The Case widgets now have a new widget type provided out of the box: Interactive
     * Guava (`33.4.8-jre` → `33.5.0-jre`)
     * Apache Tika (`3.1.0` → `3.2.3`)
     * GraalVM (`24.2.1` → `25.0.1`)
+
 * **Improved Notificaties API processing**
 
 The Notificaties API plugin now safely stores incoming notifications, prevents duplicates, processes them in the background with automatic retries and clean-up, and offers an admin view for failed messages together with a health check that warns when too many remain.
