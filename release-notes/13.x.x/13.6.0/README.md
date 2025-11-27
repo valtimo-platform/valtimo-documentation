@@ -1,7 +1,7 @@
 # 13.6.0
 
 {% hint style="info" %}
-**Release date xx-November - 2025**
+**Release date 26-November - 2025**
 {% endhint %}
 
 ## New Features
