@@ -29,7 +29,7 @@ To configure this plugin the following properties have to be entered:
 * **Object management configuration (`objectManagementConfigurationId`).** Reference to the object management configuration that can be used to store the taak objects. If no option is available in this field, an object management configuration has to be created first.
 * **Process to complete Portaaltaak (`completeTaakProcess`).** Reference to the process that will be started to handle completion of tasks. This can do additional steps like handling the file attachments. A process task should be configured in this process definition to handle the completion itself. This can be done using the [Complete Portaaltaak](configure-portaaltaak-plugin.md#complete-portaal-taak) plugin action. The process 'Process completed Portaaltaak' that is shipped with Valtimo can be used here. See [this section](configure-portaaltaak-plugin.md#configuring-the-task-completion-process) on how to set up this process.
 
-An example plugin configuration: ![example plugin configuration](<../../.gitbook/assets/configure-plugin (2).png>)
+An example plugin configuration: ![example plugin configuration](<../../.gitbook/assets/configure-plugin (13).png>)
 
 ## Configuring the task completion process
 

@@ -20,7 +20,7 @@ To configure this plugin the following properties have to be entered:
 * **Authentication plugin configuration (`authenticationPluginConfiguration`).** Reference to another plugin configuration that will be used to add authentication to any request performed on the Documenten API. If no option is available in this field a plugin has to be configured that is able to authenticate for the specific application that hosts the Documenten API. (e.g. OpenZaak)
 *   **Documenten API version (`apiVersion`).** Contains the API version of the Documenten API that is used. An example plugin configuration:
 
-    <figure><img src="../../.gitbook/assets/configure-plugin (5).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/configure-plugin (12).png" alt=""><figcaption></figcaption></figure>
 
 ### Documenten API version
 

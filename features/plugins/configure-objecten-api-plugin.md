@@ -19,7 +19,7 @@ To configure this plugin the following properties have to be entered:
 
 An example plugin configuration:
 
-![example plugin configuration](<../../.gitbook/assets/configure-plugin (1).png>)
+![example plugin configuration](<../../.gitbook/assets/configure-plugin (11).png>)
 
 ## Using the plugin
 
