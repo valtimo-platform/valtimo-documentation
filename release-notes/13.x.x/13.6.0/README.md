@@ -6,13 +6,17 @@
 
 ## New Features
 
-**Date status set added to zaken api plugin**
+**Date status set added to Zaken API plugin**
 
 A new field has been added to the set-zaakstatus action in the Zaken API plugin that allows setting the date of a zaak-status.
 
-**New action is added to zaken api plugin**
+**New action is added to Zaken API plugin**
 
 A new action has been added to zaken api plugin allowing to collect zaak-besluiten
+
+**New action is added to Besluiten API plugin**
+
+The Besluiten API plugin is extended with a plugin action that allows the expiration date and expiration reason of a previously recorded decision to be updated.
 
 **Map widget**
 
