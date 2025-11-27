@@ -49,11 +49,9 @@ The Case widgets now have a new widget type provided out of the box: Interactive
 
 The Notificaties API plugin now safely stores incoming notifications, prevents duplicates, processes them in the background with automatic retries and clean-up, and offers an admin view for failed messages together with a health check that warns when too many remain.
 
-Make sure to add the admin menu entry described [here](https://github.com/valtimo-platform/valtimo-documentation/blob/v13.5/features/plugins/configure-notificaties-api-plugin.md) so users can reach the new overview.
+Make sure to add the admin menu entry described [here](../../../features/plugins/configure-notificaties-api-plugin.md) so users can reach the new overview.
 
 ## Bugfixes
-
-
 
 * Process links referencing forms are now always included when creating a new draft version of an existing case definition.
 * Case tags and header widgets are now included when creating a new draft version of an existing case definition.
@@ -64,3 +62,4 @@ Make sure to add the admin menu entry described [here](https://github.com/valtim
 * The issue where after the case version update in Verzoeken plugin was no longer possible to create subscriptions and filters is resolved
 * The layout of the widgets which contain more than 5 fields is improved
 * The issue when the tabs get broken when the user is trying to switch between the tabs with the case open is resolved
+* The OpenNotificaties abonnement is now registered after the application startup, rather than during initialization.

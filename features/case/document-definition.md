@@ -12,7 +12,7 @@ This page requires:
 
 There are two ways of creating new document definitions in Valtimo.
 
-* Import a case definition, see [here](README.md#import-and-export).
+* Import a case definition, see [here](./#import-and-export).
 * Create an empty case via the UI
   * Place a valid JSON schema in the codebase via an IDE
 
@@ -28,7 +28,7 @@ Best practices:
 
 {% tabs %}
 {% tab title="Via UI" %}
-#### Create an empty case
+**Create an empty case**
 
 {% hint style="success" %}
 Available since Valtimo `13`
@@ -62,13 +62,14 @@ When uploading a JSON schema, make sure that the `$id` and `title` fields both h
 {% endtab %}
 
 {% tab title="Via IDE" %}
-#### Place a valid JSON schema in the codebase
+\#### Place a valid JSON schema in the codebase
 
 To create a document definition, the following steps are necessary:
 
 *   Create a document definition file (ending with `.schema.document-definition.json`) under the following path: `*/resources/config/case/{case-definition-key}/{version-tag}/document/definition/`. The name should correspond with the ID of the document ID. The ID itself should end with `.schema`.
 
-    {% code title="person.schema.document-definition.json" %}
+    \{% code title="person.schema.document-definition.json" %\}
+
     ```json
     {
       "$id": "person.schema",
@@ -79,10 +80,12 @@ To create a document definition, the following steps are necessary:
       }
     }
     ```
-    {% endcode %}
+
+    \{% endcode %\}
 *   Properties as well as validation rules can be added to the definition as per the JSON schema standard as seen [here](https://json-schema.org/understanding-json-schema/index.html). Below is an example of what this definition could look like.
 
-    {% code title="person.schema.document-definition.json" %}
+    \{% code title="person.schema.document-definition.json" %\}
+
     ```json
     {
       "$id": "person.schema",
@@ -112,7 +115,8 @@ To create a document definition, the following steps are necessary:
       }
     }
     ```
-    {% endcode %}
+
+    \{% endcode %\}
 {% endtab %}
 {% endtabs %}
 
@@ -125,12 +129,11 @@ Same as for creating cases there are two ways of editing document definitions.
 
 {% tabs %}
 {% tab title="Via UI" %}
-#### Edit the document definition
+**Edit the document definition**
 
 * Go to the `Admin` menu
 * Go to the `Cases` menu
 * Select the case that you want to edit
-* 
 * Click on **Edit**
 * Edit the document definition as per the JSON schema standard
 * Click on **Save**
@@ -147,7 +150,7 @@ In edit mode, the UI editor will constantly validate the JSON file structure. Th
 {% endtab %}
 
 {% tab title="Via IDE" %}
-#### Edit the document definition in the codebase
+**Edit the document definition in the codebase**
 
 Open the document definition in the IDE and edit the definition as per the JSON schema standard. More information on JSON schema can be found [here](https://json-schema.org/).\
 \

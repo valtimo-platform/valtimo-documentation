@@ -33,7 +33,7 @@ Valtimo contains additional value resolvers for ZGW services:
 
 Value resolvers can be used to prefill a form with external data by adding the custom property `sourceKey`:
 
-![Configuring the sourceKey property in a form](../../../.gitbook/assets/custom_source_key_property.png)
+![Configuring the sourceKey property in a form](../../../.gitbook/assets/custom_property.png)
 
 The following prefixes are supported by default:
 

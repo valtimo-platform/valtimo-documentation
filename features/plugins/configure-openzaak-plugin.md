@@ -24,6 +24,6 @@ To configure this plugin the following properties have to be entered:
 * **Client ID (`clientId`).** The client ID as configured for the 'applicatie' in OpenZaak
 * **Secret (`clientSecret`).** The secret as configured for the 'applicatie' in OpenZaak
 
-An example plugin configuration:&#x20;
+An example plugin configuration:
 
-<figure><img src="../../.gitbook/assets/configure-plugin (5).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/configure-plugin (4).png" alt=""><figcaption></figcaption></figure>

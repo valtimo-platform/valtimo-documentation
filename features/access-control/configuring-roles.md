@@ -22,7 +22,7 @@ The "Add new role" modal opens and the new role name can be entered. Click creat
 {% endtab %}
 
 {% tab title="Via IDE" %}
-#### Auto-deployment
+**Auto-deployment**
 
 PBAC can be configured in the backend using auto-deployment. This is useful when you want to keep permissions identical over multiple environments. The deployment will scan for files on the classpath matching either `**/*.role.json` or `**/*.permission.json` for respectively role- and permission configurations.
 
@@ -65,7 +65,7 @@ Then, by clicking on the three dots next to the `Save` button, the role can be e
 {% tab title="Via UI" %}
 Roles can be deleted by first clicking on that role. Then, by clicking on the three dots next to the **Save** button, the role can be deleted. Take caution, as deleting roles will also result in the deletion of related permission. Deleting roles will not delete the role in Keycloak.
 
-![deleting-a-role-example](../../.gitbook/assets/deleting-a-role.png)
+![deleting-a-role-example](<../../.gitbook/assets/deleting-a-role (1).png>)
 {% endtab %}
 {% endtabs %}
 
@@ -77,7 +77,7 @@ Roles can also be deleted, or exported in bulk. These options will only show whe
 
 ![bulk-actions-example](../../.gitbook/assets/bulk-actions.png)
 
-#### Export
+**Export**
 
 Exporting a role not only exports the role itself, but also the configured permissions. This can be used to create or update auto-deployment files.
 
@@ -85,7 +85,7 @@ When exporting roles, there are two options. Either to export all selected roles
 
 ![exporting-roles-example](../../.gitbook/assets/exporting-roles.png)
 
-#### Delete
+**Delete**
 
 Roles can also be deleted. Take caution, as deleting roles will also result in the deletion of related permission. Deleting roles will not delete the role in Keycloak.
 

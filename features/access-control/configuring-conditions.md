@@ -15,8 +15,67 @@ This page requires:
 **Solution:**
 
 * Give the managers `ROLE_MANAGER`.
-* Configure with conditions in PBAC that only `ROLE_MANAGER` can view these cases based on there Case Definition Name.
+* Configure with conditions in PBAC that only `ROLE_MANAGER` can view these cases based on their Case Definition Name.
 * Users without `ROLE_MANAGER` will no longer be able to view the 2 cases in Valtimo.
+
+## Supported conditions
+
+The following conditions can be used with their respective structures:
+
+| Resource name                                          | Key          | Description                                                                                          |
+| ------------------------------------------------------ | ------------ | ---------------------------------------------------------------------------------------------------- |
+| [**Field**](configuring-conditions.md#field)           | `field`      | Allows conditions to be applied to specific fields.                                                  |
+| [**Expression**](configuring-conditions.md#expression) | `expression` | Allows JsonPath expressions to search through JSON.                                                  |
+| [**Container**](configuring-conditions.md#container)   | `container`  | Allows more complex conditions by denoting the related entity the nested conditions should apply to. |
+
+### Field
+
+| key        | Description                                     | Examples                                  |
+| ---------- | ----------------------------------------------- | ----------------------------------------- |
+| `type`     | The type of condition. In this case `field`.    | `field`                                   |
+| `field`    | The field the value should be compared against. | `assigneeId`, `documentDefinitionId.name` |
+| `operator` | The operator for the comparison.                | `==`, `<`                                 |
+| `value`    | The value to compare the field against.         | `20000`, `${currentUserId}`               |
+
+### Expression
+
+| key        | Description                                       | Examples                    |
+| ---------- | ------------------------------------------------- | --------------------------- |
+| `type`     | The type of condition. In this case `expression`. | `expression`                |
+| `field`    | The field used to start the path from.            | `content.content`           |
+| `path`     | The path that points to the field to compare to.  | `$.height`                  |
+| `operator` | The operator for the comparison.                  | `==`, `<`                   |
+| `value`    | The value to compare the field against.           | `20000`, `${currentUserId}` |
+| `clazz`    | The name of the class that is found at the path.  | `java.lang.Integer`         |
+
+### Container
+
+| key            | Description                                                      | Examples                                                                    |
+| -------------- | ---------------------------------------------------------------- | --------------------------------------------------------------------------- |
+| `type`         | The type of condition. In this case `container`.                 | `container`                                                                 |
+| `resourceType` | The related resource type the conditions should apply to.        | `com.ritense.document.domain.impl.JsonSchemaDocument`                       |
+| `conditions`   | The conditions that should apply to the specified resource type. | See [supported conditions](configuring-conditions.md#supported-conditions). |
+
+### Operators
+
+| Operator        | Description                                             |
+| --------------- | ------------------------------------------------------- |
+| `==`            | Equal to.                                               |
+| `!=`            | Not equal to.                                           |
+| `>`             | Greater than.                                           |
+| `>=`            | Greater than or equal to.                               |
+| `<`             | Smaller than.                                           |
+| `<=`            | Smaller than or equal to.                               |
+| `list_contains` | Checks if a collection contains the given value.        |
+| `in`            | Checks if a value is contained in the given collection. |
+
+### Special values for the value field
+
+| Value                 | Description                                  |
+| --------------------- | -------------------------------------------- |
+| `${currentUserId}`    | The identifier assigned to the current user. |
+| `${currentUserEmail}` | The email address the current user has.      |
+| `${currentUserRoles}` | The list of roles the current user has.      |
 
 ## Examples
 

@@ -4,8 +4,8 @@ Task list columns can be configured to change the visible columns in the task li
 
 {% tabs %}
 {% tab title="Via UI" %}
-* Go to the `Admin`  menu
-* Go to the `Tasks`  menu
+* Go to the `Admin` menu
+* Go to the `Tasks` menu
 * Select the case to configure task list columns for
 
 {% hint style="info" %}
@@ -19,9 +19,9 @@ From here, it is possible to:
 * Sort columns
 * Delete columns
 
-### Adding a column
+#### Adding a column
 
-A column can be added by clicking on the **Add column** button. This will open the following modal:&#x20;
+A column can be added by clicking on the **Add column** button. This will open the following modal:
 
 <figure><img src="https://valtimo.gitbook.io/valtimo-documentation/~gitbook/image?url=https%3A%2F%2F181910120-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FG21VIGcgPc1cyGRZY5CR%252Fuploads%252Fgit-blob-a712fd84698a2df44f06dd35179cc4adc6fe57c3%252Fadd-task-list-column.png%3Falt%3Dmedia&#x26;width=300&#x26;dpr=4&#x26;quality=100&#x26;sign=c8605b88&#x26;sv=2" alt=""><figcaption><p>Add task list column</p></figcaption></figure>
 
@@ -30,7 +30,7 @@ A column can be added by clicking on the **Add column** button. This will open t
 * **Key**\
   A unique key by which the column is identified. If the key is not unique, you will not be able to save the column.
 * **Path**\
-  A path which leads to the property you want to show. For the document's JSON schema, follow this example: `doc:customer.firstName`. For document properties, follow these examples: `case:createdBy`, or `case:sequence`, or `case:assigneeFullName`.&#x20;
+  A path which leads to the property you want to show. For the document's JSON schema, follow this example: `doc:customer.firstName`. For document properties, follow these examples: `case:createdBy`, or `case:sequence`, or `case:assigneeFullName`.
 
 {% hint style="info" %}
 **Note**
