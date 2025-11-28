@@ -19,4 +19,4 @@
 
 ## Bugfixes
 
-* Bugfix here
+* Resolved issue where there was no option to use current date/time in the set-zaakstatus action of the zaken-api-plugin.
