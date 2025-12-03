@@ -9,13 +9,15 @@ which can be selectively overridden through configuration.
 
 The following retry cycles are available and can be applied to [specific BPMN-elements](https://docs.operaton.org/docs/documentation/user-guide/process-engine/the-job-executor/#retry-time-cycle-configuration).
 
-* DEFAULT = R3/PT1M,PT30M,PT2H
-* QUICK = R3/PT30S,PT2M,PT10M
-* CRITICAL = R5/PT1M,PT15M,PT4H,PT24H,PT48H
+| Name     | Cycle                            | Expression used in BPMN            |
+|----------|----------------------------------|------------------------------------|
+| DEFAULT  | `R3/PT1M,PT30M,PT2H`             | `${retryCycleProvider.default()}`  |
+| QUICK    | `R3/PT30S,PT2M,PT10M`            | `${retryCycleProvider.quick()}`    |
+| CRITICAL | `R5/PT1M,PT15M,PT4H,PT24H,PT48H` | `${retryCycleProvider.critical()}` |
 
 ### Overriding and custom cycles
 These retry cycles can be overridden in application.yml. Furthermore, custom cycles can be added
-using the Spring Boot config files. Adjust the property `valtimo.process.jobs.retry.cycles` in application.yml.
+using the Spring Boot config files. Adjust the property `valtimo.process.jobs.retry.cycles` in `application.yml`.
 
 ```yml
 valtimo:
@@ -34,3 +36,4 @@ Retry cycles are available in expressions referencing the `retryCycleProvider` b
 
 ![retry cycle usage](../../.gitbook/assets/retry-cycle-example-usage.png)
 
+Custom cycles can be used by referencing them by using this expression: `${retryCycleProvider.custom("my-custom-cycle")}`

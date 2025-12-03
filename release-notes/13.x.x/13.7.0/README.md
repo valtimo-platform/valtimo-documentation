@@ -8,21 +8,18 @@
 
 * **Retry cycles for failed jobs**
 
-Standard Retry cycles are defined which can be added to the following BPMN elements:
-* Tasks
-* Call Activities
-* Sub processes
-* Events
+  Standard Retry cycles are defined which can be added to the following BPMN elements:
+  * Tasks
+  * Call Activities
+  * Sub processes
+  * Events
 
-The following retry cycles are available:
-* DEFAULT = R3/PT1M,PT30M,PT2H
-* QUICK = R3/PT30S,PT2M,PT10M
-* CRITICAL = R5/PT1M,PT15M,PT4H,PT24H,PT48H
+  There are three retry cycle options available: `DEFAULT`, `QUICK`, and `CRITICAL`.
 
-These retry cycles can be customized in application.yml.
-In addition, custom cycles can be defined through Spring Boot configuration files.
-
-see more about it [here](../../features/process/retry-cycle.md)
+  These retry cycles can be customized in application.yml.
+  In addition, custom cycles can be defined through Spring Boot configuration files.
+  
+  See more about it [here](../../features/process/retry-cycle.md).
 
 ## Enhancement
 
