@@ -18,7 +18,7 @@ A dashboard contains a set of widgets that display data in a customised way. The
 There are two ways of configuring dashboards:
 
 * Manually via the UI
-* Using autodeployment via the IDE
+* Using auto-deployment via the IDE
 
 {% tabs %}
 {% tab title="Via UI" %}
@@ -114,6 +114,25 @@ After creating a dashboard, widgets can be added to the dashboard.
 ![admin-widget-configuration.png](../../.gitbook/assets/admin-widget-configuration.png) ![add-new-widget.png](../../.gitbook/assets/add-new-widget.png)
 {% endtab %}
 {% endtabs %}
+
+Widgets can also be configured via a JSON editor:
+
+{% widgets %}
+{% widgets title="Via JSON editor" %}
+
+- Go to the `Admin` menu
+- Go to the `Dashboards` menu
+- Select a dashboard
+- Click on **The code icon**
+- Click on **Edit**
+- Configure a new widget, delete a widget or edit an existing widget
+- Click **Save**
+
+<figure><img src="../../.gitbook/assets/admin-widget-configuration-json-editor.png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../../.gitbook/assets/admin-widget-configuration-json-editor-active.png" alt=""><figcaption></figcaption></figure>
+
+This allows for faster editing of widgets or exchanging different dashboard widgets configurations throughout different environments.
 
 ## Access control
 

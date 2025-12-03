@@ -24,7 +24,7 @@ Creating permissions is done for a specific role. Assuming a role is present, cl
 
 The image above shows all the permissions that have been configured for `ROLE_USER`. Here, permissions can be added, edited and removed. Since the list shown here is the full list of permissions for this role, removing a permission from the list and saving it will also result in the removal of that permission in Valtimo.
 
-#### Permission structure
+**Permission structure**
 
 There are a lot of elements that can be specified for permissions. As an example, someone with `ROLE_USER` can have access to cases of type `example-document-definition`, or if that someone has been assigned to the case. The following two permissions are used to define this:
 
@@ -59,14 +59,12 @@ There are a lot of elements that can be specified for permissions. As an example
 
 Going over each element:
 
-* `resourceType` is required to specify what resource type this permission applies to. For information on the resource types Valtimo provides out of the box, see [here](../../nog-een-plek-geven/reference/modules/authorization.md). For information on how to register custom resource types, see [here](for-developers/registering-a-resource.md).
-* `actionKey` specifies the kind of action that is being done. In this case, viewing a list. For a list of actions, see [here](../../nog-een-plek-geven/reference/modules/authorization.md).
-* `conditions` is a list describing all the conditions that apply to this particular permission. This requires knowledge of the code for the resource type, as fields can be specified in here correspond to fields inside the class. For information on the kinds of conditions that can be specified, as well as the fields, see [this page](../../nog-een-plek-geven/reference/modules/authorization.md#supported-conditions). Permission is only granted when all conditions for that permission are met.
+* `resourceType` is required to specify what resource type this permission applies to. For information on the resource types Valtimo provides out of the box, see [here](broken-reference). For information on how to register custom resource types, see [here](for-developers/registering-a-resource.md).
+* `actionKey` specifies the kind of action that is being done. In this case, viewing a list. For a list of actions, see [here](broken-reference).
+* `conditions` is a list describing all the conditions that apply to this particular permission. This requires knowledge of the code for the resource type, as fields can be specified in here correspond to fields inside the class. For information on the kinds of conditions that can be specified, as well as the fields, see [this page](broken-reference). Permission is only granted when all conditions for that permission are met.
 {% endtab %}
 
 {% tab title="Via IDE" %}
-#### Configuring permissions
-
 The example below defines 2 permissions:
 
 * A user with `ROLE_ADMIN` can `VIEW` any document
@@ -171,6 +169,6 @@ When exporting permissions from the permission configuration page, be sure to sa
 {% tab title="Via UI" %}
 Deleting permissions will also delete the accompanying role. Deleting roles will not delete the role in Keycloak.
 
-![deleting-permissions-example](../../.gitbook/assets/deleting-permissions.png)
+![deleting-permissions-example](<../../.gitbook/assets/deleting-a-role (1).png>)
 {% endtab %}
 {% endtabs %}

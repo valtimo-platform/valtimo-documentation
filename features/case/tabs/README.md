@@ -21,7 +21,7 @@ The **Add tab** button opens the _Add new tab in \<case>_ modal, beginning with 
     <figure><img src="../../../.gitbook/assets/image (2).png" alt=""><figcaption><p>Case tab types</p></figcaption></figure>
 
 **Tab name (optional)**\
-&#xNAN;_&#x43;onfigured name that will be used to identify the Case tab in the UI._
+_&#x43;onfigured name that will be used to identify the Case tab in the UI._
 
 {% hint style="info" %}
 This field is not mandatory and if left blank a translation of the key will be shown if configured. Each tab name follows this logic:
@@ -32,23 +32,17 @@ This field is not mandatory and if left blank a translation of the key will be s
 {% endhint %}
 
 **Key**\
-&#xNAN;_&#x54;his is the identifier of the tab and needs to be unique within a case definition. Possible translations need to be configured with this key._
+_&#x54;his is the identifier of the tab and needs to be unique within a case definition. Possible translations need to be configured with this key._
 
 **Choose standard content**\
-&#xNAN;_&#x41; list of available standard tabs is presented in a dropdown menu. Already configured tabs are filtered from this list._
+_&#x41; list of available standard tabs is presented in a dropdown menu. Already configured tabs are filtered from this list._
 
 **Task list visible on tab**\
-&#xNAN;_&#x57;hen set the task list will be displayed on the right side of the tab in the UI._
+_&#x57;hen set the task list will be displayed on the right side of the tab in the UI._
 {% endtab %}
 
 {% tab title="Via IDE" %}
 Case tabs can be auto-deployed from a JSON file at startup. This is useful to keep the case tab configuration identical across multiple environments. Case tabs are auto-deployed by scanning files on the classpath that end in `.case-tabs.json`.
-
-**Changesets**
-
-Every deployment file for represents a changeset. These files are required to contain a changesetId that should be unique over all deployment files that use changesets. When starting up, changesets that have already been executed will be ignored. A checksum of the changeset is created when it is executed. Changesets that have already been deployed should not change. Changesets that have been changed since a previous time will result in an error and failure to start the application.
-
-All changesets can be executed again, even when the content has changed, by setting the `valtimo.changelog.case-tabs.clear-tables` property to `true`.
 
 **Example**
 
@@ -57,36 +51,28 @@ You can find an example of the JSON below.
 In this example a tab is created with type `standard`. Different tab types can be used to customize the tab.
 
 ```json
-{
-  "changesetId": "my-case-definition-name-tabs-v1",
-  "case-definitions": [
+[
     {
-      "key": "my-case-definition-name",
-      "tabs": [
-        {
-          "name": "Summary",
-          "key": "summary",
-          "type": "standard",
-          "contentKey": "summary"
-          "showTasks": true
-        },
-        {
-          "name": "Progress",
-          "key": "progress",
-          "type": "standard",
-          "contentKey": "progress"
-        },
-        {
-          "name": "Zaak objects",
-          "key": "zaakobjecten",
-          "type": "standard",
-          "contentKey": "zaakobjecten"
-          "showTasks": false
-        }
-      ]
+        "name": "Summary",
+        "key": "summary",
+        "type": "standard",
+        "contentKey": "summary",
+        "showTasks": true
+    },
+    {
+        "name": "Progress",
+        "key": "progress",
+        "type": "standard",
+        "contentKey": "progress"
+    },
+    {
+        "name": "Zaak objects",
+        "key": "zaakobjecten",
+        "type": "standard",
+        "contentKey": "zaakobjecten",
+        "showTasks": false
     }
-  ]
-}
+]
 ```
 {% endtab %}
 {% endtabs %}

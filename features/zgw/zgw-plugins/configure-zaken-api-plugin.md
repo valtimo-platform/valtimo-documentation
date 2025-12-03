@@ -59,6 +59,7 @@ The **Create zaakrol - natural person** action creates a zaakrol in the zaken AP
 * **Initiator BSN.** The BSN (Citizen service number) of the person that should be linked to the zaak.
 * **Other natural person identification.** (Optional) The unique number issued by the municipality for another natural person.
 * **Administration number person.** (Optional) The administration number of the person, as referred to in the BRP Act.
+* **Resultaat process variable** (Optional) The name of the process variable that should be set to the UUID of the zaakrol that was created.
 
 ### Create zaakeigenschap
 
@@ -85,6 +86,12 @@ The **Delete zaakeigenschap** action deletes a zaakeigenschap in the zaken API. 
 * **Case definition.** The case definition that is linked to a zaken API plugin configuration.
 * **Eigenschap.** The eigenschap as configured in the catalogi API.
 * **Property URL.** A URL can be entered that references to an eigenschap in the catalogi API. This is an alternative to providing an eigenschap.
+
+### Delete zaakrol
+
+The **Delete zaakrol** action deletes a zaakrol in the zaken API. When creating a process link the following properties can be entered:
+
+* **Rol UUID** The UUID of the zaakrol that should be deleted.
 
 ### Start recovery period
 

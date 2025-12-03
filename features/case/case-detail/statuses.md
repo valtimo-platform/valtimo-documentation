@@ -8,11 +8,11 @@ This setting is particularly effective in environments that integrate case and p
 
 {% tabs %}
 {% tab title="Via UI" %}
-#### Adding a status
+**Adding a status**
 
 * Go to the `Admin` menu
 * Go to the `Cases` menu and select the case to configure statuses for
-* Select the `Case detail`  tab
+* Select the `Case detail` tab
 * Select the `Statuses` sub-tab
 
 <figure><img src="../../../.gitbook/assets/case-detail-statuses.png" alt=""><figcaption></figcaption></figure>
@@ -22,12 +22,12 @@ A status can be added with the **Add status** button. A modal will be shown with
 <figure><img src="../../../.gitbook/assets/image (47).png" alt=""><figcaption></figcaption></figure>
 
 * **Name**\
-  &#xNAN;_&#x55;sed as a label in the case summary and case list, the name is presented in the UI._
+  \_Used as a label in the case summary and case list, the name is presented in the UI.\_
 * **Key**\
-  &#xNAN;_&#x54;he identifier of the status, this must be a unique value within the scope of the case it is added to. A key based on the name is generated automatically but can be overwritten via the pencil button._
+  \_The identifier of the status, this must be a unique value within the scope of the case it is added to. A key based on the name is generated automatically but can be overwritten via the pencil button.\_
 * **Color**\
-  &#xNAN;_&#x53;tatuses are are displayed as a badge in the case details and list screen UI._\
-  &#xNAN;_&#x54;his badge will be displayed in the selected color._\
+  \_Statuses are are displayed as a badge in the case details and list screen UI.\
+  &#xNAN;_\_This badge will be displayed in the selected color._\
   \
   **List of available status colors:**
   * Red (`RED`)
@@ -41,7 +41,7 @@ A status can be added with the **Add status** button. A modal will be shown with
   * Cool gray (`COOLGRAY`)
   * Warm gray (`WARMGRAY`)
   * High contrast (`HIGHCONTRAST`)
-  * Outline (`OUTLINE`)\\
+  * Outline (`OUTLINE`)
 * **Visible**\
   Indication if cases in that status should be shown on the case list screen by default.
 
@@ -55,7 +55,7 @@ When the visible indicator for a status is set to false then cases that are curr
 {% endtab %}
 
 {% tab title="Via IDE" %}
-Status configurations can be autodeployed by creating json files in the `*/resources/config/case/{case-definition-key}/{version-tag}/case/internal-status/` folder. The name of the file has to end with `.internal-case-status.json`.
+Status configurations can be auto-deployed by creating json files in the `*/resources/config/case/{case-definition-key}/{version-tag}/case/internal-status/` folder. The name of the file has to end with `.internal-case-status.json`.
 
 In case `internal-case-status.json` files are different between versions in your auto-deployment files, the statuses of the last version to be deployed will be the ones available.
 

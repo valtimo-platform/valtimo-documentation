@@ -23,16 +23,16 @@ Click **Add widget** to open the create new widget modal that will guide the wid
 Five types of widgets are currently supported:
 
 * **Fields**\
-  \&#xNAN;_A set of single data elements in a widget._
+  \_A set of single data elements in a widget._
 * **Custom component**\
-  \&#xNAN;_An option to direct to a custom Angular component in de codebase._
+  \_An option to direct to a custom Angular component in de codebase._
 * **Form.io form**\
-  \&#xNAN;_This type makes is possible to display a Form.io form within a widget._\
-  &#xNAN;_&#x54;he form is prefilled with case data._
+  \_This type makes is possible to display a Form.io form within a widget._\
+  _&#x54;he form is prefilled with case data._
 * **Table**\
-  \&#xNAN;_Present array case data in a table within a widget._
+  \_Present array case data in a table within a widget._
 * **Collection**\
-  \&#xNAN;_Present array case data in a collection of cards within a widget._
+  \_Present array case data in a collection of cards within a widget._
 
 <figure><img src="../../../.gitbook/assets/image (21).png" alt=""><figcaption><p>Choosing widget type</p></figcaption></figure>
 {% endstep %}
@@ -58,6 +58,17 @@ A widget can either have a "Default" color scheme or it can be "High Contrast" t
 
 Depending on the widget type, the content is filled in differently. Click the widget type below to view the details for configuration.
 {% endstep %}
+
+{% step %}
+#### Choose widget conditions
+
+By default each widget is shown in the UI. However, it is possible to add conditions to a widget that need to be met 
+in order for the widget to be shown. This helps keep the widget page clean by hiding widgets that are not relevant 
+to the current case.
+
+<figure><img src="../../../.gitbook/assets/configuring-widget-conditions.png" alt=""><figcaption><p>Choosing widget conditions</p></figcaption></figure>
+
+{% endstep %}
 {% endstepper %}
 
 <details>
@@ -67,19 +78,19 @@ Depending on the widget type, the content is filled in differently. Click the wi
 To create a fields widget the following configurations need to be done.
 
 * **Widget title**\
-  \&#xNAN;_The widget title is presented in the UI at the top-left corner of the widget and should describe the content for that widget._
+  \_The widget title is presented in the UI at the top-left corner of the widget and should describe the content for that widget._
 * **Configure widget fields**\
-  \&#xNAN;_Each field can be configured to display case data in a certain way._
+  \_Each field can be configured to display case data in a certain way._
 
 For each field that is added to the widget the following configuration is required in order to display the data correctly in the UI.
 
 * **Field title**\
-  \&#xNAN;_This is presented as the label of the field_
+  \_This is presented as the label of the field_
 * **Field value**\
-  \&#xNAN;_Add the exact path to the data in the JSON document._
+  \_Add the exact path to the data in the JSON document._
 * **Display type**\
-  \&#xNAN;_Select the way the data is presented in the UI._\
-  &#xNAN;_&#x50;lease find the available display types below._
+  \_Select the way the data is presented in the UI._\
+  _&#x50;lease find the available display types below._
 
 ### Display types
 
@@ -162,9 +173,9 @@ Once a component is configured in Angular any user is able to configure the comp
 Adding a custom component widget to a page is easily done.
 
 * **Widget title**\
-  \&#xNAN;_The widget title is presented in the UI at the top-left corner of the widget and should describe the content for that widget._
+  \_The widget title is presented in the UI at the top-left corner of the widget and should describe the content for that widget._
 * **Angular component**\
-  \&#xNAN;_Registered Angular components in the front-end implementation of Valtimo will be listed in a dropdown menu. This component defines the widget content._
+  \_Registered Angular components in the front-end implementation of Valtimo will be listed in a dropdown menu. This component defines the widget content._
 
 <figure><img src="../../../.gitbook/assets/image (30).png" alt=""><figcaption></figcaption></figure>
 
@@ -177,9 +188,9 @@ Adding a custom component widget to a page is easily done.
 For the Form.io widget there's only two fields that need to be configured:
 
 * **Widget title**\
-  \&#xNAN;_The widget title is presented in the UI at the top-left corner of the widget and should describe the content for that widget._
+  \_The widget title is presented in the UI at the top-left corner of the widget and should describe the content for that widget._
 *   **Form.io form**\
-    \&#xNAN;_A dropdown is available with all Form.io definitions that are available in the implementation_
+    \_A dropdown is available with all Form.io definitions that are available in the implementation_
 
     <figure><img src="../../../.gitbook/assets/image (16).png" alt=""><figcaption></figcaption></figure>
 
@@ -208,25 +219,25 @@ color: var(--cds-text-primary)
 A table widget can be used when arrays (lists) are stored in the case data structure and need to be presented as such in the case UI. The following fields need to be configured for a table widget.
 
 * **Widget title**\
-  \&#xNAN;_The widget title is presented in the UI at the top-left corner of the widget and should describe the content for that widget._
+  \_The widget title is presented in the UI at the top-left corner of the widget and should describe the content for that widget._
 * **Rows per page**\
-  \&#xNAN;_If the content exceeds the number of rows pagination will be added in the UI._
+  \_If the content exceeds the number of rows pagination will be added in the UI._
 * **Path to table data**\
-  \&#xNAN;_The exact path in the JSON document that contains the array with data._
+  \_The exact path in the JSON document that contains the array with data._
 * **Table columns**\
-  \&#xNAN;_Columns need to be based on the available fields within the array data._
+  \_Columns need to be based on the available fields within the array data._
 
 ### Configuring table columns
 
 For each column in the table the following configurations needs to be done.
 
 * **Title**\
-  \&#xNAN;_The title will be displayed as the label of the field in the widget._
+  \_The title will be displayed as the label of the field in the widget._
 * **Value**\
-  \&#xNAN;_The value itself will not actually be configured, the path targeting the value in the JSON document is configured. The value is passed through by the widget._
+  \_The value itself will not actually be configured, the path targeting the value in the JSON document is configured. The value is passed through by the widget._
 * **Display type**\
-  \&#xNAN;_Select the way the data is presented in the UI._\
-  &#xNAN;_&#x50;lease find the available display types below._
+  \_Select the way the data is presented in the UI._\
+  _&#x50;lease find the available display types below._
 
 {% hint style="info" %}
 The available [display types](widgets.md#fields-widget) are the same as for the fields widget.&#x20;
@@ -307,11 +318,11 @@ Below option there is a toggle available named "_First column is the title of th
 A collection widget can be used when arrays (lists) are stored in the case data structure and need to be presented as such in the case UI. The following fields need to be configured for a collection widget.
 
 * **Widget title**\
-  \&#xNAN;_The widget title is presented in the UI at the top-left corner of the widget and should describe the content for that widget._
+  \_The widget title is presented in the UI at the top-left corner of the widget and should describe the content for that widget._
 * **Number of cards per page**\
-  \&#xNAN;_If the content exceeds the number of rows pagination will be added in the UI._
+  \_If the content exceeds the number of rows pagination will be added in the UI._
 * **Path to collection data**\
-  \&#xNAN;_The exact path in the JSON document that contains the array with data._
+  \_The exact path in the JSON document that contains the array with data._
 * **Card title display type**\
   Same as each text field, the title of the card can also be set to a certain [display type](broken-reference).
 
@@ -320,11 +331,11 @@ A collection widget can be used when arrays (lists) are stored in the case data 
 For each card in the collection the following configurations needs to be done.
 
 * **Card title**\
-  \&#xNAN;_The title of each card can be set to a value from the array items._\
-  &#xNAN;_&#x53;o the card title is not a label in this case, but a value from a array item._
+  \_The title of each card can be set to a value from the array items._\
+  _&#x53;o the card title is not a label in this case, but a value from a array item._
 * **Display type**\
-  \&#xNAN;_Select the way the card title is presented in the UI._\
-  &#xNAN;_&#x50;lease find the available display types below._
+  \_Select the way the card title is presented in the UI._\
+  _&#x50;lease find the available display types below._
 
 ### Configuring card fields
 
@@ -332,14 +343,14 @@ A set of fields can be configured that will display the data for each card.\
 The following configuration needs to be done to add a field to a card.
 
 * **Title**\
-  \&#xNAN;_Will be displayed as the fields label in the UI._
+  \_Will be displayed as the fields label in the UI._
 * **Value**\
-  &#xNAN;_&#x54;he value itself will not actually be configured, the path targeting the value in the JSON document is configured. The value is passed through by the widget._
+  _&#x54;he value itself will not actually be configured, the path targeting the value in the JSON document is configured. The value is passed through by the widget._
 * **Display type**\
-  \&#xNAN;_Select the way the data is presented in the UI._\
-  &#xNAN;_&#x50;lease find the available display types below._
+  \_Select the way the data is presented in the UI._\
+  _&#x50;lease find the available display types below._
 * **Field width**\
-  \&#xNAN;_For each field the choice can be made to use the full width of the card or half._
+  \_For each field the choice can be made to use the full width of the card or half._
 
 {% hint style="info" %}
 The available [display types](widgets.md#fields-widget) are the same as for the fields widget.&#x20;
@@ -422,6 +433,86 @@ Below the JSON a screenprint of the configuration in the Widget configuration UI
 See below screenshot for the presentation result of a collection. 6 files where uploaded for this example so 3 pages of each 2 cards are shown in the widget.\
 \
 ![](<../../../.gitbook/assets/image (27).png>)
+
+</details>
+
+<details>
+
+<summary>Map widget</summary>
+
+{% hint style="info" %}
+**Knowledge requirements**
+
+A map widget shows a world map with geometry drawn on top of it.
+
+* **Widget title**\
+  \&#xNAN;_The widget title is presented in the UI at the top-left corner of the widget and should describe the content for that widget._
+
+### Configuring layers
+
+For a layer in the map widget, the following configuration needs to be done.
+
+* **Path to GeoJSON data**\
+  &#xNAN;_&#x54;he path targeting the GeoJSON in the JSON document is configured. It is not possible to enter the GeoJSON data directly in this field, only a path to this data._
+
+**Example values of the 'Path to GeoJSON data' for the JSON document below**\
+- `doc:/featureCollection`
+- `doc:/featureCollection/features/0`
+- `doc:/featureCollection/features/1`
+- `doc:/featureCollection/features/2`
+- `doc:/featureCollection/features/0/geometry`
+- `doc:/featureCollection/features/1/geometry`
+- `doc:/featureCollection/features/2/geometry`
+- `doc:/featureCollection/features/0/geometry/coordinates`
+- `doc:/featureCollection/features/1/geometry/coordinates`
+- `doc:/featureCollection/features/2/geometry/coordinates`
+
+**JSON document content:**
+
+```json
+{
+  ...
+  "featureCollection": {
+    "type": "FeatureCollection",
+    "features": [
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [102.0, 0.5]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "LineString",
+          "coordinates": [
+            [102.0, 0.0],
+            [103.0, 1.0],
+            [104.0, 0.0],
+            [105.0, 1.0]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [100.0, 0.0],
+              [101.0, 0.0],
+              [101.0, 1.0],
+              [100.0, 1.0],
+              [100.0, 0.0]
+            ]
+          ]
+        }
+      }
+    ]
+  }
+}
+```
 
 </details>
 

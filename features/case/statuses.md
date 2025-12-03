@@ -4,6 +4,8 @@ The _internal case status_ is a case property that indicates the current interna
 
 This setting is particularly effective in environments that integrate case and process management. Storing an internal case status as metadata enables teams to establish specific internal statuses that case handlers can apply and track. Typically, case handlers work with a more extensive set of case statuses than those visible to customers or clients. This approach allows for refined tracking and management of case progression while maintaining a simplified view for external stakeholders.
 
+Keep in mind statuses are shared across all versions of a case definition.
+
 ## Configuring case statuses
 
 {% tabs %}
@@ -11,7 +13,8 @@ This setting is particularly effective in environments that integrate case and p
 #### Adding a status
 
 * Go to the `Admin` menu
-* Go to the `Cases` menu and select the case to configure statuses for
+* Go to the `Cases` menu and select the case
+* Select the `Case details` tab
 * Select the `Statuses` tab
 
 <figure><img src="../../.gitbook/assets/image (28) (1).png" alt=""><figcaption></figcaption></figure>
@@ -21,12 +24,12 @@ A status can be added with the **Add status** button. A modal will be shown with
 <figure><img src="../../.gitbook/assets/image (47).png" alt=""><figcaption></figcaption></figure>
 
 * **Name**\
-  &#xNAN;_&#x55;sed as a label in the case summary and case list, the name is presented in the UI._
+  _&#x55;sed as a label in the case summary and case list, the name is presented in the UI._
 * **Key**\
-  &#xNAN;_&#x54;he identifier of the status, this must be a unique value within the scope of the case it is added to. A key based on the name is generated automatically but can be overwritten via the pencil button._
+  _&#x54;he identifier of the status, this must be a unique value within the scope of the case it is added to. A key based on the name is generated automatically._
 * **Color**\
-  &#xNAN;_&#x53;tatuses are are displayed as a badge in the case details and list screen UI._\
-  &#xNAN;_&#x54;his badge will be displayed in the selected color._\
+  _&#x53;tatuses are are displayed as a badge in the case details and list screen UI._\
+  _&#x54;his badge will be displayed in the selected color._\
   \
   **List of available status colors:**
   * Red (`RED`)
@@ -54,37 +57,30 @@ When the visible indicator for a status is set to false then cases that are curr
 {% endtab %}
 
 {% tab title="Via IDE" %}
-Status configurations can be autodeployed by creating json files in the `classpath*:config/` folder. The name of the file has to end with `.internal-case-status.json`.
+Create an internal case status file under the following path: `*/resources/config/case/{case-definition-key}/{version-tag}/case/internal-status/`. The name of the file has to end with `.internal-case-status.json`.
 
-`example-case.internal-case-status.json`:
-
+{% code title="example-case.internal-case-status.json" %}
 ```json
-{
-  "changesetId" : "example-case.internal-case-status.1721636149935",
-  "internalCaseStatuses" : [
+[
     {
-      "key" : "awaiting-processing",
-      "caseDefinitionName" : "example-case",
-      "title" : "Awaiting processing",
-      "visibleInCaseListByDefault" : true,
-      "color" : "BLUE"
+        "key" : "awaiting-processing", 
+        "title" : "Awaiting processing", 
+        "visibleInCaseListByDefault" : true, 
+        "color" : "BLUE"
     },
     {
-      "key" : "processing-order",
-      "caseDefinitionName" : "example-case",
-      "title" : "Processing order",
-      "visibleInCaseListByDefault" : true,
-      "color" : "PURPLE"
+        "key" : "processing-order", 
+        "title" : "Processing order", 
+        "visibleInCaseListByDefault" : true, 
+        "color" : "PURPLE"
     },
     {
-      "key" : "shipped",
-      "caseDefinitionName" : "example-case",
-      "title" : "Shipped",
-      "visibleInCaseListByDefault" : true,
-      "color" : "GREEN"
+        "key" : "shipped", 
+        "title" : "Shipped", 
+        "visibleInCaseListByDefault" : true,
+        "color" : "GREEN"
     }
-  ]
-}
+]
 
 ```
 {% endtab %}
@@ -105,7 +101,7 @@ When statuses are configured for a case, an additional search filter is automati
 
 This functionality allows users to customize the visibility of cases in the case list, ensuring that case handlers can focus on the most relevant cases upon initial view.
 
-<figure><img src="../../using-valtimo/case/img/internal-status-case-list.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/internal-status-case-list.png" alt=""><figcaption></figcaption></figure>
 
 ### Setting a case status
 
@@ -116,17 +112,6 @@ To enable the ability to set statuses at certain phases in the process, an expre
 Next to setting a status via the process model it is also possible to set the case status via Form.io forms that are connected to user tasks in the process. The Form.io submission data will then submit the new status in stead of the process.\
 \
 In order to change the case status via Form.io the `case:internalStatus` targetKey can be used on a hidden form field to add the status change to the form submission. Due to the `case:` prefix the data is registered as meta data in stead of case data.
-
-### Filtering cases
-
-By adding the required status changes to the process the case list will represent a clear overview of the workload and the progress for that case. By using the Visible setting as described above cases in a certain status can easily be hidden be default. These cases can be made visible via the search UI.\
-\
-Below screenshot shows a case where the _Completed_ status is configured not to be visible by default.\
-This is what the search dropdown looks like when this is set. By enabling _Completed_ the cases are immediately visible. A reload of the case list will fall back to the configured settings and the cases will be hidden again.
-
-![Completed status filtered by default](../../using-valtimo/case/img/internal-status-filtered.png)
-
-<figure><img src="../../using-valtimo/case/img/internal-status-filtering.png" alt=""><figcaption><p>Completed status enabled via search UI</p></figcaption></figure>
 
 ## Import and export
 

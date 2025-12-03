@@ -28,6 +28,8 @@ Key terms introduced in this release include:
 
 This new approach enables safer change management and simplifies the deployment of updated case processes across environments.
 
+When working with Case Definitions, draft versions are fully editable, allowing the creation, removal, or update of any element such as processes, forms, decisions, or configurations. Once a Case Definition is finalized, it becomes read-only, meaning all details remain visible and processes or forms can still be opened, deployed, or exported, but no further modifications can be made. This ensures that finalized versions remain consistent and reliable across acceptance and production environments.
+
 #### Server-Sent Events (SSE)
 
 Valtimo 13 introduces support for **Server-Sent Events (SSE)**, enabling real-time updates in the user interface without requiring a page refresh.
@@ -48,9 +50,40 @@ In Valtimo 13, several changes have been made to the **admin interface** to impr
 
 Processes, decision tables, forms, and task list configurations have been moved from separate menu items into tabs under the **Case Management** screen. This change provides a more unified and contextual view of all elements that belong to a specific Case Definition, making it easier for users to manage and navigate case configurations.
 
+#### Minor changes
+
+- Notifications from Toastr have been replaced with Carbon notifications.
+
+#### Breaking change: now using Keycloak username
+
+In Valtimo 12, Valtimo services were configured by default to use the Keycloak user ID.
+This behavior could be overridden to use the Keycloak username by setting the environment variable
+```shell
+VALTIMO_OAUTH_IDENTIFIERFIELD=username  
+```
+
+Starting with Valtimo 13, Valtimo services always use the Keycloak username.
+The property VALTIMO_OAUTH_IDENTIFIERFIELD has been removed.
+The PBAC property `${currentUserIdentifier}` is now deprecated. Its advices to change to `${currentUsername}`, `${currentUserEmail}` or `${currentUserId}`
+
+Starting with Valtimo 13:
+- Valtimo services always use the Keycloak username.
+- The `VALTIMO_OAUTH_IDENTIFIERFIELD` property has been removed.
+PBAC Property Update
+- The PBAC property `${currentUserIdentifier}` is now deprecated.
+- It is recommended to migrate to one of the following:
+  - `${currentUsername}`
+  - `${currentUserEmail}`
+  - `${currentUserId}`
+
 #### Removed feature toggles for authorization
 
 In minor releases of Valtimo 12, access control was introduced for three features: **ZGW documents**, **Object Management**, and **dashboards**. To maintain backward compatibility, these changes were initially guarded by feature toggles with non-breaking default values.
 
 In Valtimo 13, these feature toggles have been removed, and access control is now **enabled by default** for all features. As a result, additional access control permissions may need to be configured when upgrading to Valtimo 13 to ensure full access to all functionality.
+
+## Bugfixes
+
+*  Fixed issue when "No form linked" warning displays after submitting a start form.
+*  Fixed issue when custom components would not display inside a Form View Model.
 

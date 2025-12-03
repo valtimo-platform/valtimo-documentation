@@ -62,4 +62,10 @@ In the example below, a junior financial advisor is only allowed to start an int
 ```
 {% endcode %}
 
+#### Using the NoContext option
+
+The context option can be used to specify permissions for cases where certain context is provided. But sometimes you want to specify permissions for cases where no context is provided. This can't be accomplished by leaving out the contextResourceType, because it will then match any context.
+
+In order to configure permissions for cases where no context is provided, the NoContext option can be used. This can be done by setting the contextResourceType to `com.ritense.authorization.NoContext`. This is a stand in for any permission check that does not explicitly provide context.
+
 </details>

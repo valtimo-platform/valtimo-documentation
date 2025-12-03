@@ -48,11 +48,11 @@ The following features were added:
     * `org.keycloak:keycloak-admin-client` has been updated to version 21.1.0
 
     Versions of other dependencies can be found [here](https://github.com/valtimo-platform/valtimo-backend-libraries/blob/10.6.0.RELEASE/gradle.properties).
-*   **Process links configuration autodeployment**
+*   **Process links configuration auto-deployment**
 
-    Process links can now be created by adding a configuration file in Valtimo. This configuration file is automatically used when rebooting Valtimo. This release adds support for the autodeployment of process links of type form, form-flow, and plugin action. More information [here](broken-reference)
+    Process links can now be created by adding a configuration file in Valtimo. This configuration file is automatically used when rebooting Valtimo. This release adds support for the auto-deployment of process links of type form, form-flow, and plugin action. More information [here](broken-reference)
 
-    * **Plugin configuration auto deployment**
+    * **Plugin configuration auto-deployment**
 
     Plugin configurations can now be created by adding a configuration file in Valtimo. More information [here](broken-reference)
 *   **New REST API endpoints have been added**

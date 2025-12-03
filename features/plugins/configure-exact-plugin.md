@@ -51,7 +51,7 @@ exact:
 
 ## Configure the plugin
 
-A plugin configuration is required before the plugin can be used. A general description on how to configure plugins can be found [here](broken-reference).
+A plugin configuration is required before the plugin can be used. A general description on how to configure plugins can be found [here](./#configuring-plugins).
 
 To configure this plugin the following properties have to be entered:
 
@@ -74,7 +74,7 @@ There are two ways in which you can send these requests, a static one or via a J
 
 If you fill in the `service class` input field, you must have a Java Bean with that name that implements on of the following interfaces `ExactGetRequest`, `ExactPostRequest` or `ExactPutRequest`. This interface is requested instead to supply the `uri` and `content` of the request.
 
-![img.png](../../.gitbook/assets/actions-screen.png)
+![img.png](../../.gitbook/assets/img.png)
 
 ### Example of a static request
 

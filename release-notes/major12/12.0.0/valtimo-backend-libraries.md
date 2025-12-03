@@ -67,7 +67,7 @@ The following bugs were fixed:
 *   **Error in some plugin action properties**
 
     The plugin action property would throw an error when the plugin action property was set to a process variable that contained a list.
-*   **Plugin auto deployment fails on nullable property**
+*   **Plugin auto-deployment fails on nullable property**
 
     If the plugin configuration file contained a 'null' value for a plugin property, an error was thrown.
 *   **Access control `in` operator fails on list**

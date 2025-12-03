@@ -19,7 +19,7 @@ To configure this plugin the following properties have to be entered:
 
 An example plugin configuration:
 
-<figure><img src="../../.gitbook/assets/configure-plugin (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/configure-plugin (9).png" alt=""><figcaption></figcaption></figure>
 
 ## Available actions
 
@@ -94,7 +94,7 @@ An example action configuration:
 
 The Catalogi API plugin supports the following actions that can be configured in process links in order to retrieve type data.
 
-A general description on how to create process links can be found [here](https://github.com/valtimo-platform/valtimo-documentation/blob/main/using-valtimo/plugin/create-process-link.md).
+A general description on how to create process links can be found [here](../process/process-link.md#creating-a-plugin-process-link).
 
 ### Retrieve statustype
 

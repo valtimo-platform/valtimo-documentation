@@ -12,6 +12,7 @@ Tags can be added to a case in order to add extra information to a case. Tags ca
 
 * Go to the `Admin` menu
 * Go to the `Cases` menu and select the case to configure tags
+* Select the `Case details` tab
 * Select the `Tags` tab
 
 <figure><img src="../../.gitbook/assets/case-tag-admin-1.png" alt=""><figcaption><p>Case tags admin interface</p></figcaption></figure>
@@ -24,11 +25,11 @@ A tag can be added with the **Add tag** button. A modal will be shown with the c
 
 
 * **Name**\
-  &#xNAN;_&#x55;sed as a label in the case summary and case list, the name is presented in the UI._
+  _&#x55;sed as a label in the case summary and case list, the name is presented in the UI._
 * **Key**\
-  &#xNAN;_&#x54;he identifier of the tag, this must be a unique value within the scope of the case it is added to. A key based on the name is generated automatically but can be overwritten via the pencil button._
+  _&#x54;he identifier of the tag, this must be a unique value within the scope of the case it is added to. A key based on the name is generated automatically but can be overwritten via the pencil button._
 * **Color**\
-  &#xNAN;_&#x54;ags are are displayed as a badge in the case details and list screen UI._\
+  _&#x54;ags are are displayed as a badge in the case details and list screen UI._\
   _This badge will be displayed in the selected color._
 
 {% hint style="info" %}
@@ -39,28 +40,25 @@ When tags are configured for a case an additional search filter will be added to
 {% endtab %}
 
 {% tab title="Via IDE" %}
-Tags configurations can be autodeployed by creating json files in the `classpath*:config/` folder. The name of the file has to end with `.case-tags.json`.&#x20;
+Tags configurations can be auto-deployed by creating json files in the `classpath*:config/` folder. The name of the file has to end with `.case-tags.json`.&#x20;
+Create an case tags file under the following path: `*/resources/config/case/{case-definition-key}/{version-tag}/case/tag/`. The name of the file has to end with `.case-tag.json`.
 
-`example-case.case-tags.json`:
 
+{% code title="example-case.case-tag.json" %}
 ```json
-{
-    "changesetId": "example-case-tag-v1234",
-    "caseTags": [
-        {
-            "key": "test1",
-            "caseDefinitionName": "example-case",
-            "title": "Test tag 1",
-            "color": "GRAY"
-        },
-        {
-            "key": "test2",
-            "caseDefinitionName": "example-case",
-            "title": "Test tag 2",
-            "color": "TEAL"
-        }
-    ]
-}
+[
+    {
+        "key": "test1",
+        "title": "Test tag 1",
+        "color": "GRAY"
+    },
+    {
+        "key": "test2",
+        "title": "Test tag 2",
+        "color": "TEAL"
+    }
+]
+
 
 ```
 {% endtab %}

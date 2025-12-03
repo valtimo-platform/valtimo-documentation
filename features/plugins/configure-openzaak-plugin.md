@@ -15,15 +15,15 @@ This page requires knowledge on how to configure OpenZaak
 
 ## Configuring the plugin
 
-A plugin configuration is required before the plugin can be used. A general description on how to configure plugins can be found [here](broken-reference).
+A plugin configuration is required before the plugin can be used. A general description on how to configure plugins can be found [here](./#configuring-plugins).
 
-If the OpenZaak plugin is not visible in the plugin menu, it is possible the application is missing a dependency. Instructions on how to add the OpenZaak dependency can be found [here](broken-reference).
+If the OpenZaak plugin is not visible in the plugin menu, it is possible the application is missing a dependency.
 
 To configure this plugin the following properties have to be entered:
 
 * **Client ID (`clientId`).** The client ID as configured for the 'applicatie' in OpenZaak
 * **Secret (`clientSecret`).** The secret as configured for the 'applicatie' in OpenZaak
 
-An example plugin configuration:&#x20;
+An example plugin configuration:
 
-<figure><img src="../../.gitbook/assets/configure-plugin (5).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/configure-plugin (14).png" alt=""><figcaption></figcaption></figure>

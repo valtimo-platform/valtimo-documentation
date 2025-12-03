@@ -4,8 +4,8 @@ For each case a set of search fields can be configured. These fields will be dis
 
 ## Configuring search fields
 
-{% tabs %}
-{% tab title="Via UI" %}
+
+
 An administrator is able to add, change, remove, reorder and download a file with all search fields.
 
 * Go to the `Admin` menu
@@ -15,7 +15,26 @@ An administrator is able to add, change, remove, reorder and download a file wit
 
 <figure><img src="../../../.gitbook/assets/case-list.png" alt=""><figcaption></figcaption></figure>
 
-### **Available actions**
+Search fields can also be configured via a JSON editor:
+
+{% tabs %}
+{% tab title="Via JSON editor" %}
+* Go to the `Admin` menu
+* Go to the `Cases` menu
+* Select the `Case list` tab
+* Select the `Search fields` tab
+* Click on **The code icon**
+* Click on **Edit**
+* Configure a new search field, delete a search field or edit an existing search field
+* Click **Save**
+
+<figure><img src="../../../.gitbook/assets/case-list-search-fields-json-editor.png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../../../.gitbook/assets/case-list-search-fields-json-editor-active.png" alt=""><figcaption></figcaption></figure>
+
+This allows for faster editing of search fields or exchanging different search field configurations throughout different environments.
+
+#### **Available actions**
 
 * **Create**\
   Because each case holds its own set of data, search fields can be configured per case. A button to create a new search field is available at the top of the displayed search field list. A modal for filling in the data will be presented when clicking on this button. It is necessary to fill in all the required data to enable the `submit` button. The key field is specific identification data, so if the key is not unique, you will not be able to save the search field.
@@ -44,9 +63,9 @@ Configuration files are only automatically deployed when they are located on thi
 
 `*/resources/config/case/{case-definition-key}/{version-tag}/case/search-field/`
 
-The name of the configuration file must match have the extension `.case-search-field.json`.&#x20;
+The name of the configuration file must match have the extension `.case-search-field.json`.
 
-The content of the configuration file can look like this:&#x20;
+The content of the configuration file can look like this:
 
 {% code title="*/resources/config/case/example-case/1.0.0/case/search-field/example-case.case-search-field.json" %}
 ```json
@@ -82,7 +101,7 @@ The **Title** field is not mandatory and if left blank a translation of the key 
 {% endhint %}
 
 {% hint style="info" %}
-**Example configuration for `doc:` and `case:` prefixes**\\
+**Example configuration for `doc:` and `case:` prefixes**
 
 **Path:** `case:assigneeFullname`\
 This path targets the assigned case handler's full name and will search that field when used in the UI.\
@@ -137,16 +156,16 @@ Access to the search fields can be configured through access control. More infor
 {% code overflow="wrap" %}
 ```json
 {
-   "resourceType": "com.ritense.document.domain.impl.searchfield.SearchField",
-   "action": "view_list",
-   "conditions": [
-      {
-         "type": "field",
-         "field": "id.document_definition_name",
-         "operator": "==",
-         "value": "evenementenvergunning"
-      }
-   ]
+  "resourceType": "com.ritense.document.domain.impl.searchfield.SearchField",
+  "action": "view_list",
+  "conditions": [
+    {
+      "type": "field",
+      "field": "id.document_definition_name",
+      "operator": "==",
+      "value": "evenementenvergunning"
+    }
+  ]
 }
 ```
 {% endcode %}
@@ -160,16 +179,16 @@ Access to the search fields can be configured through access control. More infor
 {% code overflow="wrap" %}
 ```json
 {
-   "resourceType": "com.ritense.document.domain.impl.searchfield.SearchField",
-   "action": "view_list",
-   "conditions": [
-      {
-         "type": "field",
-         "field": "key",
-         "operator": "==",
-         "value": "first-name"
-      }
-   ]
+  "resourceType": "com.ritense.document.domain.impl.searchfield.SearchField",
+  "action": "view_list",
+  "conditions": [
+    {
+      "type": "field",
+      "field": "key",
+      "operator": "==",
+      "value": "first-name"
+    }
+  ]
 }
 ```
 {% endcode %}

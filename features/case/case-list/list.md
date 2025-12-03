@@ -19,10 +19,13 @@ To configure the columns of the case list overview the same type of prefixes can
 * Click on **Add column**
 * Configure a new column
 
-<figure><img src="../../../.gitbook/assets/add-case-column.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/add-case-column (2).png" alt=""><figcaption></figcaption></figure>
 
 With help from the List field types information on the top of this page each column can be configured. The Save button becomes available once all mandatory fields are configured.
 
+{% hint style="info" %}
+Selecting a path that is a part of a case or document also allows for configuring if the column can be exported or not in the case list page.
+{% endhint %}
 {% hint style="info" %}
 The first column added to a configuration immediately disables all default metadata columns. As a result, only the configured column will be displayed in the user interface.
 {% endhint %}
@@ -52,6 +55,7 @@ The content of a list configuration file can look like this:
         },
         "sortable": false,
         "defaultSort": "DESC",
+        "exportable": true,
         "order": 0
     }
 ]
@@ -59,6 +63,25 @@ The content of a list configuration file can look like this:
 {% endcode %}
 {% endtab %}
 {% endtabs %}
+
+Case list columns can also be configured via a JSON editor:
+
+
+
+* Go to the `Admin` menu
+* Go to the `Cases` menu
+* Select the `Case list` tab
+* Select the `Columns` tab
+* Click on **The code icon**
+* Click on **Edit**
+* Configure a new column, delete a column or edit an existing column
+* Click **Save**
+
+<figure><img src="../../../.gitbook/assets/case-list-columns-json-editor.png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../../../.gitbook/assets/case-list-columns-json-editor-active.png" alt=""><figcaption></figcaption></figure>
+
+This allows for faster editing of columns or exchanging different column configurations throughout different environments.
 
 ## List field types
 

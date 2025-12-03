@@ -26,6 +26,7 @@ The available ZGW plugins are:
 * Besluiten plugin
 * Catalogi API plugin
 * Documenten API plugin
+* Notificaties API plugin
 * Object Token Authentication plugin
 * Objecten API plugin
 * Objecttypen API plugin
@@ -75,10 +76,24 @@ An example configuration can be found below:
 ]
 ```
 
-The id (UUID) of the plugin should be generated manually. The same id's should be used when referencing configurations at the [plugin processlink autodeployment](broken-reference).
+The id (UUID) of the plugin should be generated manually. The same id's should be used when referencing configurations at the [plugin processlink auto-deployment](broken-reference).
 
 The available properties can be found in the documentation of the plugin.
 
 Values within the `properties` attribute can be resolved by using the `${SOME_VALUE}` syntax. The `SOME_VALUE` is then retrieved from an environment variable. If no environment variable with that name is found, the variable is retrieved from a Java system property.
+
+**Important:** You must explicitly whitelist which environment variables can be used in these files. Add the following to your
+`application.yml`:
+
+```yaml
+valtimo:
+  imports:
+    whitelistedPaths:
+      - "VALTIMO_.*"
+      - "GZAC_.*"
+```
+
+This ensures that only environment variables matching the given patterns are available in the deployment file.
+
 {% endtab %}
 {% endtabs %}
