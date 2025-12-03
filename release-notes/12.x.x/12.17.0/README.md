@@ -4,7 +4,7 @@
 #### Release date 16-09-2025
 {% endhint %}
 
-## New f**eatures**
+## New features
 
 * Improved performance of certain access control checks.
 * Added multiple action to access control permissions. It is now possible to add a list of actions to each access control permission, making it easier to set up the configuration and keep conditions the same between different permissions.
