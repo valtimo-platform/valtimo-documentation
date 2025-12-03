@@ -106,3 +106,9 @@ After starting the recovery period, the due date becomes: `zaak.originalDueDate 
 The **End recovery period** will end a recovery period for the linked zaak in the zaken API. The original due date (Uiterlijke einddatum afdoening) of the zaak will be extended by the actual duration of the recovery period. This is achieved by _subtracting_ the difference between the actual duration and the maximum duration of the recovery period. The zaak is no longer suspended.
 
 After ending the recovery period, the due date becomes: `(zaak.originalDueDate + maximumDuration) - (actualDuration - maximumDuration)`
+
+### Retrieve zaakbesluiten
+
+The **Retrieve zaakbesluiten** fetches all zaakbesluit URLs from the zaak in the zaken API. When creating a process link the following property can be entered:
+* **Result process variable** The name of the process variable in which the zaakbesluit URLs must be stored.
+
