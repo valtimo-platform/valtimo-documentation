@@ -12,11 +12,6 @@ The following retry cycles are available and can be applied to [specific BPMN-el
 * DEFAULT = R3/PT1M,PT30M,PT2H
 * QUICK = R3/PT30S,PT2M,PT10M
 * CRITICAL = R5/PT1M,PT15M,PT4H,PT24H,PT48H
-* DATABASE = R4/PT10S,PT1M,PT5M,PT15M // For connection/lock issues
-* EMAIL = R3/PT5M,PT20M,PT1H // For SMTP delivery issues
-* WEB_SERVICE = R4/PT30S,PT3M,PT8M,PT10M // For HTTP timeouts/5xx errors
-* FILE_TRANSFER = R3/PT1M,PT15M,PT1H // For upload/download issues
-
 
 ### Overriding and custom cycles
 These retry cycles can be overridden in application.yml. Furthermore, custom cycles can be added
