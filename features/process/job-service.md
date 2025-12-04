@@ -18,8 +18,8 @@ addOffsetInMillisToTimerDueDateByActivityId(1000,"timer-id",execution)
 
 In this example a timer exists with the given id "timer-test"
 
-![timer](../../.gitbook/assets/timer.png)
+![timer](<../../.gitbook/assets/timer (1).png>)
 
 Somewhere else in the process a sub-process exists with a service task where the job service is called in an expression with a negative number in order to move forward a job in time as show below
 
-![job-service-example](../../.gitbook/assets/job-service-example.png)
+![job-service-example](<../../.gitbook/assets/job-service-example (1).png>)

@@ -12,7 +12,7 @@ The **SmartDocuments URL** (`url`), **Username** (`username`) and **Password** (
 
 An example plugin configuration:
 
-<figure><img src="../../.gitbook/assets/configure-plugin (16).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/configure-plugin (13).png" alt=""><figcaption></figcaption></figure>
 
 ## Available actions
 

@@ -6,15 +6,15 @@ In [Valtimo front-end libraries version 10.7.0](../../../release-notes/10.x.x/10
 
 If a page is at the top level of the page hierarchy, no breadcrumbs are shown, only the page title. This can be seen on the `/tasks` page:
 
-![Tasks breadcrumb](../../../.gitbook/assets/tasks-breadcrumb.png)
+![Tasks breadcrumb](<../../../.gitbook/assets/tasks-breadcrumb (1).png>)
 
 If a page is at the top level of the page hierarchy, but under a menu category, the menu category is shown as a greyed-ouy breadcrumb. This can be seen on administrator pages:
 
-![Processes breadcrumb](../../../.gitbook/assets/processes-breadcrumb.png)
+![Processes breadcrumb](<../../../.gitbook/assets/processes-breadcrumb (1).png>)
 
 One level deeper, the previous page is shown as a breadcrumb after the menu category breadcrumb:
 
-![Process details breadcrumb](../../../.gitbook/assets/process-details-breadcrumb.png)
+![Process details breadcrumb](<../../../.gitbook/assets/process-details-breadcrumb (1).png>)
 
 ## Custom page title
 
@@ -109,7 +109,7 @@ const routes: Routes = [
 
 By default, when going two pages deep, the second breadcrumb shown is constructed from the URL. On some pages, this logic will not lead to a correct second breadcrumb. In these cases, it is possible to manually set a second breadcrumb from the component. This mechanism was used on the case detail page, where the second breadcrumb is meant to refer back to the list of cases of the selected case type:
 
-![Case detail breadcrumb](../../../.gitbook/assets/case-detail-breadcrumb.png)
+![Case detail breadcrumb](<../../../.gitbook/assets/case-detail-breadcrumb (1).png>)
 
 In order to manually set the second breadcrumb, follow the below example:
 

@@ -87,4 +87,4 @@ Where form.io definition is using the following translation properties:
 
 Which results in:
 
-<figure><img src="../../../.gitbook/assets/form_io_translations.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/form_io_translations (1).png" alt=""><figcaption></figcaption></figure>

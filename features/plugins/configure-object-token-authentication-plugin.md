@@ -25,4 +25,4 @@ To configure this plugin the following properties have to be entered:
 
 An example plugin configuration:
 
-<figure><img src="../../.gitbook/assets/configure-plugin (10).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/configure-plugin (12).png" alt=""><figcaption></figcaption></figure>

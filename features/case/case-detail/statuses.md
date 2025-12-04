@@ -27,7 +27,7 @@ A status can be added with the **Add status** button. A modal will be shown with
   \_The identifier of the status, this must be a unique value within the scope of the case it is added to. A key based on the name is generated automatically but can be overwritten via the pencil button.\_
 * **Color**\
   \_Statuses are are displayed as a badge in the case details and list screen UI.\
-  &#xNAN;_\_This badge will be displayed in the selected color._\
+  \&#xNAN;_\_This badge will be displayed in the selected color._\
   \
   **List of available status colors:**
   * Red (`RED`)
@@ -124,9 +124,9 @@ By adding the required status changes to the process the case list will represen
 Below screenshot shows a case where the _Completed_ status is configured not to be visible by default.\
 This is what the search dropdown looks like when this is set. By enabling _Completed_ the cases are immediately visible. A reload of the case list will fall back to the configured settings and the cases will be hidden again.
 
-![Completed status filtered by default](../../../.gitbook/assets/internal-status-filtered.png)
+![Completed status filtered by default](<../../../.gitbook/assets/internal-status-filtered (1).png>)
 
-<figure><img src="../../../.gitbook/assets/internal-status-filtering.png" alt=""><figcaption><p>Completed status enabled via search UI</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/internal-status-filtering (1).png" alt=""><figcaption><p>Completed status enabled via search UI</p></figcaption></figure>
 
 ## Import and export
 

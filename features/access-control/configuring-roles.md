@@ -55,7 +55,7 @@ The roles should be defined before permissions can be deployed. The file contain
 Roles can be edited by clicking on that role. This opens the detail page for that role.\
 Then, by clicking on the three dots next to the `Save` button, the role can be edited by clicking on "Edit metadata".
 
-![updating-a-role-example](../../.gitbook/assets/updating-a-role.png)
+![updating-a-role-example](<../../.gitbook/assets/updating-a-role (1).png>)
 {% endtab %}
 {% endtabs %}
 
@@ -75,7 +75,7 @@ Roles can be deleted by first clicking on that role. Then, by clicking on the th
 {% tab title="Via UI" %}
 Roles can also be deleted, or exported in bulk. These options will only show when one or more roles have been selected.
 
-![bulk-actions-example](../../.gitbook/assets/bulk-actions.png)
+![bulk-actions-example](<../../.gitbook/assets/bulk-actions (1).png>)
 
 **Export**
 
@@ -83,12 +83,12 @@ Exporting a role not only exports the role itself, but also the configured permi
 
 When exporting roles, there are two options. Either to export all selected roles as one single file, or alternatively downloading separate files per role.
 
-![exporting-roles-example](../../.gitbook/assets/exporting-roles.png)
+![exporting-roles-example](<../../.gitbook/assets/exporting-roles (1).png>)
 
 **Delete**
 
 Roles can also be deleted. Take caution, as deleting roles will also result in the deletion of related permission. Deleting roles will not delete the role in Keycloak.
 
-![deleting-roles-example](../../.gitbook/assets/deleting-roles.png)
+![deleting-roles-example](<../../.gitbook/assets/deleting-roles (1).png>)
 {% endtab %}
 {% endtabs %}

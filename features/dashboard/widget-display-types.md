@@ -12,7 +12,7 @@ Front-end module: `BigNumberModule`
 
 Displays the data as a single number in text.
 
-<div align="center" data-full-width="false"><img src="../../.gitbook/assets/display-type-number-example.png" alt="Example of display type &#x27;number&#x27;"></div>
+<div align="center" data-full-width="false"><img src="../../.gitbook/assets/display-type-number-example (1).png" alt="Example of display type &#x27;number&#x27;"></div>
 
 ### Properties
 

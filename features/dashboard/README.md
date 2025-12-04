@@ -33,7 +33,7 @@ Configuring dashboards requires:
 * Click on **Add new dashboard**
 * Fill in the form
 
-![admin-dashboard-configuration.png](../../.gitbook/assets/admin-dashboard-configuration.png) ![add-new-dashboard.png](../../.gitbook/assets/add-new-dashboard.png)
+![admin-dashboard-configuration.png](<../../.gitbook/assets/admin-dashboard-configuration (1).png>) ![add-new-dashboard.png](<../../.gitbook/assets/add-new-dashboard (1).png>)
 
 When creating a dashboard, two fields need to be filled in:
 
@@ -111,22 +111,19 @@ After creating a dashboard, widgets can be added to the dashboard.
 * Click on **Add new widget**
 * Fill in the form
 
-![admin-widget-configuration.png](../../.gitbook/assets/admin-widget-configuration.png) ![add-new-widget.png](../../.gitbook/assets/add-new-widget.png)
+![admin-widget-configuration.png](../../.gitbook/assets/admin-widget-configuration.png) ![add-new-widget.png](<../../.gitbook/assets/add-new-widget (1).png>)
 {% endtab %}
 {% endtabs %}
 
 Widgets can also be configured via a JSON editor:
 
-{% widgets %}
-{% widgets title="Via JSON editor" %}
-
-- Go to the `Admin` menu
-- Go to the `Dashboards` menu
-- Select a dashboard
-- Click on **The code icon**
-- Click on **Edit**
-- Configure a new widget, delete a widget or edit an existing widget
-- Click **Save**
+* Go to the `Admin` menu
+* Go to the `Dashboards` menu
+* Select a dashboard
+* Click on **The code icon**
+* Click on **Edit**
+* Configure a new widget, delete a widget or edit an existing widget
+* Click **Save**
 
 <figure><img src="../../.gitbook/assets/admin-widget-configuration-json-editor.png" alt=""><figcaption></figcaption></figure>
 

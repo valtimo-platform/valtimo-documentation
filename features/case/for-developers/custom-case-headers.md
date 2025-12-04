@@ -10,7 +10,7 @@ The custom header uses the Bootstrap grid system which is based on blocks of var
 
 By default, the case header looks like this:
 
-![Custom case header](../../../.gitbook/assets/custom-case-header.png)
+![Custom case header](<../../../.gitbook/assets/custom-case-header (1).png>)
 
 ## Defining a custom case header
 

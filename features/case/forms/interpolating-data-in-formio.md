@@ -8,31 +8,31 @@ By adding expressions to any text field in the form configuration, it is possibl
 
 First, when configuring the field an expression is used that will combine the data. More information on the syntax can be found below in the section [Available syntaxes](interpolating-data-in-formio.md#available-syntaxes).
 
-![Setting up an HTML field with data interpolation](../../../.gitbook/assets/setting-up-html-field.png)
+![Setting up an HTML field with data interpolation](<../../../.gitbook/assets/setting-up-html-field (1).png>)
 
 Only data that Form.io has access to at runtime can be used in the expression. This means that any data from the case document that needs to be displayed, first needs to be made available to Form.io. This can be done by for example adding a hidden field in the same form that the data will be prefilled in.
 
-![Add hidden field for prefilling data](../../../.gitbook/assets/add-hidden-field-for-prefilling.png)
+![Add hidden field for prefilling data](<../../../.gitbook/assets/add-hidden-field-for-prefilling (1).png>)
 
 This results in the following form:
 
-![Create a case with prefillable information](../../../.gitbook/assets/create-case-with-prefill-information.png)
+![Create a case with prefillable information](<../../../.gitbook/assets/create-case-with-prefill-information (1).png>)
 
 When creating a case with the required information that will be stored.
 
-![Add case data](../../../.gitbook/assets/add-case-data.png)
+![Add case data](<../../../.gitbook/assets/add-case-data (1).png>)
 
 This data is used in the form to display the name in the message.
 
-![Interpolated data example](../../../.gitbook/assets/interpolated-data-example.png)
+![Interpolated data example](<../../../.gitbook/assets/interpolated-data-example (1).png>)
 
 This same feature can be used in other text fields. For example, the label of a field can also be dynamically changed.
 
-![Configuration of label with interpolated data](../../../.gitbook/assets/interpolate-label-configuration.png)
+![Configuration of label with interpolated data](<../../../.gitbook/assets/interpolate-label-configuration (1).png>)
 
 Which results in the following field.
 
-![Example of label with interpolated data](../../../.gitbook/assets/interpolate-label-example.png)
+![Example of label with interpolated data](<../../../.gitbook/assets/interpolate-label-example (1).png>)
 
 ## Available syntaxes
 
@@ -45,15 +45,15 @@ Because the data that is interpolated in the form can come from the user, it is 
 
 For example if a user were to enter the following text in a form fields.
 
-![Example input with HTML](../../../.gitbook/assets/input-with-html.png)
+![Example input with HTML](<../../../.gitbook/assets/input-with-html (1).png>)
 
 This would result in the following text being displayed in the form when using the `{{{ expression }}}` syntax
 
-![Example of escaped data](../../../.gitbook/assets/example-escaped-data.png)
+![Example of escaped data](<../../../.gitbook/assets/example-escaped-data (1).png>)
 
 When using the `{{ expression }}` syntax, the data is not escaped. This means that the data is interpreted as HTML as shown below.
 
-![Example of interpolated data](../../../.gitbook/assets/example-interpolated-data.png)
+![Example of interpolated data](<../../../.gitbook/assets/example-interpolated-data (1).png>)
 
 It is recommended to always use the `{{{ expression }}}` syntax to prevent any issues with the data being displayed, unless it is intended to use HTML in the form and the data is trusted.
 

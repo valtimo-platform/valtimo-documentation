@@ -109,11 +109,11 @@ We now have created a new JSON schema version 2:
 
 When clicking the verify button, the tool will check if there are any possible issues if we were to migrate the cases. In our example we will get the error shown in the image below. Verification is limited. The verify button has detected an error, but has not detected all potential problems. It _has_ detected the new schema no longer has the property `/firstName` at root level. It has _not_ detected that there is a new property available in the new schema called `/empoyee/firstName`.
 
-![case-migration-move-error](../../../.gitbook/assets/case-migration-move-error.png)
+![case-migration-move-error](<../../../.gitbook/assets/case-migration-move-error (1).png>)
 
 To solve the error, a new patch has to be added which will move the property:
 
-![patch-move-property.png](../../../.gitbook/assets/patch-move-property.png)
+![patch-move-property.png](<../../../.gitbook/assets/patch-move-property (1).png>)
 
 After verifying that there are no errors, the cases are ready to be migrated. Click the button 'Migrate cases' to migrate all cases from the source version to the target version.
 
@@ -121,16 +121,16 @@ After verifying that there are no errors, the cases are ready to be migrated. Cl
 
 If the new case definition no longer contains a property, the property should be removed from all old cases. This can be done by leaving the target field empty. For example, if we want to remove the property `/gulden`:
 
-![patch-remove-property.png](../../../.gitbook/assets/patch-remove-property.png)
+![patch-remove-property.png](<../../../.gitbook/assets/patch-remove-property (1).png>)
 
 ### Patch: add property
 
 When the new case definition contains a completely new property, this new field can be given a default value by entering this value in the source field. The case migrator will always try to case the value from the source field to the type that is needed for the target field.
 
-![patch-add-property.png](../../../.gitbook/assets/patch-add-property.png)
+![patch-add-property.png](<../../../.gitbook/assets/patch-add-property (1).png>)
 
 ### Patch: SpEL expression
 
 SpEL expressions can be used for more advanced manipulations.
 
-![patch-spel-expressions.png](../../../.gitbook/assets/patch-spel-expressions.png)
+![patch-spel-expressions.png](<../../../.gitbook/assets/patch-spel-expressions (1).png>)
