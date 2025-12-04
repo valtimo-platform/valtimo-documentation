@@ -17,12 +17,12 @@ The following features were added:
 
     Added a new setting on the case management page to indicate that a case type can have an assignee.
 
-    More information on this case setting can be found [here](broken-reference).
+    More information on this case setting can be found [here](broken-reference/).
 *   **Number of open cases now shown in menu**
 
     The number of open/unassigned cases is now shown in the Valtimo menu. When the number of open cases changes, the number in the menu is automatically updated without reloading the page.
 
-    ![Open case count](img/open-case-count.png)
+    ![Open case count](../../../.gitbook/assets/open-case-count.png)
 *   **New tab 'list columns' on case management page**
 
     Added a new separate tab on case management page to configure case list columns.

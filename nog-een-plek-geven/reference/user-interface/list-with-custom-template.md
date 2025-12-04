@@ -65,4 +65,4 @@ Through the `fields` input, you can set up column with custom template, followin
 
 This will create a list with a context menu:
 
-![list-with-custom.png](../../../reference/user-interface/components/valtimo-carbon-list/img/list-with-custom.png)
+![list-with-custom.png](../../../.gitbook/assets/list-with-custom.png)

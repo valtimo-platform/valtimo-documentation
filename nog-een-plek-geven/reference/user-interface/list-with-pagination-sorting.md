@@ -77,4 +77,4 @@ The CarbonListComponent supports backend pagination and sorting. In order to mak
 
 This will create a list with pagination and sorting:
 
-![list-with-pagination-sorting.png](../../../reference/user-interface/components/valtimo-carbon-list/img/list-with-pagination-sorting.png)
+![list-with-pagination-sorting.png](../../../.gitbook/assets/list-with-pagination-sorting.png)

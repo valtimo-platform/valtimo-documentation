@@ -50,11 +50,11 @@ The following features were added:
     Versions of other dependencies can be found [here](https://github.com/valtimo-platform/valtimo-backend-libraries/blob/10.6.0.RELEASE/gradle.properties).
 *   **Process links configuration autodeployment**
 
-    Process links can now be created by adding a configuration file in Valtimo. This configuration file is automatically used when rebooting Valtimo. This release adds support for the autodeployment of process links of type form, form-flow, and plugin action. More information [here](broken-reference)
+    Process links can now be created by adding a configuration file in Valtimo. This configuration file is automatically used when rebooting Valtimo. This release adds support for the autodeployment of process links of type form, form-flow, and plugin action. More information [here](/broken/pages/mWaYYy8bFNDCFZdqctW8#configuration-by-autodeployment)
 
     * **Plugin configuration auto deployment**
 
-    Plugin configurations can now be created by adding a configuration file in Valtimo. More information [here](broken-reference)
+    Plugin configurations can now be created by adding a configuration file in Valtimo. More information [here](/broken/pages/XBCS6qGsbPa0S6ojnYjs)
 *   **New REST API endpoints have been added**
 
     A new endpoint has been added to return a prefilled Form IO form that was configured on a start-event of a BPMN:
@@ -77,7 +77,7 @@ The following features were added:
 
     `GET /api/v1/user/settings` `PUT /api/v1/user/settings`
 * **Prefilling of start forms for supporting processes** Start forms configured for supporting processes are now prefilled with case data when opened.
-* **Support for form flows to start cases and supporting processes** Form flows can now be used to start a new case or supporting processes for an existing case. More information [here](broken-reference)
+* **Support for form flows to start cases and supporting processes** Form flows can now be used to start a new case or supporting processes for an existing case. More information [here](/broken/pages/gfMF9k7Wj1jYJeTeiKq5#starting-a-new-case-and-saving-submission-data-to-defined-location)
 
 ## Bugfixes
 

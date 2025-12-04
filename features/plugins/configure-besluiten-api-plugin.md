@@ -48,7 +48,7 @@ When creating a process link the following properties have to be entered:
 
 An example action configuration:&#x20;
 
-<figure><img src="../../using-valtimo/plugin/besluiten-api/img/create-besluit.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/create-besluit.png" alt=""><figcaption></figcaption></figure>
 
 ### Link document to besluit
 
@@ -61,4 +61,4 @@ When creating a process link the following properties have to be entered:
 
 An example action configuration:&#x20;
 
-<figure><img src="../../using-valtimo/plugin/besluiten-api/img/link-document-to-besluit.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/link-document-to-besluit.png" alt=""><figcaption></figcaption></figure>

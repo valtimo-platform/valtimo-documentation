@@ -33,7 +33,7 @@ Configuring dashboards requires:
 * Click on **Add new dashboard**
 * Fill in the form
 
-![admin-dashboard-configuration.png](../../using-valtimo/dashboard/img/admin-dashboard-configuration.png) ![add-new-dashboard.png](../../using-valtimo/dashboard/img/add-new-dashboard.png)
+![admin-dashboard-configuration.png](../../.gitbook/assets/admin-dashboard-configuration.png) ![add-new-dashboard.png](../../.gitbook/assets/add-new-dashboard.png)
 
 When creating a dashboard, two fields need to be filled in:
 
@@ -44,17 +44,17 @@ When creating a dashboard, two fields need to be filled in:
 {% tab title="Via IDE" %}
 Dashboards can be auto-deployed from a json file at startup. This is useful to keep the dashboard configuration identical across multiple environments. Dashboards are auto-deployed by scanning files on the classpath that end in `.dashboard.json`.
 
-#### Changesets
+**Changesets**
 
 Every deployment file for represents a changeset. These files are required to contain a changesetId that should be unique over all deployment files that use changesets. When starting up, changesets that have already been executed will be ignored. A checksum of the changeset is created when it is executed. Changesets that have already been deployed should not change. Changesets that have been changed since a previous time will result in an error and failure to start the application.
 
 All changesets can be executed again, even when the content has changed, by setting the `valtimo.changelog.dashboard.clear-tables` property to `true`.
 
-#### Example
+**Example**
 
 You can find an example of the JSON below.
 
-In this example a widget is created with display type `number` and data source `case-count`. Different [display types](widget-display-types.md) and [data sources](dashboard.md) can be used to customize the layout of the dashboard.&#x20;
+In this example a widget is created with display type `number` and data source `case-count`. Different [display types](widget-display-types.md) and [data sources](dashboard.md) can be used to customize the layout of the dashboard.
 
 ```json
 {
@@ -111,7 +111,7 @@ After creating a dashboard, widgets can be added to the dashboard.
 * Click on **Add new widget**
 * Fill in the form
 
-![admin-widget-configuration.png](../../using-valtimo/dashboard/img/admin-widget-configuration.png) ![add-new-widget.png](../../using-valtimo/dashboard/img/add-new-widget.png)
+![admin-widget-configuration.png](../../.gitbook/assets/admin-widget-configuration.png) ![add-new-widget.png](../../.gitbook/assets/add-new-widget.png)
 {% endtab %}
 {% endtabs %}
 

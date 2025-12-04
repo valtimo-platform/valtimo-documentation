@@ -19,7 +19,7 @@ To configure this plugin the following properties have to be entered:
 
 An example plugin configuration:&#x20;
 
-<figure><img src="../../using-valtimo/plugin/catalogi-api/img/configure-plugin.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/configure-plugin (2).png" alt=""><figcaption></figcaption></figure>
 
 ## Available actions
 
@@ -40,7 +40,7 @@ When creating a process link the following properties have to be entered:
 
 An example action configuration:&#x20;
 
-<figure><img src="../../using-valtimo/plugin/catalogi-api/img/retrieve-statustype.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/retrieve-statustype.png" alt=""><figcaption></figcaption></figure>
 
 ### Retrieve resultaattype
 
@@ -55,7 +55,7 @@ When creating a process link the following properties have to be entered:
 
 An example action configuration:&#x20;
 
-<figure><img src="../../using-valtimo/plugin/catalogi-api/img/retrieve-resultaattype.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/retrieve-resultaattype.png" alt=""><figcaption></figcaption></figure>
 
 ### Retrieve besluittype
 
@@ -70,4 +70,4 @@ When creating a process link the following properties have to be entered:
 
 An example action configuration:&#x20;
 
-<figure><img src="../../using-valtimo/plugin/catalogi-api/img/retrieve-besluittype.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/retrieve-besluittype.png" alt=""><figcaption></figcaption></figure>

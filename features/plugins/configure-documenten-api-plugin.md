@@ -22,7 +22,7 @@ To configure this plugin the following properties have to be entered:
 
 An example plugin configuration:&#x20;
 
-<figure><img src="../../using-valtimo/plugin/documenten-api/img/configure-plugin.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/configure-plugin (3).png" alt=""><figcaption></figcaption></figure>
 
 ### Documenten API version
 
@@ -62,7 +62,7 @@ When creating a process link the following properties have to be entered:
 
 An example process link configuration:&#x20;
 
-<figure><img src="../../using-valtimo/plugin/documenten-api/img/save-document-configuration.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/save-document-configuration.png" alt=""><figcaption></figcaption></figure>
 
 ### Save uploaded document
 

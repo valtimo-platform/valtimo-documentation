@@ -17,4 +17,4 @@ The CarbonListComponent supports hiding the column headers. To enable this the f
 
 This will create a list with hidden column headers:
 
-![list-without-header.png](../../../reference/user-interface/components/valtimo-carbon-list/img/list-with-hidden-header.png)
+![list-without-header.png](../../../.gitbook/assets/list-with-hidden-header.png)

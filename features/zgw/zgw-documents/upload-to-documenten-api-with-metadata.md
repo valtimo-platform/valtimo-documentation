@@ -40,7 +40,7 @@ When a document is uploaded to a case, the 'upload process' connected to the cas
 4. Link the upload process under section 'Link upload process to case'.
 5. Select the 'Upload Document', or select any custom process that can handle uploads.
 
-![Link upload process to case](../../../using-valtimo/upload/img/link-upload-process-to-case.png)
+![Link upload process to case](../../../.gitbook/assets/link-upload-process-to-case.png)
 
 ## Required plugins
 
@@ -55,16 +55,16 @@ Make sure that the following plugins are configured.
 
 Every Valtimo implementation comes with a system process called 'Upload Document'. This process is meant to handle most generic document uploads. The Upload Document process look like this:
 
-![Upload Document](../../../using-valtimo/upload/img/document-upload.png)
+![Upload Document](../../../.gitbook/assets/document-upload.png)
 
 By default, the Upload Document process does not do anything, so it will not upload anything yet. The process needs to be configured first.
 
 Process links can be used to configure the Upload Document process. The first service task called 'Upload document' can be linked to a Documenten API plugin action called 'Save uploaded document'. Look [here](../../plugins/configure-documenten-api-plugin.md) for more information.
 
-![Plugin action: Save uploaded document](../../../using-valtimo/upload/img/save-uploaded-document.png)
+![Plugin action: Save uploaded document](../../../.gitbook/assets/save-uploaded-document.png)
 
 Configuring the first service task of the Upload Document process is enough to let Valtimo users upload their documents to the Documenten API in Valtimo. But the documents will not be visible yet in case information within Valtimo. This is because the document has not been linked to any zaak.
 
 The second service task in the Upload Document process is called 'Link uploaded document to zaak'. The Zaken API plugin can take care of this action. Look [here](../../plugins/configure-zaken-api-plugin.md) for more information.
 
-![Plugin action: Link uploaded document to zaak](../../../using-valtimo/upload/img/link-uploaded-document-to-zaak.png)
+![Plugin action: Link uploaded document to zaak](../../../.gitbook/assets/link-uploaded-document-to-zaak.png)

@@ -26,4 +26,4 @@ To configure this plugin the following properties have to be entered:
 
 An example plugin configuration:&#x20;
 
-<figure><img src="../../using-valtimo/plugin/openzaak/img/configure-plugin.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/configure-plugin (5).png" alt=""><figcaption></figcaption></figure>

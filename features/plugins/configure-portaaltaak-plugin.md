@@ -31,7 +31,7 @@ To configure this plugin the following properties have to be entered:
 
 An example plugin configuration:&#x20;
 
-<figure><img src="../../using-valtimo/plugin/portaaltaak/img/configure-plugin.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/configure-plugin (7).png" alt=""><figcaption></figcaption></figure>
 
 ## Configuring the task completion process
 
@@ -39,7 +39,7 @@ When a task object is updated and Valtimo receives the notification, a process i
 
 The process that is started needs to be configured in the plugin properties by setting the 'Uploaded documents handler process' property. Valtimo ships with the `Process completed Portaaltaak` process which has two tasks.
 
-![Process completed Portaaltaak](../../using-valtimo/plugin/portaaltaak/img/process-portaal-taak.png)
+![Process completed Portaaltaak](../../.gitbook/assets/process-portaal-taak.png)
 
 These tasks need to be configured with process links before the process can be used. The following actions should be configured:
 
@@ -55,7 +55,7 @@ Instead of using the `Process completed Portaaltaak` process it is possible to c
 * **verwerkerTaakId.** The id of the task to be completed.
 * **documentUrls.** A list of document URLs of documents stored in the Documenten API. Can be used as Collection in BPMN multi-instance elements to iteratte over the list.
 
-![img.png](../../using-valtimo/plugin/portaaltaak/img/document-urls-collection-example.png)
+![img.png](../../.gitbook/assets/document-urls-collection-example.png)
 
 ## Available actions
 
@@ -85,7 +85,7 @@ When creating a process link the following properties have to be entered:
 
 An example process link configuration:&#x20;
 
-<figure><img src="../../using-valtimo/plugin/portaaltaak/img/configure-create-portaal-taak.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/configure-create-portaal-taak.png" alt=""><figcaption></figcaption></figure>
 
 ### Complete Portaaltaak
 

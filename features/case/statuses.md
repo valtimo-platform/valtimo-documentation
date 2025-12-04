@@ -105,7 +105,7 @@ When statuses are configured for a case, an additional search filter is automati
 
 This functionality allows users to customize the visibility of cases in the case list, ensuring that case handlers can focus on the most relevant cases upon initial view.
 
-<figure><img src="../../using-valtimo/case/img/internal-status-case-list.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/internal-status-case-list.png" alt=""><figcaption></figcaption></figure>
 
 ### Setting a case status
 
@@ -124,9 +124,9 @@ By adding the required status changes to the process the case list will represen
 Below screenshot shows a case where the _Completed_ status is configured not to be visible by default.\
 This is what the search dropdown looks like when this is set. By enabling _Completed_ the cases are immediately visible. A reload of the case list will fall back to the configured settings and the cases will be hidden again.
 
-![Completed status filtered by default](../../using-valtimo/case/img/internal-status-filtered.png)
+![Completed status filtered by default](../../.gitbook/assets/internal-status-filtered.png)
 
-<figure><img src="../../using-valtimo/case/img/internal-status-filtering.png" alt=""><figcaption><p>Completed status enabled via search UI</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/internal-status-filtering.png" alt=""><figcaption><p>Completed status enabled via search UI</p></figcaption></figure>
 
 ## Import and export
 

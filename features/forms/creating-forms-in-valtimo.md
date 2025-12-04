@@ -33,7 +33,7 @@ Valtimo contains additional value resolvers for ZGW services:
 
 Value resolvers can be used to prefill a form with external data by adding the custom property `sourceKey`:
 
-![Configuring the sourceKey property in a form](../../using-valtimo/forms/img/custom_source_key_property.png)
+![Configuring the sourceKey property in a form](../../.gitbook/assets/custom_source_key_property.png)
 
 The following prefixes are supported by default:
 
@@ -44,7 +44,7 @@ The following prefixes are supported by default:
 
 Value resolvers can also be used to handle submitted form values using the custom property `targetKey`. If the custom property `targetKey` is added, it will store submitted values to the reference provided in the `targetKey`:
 
-![Configuring the targetKey property in a form](../../using-valtimo/forms/img/custom_target_key_property.png)
+![Configuring the targetKey property in a form](../../.gitbook/assets/custom_target_key_property.png)
 
 If a `sourceKey` is provided, it will store submitted values using the reference provided in the `sourceKey`. Unless there is a `targetKey` provided. Then the `targetKey` takes priority.
 
@@ -181,7 +181,7 @@ Document definition:
 
 Field configuration:
 
-![Configuring the property in a form](../../using-valtimo/forms/img/simple_key_field.png)
+![Configuring the property in a form](../../.gitbook/assets/simple_key_field.png)
 
 It is also possible to load properties from an object within the document. In the example below the document definition contains an object 'person', that has a 'firstName' property. This property can be accessed by using `person.firstName` as the field property name.
 
@@ -209,7 +209,7 @@ Document definition:
 
 Field configuration:
 
-![Configuring the property in a form](../../using-valtimo/forms/img/nested_key_field.png)
+![Configuring the property in a form](../../.gitbook/assets/nested_key_field.png)
 
 ## External data
 

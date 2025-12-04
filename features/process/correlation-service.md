@@ -8,11 +8,11 @@ Valtimo provides several methods that can be used inside a BPMN, accessible thro
 
 These methods can be used in expressions applied to message throw events like this:
 
-![intermediate-throw-example](../../using-valtimo/process/img/intermediate-throw-event.png)
+![intermediate-throw-example](../../.gitbook/assets/intermediate-throw-event.png)
 
 The first argument is the key of the message that should be sent. In this example, there should also be a message start event that waits for this particular message, like so:
 
-![message-start-event-example](../../using-valtimo/process/img/message-start-event.png)
+![message-start-event-example](../../.gitbook/assets/message-start-event.png)
 
 ### Correlating start events
 

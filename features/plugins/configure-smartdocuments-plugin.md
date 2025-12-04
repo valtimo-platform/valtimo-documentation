@@ -12,7 +12,7 @@ The **SmartDocuments URL** (`url`), **Username** (`username`) and **Password** (
 
 An example plugin configuration:&#x20;
 
-<figure><img src="../../using-valtimo/plugin/smartdocuments/img/configure-plugin.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/configure-plugin (1).png" alt=""><figcaption></figcaption></figure>
 
 ## Available actions
 
@@ -38,4 +38,4 @@ After filling in all fields, the process-link can be saved. From now on, every t
 
 An example process link configuration:&#x20;
 
-<figure><img src="../../using-valtimo/plugin/smartdocuments/img/generate-document-process-link.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/generate-document-process-link.png" alt=""><figcaption></figcaption></figure>

@@ -17,9 +17,9 @@ To configure this plugin the following properties have to be entered:
 * **URL.** Contains the complete base URL of the Zaken API to connect to. This generally includes the path `/api/v1/`.
 * **Authentication plugin configuration.** Reference to another plugin configuration that will be used to add authentication to any request performed on the Zaken API. If no option is available in this field a plugin has to be configured that is able to authenticate for the specific application that hosts the Zaken API. (e.g. OpenZaak)
 
-An example plugin configuration:&#x20;
+An example plugin configuration:
 
-<figure><img src="../../using-valtimo/plugin/zaken-api/img/configure-plugin.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/configure-plugin (8).png" alt=""><figcaption></figcaption></figure>
 
 ## Available actions
 
@@ -37,9 +37,9 @@ When creating a process link the following properties have to be entered:
 * **Document title.** The title of the document within the context of the zaak that is stored in the 'zaakinformatieobject' record in the Zaken API.
 * **Document description.** The description of the document within the context of the zaak that is stored in the 'zaakinformatieobject' record in the Zaken API.
 
-An example process link configuration:&#x20;
+An example process link configuration:
 
-<figure><img src="../../using-valtimo/plugin/zaken-api/img/link-document-to-zaak.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/link-document-to-zaak.png" alt=""><figcaption></figcaption></figure>
 
 ### Link uploaded document to zaak
 
@@ -181,9 +181,9 @@ Currently, only two of these types are fully worked out in this plugin action. T
 
 If you need a different Object Type and need the fields under `objectIdentificatie`, then there are two options:
 
-- Request these fields to be added to the plugin. (Or do it yourself and deliver the changes via a pull request.)
-- (Backend only) Create a new class that inherits the [`ZaakObjectRequest`](https://github.com/valtimo-platform/valtimo-backend-libraries/blob/next-minor/zgw/zaken-api/src/main/kotlin/com/ritense/zakenapi/domain/zaakobjectrequest/ZaakObjectRequest.kt) interface and add the fields that are needed.
-  - This is only possible if you configure the process link via a configuration file (`*.process-link.json`) in the implementation project.
+* Request these fields to be added to the plugin. (Or do it yourself and deliver the changes via a pull request.)
+* (Backend only) Create a new class that inherits the [`ZaakObjectRequest`](https://github.com/valtimo-platform/valtimo-backend-libraries/blob/next-minor/zgw/zaken-api/src/main/kotlin/com/ritense/zakenapi/domain/zaakobjectrequest/ZaakObjectRequest.kt) interface and add the fields that are needed.
+  * This is only possible if you configure the process link via a configuration file (`*.process-link.json`) in the implementation project.
 
 More information about the zaakobject and its properties can be found in [the specification](https://vng-realisatie.github.io/gemma-zaken/standaard/zaken/redoc-1.5.1#tag/zaakobjecten/operation/zaakobject_create).
 

@@ -20,7 +20,7 @@ The following features were added:
 
     The block cypher algorithm used was previously set to use ECB (Electronic Codebook) instead of GCM (Galois Counter Mode). As a result, this means, as long as the key does not change, encrypting plaintext blocks will always result in the same ciphertext block. This matters mainly for larger pieces of text (or images) where patterns can be recognized and some information can be derived. For example, see this image:
 
-    ![encryption modes](img/encryption-modes.png)
+    ![encryption modes](../../../.gitbook/assets/encryption-modes.png)
 
     Since encryption in Valtimo is applied to keys in valtimo, these are generally a lot shorter, and deriving any kind of information becomes more difficult as a result.
 *   **Plugin export API endpoint**

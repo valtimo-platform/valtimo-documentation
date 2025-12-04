@@ -88,7 +88,7 @@ To use the CarbonListComponent there is a series of steps.
 
 This will create a simple list that shows the two items.
 
-![simple-list.png](../../../reference/user-interface/components/valtimo-carbon-list/img/simple-list.png)
+![simple-list.png](../../../.gitbook/assets/simple-list.png)
 
 ### Clicking on rows
 
@@ -120,7 +120,7 @@ public sampleCallback(item: any) {
 
 ### No results view
 
-The CarbonListComponent has a default message that displays whenever there are no results: ![list-no-results-default.png](../../../reference/user-interface/components/valtimo-carbon-list/img/list-no-results-default.png)
+The CarbonListComponent has a default message that displays whenever there are no results: ![list-no-results-default.png](../../../.gitbook/assets/list-no-results-default.png)
 
 However, the no results view can be customized like this:
 
@@ -137,7 +137,7 @@ However, the no results view can be customized like this:
 </valtimo-carbon-list>
 ```
 
-This will create a custom no results message: ![list-no-results-custom.png](../../../reference/user-interface/components/valtimo-carbon-list/img/list-no-results-custom.png)
+This will create a custom no results message: ![list-no-results-custom.png](../../../.gitbook/assets/list-no-results-custom.png)
 
 ## Overview of the `@Input` and `@Output` fields of the `CarbonListComponent`
 

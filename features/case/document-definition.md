@@ -39,7 +39,7 @@ It's possible to upload valid JSON schemas to create new cases since Valtimo 5. 
 
 In Valtimo 12 the case configuration upload has been improved by adding all the newly available case configurations to the upload functionality. More detailed information on this functionality can be found [here](./#exporting-and-importing-case-definitions).
 
-![Uploading a document definition](../../using-valtimo/document/img/upload-document-definition.png)
+![Uploading a document definition](../../.gitbook/assets/upload-document-definition.png)
 
 #### Create an empty case
 
@@ -53,7 +53,7 @@ Available since Valtimo `12`
 * Enter the title, and optionally edit the name
 * Click on **Save**, this takes you to the document definition overview
 
-![Creating a document definition](../../using-valtimo/document/img/create-document-definition.png)
+![Creating a document definition](../../.gitbook/assets/create-document-definition.png)
 
 The chosen title will be validated and based upon the title a read-only case definition name will be generated. This is to create a unique identifier for that case definition without spaces or special characters. Click the **Save** button to create the case with the chosen title.\
 \

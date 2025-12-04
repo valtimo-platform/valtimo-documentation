@@ -158,10 +158,10 @@ This page describes how to update Valtimo from the previous version to the curre
 
 In addition to this, the following classes were removed. No replacements were added as these should not be used.
 
-| Class                             | Notes                                                                                                        |
-| --------------------------------- | ------------------------------------------------------------------------------------------------------------ |
-| `AuthorityHourlyRateChangedEvent` | Hourly rates were removed.                                                                                   |
-| `ExternalFormFieldType`           | Enum was removed to increase extendability. See [here](broken-reference) for a list of external form fields. |
+| Class                             | Notes                                                                                                                          |
+| --------------------------------- | ------------------------------------------------------------------------------------------------------------------------------ |
+| `AuthorityHourlyRateChangedEvent` | Hourly rates were removed.                                                                                                     |
+| `ExternalFormFieldType`           | Enum was removed to increase extendability. See [here](/broken/pages/4BYIQ5ySi4VGfLHvQm38) for a list of external form fields. |
 
 *   **Carbon design system**
 

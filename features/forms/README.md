@@ -87,4 +87,4 @@ Where form.io definition is using the following translation properties:
 
 Which results in:
 
-<figure><img src="../../using-valtimo/forms/img/form_io_translations.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/form_io_translations.png" alt=""><figcaption></figcaption></figure>

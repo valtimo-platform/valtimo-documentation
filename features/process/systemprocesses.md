@@ -2,11 +2,11 @@
 
 System processes are processes that are critical to the functioning of Valtimo itself. Since these processes should be handled with care, these processes are flagged as read-only by default. When a process is read-only, it is not possible to update the process or deploy it.
 
-![Read only system process](../../using-valtimo/process/img/read-only-system-process.png)
+![Read only system process](../../.gitbook/assets/read-only-system-process.png)
 
 A process can be marked as a system process by setting a property called `systemProcess` to `true` on the model itself under the `Extensions` tab.
 
-![Setting system process property](../../using-valtimo/process/img/setting-system-process-property.png)
+![Setting system process property](../../.gitbook/assets/setting-system-process-property.png)
 
 ## Make system process updatable
 
@@ -20,4 +20,4 @@ valtimo:
 
 When a system process is updatable it is possible to make changes to the process and the `Deploy` button is available again. A message is shown to warn the user about changing a system process.
 
-![System process](../../using-valtimo/process/img/system-process.png)
+![System process](../../.gitbook/assets/system-process.png)

@@ -9,7 +9,7 @@ The following features were added:
     An administrator can now configure and override translations from a front-end admin page. For more information on how to configure and use this, [refer to this page](../../../features/localization/configuring-localization.md).
 *   **Form flow management**
 
-    An administrator can now see, create and edit form flows from a front-end admin page. For more information on form flows, refer to [this page](broken-reference).
+    An administrator can now see, create and edit form flows from a front-end admin page. For more information on form flows, refer to [this page](/broken/pages/IS3fUCisHvoPfR7PEa1o).
 *   **Inline edit document definition**
 
     Document definition can now be edited inline to create a new version.

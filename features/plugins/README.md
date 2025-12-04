@@ -48,7 +48,7 @@ Before plugins can be configured, both the backend and frontend dependencies are
 * Select the plugin definition
 * Configure the plugin
 
-![Configuring a plugin](../../using-valtimo/plugin/img/configure-plugin.png)
+![Configuring a plugin](../../.gitbook/assets/configure-plugin.png)
 {% endtab %}
 
 {% tab title="Via IDE" %}

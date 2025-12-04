@@ -39,4 +39,4 @@ The CarbonListComponent supports both backend and frontend search. For the front
 
 This will create a list with search enabled:
 
-![list-with-search.png](../../../reference/user-interface/components/valtimo-carbon-list/img/list-with-search.png)
+![list-with-search.png](../../../.gitbook/assets/list-with-search.png)
