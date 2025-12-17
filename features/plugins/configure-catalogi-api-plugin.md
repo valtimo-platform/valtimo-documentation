@@ -17,9 +17,9 @@ To configure this plugin the following properties have to be entered:
 * **URL (`url`).** Contains the complete base URL of the Catalogi API to connect to. This generally includes the path `/api/v1/`.
 * **Authentication plugin configuration (`authenticationPluginConfiguration`).** Reference to another plugin configuration that will be used to add authentication to any request performed on the Catalogi API. If no option is available in this field a plugin has to be configured that is able to authenticate for the specific application that hosts the Catalogi API. (e.g. OpenZaak)
 
-An example plugin configuration:&#x20;
+An example plugin configuration:
 
-<figure><img src="../../.gitbook/assets/configure-plugin (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/configure-plugin (1).png" alt=""><figcaption></figcaption></figure>
 
 ## Available actions
 
@@ -38,7 +38,7 @@ When creating a process link the following properties have to be entered:
     A full URL can also be set here. In that case, the value will be used directly without a lookup.
 * **Process variable name**. This is the name of the process variable which value will be set to the found statustype URL.
 
-An example action configuration:&#x20;
+An example action configuration:
 
 <figure><img src="../../.gitbook/assets/retrieve-statustype.png" alt=""><figcaption></figcaption></figure>
 
@@ -53,7 +53,7 @@ When creating a process link the following properties have to be entered:
     A full URL can also be set here. In that case, the value will be used directly without a lookup.
 * **Process variable name**. This is the name of the process variable which value will be set to the found resultaattype URL.
 
-An example action configuration:&#x20;
+An example action configuration:
 
 <figure><img src="../../.gitbook/assets/retrieve-resultaattype.png" alt=""><figcaption></figcaption></figure>
 
@@ -68,6 +68,6 @@ When creating a process link the following properties have to be entered:
     A full URL can also be set here. In that case, the value will be used directly without a lookup.
 * **Process variable name**. This is the name of the process variable which value will be set to the found besluittype URL.
 
-An example action configuration:&#x20;
+An example action configuration:
 
 <figure><img src="../../.gitbook/assets/retrieve-besluittype.png" alt=""><figcaption></figcaption></figure>

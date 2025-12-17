@@ -3,7 +3,7 @@
 Valtimo offers the functionality needed to create and add plugins to Valtimo implementations.
 
 {% hint style="info" %}
-### Prerequisites <a href="#prerequisites" id="prerequisites"></a>
+#### Prerequisites <a href="#prerequisites" id="prerequisites"></a>
 
 Plugins are added to a Valtimo implementation. See [this page](../../../fundamentals/getting-started/#starting-your-own-valtimo-implementation) to get started with your own Valtimo implementation.
 {% endhint %}

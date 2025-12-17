@@ -27,19 +27,19 @@ To configure process links, admin privileges are required.
 
 ![Select process link type](../../.gitbook/assets/select-process-link-type.png)
 
-### Creating a form process link
+#### Creating a form process link
 
 A form process link can be added to user-tasks. When the process reaches the user-task, a user will be presented with the configured form when opening it.
 
 More information about forms can be found [here](../forms/).
 
-### Creating a form-flow process link
+#### Creating a form-flow process link
 
 A form-flow process link can be added to user-tasks. When the process reaches the user-task, an instance of the form-flow will be created and be made visible to the user.
 
 More information about form-flows can be found [here](../forms/form-flow.md).
 
-### Creating a plugin process link
+#### Creating a plugin process link
 
 When configuring a plugin process link, a wizard is presented to choose between the available plugin configuration, actions and (optionally) additional settings for that action.
 
@@ -61,7 +61,7 @@ Process links can also be configured using autodeployment. These process links w
 
 Autodeployed process links can be added by creating a json file with the following filename structure: `<process-id>.processlink.json`. This file can be placed anywhere in the resource folder of the application.
 
-This is an example of an autodeployment file for  two user task for a process:
+This is an example of an autodeployment file for two user task for a process:
 
 ```json
 [

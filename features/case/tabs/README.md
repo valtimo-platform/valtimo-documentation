@@ -21,7 +21,7 @@ The **Add tab** button opens the _Add new tab in \<case>_ modal, beginning with 
     <figure><img src="../../../.gitbook/assets/image (2).png" alt=""><figcaption><p>Case tab types</p></figcaption></figure>
 
 **Tab name (optional)**\
-&#xNAN;_&#x43;onfigured name that will be used to identify the Case tab in the UI._
+\&#xNAN;_Configured name that will be used to identify the Case tab in the UI._
 
 {% hint style="info" %}
 This field is not mandatory and if left blank a translation of the key will be shown if configured. Each tab name follows this logic:
@@ -32,13 +32,13 @@ This field is not mandatory and if left blank a translation of the key will be s
 {% endhint %}
 
 **Key**\
-&#xNAN;_&#x54;his is the identifier of the tab and needs to be unique within a case definition. Possible translations need to be configured with this key._
+\&#xNAN;_This is the identifier of the tab and needs to be unique within a case definition. Possible translations need to be configured with this key._
 
 **Choose standard content**\
-&#xNAN;_&#x41; list of available standard tabs is presented in a dropdown menu. Already configured tabs are filtered from this list._
+\&#xNAN;_A list of available standard tabs is presented in a dropdown menu. Already configured tabs are filtered from this list._
 
 **Task list visible on tab**\
-&#xNAN;_&#x57;hen set the task list will be displayed on the right side of the tab in the UI._
+\&#xNAN;_When set the task list will be displayed on the right side of the tab in the UI._
 {% endtab %}
 
 {% tab title="Via IDE" %}
@@ -111,11 +111,11 @@ The standard tab option is only available if all standard tabs have not yet been
 
 The following tabs are created by default for each new case in Valtimo. These case tabs are standard across all Valtimo editions; however, additional standard tabs may be available depending on the specific edition. Standard tabs can be deleted as needed, as they can be easily re-added using the **Add tab** button.
 
-### Valtimo standard tabs
+#### Valtimo standard tabs
 
 <table><thead><tr><th width="169.79296875" valign="top">Tab</th><th valign="top">Description</th></tr></thead><tbody><tr><td valign="top"><strong>Summary</strong></td><td valign="top">Displays case specific data from the case JSON document or external data sources. This page links to a specific Form.io form with the name <code>&#x3C;caseDefinitionKey>.summary</code></td></tr><tr><td valign="top"><strong>Progress</strong></td><td valign="top">Shows the current state of any active process and the history of all processes that have been executed while handling the case</td></tr><tr><td valign="top"><strong>Audit</strong></td><td valign="top">Shows a log of all performed case actions. Information on who did what and when was that action done is logged and displayed on this tab.</td></tr><tr><td valign="top"><strong>Documents</strong></td><td valign="top">Displays all files that where generated or uploaded while handling the case.</td></tr><tr><td valign="top"><strong>Notes</strong></td><td valign="top">Allows case handlers to leave case specific comments for internal use.</td></tr></tbody></table>
 
-### GZAC edition additional tabs
+#### GZAC edition additional tabs
 
 <table><thead><tr><th width="169.99609375" valign="top">Tab</th><th valign="top">Description</th></tr></thead><tbody><tr><td valign="top"><strong>Contact moments</strong></td><td valign="top">Shows all contact moments in the case that are registered in the <a href="https://vng-realisatie.github.io/gemma-zaken/standaard/contactmomenten/index">contactmomenten API</a>.</td></tr><tr><td valign="top"><strong>Case objects</strong></td><td valign="top">Lists all JSON objects that are linked to the "Zaak" that is connected to the case. A "Zaak" can be created in "OpenZaak" and linked to the GZAC case. Objects connected to this "Zaak" are displayed on this tab.</td></tr></tbody></table>
 

@@ -61,7 +61,7 @@ The following features were added:
     }
     ```
 
-    For more information on how to customize case tabs, see [this page](broken-reference).
+    For more information on how to customize case tabs, see [this page](/broken/pages/j2IWnMVPOndVidNbJI5y).
 *   **Added session timeout prompt for Keycloak**
 
     When an implementation uses Keycloak as its authentication provider, a session timeout prompt is now shown if the refresh token expires in five minutes or less. This uses a new component - `v-prompt` - which has been added to the `@valtimo/user-interface` library. It shows a timer for when the session is to expire, and offers a logout action, and an action to continue the session, which automatically refreshes the access token. If no action is taken, the user is logged out when the timer runs out.

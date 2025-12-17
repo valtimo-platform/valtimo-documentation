@@ -95,7 +95,7 @@ The 'Create Zaakdossier' process has several tasks with default configurations:
 
 * Link Document to zaak - This task links all the documents from the verzoek to the zaak.
 
-![](/broken/files/kVMdVyC6alU8W4SXVegT)
+![](<../../.gitbook/assets/document-urls-collection-example (1).png>)
 
 * Start handling process - This task starts a follow-up process that further handles the verzoek.
 

@@ -21,7 +21,7 @@ The following features were added:
     The plugin configuration ID can now be edited in the plugin configuration management screens.
 *   **Prefilling forms with data from the Zaken API**
 
-    Formio forms can now be prefilled with data from the Zaken API. See [this page](/broken/pages/4BYIQ5ySi4VGfLHvQm38#external-data-types) for more information.
+    Formio forms can now be prefilled with data from the Zaken API. See [this page](broken-reference/) for more information.
 *   **Show process version on progress tab**
 
     The version of the process is now visible on the 'Progress' tab of a case.

@@ -6,7 +6,7 @@ The following features were added:
 
 *   **Case settings**
 
-    Case settings have been introduced. Settings such as being able to assign a user to a case can be found here. Additionally, case settings can be loaded from a file when the corresponding document definition is created. For more information on how to create a case definition when a document definition is created, see [here](https://app.gitbook.com/s/bcArISKZtxWk4tKpZb9P/features/case/configuration).
+    Case settings have been introduced. Settings such as being able to assign a user to a case can be found here. Additionally, case settings can be loaded from a file when the corresponding document definition is created. For more information on how to create a case definition when a document definition is created, see [here](../../../features/case/configuration.md).
 *   **Smart documents logs improvements**
 
     Added more logging for the smart documents connector so that the error messages give more specific information.

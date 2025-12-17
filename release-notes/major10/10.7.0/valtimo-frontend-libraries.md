@@ -17,7 +17,7 @@ The following features were added:
 *   **Automatic User Task assignment to Case Handler**
 
     An additional checkbox has been added to the case assignee section of a case configuration that enables the user to toggle on and off the automatic assignment of user tasks to a case handler if a case has one assigned to it/is claimed by one.\
-    Refer [to this page](broken-reference) to learn more about this feature.
+    Refer [to this page](/broken/pages/vcjokcrTdbe0GVI4Tner) to learn more about this feature.
 *   **Carbon breadcrumbs and page title**
 
     New breadcrumbs and page titles have been introduced throughout the application, in order to provide a consistent user experience with Carbon components. Since previously URLs and breadcrumbs were not implemented consistently, some logic had to be introduced in order to provide proper breadcrumbs. How this was implemented, and how to use this logic in your implementation, is explained on [this page](../../../nog-een-plek-geven/reference/user-interface/breadcrumbs.md).

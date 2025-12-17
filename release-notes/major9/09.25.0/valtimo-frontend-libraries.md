@@ -13,7 +13,7 @@ The following features were added:
 
     Creating, updating, deleting, and reordering search field rows for a document definition are now available actions.
 
-    For more information on this feature, see [this page](broken-reference).
+    For more information on this feature, see [this page](/broken/pages/zQt2YHecijhlHDNfoKUh).
 *   **Persist query parameters after Keycloak redirect**
 
     Previously after a redirect by Keycloak, only the main URL was restored, so that the user remained on the same page. To this functionality, saving and restoring of query parameters has been added. Now, after a Keycloak redirect, the previous query parameters will remain in place.
@@ -23,7 +23,7 @@ The following features were added:
 
     The `title` is an optional field that appears as a label for the current search field. When the `title` is not set, the default value will be the search field key translation (if there is no translation available, the original key value will be displayed).
 
-    For more information on this feature, see [this page](broken-reference).
+    For more information on this feature, see [this page](/broken/pages/zQt2YHecijhlHDNfoKUh).
 *   **Add `boolean` and `datetime` type for search fields configuration**
 
     Added two new types for configuring search fields.
@@ -32,7 +32,7 @@ The following features were added:
 
     The `datetime` field displays a calendar with the option to add a time. It is possible to create this search field with the match type **single** and **range** option.
 
-    For more information on this feature, see [this page](broken-reference).
+    For more information on this feature, see [this page](/broken/pages/zQt2YHecijhlHDNfoKUh).
 *   **Added 'Clear' and 'Search' functionality in the search fields panel**
 
     Navigating to the cases page (`Cases` -> ex.: `Leningen`), within the **Search** panel, two new buttons are located at the bottom to **Clean** and **Search** the data in the search fields.

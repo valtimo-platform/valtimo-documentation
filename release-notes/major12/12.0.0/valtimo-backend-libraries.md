@@ -50,7 +50,7 @@ The following features were added:
     The field 'Uiterlijke einddatum afdoening' is now set automatically in the Zaken-api when creating a case in Valtimo.
 *   **Internal statuses are now available to cases**
 
-    Cases can be filtered on statuses set to the case via the process. More information on this can be found [here](https://app.gitbook.com/s/bcArISKZtxWk4tKpZb9P/features/case/statuses)
+    Cases can be filtered on statuses set to the case via the process. More information on this can be found [here](../../../features/case/statuses.md)
 *   **The RabbitMQ outbox publisher now support exchange targets**
 
     Exchange targets can now be used with the outbox publisher for RabbitMQ by using the `valtimo.outbox.publisher.rabbitmq.exchange` property. More information on this can be found [here](../../../fundamentals/getting-started/modules/core/outbox/outbox-rabbitmq.md)

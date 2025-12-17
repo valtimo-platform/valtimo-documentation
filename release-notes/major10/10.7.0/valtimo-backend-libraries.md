@@ -9,7 +9,7 @@ The following features were added:
     A new test class is made available to quickly check if all REST API endpoints apply some form of security using the new `SecuritySmokeIntegrationTest`. More information [here](../../../running-valtimo/application-configuration/security-testing.md).
 *   **Automatic User Task assignment to Case Handler**
 
-    It is now possible to have user tasks automatically assigned to a case handler. Refer [to this page](broken-reference) to learn more about this feature.
+    It is now possible to have user tasks automatically assigned to a case handler. Refer [to this page](/broken/pages/vcjokcrTdbe0GVI4Tner) to learn more about this feature.
 *   **Additional status on TaakObject**
 
     An additional status option `GESLOTEN` has been added to the [TaakStatus](https://github.com/valtimo-platform/valtimo-backend-libraries/blob/main/zgw/portaaltaak/src/main/kotlin/com/ritense/portaaltaak/TaakObject.kt#L49) enum of a TaakObject.

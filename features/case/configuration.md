@@ -17,15 +17,15 @@ When the case handler option is selected the following changes are visible in th
 
 *   **The case list screen is divided in to three tabs**
 
-    <figure><img src="../../.gitbook/assets/image (35) (1).png" alt=""><figcaption><p>Case overview with case handler option selected<br></p></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (9).png" alt=""><figcaption><p>Case overview with case handler option selected<br></p></figcaption></figure>
 
     * **All cases**\
-      &#xNAN;_&#x54;his overview is the same as for cases that do not have a case handler configured._\
-      &#xNAN;_&#x41;ll cases are displayed on this tab._
+      \&#xNAN;_This overview is the same as for cases that do not have a case handler configured._\
+      \&#xNAN;_All cases are displayed on this tab._
     * **My cases**\
-      &#xNAN;_&#x4F;verview of cases that are assigned to the user that is currently logged in._
+      \&#xNAN;_Overview of cases that are assigned to the user that is currently logged in._
     * **Unassigned cases**\
-      &#xNAN;_&#x4F;verview of cases that are not assigned to a case handler_
+      \&#xNAN;_Overview of cases that are not assigned to a case handler_
 * **An "Assignee" column is automatically added to the case list columns**\
   This column displays the case handler assigned to each case in the overview. This column is fixed and can't be removed via the case list configuration page.
 * **An option to assign a case handler on the case details page.**\
@@ -58,13 +58,13 @@ There are different ways of assigning a user to a case.
 
 {% tabs %}
 {% tab title="Via UI" %}
-#### Assigning a case
+**Assigning a case**
 
 On the case details page there is an option to assign a user. When clicked, a dropdown menu opens that displays all case handlers that can be assigned.
 
 <figure><img src="../../.gitbook/assets/image (36) (1).png" alt=""><figcaption><p>Assigning a user</p></figcaption></figure>
 
-#### Claiming a case
+**Claiming a case**
 
 When a specific case is opened, it can be claimed with the `Claim` button in the menu on the right side of the case details page.
 
@@ -72,7 +72,7 @@ When a specific case is opened, it can be claimed with the `Claim` button in the
 
 Once a case is assigned the `Unassign` button is enabled, making it possible to unassign the case again.
 
-#### User assignment through the process
+**User assignment through the process**
 
 It is possible to assign a user to the current process by creating a service task and adding the following expression:
 

@@ -14,13 +14,13 @@ Nested properties submitted via Formio forms using process variables (e.g. `pv.a
 
 <summary>GZAC edition</summary>
 
-#### Change metadata for Documenten API documents with status 'definitive'
+**Change metadata for Documenten API documents with status 'definitive'**
 
 Documenten API documents can now be changed. When documents have status 'definitive', a new version of the document is created for metadata changes. The content of the document can't be changed.
 
-Editing document metadata is only allowed when the user has the correct permissions. More information can be found [here](/broken/pages/0IVtRXK6Gy4uj2QHDM0O).
+Editing document metadata is only allowed when the user has the correct permissions. More information can be found [here](broken-reference/).
 
-#### Retrieve Eigenschappen via Catalogi API plugin
+**Retrieve Eigenschappen via Catalogi API plugin**
 
 The Catalogi API plugin has been extended to retrieve Eigenschappen (definition) based on the name. These Eigenschappen can now be stored as process variables and can be used to create a new Zaakeigenschap without differences between OTAP-environments.
 
@@ -42,4 +42,4 @@ The Catalogi API plugin has been extended to retrieve Eigenschappen (definition)
 
 ## For developers
 
-* The ZGW API clients now support running the ZGW services in Docker. Connections to `localhost` will be rewritten to `host.docker.internal` . This behaviour can be enabled by setting the `valtimo.docker.filter.enabled`  application property to true.
+* The ZGW API clients now support running the ZGW services in Docker. Connections to `localhost` will be rewritten to `host.docker.internal` . This behaviour can be enabled by setting the `valtimo.docker.filter.enabled` application property to true.

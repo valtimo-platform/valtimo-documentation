@@ -88,7 +88,7 @@ To use the CarbonListComponent there is a series of steps.
 
 This will create a simple list that shows the two items.
 
-![simple-list.png](../../../.gitbook/assets/simple-list.png)
+![simple-list.png](<../../../.gitbook/assets/simple-list (1).png>)
 
 ### Clicking on rows
 

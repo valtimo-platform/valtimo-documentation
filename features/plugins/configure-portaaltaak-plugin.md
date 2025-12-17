@@ -29,9 +29,9 @@ To configure this plugin the following properties have to be entered:
 * **Object management configuration (`objectManagementConfigurationId`).** Reference to the object management configuration that can be used to store the taak objects. If no option is available in this field, an object management configuration has to be created first.
 * **Process to complete Portaaltaak (`completeTaakProcess`).** Reference to the process that will be started to handle completion of tasks. This can do additional steps like handling the file attachments. A process task should be configured in this process definition to handle the completion itself. This can be done using the [Complete Portaaltaak](configure-portaaltaak-plugin.md#complete-portaal-taak) plugin action. The process 'Process completed Portaaltaak' that is shipped with Valtimo can be used here. See [this section](configure-portaaltaak-plugin.md#configuring-the-task-completion-process) on how to set up this process.
 
-An example plugin configuration:&#x20;
+An example plugin configuration:
 
-<figure><img src="../../.gitbook/assets/configure-plugin (7).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/configure-plugin (8).png" alt=""><figcaption></figcaption></figure>
 
 ## Configuring the task completion process
 
@@ -83,7 +83,7 @@ When creating a process link the following properties have to be entered:
 * **Identification value.** Indicates which user is the recipient of the task. Required when choosing receiver type 'Other'. For example when Identification key 'bsn' is used, the value could be '059861095' to indicate that is the BSN of the user.
 * **Number of days for the task to expire.** The number of days from the creation time until the task expires. This will only be used in the portaaltaak. The BPMN due date needs to be configured separately.
 
-An example process link configuration:&#x20;
+An example process link configuration:
 
 <figure><img src="../../.gitbook/assets/configure-create-portaal-taak.png" alt=""><figcaption></figcaption></figure>
 

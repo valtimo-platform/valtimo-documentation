@@ -6,10 +6,10 @@ The following features were added:
 
 *   **Export case definitions**
 
-    Case definitions can now be exported as an archive, containing all process definitions, forms, form flows, process links and the document definition that make up the case definition. See [this page](https://app.gitbook.com/s/bcArISKZtxWk4tKpZb9P/features/case) for more information.
+    Case definitions can now be exported as an archive, containing all process definitions, forms, form flows, process links and the document definition that make up the case definition. See [this page](../../../features/case/) for more information.
 *   **Import case definitions**
 
-    Case definitions can now be imported from a ZIP archive, containing all process definitions, forms, form flows, process links and the document definition that make up the case definition. See [this page](https://app.gitbook.com/s/bcArISKZtxWk4tKpZb9P/features/case) for more information.
+    Case definitions can now be imported from a ZIP archive, containing all process definitions, forms, form flows, process links and the document definition that make up the case definition. See [this page](../../../features/case/) for more information.
 *   **Transactional outbox**
 
     Valtimo now supports an implementation of the [transactional outbox pattern](https://microservices.io/patterns/data/transactional-outbox.html). See [this page](../../../fundamentals/getting-started/modules/core/outbox/) for more information.

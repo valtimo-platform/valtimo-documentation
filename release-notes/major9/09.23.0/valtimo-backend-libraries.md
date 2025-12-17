@@ -27,9 +27,9 @@ The following features were added:
 
     It is now possible to assign and unassign a user to a case.
 
-    For more information on using this feature see [this page](broken-reference).
+    For more information on using this feature see [this page](/broken/pages/LQrAFFc5QolKaOyBW0Ri).
 
-    Information about the endpoints can be found [here](broken-reference).
+    Information about the endpoints can be found [here](/broken/pages/giHhFomXcG89AbNlpWOP).
 
 ## Bugfixes
 

@@ -7,10 +7,8 @@
 ## New features
 
 * A new field has been added to the set-zaakstatus action in the Zaken API plugin that allows setting the date of a zaak-status.
-* The Zaken API plugin now supports a plugin action to retrieve a list of Zaakbesluiten.
-* The Besluiten API plugin now supports two new plugin actions:
-  * to modify a Besluit, specifically to change the 'vervaldatum' and 'vervalreden'.
-  * to retrieve an individual Besluit
+* The Zaken API plugin now supports plugin actions to retrieve a Besluit, or a list of Besluiten.
+* The Besluiten API plugin now supports a plugin action to modify a Besluit, specifically to change the 'vervaldatum' and 'vervalreden'.
 
 ## **Bugfixes**
 
